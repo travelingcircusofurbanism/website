@@ -3,14 +3,13 @@
     <div>
       <app-logo/>
       <h1 class="title">
-        myfirstfunnuxtproject
+        Post
       </h1>
       <h2 class="subtitle">
         Nuxt.js project
       </h2>
       <div class="links">
         <nuxt-link to="/about">About</nuxt-link>
-        
       </div>
     </div>
   </section>
