@@ -10,7 +10,7 @@
       </h2>
       <div class="links">
         <nuxt-link to="/about">About</nuxt-link>
-        
+
       </div>
     </div>
   </section>

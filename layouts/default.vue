@@ -6,13 +6,15 @@
 </template>
 
 <script>
-  import Map from '~/components/map.vue'
+  import Map from '~/components/map'
   export default {
     components: { Map }
   }
 </script>
 
-<style scoped>
+<style>
+
+  /* body { margin:0; padding:0; } */
 
   .master > * {
     display: inline-block;
