@@ -9,15 +9,16 @@
       }}
     </h3>
     <h4>Tags: {{ tags.join(', ') }}</h4>
-    <article v-html="md"></article>
-    <nuxt-link exact to="/">Home</nuxt-link>
+    <article class="markdown" v-html="markdownWithEasyImages"></article>
+    <Footer/>
   </section>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
 
 export default {
-  components: {},
+  components: { Footer, },
   asyncData ({ route, redirect, env }) {
     const path = '/posts/' + route.path
       .replace(/\//g, '') + '/'
@@ -29,8 +30,22 @@ export default {
       return redirect('/')
     }
     return {
+      path,
       md,
       ...data,
+    }
+  },
+  computed: {
+    markdownWithEasyImages () {
+      const baseMD = this.md
+      let newMD = baseMD
+      const imageElementRegex = /<img src=\"(.*).(jpg|jpeg|png|gif|webm|svg)\"/g
+      let matches = imageElementRegex.exec(baseMD)
+      while (matches != null) {
+        newMD = newMD.replace(matches[0], `<img src="${ this.path }${ matches[1] }.${ matches[2] }"`)
+        matches = imageElementRegex.exec(baseMD)
+      }
+      return newMD
     }
   },
   mounted () {
@@ -40,5 +55,6 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
+
 </style>

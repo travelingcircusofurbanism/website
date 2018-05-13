@@ -1,3 +1,4 @@
+const posts = require('./static/posts.json')
 module.exports = {
   /*
   ** Headers of the page
@@ -35,5 +36,11 @@ module.exports = {
   /*
   ** Build configuration
   */
-  build: {}
+  build: {},
+  generate: {
+    dir: 'docs',
+    routes: () => [
+      ...posts.map(p => `/${p.slug}`)
+    ]
+  }
 }

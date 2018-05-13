@@ -1,16 +1,16 @@
 <template>
   <section class="content">
-    <div>
-      <h1 class="title">
-        About
-      </h1>
-    </div>
+    <h1 class="title">
+      About
+    </h1>
+    <Footer />
   </section>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
 export default {
-  components: {}
+  components: { Footer, }
 }
 </script>
 

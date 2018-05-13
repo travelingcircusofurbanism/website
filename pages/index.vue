@@ -15,16 +15,15 @@
       <div>Tags: {{ post.tags }}</div>
       <br />
     </div>
-    <div class="links">
-      <nuxt-link to="/about">About</nuxt-link>
-    </div>
+    <Footer/>
   </section>
 </template>
 
 <script>
+import Footer from '~/components/Footer'
 
 export default {
-  components: {},
+  components: { Footer, },
   asyncData () {
     return {
       posts: require('~/static/posts.json')
