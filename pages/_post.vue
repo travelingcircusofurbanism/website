@@ -39,10 +39,11 @@ export default {
     markdownWithEasyImages () {
       const baseMD = this.md
       let newMD = baseMD
+      const urlBase = process.env.urlBase === '/' ? this.path : process.env.urlBase + path.substring(1)
       const imageElementRegex = /<img src=\"(.*).(jpg|jpeg|png|gif|webm|svg)\"/g
       let matches = imageElementRegex.exec(baseMD)
       while (matches != null) {
-        newMD = newMD.replace(matches[0], `<img src="${ this.path }${ matches[1] }.${ matches[2] }"`)
+        newMD = newMD.replace(matches[0], `<img src="${ urlBase }${ matches[1] }.${ matches[2] }"`)
         matches = imageElementRegex.exec(baseMD)
       }
       return newMD

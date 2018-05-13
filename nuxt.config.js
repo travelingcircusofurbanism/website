@@ -1,4 +1,6 @@
 const posts = require('./static/posts.json')
+const generate = process.env.NODE_ENV === 'production'
+const urlBase = generate ? '/travelingcircusofurbanism/' : '/'
 module.exports = {
   /*
   ** Headers of the page
@@ -42,5 +44,11 @@ module.exports = {
     routes: () => [
       ...posts.map(p => `/${p.slug}`)
     ]
-  }
+  },
+  env: {
+    urlBase,
+  },
+  router: {
+    base: urlBase,
+  },
 }
