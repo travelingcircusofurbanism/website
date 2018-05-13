@@ -11,6 +11,7 @@
       <nuxt-link :to="post.url">
         <h4>{{ post.title }}</h4>
       </nuxt-link>
+      <div v-if="post.description">Description: {{ post.description }}</div>
       <div>{{ new Date(post.date).toLocaleString() }}</div>
       <div>Tags: {{ post.tags }}</div>
       <br />
