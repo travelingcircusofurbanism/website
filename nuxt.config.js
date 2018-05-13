@@ -1,10 +1,5 @@
 const posts = require('./static/posts.json')
-const generate = process.env.NODE_ENV === 'production'
-const urlBase = generate ? '/travelingcircusofurbanism/' : '/'
 module.exports = {
-  /*
-  ** Headers of the page
-  */
   head: {
     title: 'myfirstfunnuxtproject',
     meta: [
@@ -21,9 +16,6 @@ module.exports = {
     ]
   },
   css: [ './assets/main.scss' ],
-  /*
-  ** Customize the progress bar color
-  */
   loading: false,
   // markdown module & settings
   modules: [
@@ -35,20 +27,11 @@ module.exports = {
     breaks: true,
     typographer: true
   },
-  /*
-  ** Build configuration
-  */
   build: {},
   generate: {
     dir: 'docs',
     routes: () => [
       ...posts.map(p => `/${p.slug}`)
     ]
-  },
-  env: {
-    urlBase,
-  },
-  router: {
-    base: urlBase,
-  },
+  }
 }
