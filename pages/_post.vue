@@ -1,57 +1,44 @@
 <template>
-  <section class="container">
-    <div>
-      <app-logo/>
-      <h1 class="title">
-        Post
-      </h1>
-      <h2 class="subtitle">
-        Nuxt.js project
-      </h2>
-      <div class="links">
-        <nuxt-link to="/about">About</nuxt-link>
-      </div>
-    </div>
+  <section class="content">
+    <h1>{{ title }}</h1>
+    <h3>
+      {{ 
+        new Date(date)
+          .toLocaleDateString('en-US', 
+            { year: 'numeric', month: 'long', day: 'numeric' })
+      }}
+    </h3>
+    <h4>Tags: {{ tags.join(', ') }}</h4>
+    <article v-html="md"></article>
+    <nuxt-link exact to="/">Home</nuxt-link>
   </section>
 </template>
 
 <script>
-import AppLogo from '~/components/AppLogo.vue'
 
 export default {
-  components: {
-    AppLogo
+  components: {},
+  asyncData ({ route, redirect, env }) {
+    const path = '/posts/' + route.path
+      .replace(/\//g, '') + '/'
+    let data, md
+    try {
+      data = require(`~/static${ path }data.js`)
+      md = require(`~/static${ path }content.md`)
+    } catch (e) {
+      return redirect('/')
+    }
+    return {
+      md,
+      ...data,
+    }
+  },
+  mounted () {
+    // code to tell map to move to our location
+    this.$store.commit('setMapPosition', this.mapPosition || {})
   }
 }
 </script>
 
-<style>
-.container {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: "Quicksand", "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; /* 1 */
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
+<style scoped lang="scss">
 </style>

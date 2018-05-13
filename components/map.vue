@@ -10,6 +10,14 @@
         map: null
       }
     },
+    computed: {
+      mapPosition () { return this.$store.state.mapPosition},
+    },
+    watch: {
+      mapPosition (newPosition) {
+        this.map.flyTo(newPosition)
+      }
+    },
     mounted () {
       mapboxgl.accessToken = require('../mapboxApiKey.json').key;
 
@@ -29,7 +37,10 @@
 
 <style scoped>
   #map {
-    height: 100vh;
+    height: 120vh;
+    position: relative;
+    top: -10vh;
     background:#ddd;
+    z-index: 2;
   }
 </style>

@@ -12,13 +12,24 @@
   }
 </script>
 
-<style>
+<style lang="scss">
 
-  /* body { margin:0; padding:0; } */
+  .master {
+    display: flex;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
 
-  .master > * {
-    display: inline-block;
-    width: 50%;
+    & > * {
+      flex: 1;
+      max-width: 50%;
+      overflow: hidden;
+
+      &:not(#map){
+        overflow-y: auto;
+        height: 100vh;
+      }
+    }
   }
 
 </style>

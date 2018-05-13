@@ -17,10 +17,21 @@ module.exports = {
       { src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js' }
     ]
   },
+  css: [ './assets/main.scss' ],
   /*
   ** Customize the progress bar color
   */
   loading: false,
+  // markdown module & settings
+  modules: [
+    '@nuxtjs/markdownit',
+  ],
+  markdownit: {
+    html: true,
+    linkify: true,
+    breaks: true,
+    typographer: true
+  },
   /*
   ** Build configuration
   */

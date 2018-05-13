@@ -5,15 +5,15 @@
   "author": "Mariko",
   "private": true,
   "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate",
-    "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "buildlisting": "node buildlisting.js",
+    "dev": "npm run buildlisting && nuxt",
+    "generate": "npm run buildlisting && nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^1.0.0"
+    "@nuxtjs/markdownit": "^1.2.1",
+    "node-sass": "^4.9.0",
+    "nuxt": "^1.0.0",
+    "sass-loader": "^7.0.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.1",
