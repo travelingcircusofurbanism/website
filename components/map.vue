@@ -23,7 +23,7 @@
 
       this.map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mariko9012/cj8pt8dq29zj32rqmvtu6zcqy',
+        style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
         bearing: 0,
         center: [139.905913, 35.712899],
         zoom: 8.34,
