@@ -1,15 +1,20 @@
 <template>
   <div class="master">
     <Map/>
+    <Header/>
+    <Footer/>
     <nuxt/>
   </div>
 </template>
 
 <script>
   import Map from '~/components/map'
+  import Header from '~/components/Header'
+  import Footer from '~/components/Footer'
   export default {
-    components: { Map }
+    components: { Map, Header, Footer }
   }
+
 </script>
 
 <style lang="scss">
