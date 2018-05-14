@@ -5,6 +5,7 @@ html {
 	width: 100%;
 	overflow: hidden;
 	font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+	line-height: 1.5;
 }
 
 body {
@@ -43,6 +44,9 @@ h4 {
 	position: relative;
 
 	img {
-		max-width: 100%;  
+		max-width: 100%;
+		margin: 0 auto;
+		display: block;
+		padding: 15px 0;
 	}
 }

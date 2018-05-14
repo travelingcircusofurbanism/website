@@ -1,14 +1,20 @@
 <template>
   <section class="content">
-    <h1>{{ title }}</h1>
-    <h3>
+    <div>
       {{ 
         new Date(date)
           .toLocaleDateString('en-US', 
             { year: 'numeric', month: 'long', day: 'numeric' })
       }}
-    </h3>
-    <h4>Tags: {{ tags.join(', ') }}</h4>
+      <span> ・ </span>
+      <span>
+        Tags: {{
+          tags
+            .map(t => t.substring(0,1).toUpperCase() + t.substring(1))
+            .join(', ') 
+          }}
+      </span>
+    </div>
     <article class="markdown" v-html="markdownWithEasyImages"></article>
     <Footer/>
   </section>
@@ -39,7 +45,7 @@ export default {
     markdownWithEasyImages () {
       const baseMD = this.md
       let newMD = baseMD
-      const imageElementRegex = /<img src=\"(.*).(jpg|jpeg|png|gif|webm|svg)\"/g
+      const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
       let matches = imageElementRegex.exec(baseMD)
       while (matches != null) {
         newMD = newMD.replace(matches[0], `<img src="${ this.path }${ matches[1] }.${ matches[2] }"`)
