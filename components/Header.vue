@@ -1,7 +1,7 @@
 <template>
   <div id="header">
     <nuxt-link exact to="/">
-      <h1>I am Header</h1>
+      <h3>Traveling Circus of Urbanism</h3>
     </nuxt-link>
     <div>
       <nuxt-link to="/about">About</nuxt-link>
