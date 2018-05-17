@@ -1,11 +1,8 @@
 <template>
   <section class="content">
     <h1 class="title">
-      myfirstfunnuxtproject
+      Recent posts
     </h1>
-    <h2 class="subtitle">
-      Nuxt.js project
-    </h2>
     <h3>Posts</h3>
     <div v-for="(post, key) in posts" :key="key">
       <nuxt-link :to="post.url">
