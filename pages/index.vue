@@ -4,14 +4,16 @@
       Recent posts
     </h1>
     <h3>Posts</h3>
-    <div v-for="(post, key) in posts" :key="key">
-      <nuxt-link :to="post.url">
-        <h4>{{ post.title }}</h4>
-      </nuxt-link>
-      <div v-if="post.description">Description: {{ post.description }}</div>
-      <div>{{ new Date(post.date).toLocaleString() }}</div>
-      <div>Tags: {{ post.tags }}</div>
-      <br />
+    <div v-for="(post, key) in posts" :key="key" class="post-preview">
+      <img :src="post.image" />
+      <div>
+        <nuxt-link :to="post.url">
+          <h4>{{ post.title }}</h4>
+        </nuxt-link>
+        <div v-if="post.description">{{ post.description + '...' }}</div>
+        <div>{{ new Date(post.date).toLocaleString() }}</div>
+        <div>Tags: {{ post.tags }}</div>
+      </div>
     </div>
     <Footer/>
   </section>
@@ -29,9 +31,17 @@ export default {
   },
   mounted () {
     this.$store.commit('setMapPosition')
-  }
+  },
 }
 </script>
 
 <style scoped lang="scss">
+
+.post-preview {
+  margin-bottom: 30px;
+}
+
+img {
+  max-width: 100%;
+}
 </style>
