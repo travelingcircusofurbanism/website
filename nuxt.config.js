@@ -1,7 +1,7 @@
 const posts = require('./static/posts.json')
 module.exports = {
   head: {
-    title: 'myfirstfunnuxtproject',
+    title: 'Traveling Circus of Urbanism',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
