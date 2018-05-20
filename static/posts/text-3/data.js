@@ -3,8 +3,8 @@ module.exports = {
 	tags: ['urbanism'],
 	mapPosition: {
 		bearing: 0,
-		center: [139.905913, 35.712899],
-		zoom: 4.34,
+		center: [139.7029729, 35.5720944],
+		zoom: 12.00,
 		pitch: 0
 	}
 }

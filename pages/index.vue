@@ -39,7 +39,9 @@ export default {
 
 .post-preview {
   margin-bottom: 30px;
+  
 }
+
 
 img {
   max-width: 100%;

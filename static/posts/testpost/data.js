@@ -1,10 +1,10 @@
 module.exports = {
-	date: '5/9/1991',
-	tags: ['urbanism'],
+	date: '5/8/1991',
+	tags: ['city'],
 	mapPosition: {
 		bearing: 0,
-		center: [139.905913, 35.712899],
-		zoom: 4.34,
+		center: [139.7047394, 35.6559546],
+		zoom: 12.00,
 		pitch: 0
 	}
 }

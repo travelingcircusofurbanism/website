@@ -1,102 +1,96 @@
 
-# Design sprints for sustainable development goals: a recap from Global Goals Jam 2017 #Tokyo
+# Subjective Map Workshop #Shibuya
 
+In 2017 December, I organized a workshop to encourage people to make their own map based on their own subjective experiences of a city. This article explains the philosophy behind this workshop as well as why and how much map making matters.
 
+![](https://cdn-images-1.medium.com/max/2048/1*61dxZGg-UaOyCMia1AIjUw.png)
 
-On 16th-17th September 2017, I had the honor of hosting the first edition of the [#GlobalGoalsJam](https://twitter.com/hashtag/globalgoalsjam) in Tokyo at 100BANCH. Global Goals Jam #Tokyo was a two-day event with short design sprints, using the methods from [MediaLAB Amsterdam](http://medialabamsterdam.com/) — we invited various professionals, designers, creators, and students from more than 10 countries to share and develop our ideas.
+## The idea started from this beautiful map
 
-During the [2015 Social Good Summit](http://www.undp.org/content/undp/en/home/blog/2015/9/16/Around-the-world-the-Social-Good-Summit-celebrates-the-Global-Goals-.html), 193 world leaders committed to achieving [17 Sustainable Development Goals](http://www.globalgoals.org/) by the year 2030. As an initiative of the United Nations Development Program and MediaLAB Amsterdam, the Global Goals Jam began to design realistic, actionable interventions for these goals. Right now, there are more than 30 cities from different parts of the world supporting the initiatives from the local action.
+A few months before the workshop, I traveled to Bangkok, Thailand, for a holiday with some of my best friends. It was my first journey to Thailand and I didn’t have any prior knowledge about the city. For the first few days we visited the major famous temples and markets etc., all the touristic spots for which you can easily find information on Google or in guidebooks. However, I knew that something was missing.
 
-<iframe src="https://medium.com/media/f1a711a8a3711705114f172732b6e279" frameborder=0></iframe>
+I appreciate local culture and the daily life that is lived and constantly being updated by the people who live there. For me. it is far more meaningful to visit a local community center than to over-spend in an expensive restaurant in a touristic city center.
 
-I met the co-founders Marco Van Hout and Gijs Gootjes when they came to Tokyo, and I had the honor of receiving an official invitation to be a local host for this incredible global event. This article invites you to get a glimpse at the first edition of the [Global Goals Jam](https://twitter.com/hashtag/globalgoalsjam) #Tokyo.
+Unfortunately, Google Maps couldn’t give me what I wanted, even with intensive research. What changed my stay in Bangkok was this beautiful map, which I found by change at a local creative space called[ the Jam Factory Bangkok](http://www.bangkok.com/magazine/the-jam-factory-bangkok.htm).
 
-## **It’s actually very rare in Tokyo to have an event entirely in English, with people from various backgrounds.**
+![Image by [Nancy Chandler’s Thailand](http://nancychandler.net/nancychandlersblog.html)](https://cdn-images-1.medium.com/max/2000/1*3-F6ftwV93Il-X92VEL3pw.jpeg)*Image by [Nancy Chandler’s Thailand](http://nancychandler.net/nancychandlersblog.html)*
 
-![](https://cdn-images-1.medium.com/max/9794/1*_VGXsJBMAxLeDXTPksZrnw.jpeg)
+![Image by [Nancy Chandler’s Thailand](http://nancychandler.net/nancychandlersblog.html)](https://cdn-images-1.medium.com/max/2812/1*RQO6j2U2r-_RKhTKMS9IHw.jpeg)*Image by [Nancy Chandler’s Thailand](http://nancychandler.net/nancychandlersblog.html)*
 
-One thing I wanted to make happen was to make the event truly international and diverse. That means: it should welcome anyone regardless of their age, nationality, gender…. And it should be held in English.
+What’s so special about this map, with its excellent hand-drawing, is that it appears very… let’s say “biased” in a good way. Sure, there are some objective facts written on it, such as the names of the temples and so on, but you can really feel the presence of a map maker who has walked through and “felt” specific parts of the city in their own way. It talks about all the seemingly “useless” small things that you never read on Google Maps.
 
-Tokyo is a big, global metropolis and — well, if you know OTHER big metropolises like New York and London, you might be surprised to know that the proportion of foreigners in Tokyo is surprisingly low. Thus, everyday contact with people from different cultural backgrounds is still a rare experience for most Japanese, especially for those who don’t feel comfortable speaking in English. In Global Goals Jam #Tokyo, I was pleased to see people from Japan, Canada, the USA, Mozambique, Tanzania, Madagascar, Mauritius, etc. One of the participants from Mauritius told me that she has been looking for this kind of event in Tokyo for a long time.
+It even reminds me of[ USE-It Map Europe](https://use-it.travel/home), which is an alternative map making movement for young travelers that I can never stop loving.
 
-It doesn’t matter how well you speak English. What matters is working with someone from a different cultural background and exchanging opinions in a common language towards the same goal. Believe me, I know it can sometimes be very awkward and frustrating. But it’s worth it.
+![USE-it Map Europe: [https://use-it.travel/home](https://use-it.travel/home)](https://cdn-images-1.medium.com/max/2000/1*0pebAn2aV90Qgx02TNKdAw.png)*USE-it Map Europe: [https://use-it.travel/home](https://use-it.travel/home)*
 
-![](https://cdn-images-1.medium.com/max/9794/1*OIjCrTzgzwT96UH01dmVHw.jpeg)
+## No map is neutral
 
-![](https://cdn-images-1.medium.com/max/9794/1*2omWP-koPhB6NM2rT6deVA.jpeg)
+Maps tell stories.
 
-![David Willoughby from [Workers University](http://www.workers-u.com/) joined the event as one of the facilitators](https://cdn-images-1.medium.com/max/9794/1*YhsufNauOkWwEpO1gnHoKg.jpeg)*David Willoughby from [Workers University](http://www.workers-u.com/) joined the event as one of the facilitators*
+We see maps on a daily bases: On our phones, in the stations, in guidebooks etc… to get from point A to B. People tend to think that the maps we see/use every day — especially digital maps like Google Maps — are something very logical and objective. We simply don’t question them. On the other hand, something like Nancy Chandler’s map of Bangkok, which contains personal opinions, feelings, and memories, might be judged as “illogical”.
 
-## **We learned the Design Sprints method from Amsterdam Media Lab.**
+But is it really so black and white?
 
-![**Sprint #1 Organize it, experience it / Sprint #2 Respond to it
- **This was about identifying problems and organizing our ideas](https://cdn-images-1.medium.com/max/9794/1*tTl02fXIjQuZD0e5-7OrwQ.jpeg)***Sprint #1 Organize it, experience it / Sprint #2 Respond to it
- **This was about identifying problems and organizing our ideas*
+In fact, we can’t trust these “logical maps” as a pure “fact” either.
 
-Have you ever wondered what the heck a “design methodology” is? I know that it’s a fashionable thing to talk about “design” nowadays, but I always thought that many people didn’t really understand what it was, but just kinda wanted to talk bullshit about it.
+<center><iframe width="560" height="315" src="https://www.youtube.com/embed/VhLrEAgeMs4" frameborder="0" allowfullscreen></iframe></center>
 
-That’s why it was very valuable to use the concrete methods established by Amsterdam Media Lab. While leaving out the very fine details that actually fit into the local contexts, Amsterdam Media Lab provides a common language of design methods for the design field (they call it a mission to fight “design waste”), which is open and accessible and where even the beginners can dive straight in.
+This brilliant talk by Monica Stephens teaches us to be more critical about what digital maps (and analogue maps, even though they aren’t mentioned in the talk) are showing us. I won’t summarize her argument here in detail, but her message is clear — our maps are different based on our world view. And we should wonder whose world view and whose perception we are seeing on the maps, and whose perspective has been left out.
 
-Check out this [toolkit](https://medialabamsterdam.com/toolkit/) — it has all the tools we can use, explaining each step that needs to be followed. It, of course, explains things like the process and for which purpose, how long it takes to complete a work, and so on.
+For instance, the Mercator projection has famously been criticized for spreading a western-oriented world view, and there is an extreme inequality of the distribution of spatial information/data that covers the Earth’ surface.
 
-![**Day 2: Build it and test it**](https://cdn-images-1.medium.com/max/9794/1*VwEDnJabc9MuNaX-68v8Bg.jpeg)***Day 2: Build it and test it***
+This is why [Henk van Houtum](https://www.youtube.com/watch?v=Vow11HYG7HQ) in his TED talk powerfully calls for the need to make new maps, to free the map from politics and emancipate it from the dominant world view — and make it our own.
 
-The second day was all about developing prototypes. We first made concept sketches to represent our ideas in order to get feedback from the other teams. Afterward, we tried to bring the team’s idea to the physical world for a demonstration. The proto-tools were provided by [Fabcafe](https://www.fabcafe.com/) — a fabulous cafe in Tokyo where you can enjoy all the fabrication tools!
+## Subjective Map Workshop
 
-![](https://cdn-images-1.medium.com/max/9794/1*MqtFzL6Bj65Y2DDfVJHKug.jpeg)
+What if we each had our OWN map, one that didn’t get filtered by Google Maps and someone else’s world view? What if we had maps that talked about the small, local details that are otherwise left out by mainstream map making?
 
-![](https://cdn-images-1.medium.com/max/9794/1*UJNUGR3GebgG24Egk8Uc7w.jpeg)
+With this motivation, some of my colleagues and I decided to throw a subjective map workshop in different parts of Tokyo — and we chose Shibuya as the first location.
 
-## **Think BIG, start SMALL, act FAST! Can’t you do the same, Tokyo?**
+![](https://cdn-images-1.medium.com/max/9216/1*Y5VEWsyb4jqUD-L-nSpexg.jpeg)
 
-![](https://cdn-images-1.medium.com/max/9794/1*NpP_jpQIIzZx6Am8QAXuZA.jpeg)
+![The idea was to collect multiple ideas and combine them together, and to make it sharable with others!](https://cdn-images-1.medium.com/max/2000/1*j-2SLsrfImpoOnShuKhmkA.png)*The idea was to collect multiple ideas and combine them together, and to make it sharable with others!*
 
-In the final presentations, we delivered various ideas, which were demonstrated as paper or cardboard prototypes, hand-made prototypes made with a laser cutter, video prototyping, and storyboards. Below are some of the prototypes we developed during the event.
+![](https://cdn-images-1.medium.com/max/5248/1*_-DTBn1Rn-Yz0gMlfSaHIg.jpeg)
 
-**Team 1. 「Midori no Heroes」: Goal # 4 Quality Education**
+At the beginning, we learned map making techniques and the storytelling power of maps. Afterwards we just simply went out onto the streets for individual fieldwork, and wrote down our personal stories or opinions through own perspectives. For those who didn’t know what to do, I advised them to pay attention to personal memories and any attachments to a specific part of the city as well as sense of belonging, tips to enjoy favorite spots, even smell, sense of security, light and darkness, and so on.
 
-![『Midori no Heroes』Storyboard](https://cdn-images-1.medium.com/max/2000/1*13H2_EEMvhG8RCWh1N2fsA.png)*『Midori no Heroes』Storyboard*
+![](https://cdn-images-1.medium.com/max/9216/1*KsTcVBNtuqS1-1lLIGXjMQ.jpeg)
 
-Challenge: How to provide vocational education to encourage small farmers in Africa by sending them useful information via feature phones and smartphone?
+![](https://cdn-images-1.medium.com/max/9216/1*oJumCUy_D-wUo3VUr6X64g.jpeg)
 
-Their idea:“Midori no Heroes”, as a social entrepreneur, will partner with local research institutes, such as universities, central government and local government, to gather appropriate information for the farmers to farm better and more efficiently and then offer it to local small farmers. The team assumes that basic information such as weather forecasting can be useful since most of the farmers work without planning. The information will be delivered and implemented in two ways, one is via a feature phone for each farmer and the other is via a smartphone at a community center or community church. Midori no Heroes will have workshops at those central places where people regularly get together in order to learn how to use the smartphones and the information and how to implement it in their farming.
+![](https://cdn-images-1.medium.com/max/5248/1*UjejxhR8H7GlttxJ5Hjggw.jpeg)
 
-**Team 2.「Plan B: Shared eco-bags」: Goal # 11 Sustainable Cities and Communities**
+![](https://cdn-images-1.medium.com/max/5248/1*aHOJjlyLmGAcIGlTtX3JIA.jpeg)
 
-![『Shared eco-bags』Video prototype](https://cdn-images-1.medium.com/max/2000/1*F7gVdhprz_djVJN_jTDnUQ.png)*『Shared eco-bags』Video prototype*
+![](https://cdn-images-1.medium.com/max/3936/1*KmPmDAS_Gv6CNZ7sDYdrzA.jpeg)
 
-Challenge: 「Tackling the problem of shoppers consuming an excessive and unnecessary number of plastic bags at grocery stores and convenience stores in Tokyo.
+![](https://cdn-images-1.medium.com/max/5248/1*ql9zdw-89dY9Ryj1d_Xg0w.jpeg)
 
-Their idea：In Japan, 305 million plastic bags are used every year (300 bags/year for each person). Plastic bags take more than 1,000 years to decompose. Plan B is a reusable eco-bag that enables people to share / get benefit by using them.
+![](https://cdn-images-1.medium.com/max/5248/1*qxQCHCVW_bdPtEAUeYROLQ.jpeg)
 
-**Team 3. 「DiverCity」：Goal # 4 Quality Education**
+![](https://cdn-images-1.medium.com/max/5248/1*Z_WiLJ8K6tBT4vIYhJ1uhg.jpeg)
 
-![『DiverCity』website prototype： [https://xd.adobe.com/view/7f7fb204-c645-4a24-99d8-d5487fe76871/](https://xd.adobe.com/view/7f7fb204-c645-4a24-99d8-d5487fe76871/)](https://cdn-images-1.medium.com/max/2000/1*Cx2-CIN1pMzQRtbD5TtX3Q.png)*『DiverCity』website prototype： [https://xd.adobe.com/view/7f7fb204-c645-4a24-99d8-d5487fe76871/](https://xd.adobe.com/view/7f7fb204-c645-4a24-99d8-d5487fe76871/)*
+![](https://cdn-images-1.medium.com/max/5248/1*RlymD5GP9noaz_Wm5gruTA.jpeg)
 
-Challenge: How can we design a solution that promotes respect for diversity and individual differences in Japanese schools?
+![](https://cdn-images-1.medium.com/max/5248/1*Gy5b52e0pxKukD_Y-ASMBQ.jpeg)
 
-Their idea：DiverCity is a network of local people who have important life lessons they want to teach. Choosing a career, going your own way, learning from your mistakes, and finding your true self. *Tayoubi* means “diversity day” in Japanese. We encourage schools to set a specific day or time to think about diversity issues. They can make use of our “Diversity Bank” of local residents with interesting stories to tell. We also provide a “Diversity Pack” of lesson ideas and discussion topics for teachers introducing diversity education to their classrooms. Teachers and schools are free to decide how they implement Tayoubi, according to their available time and other resources.
+![](https://cdn-images-1.medium.com/max/5248/1*5G7fWTZmHYj_LbljUSE0cg.jpeg)
 
-**Team 4. 「Sea You Soon」：Goal # 11 Sustainable Cities and Communities**
+![](https://cdn-images-1.medium.com/max/5248/1*ocdUV80pTplvLur7N0Mq0Q.jpeg)
 
-![『SEA you soon』Mockup for an app service](https://cdn-images-1.medium.com/max/2000/1*lVZc5xZXqvGMC5kn_jFbKg.png)*『SEA you soon』Mockup for an app service*
+![](https://cdn-images-1.medium.com/max/3936/1*TfiujDfr6H36n5q321e_QA.jpeg)
 
-Challenge: How can we design a solution that turns Tokyo’s water resources into recreational community-building spaces while promoting awareness of the importance of water in our lives?
+## This is the result. And what’s next?
 
-Their idea：We provide easy access to coastal journeys with experienced fishermen through an app called “SEA you soon’’. One can experience catching fish and eating and cooking them with the locals. The aim is to give people an attachment to the coastal environment for a more sustainable waterfront development.
+In the end we had some incredibly fun and creative maps that were directly related to their creators’ personal ways of making sense of the urban surroundings.
 
-**Team 5. 「Smart Mirror Companion」：Goal # 3 Good Health and Well-Being**
+This is just one of the examples from the participants. She is someone who always pays attention to trashcans when she walks in Shibuya, and is always trying to discern the personalities of each of them. This highlights the hidden parts of our everyday life, something that is not widely discussed but definitely part of our urban life at an unconscious level.
 
-![『Smart Mirror Companion』Video prototype](https://cdn-images-1.medium.com/max/2000/1*t5uL6jiHebslCy3XgXiCsQ.png)*『Smart Mirror Companion』Video prototype*
+![](https://cdn-images-1.medium.com/max/6612/1*IBwizLwGxCNvE8m9qa-FDQ.jpeg)
 
-Challenge: Combating the world’s health problems by focusing on well-being and making sure everyone has the tools and resources to be healthy.
+I’m in the process of synthesizing all the maps into one single map (this is the tough part…) and it should soon be ready for distribution to involve more people in this subjective map movement. Wouldn’t it be fun to think about a subjective map#Paris or a subjective map#Toronto?
 
-Their idea：A mirror powered by a digital personal assistant (like Siri) to be your partner when you need 1) medical assistance 2) or just a companion to be there for you.
+It would be nice to have more critical map lovers who understand and are careful about how much our minds and spatial understanding are influenced by the dominant existing maps and other forms of spatial information.
 
-Aren’t these ideas great and inspiring? I know that these are not PERFECT perfect — because they were done only in 2 days — but it is surely the beginning of something exciting. Marco, the co-founder of Global Goals Jam, told me that it’s all about “Think BIG, start SMALL, act FAST!”, and I think it could not be phrased any better.
-
-![](https://cdn-images-1.medium.com/max/10368/1*cEMHeNs2OYedBQ-hwQrffg.jpeg)
-
-As a person who ALWAYS thinks of things in the context of cities and urbanism, I can’t help but think how valuable it would be to use this structure for the re-development of Tokyo. At the moment, everything seems to be “Think SMALL, start BIG, act SLOW!”. I’d love to apply the design sprint method we’ve learned during the Global Goals Jam to some of the critical urban problems we are facing, such as a shortage of childcare facilities, a lack of safe bicycle infrastructure, an unaffordable housing market, and energy shortages, just to name a few.
-
-I hope you can also come and join us for this year’s Global Goals Jam 2018 #Tokyo!
+Thanks for reading!
