@@ -7,15 +7,51 @@
   export default {
     data () {
       return {
-        map: null
+        map: null,
+        currentMarkers: []
       }
     },
     computed: {
       mapPosition () { return this.$store.state.mapPosition},
+      markerData () {
+        return {
+          type: 'FeatureCollection',
+          features: [{
+            type: 'Feature',
+            geometry: {
+              type: 'Point',
+              coordinates: [this.mapPosition.center[0], this.mapPosition.center[1]]
+            },
+            properties: {
+              title: 'Marker Test',
+              description: 'Testing!'
+            }
+          }]
+        }
+      }
     },
     watch: {
       mapPosition (newPosition) {
         this.map.flyTo(newPosition)
+      },
+      markerData (newMarkers) {
+        this.currentMarkers.forEach(marker => {
+          marker.remove()
+        })
+        this.currentMarkers = []
+        this.markerData.features.forEach(marker => {
+
+          // create a HTML element for each feature
+          var el = document.createElement('div')
+          el.className = 'marker'
+
+          // make a marker for each feature and add to the map
+          const newMarker = new mapboxgl.Marker(el)
+            .setLngLat(marker.geometry.coordinates)
+            .addTo(this.map)
+
+          this.currentMarkers.push(newMarker)
+        })
       }
     },
     mounted () {
