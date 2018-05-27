@@ -15,13 +15,13 @@
 
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 
   a, a:hover, a:visited, a:active {
     display: inline-block;
     padding: 15px 30px;
-    color: white;
-    background: black;
+    color: $text;
+    background: $active;
     text-decoration: none;
     transition: .2s;
   }

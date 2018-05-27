@@ -1,5 +1,6 @@
 <template>
   <section class="content">
+  <div><nuxt-link to="/" exact>← Back to Home</nuxt-link></div>
     <div>
       {{ 
         new Date(date)

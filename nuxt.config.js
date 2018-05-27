@@ -27,7 +27,11 @@ module.exports = {
     breaks: true,
     typographer: true
   },
-  build: {},
+  build: {
+    styleResources: {
+      scss: './assets/variables.scss',
+    },
+  },
   generate: {
     dir: 'docs',
     routes: () => [
