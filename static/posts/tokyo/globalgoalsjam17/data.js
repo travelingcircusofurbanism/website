@@ -1,6 +1,5 @@
 module.exports = {
 	date: '5/8/1991',
-	tags: ['city'],
 	mapPosition: {
 		bearing: 0,
 		center: [139.7047394, 35.6559546],

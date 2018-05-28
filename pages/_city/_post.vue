@@ -7,28 +7,24 @@
           .toLocaleDateString('en-US', 
             { year: 'numeric', month: 'long', day: 'numeric' })
       }}
-      <span> ・ </span>
-      <span>
-        Tags: {{
-          tags
-            .map(t => t.substring(0,1).toUpperCase() + t.substring(1))
-            .join(', ') 
-          }}
-      </span>
     </div>
     <article class="markdown" v-html="markdownWithEasyImages"></article>
+    <RelatedArticles :city="city" :current="slug" />
     <Footer/>
   </section>
 </template>
 
 <script>
 import Footer from '~/components/Footer'
+import RelatedArticles from '~/components/RelatedArticles'
 
 export default {
-  components: { Footer, },
+  components: { Footer, RelatedArticles },
   asyncData ({ route, redirect, env }) {
-    const path = '/posts' + route.path
-      .replace(/\/$/g, '') + '/'
+    const slug = route.path.replace(/\/$/g, '')
+    const path = '/posts' + slug + '/'
+    let city = route.path.substring(1)
+    city = city.substring(0, city.indexOf('/'))
     let data, md
     try {
       data = require(`~/static${ path }data.js`)
@@ -39,6 +35,8 @@ export default {
     }
     return {
       path,
+      slug,
+      city,
       md,
       ...data,
     }
