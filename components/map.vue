@@ -14,7 +14,8 @@
     computed: {
       mapMarkers () { return this.$store.state.mapMarkers },
       highlight () { return this.$store.state.highlightedLocation },
-      markerData () {
+
+      uniqueLocations () {
         const uniqueLocations = {}
         for (let marker of this.mapMarkers) {
           const location = marker.locationName ? marker.locationName.toLowerCase() : ''
@@ -22,11 +23,16 @@
             uniqueLocations[location] = []
           uniqueLocations[location].push(marker)
         }
+        return uniqueLocations
+      },
+
+      markerData () {
+        if (!this.uniqueLocations) return
         const markerData = {
           type: 'FeatureCollection',
           features: []
         }
-        for (let marker of Object.values(uniqueLocations)) {
+        for (let marker of Object.values(this.uniqueLocations)) {
           markerData.features.push({
             type: 'Feature',
             geometry: {
@@ -41,17 +47,38 @@
         }
         return markerData
       },
+
       mapPosition () {
-        if (!this.mapMarkers || this.mapMarkers.length === 0) return
-        const position = this.mapMarkers[0].position
-        if (this.mapMarkers.length > 1) position.zoom = 10
+        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
+
+        // if only one point, use that.
+        if (this.mapMarkers.length === 1) return this.mapMarkers[0].position
+
+        // if there are multiple points, take their average and zoom out a little
+        let x = 0, y = 0, z = 0
+        const uniqueAsArr = Object.values(this.uniqueLocations)
+        const length = uniqueAsArr.length
+        for (let m of uniqueAsArr) {
+          x += m[0].position.center[0]
+          y += m[0].position.center[1]
+          z += m[0].position.zoom
+        }
+        const position = {...uniqueAsArr[0][0].position}
+        position.center = [
+          x / length,
+          y / length
+        ]
+        position.zoom = (z / length) - 1
+
         return position
       },
     },
     watch: {
+
       mapPosition (newPosition) {
         if (newPosition) this.map.flyTo(newPosition)
       },
+
       markerData (newMarkers) {
         if (!newMarkers) return
         this.currentMarkers.forEach(marker => {
@@ -88,6 +115,7 @@
           this.currentMarkers.push(newMarker)
         })
       },
+
       highlight (newHighlight, oldHighlight) {
         const oldEl = this.currentMarkers
           .find(m => m._popup.options.location === oldHighlight)
@@ -109,7 +137,6 @@
         speed: 1.0,
         pitch: 0
       })
-
     }
   }
 

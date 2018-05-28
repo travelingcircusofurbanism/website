@@ -26,7 +26,7 @@
   }
 
   a:hover {
-    background: $active;;
+    background: $active2;
   }
 
   #header {
@@ -44,6 +44,10 @@
     padding: $unit * 4 $unit * 4;
     font-weight: 600;
     border-left: $unit solid $active;
+
+    &:hover {
+      border-left: $unit solid $text;
+    }
   }
 
   h1 {

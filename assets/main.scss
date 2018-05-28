@@ -70,7 +70,7 @@ h4 {
 	margin-top: $unit * 5;
   margin-bottom: $unit * 7;
   padding-bottom: $unit * 3;
-	border-bottom: 2px solid $offwhite;
+	border-bottom: 2px solid $active2;
 	max-width: 60%;
 }
 
@@ -93,6 +93,8 @@ h4 {
 }
 
 .marker {
+	z-index: 100;
+
 	.pin {
 		width: $unit * 5;
 		height: $unit * 5;
@@ -120,11 +122,13 @@ h4 {
 	}
 
 	&.highlight, &:hover {
+		z-index: 101;
+
 		.text {
-			color: red;
+			color: $active2;
 		}
 		.pin {
-			background-color: red;
+			background-color: $active2;
 			width: $unit * 7;
 			height: $unit * 7;
 		}
