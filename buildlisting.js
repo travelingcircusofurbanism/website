@@ -61,7 +61,7 @@ function getDataForPost(postDir, city, slug) {
 				.substring(image.indexOf('(') + 1, image.indexOf(')'))
 				.replace('/', '')
 		}
-		if (image.substring(0, 4) !== 'http') image = `./posts/${city}/${slug}/${image}`
+		if (image.substring(0, 4) !== 'http') image = `./posts/${city}/${slug}/${image.replace('/', '')}`
 
 		const data = {
 			slug,

@@ -63,6 +63,17 @@ export default {
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;
 
+  @include width (mid) {
+    grid-template-columns: 1fr;
+    
+    img {
+      max-height: $unit * 50;
+      display: block;
+      width: auto;
+      margin: 0 auto;
+    }
+  }
+
   & a {
     text-decoration: none;
   }

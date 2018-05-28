@@ -10,3 +10,13 @@ $unit: 6px;
 $content-padding: $unit * 8;
 $header-offset: $unit * 5;
 
+
+
+@mixin width ($size) {
+  @if $size == "mobile" {
+    @media (max-width: 768px) { @content; }
+  }
+  @if $size == "mid" {
+    @media (min-width: 769px) and (max-width: 1300px) { @content; }
+  }
+}
