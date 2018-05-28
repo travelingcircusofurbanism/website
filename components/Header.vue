@@ -1,9 +1,9 @@
 <template>
   <div id="header">
-    <nuxt-link exact to="/">
-      <h3>Traveling Circus of Urbanism</h3>
+    <nuxt-link exact to="/" class="logo">
+      <h1>Traveling Circus of Urbanism</h1>
     </nuxt-link>
-    <div>
+    <div class="sublinks">
       <nuxt-link to="/about">About</nuxt-link>
       <nuxt-link to="/contact">Contact</nuxt-link>
     </div>
@@ -19,24 +19,45 @@
 
   a, a:hover, a:visited, a:active {
     display: inline-block;
-    padding: 15px 30px;
-    color: $text;
-    background: $active;
+    color: white;
+    background: $text;
     text-decoration: none;
     transition: .2s;
   }
 
   a:hover {
-    background: #222;
+    background: $active;;
   }
 
   #header {
     position: fixed;
     display: inline-block;
-    top: 30px;
-    left: 30px;
+    top: $header-offset;
+    left: $header-offset;
     z-index: 10;
     height: initial;
   }
 
+  .logo {
+    text-transform: uppercase;
+    font-family: 'Unica One', 'Raleway', sans-serif;
+    padding: $unit * 4 $unit * 4;
+    font-weight: 600;
+    border-left: $unit solid $active;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin: 0;
+  }
+
+  .sublinks {
+    margin-top: $unit;
+    font-weight: 400;
+
+    a {
+      padding: $unit * 2 $unit * 4;
+      margin-right: $unit;
+    }
+  }
 </style>

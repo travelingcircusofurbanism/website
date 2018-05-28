@@ -38,10 +38,12 @@ function getDataForPost(postDir, city, slug) {
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
 		const description = title
-			.substring(title.indexOf('\n'))
-			.replace('#', '')
-			.replace('\n', ' ')
-			.substring(0, 200)
+			.substring(title.indexOf('\n')) // remove title
+			.replace(/!\[.*\]\(.*\)/g, '') // remove markdown images
+			.replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
+			.replace(/[\n\r]#+/g, '') // remove #, ##, ###, #### headers
+			.replace('\n', ' ') // remove line breaks
+			.substring(0, 200) // cut it to 200 chars
 		title = title.substring(0, title.indexOf('\n'))
 		let image = postContent
 			.substring(postContent.indexOf('!['))

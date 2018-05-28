@@ -8,38 +8,64 @@
     data () {
       return {
         map: null,
-        currentMarkers: []
+        currentMarkers: [],
       }
     },
     computed: {
-      mapPosition () { return this.$store.state.mapPosition},
+      mapMarkers () { return this.$store.state.mapMarkers },
+      highlight () { return this.$store.state.highlightedLocation },
       markerData () {
-        return {
+        const uniqueLocations = {}
+        for (let marker of this.mapMarkers) {
+          const location = marker.locationName ? marker.locationName.toLowerCase() : ''
+          if (!uniqueLocations[location])
+            uniqueLocations[location] = []
+          uniqueLocations[location].push(marker)
+        }
+        const markerData = {
           type: 'FeatureCollection',
-          features: [{
+          features: []
+        }
+        for (let marker of Object.values(uniqueLocations)) {
+          markerData.features.push({
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [this.mapPosition.center[0], this.mapPosition.center[1]]
+              coordinates: [marker[0].position.center[0], marker[0].position.center[1]]
             },
             properties: {
-              title: 'Marker Test',
-              description: 'Testing!'
+              locationName: marker[0].locationName,
+              posts: [...marker]
             }
-          }]
+          })
         }
-      }
+        return markerData
+      },
+      mapPosition () {
+        if (!this.mapMarkers || this.mapMarkers.length === 0) return
+        const position = this.mapMarkers[0].position
+        if (this.mapMarkers.length > 1) position.zoom = 10
+        return position
+      },
     },
     watch: {
       mapPosition (newPosition) {
-        this.map.flyTo(newPosition)
+        if (newPosition) this.map.flyTo(newPosition)
       },
       markerData (newMarkers) {
+        if (!newMarkers) return
         this.currentMarkers.forEach(marker => {
           marker.remove()
         })
         this.currentMarkers = []
         this.markerData.features.forEach(marker => {
+
+          const popup = new mapboxgl.Popup({
+            offset: 20,
+            closeButton: false,
+            location: marker.properties.locationName
+          })
+            .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
 
           // create a HTML element for each feature
           var el = document.createElement('div')
@@ -48,14 +74,18 @@
           // make a marker for each feature and add to the map
           const newMarker = new mapboxgl.Marker(el)
             .setLngLat(marker.geometry.coordinates)
+            .setPopup(popup)
             .addTo(this.map)
 
           this.currentMarkers.push(newMarker)
         })
-      }
+      },
+      // highlight (newHighlight, oldHighlight) {
+      //   this.currentMarkers.find(')
+      // }
     },
     mounted () {
-      mapboxgl.accessToken = require('../mapboxApiKey.json').key;
+      mapboxgl.accessToken = require('../mapboxApiKey.json').key
 
       this.map = new mapboxgl.Map({
         container: 'map',
@@ -65,7 +95,8 @@
         zoom: 8.34,
         speed: 1.0,
         pitch: 0
-      });
+      })
+
     }
   }
 

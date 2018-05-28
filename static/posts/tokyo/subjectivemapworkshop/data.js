@@ -1,6 +1,7 @@
 module.exports = {
 	date: '5/9/1991',
-	tags: ['urbanism'],
+	location: '100Banch',
+	category: 'essay',
 	mapPosition: {
 		bearing: 0,
 		center: [139.7047394, 35.6559546],

@@ -71,6 +71,11 @@ h4 {
   display: block;
   height: 100%;
   text-decoration: none;
+  color: $text !important;
+
+  &:hover {
+    text-decoration: underline;
+  }
   
   .relatedimage {
     background-size: cover;

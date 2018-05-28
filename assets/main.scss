@@ -1,11 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
 
 html {
 	height: 100%;
 	width: 100%;
 	overflow: hidden;
 	font-family: "Raleway", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 body {
@@ -22,26 +23,61 @@ a, a:active, a:visited, a:hover {
 	color: $active;
 }
 
+h1, h2, h3, h4 {
+	line-height: 1.4;
+}
+
 h1 {
-	font-size: 2em;
+	font-size: 3.2rem;
+	line-height: 1.1;
+	text-transform: uppercase;
+	font-family: 'Unica One', 'Raleway', sans-serif;
 }
 
 h2 {
-	font-size: 1.6em;
+	font-size: 1.6rem;
 }
 
 h3 {
-	font-size: 1.4em;
+	font-size: 1.4rem;
 }
 
 h4 {
-	font-size: 1.2em;
+	font-size: 1.2rem;
+}
+
+.sub {
+	opacity: .6;
+
+	a {
+		color: $text !important;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+		}
+	}
+}
+
+.sectionhead {
+	font-family: 'Unica One', 'Raleway', sans-serif;
+	font-size: 1.6rem;
+	letter-spacing: 3px;
+	text-align: center;
+	margin: 0 auto;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-top: $unit * 5;
+  margin-bottom: $unit * 7;
+  padding-bottom: $unit * 3;
+	border-bottom: 2px solid $offwhite;
+	max-width: 60%;
 }
 
 .content {
 	min-height: 100vh;
 	width: 100%;
-	padding: $content-padding;
+	padding: $header-offset $content-padding;
 }
 
 .markdown {
@@ -56,9 +92,22 @@ h4 {
 	}
 }
 
-  .marker {
-    width: $unit * 2;
-    height: $unit * 2;
-    background: red;
-    border-radius: $unit;
-  }
+.marker {
+	width: $unit * 5;
+	height: $unit * 5;
+	background-color: $active;
+	mask-image: url('~/assets/pin.svg');
+	mask-repeat: no-repeat;
+	mask-size: contain;
+	mask-position: center center;
+}
+
+.page-enter-active{
+  transition: opacity .4s;
+}
+.page-leave-active {
+  transition: opacity .2s;
+}
+.page-enter, .page-leave-active {
+  opacity: 0
+}
