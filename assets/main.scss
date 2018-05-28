@@ -93,13 +93,42 @@ h4 {
 }
 
 .marker {
-	width: $unit * 5;
-	height: $unit * 5;
-	background-color: $active;
-	mask-image: url('~/assets/pin.svg');
-	mask-repeat: no-repeat;
-	mask-size: contain;
-	mask-position: center center;
+	.pin {
+		width: $unit * 5;
+		height: $unit * 5;
+		background-color: $active;
+		mask-image: url('~/assets/pin.svg');
+		mask-repeat: no-repeat;
+		mask-size: contain;
+		mask-position: center center;
+		transition: width .2s, height .2s;
+	}
+
+	.text {
+		display: block;
+		position: absolute;
+		left: 50%;
+		top: $unit * -4;
+		padding-bottom: $unit * 2;
+		transform: translateX(-50%);
+		color: white;
+		text-shadow: 0 0 3px 3px $text;
+	}
+	
+	&:hover {
+		cursor: pointer;
+	}
+
+	&.highlight, &:hover {
+		.text {
+			color: red;
+		}
+		.pin {
+			background-color: red;
+			width: $unit * 7;
+			height: $unit * 7;
+		}
+	}
 }
 
 .page-enter-active{

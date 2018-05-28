@@ -67,12 +67,20 @@
           })
             .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
 
-          // create a HTML element for each feature
-          var el = document.createElement('div')
-          el.className = 'marker'
+          // create a HTML marker for each feature
+          const markerElement = document.createElement('div')
+          markerElement.className = 'marker'
+          const pin = document.createElement('div')
+          pin.className = 'pin'
+          const textBox = document.createElement('div')
+          textBox.className = 'text'
+          const text = document.createTextNode(marker.properties.locationName)
+          textBox.appendChild(text)
+          markerElement.appendChild(textBox)
+          markerElement.appendChild(pin)
 
           // make a marker for each feature and add to the map
-          const newMarker = new mapboxgl.Marker(el)
+          const newMarker = new mapboxgl.Marker(markerElement)
             .setLngLat(marker.geometry.coordinates)
             .setPopup(popup)
             .addTo(this.map)
@@ -80,9 +88,14 @@
           this.currentMarkers.push(newMarker)
         })
       },
-      // highlight (newHighlight, oldHighlight) {
-      //   this.currentMarkers.find(')
-      // }
+      highlight (newHighlight, oldHighlight) {
+        const oldEl = this.currentMarkers
+          .find(m => m._popup.options.location === oldHighlight)
+        if (oldEl) oldEl._element.classList.remove('highlight')
+        const newEl = this.currentMarkers
+          .find(m => m._popup.options.location === newHighlight)
+        if (newEl) newEl._element.classList.add('highlight')
+      }
     },
     mounted () {
       mapboxgl.accessToken = require('../mapboxApiKey.json').key
