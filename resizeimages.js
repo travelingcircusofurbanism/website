@@ -10,7 +10,7 @@ fs.readdirSync(masterPostDir)
 	.forEach(cityDir => {
 		cityDir += '/'
 		// read all individual post directories in each city directory
-		fs.readdirSync(cityDir)
+		fs.readdirSync(masterPostDir + cityDir)
 			.filter(postDir => postDir.indexOf('.') === -1)
 			.forEach(postDir => {
 				postDir += '/'
@@ -33,7 +33,7 @@ fs.readdirSync(masterPostDir)
 							else return
 						}
 						for (let file of files) {
-							if (/(.jpg|.png)$/g.test(file)) {
+							if (/(.jpe?g|.png)$/g.test(file)) {
 								// if image already exists, skip it
 								if (!existingImages.find(f => f === file)) {
 									// otherwise, resize it and put it in the post directory
