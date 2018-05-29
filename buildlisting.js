@@ -28,7 +28,7 @@ const allPostData = fs.readdirSync(postDir)
 	.sort((a, b) => new Date(a.date) < new Date(b.date))
 
 fs.writeFileSync(postFile, JSON.stringify(allPostData), 'utf8')
-console.log('Built page reference.')
+console.log('Built page listing.\n')
 
 
 function getDataForPost(postDir, city, slug) {
