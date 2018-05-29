@@ -37,7 +37,7 @@
       </p>
       
       <p class="sub">
-        <i>Special thanks to <a href="www.jasperstephenson.com" target="_blank">Jasper Stephenson</a> for mentorship and coding help on this site!</i>
+        <i>Special thanks to <a href="http://www.jasperstephenson.com" target="_blank">Jasper Stephenson</a> for mentorship and coding help on this site!</i>
       </p>
 
     <Footer />
