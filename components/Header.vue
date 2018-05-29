@@ -5,7 +5,7 @@
     </nuxt-link>
     <div class="sublinks">
       <nuxt-link to="/about">About</nuxt-link>
-      <nuxt-link to="/contact">Contact</nuxt-link>
+      <nuxt-link to="/contact">Author</nuxt-link>
     </div>
   </div>
 </template>

@@ -3,7 +3,7 @@
 
 There are many great books out there on urban planning and design, but I realized not many of them quite sum up the full scope of roles of urban analysis and research. I believe that analytical process to make sense of our cities itself is a creative act, which has a power to give us the different ways of perceiving our urban surroundings.
 
-Here are my 9 favorite books that sums up the beauty of investigating the city. Each of them have their own unique perspectives and methodologies to approach the urban realities (or non-realities), and they all invite you to observe your cities with different angles, rather than ‘teaching’ what they are.
+Here are my 9 favorite books that show you the beauty of getting deeper knowledge of your city. Each of them have their own unique perspectives and methodologies to approach the urban realities (or non-realities), and they all invite you to observe your cities with different angles, rather than ‘teaching’ what they are.
 
 ## 1. Tokyo Totem
 
