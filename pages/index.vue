@@ -1,12 +1,9 @@
 <template>
   <section class="content">
-    <h3 class="sectionhead">
-      Recent posts
-    </h3>
-    <PostPreview
-      v-for="(post, key) in shownPosts"
-      :key="key"
-      v-bind="post"
+    <CitySelector />
+    <PostList
+      :posts="shownPosts"
+      title="Recent Posts"
     />
     <Footer/>
   </section>
@@ -14,10 +11,11 @@
 
 <script>
 import Footer from '~/components/Footer'
-import PostPreview from '~/components/PostPreview'
+import PostList from '~/components/PostList'
+import CitySelector from '~/components/CitySelector'
 
 export default {
-  components: { Footer, PostPreview, },
+  components: { Footer, PostList, CitySelector, },
   asyncData () {
     const allPosts = require('~/static/posts.json')
     return {

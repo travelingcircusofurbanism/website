@@ -1,7 +1,9 @@
 <template>
   <section class="content">
-    <nuxt-link to="/" exact>← Back to Home</nuxt-link></div>
-    <p class="sub">
+    <div class="top">
+      <nuxt-link to="/" exact>← Back to Home</nuxt-link>
+    </div>
+    <p class="sub info">
       {{ capitalizeFirstLetter(category) }} ・ 
       <span v-if="location">{{ location }}, </span>
       <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
@@ -11,7 +13,6 @@
             { year: 'numeric', month: 'long', day: 'numeric' })
       }}
     </p>
-    <div class="dash"></div>
     <article class="markdown" v-html="markdownWithEasyImages"></article>
     <RelatedArticles :city="city" :current="slug" />
     <Footer/>
@@ -77,11 +78,8 @@ export default {
 
 <style lang="scss" scoped>
 
-.dash {
-  height: 4px;
-  width: $unit * 10;
-  background: $text;
-  margin-top: $unit * 8;
+.top {
+  margin-bottom: $unit * 8 ;
 }
 
 </style>

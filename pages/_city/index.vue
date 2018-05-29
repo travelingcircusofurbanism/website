@@ -1,12 +1,8 @@
 <template>
   <section class="content">
-    <h3 class="sectionhead">
-      {{ city }}
-    </h3>
-    <PostPreview
-      v-for="(post, key) in shownPosts"
-      :key="key"
-      v-bind="post"
+    <PostList
+      :posts="posts"
+      :title="city"
     />
     <Footer/>
   </section>
@@ -14,10 +10,10 @@
 
 <script>
 import Footer from '~/components/Footer'
-import PostPreview from '~/components/PostPreview'
+import PostList from '~/components/PostList'
 
 export default {
-  components: { Footer, PostPreview, },
+  components: { Footer, PostList, },
   asyncData ({ route, redirect }) {
     const city = route.path.replace('/', '')
     let posts = []
