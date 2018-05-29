@@ -13,7 +13,7 @@
       <p class="sub">
         {{ capitalizeFirstLetter(category) }} ・
         <span v-if="location">{{ location }}, </span>
-        <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・
+        <nuxt-link :to="'/' + city" class="sublink">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・
         {{
           new Date(date)
             .toLocaleDateString('en-US',
@@ -74,8 +74,12 @@ export default {
     }
   }
 
-  & a {
+  a {
     text-decoration: none;
+  }
+
+  .sublink {
+    text-decoration: underline;
   }
 }
 
@@ -83,11 +87,8 @@ h4 {
   color: $text !important;
   margin-top: 0;
   margin-bottom: 12px;
-
-  &:hover {
-    text-decoration: underline;
-  }
 }
+
 
 img {
   width: 100%;
