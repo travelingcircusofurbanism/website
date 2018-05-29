@@ -117,10 +117,12 @@ h4 {
 	color: white;
 	background: $text;
 	transition: .2s;
+	border: 2px solid transparent;
 	
 	&.secondary {
-		color: $text;
-		background: $offwhite;
+		color: darken($offwhite, 40%);
+		background: white;
+		border: 2px solid $offwhite;
 	}
 
 	&.full {
@@ -128,6 +130,7 @@ h4 {
 	}
 
 	&:hover {
+		border: 2px solid transparent;
 		color: white;
     background: $active;
   }
