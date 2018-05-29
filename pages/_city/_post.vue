@@ -3,7 +3,7 @@
     <nuxt-link to="/" exact>← Back to Home</nuxt-link></div>
     <p class="sub">
       {{ capitalizeFirstLetter(category) }} ・ 
-      {{ location }},  
+      <span v-if="location">{{ location }}, </span>
       <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
       {{ 
         new Date(date)

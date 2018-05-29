@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <h3 class="sectionhead">
-      Recent posts
+      {{ city }}
     </h3>
     <PostPreview
       v-for="(post, key) in shownPosts"
@@ -18,11 +18,17 @@ import PostPreview from '~/components/PostPreview'
 
 export default {
   components: { Footer, PostPreview, },
-  asyncData () {
-    const allPosts = require('~/static/posts.json')
+  asyncData ({ route, redirect }) {
+    const city = route.path.replace('/', '')
+    let posts = []
+    try {
+      posts = require(`~/static/${city}.json`)
+    } catch (e) { console.log(e) }
+    if (!posts || posts.length === 0)
+      return redirect('/')
     return {
-      posts: allPosts,
-      cityPosts: require(`~/static/${allPosts[0].city}.json`)
+      posts,
+      city,
     }
   },
   computed: {
@@ -31,7 +37,7 @@ export default {
   mounted () {
     this.$store.commit(
       'setMapMarkers',
-      this.cityPosts.map(p => ({
+      this.posts.map(p => ({
         position: p.mapPosition,
         locationName: p.location,
         title: p.title,

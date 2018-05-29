@@ -9,6 +9,7 @@
       return {
         map: null,
         currentMarkers: [],
+        ready: false
       }
     },
     computed: {
@@ -33,6 +34,7 @@
           features: []
         }
         for (let marker of Object.values(this.uniqueLocations)) {
+          if (!marker[0].locationName) continue
           markerData.features.push({
             type: 'Feature',
             geometry: {
@@ -76,7 +78,7 @@
     watch: {
 
       mapPosition (newPosition) {
-        if (newPosition) this.map.flyTo(newPosition)
+        this.tryUpdateMap(newPosition)
       },
 
       markerData (newMarkers) {
@@ -85,35 +87,37 @@
           marker.remove()
         })
         this.currentMarkers = []
-        this.markerData.features.forEach(marker => {
+        this.markerData.features
+          .sort((a, b) => a.geometry.coordinates[1] < b.geometry.coordinates[1])
+          .forEach(marker => {
 
-          const popup = new mapboxgl.Popup({
-            offset: 20,
-            closeButton: false,
-            location: marker.properties.locationName
+            const popup = new mapboxgl.Popup({
+              offset: 20,
+              closeButton: false,
+              location: marker.properties.locationName
+            })
+              .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
+
+            // create a HTML marker for each feature
+            const markerElement = document.createElement('div')
+            markerElement.className = 'marker'
+            const pin = document.createElement('div')
+            pin.className = 'pin'
+            const textBox = document.createElement('div')
+            textBox.className = 'text'
+            const text = document.createTextNode(marker.properties.locationName)
+            textBox.appendChild(text)
+            markerElement.appendChild(textBox)
+            markerElement.appendChild(pin)
+
+            // make a marker for each feature and add to the map
+            const newMarker = new mapboxgl.Marker(markerElement)
+              .setLngLat(marker.geometry.coordinates)
+              .setPopup(popup)
+              .addTo(this.map)
+
+            this.currentMarkers.push(newMarker)
           })
-            .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
-
-          // create a HTML marker for each feature
-          const markerElement = document.createElement('div')
-          markerElement.className = 'marker'
-          const pin = document.createElement('div')
-          pin.className = 'pin'
-          const textBox = document.createElement('div')
-          textBox.className = 'text'
-          const text = document.createTextNode(marker.properties.locationName)
-          textBox.appendChild(text)
-          markerElement.appendChild(textBox)
-          markerElement.appendChild(pin)
-
-          // make a marker for each feature and add to the map
-          const newMarker = new mapboxgl.Marker(markerElement)
-            .setLngLat(marker.geometry.coordinates)
-            .setPopup(popup)
-            .addTo(this.map)
-
-          this.currentMarkers.push(newMarker)
-        })
       },
 
       highlight (newHighlight, oldHighlight) {
@@ -126,17 +130,32 @@
       }
     },
     mounted () {
+      this.ready = true
       mapboxgl.accessToken = require('../mapboxApiKey.json').key
-
-      this.map = new mapboxgl.Map({
-        container: 'map',
-        style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
-        bearing: 0,
-        center: [139.905913, 35.712899],
-        zoom: 8.34,
-        speed: 1.0,
-        pitch: 0
-      })
+      this.tryUpdateMap(this.mapPosition)
+    },
+    methods: {
+      tryUpdateMap (newPosition) {
+        if (!this.ready)
+          return setTimeout(this.tryUpdateMap, 200)
+        const dest = newPosition ||
+          {
+            bearing: 0,
+            center: [180, 0],
+            zoom: 1.00,
+            pitch: 0
+          }
+        if (!this.map) {
+          this.map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
+            ...dest
+          })
+          this.map.once('styledata', () => console.log('LOADED'))
+        }
+        else 
+          this.map.flyTo(dest)
+      }
     }
   }
 

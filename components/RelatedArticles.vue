@@ -1,5 +1,5 @@
 <template>
-  <div class="relatedposts">
+  <div class="relatedposts" v-if="postsToDisplay.length > 0">
     <h4 class="sectionhead">Related posts from {{ city.substring(0,1).toUpperCase() + city.substring(1) }}</h4>
     <div class="postgrid">
       <nuxt-link

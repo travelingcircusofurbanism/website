@@ -7,8 +7,9 @@
   "scripts": {
     "buildlisting": "node buildlisting.js",
     "resizeimages": "node resizeimages.js",
-    "dev": "npm run resizeimages && npm run buildlisting && nuxt",
-    "generate": "npm run resizeimages && npm run buildlisting && nuxt generate"
+    "prep": "npm run resizeimages && npm run buildlisting",
+    "dev": "npm run prep && nuxt",
+    "generate": "npm run prep && nuxt generate"
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.1",

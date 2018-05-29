@@ -21,7 +21,7 @@
         }}
 
       </p>
-      <div>{{ description + '...' }}</div>
+      <div>{{ description }}</div>
     </div>
   </div>
 </template>
@@ -45,7 +45,7 @@ export default {
       return s.substring(0,1).toUpperCase() + s.substring(1)
     },
     mouseOver () {
-      this.$store.commit('setHighlight', this.location)
+      this.$store.commit('setHighlight', this.location || this.city)
     },
     mouseOut () {
       this.$store.commit('setHighlight')

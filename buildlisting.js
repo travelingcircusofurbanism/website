@@ -40,7 +40,7 @@ function getDataForPost(postDir, city, slug) {
 			.substring(postContent.indexOf('#') + 1)
 
 		// create nice truncated description
-		const description = title
+		let description = title
 			.substring(title.indexOf('\n')) // remove title
 			.replace(/!\[.*\]\(.*\)/g, '') // remove markdown images
 			.replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
@@ -48,7 +48,21 @@ function getDataForPost(postDir, city, slug) {
 			.replace('>', '') // remove > quotes
 			.replace('*', '') // remove * bolds
 			.replace('\n', ' ') // remove line breaks
-			.substring(0, 200) // cut it to 200 chars
+		if (description.length > 200) {
+			const afterLimit = description.substring(200)
+			let min = 0
+			const nextSpace = [
+				afterLimit.indexOf(' '),
+				afterLimit.indexOf(','),
+				afterLimit.indexOf('.'),
+				afterLimit.indexOf('!'),
+				afterLimit.indexOf('?'),
+				afterLimit.indexOf(';'),
+				afterLimit.indexOf(':'),
+				afterLimit.indexOf('-'),
+			].reduce((min, e) => (e < min && e >= 0) ? e : min) + 200
+			description = description.substring(0, nextSpace) + '...'
+		}
 
 		title = title.substring(0, title.indexOf('\n'))
 
@@ -57,7 +71,7 @@ function getDataForPost(postDir, city, slug) {
 		if (!image)
 			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)[1]
 		if (image.substring(0, 4) !== 'http')
-			image = `./posts/${city}/${slug}/${image.replace('/', '')}`
+			image = `/posts/${city}/${slug}/${image.replace('/', '')}`
 
 		const data = {
 			slug,
