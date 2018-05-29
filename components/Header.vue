@@ -3,6 +3,7 @@
     <nuxt-link exact to="/" class="logo">
       <h1>Traveling Circus of Urbanism</h1>
     </nuxt-link>
+    <br />
     <div class="sublinks">
       <nuxt-link to="/about">About</nuxt-link>
       <nuxt-link to="/contact">Author</nuxt-link>
@@ -23,6 +24,7 @@
     background: $text;
     text-decoration: none;
     transition: .2s;
+    pointer-events: auto;
   }
 
   a:hover {
@@ -36,9 +38,11 @@
     left: $header-offset;
     z-index: 10;
     height: initial;
+    pointer-events: none;
   }
 
   .logo {
+    display: inline-block;
     text-transform: uppercase;
     font-family: 'Unica One', 'Raleway', sans-serif;
     padding: $unit * 4 $unit * 4;
