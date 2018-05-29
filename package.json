@@ -9,7 +9,8 @@
     "resizeimages": "node resizeimages.js",
     "prep": "npm run resizeimages && npm run buildlisting",
     "dev": "npm run prep && nuxt",
-    "generate": "npm run prep && nuxt generate"
+    "cname": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
+    "generate": "npm run prep && nuxt generate && npm run cname"
   },
   "dependencies": {
     "@nuxtjs/markdownit": "^1.2.1",

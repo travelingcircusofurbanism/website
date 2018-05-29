@@ -9,9 +9,8 @@ Last year, I organized an “Urbanist Meetup Tokyo”, and this post aims to dis
 
 Cities are formed/imagined/lived and used by people from various backgrounds and with interests. The increasingly popular Japanese concept of “machi-zukuri” (community/neighborhood planning — check out this article[ here](https://www.tandfonline.com/doi/abs/10.1080/0955580022000008745)), for instance, means a departure from the traditional form of top-down planning and covers variety of fields, such as community development, renovation, regional branding, town development, real estate, geography, architecture, and more. Yes, there are tons of professions that are closely related to cities, not only architects and planners — so what is the meaning of connecting all these activities and professions on the horizontal axis?
 
-![](https://cdn-images-1.medium.com/max/2000/1*ZAcYtkmVfFvpKeTMaOXRag.jpeg)
-
 ![](https://cdn-images-1.medium.com/max/2000/1*KhR9gu4HI_5x8PeRTYHBdw.jpeg)
+![](https://cdn-images-1.medium.com/max/2000/1*ZAcYtkmVfFvpKeTMaOXRag.jpeg)
 
 2017 December in Tokyo; approximately 150 urbanists showed up to the meetup. The meetup was originally initiated by a few young architects from the renovation industry, who have been gathering and holding a party every year for the past 4 years in order to extend the narrow frame of the industry.
 
