@@ -1,4 +1,8 @@
+const fs = require('fs')
+const cities = fs.readdirSync('./static/posts')
+console.log(cities)
 const posts = require('./static/posts.json')
+
 module.exports = {
   head: {
     title: 'Traveling Circus of Urbanism',
@@ -35,7 +39,8 @@ module.exports = {
   generate: {
     dir: 'docs',
     routes: () => [
-      ...posts.map(p => `/${p.slug}`)
+      ...cities.map(c => `/${c}`),
+      ...posts.map(p => `/${p.city}/${p.slug}`),
     ]
   }
 }

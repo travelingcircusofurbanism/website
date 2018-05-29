@@ -3,6 +3,7 @@
 
 In 2017 December, I organized a workshop to encourage people to make their own map based on their own subjective experiences of a city. This article explains the philosophy behind this workshop as well as why and how much map making matters.
 
+![](https://cdn-images-1.medium.com/max/5248/1*aHOJjlyLmGAcIGlTtX3JIA.jpeg)
 ![](https://cdn-images-1.medium.com/max/2048/1*61dxZGg-UaOyCMia1AIjUw.png)
 
 ## The idea started from this beautiful map

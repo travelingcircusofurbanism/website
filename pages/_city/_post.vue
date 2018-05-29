@@ -60,7 +60,7 @@ export default {
   },
   mounted () {
     this.$store.commit('setMapMarkers', [{
-      position: this.mapPosition,
+      position: { ...this.mapPosition },
       locationName: this.location,
       title: this.title,
       url: this.path

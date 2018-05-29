@@ -1,7 +1,6 @@
 
 # What I learned at “Renovation School” in Tokyo
-
-
+![](/Renovationschool01.jpg)
 
 Have you ever heard of the “Renovation School” in Japan?
 
