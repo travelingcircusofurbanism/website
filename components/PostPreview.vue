@@ -11,12 +11,12 @@
         <h4>{{ title }}</h4>
       </nuxt-link>
       <p class="sub">
-        {{ capitalizeFirstLetter(category) }} ・ 
-        {{ location }},  
-        <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
-        {{ 
+        {{ capitalizeFirstLetter(category) }} ・
+        <span v-if="location">{{ location }}, </span>
+        <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・
+        {{
           new Date(date)
-            .toLocaleDateString('en-US', 
+            .toLocaleDateString('en-US',
               { year: 'numeric', month: 'long', day: 'numeric' })
         }}
 
@@ -65,7 +65,7 @@ export default {
 
   @include width (mid) {
     grid-template-columns: 1fr;
-    
+
     img {
       max-height: $unit * 50;
       display: block;

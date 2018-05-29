@@ -1,5 +1,5 @@
 module.exports = {
-	date: '5/8/1991',
+	date: '9/17/2017',
 	location: '100Banch',
 	category: 'essay',
 	mapPosition: {

@@ -24,11 +24,11 @@ export default {
     }
   },
   computed: {
-    shownPosts () { return this.posts.slice(0, 4) },
+    shownPosts () { return this.posts/*.slice(0, 4)*/ },
   },
   mounted () {
     this.$store.commit(
-      'setMapMarkers', 
+      'setMapMarkers',
       this.posts.map(p => ({
         position: p.mapPosition,
         locationName: p.location,

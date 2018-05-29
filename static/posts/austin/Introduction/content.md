@@ -3,6 +3,8 @@
 
 ### Things to do, places to go
 
+![](Austin01.jpeg)
+
 1. Austin’s “new urbanist enclave”, [Mueller](http://www.muelleraustin.com/)
 Read: [How One City Turned Industrial Zones Into Green Enclaves](https://www.nationalgeographic.com/environment/urban-expeditions/austin/austin-green-buildings-fight-urban-sprawl/)
 

@@ -38,7 +38,7 @@ function getDataForPost(postDir, city, slug) {
 
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
-		
+
 		// create nice truncated description
 		const description = title
 			.substring(title.indexOf('\n')) // remove title
@@ -54,23 +54,19 @@ function getDataForPost(postDir, city, slug) {
 
 		// create nice usable image path
 		let image = postData.image
-		if (!image) {
-			image = postContent
-				.substring(postContent.indexOf('!['))
-			image = /!\[.*\]\((.*\.jpe?g|png|gif|webm|tiff)\)/g.exec(image)[1] || ''
-				.substring(image.indexOf('(') + 1, image.indexOf(')'))
-				.replace('/', '')
-		}
-		if (image.substring(0, 4) !== 'http') image = `./posts/${city}/${slug}/${image.replace('/', '')}`
+		if (!image)
+			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)[1]
+		if (image.substring(0, 4) !== 'http')
+			image = `./posts/${city}/${slug}/${image.replace('/', '')}`
 
 		const data = {
 			slug,
 			city,
 			title,
 			description,
-			image,
 			url: `/${city}/${slug}`,
 			...postData,
+			image,
 		}
 		return data
 	} catch (e) { console.log(e) }
