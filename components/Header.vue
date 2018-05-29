@@ -52,6 +52,7 @@
   }
 
   .sublinks {
+    display: inline-block;
     margin-top: $unit;
     font-weight: 400;
 

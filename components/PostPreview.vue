@@ -4,10 +4,13 @@
     v-on="{mouseover: mouseOver, mouseout: mouseOut}"
   >
     <nuxt-link :to="url">
-      <img :src="image" />
+      <div
+        :style="{'background-image': `url('${image}')`}"
+        class="previewimage"
+      ></div>
     </nuxt-link>
     <div>
-      <nuxt-link :to="url">
+      <nuxt-link :to="url" class="titlelink">
         <h4>{{ title }}</h4>
       </nuxt-link>
       <p class="sub">
@@ -21,7 +24,10 @@
         }}
 
       </p>
-      <div>{{ description }}</div>
+      <div>
+        {{ description }}
+        <nuxt-link :to="url">Keep Reading →</nuxt-link>
+      </div>
     </div>
   </div>
 </template>
@@ -63,23 +69,24 @@ export default {
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;
 
+  .previewimage {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+
   @include width (mid) {
     grid-template-columns: 1fr;
 
-    img {
-      max-height: $unit * 50;
-      display: block;
-      width: auto;
-      margin: 0 auto;
+    .previewimage {
+      height: $unit * 50;
     }
   }
 
-  a {
+  .titlelink {
     text-decoration: none;
-  }
-
-  .sublink {
-    text-decoration: underline;
   }
 }
 
@@ -87,11 +94,6 @@ h4 {
   color: $text !important;
   margin-top: 0;
   margin-bottom: 12px;
-}
-
-
-img {
-  width: 100%;
 }
 
 </style>

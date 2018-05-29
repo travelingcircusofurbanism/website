@@ -1,6 +1,5 @@
 const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
-console.log(cities)
 const posts = require('./static/posts.json')
 
 module.exports = {
