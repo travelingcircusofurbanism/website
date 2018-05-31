@@ -47,6 +47,7 @@
 <script>
 import Footer from '~/components/Footer'
 export default {
+  head() { return { title: 'Author' } },
   components: { Footer, }
 }
 </script>

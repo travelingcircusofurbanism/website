@@ -26,6 +26,7 @@ import Footer from '~/components/Footer'
 import RelatedArticles from '~/components/RelatedArticles'
 
 export default {
+  head() { return { title: this.capitalizeFirstLetter(this.title) } },
   components: { Footer, RelatedArticles },
   asyncData ({ route, redirect, env }) {
     const slug = route.path.replace(/\/$/g, '')
@@ -40,11 +41,13 @@ export default {
       console.log(path)
       return redirect('/')
     }
+    const title = /<h1>(.*)<\/h1>/g.exec(md)[1]
     return {
       path,
       slug,
       city,
       md,
+      title,
       ...data,
     }
   },

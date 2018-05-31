@@ -18,6 +18,7 @@ It covers a wide range of topics such as urban design, inclusive urbanism, commu
 <script>
 import Footer from '~/components/Footer'
 export default {
+  head() { return { title: 'About' } },
   components: { Footer, }
 }
 </script>

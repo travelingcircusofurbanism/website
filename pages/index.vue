@@ -15,6 +15,7 @@ import PostList from '~/components/PostList'
 import CitySelector from '~/components/CitySelector'
 
 export default {
+  head() { return { title: 'Home' } },
   components: { Footer, PostList, CitySelector, },
   asyncData () {
     const allPosts = require('~/static/posts.json')
