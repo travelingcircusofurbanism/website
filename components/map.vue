@@ -94,7 +94,7 @@
             const popup = new mapboxgl.Popup({
               offset: 20,
               closeButton: false,
-              location: marker.properties.locationName
+              location: marker.properties.locationName,
             })
               // .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
 
@@ -109,6 +109,7 @@
             textBox.appendChild(text)
             markerElement.appendChild(textBox)
             markerElement.appendChild(pin)
+            markerElement.addEventListener('click', e => this.routeTo(marker.properties.locationName))
 
             // make a marker for each feature and add to the map
             const newMarker = new mapboxgl.Marker(markerElement)
@@ -151,10 +152,13 @@
             style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
             ...dest
           })
-          this.map.once('styledata', () => console.log('LOADED'))
+          // this.map.once('styledata', () => console.log('LOADED'))
         }
         else 
           this.map.flyTo(dest)
+      },
+      routeTo (location) {
+        this.$router.push('/at/' + location)
       }
     }
   }

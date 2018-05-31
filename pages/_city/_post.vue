@@ -5,7 +5,9 @@
     </div>
     <p class="sub info">
       {{ capitalizeFirstLetter(category) }} ・ 
-      <span v-if="location">{{ location }}, </span>
+      <span v-if="location">
+        <nuxt-link :to="'/at/' + location" class="sublink">{{ location }}</nuxt-link>,
+      </span>
       <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
       {{ 
         new Date(date)

@@ -2,7 +2,7 @@
   <section class="content">
     <PostList
       :posts="posts"
-      :title="city"
+      :title="location"
     />
     <Footer/>
   </section>
@@ -15,16 +15,21 @@ import PostList from '~/components/PostList'
 export default {
   components: { Footer, PostList, },
   asyncData ({ route, redirect }) {
-    const city = route.path.replace('/', '')
+    const location = route.path
+      .replace('/at/', '')
+      .replace('/', '')
+      .toLowerCase()
     let posts = []
     try {
-      posts = require(`~/static/${city}.json`)
+      posts = require(`~/static/posts.json`)
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')
     return {
-      posts,
-      city,
+      posts: posts.filter(p => {
+          return p.location.toLowerCase() === location
+        }),
+      location,
     }
   },
   computed: {

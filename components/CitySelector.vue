@@ -1,17 +1,24 @@
 <template>
-  <div>
-    <h3 class="sectionhead">Cities</h3>
-    <div class="selector">
+  <div class="selector">
+    <h3 class="sectionhead">Places</h3>
+    <div class="buttonlist">
       <nuxt-link 
         class="button secondary"
         :to="`/${city}`"
         exact
-        v-for="(city, key) in orderedCities"
+        v-for="(city, key) in citiesToShow"
         :key="key"
       >
         {{ capitalizeFirstLetter(city) }}
       </nuxt-link>
-      <div class="sub">And more to come...</div>
+      <div class="sub" v-if="orderedCities.length < cutoff">And more to come...</div>
+    </div>
+    <div
+      class="button secondary full"
+      v-if="orderedCities.length > cutoff && !showAll"
+      @click="showAll = true"
+    >
+      Show All Places
     </div>
   </div>
 </template>
@@ -26,6 +33,12 @@ export default {
       type: String
     }
   },
+  data () {
+    return {
+      showAll: false,
+      cutoff: 10,
+    }
+  },
   computed: {
     orderedCities () {
       const cityFrequency = {}
@@ -36,6 +49,9 @@ export default {
       })
       return Object.keys(cityFrequency)
         .sort((a, b) => cityFrequency[a] < cityFrequency[b])
+    },
+    citiesToShow () {
+      return this.showAll ? this.orderedCities : this.orderedCities.slice(0, this.cutoff)
     }
   },
   methods: {
@@ -50,11 +66,14 @@ export default {
 <style scoped lang="scss">
 
   .selector {
+    margin-bottom: $unit * 10;
+  }
+
+  .buttonlist {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    margin-bottom: $unit * 10;
 
     * {
       flex-shrink: 0;
