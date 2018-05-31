@@ -1,6 +1,10 @@
 const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
 const posts = require('./static/posts.json')
+const locations = Array.from(new Set(
+  posts.map(p => p.location)
+    .filter(p => p)
+))
 
 module.exports = {
   head: {
@@ -40,6 +44,7 @@ module.exports = {
     routes: () => [
       ...cities.map(c => `/${c}`),
       ...posts.map(p => `/${p.city}/${p.slug}`),
+      ...locations.map(l => `/at/${l}`),
     ]
   }
 }
