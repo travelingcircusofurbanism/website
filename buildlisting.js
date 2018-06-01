@@ -44,6 +44,7 @@ function getDataForPost(postDir, city, slug) {
 			.substring(title.indexOf('\n')) // remove title
 			.replace(/!\[.*\]\(.*\)/g, '') // remove markdown images
 			.replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
+			.replace(/<.*>.*<\/.*>/g, '') // remove html tags
 			.replace(/[\n\r]#+/g, '') // remove #, ##, ###, #### headers
 			.replace('>', '') // remove > quotes
 			.replace('*', '') // remove * bolds
@@ -68,8 +69,14 @@ function getDataForPost(postDir, city, slug) {
 
 		// create nice usable image path
 		let image = postData.image
-		if (!image)
-			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)[1]
+		if (!image) {
+			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
+			if (!image) {
+				console.log('No image found for', city + '/' + slug, 'skipping...')
+				image = ''
+			}
+			else image = image[1]
+		}
 		if (image.substring(0, 4) !== 'http')
 			image = `/posts/${city}/${slug}/${image.replace('/', '')}`
 
