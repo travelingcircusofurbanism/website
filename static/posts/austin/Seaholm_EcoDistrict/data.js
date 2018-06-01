@@ -1,6 +1,6 @@
 module.exports = {
-	date: '5/28/2018',
-	location: 'Austin Creative Reuse',
+	date: '5/31/2018',
+	location: 'Seaholm EcoDistrict',
 	category: 'place',
 	mapPosition: {
 		bearing: 0,

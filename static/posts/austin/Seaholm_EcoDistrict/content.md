@@ -1,21 +1,17 @@
 
-# Austin Creative Reuse
+# Seaholm EcoDistrict - Austin's sustainable urban renewal
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bnr5nmwKq-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+Seaholm EcoDistrict is an 85-acre urban development on the edge of downtown - it once used to be the city-owned power plant and a water treatment facility. After the power plant was decommissioned in 1989, a new public-private partnership was formed to renew this part of downtown by using green, sustainable design.
 
-I found this little place called [Austin Create Reuse](https://austincreativereuse.org/), which is run by a nonprofit organization that collects, sells, and distributes donated articles. They focus on a community building for smarter purchase and consumption decisions.
+Seaholm EcoDistrict looks quite relaxed and surprisingly walkable (even within the heat!), with a vibrant hub of residential, office, and community gathering spaces.
 
-They've got everything - from old playing cards to used textiles - and you can get almost everything under 1$. It's not the affordable price that makes this place special and fun though - what's fun for me is the fact that I could see the random 'materials' and texture of the city in this place.
+It is quite interesting to see an environmentally Considerate project like Seaholm EcoDistrict in Texas, where car ownership and private property are close to a religion.
 
-All the used objects that are collected by the locals tell a lot about the previous owners, their tastes and trends of that time. It is also fun to see how these objects are creatively reused by school children and artists etc.
+You can easily access there from the new central library (which also worth a visit) if you want to see how Austin's sustainable green urban renewal looks like. You can chill at one of their public chairs, or it's ok to charge your phone for free at one of the solar-panel installed benches.  
 
-I highly recommend a visit!
-
-![](CreativeReuse01)
-![](CreativeReuse02)
-![](CreativeReuse03)
-![](CreativeReuse04)
-![](CreativeReuse05)
-![](CreativeReuse06)
-![](CreativeReuse07)
-![](CreativeReuse08)
+![](Seaholm01.jpg)
+![](Seaholm02.jpg)
+![](Seaholm03.jpg)
+![](Seaholm04.jpg)
+![](Seaholm05.jpg)
+![](Seaholm06.jpg)
