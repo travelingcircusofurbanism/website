@@ -1,5 +1,4 @@
 module.exports = {
-	draft: true,
 	date: '5/28/2018',
 	location: 'Mueller',
 	category: 'place',

@@ -1,4 +1,16 @@
 const fs = require('fs')
+
+const resetColor = '\x1b[0m'
+const terminalColors = {
+	red: '\x1b[31m',
+	green: '\x1b[32m',
+	yellow: '\x1b[33m',
+	blue: '\x1b[34m',
+	magenta: '\x1b[35m',
+	cyan: '\x1b[36m',
+	white: '\x1b[37m',
+}
+
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
 }
@@ -27,7 +39,7 @@ const allPostData = fs.readdirSync(postDir)
 	.sort((a, b) => new Date(a.date) < new Date(b.date))
 
 fs.writeFileSync(postFile, JSON.stringify(allPostData), 'utf8')
-console.log('Built page listing.\n')
+console.log(terminalColors.green + 'Built page listing.\n' + resetColor)
 
 
 function getDataForPost(postDir, city, slug) {

@@ -4,6 +4,17 @@ const masterPostDir = '../static/posts/'
 
 const defaultHeight = 500
 
+const resetColor = '\x1b[0m'
+const terminalColors = {
+	red: '\x1b[31m',
+	green: '\x1b[32m',
+	yellow: '\x1b[33m',
+	blue: '\x1b[34m',
+	magenta: '\x1b[35m',
+	cyan: '\x1b[36m',
+	white: '\x1b[37m',
+}
+
 // read all city directories in the master post directory ('tokyo', 'austin', etc)
 fs.readdirSync(masterPostDir)
 	.filter(cityDir => cityDir.indexOf('.') === -1)
@@ -41,7 +52,7 @@ fs.readdirSync(masterPostDir)
 										.resize(null, defaultHeight)
 										.toFile(outputPath + file)
 										.then(function () {
-											console.log('Scaled and saved', outputPath + file)
+											console.log(terminalColors.cyan + 'Scaled and saved' + resetColor, outputPath + file)
 										})
 								}
 							}

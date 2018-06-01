@@ -1,5 +1,6 @@
 const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
+  .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/posts.json')
 const locations = Array.from(new Set(
   posts.map(p => p.location)
