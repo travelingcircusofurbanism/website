@@ -157,6 +157,7 @@ h4 {
 		top: $unit * -4;
 		padding-bottom: $unit * 2;
 		transform: translateX(-50%);
+		white-space: nowrap;
 		color: white;
 		$shadow: rgba($text, .3);
 		text-shadow: 
