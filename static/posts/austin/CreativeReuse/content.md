@@ -11,11 +11,11 @@ All the used objects that are collected by the locals tell a lot about the previ
 
 I highly recommend a visit!
 
-![](CreativeReuse01)
-![](CreativeReuse02)
-![](CreativeReuse03)
-![](CreativeReuse04)
-![](CreativeReuse05)
-![](CreativeReuse06)
-![](CreativeReuse07)
-![](CreativeReuse08)
+![](CreativeReuse01.jpg)
+![](CreativeReuse02.jpg)
+![](CreativeReuse03.jpg)
+![](CreativeReuse04.jpg)
+![](CreativeReuse05.jpg)
+![](CreativeReuse06.jpg)
+![](CreativeReuse07.jpg)
+![](CreativeReuse08.jpg)
