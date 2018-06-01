@@ -5,9 +5,10 @@
   "author": "Mariko",
   "private": true,
   "scripts": {
-    "buildlisting": "node buildlisting.js",
-    "resizeimages": "node resizeimages.js",
-    "prep": "npm run resizeimages && npm run buildlisting",
+    "buildlisting": "cd ./scripts/ && node buildlisting.js && cd ../",
+    "resizeimages": "cd ./scripts/ && node resizeimages.js && cd ../",
+    "drafts": "cd ./scripts/ && node listdrafts.js && cd ../",
+    "prep": "npm run resizeimages && npm run buildlisting && npm run drafts",
     "dev": "npm run prep && nuxt",
     "cname": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
     "generate": "npm run prep && nuxt generate && npm run cname"

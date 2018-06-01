@@ -2,14 +2,13 @@ const fs = require('fs')
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
 }
-const slugify = require('./assets/slugify').slugify
-const postDir = './static/posts'
-const postFile = './static/posts.json'
+const postDir = '../static/posts'
+const postFile = '../static/posts.json'
 const allPostData = fs.readdirSync(postDir)
 	.filter(pathName => pathName.indexOf('.') === -1)
 	.map(city => {
 		const cityDir = postDir + '/' + city
-		const cityFile = './static/' + city + '.json'
+		const cityFile = '../static/' + city + '.json'
 		const cityPostData = fs.readdirSync(cityDir)
 			.filter(pathName => pathName.indexOf('.') === -1)
 			.map(post => {
@@ -35,6 +34,8 @@ function getDataForPost(postDir, city, slug) {
 	try {
 		const postData = require(`${postDir}/${city}/${slug}/data.js`)
 		const postContent = require(`${postDir}/${city}/${slug}/content.md`)
+
+		if (postData.draft) return
 
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
@@ -72,7 +73,7 @@ function getDataForPost(postDir, city, slug) {
 		if (!image) {
 			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
 			if (!image) {
-				console.log('No image found for', city + '/' + slug, 'skipping...')
+				// console.log('No image found for', city + '/' + slug + ', skipping...')
 				image = ''
 			}
 			else image = image[1]

@@ -1,6 +1,6 @@
 const fs = require('fs')
 const sharp = require('sharp')
-const masterPostDir = './static/posts/'
+const masterPostDir = '../static/posts/'
 
 const defaultHeight = 500
 
