@@ -7,9 +7,11 @@
 1. Austin’s “new urbanist enclave”, [Mueller](http://www.muelleraustin.com/)
 Read: [How One City Turned Industrial Zones Into Green Enclaves](https://www.nationalgeographic.com/environment/urban-expeditions/austin/austin-green-buildings-fight-urban-sprawl/)
 
-1. Fostering conservation and reuse through creativity, education and community building — [Austin Creative Reuse](https://austincreativereuse.org/)
+1. Fostering conservation and reuse through creativity, education and community building. There are also some volunteer opportunities available for all! — [Austin Creative Reuse](https://austincreativereuse.org/)
 
 1. creative hub for DIY crafting, workshops, and events. — [CRAFT](http://madeatcraft.com/)
+
+1. Hack the commute by using bicycle in this very car-centric city. - [AustinBcycle](https://austinbcycle.com/)
 
 ### Read
 
@@ -22,6 +24,8 @@ Read: [How One City Turned Industrial Zones Into Green Enclaves](https://www.nat
 ・[With Porches And Parks, A Texas Community Aims For Urban Utopia](https://www.npr.org/2015/02/12/385474414/with-porches-and-parks-a-texas-community-aims-for-urban-utopia)
 ・[A Texas Community Takes On Racial Tensions Once Hidden Under The Surface](https://www.npr.org/2015/02/13/385495327/a-community-takes-on-racial-tensions-once-hidden-under-the-surface)
 
+1. [Great book recommendation](https://austin.bibliocommons.com/list/show/128108121/1131292877) to know more about the history and identity of Austin by The librarians at Austin Public.
+
 ### Organization
 
 1. [Open Austin](https://www.open-austin.org/about/)
@@ -31,3 +35,7 @@ Read: [How One City Turned Industrial Zones Into Green Enclaves](https://www.nat
 1. The voice for our region’s architecture community — [AIA Austin](https://www.aiaaustin.org/about)
 
 1. A partnership of downtown property owners, individuals, and businesses devoted to preserving and enhancing the value and vitality of downtown Austin. — [The Downtown Austin Alliance](http://www.downtownaustin.com/daa/about-us)
+
+1. Central Texas’ first and only Transportation Management Association. - [Movability](http://movabilityaustin.org/)
+
+1. [Austin Permaculture Grid](https://www.facebook.com/AustinPermacultureGuild/)
