@@ -44,7 +44,7 @@ export default {
   mounted () {
     if (!this.city) return
     try {
-      this.allCityPosts = require(`~/static/${ this.city }.json`)
+      this.allCityPosts = require(`~/static/generated/${ this.city }.json`)
     } catch (e) { console.log(e) }
   }
 }

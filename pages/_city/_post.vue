@@ -58,7 +58,7 @@ export default {
       const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
       let matches = imageElementRegex.exec(baseMD)
       while (matches != null) {
-        newMD = newMD.replace(matches[0], `<img src="${ this.path }${ matches[1] }.${ matches[2] }"`)
+        newMD = newMD.replace(matches[0], `<img src="${ this.path }resized/${ matches[1] }.${ matches[2] }"`)
         matches = imageElementRegex.exec(baseMD)
       }
       return newMD

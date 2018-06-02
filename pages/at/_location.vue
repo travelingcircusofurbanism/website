@@ -22,14 +22,15 @@ export default {
       .toLowerCase()
     let posts = []
     try {
-      posts = require(`~/static/posts.json`)
+      posts = require(`~/static/generated/posts.json`)
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')
+    posts = posts.filter(p => p.location.toLowerCase() === location)
+    if (posts.length === 1)
+      return redirect(posts[0].url)
     return {
-      posts: posts.filter(p => {
-          return p.location.toLowerCase() === location
-        }),
+      posts,
       location,
     }
   },

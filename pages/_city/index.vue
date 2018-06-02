@@ -19,7 +19,7 @@ export default {
     const city = route.path.replace('/', '')
     let posts = []
     try {
-      posts = require(`~/static/${city}.json`)
+      posts = require(`~/static/generated/${city}.json`)
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')
