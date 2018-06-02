@@ -16,7 +16,10 @@ export default {
   head() { return { title: this.capitalizeFirstLetter(this.city) } },
   components: { Footer, PostList, },
   asyncData ({ route, redirect }) {
-    const city = route.path.replace('/', '')
+    const city = route.path
+      .replace('/', '')
+      .replace('_', ' ')
+      .replace('%20', ' ')
     let posts = []
     try {
       posts = require(`~/static/generated/${city}.json`)
@@ -34,12 +37,18 @@ export default {
   mounted () {
     this.$store.commit(
       'setMapMarkers',
-      this.posts.map(p => ({
-        position: p.mapPosition,
-        locationName: p.location,
-        title: p.title,
-        url: p.url
-      }))
+      this.posts.map(p => (Array.isArray(p.mapPosition)) ?
+        p.mapPosition.map(singlePosition => ({
+          position: { ...singlePosition },
+          locationName: singlePosition.location
+        })) :
+        [{
+          position: { ...p.mapPosition },
+          locationName: p.mapPosition.location
+        }]
+      ).reduce((accumulator, currentValue) => 
+        accumulator.concat(currentValue)
+      )
     )
   },
   methods: {

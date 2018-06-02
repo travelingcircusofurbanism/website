@@ -1,6 +1,5 @@
 module.exports = {
 	date: '5/28/2018',
-	location: '',
 	category: 'place',
 	mapPosition: {
 		bearing: 0,

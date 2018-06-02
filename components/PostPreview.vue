@@ -15,8 +15,8 @@
       </nuxt-link>
       <p class="sub">
         {{ capitalizeFirstLetter(category) }} ・
-        <span v-if="location">
-          <nuxt-link :to="'/at/' + location" class="sublink">{{ location }}</nuxt-link>,
+        <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
+          <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
         </span>
         <nuxt-link :to="'/' + city" class="sublink">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・
         {{
@@ -38,7 +38,7 @@
 <script>
 
 export default {
-  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'location' ],
+  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition' ],
   data () {
     return {
     }
@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
 
 .post-preview {
-  padding-bottom: $unit * 10;
+  margin-bottom: $unit * 10;
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;

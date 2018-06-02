@@ -2,10 +2,15 @@ const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
   .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/generated/posts.json')
-const locations = Array.from(new Set(
-  posts.map(p => p.location)
-    .filter(p => p)
-))
+let locations = posts.map(p => {
+    if (Array.isArray(p.mapPosition))
+      return p.mapPosition.map(pos => pos.location)
+        .filter(l => l)
+    if (p.mapPosition && p.mapPosition.location)
+      return [p.mapPosition.location]
+  })
+  .filter(p => p)
+locations = Array.from(new Set([].concat.apply([], locations)))
 
 module.exports = {
   head: {

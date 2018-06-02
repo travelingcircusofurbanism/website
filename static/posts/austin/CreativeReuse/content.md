@@ -3,7 +3,7 @@
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bnr5nmwKq-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-I found this little place called [Austin Create Reuse](https://austincreativereuse.org/), which is run by a nonprofit organization that collects, sells, and distributes donated articles. They focus on a community building for smarter purchase and consumption decisions.
+I found this little place called [Austin Creative Reuse](https://austincreativereuse.org/), which is run by a nonprofit organization that collects, sells, and distributes donated articles. They focus on a community building for smarter purchase and consumption decisions.
 
 They've got everything - from old playing cards to used textiles - and you can get almost everything under 1$. It's not the affordable price that makes this place special and fun though - what's fun for me is the fact that I could see the random 'materials' and texture of the city in this place.
 

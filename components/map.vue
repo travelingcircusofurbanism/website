@@ -96,7 +96,6 @@
               closeButton: false,
               location: marker.properties.locationName,
             })
-              // .setHTML(`<div>${marker.properties.locationName}</div><a onClick="goTo('${marker.properties.url}')">${marker.properties.title}</a>`)
 
             // create a HTML marker for each feature
             const markerElement = document.createElement('div')
@@ -158,7 +157,7 @@
           this.map.flyTo(dest)
       },
       routeTo (location) {
-        this.$router.push('/at/' + location)
+        this.$router.push('/at/' + location.replace(' ', '%20'))
       }
     }
   }

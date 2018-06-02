@@ -1,13 +1,13 @@
 <template>
   <section class="content">
     <div class="top">
-      <nuxt-link to="/" exact>← Back to Home</nuxt-link>
+      <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
     </div>
     <p class="sub info">
       {{ capitalizeFirstLetter(category) }} ・ 
-      <span v-if="location">
-        <nuxt-link :to="'/at/' + location" class="sublink">{{ location }}</nuxt-link>,
-      </span>
+      <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
+          <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
+        </span>
       <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
       {{ 
         new Date(date)
@@ -29,9 +29,12 @@ export default {
   head() { return { title: this.capitalizeFirstLetter(this.title) } },
   components: { Footer, RelatedArticles },
   asyncData ({ route, redirect, env }) {
-    const slug = route.path.replace(/\/$/g, '')
+    const pathWithSpaces = route.path
+      .replace('_', ' ')
+      .replace('%20', ' ')
+    const slug = pathWithSpaces.replace(/\/$/g, '')
     const path = '/posts' + slug + '/'
-    let city = route.path.substring(1)
+    let city = pathWithSpaces.substring(1)
     city = city.substring(0, city.indexOf('/'))
     let data, md
     try {
@@ -65,12 +68,17 @@ export default {
     }
   },
   mounted () {
-    this.$store.commit('setMapMarkers', [{
-      position: { ...this.mapPosition },
-      locationName: this.location,
-      title: this.title,
-      url: this.path
-    }])
+    const markers = (Array.isArray(this.mapPosition)) ?
+      this.mapPosition.map(singlePosition => ({
+        position: { ...singlePosition },
+        locationName: singlePosition.location
+      })) :
+      [{
+        position: { ...this.mapPosition },
+        locationName: this.mapPosition.location
+      }]
+
+    this.$store.commit('setMapMarkers', markers)
   },
   methods: {
     capitalizeFirstLetter (s) {
@@ -85,6 +93,7 @@ export default {
 
 .top {
   margin-bottom: $unit * 8 ;
+  margin-top: $unit * 2;
 }
 
 </style>

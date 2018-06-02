@@ -5,9 +5,9 @@ Seaholm EcoDistrict is an 85-acre urban development on the edge of downtown - it
 
 Seaholm EcoDistrict looks quite relaxed and surprisingly walkable (even within the heat!), with a vibrant hub of residential, office, and community gathering spaces.
 
-It is quite interesting to see an environmentally Considerate project like Seaholm EcoDistrict in Texas, where car ownership and private property are close to a religion.
+It is quite interesting to see an environmentally considerate project like Seaholm EcoDistrict in Texas, where car ownership and private property are close to a religion.
 
-You can easily access there from the new central library (which also worth a visit) if you want to see how Austin's sustainable green urban renewal looks like. You can chill at one of their public chairs, or it's ok to charge your phone for free at one of the solar-panel installed benches.  
+You can easily access there from the new central library (which is also worth a visit) if you want to see how Austin's sustainable green urban renewal looks like. You can chill at one of their public chairs, or it's ok to charge your phone for free at one of the solar-panel installed benches.  
 
 ![](Seaholm01.jpg)
 ![](Seaholm02.jpg)

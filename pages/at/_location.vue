@@ -19,6 +19,8 @@ export default {
     const location = route.path
       .replace('/at/', '')
       .replace('/', '')
+      .replace('_', ' ')
+      .replace('%20', ' ')
       .toLowerCase()
     let posts = []
     try {
@@ -26,7 +28,16 @@ export default {
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')
-    posts = posts.filter(p => p.location.toLowerCase() === location)
+    posts = posts.filter(p => {
+        if (Array.isArray(p.mapPosition))
+          return p.mapPosition.find(singlePosition => 
+            singlePosition.location &&
+            singlePosition.location.toLowerCase() === location
+          )
+        else return p.mapPosition && 
+          p.mapPosition.location && 
+          p.mapPosition.location.toLowerCase() === location
+      })
     if (posts.length === 1)
       return redirect(posts[0].url)
     return {
@@ -38,14 +49,20 @@ export default {
     shownPosts () { return this.posts },
   },
   mounted () {
-    this.$store.commit(
+    this.$store.commit (
       'setMapMarkers',
-      this.posts.map(p => ({
-        position: p.mapPosition,
-        locationName: p.location,
-        title: p.title,
-        url: p.url
-      }))
+      this.posts.map(p => (Array.isArray(p.mapPosition)) ?
+        p.mapPosition.map(singlePosition => ({
+          position: { ...singlePosition },
+          locationName: singlePosition.location
+        })) :
+        [{
+          position: { ...p.mapPosition },
+          locationName: p.mapPosition.location
+        }]
+      ).reduce((accumulator, currentValue) => 
+        accumulator.concat(currentValue)
+      )
     )
   },
   methods: {

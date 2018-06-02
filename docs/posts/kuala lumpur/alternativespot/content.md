@@ -1,5 +1,5 @@
 
-# 2 alternative spots to visit in Kuala Lumper
+# 2 alternative spots to visit in Kuala Lumpur
 
 
 Few months ago I found this interesting website [ALTERNATIVE ASIA](https://alternativeasia.net/), which introduces the interesting independent art spaces in the south east Asian countries. Most of these spaces are owned and managed by the artists themselves, not only using the spaces as galleries, but inviting a wide range of people to have workshops, festivals and symposiums and so on.

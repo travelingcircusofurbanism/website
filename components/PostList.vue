@@ -58,41 +58,4 @@ export default {
 
 <style lang="scss" scoped>
 
-.post-preview {
-  padding-bottom: $unit * 10;
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  grid-gap: $unit * 5;
-
-  @include width (mid) {
-    grid-template-columns: 1fr;
-
-    img {
-      max-height: $unit * 50;
-      display: block;
-      width: auto;
-      margin: 0 auto;
-    }
-  }
-
-  a {
-    text-decoration: none;
-  }
-
-  .sublink {
-    text-decoration: underline;
-  }
-}
-
-h4 {
-  color: $text !important;
-  margin-top: 0;
-  margin-bottom: 12px;
-}
-
-
-img {
-  width: 100%;
-}
-
 </style>

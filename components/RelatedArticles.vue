@@ -62,16 +62,19 @@ h4 {
 }
 
 .postgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: $unit * 3;
+  display: flex;
 }
 
 .relatedpost {
+  flex: 1;
   display: block;
   height: 100%;
   text-decoration: none;
   color: $text !important;
+
+  &:not(:last-of-type) {
+    margin-right: $unit * 3;
+  }
 
   &:hover {
     text-decoration: underline;
