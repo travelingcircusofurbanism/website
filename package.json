@@ -5,13 +5,13 @@
   "author": "Mariko",
   "private": true,
   "scripts": {
-    "buildlisting": "cd ./scripts/ && node buildlisting.js && cd ../",
+    "dev": "npm run prep && nuxt",
     "resizeimages": "cd ./scripts/ && node resizeimages.js && cd ../",
+    "buildlisting": "cd ./scripts/ && node buildlisting.js && cd ../",
     "drafts": "cd ./scripts/ && node listdrafts.js && cd ../",
     "prep": "npm run resizeimages && npm run buildlisting && npm run drafts",
-    "dev": "npm run prep && nuxt",
-    "cname": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "generate": "npm run prep && nuxt generate && npm run cname"
+    "generate": "npm run prep && nuxt generate && npm run cname",
+    "postgenerate": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME && git add ."
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",

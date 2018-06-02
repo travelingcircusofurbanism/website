@@ -15,12 +15,15 @@ require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
 }
 const postDir = '../static/posts'
-const postFile = '../static/posts.json'
+const generatedDir = '../static/generated'
+if (!fs.existsSync(generatedDir))
+	fs.mkdirSync(generatedDir)
+
 const allPostData = fs.readdirSync(postDir)
 	.filter(pathName => pathName.indexOf('.') === -1)
 	.map(city => {
 		const cityDir = postDir + '/' + city
-		const cityFile = '../static/' + city + '.json'
+		const cityFile = generatedDir + '/' + city + '.json'
 		const cityPostData = fs.readdirSync(cityDir)
 			.filter(pathName => pathName.indexOf('.') === -1)
 			.map(post => {
@@ -38,8 +41,8 @@ const allPostData = fs.readdirSync(postDir)
 	.filter(d => d)
 	.sort((a, b) => new Date(a.date) < new Date(b.date))
 
-fs.writeFileSync(postFile, JSON.stringify(allPostData), 'utf8')
-console.log(terminalColors.green + 'Built page listing.\n' + resetColor)
+fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+console.log(terminalColors.green + 'Generated post lists.\n' + resetColor)
 
 
 function getDataForPost(postDir, city, slug) {
@@ -85,7 +88,7 @@ function getDataForPost(postDir, city, slug) {
 		if (!image) {
 			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
 			if (!image) {
-				// console.log('No image found for', city + '/' + slug + ', skipping...')
+				console.log(terminalColors.magenta + 'No image found for', city + '/' + slug + ', skipping...' + resetColor)
 				image = ''
 			}
 			else image = image[1]

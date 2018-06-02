@@ -2,7 +2,7 @@
   <section class="content">
     <CitySelector />
     <PostList
-      :posts="shownPosts"
+      :posts="posts"
       title="Recent Posts"
     />
     <Footer/>
@@ -18,14 +18,11 @@ export default {
   head() { return { title: 'Home' } },
   components: { Footer, PostList, CitySelector, },
   asyncData () {
-    const allPosts = require('~/static/posts.json')
+    const allPosts = require('~/static/generated/posts.json')
     return {
       posts: allPosts,
-      cityPosts: require(`~/static/${allPosts[0].city}.json`)
+      cityPosts: require(`~/static/generated/${allPosts[0].city}.json`)
     }
-  },
-  computed: {
-    shownPosts () { return this.posts/*.slice(0, 4)*/ },
   },
   mounted () {
     this.$store.commit(

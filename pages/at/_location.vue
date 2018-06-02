@@ -22,7 +22,7 @@ export default {
       .toLowerCase()
     let posts = []
     try {
-      posts = require(`~/static/posts.json`)
+      posts = require(`~/static/generated/posts.json`)
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')

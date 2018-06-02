@@ -1,6 +1,6 @@
 <template>
   <div class="selector">
-    <h3 class="sectionhead">Places</h3>
+    <h3 class="sectionhead">Cities</h3>
     <div class="buttonlist">
       <nuxt-link 
         class="button secondary"
@@ -18,13 +18,13 @@
       v-if="orderedCities.length > cutoff && !showAll"
       @click="showAll = true"
     >
-      Show All Places
+      Show All Cities
     </div>
   </div>
 </template>
 
 <script>
-const posts = require('~/static/posts.json')
+const posts = require('~/static/generated/posts.json')
 
 export default {
   props: {

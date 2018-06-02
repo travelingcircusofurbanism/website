@@ -35,10 +35,10 @@ const allPostData = fs.readdirSync(postDir)
 				anyDrafts = true
 				console.log(terminalColors.yellow + 'All current drafts:\n' + resetColor)
 			}
-			console.log(`${terminalColors.yellow}${city}:${resetColor}
+			console.log(`${terminalColors.yellow}${city}:
 	${cityDrafts.join(`
 	`)}
-	`)
+	${resetColor}`)
 		}
 	})
 
