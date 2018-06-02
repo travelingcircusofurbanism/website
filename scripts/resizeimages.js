@@ -1,6 +1,8 @@
 const fs = require('fs')
 const sharp = require('sharp')
 const masterPostDir = '../static/posts/'
+const fullSizeDir = 'full/'
+const resizedDir = 'resized/'
 
 const defaultHeight = 500
 
@@ -25,8 +27,16 @@ fs.readdirSync(masterPostDir)
 			.filter(postDir => postDir.indexOf('.') === -1)
 			.forEach(postDir => {
 				postDir += '/'
-				// look for existing images in the post directory
-				fs.readdir(masterPostDir + cityDir + postDir, (err, files) => {
+				// full size images are in /full, resized images are in /resized
+				const inputPath = masterPostDir + cityDir + postDir + fullSizeDir
+				const outputPath = masterPostDir + cityDir + postDir + resizedDir
+				if (!fs.existsSync(outputPath))
+					fs.mkdirSync(outputPath)
+				if (!fs.existsSync(inputPath))
+					fs.mkdirSync(inputPath)
+
+				// look for existing resized images in the post directory
+				fs.readdir(masterPostDir + cityDir + postDir + resizedDir, (err, files) => {
 					if (err) return console.log(err)
 					const existingImages = []
 					for (let file of files) {
@@ -34,16 +44,14 @@ fs.readdirSync(masterPostDir)
 							existingImages.push(file)
 						}
 					}
-					// full size images are in /full, resized images are in /
-					const inputPath = masterPostDir + cityDir + postDir + 'full/'
-					const outputPath = masterPostDir + cityDir + postDir
+					
 					// look through all full size images
 					fs.readdir(inputPath, (err, files) => {
 						if (err) {
 							if (err.code !== 'ENOENT') return console.log(err)
 							else return
 						}
-						for (let file of files) {
+						files.forEach(file => {
 							if (/(.jpe?g|.png)$/g.test(file)) {
 								// if image already exists, skip it
 								if (!existingImages.find(f => f === file)) {
@@ -56,7 +64,7 @@ fs.readdirSync(masterPostDir)
 										})
 								}
 							}
-						}
+						})
 					})
 				})
 			})
