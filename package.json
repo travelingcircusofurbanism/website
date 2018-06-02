@@ -10,7 +10,7 @@
     "buildlisting": "cd ./scripts/ && node buildlisting.js && cd ../",
     "drafts": "cd ./scripts/ && node listdrafts.js && cd ../",
     "prep": "npm run resizeimages && npm run buildlisting && npm run drafts",
-    "generate": "npm run prep && nuxt generate && npm run cname",
+    "generate": "npm run prep && nuxt generate",
     "postgenerate": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME && git add ."
   },
   "dependencies": {
