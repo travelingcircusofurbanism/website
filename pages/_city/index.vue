@@ -11,9 +11,10 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
+import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalizeFirstLetter(this.city) } },
+  head() { return { title: this.capitalize(this.city) } },
   components: { Footer, PostList, },
   asyncData ({ route, redirect }) {
     const city = route.path
@@ -52,10 +53,7 @@ export default {
     )
   },
   methods: {
-    capitalizeFirstLetter (s) {
-      if (!s) return ''
-      return s.substring(0,1).toUpperCase() + s.substring(1)
-    },
+    capitalize,
   }
 }
 </script>

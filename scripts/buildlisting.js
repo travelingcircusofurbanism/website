@@ -1,48 +1,43 @@
 const fs = require('fs')
-
-const resetColor = '\x1b[0m'
-const terminalColors = {
-	red: '\x1b[31m',
-	green: '\x1b[32m',
-	yellow: '\x1b[33m',
-	blue: '\x1b[34m',
-	magenta: '\x1b[35m',
-	cyan: '\x1b[36m',
-	white: '\x1b[37m',
-}
+const { log } = require('../assets/commonFunctions')
 
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
 }
-const postDir = '../static/posts'
-const generatedDir = '../static/generated'
-if (!fs.existsSync(generatedDir))
-	fs.mkdirSync(generatedDir)
 
-const allPostData = fs.readdirSync(postDir)
-	.filter(pathName => pathName.indexOf('.') === -1)
-	.map(city => {
-		const cityDir = postDir + '/' + city
-		const cityFile = generatedDir + '/' + city + '.json'
-		const cityPostData = fs.readdirSync(cityDir)
-			.filter(pathName => pathName.indexOf('.') === -1)
-			.map(post => {
-				return getDataForPost(postDir, city, post)
-			})
-			.filter(d => d)
-			.sort((a, b) => new Date(a.date) < new Date(b.date))
-		fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
-		return cityPostData
-	})
-	.reduce((accumulator, currentValue) => {
+const postDir = process.cwd() + '/static/posts'
+const generatedDir = process.cwd() + '/static/generated'
+
+module.exports = function () {
+	if (!fs.existsSync(generatedDir))
+		fs.mkdirSync(generatedDir)
+
+	const allPostData = fs.readdirSync(postDir)
+		.filter(pathName => pathName.indexOf('.') === -1)
+		.map(city => {
+			const cityDir = postDir + '/' + city
+			const cityFile = generatedDir + '/' + city + '.json'
+			const cityPostData = fs.readdirSync(cityDir)
+				.filter(pathName => pathName.indexOf('.') === -1)
+				.map(post => {
+					return getDataForPost(postDir, city, post)
+				})
+				.filter(d => d)
+				.sort((a, b) => new Date(a.date) < new Date(b.date))
+			fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
+			return cityPostData
+		})
+		.reduce((accumulator, currentValue) => {
 			return accumulator.concat(currentValue);
-		},[]
-	)
-	.filter(d => d)
-	.sort((a, b) => new Date(a.date) < new Date(b.date))
+		}, []
+		)
+		.filter(d => d)
+		.sort((a, b) => new Date(a.date) < new Date(b.date))
 
-fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
-console.log(terminalColors.green + 'Generated post lists.\n' + resetColor)
+	fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+	log('green', '\nGenerated post lists.\n')
+}
+
 
 
 function getDataForPost(postDir, city, slug) {
@@ -88,7 +83,7 @@ function getDataForPost(postDir, city, slug) {
 		if (!image) {
 			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
 			if (!image) {
-				console.log(terminalColors.magenta + 'No image found for', city + '/' + slug + ', skipping...' + resetColor)
+				log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
 				image = ''
 			}
 			else image = image[1]

@@ -4,11 +4,11 @@
       <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
     </div>
     <p class="sub info">
-      {{ capitalizeFirstLetter(category) }} ・ 
+      {{ capitalize(category) }} ・ 
       <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
           <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
         </span>
-      <nuxt-link :to="'/' + city">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・ 
+      <nuxt-link :to="'/' + city">{{ capitalize(city) }}</nuxt-link> ・ 
       {{ 
         new Date(date)
           .toLocaleDateString('en-US', 
@@ -24,24 +24,24 @@
 <script>
 import Footer from '~/components/Footer'
 import RelatedArticles from '~/components/RelatedArticles'
+import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalizeFirstLetter(this.title) } },
+  head() { return { title: this.capitalize(this.title) } },
   components: { Footer, RelatedArticles },
   asyncData ({ route, redirect, env }) {
-    const pathWithSpaces = route.path
-      .replace('_', ' ')
+    const slug = route.path.replace(/\/$/g, '')
       .replace('%20', ' ')
-    const slug = pathWithSpaces.replace(/\/$/g, '')
     const path = '/posts' + slug + '/'
-    let city = pathWithSpaces.substring(1)
+    let city = route.path.substring(1)
     city = city.substring(0, city.indexOf('/'))
+      .replace('%20', ' ')
     let data, md
     try {
       data = require(`~/static${ path }data.js`)
       md = require(`~/static${ path }content.md`)
     } catch (e) {
-      console.log(path)
+      console.log('Error: Unable to find data for ' + path)
       return redirect('/')
     }
     const title = /<h1>(.*)<\/h1>/g.exec(md)[1]
@@ -52,6 +52,11 @@ export default {
       md,
       title,
       ...data,
+    }
+  },
+  data () {
+    return {
+      mapPosition: this.mapPosition || {}
     }
   },
   computed: {
@@ -81,10 +86,7 @@ export default {
     this.$store.commit('setMapMarkers', markers)
   },
   methods: {
-    capitalizeFirstLetter (s) {
-      if (!s) return ''
-      return s.substring(0,1).toUpperCase() + s.substring(1)
-    }
+    capitalize,
   }
 }
 </script>
