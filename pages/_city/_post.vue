@@ -70,8 +70,10 @@ export default {
         newMD = newMD.replace(matches[0], `<img src="${ this.path }resized/${ matches[1] }.${ matches[2] }"`)
         matches = imageElementRegex.exec(baseMD)
       }
-      // fix links
-      newMD = newMD.replace('<a href="', '<a target="_blank" href="')
+      // fix external links
+      newMD = newMD.replace(/<a href="(.*)">/g, 
+        (match, url) => `<a ${ url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : '' } href="${ url }">`
+      )
       return newMD
     }
   },
