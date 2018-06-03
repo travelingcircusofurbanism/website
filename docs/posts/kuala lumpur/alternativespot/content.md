@@ -2,11 +2,11 @@
 # 2 alternative spots to visit in Kuala Lumpur
 
 
-Few months ago I found this interesting website [ALTERNATIVE ASIA](https://alternativeasia.net/), which introduces the interesting independent art spaces in the south east Asian countries. Most of these spaces are owned and managed by the artists themselves, not only using the spaces as galleries, but inviting a wide range of people to have workshops, festivals and symposiums and so on.
+Few months ago I found this interesting website [ALTERNATIVE ASIA](https://alternativeasia.net/), which introduces the interesting independent art spaces in the south east Asian countries. Most of these spaces are owned and managed by the artists themselves, and they are using the spaces  not only as galleries, but inviting a wide range of people to have workshops, festivals and symposiums and so on.
 
-I liked the author’s unique eyes, to find the “alternative” — which, in my understanding, challenges the conventional idea of what Asia is about and show us the emerging wave of cultural movement created by the locals.
+I liked the author’s unique eyes, to find the “alternative” — which, in my understanding, challenges the conventional idea of what Asian cities are about and show us the emerging wave of cultural movement created by the locals.
 
-With that in mind, I tried to find the alternative spots in Kuala Lumper, Malaysia when I visited there in 2017. I believe that we all share the same problems of lacking decent public space in our cities, isolation of young creatives in order to the rapid urban/economic transformation that is turning our city to the place of consumption. Kuala Lumper is definitely part of the Karma, that’s why it’s valuable to know what’s there to be against it .
+With that in mind, I tried to find the alternative spots in Kuala Lumpur, when I visited there in February 2018. I believe that we all share the same problems of lacking decent public space in our cities, isolation of young creatives due to the rapid urban/economic transformation that is turning our city to the place of consumption. Kuala Lumpur is definitely part of the Karma, that’s why it’s valuable to know what’s there to be against it.
 
 This post is to introduce two alternative spaces you can visit.
 
@@ -14,7 +14,7 @@ This post is to introduce two alternative spaces you can visit.
 
 ![](https://cdn-images-1.medium.com/max/8000/1*RWd-sME5koYGLTK8jrDlrA.jpeg)
 
-I firstly got to know [Fab Space](https://www.fabspacekl.com/) through Loftwork, a deign hub I used to work in Tokyo.Fabspace is a **creative space** where your ideas can become a tangible reality and where innovation and new ideas are birthed.
+I firstly got to know [Fab Space](https://www.fabspacekl.com/) through [Loftwork](https://loftwork.com/jp/), a deign hub I used to work in Tokyo. Fab Space is a **creative space** where your ideas can become a tangible reality and innovation and new ideas are birthed.
 
 This is a **digital innovation lab** where you can have access to machines, such as laser cutter, 3d printer, UV printer, latex printer, CNC milling machine, which are not commonly accessible to the public.
 

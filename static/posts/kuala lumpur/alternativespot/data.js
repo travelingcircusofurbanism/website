@@ -10,9 +10,9 @@ module.exports = {
 			pitch: 0
 		},
 		{
-			location: 'Test 2nd Location',
+			location: 'APW Bangstar',
 			bearing: 0,
-			center: [101.722938, 3.176229],
+			center: [101.67408690000002, 3.1243255],
 			zoom: 12.00,
 			pitch: 0
 		},
