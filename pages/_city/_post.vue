@@ -15,7 +15,7 @@
             { year: 'numeric', month: 'long', day: 'numeric' })
       }}
     </p>
-    <article class="markdown" v-html="markdownWithEasyImages"></article>
+    <article class="markdown" v-html="editedMarkdown"></article>
     <RelatedArticles :city="city" :current="slug" />
     <Footer/>
   </section>
@@ -60,15 +60,18 @@ export default {
     }
   },
   computed: {
-    markdownWithEasyImages () {
+    editedMarkdown () {
       const baseMD = this.md
       let newMD = baseMD
+      // fix images
       const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
       let matches = imageElementRegex.exec(baseMD)
       while (matches != null) {
         newMD = newMD.replace(matches[0], `<img src="${ this.path }resized/${ matches[1] }.${ matches[2] }"`)
         matches = imageElementRegex.exec(baseMD)
       }
+      // fix links
+      newMD = newMD.replace('<a href="', '<a target="_blank" href="')
       return newMD
     }
   },
