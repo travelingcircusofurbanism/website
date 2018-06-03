@@ -14,11 +14,11 @@
         <h4>{{ title }}</h4>
       </nuxt-link>
       <p class="sub">
-        {{ capitalizeFirstLetter(category) }} ・
+        {{ capitalize(category) }} ・
         <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
           <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
         </span>
-        <nuxt-link :to="'/' + city" class="sublink">{{ capitalizeFirstLetter(city) }}</nuxt-link> ・
+        <nuxt-link :to="'/' + city" class="sublink">{{ capitalize(city) }}</nuxt-link> ・
         {{
           new Date(date)
             .toLocaleDateString('en-US',
@@ -36,6 +36,7 @@
 
 
 <script>
+import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition' ],
@@ -48,10 +49,7 @@ export default {
   mounted () {
   },
   methods: {
-    capitalizeFirstLetter (s) {
-      if (!s) return ''
-      return s.substring(0,1).toUpperCase() + s.substring(1)
-    },
+    capitalize,
     mouseOver () {
       this.$store.commit('setHighlight', this.location || this.city)
     },

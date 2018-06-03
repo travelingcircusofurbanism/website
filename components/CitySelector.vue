@@ -9,7 +9,7 @@
         v-for="(city, key) in citiesToShow"
         :key="key"
       >
-        {{ capitalizeFirstLetter(city) }}
+        {{ capitalize(city) }}
       </nuxt-link>
       <div class="sub" v-if="orderedCities.length < cutoff">And more to come...</div>
     </div>
@@ -25,6 +25,7 @@
 
 <script>
 const posts = require('~/static/generated/posts.json')
+import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   props: {
@@ -55,10 +56,7 @@ export default {
     }
   },
   methods: {
-    capitalizeFirstLetter (s) {
-      if (!s) return ''
-      return s.substring(0,1).toUpperCase() + s.substring(1)
-    },
+    capitalize,
   }
 }
 </script>

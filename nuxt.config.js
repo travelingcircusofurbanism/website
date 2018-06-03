@@ -1,4 +1,5 @@
 const fs = require('fs')
+
 const cities = fs.readdirSync('./static/posts')
   .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/generated/posts.json')

@@ -6,10 +6,8 @@
   "private": true,
   "scripts": {
     "dev": "npm run prep && nuxt",
-    "resizeimages": "cd ./scripts/ && node resizeimages.js && cd ../",
-    "buildlisting": "cd ./scripts/ && node buildlisting.js && cd ../",
-    "drafts": "cd ./scripts/ && node listdrafts.js && cd ../",
-    "prep": "npm run resizeimages && npm run buildlisting && npm run drafts",
+    "prep": "node ./scripts/postbot.js",
+    "postbot": "nodemon ./scripts/postbot.js",
     "generate": "npm run prep && nuxt generate",
     "postgenerate": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME && git add ."
   },
@@ -17,6 +15,7 @@
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/markdownit": "^1.2.1",
     "node-sass": "^4.9.0",
+    "nodemon": "^1.17.5",
     "nuxt": "^1.0.0",
     "sass-loader": "^7.0.1",
     "sharp": "^0.20.2"
@@ -27,5 +26,14 @@
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "*/resized/*"
+    ],
+    "watch": [
+      "static/posts"
+    ],
+    "ext": "jpg,jpeg,png,gif,webm,js,md"
   }
 }
