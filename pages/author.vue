@@ -36,7 +36,7 @@
       <p>
         If you're interested in working together, or just to have a cup of coffee to know what I’m up to, please <a href="mailto:mariko9012@gmail.com">email me</a> or check out my <a href="https://www.linkedin.com/in/mariko-sugita-28327bb6/" target="_blank">LinkedIn page</a>!
       </p>
-      
+
       <p class="sub">
         <i>Special thanks to <a href="http://www.jasperstephenson.com" target="_blank">Jasper Stephenson</a> for mentorship and coding help on this site!</i>
       </p>
@@ -49,7 +49,86 @@
 import Footer from '~/components/Footer'
 export default {
   head() { return { title: 'Author' } },
-  components: { Footer, }
+  components: { Footer, },
+  mounted () {
+    this.$store.commit(
+      'setMapMarkers',
+      [
+        {
+          position: {
+            bearing: 0,
+            center: [139.69170639999993, 35.6894875],
+            zoom: 1,
+            pitch: 0
+           },
+          locationName: 'Tokyo'
+        },
+        {
+          position: {
+            bearing: 0,
+      			center: [16.37381890000006, 48.2081743],
+      			zoom: 1,
+      			pitch: 0
+          },
+          locationName: 'Vienna'
+        },
+        {
+          position: {
+            bearing: 0,
+      			center: [4.351710300000036, 50.8503396],
+      			zoom: 1,
+      			pitch: 0
+          },
+          locationName: 'Brussels'
+        },
+        {
+          position: {
+            bearing: 0,
+      			center: [-3.7037901999999576, 40.4167754],
+      			zoom: 1,
+      			pitch: 0
+          },
+          locationName: 'Madrid'
+        },
+        {
+          position: {
+            bearing: 0,
+      			center: [12.568337199999974, 55.6760968],
+      			zoom: 1,
+      			pitch: 0
+          },
+          locationName: 'Copenhagen'
+        },
+        {
+          position: {
+            bearing: 0,
+            center: [10.203921000000037, 56.162939],
+            zoom: 1,
+            pitch: 0
+          },
+          locationName: 'Aarhus'
+        },
+        {
+          position: {
+            bearing: 0,
+            center: [-95.71289100000001, 37.09024],
+            zoom: 1,
+            pitch: 0
+          },
+          locationName: 'US cities'
+        },
+        {
+          position: {
+            bearing: 0,
+            center: [120.9842195, 14.5995124],
+            zoom: 1,
+            pitch: 0
+          },
+          locationName: 'Manila'
+        }
+      ]
+    )
+  }
 }
 </script>
 
