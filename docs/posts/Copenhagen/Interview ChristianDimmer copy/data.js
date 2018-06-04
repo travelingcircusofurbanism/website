@@ -1,9 +1,5 @@
 module.exports = {
-<<<<<<< HEAD:docs/posts/Copenhagen/Interview ChristianDimmer copy/data.js
 	public: false,
-=======
-	draft: true,
->>>>>>> 9963b299cac9c213803fdb7d6661374428d414d5:docs/posts/Copenhagen/Interview ChristianDimmer copy/data.js
 	date: '3/13/2018',
 	category: 'essay',
 	mapPosition: {

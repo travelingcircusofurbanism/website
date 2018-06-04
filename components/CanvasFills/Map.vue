@@ -5,14 +5,13 @@
 
 <script>
   const apiKey = require('../../mapboxApiKey.json').key
-  const mapboxgl = require('mapbox-gl')
 
   export default {
     data () {
       return {
         map: null,
         currentMarkers: [],
-        ready: false
+        componentReady: false
       }
     },
     computed: {
@@ -86,6 +85,57 @@
 
       markerData (newMarkers) {
         if (!newMarkers) return
+        this.recalculateMarkerData()
+      },
+
+      highlight (newHighlight, oldHighlight) {
+        const oldEl = this.currentMarkers
+          .find(m => m._popup.options.location === oldHighlight)
+        if (oldEl) oldEl._element.classList.remove('highlight')
+        const newEl = this.currentMarkers
+          .find(m => m._popup.options.location === newHighlight)
+        if (newEl) newEl._element.classList.add('highlight')
+      }
+    },
+    mounted () {
+      this.componentReady = true
+      this.tryUpdateMap(this.mapPosition)
+    },
+    methods: {
+      tryUpdateMap (newPosition) {
+        if (!this.componentReady || !window.mapboxgl || !newPosition) {
+          return setTimeout(this.tryUpdateMap, 200)
+        }
+
+        mapboxgl.accessToken = apiKey
+        const dest = newPosition ||
+          {
+            bearing: 0,
+            center: [180, 0],
+            zoom: 1.00,
+            pitch: 0
+          }
+        if (!this.map) {
+          this.map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
+            ...dest
+          })
+          // this.map.once('styledata', () => console.log('LOADED'))
+          this.recalculateMarkerData()
+        }
+        else 
+          this.map.flyTo(dest)
+        
+      },
+
+      routeTo (location) {
+        this.$router.push('/at/' + location.replace(' ', '%20'))
+      },
+
+      recalculateMarkerData () {
+        if (!this.componentReady || !window.mapboxgl || !this.map)
+          return
         this.currentMarkers.forEach(marker => {
           marker.remove()
         })
@@ -121,47 +171,7 @@
 
             this.currentMarkers.push(newMarker)
           })
-      },
-
-      highlight (newHighlight, oldHighlight) {
-        const oldEl = this.currentMarkers
-          .find(m => m._popup.options.location === oldHighlight)
-        if (oldEl) oldEl._element.classList.remove('highlight')
-        const newEl = this.currentMarkers
-          .find(m => m._popup.options.location === newHighlight)
-        if (newEl) newEl._element.classList.add('highlight')
-      }
-    },
-    mounted () {
-      this.ready = true
-      mapboxgl.accessToken = apiKey
-      this.tryUpdateMap(this.mapPosition)
-    },
-    methods: {
-      tryUpdateMap (newPosition) {
-        if (!this.ready)
-          return setTimeout(this.tryUpdateMap, 200)
-        const dest = newPosition ||
-          {
-            bearing: 0,
-            center: [180, 0],
-            zoom: 1.00,
-            pitch: 0
-          }
-        if (!this.map) {
-          this.map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
-            ...dest
-          })
-          // this.map.once('styledata', () => console.log('LOADED'))
         }
-        else 
-          this.map.flyTo(dest)
-      },
-      routeTo (location) {
-        this.$router.push('/at/' + location.replace(' ', '%20'))
-      }
     }
   }
 
