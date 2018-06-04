@@ -4,6 +4,9 @@
 </template>
 
 <script>
+  const apiKey = require('../../mapboxApiKey.json').key
+  const mapboxgl = require('mapbox-gl')
+
   export default {
     data () {
       return {
@@ -131,7 +134,7 @@
     },
     mounted () {
       this.ready = true
-      mapboxgl.accessToken = require('../mapboxApiKey.json').key
+      mapboxgl.accessToken = apiKey
       this.tryUpdateMap(this.mapPosition)
     },
     methods: {
@@ -166,10 +169,7 @@
 
 <style scoped>
   #map {
-    height: 120vh;
-    position: relative;
+    height: 120vh !important;
     top: -10vh;
-    background:#ddd;
-    z-index: 2;
   }
 </style>

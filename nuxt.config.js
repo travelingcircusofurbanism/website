@@ -3,7 +3,8 @@ const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
   .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/generated/posts.json')
-let locations = posts.map(p => {
+const locations = Array.from(new Set([].concat.apply([], 
+  posts.map(p => {
     if (Array.isArray(p.mapPosition))
       return p.mapPosition.map(pos => pos.location)
         .filter(l => l)
@@ -11,9 +12,10 @@ let locations = posts.map(p => {
       return [p.mapPosition.location]
   })
   .filter(p => p)
-locations = Array.from(new Set([].concat.apply([], locations)))
+)))
 
 module.exports = {
+  mode: 'spa',
   head: {
     titleTemplate: '%s | Traveling Circus of Urbanism',
     meta: [
@@ -23,10 +25,10 @@ module.exports = {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' }
+      // { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' }
     ],
     script: [
-      { src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js' },
+      // { src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js' },
     ]
   },
   css: [ './assets/main.scss' ],
@@ -47,7 +49,7 @@ module.exports = {
   build: {
     styleResources: {
       scss: './assets/variables.scss',
-    },
+    }
   },
   generate: {
     dir: 'docs',

@@ -13,7 +13,7 @@ module.exports = function () {
 				.filter(pathName => pathName.indexOf('.') === -1)
 				.map(post => {
 					const postData = require(`${postDir}/${city}/${post}/data.js`)
-					if (postData.draft)
+					if (!postData.public)
 						return post
 				})
 				.filter(d => d)

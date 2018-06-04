@@ -136,8 +136,14 @@ h4 {
   }
 }
 
+.mapboxgl-missing-css {
+	display: none;
+}
+
 .marker {
 	z-index: 100;
+	display: inline-block;
+	position: absolute;
 
 	.pin {
 		width: $unit * 5;
@@ -154,7 +160,7 @@ h4 {
 		display: block;
 		position: absolute;
 		left: 50%;
-		top: $unit * -4;
+		top: $unit * -5;
 		padding-bottom: $unit * 2;
 		transform: translateX(-50%);
 		white-space: nowrap;
@@ -166,7 +172,7 @@ h4 {
 			0 2px 12px $shadow, 
 			0 -2px 12px $shadow, 
 			-2px 0 12px $shadow;
-		font-size: 1.4em;
+		font-size: 1.2em;
 		font-weight: 600;
 		letter-spacing: .8px;
 	}

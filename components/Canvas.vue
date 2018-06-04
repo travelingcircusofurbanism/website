@@ -1,0 +1,34 @@
+<template>
+  <div id="canvas">
+    <Map v-if="active === 'map'" class="fill" />
+  </div>
+</template>
+
+<script>
+import Map from '~/components/CanvasFills/Map'
+
+export default {
+  components: { Map, },
+  data () {
+    return {
+      active: 'map',
+    }
+  }
+}
+</script>
+
+<style scoped lang="scss">
+
+  #canvas {
+    background:#ddd;
+    z-index: 2;
+    position: relative;
+
+    & > .fill {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+    }
+  }
+  
+</style>

@@ -1,16 +1,17 @@
 <template>
   <div class="master">
-    <Map/>
     <Header/>
+    <Canvas/>
     <nuxt/>
   </div>
 </template>
 
 <script>
-  import Map from '~/components/Map'
+  import Canvas from '~/components/Canvas'
   import Header from '~/components/Header'
+
   export default {
-    components: { Map, Header }
+    components: { Canvas, Header }
   }
 
 </script>

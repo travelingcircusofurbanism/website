@@ -13,19 +13,12 @@
       <nuxt-link :to="url" class="titlelink">
         <h4>{{ title }}</h4>
       </nuxt-link>
-      <p class="sub">
-        {{ capitalize(category) }} ・
-        <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
-          <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
-        </span>
-        <nuxt-link :to="'/' + city" class="sublink">{{ capitalize(city) }}</nuxt-link> ・
-        {{
-          new Date(date)
-            .toLocaleDateString('en-US',
-              { year: 'numeric', month: 'long', day: 'numeric' })
-        }}
-
-      </p>
+      <PostDetails
+        :category="category"
+        :mapPosition="mapPosition"
+        :city="city"
+        :date="date"
+      />
       <div>
         {{ description }}
         <nuxt-link :to="url">Keep Reading →</nuxt-link>
@@ -37,17 +30,11 @@
 
 <script>
 import { capitalize } from '~/assets/commonFunctions.js'
+import PostDetails from '~/components/PostDetails'
 
 export default {
   props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition' ],
-  data () {
-    return {
-    }
-  },
-  computed: {
-  },
-  mounted () {
-  },
+  components: { PostDetails, },
   methods: {
     capitalize,
     mouseOver () {

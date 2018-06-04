@@ -63,7 +63,7 @@ export default {
         }]
       ).reduce((accumulator, currentValue) => 
         accumulator.concat(currentValue)
-      )
+      , [])
     )
   },
   methods: {

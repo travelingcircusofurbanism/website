@@ -7,7 +7,7 @@
 1. Austin’s “new urbanist enclave”, [Mueller](http://www.muelleraustin.com/)
 Read: [How One City Turned Industrial Zones Into Green Enclaves](https://www.nationalgeographic.com/environment/urban-expeditions/austin/austin-green-buildings-fight-urban-sprawl/)
 
-1. Fostering conservation and reuse through creativity, education and community building. There are also some volunteer opportunities available for all! — [Austin Creative Reuse](https://austincreativereuse.org/)
+2. Fostering conservation and reuse through creativity, education and community building. There are also some volunteer opportunities available for all! — [Austin Creative Reuse](https://austincreativereuse.org/)
 
 1. creative hub for DIY crafting, workshops, and events. — [CRAFT](http://madeatcraft.com/)
 

@@ -75,7 +75,7 @@ export default {
 
     * {
       flex-shrink: 0;
-      margin: 0 $unit * 2 $unit * 2 $unit * 2;
+      margin: 0 $unit * 1 $unit * 2 $unit * 1;
     }
 
     .sub {

@@ -1,4 +1,5 @@
 module.exports = {
+	public: true,
 	date: '5/9/1991',
 	category: 'essay',
 	mapPosition: {

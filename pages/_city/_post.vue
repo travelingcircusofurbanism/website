@@ -3,18 +3,12 @@
     <div class="top">
       <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
     </div>
-    <p class="sub info">
-      {{ capitalize(category) }} ・ 
-      <span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
-          <nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
-        </span>
-      <nuxt-link :to="'/' + city">{{ capitalize(city) }}</nuxt-link> ・ 
-      {{ 
-        new Date(date)
-          .toLocaleDateString('en-US', 
-            { year: 'numeric', month: 'long', day: 'numeric' })
-      }}
-    </p>
+    <PostDetails
+      :category="category"
+      :mapPosition="mapPosition"
+      :city="city"
+      :date="date"
+    />
     <article class="markdown" v-html="editedMarkdown"></article>
     <RelatedArticles :city="city" :current="slug" />
     <Footer/>
@@ -23,12 +17,13 @@
 
 <script>
 import Footer from '~/components/Footer'
+import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   head() { return { title: this.capitalize(this.title) } },
-  components: { Footer, RelatedArticles },
+  components: { Footer, RelatedArticles, PostDetails },
   asyncData ({ route, redirect, env }) {
     const slug = route.path.replace(/\/$/g, '')
       .replace('%20', ' ')

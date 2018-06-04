@@ -44,14 +44,12 @@ module.exports = function () {
 		
 }
 
-
-
 function getDataForPost(postDir, city, slug) {
 	try {
 		const postData = require(`${postDir}/${city}/${slug}/data.js`)
 		const postContent = require(`${postDir}/${city}/${slug}/content.md`)
 
-		if (postData.draft) return
+		if (!postData.public) return
 
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
