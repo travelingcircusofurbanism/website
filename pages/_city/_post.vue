@@ -73,17 +73,7 @@ export default {
     }
   },
   mounted () {
-    const markers = (Array.isArray(this.mapPosition)) ?
-      this.mapPosition.map(singlePosition => ({
-        position: { ...singlePosition },
-        locationName: singlePosition.location
-      })) :
-      [{
-        position: { ...this.mapPosition },
-        locationName: this.mapPosition.location
-      }]
-
-    this.$store.commit('setMapMarkers', markers)
+    this.$store.commit('setMapMarkers', this.mapPosition)
   },
   methods: {
     capitalize,

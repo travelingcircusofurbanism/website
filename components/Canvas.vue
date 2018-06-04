@@ -20,7 +20,7 @@ export default {
 <style scoped lang="scss">
 
   #canvas {
-    background:#ddd;
+    background: #555;
     z-index: 2;
     position: relative;
 

@@ -41,7 +41,6 @@ module.exports = function () {
 		fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
 		log('green', '\nGenerated post lists.\n')
 	})
-		
 }
 
 function getDataForPost(postDir, city, slug) {
@@ -105,5 +104,9 @@ function getDataForPost(postDir, city, slug) {
 			image,
 		}
 		return data
-	} catch (e) { console.log(e) }
+	} catch (e) { 
+		log('magenta', `There was a problem getting the data together for ${city}/${slug}. Here are the error details:`)
+		console.log(e)
+		log('magenta', `Don't worry too much, though, because we skipped it for now. Everything should still work, but that post won't show up in the listings.`)
+	}
 }

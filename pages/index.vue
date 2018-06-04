@@ -25,21 +25,7 @@ export default {
     }
   },
   mounted () {
-    this.$store.commit(
-      'setMapMarkers',
-      this.cityPosts.map(p => (Array.isArray(p.mapPosition)) ?
-        p.mapPosition.map(singlePosition => ({
-          position: { ...singlePosition },
-          locationName: singlePosition.location
-        })) :
-        [{
-          position: { ...p.mapPosition },
-          locationName: p.mapPosition.location
-        }]
-      ).reduce((accumulator, currentValue) => 
-        accumulator.concat(currentValue)
-      )
-    )
+    this.$store.commit('setMapMarkers', this.cityPosts)
   }
 }
 </script>

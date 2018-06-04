@@ -1,5 +1,5 @@
 <template>
-  <div id="map">
+  <div id="map" :class="{ready: styleReady}">
   </div>
 </template>
 
@@ -11,7 +11,8 @@
       return {
         map: null,
         currentMarkers: [],
-        componentReady: false
+        componentReady: false,
+        styleReady: false,
       }
     },
     computed: {
@@ -21,7 +22,8 @@
       uniqueLocations () {
         const uniqueLocations = {}
         for (let marker of this.mapMarkers) {
-          const location = marker.locationName ? marker.locationName.toLowerCase() : ''
+          if (!marker.locationName) continue
+          const location = marker.locationName.toLowerCase()
           if (!uniqueLocations[location])
             uniqueLocations[location] = []
           uniqueLocations[location].push(marker)
@@ -36,7 +38,6 @@
           features: []
         }
         for (let marker of Object.values(this.uniqueLocations)) {
-          if (!marker[0].locationName) continue
           markerData.features.push({
             type: 'Feature',
             geometry: {
@@ -99,16 +100,16 @@
     },
     mounted () {
       this.componentReady = true
-      this.tryUpdateMap(this.mapPosition)
+      this.tryUpdateMap()
     },
     methods: {
-      tryUpdateMap (newPosition) {
-        if (!this.componentReady || !window.mapboxgl || !newPosition) {
-          return setTimeout(this.tryUpdateMap, 200)
+      tryUpdateMap () {
+        if (!this.componentReady || !window.mapboxgl || !this.mapPosition) {
+          return setTimeout(() => this.tryUpdateMap(), 200)
         }
 
         mapboxgl.accessToken = apiKey
-        const dest = newPosition ||
+        const dest = this.mapPosition ||
           {
             bearing: 0,
             center: [180, 0],
@@ -116,15 +117,25 @@
             pitch: 0
           }
         if (!this.map) {
+          console.log('creating map')
           this.map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
             ...dest
           })
-          // this.map.once('styledata', () => console.log('LOADED'))
+          this.map.on('styledata', () => 
+            setTimeout(() => this.styleReady = true, 300)
+          )
           this.recalculateMarkerData()
         }
-        else 
+        else
+          //map.fitBounds([[
+          //     32.958984,
+          //     -5.353521
+          // ], [
+          //     43.50585,
+          //     5.615985
+          // ]])
           this.map.flyTo(dest)
         
       },
@@ -177,9 +188,15 @@
 
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   #map {
     height: 120vh !important;
     top: -10vh;
+    opacity: 0;
+    transition: opacity 3s;
+
+    &.ready {
+      opacity: 1;
+    }
   }
 </style>
