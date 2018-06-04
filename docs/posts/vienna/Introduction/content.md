@@ -19,6 +19,6 @@
 
 ## Organization
 
-[6. Space and Place](http://spaceandplace.at/) — a non-profit group which uses social interventions to make important new connections across the city
+6. [Space and Place](http://spaceandplace.at/) — a non-profit group which uses social interventions to make important new connections across the city
 
-[7. Paradocks](http://www.paradocks.at/) is a project to connect vacant spaces and city’s demands by finding creative potential in them. Paradocks stands for the “paradox” of demand and supply of space in a city.
+7. [Paradocks](http://www.paradocks.at/) is a project to connect vacant spaces and city’s demands by finding creative potential in them. Paradocks stands for the “paradox” of demand and supply of space in a city.
