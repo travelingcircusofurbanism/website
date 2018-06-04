@@ -12,6 +12,7 @@
           As an Urbanist,
         </strong>
         I'm most passionate about our cities. I’ve involved in many international educational projects like <a href="http://www.4cities.eu/" target="_blank">4CITIES</a>, <a href="https://www.urbandivercities.eu/" target="_blank">DIVERCITIES</a>, and have visited more than 120 organizations and 50 cities accross the globe for research. More specifically I’m interested in ethno-cultural diversity in our cities, and the notion of nationality and sense of belonging.
+      </p>
       <p>
         <strong>
           As a project manager,

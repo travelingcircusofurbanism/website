@@ -6,11 +6,10 @@
     <br />
     <div class="sublinks">
       <nuxt-link to="/about">About</nuxt-link>
-      <nuxt-link to="/contact">Author</nuxt-link>
+      <nuxt-link to="/author">Author</nuxt-link>
     </div>
   </div>
 </template>
-
 
 <script>
 

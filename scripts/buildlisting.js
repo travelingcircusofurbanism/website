@@ -12,30 +12,36 @@ module.exports = function () {
 	if (!fs.existsSync(generatedDir))
 		fs.mkdirSync(generatedDir)
 
-	const allPostData = fs.readdirSync(postDir)
-		.filter(pathName => pathName.indexOf('.') === -1)
-		.map(city => {
-			const cityDir = postDir + '/' + city
-			const cityFile = generatedDir + '/' + city + '.json'
-			const cityPostData = fs.readdirSync(cityDir)
-				.filter(pathName => pathName.indexOf('.') === -1)
-				.map(post => {
-					return getDataForPost(postDir, city, post)
-				})
-				.filter(d => d)
-				.sort((a, b) => new Date(a.date) < new Date(b.date))
-			fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
-			return cityPostData
-		})
-		.reduce((accumulator, currentValue) => {
-			return accumulator.concat(currentValue);
-		}, []
-		)
-		.filter(d => d)
-		.sort((a, b) => new Date(a.date) < new Date(b.date))
+	fs.readdir(postDir, (err, posts) => {
+		if (err) return log('magenta', err)
+		const allPostData = posts
+			.filter(pathName => pathName.indexOf('.') === -1)
+			.map(city => {
+				const cityDir = postDir + '/' + city
+				const cityFile = generatedDir + '/' + city + '.json'
+				const cityPostData = fs.readdirSync(cityDir)
+					.filter(pathName => pathName.indexOf('.') === -1)
+					.map(post => {
+						return getDataForPost(postDir, city, post)
+					})
+					.filter(d => d)
+					.sort((a, b) => new Date(a.date) < new Date(b.date))
+				fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
+				return cityPostData
+			})
+			.reduce((accumulator, currentValue) => {
+				return accumulator.concat(currentValue);
+			}, []
+			)
+			.filter(d => d)
+			.sort((a, b) => {
+				return new Date(b.date) - new Date(a.date)
+			})
 
-	fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
-	log('green', '\nGenerated post lists.\n')
+		fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+		log('green', '\nGenerated post lists.\n')
+	})
+		
 }
 
 

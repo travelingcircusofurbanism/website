@@ -7,7 +7,7 @@
 </template>
 
 <script>
-  import Map from '~/components/map'
+  import Map from '~/components/Map'
   import Header from '~/components/Header'
   export default {
     components: { Map, Header }
