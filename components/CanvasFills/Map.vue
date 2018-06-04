@@ -16,14 +16,17 @@
       }
     },
     computed: {
+      // mapMarkers comes in as an array of mapPosition objects.
       mapMarkers () { return this.$store.state.mapMarkers },
-      highlight () { return this.$store.state.highlightedLocation },
+
+      // highlight comes in as an array of location names.
+      highlight () { return this.$store.state.highlight },
 
       uniqueLocations () {
         const uniqueLocations = {}
         for (let marker of this.mapMarkers) {
-          if (!marker.locationName) continue
-          const location = marker.locationName.toLowerCase()
+          if (!marker.location) continue
+          const location = marker.location.toLowerCase()
           if (!uniqueLocations[location])
             uniqueLocations[location] = []
           uniqueLocations[location].push(marker)
@@ -42,11 +45,10 @@
             type: 'Feature',
             geometry: {
               type: 'Point',
-              coordinates: [marker[0].position.center[0], marker[0].position.center[1]]
+              coordinates: marker[0].center
             },
             properties: {
-              locationName: marker[0].locationName,
-              posts: [...marker]
+              location: marker[0].location
             }
           })
         }
@@ -57,18 +59,18 @@
         if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
 
         // if only one point, use that.
-        if (this.mapMarkers.length === 1) return this.mapMarkers[0].position
+        if (this.mapMarkers.length === 1) return this.mapMarkers[0]
 
         // if there are multiple points, take their average and zoom out a little
         let x = 0, y = 0, z = 0
         const uniqueAsArr = Object.values(this.uniqueLocations)
         const length = uniqueAsArr.length
         for (let m of uniqueAsArr) {
-          x += m[0].position.center[0]
-          y += m[0].position.center[1]
-          z += m[0].position.zoom
+          x += m[0].center[0]
+          y += m[0].center[1]
+          z += m[0].zoom
         }
-        const position = {...uniqueAsArr[0][0].position}
+        const position = {...uniqueAsArr[0][0]}
         position.center = [
           x / length,
           y / length
@@ -90,12 +92,16 @@
       },
 
       highlight (newHighlight, oldHighlight) {
-        const oldEl = this.currentMarkers
-          .find(m => m._popup.options.location === oldHighlight)
-        if (oldEl) oldEl._element.classList.remove('highlight')
-        const newEl = this.currentMarkers
-          .find(m => m._popup.options.location === newHighlight)
-        if (newEl) newEl._element.classList.add('highlight')
+        for (let o of oldHighlight) {
+          const oldEl = this.currentMarkers
+            .find(m => m._popup.options.location === o)
+          if (oldEl) oldEl._element.classList.remove('highlight')
+        }
+        for (let n of newHighlight) {
+          const newEl = this.currentMarkers
+            .find(m => m._popup.options.location === n)
+          if (newEl) newEl._element.classList.add('highlight')
+        }
       }
     },
     mounted () {
@@ -154,11 +160,12 @@
         this.markerData.features
           .sort((a, b) => a.geometry.coordinates[1] < b.geometry.coordinates[1])
           .forEach(marker => {
+            console.log(marker)
 
             const popup = new mapboxgl.Popup({
               offset: 20,
               closeButton: false,
-              location: marker.properties.locationName,
+              location: marker.properties.location,
             })
 
             // create a HTML marker for each feature
@@ -168,11 +175,11 @@
             pin.className = 'pin'
             const textBox = document.createElement('div')
             textBox.className = 'text'
-            const text = document.createTextNode(marker.properties.locationName)
+            const text = document.createTextNode(marker.properties.location)
             textBox.appendChild(text)
             markerElement.appendChild(textBox)
             markerElement.appendChild(pin)
-            markerElement.addEventListener('click', e => this.routeTo(marker.properties.locationName))
+            markerElement.addEventListener('click', e => this.routeTo(marker.properties.location))
 
             // make a marker for each feature and add to the map
             const newMarker = new mapboxgl.Marker(markerElement)
