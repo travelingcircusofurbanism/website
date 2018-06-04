@@ -3,21 +3,31 @@ const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
   .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/generated/posts.json')
-const locations = Array.from(new Set([].concat.apply([], 
-  posts.map(p => {
-    if (Array.isArray(p.mapPosition))
-      return p.mapPosition.map(pos => pos.location)
-        .filter(l => l)
-    if (p.mapPosition && p.mapPosition.location)
-      return [p.mapPosition.location]
-  })
-  .filter(p => p)
-)))
+let locations = [],
+    categories = []
+posts.map(p => {
+  // find categories
+  if (categories.indexOf(p.category.toLowerCase()) === -1)
+    categories.push(p.category.toLowerCase())
+  // find locations
+  if (Array.isArray(p.mapPosition))
+    p.mapPosition
+      .map(pos => pos.location)
+      .filter(l => l)
+      .forEach(loc => {
+        if (locations.indexOf(loc.toLowerCase()) === -1)
+          locations.push(loc.toLowerCase())
+      })
+  if (p.mapPosition && p.mapPosition.location && locations.indexOf(p.mapPosition.location.toLowerCase()) === -1)
+    locations.push(p.mapPosition.location.toLowerCase())
+})
 
 module.exports = {
   mode: 'spa',
   head: {
-    titleTemplate: '%s | Traveling Circus of Urbanism',
+    titleTemplate (titleChunk) {
+      return (titleChunk ? titleChunk + ' | ' : '') + `Traveling Circus of Urbanism`
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -57,6 +67,7 @@ module.exports = {
       ...cities.map(c => `/${c}`),
       ...posts.map(p => `/${p.city}/${p.slug}`),
       ...locations.map(l => `/at/${l}`),
+      ...categories.map(c => `/is/${c}`),
     ]
   }
 }
