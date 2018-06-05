@@ -1,9 +1,5 @@
 module.exports = {
-<<<<<<< HEAD
 	public: true,
-=======
-	public: false,
->>>>>>> cda402d1a906c4d7cae659521f114add59ec9b69
 	date: '9/26/2017',
 	category: 'interview',
 	mapPosition: {
