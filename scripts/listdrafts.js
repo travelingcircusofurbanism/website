@@ -21,14 +21,13 @@ module.exports = function () {
 			if (cityDrafts.length) {
 				if (!anyDrafts) {
 					anyDrafts = true
-					log('yellow', 'Current drafts:\n')
+					log('yellow', 'Drafts:')
 				}
-				log('yellow', `${city}:
-	${cityDrafts.join(`
-	`)}
-	`)
+				log('yellow', '  ', city)
+				log('white', '     ・ ' + cityDrafts.join('\n     ・ '))
 			}
 		})
 
 	if(!anyDrafts) log('green', 'No current drafts.\n')
+	else log()
 }

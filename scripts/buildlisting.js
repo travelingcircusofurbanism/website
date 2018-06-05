@@ -9,38 +9,45 @@ const postDir = process.cwd() + '/static/posts'
 const generatedDir = process.cwd() + '/static/generated'
 
 module.exports = function () {
-	if (!fs.existsSync(generatedDir))
-		fs.mkdirSync(generatedDir)
+	try {
+		if (!fs.existsSync(generatedDir))
+			fs.mkdirSync(generatedDir)
 
-	fs.readdir(postDir, (err, posts) => {
-		if (err) return log('magenta', err)
-		const allPostData = posts
-			.filter(pathName => pathName.indexOf('.') === -1)
-			.map(city => {
-				const cityDir = postDir + '/' + city
-				const cityFile = generatedDir + '/' + city + '.json'
-				const cityPostData = fs.readdirSync(cityDir)
-					.filter(pathName => pathName.indexOf('.') === -1)
-					.map(post => {
-						return getDataForPost(postDir, city, post)
-					})
-					.filter(d => d)
-					.sort((a, b) => new Date(a.date) < new Date(b.date))
-				fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
-				return cityPostData
-			})
-			.reduce((accumulator, currentValue) => {
-				return accumulator.concat(currentValue);
-			}, []
-			)
-			.filter(d => d)
-			.sort((a, b) => {
-				return new Date(b.date) - new Date(a.date)
-			})
+		fs.readdir(postDir, (err, posts) => {
+			if (err) return log('magenta', err)
+			const allPostData = posts
+				.filter(pathName => pathName.indexOf('.') === -1)
+				.map(city => {
+					const cityDir = postDir + '/' + city
+					const cityFile = generatedDir + '/' + city + '.json'
+					const cityPostData = fs.readdirSync(cityDir)
+						.filter(pathName => pathName.indexOf('.') === -1)
+						.map(post => {
+							return getDataForPost(postDir, city, post)
+						})
+						.filter(d => d)
+						.sort((a, b) => new Date(a.date) < new Date(b.date))
+					fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
+					return cityPostData
+				})
+				.reduce((accumulator, currentValue) => {
+					return accumulator.concat(currentValue);
+				}, []
+				)
+				.filter(d => d)
+				.sort((a, b) => {
+					return new Date(b.date) - new Date(a.date)
+				})
 
-		fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
-		log('green', '\nGenerated post lists.\n')
-	})
+			fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+			log('green', 'Generated post lists.\n')
+		})
+	} catch (e) {
+		log('magenta', 'Uh oh, we failed in building out the post listings for your site. Error details are:')
+		console.log(e)
+		log('magenta', `We'd better fix this one before we do anything else. If it's something that should never break the site, let Jasper know and he'll make it so it never does again.`)
+	}
+	
 }
 
 function getDataForPost(postDir, city, slug) {
