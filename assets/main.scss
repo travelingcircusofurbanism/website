@@ -94,6 +94,11 @@ h4 {
 	em {
 		display: block;
 		text-align: center;
+
+		strong {
+			display: block;
+			text-align: left;
+		}
 	}
 
 	hr {
@@ -118,7 +123,7 @@ h4 {
 	background: $text;
 	transition: .2s;
 	border: 2px solid transparent;
-	
+
 	&.secondary {
 		color: darken($offwhite, 40%);
 		background: white;
@@ -166,17 +171,17 @@ h4 {
 		white-space: nowrap;
 		color: white;
 		$shadow: rgba($text, .3);
-		text-shadow: 
-			0 0 12px $shadow, 
-			2px 0 12px $shadow, 
-			0 2px 12px $shadow, 
-			0 -2px 12px $shadow, 
+		text-shadow:
+			0 0 12px $shadow,
+			2px 0 12px $shadow,
+			0 2px 12px $shadow,
+			0 -2px 12px $shadow,
 			-2px 0 12px $shadow;
 		font-size: 1.2em;
 		font-weight: 600;
 		letter-spacing: .8px;
 	}
-	
+
 	&:hover {
 		cursor: pointer;
 	}
