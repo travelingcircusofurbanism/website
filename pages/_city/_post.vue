@@ -74,6 +74,10 @@ export default {
   },
   mounted () {
     this.$store.commit('setMapMarkers', this.mapPosition)
+    this.$store.commit('setHighlight', this.mapPosition)
+  },
+  beforeDestroy () {
+    this.$store.commit('setHighlight')
   },
   methods: {
     capitalize,

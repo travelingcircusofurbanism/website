@@ -4,38 +4,44 @@ export default () => {
   return new Vuex.Store({
     state: {
       mapMarkers: [],
-      highlightedLocation: null
+      highlight: []
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
-        if (!newMarkers || newMarkers.length === 0) return
-        state.highlightedLocation = null   
-        state.mapMarkers = (newMarkers.center) ?
-          // catch a single post's mapPosition object
-          [{
-            position: newMarkers,
-            locationName: newMarkers.location
-          }] :
-          (newMarkers[0].position) ?
-          // hard-coded marker data, use as-is
+        state.highlight = []  
+        if (!newMarkers || newMarkers.length === 0 || Object.keys(newMarkers).length === 0)
+          return state.mapMarkers = [] 
+        let parsedMarkers = newMarkers.center || newMarkers[0].center ?
+          // we can directly use a mapPosition object or an array of mapPosition objects
           newMarkers :
-          // or, pull data from post objects
-          newMarkers
-            .map(post => (Array.isArray(post.mapPosition)) ?
-              post.mapPosition.map(position => ({
-                position: { ...position },
-                locationName: position.location
-              })) :
-              [{
-                position: { ...post.mapPosition },
-                locationName: post.mapPosition.location
-              }]
-            ).reduce((acc, curr) =>
-              acc.concat(curr)
-            , [])
+          // or, pull mapPosition object or an array of mapPosition objects from posts
+          Array.isArray(newMarkers) ?
+            // if we have multiple posts, for each...
+            newMarkers.map(post =>
+                // if it's not an array of mapPositions, make it one
+                Array.isArray(post.mapPosition) ?
+                  post.mapPosition : [post.mapPosition]
+              )
+              // then smash 'em all together
+              .reduce((acc, curr) => acc.concat(curr), []) :
+            // otherwise, we just use it straight up.
+            newMarkers.mapPosition
+            
+        if (!Array.isArray(parsedMarkers))
+          parsedMarkers = [parsedMarkers]
+        state.mapMarkers = parsedMarkers
       },
-      setHighlight (state, location) {
-        state.highlightedLocation = location
+
+      setHighlight (state, mapPositions) {
+        if (!mapPositions) mapPositions = []
+        if (!Array.isArray(mapPositions))
+          mapPositions = [mapPositions]
+
+        const parsedLocations = mapPositions
+          .map(p => p.location)
+          .filter(l => l)
+
+        state.highlight = parsedLocations
       }
     }
   })

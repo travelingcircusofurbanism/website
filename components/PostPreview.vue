@@ -38,7 +38,7 @@ export default {
   methods: {
     capitalize,
     mouseOver () {
-      this.$store.commit('setHighlight', this.location || this.city)
+      this.$store.commit('setHighlight', this.mapPosition)
     },
     mouseOut () {
       this.$store.commit('setHighlight')
