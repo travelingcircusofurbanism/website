@@ -123,7 +123,6 @@
             pitch: 0
           }
         if (!this.map) {
-          console.log('creating map')
           this.map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
@@ -160,7 +159,6 @@
         this.markerData.features
           .sort((a, b) => a.geometry.coordinates[1] < b.geometry.coordinates[1])
           .forEach(marker => {
-            console.log(marker)
 
             const popup = new mapboxgl.Popup({
               offset: 20,

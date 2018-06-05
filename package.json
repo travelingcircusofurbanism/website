@@ -5,11 +5,12 @@
   "author": "Mariko",
   "private": true,
   "scripts": {
-    "dev": "npm run prep && nuxt",
     "prep": "node ./scripts/postbot.js",
+    "dev": "npm run prep && nuxt",
     "postbot": "nodemon ./scripts/postbot.js",
     "generate": "npm run prep && nuxt generate",
-    "postgenerate": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME && git add ."
+    "postgenerate": "echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME && npm run committolive",
+    "committolive": "git add docs/* && git commit -m \"Auto-pushing generated files to live.\" && git push"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",
