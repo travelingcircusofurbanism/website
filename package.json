@@ -10,7 +10,7 @@
     "postbot": "nodemon ./scripts/postbot.js",
     "pregolive": "git pull && npm run prep",
     "golive": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "postgolive": "git add . && git commit -m \"Auto-pushing generated files to live\" && git push"
+    "postgolive": "git add . && git commit -m \"Auto-pushing files to live\" && git push"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",

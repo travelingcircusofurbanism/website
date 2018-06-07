@@ -21,7 +21,7 @@ export default {
       .replace('/at/', '')
       .replace('/', '')
       .replace('_', ' ')
-      .replace('%20', ' ')
+      .replace(/%20/g, ' ')
       .toLowerCase()
     let posts = []
     try {
@@ -29,29 +29,37 @@ export default {
     } catch (e) { console.log(e) }
     if (!posts || posts.length === 0)
       return redirect('/')
+    let marker = {}
     posts = posts.filter(p => {
-        if (Array.isArray(p.mapPosition))
-          return p.mapPosition.find(singlePosition => 
+        if (Array.isArray(p.mapPosition)) {
+          const found = p.mapPosition.find(singlePosition => 
             singlePosition.location &&
             singlePosition.location.toLowerCase() === location
           )
-        else return p.mapPosition && 
-          p.mapPosition.location && 
-          p.mapPosition.location.toLowerCase() === location
+          if (found) marker = found
+          return found
+        }
+        else {
+          const found = p.mapPosition && 
+            p.mapPosition.location && 
+            p.mapPosition.location.toLowerCase() === location
+          if (found) marker = found
+          return found
+        }
       })
     if (posts.length === 1)
       return redirect(posts[0].url)
     return {
       posts,
       location,
+      marker,
     }
   },
   computed: {
     shownPosts () { return this.posts },
   },
   mounted () {
-    
-    this.$store.commit ('setMapMarkers', this.posts)
+    this.$store.commit ('setMapMarkers', this.marker)
   },
   methods: {
     capitalize,

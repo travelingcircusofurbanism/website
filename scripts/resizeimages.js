@@ -52,15 +52,24 @@ module.exports = function () {
 											.resize(null, defaultHeight)
 											.toFile(outputPath + file)
 											.then(function () {
-												log('cyan', 'Scaled and saved', outputPath + file)
+												log('cyan', 'Resized and saved', cityDir + postDir + fullSizeDir + file)
+											})
+											.catch(e => {
+												log('magenta', 'Our image processor had some trouble resizing the file at', inputPath + file + '. The full error details are:')
+												console.log(e)
+												log('magenta', `Take a look at that image and make sure it's a valid jpeg, jpg, or png file. Regardless, we've skipped this image for now.`)
 											})
 									}
 								}
-								// if the file isn't an image we can resize, just toss it in /resized anyway.
-								else if (file.indexOf('.') !== 0) {
+								// if the file isn't an image we can resize, just toss it in /resized anyway. (skips folders)
+								else if (file.indexOf('.') > 0) {
 									fs.copyFile(inputPath + file, outputPath + file, e => {
-										if (e) log('magenta', e)
-										log('cyan', 'Copied (non-jpg/png file)', outputPath + file)
+										if (e) {
+											log('magenta', `For some reason, we couldn't copy`, inputPath + file ,`from /full to /resized. Here are the error details:`)
+											console.log(e)
+											return log('magenta', 'Skipping this file for now.')
+										}
+										log('cyan', 'Copied (non-jpg/png file)', cityDir + postDir + fullSizeDir + file)
 									})
 								}
 							})

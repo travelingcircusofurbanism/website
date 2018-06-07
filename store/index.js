@@ -8,6 +8,13 @@ export default () => {
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
+        // comes in as:
+        //  a mapPosition object
+        //  an array of mapPostition objects
+        //  a post
+        //  an array of posts
+        //    posts can have a mapPosition object
+        //    or an array of mapPosition objects 
         state.highlight = []  
         if (!newMarkers || newMarkers.length === 0 || Object.keys(newMarkers).length === 0)
           return state.mapMarkers = [] 
@@ -29,16 +36,18 @@ export default () => {
             
         if (!Array.isArray(parsedMarkers))
           parsedMarkers = [parsedMarkers]
+        parsedMarkers = parsedMarkers.filter(m => m)
         state.mapMarkers = parsedMarkers
       },
 
       setHighlight (state, mapPositions) {
+        // comes in as an array of mapPosition object or an array of names, or a single one of either
         if (!mapPositions) mapPositions = []
         if (!Array.isArray(mapPositions))
           mapPositions = [mapPositions]
 
         const parsedLocations = mapPositions
-          .map(p => p.location)
+          .map(p => p.location || p)
           .filter(l => l)
 
         state.highlight = parsedLocations

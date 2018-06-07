@@ -51,7 +51,7 @@ export default {
 <style lang="scss" scoped>
 
 .post-preview {
-  margin-bottom: $unit * 10;
+  padding-bottom: $unit * 10;
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;

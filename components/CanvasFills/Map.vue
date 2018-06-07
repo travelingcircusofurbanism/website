@@ -59,9 +59,10 @@
         if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
 
         // if only one point, use that.
-        if (this.mapMarkers.length === 1) return this.mapMarkers[0]
+        if (this.mapMarkers.length === 1)
+          return this.mapMarkers[0]
 
-        // if there are multiple points, take their average and zoom out a little
+        // otherwise, find a nice average center spot
         let x = 0, y = 0, z = 0
         const uniqueAsArr = Object.values(this.uniqueLocations)
         const length = uniqueAsArr.length
@@ -79,6 +80,33 @@
 
         return position
       },
+
+      mapZone () {
+        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
+        if (Object.keys(this.uniqueLocations).length > 1) {
+          // if there are multiple points, find the best fit box
+          const minMax = [[180, 180], [-180, -180]]
+          for (let marker of Object.values(this.uniqueLocations)) {
+            const c = marker[0].center
+            if (c[0] < minMax[0][0]) minMax[0][0] = c[0] // min x
+            if (c[1] < minMax[0][1]) minMax[0][1] = c[1] // min y
+            if (c[0] > minMax[1][0]) minMax[1][0] = c[0] // max x
+            if (c[1] > minMax[1][1]) minMax[1][1] = c[1] // max y
+          }
+          const xDiff = Math.abs((minMax[1][0] + 180) - (minMax[0][0] + 180)),
+                yDiff = Math.abs((minMax[1][1] + 180) - (minMax[0][1] + 180)),
+                offsetMod = 0.8,
+                xOffset = xDiff * offsetMod,
+                yOffset = yDiff * offsetMod
+          
+          minMax[0][0] -= xOffset // offset min x
+          minMax[0][1] -= yOffset // offset min y
+          minMax[1][0] += xOffset // offset max x
+          minMax[1][1] += yOffset // offset max y
+          
+          return minMax
+        }
+      }
     },
     watch: {
 
@@ -133,16 +161,11 @@
           )
           this.recalculateMarkerData()
         }
+        // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
+        if (this.mapZone)
+          this.map.fitBounds(this.mapZone)
         else
-          //map.fitBounds([[
-          //     32.958984,
-          //     -5.353521
-          // ], [
-          //     43.50585,
-          //     5.615985
-          // ]])
           this.map.flyTo(dest)
-        
       },
 
       routeTo (location) {
