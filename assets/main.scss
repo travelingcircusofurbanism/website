@@ -21,6 +21,10 @@ body {
 
 a, a:active, a:visited, a:hover {
 	color: $active;
+
+	&.subtle {
+		color: inherit;
+	}
 }
 
 h1, h2, h3, h4 {
