@@ -31,7 +31,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A platform for urbanist narratives collected from the world through traveling' }
+      { hid: 'description', name: 'description', content: 'Collecting urban narratives and practices through traveling from city to city' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

@@ -2,6 +2,7 @@
   <div id="header" :class="{hide: scrollDirection === 'down'}">
     <nuxt-link exact to="/" class="logo">
       <h1>Traveling Circus of Urbanism</h1>
+      <h3>Urban narratives and practices, collected through travel</h3>
     </nuxt-link>
     <br />
     <div class="sublinks">
@@ -54,10 +55,12 @@ export default {
     z-index: 10;
     height: initial;
     pointer-events: none;
+    max-width: 45%;
 
     @include width (mobile) {
       display: block;
       width: 100%;
+      max-width: 100%;
       position: relative;
       top: 0;
       left: 0;
@@ -72,24 +75,40 @@ export default {
 
   .logo {
     display: inline-block;
-    text-transform: uppercase;
-    font-family: 'Unica One', 'Raleway', sans-serif;
     padding: $unit * 4 $unit * 4;
     font-weight: 600;
     border-left: $unit solid $active;
 
     @include width (mobile) {
       width: 100%;
-      padding: $unit * 4 $unit * 3;
+      padding: $unit * 4 $unit * 3 $unit * 3 $unit * 3;
+
+      &:hover {
+        background: $text;
+      }
     }
   }
 
   h1 {
-    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Unica One', 'Raleway', sans-serif;
+    font-size: 2.2rem;
     margin: 0;
 
     @include width (mobile) {
-      font-size: 1.5rem;
+      font-size: 1.6rem;
+    }
+  }
+  
+  h3 {
+    opacity: .8;
+    font-size: 1rem;
+    margin: 0;
+    margin-top: $unit;
+    font-weight: 400;
+
+    @include width (mobile) {
+      font-size: 1rem;
     }
   }
 
@@ -104,16 +123,22 @@ export default {
     }
 
     a {
+      border-left: $unit solid $active;
       padding: $unit * 2 $unit * 4;
       margin-right: $unit;
 
       @include width (mobile) {
-        background: $offwhite;
-        color: darken($offwhite, 60%);
+        border: none;
+        background: lighten($text, 15%);
+        color: white;
         text-align: center;
         flex: 1;
         margin-right: 0;
         padding: $unit * 1.5 $unit * 3;
+
+        &:not(:last-of-type) {
+          border-right: 1px solid rgba(white, .3);
+        }
       }
     }
   }
