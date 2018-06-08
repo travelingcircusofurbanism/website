@@ -1,5 +1,5 @@
 
-# Mueller - a formal industrial zone to a sustainable enclave
+# Mueller - a former industrial zone to a sustainable enclave
 
 ## Mueller doesn't look like anywhere else in Austin
 
