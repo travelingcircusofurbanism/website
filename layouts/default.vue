@@ -1,5 +1,5 @@
 <template>
-  <div class="master" :class="{mobile: isMobile}">
+  <div class="master" ref="master" :class="{mobile: isMobile}">
     <Header/>
     <Canvas v-if="!isMobile" />
     <nuxt/>
@@ -18,11 +18,16 @@
     mounted() {
       window.addEventListener('resize', this.checkWidth)
       this.checkWidth()
+      this.$root._router.afterEach(this.resetScroll)
+      
     },
     methods: {
       checkWidth () {
         this.$store.commit('setMobile', window.innerWidth)
       },
+      resetScroll () {
+        document.querySelector('body').scrollTo(0, 0)
+      }
     }
   }
 
