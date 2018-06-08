@@ -170,7 +170,7 @@
       },
 
       routeTo (location) {
-        this.$router.push('/at/' + location.replace(' ', '%20'))
+        this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
       },
 
       recalculateMarkerData () {
