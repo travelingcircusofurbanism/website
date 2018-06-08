@@ -4,6 +4,7 @@
 </template>
 
 <script>
+  const mapboxgl = require('mapbox-gl')
   const apiKey = require('../../mapboxApiKey.json').key
 
   export default {
@@ -138,7 +139,7 @@
     },
     methods: {
       tryUpdateMap () {
-        if (!this.componentReady || !window.mapboxgl || !this.mapPosition) {
+        if (!this.componentReady || !mapboxgl || !this.mapPosition) {
           return setTimeout(() => this.tryUpdateMap(), 200)
         }
 
@@ -173,7 +174,7 @@
       },
 
       recalculateMarkerData () {
-        if (!this.componentReady || !window.mapboxgl || !this.map)
+        if (!this.componentReady || !mapboxgl || !this.map)
           return
         this.currentMarkers.forEach(marker => {
           marker.remove()

@@ -81,6 +81,16 @@ export default {
     .sub {
       padding: $unit * 2 0;
     }
+
+    @include width (mobile) {
+      * {
+        margin: 0 $unit * .5 $unit * 1 $unit * .5;
+      }
+
+      .sub {
+        padding: $unit * 1 0;
+      }
+    }
   }
 
 </style>

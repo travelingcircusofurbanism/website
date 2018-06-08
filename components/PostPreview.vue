@@ -64,11 +64,17 @@ export default {
     background-position: center center;
   }
 
-  @include width (mid) {
+  @include width (midorsmaller) {
     grid-template-columns: 1fr;
 
     .previewimage {
       height: $unit * 50;
+    }
+  }
+
+  @include width (mobile) {
+    .previewimage {
+      height: $unit * 30;
     }
   }
 

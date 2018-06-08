@@ -9,15 +9,19 @@ $offwhite: rgb(224, 223, 214);
 $unit: 6px;
 
 $content-padding: $unit * 8;
+$content-padding-mobile: $unit * 3;
 $header-offset: $unit * 5;
 
 
-
+// mixins
 @mixin width ($size) {
   @if $size == "mobile" {
     @media (max-width: 768px) { @content; }
   }
   @if $size == "mid" {
     @media (min-width: 769px) and (max-width: 1300px) { @content; }
+  }
+  @if $size == "midorsmaller" {
+    @media (max-width: 1300px) { @content; }
   }
 }

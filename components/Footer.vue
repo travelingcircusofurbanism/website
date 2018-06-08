@@ -23,6 +23,12 @@
     * {
       text-align: center;
     }
+
+    @include width (mobile) {
+      margin: $content-padding-mobile * -1;
+      margin-top: $content-padding-mobile * 2;
+      padding: $content-padding-mobile;
+    }
   }
 
 </style>

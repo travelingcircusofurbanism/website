@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <div class="top">
+    <div class="top" v-if="!isMobile">
       <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
     </div>
     <PostDetails
@@ -55,6 +55,7 @@ export default {
     }
   },
   computed: {
+    isMobile () { return this.$store.state.isMobile },
     editedMarkdown () {
       const baseMD = this.md
       let newMD = baseMD

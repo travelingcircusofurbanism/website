@@ -4,7 +4,8 @@ export default () => {
   return new Vuex.Store({
     state: {
       mapMarkers: [],
-      highlight: []
+      highlight: [],
+      isMobile: true,
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
@@ -51,6 +52,10 @@ export default () => {
           .filter(l => l)
 
         state.highlight = parsedLocations
+      },
+
+      setMobile (state, width) {
+        state.isMobile = parseInt(width) <= 768
       }
     }
   })

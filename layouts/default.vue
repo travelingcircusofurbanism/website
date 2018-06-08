@@ -1,7 +1,7 @@
 <template>
-  <div class="master">
+  <div class="master" :class="{mobile: isMobile}">
     <Header/>
-    <Canvas/>
+    <Canvas v-if="!isMobile" />
     <nuxt/>
   </div>
 </template>
@@ -11,7 +11,19 @@
   import Header from '~/components/Header'
 
   export default {
-    components: { Canvas, Header }
+    components: { Canvas, Header },
+    computed: {
+      isMobile () { return this.$store.state.isMobile },
+    },
+    mounted() {
+      window.addEventListener('resize', this.checkWidth)
+      this.checkWidth()
+    },
+    methods: {
+      checkWidth () {
+        this.$store.commit('setMobile', window.innerWidth)
+      },
+    }
   }
 
 </script>
@@ -32,6 +44,20 @@
       &:not(#map){
         overflow-y: auto;
         height: 100vh;
+      }
+    }
+
+    @include width (mobile) {
+      display: block;
+      height: auto;
+
+      & > * {
+        max-width: 100%;
+
+        &:not(#map){
+          overflow-y: visible;
+          height: auto;
+        }
       }
     }
   }

@@ -31,15 +31,12 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A platform for urban narratives that are collected from the world through traveling' }
+      { hid: 'description', name: 'description', content: 'A platform for urbanist narratives collected from the world through traveling' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.css' }
     ],
-    script: [
-      { async: true, defer: true, src: 'https://api.tiles.mapbox.com/mapbox-gl-js/v0.44.1/mapbox-gl.js' },
-    ]
+    script: []
   },
   css: [ './assets/main.scss' ],
   loading: false,
