@@ -43,7 +43,7 @@ export default {
           const found = p.mapPosition && 
             p.mapPosition.location && 
             p.mapPosition.location.toLowerCase() === location
-          if (found) marker = found
+          if (found) marker = p.mapPosition
           return found
         }
       })

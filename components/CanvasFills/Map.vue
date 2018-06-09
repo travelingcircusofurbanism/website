@@ -7,6 +7,13 @@
   const mapboxgl = require('mapbox-gl')
   const apiKey = require('../../mapboxApiKey.json').key
 
+  const defaultPosition = {
+      bearing: 0,
+      center: [180, 0],
+      zoom: 1.00,
+      pitch: 0
+    }
+
   export default {
     data () {
       return {
@@ -96,14 +103,14 @@
           }
           const xDiff = Math.abs((minMax[1][0] + 180) - (minMax[0][0] + 180)),
                 yDiff = Math.abs((minMax[1][1] + 180) - (minMax[0][1] + 180)),
-                offsetMod = 0.8,
+                offsetMod = 0.75,
                 xOffset = xDiff * offsetMod,
                 yOffset = yDiff * offsetMod
           
           minMax[0][0] -= xOffset // offset min x
           minMax[0][1] -= yOffset // offset min y
           minMax[1][0] += xOffset // offset max x
-          minMax[1][1] += yOffset // offset max y
+          minMax[1][1] += yOffset * 1.5 // offset max y
           
           return minMax
         }
@@ -144,20 +151,20 @@
         }
 
         mapboxgl.accessToken = apiKey
-        const dest = this.mapPosition ||
-          {
-            bearing: 0,
-            center: [180, 0],
-            zoom: 1.00,
-            pitch: 0
-          }
+        const dest = {
+          bearing: this.mapPosition.bearing || defaultPosition.bearing,
+          center: this.mapPosition.center || defaultPosition.center,
+          zoom: this.mapPosition.zoom || defaultPosition.zoom,
+          pitch: this.mapPosition.pitch || defaultPosition.pitch
+        }
+          
         if (!this.map) {
           this.map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
             ...dest
           })
-          this.map.on('styledata', () => 
+          this.map.on('styledata', () =>
             setTimeout(() => this.styleReady = true, 300)
           )
           this.recalculateMarkerData()

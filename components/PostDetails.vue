@@ -2,7 +2,7 @@
 	<p class="sub">
 		<nuxt-link :to="'/is/' + category.toLowerCase()" class="sublink">{{ capitalize(category) }}</nuxt-link> ・
 		<span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
-			<nuxt-link :to="'/at/' + mapPosition.location" class="sublink">{{ mapPosition.location }}</nuxt-link>,
+			<nuxt-link :to="'/at/' + mapPosition.location.toLowerCase()" class="sublink">{{ mapPosition.location }}</nuxt-link>,
 		</span>
 		<nuxt-link :to="'/' + city" class="sublink">{{ capitalize(city) }}</nuxt-link> ・
 		{{
