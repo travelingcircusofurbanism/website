@@ -56,6 +56,13 @@ module.exports = {
   build: {
     styleResources: {
       scss: './assets/variables.scss',
+    },
+    extend (config) {
+      if (!Array.isArray(config.module.noParse))
+        config.module.noParse = [config.module.noParse]
+      config.module.noParse.push(/(mapbox-gl)\.js$/)
+
+      console.log(config.module.noParse)
     }
   },
   generate: {
