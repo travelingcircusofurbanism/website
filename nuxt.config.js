@@ -61,8 +61,6 @@ module.exports = {
       if (!Array.isArray(config.module.noParse))
         config.module.noParse = [config.module.noParse]
       config.module.noParse.push(/(mapbox-gl)\.js$/)
-
-      console.log(config.module.noParse)
     }
   },
   generate: {
