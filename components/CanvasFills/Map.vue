@@ -63,6 +63,7 @@
         return markerData
       },
 
+      // get a good starting point for our map, or return the single point to look for
       mapPosition () {
         if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
 
@@ -89,10 +90,10 @@
         return position
       },
 
+      // if there are multiple points, find the best fit box
       mapZone () {
         if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
         if (Object.keys(this.uniqueLocations).length > 1) {
-          // if there are multiple points, find the best fit box
           const minMax = [[180, 180], [-180, -180]]
           for (let marker of Object.values(this.uniqueLocations)) {
             const c = marker[0].center
@@ -111,6 +112,15 @@
           minMax[0][1] -= yOffset // offset min y
           minMax[1][0] += xOffset // offset max x
           minMax[1][1] += yOffset * 1.5 // offset max y
+
+          if (minMax[1][1] > 90) {
+            const diff = minMax[1][1] - 90
+            minMax[1][1] = 90
+            minMax[0][1] -= diff
+            if (minMax[0][1] < -90) minMax[0][1] = -90
+          }
+
+          console.log(minMax)
           
           return minMax
         }
@@ -151,12 +161,9 @@
         }
 
         mapboxgl.accessToken = apiKey
-        const dest = {
-          bearing: this.mapPosition.bearing || defaultPosition.bearing,
-          center: this.mapPosition.center || defaultPosition.center,
-          zoom: this.mapPosition.zoom || defaultPosition.zoom,
-          pitch: this.mapPosition.pitch || defaultPosition.pitch
-        }
+        const dest = {}
+        for (let key of Object.keys(defaultPosition))
+          dest[key] = this.mapPosition[key] || defaultPosition[key]
           
         if (!this.map) {
           this.map = new mapboxgl.Map({

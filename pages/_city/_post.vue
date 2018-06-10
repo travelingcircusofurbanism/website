@@ -70,6 +70,10 @@ export default {
       newMD = newMD.replace(/<a href="(.*)">/g, 
         (match, url) => `<a ${ url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : '' } href="${ url }">`
       )
+      // fix videos
+      newMD = newMD.replace(/(<iframe.*<\/iframe>)/g, 
+        (match, iframe) => `<div class="video-wrapper">${iframe}</div>`
+      )
       return newMD
     }
   },
