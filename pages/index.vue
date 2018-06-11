@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <div class="intro">
+    <div class="intro" v-if="showIntro">
       <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
     </div>
     <CitySelector />
@@ -16,6 +16,7 @@
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
 import CitySelector from '~/components/CitySelector'
+const { get, set } = require('~/assets/storage').default
 
 export default {
   head() { return { title: 'Home' } },
@@ -27,8 +28,20 @@ export default {
       cityPosts: require(`~/static/generated/${allPosts[0].city}.json`)
     }
   },
+  data () {
+    return {
+      showIntro: false,
+    }
+  },
   mounted () {
     this.$store.commit('setMapMarkers', this.cityPosts)
+    if (!this.get('visited')) {
+      this.showIntro = true
+      this.set('visited', true)
+    }
+  },
+  methods: {
+    get, set,
   }
 }
 </script>

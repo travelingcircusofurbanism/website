@@ -2,7 +2,7 @@
   <div id="header" :class="{hide: scrollDirection === 'down'}">
     <nuxt-link exact to="/" class="logo">
       <h1>Traveling Circus of Urbanism</h1>
-      <h3>Urban narratives and practices, collected through travel</h3>
+      <h3>Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
     <br />
     <div class="sublinks">
