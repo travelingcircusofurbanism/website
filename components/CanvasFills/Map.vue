@@ -120,7 +120,7 @@
             if (minMax[0][1] < -90) minMax[0][1] = -90
           }
 
-          console.log(minMax)
+          // console.log(minMax)
           
           return minMax
         }

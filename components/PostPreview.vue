@@ -3,26 +3,36 @@
     class="post-preview"
     v-on="{mouseover: mouseOver, mouseout: mouseOut}"
   >
+
     <nuxt-link :to="url">
       <div
         :style="{'background-image': `url('${image}')`}"
         class="previewimage"
       ></div>
     </nuxt-link>
+
     <div>
       <nuxt-link :to="url" class="titlelink">
         <h4>{{ title }}</h4>
       </nuxt-link>
+
+      <div class="japanese-available" v-if="currentLanguage === 'ja' && languages.ja">
+        <img src="~/assets/japanFlag.svg" class="flag-icon" />
+        <span class="sub">日本語版あり</span>
+      </div>
+
       <PostDetails
         :category="category"
         :mapPosition="mapPosition"
         :city="city"
         :date="date"
       />
+
       <div>
         {{ description }}
         <nuxt-link :to="url">Keep Reading →</nuxt-link>
       </div>
+
     </div>
   </div>
 </template>
@@ -33,8 +43,11 @@ import { capitalize } from '~/assets/commonFunctions.js'
 import PostDetails from '~/components/PostDetails'
 
 export default {
-  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition' ],
+  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition', 'languages' ],
   components: { PostDetails, },
+  computed: {
+    currentLanguage () { return this.$store.state.language },
+  },
   methods: {
     capitalize,
     mouseOver () {
@@ -86,7 +99,7 @@ export default {
 h4 {
   color: $text !important;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: $unit * 2;
 }
 
 </style>

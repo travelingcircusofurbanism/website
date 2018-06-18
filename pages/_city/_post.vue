@@ -1,17 +1,35 @@
 <template>
   <section class="content">
+
+    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || forceShowLangPicker) && content.ja">
+      <template v-if="displayLanguage !== 'ja'">
+        <img src="~/assets/japanFlag.svg" class="flag-icon" />
+        <span>日本語版もあります。</span>
+        <span class="button invert" @click="displayLanguage = 'ja'">切り替える</span>
+      </template>
+      <template v-else>
+        <span>日本語版を表示しています。</span>
+        <span class="button invert" @click="displayLanguage = 'en'">英語に戻る</span>
+      </template>
+    </div>
+
     <div class="top" v-if="!isMobile">
       <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
     </div>
+
     <PostDetails
       :category="category"
       :mapPosition="mapPosition"
       :city="city"
       :date="date"
     />
-    <article class="markdown" v-html="editedMarkdown"></article>
+
+    <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en )"></article>
+
     <RelatedArticles :city="city" :current="slug" />
+
     <Footer/>
+
   </section>
 </template>
 
@@ -24,40 +42,66 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head() { return { title: this.capitalize(this.title) } },
   components: { Footer, RelatedArticles, PostDetails },
+
   asyncData ({ route, redirect, env }) {
     const slug = route.path.replace(/\/$/g, '')
       .replace('%20', ' ')
+
     const path = '/posts' + slug + '/'
+    
     let city = route.path.substring(1)
     city = city.substring(0, city.indexOf('/'))
       .replace('%20', ' ')
-    let data, md
+
+    let data, en, ja
     try {
       data = require(`~/static${ path }data.js`)
-      md = require(`~/static${ path }content.md`)
+      en = require(`~/static${ path }content.md`)
     } catch (e) {
       console.log('Error: Unable to find data for ' + path)
       return redirect('/')
     }
-    const title = /<h1>(.*)<\/h1>/g.exec(md)[1]
+    try { ja = require(`~/static${ path }ja.md`) } catch (e) {}
+
+    const title = /<h1>(.*)<\/h1>/g.exec(en)[1]
+
     return {
       path,
       slug,
       city,
-      md,
+      content: {
+        en,
+        ja
+      },
       title,
       ...data,
     }
   },
+
   data () {
     return {
-      mapPosition: this.mapPosition || {}
+      mapPosition: this.mapPosition || {},
+      displayLanguage: 'en',
+      forceShowLangPicker: false,
     }
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
-    editedMarkdown () {
-      const baseMD = this.md
+    userLanguage () { return this.$store.state.language },
+  },
+  mounted () {
+    try {
+      this.forceShowLangPicker = process.env.dev
+    } catch (e) {}
+    this.$store.commit('setMapMarkers', this.mapPosition)
+    this.$store.commit('setHighlight', this.mapPosition)
+  },
+  beforeDestroy () {
+    this.$store.commit('setHighlight')
+  },
+  methods: {
+    capitalize,
+    formatMarkdown (baseMD) {
       let newMD = baseMD
       // fix images
       const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
@@ -76,16 +120,6 @@ export default {
       )
       return newMD
     }
-  },
-  mounted () {
-    this.$store.commit('setMapMarkers', this.mapPosition)
-    this.$store.commit('setHighlight', this.mapPosition)
-  },
-  beforeDestroy () {
-    this.$store.commit('setHighlight')
-  },
-  methods: {
-    capitalize,
   }
 }
 </script>
@@ -95,6 +129,13 @@ export default {
 .top {
   margin-bottom: $unit * 8 ;
   margin-top: $unit * 2;
+}
+
+.japanese-available {
+  background: $active;
+  color: white;
+  margin-bottom: $content-padding;
+  text-align: center;
 }
 
 </style>

@@ -62,6 +62,13 @@ h4 {
 	}
 }
 
+.flag-icon {
+  height: 1em;
+  margin-right: $unit;
+  position: relative;
+  top: 2px;
+}
+
 .sectionhead {
 	font-family: 'Unica One', 'Raleway', sans-serif;
 	font-size: 1.6rem;
@@ -92,7 +99,22 @@ h4 {
 		padding: $content-padding-mobile;
 		min-height: 0%;
 	}
+
+	.content-top-full {
+		width: 100%;
+		box-sizing: content-box;
+		margin: -1 * $header-offset -1 * $content-padding;
+		margin-bottom: 0;
+		padding: $header-offset $content-padding;
+
+		@include width (mobile) {
+			margin: -1 * $content-padding-mobile;
+			margin-bottom: 0;
+			padding: $content-padding-mobile;
+		}
+	}
 }
+
 
 .markdown {
 	position: relative;
@@ -172,7 +194,17 @@ h4 {
 		border: 2px solid transparent;
 		color: white;
     background: $active;
-  }
+	}
+	
+	&.invert {
+		background: transparent;
+		border: 2px solid rgba(white, .6);
+
+		&:hover {
+			background: $text;
+			border: 2px solid transparent;
+		}
+	}
 }
 
 .video-wrapper {

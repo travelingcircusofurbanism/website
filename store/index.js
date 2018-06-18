@@ -6,6 +6,7 @@ export default () => {
       mapMarkers: [],
       highlight: [],
       isMobile: true,
+      language: 'en-US',
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
@@ -56,7 +57,12 @@ export default () => {
 
       setMobile (state, width) {
         state.isMobile = parseInt(width) <= 768
-      }
+      },
+
+      setLanguage (state, lang) {
+        state.language = (lang.toLowerCase().indexOf('ja') !== -1) ? 'ja' : 'en'
+      },
+      
     }
   })
 }

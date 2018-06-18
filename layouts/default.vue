@@ -16,10 +16,10 @@
       isMobile () { return this.$store.state.isMobile },
     },
     mounted() {
+      this.$store.commit('setLanguage', window.navigator.userLanguage || window.navigator.language)
       window.addEventListener('resize', this.checkWidth)
       this.checkWidth()
       this.$root._router.afterEach(this.resetScroll)
-      
     },
     methods: {
       checkWidth () {

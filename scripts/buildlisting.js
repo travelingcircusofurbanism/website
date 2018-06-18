@@ -47,15 +47,23 @@ module.exports = function () {
 		console.log(e)
 		log('magenta', `We'd better fix this one before we do anything else. If it's something that should never break the site, let Jasper know and he'll make it so it never does again.`)
 	}
-	
 }
 
 function getDataForPost(postDir, city, slug) {
+	let jaContent
+	try {
+		jaContent = require(`${postDir}/${city}/${slug}/ja.md`)
+	} catch (e) {}
 	try {
 		const postData = require(`${postDir}/${city}/${slug}/data.js`)
 		const postContent = require(`${postDir}/${city}/${slug}/content.md`)
 
 		if (!postData.public) return
+
+		const languages = {
+			en: true,
+			ja: jaContent ? true : false
+		}
 
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
@@ -109,6 +117,7 @@ function getDataForPost(postDir, city, slug) {
 			url: `/${city}/${slug}`,
 			...postData,
 			image,
+			languages,
 		}
 		return data
 	} catch (e) { 
