@@ -1,7 +1,7 @@
 <template>
   <section class="content">
 
-    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || forceShowLangPicker) && content.ja">
+    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || isDev) && content.ja">
       <template v-if="displayLanguage !== 'ja'">
         <img src="~/assets/japanFlag.svg" class="flag-icon" />
         <span>日本語版もあります。</span>
@@ -43,7 +43,7 @@ export default {
   head() { return { title: this.capitalize(this.title) } },
   components: { Footer, RelatedArticles, PostDetails },
 
-  asyncData ({ route, redirect, env }) {
+  asyncData ({ route, redirect, env, isDev }) {
     const slug = route.path.replace(/\/$/g, '')
       .replace('%20', ' ')
 
@@ -74,6 +74,7 @@ export default {
         ja
       },
       title,
+      isDev,
       ...data,
     }
   },
@@ -82,7 +83,6 @@ export default {
     return {
       mapPosition: this.mapPosition || {},
       displayLanguage: 'en',
-      forceShowLangPicker: false,
     }
   },
   computed: {
@@ -90,9 +90,6 @@ export default {
     userLanguage () { return this.$store.state.language },
   },
   mounted () {
-    try {
-      this.forceShowLangPicker = process.env.dev || false
-    } catch (e) {}
     this.$store.commit('setMapMarkers', this.mapPosition)
     this.$store.commit('setHighlight', this.mapPosition)
   },

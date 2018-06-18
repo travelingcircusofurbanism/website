@@ -53,9 +53,6 @@ module.exports = {
     breaks: true,
     typographer: true
   },
-  env: {
-    dev: (process.env.NODE_ENV !== 'production')
-  },
   build: {
     styleResources: {
       scss: './assets/variables.scss',
