@@ -6,6 +6,7 @@
 <script>
   const mapboxgl = require('mapbox-gl')
   const apiKey = require('../../mapboxApiKey.json').key
+  const allLocations = require('~/static/generated/locations.json')
 
   const defaultPosition = {
       bearing: 0,
@@ -184,7 +185,8 @@
       },
 
       routeTo (location) {
-        this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
+        if (allLocations.includes(location.toLowerCase()))
+          this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
       },
 
       recalculateMarkerData () {

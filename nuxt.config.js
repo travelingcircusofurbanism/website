@@ -3,23 +3,12 @@ const fs = require('fs')
 const cities = fs.readdirSync('./static/posts')
   .filter(c => c.indexOf('.') !== 0)
 const posts = require('./static/generated/posts.json')
-let locations = [],
-    categories = []
+const locations = require('./static/generated/locations.json')
+let categories = []
 posts.map(p => {
   // find categories
   if (categories.indexOf(p.category.toLowerCase()) === -1)
     categories.push(p.category.toLowerCase())
-  // find locations
-  if (Array.isArray(p.mapPosition))
-    p.mapPosition
-      .map(pos => pos.location)
-      .filter(l => l)
-      .forEach(loc => {
-        if (locations.indexOf(loc.toLowerCase()) === -1)
-          locations.push(loc.toLowerCase())
-      })
-  if (p.mapPosition && p.mapPosition.location && locations.indexOf(p.mapPosition.location.toLowerCase()) === -1)
-    locations.push(p.mapPosition.location.toLowerCase())
 })
 
 module.exports = {

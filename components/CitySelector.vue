@@ -1,6 +1,6 @@
 <template>
   <div class="selector">
-    <h3 class="sectionhead">Cities</h3>
+    <h3 class="sectionhead">{{ capitalize(this.type) }}</h3>
     <div class="buttonlist">
       <nuxt-link 
         class="button secondary"
@@ -32,6 +32,11 @@ export default {
     hide: {
       required: false,
       type: String
+    },
+    type: {
+      required: false,
+      type: String,
+      default: 'cities'
     }
   },
   data () {

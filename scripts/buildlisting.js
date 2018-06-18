@@ -8,6 +8,8 @@ require.extensions['.md'] = function (module, filename) {
 const postDir = process.cwd() + '/static/posts'
 const generatedDir = process.cwd() + '/static/generated'
 
+const allLocations = new Set()
+
 module.exports = function () {
 	try {
 		if (!fs.existsSync(generatedDir))
@@ -40,6 +42,7 @@ module.exports = function () {
 				})
 
 			fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+			fs.writeFileSync(generatedDir + '/locations.json', JSON.stringify(Array.from(allLocations)), 'utf8')
 			log('green', 'Generated post lists.\n')
 		})
 	} catch (e) {
@@ -64,6 +67,16 @@ function getDataForPost(postDir, city, slug) {
 			en: true,
 			ja: jaContent ? true : false
 		}
+
+		const locations = postData.mapPosition ? 
+			Array.isArray(postData.mapPosition) ?
+				postData.mapPosition.map(p => p.location.toLowerCase()) :
+				[postData.mapPosition.location ? postData.mapPosition.location.toLowerCase() : null]
+			: null
+		if (locations)
+			locations
+				.filter(l => l)
+				.forEach(l => allLocations.add(l))
 
 		let title = postContent
 			.substring(postContent.indexOf('#') + 1)
