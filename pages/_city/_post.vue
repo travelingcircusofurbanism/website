@@ -91,7 +91,7 @@ export default {
   },
   mounted () {
     try {
-      this.forceShowLangPicker = process.env.dev
+      this.forceShowLangPicker = process.env.dev || false
     } catch (e) {}
     this.$store.commit('setMapMarkers', this.mapPosition)
     this.$store.commit('setHighlight', this.mapPosition)
