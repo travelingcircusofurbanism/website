@@ -27,7 +27,7 @@ I am also currently planning on an art project using containers. The idea is to 
 
 ![](https://cdn-images-1.medium.com/max/2000/0*ArlbwVF1kD36DvuQ.jpg)
 
-## Urbanisation is not boring.
+## Urbanism is not boring.
 
 ***You used the word facilitator to explain about your work. As a facilitator, it is important to involve a range of people from new and different industries.***
 
