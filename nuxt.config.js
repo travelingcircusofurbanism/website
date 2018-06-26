@@ -20,7 +20,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'Collecting urban narratives and practices through traveling from city to city' }
+      { hid: 'description', name: 'description', content: 'Urban narratives and practices, collected through travel' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

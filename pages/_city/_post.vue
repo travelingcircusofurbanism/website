@@ -92,13 +92,31 @@ export default {
   mounted () {
     if (window.location.href.indexOf('localhost:') > -1) this.forceShowLanguagePicker = true
     this.$store.commit('setMapMarkers', this.mapPosition)
-    this.$store.commit('setHighlight', this.mapPosition)
+    this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)
+    this.$nextTick(() => {
+      if (!Array.isArray(this.mapPosition)) return
+      // add highlight if multiple
+      this.$el.querySelectorAll('a')
+        .forEach(e => {
+          const foundLocation = this.mapPosition.find(p => e.innerHTML.toLowerCase() === p.location.toLowerCase())
+          if (foundLocation){
+            e.addEventListener('mouseover', () => this.highlight(foundLocation))
+            e.addEventListener('mouseout', this.unHighlight)
+          }
+        })
+    })
   },
   beforeDestroy () {
     this.$store.commit('setHighlight')
   },
   methods: {
     capitalize,
+    highlight (location) {
+      this.$store.commit('setHighlight', location)
+    },
+    unHighlight () {
+      this.$store.commit('setHighlight')
+    },
     formatMarkdown (baseMD) {
       let newMD = baseMD
       // fix images
@@ -110,7 +128,10 @@ export default {
       }
       // fix external links
       newMD = newMD.replace(/<a href="(.*)">/g, 
-        (match, url) => `<a ${ url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : '' } href="${ url }">`
+        (match, url) => {
+          const target = url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : ''
+          return `<a ${ target } href="${ url }">`
+        }
       )
       // fix videos
       newMD = newMD.replace(/(<iframe.*<\/iframe>)/g, 
