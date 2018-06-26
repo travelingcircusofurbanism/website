@@ -12,17 +12,17 @@
 
 4. [Augustus F. Hawkin's natural park](http://www.hilife.or.jp/cities/?p=794)
 
-5. [EIGHTYTWO](This modern take on a classic arcade combines retro video games, pinball machines & craft cocktails.)
+5. This modern take on a classic arcade combines retro video games, pinball machines & craft cocktails.) [EIGHTYTWO](http://eightytwo.la/)
 
 6. [HAUSER & WIRTH](https://www.hauserwirth.com/locations/10069-hauser-wirth-los-angeles)
 
-7. [Art Share L.A.](Art Share L.A.)
+7. [Art Share L.A.](https://artsharela.org/)
 
 8. [GALLERIES AT SCI-ARC](https://sciarc.edu/events/exhibitions)
 
 9. [Hollyhock House](https://buy.acmeticketing.com/events/335/list)
 
-10. A residential dwelling design by Frank Lloyd Wright[Ennis House](http://ennishouse.com/)
+10. A residential dwelling design by Frank Lloyd Wright [Ennis House](http://ennishouse.com/)
 
 ### Read
 
