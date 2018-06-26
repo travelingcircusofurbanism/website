@@ -1,7 +1,7 @@
 
 # The urbanist’s guide to video games!
 
-Few months ago a friend of mine showed me [a very interesting website](https://ncase.me/polygons/) that blew my mind — *Parable of polygons: an playable post on the shape of society.* It shows a segregation simulation that is playfully designed to make it easier for the readers to understand. This website is based off the work of Nobel Prize-winning game theorist,Thomas Schelling and his 1971 paper Dynamic Models of Segregation.
+Few months ago a friend of mine showed me [a very interesting website](https://ncase.me/polygons/) that blew my mind — Parable of polygons: an playable post on the shape of society. It shows a segregation simulation that is playfully designed to make it easier for the readers to understand. This website is based off the work of Nobel Prize-winning game theorist,Thomas Schelling and his 1971 paper Dynamic Models of Segregation.
 
 It walks you through how a small demand for diversity can desegregate a neighborhood, by letting you play with their simulation animation online and explain a theory step by step along with it. I realized how mush it helps me to understand the rhetoric if I get to be ‘involved’ and actively being part of a process.
 
@@ -12,10 +12,11 @@ This leads me to a beauty of playability and a field of game, especially video g
 This book is an analysis of how video games can influence players, even their fundamental attitudes and beliefs about the world.
 
 Of course, video game has been suffered from a negative social connotation and no one takes it seriously.
-> Despite their commercial success, video games still struggle for acceptance as a cultural form. —they are perceived to serve no cultural or social function save distraction at best, moral baseness at worst.
+> Despite their commercial success, video games still struggle for acceptance as a cultural form. —they are perceived to serve no cultural or social function save distraction at best, moral baseness at worst.(Bogost, 2010, p15)
 
 However, according to this book, video game can be a great storytelling medium that have significant impact on players (if it’s used well, of course).
-> I’m saying that this is a mature storytelling medium that has enormous power to shape the debates within our culture. (…) this book suggests that video games open a new domain for persuasion, thanks to their core representational mode, procedurally.(…) I call this new form *procedural rhetoric*, the art of persuasion through rule-based representations and interactions rather than the spoken word, writing, images, or moving pictures.
+
+> I’m saying that this is a mature storytelling medium that has enormous power to shape the debates within our culture. (…) this book suggests that video games open a new domain for persuasion, thanks to their core representational mode, procedurally.(…) I call this new form procedural rhetoric, the art of persuasion through rule-based representations and interactions rather than the spoken word, writing, images, or moving pictures. (Bogost, 2010, p21)
 
 With that in mind, I started digging into the games that have close relationship with a field urban design and architecture. Some of them are amazing tools for urban simulation or education, even for citizen participation.
 
@@ -33,7 +34,7 @@ I only started to play [Block’hood](https://www.plethora-project.com/blockhood
 
 [Cities: Skyline](https://www.paradoxplaza.com/cities-skylines/CSCS00GSK-MASTER.html)s is my absolute favorite and I love this TED talk shown in the below as mush as I do the game itself. It is quite advanced and realistic game and I’m quite sure that you need to get to use your urban planning knowledge.
 
-<iframe src="https://medium.com/media/e2b417e18ae015016f7ba0532b754bf4" frameborder=0></iframe>
+<iframe src="https://embed.ted.com/talks/lang/en/karoliina_korppoo_how_a_video_game_might_help_us_build_better_cities" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
 It is also quite fun to look at all the imaginal cities created by other players, and get to know how/why they built it and how it works in the game.
 
