@@ -145,7 +145,6 @@
 
       highlight (newHighlight, oldHighlight) {
         for (let o of oldHighlight) {
-          console.log(this.currentMarkers.map(m => m._popup.options))
           const oldEl = this.currentMarkers
             .find(m => 
               m._popup.options.location === o ||
