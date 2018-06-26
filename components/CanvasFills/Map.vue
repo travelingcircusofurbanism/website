@@ -239,6 +239,7 @@
     top: -10vh;
     opacity: 0;
     transition: opacity 3s;
+    // overflow: hidden;
 
     &.ready {
       opacity: 1;

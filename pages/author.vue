@@ -3,6 +3,7 @@
     <h1 class="title">
       About the author
     </h1>
+    <img src="~/assets/ProfilePicture.jpg">
     <p>
       Hi! I'm Mariko, a city enthusiast currently traveling around the world.
       I'm a researcher, editor and writer on the urban issues, and I have been involved in the various international urban programs and initiatives all over the world.
@@ -119,4 +120,8 @@ export default {
 </script>
 
 <style scoped lang="scss">
+img{
+  width:100%;
+}
+
 </style>
