@@ -98,7 +98,8 @@ export default {
       // add highlight if multiple
       this.$el.querySelectorAll('a')
         .forEach(e => {
-          const foundLocation = this.mapPosition.find(p => e.innerHTML.toLowerCase() === p.location.toLowerCase())
+          const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
+          const foundLocation = this.mapPosition.find(p => elText === p.location.toLowerCase())
           if (foundLocation){
             e.addEventListener('mouseover', () => this.highlight(foundLocation))
             e.addEventListener('mouseout', this.unHighlight)
