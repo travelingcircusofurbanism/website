@@ -4,13 +4,13 @@
 ![](losangeles02.jpg)
 ### Things to do, places/project to check out
 
-1. Downtown Los Angeles [Art Walk](http://downtownartwalk.org/)
+1. Downtown Los Angeles's [Art Walk](http://downtownartwalk.org/)
 
 2. A public program that lets people to build a community parklet easily: [People St program](https://www.fastcompany.com/3026002/diy-kits-to-help-build-your-own-mini-park-anywhere-there-is-space-on-the-street?partner=rss)
 
-3.  [Bringing Back Broadway](http://www.hilife.or.jp/cities/?p=809)
+3. A 10-year economic development and revitalization initiative to get an identity back to the city. [Bringing Back Broadway](https://bringingbackbroadway.com/)
 
-4. [Augustus F. Hawkin's natural park](http://www.hilife.or.jp/cities/?p=794)
+4. An interesting project that brought the nature back to the former-industrial, challenged area. [Augustus F. Hawkin's natural park](https://www.laparks.org/reccenter/augustus-f-hawkins-natural)
 
 5. This modern take on a classic arcade combines retro video games, pinball machines & craft cocktails.) [EIGHTYTWO](http://eightytwo.la/)
 
@@ -20,7 +20,7 @@
 
 8. [GALLERIES AT SCI-ARC](https://sciarc.edu/events/exhibitions)
 
-9. [Hollyhock House](https://buy.acmeticketing.com/events/335/list)
+9. A famous architecture designed by Frank Lloyd Wright[Hollyhock House](https://buy.acmeticketing.com/events/335/list)
 
 10. A residential dwelling design by Frank Lloyd Wright [Ennis House](http://ennishouse.com/)
 
