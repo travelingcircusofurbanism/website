@@ -1,4 +1,4 @@
-# Arcosanti, an experimental urban laboratory and "ideal" city
+# Arcosanti, an experimental urban laboratory and desert “utopia”
 
 Few weeks ago I had a great opportunity to visit [Arcosanti](https://arcosanti.org/) in central Arizona, 110 km north of Phoenix. It is known as an experimental town originally proposed by the Italian-American architect, Paolo Soleri (1919–2013).
 
