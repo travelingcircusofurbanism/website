@@ -2,6 +2,8 @@
 # Things to do and read for urbanists @Los Angeles
 
 ![](losangeles02.jpg)
+*Photo by Jack Finnigan on Unsplash*
+
 ### Things to do, places/project to check out
 
 1. Downtown Los Angeles's [Art Walk](http://downtownartwalk.org/)
@@ -28,7 +30,7 @@
 
 11. Get to know the overall picture of [what is happening in LA](https://www.planetizen.com/tag/los-angeles)
 
-12. Very helpful [resources](http://planning.lacity.org/urbandesign/resources/DowntownDesignGuide.php)to understand urban design principals in LA
+12. Very helpful [resources](http://planning.lacity.org/urbandesign/resources/DowntownDesignGuide.php) to understand urban design principals in LA
 
 ### Organization
 
