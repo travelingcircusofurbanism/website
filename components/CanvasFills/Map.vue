@@ -5,6 +5,7 @@
 
 <script>
   const mapboxgl = require('mapbox-gl')
+  import supercluster from 'supercluster'
   const apiKey = require('../../mapboxApiKey.json').key
   const allLocations = require('~/static/generated/locations.json')
 
@@ -12,7 +13,8 @@
       bearing: 0,
       center: [180, 0],
       zoom: 1.00,
-      pitch: 0
+      pitch: 0,
+      speed: 1,
     }
 
   export default {
@@ -20,8 +22,11 @@
       return {
         map: null,
         currentMarkers: [],
+        currentClusters: [],
         componentReady: false,
         styleReady: false,
+        clusterer: supercluster(),
+        limitZoomEvent: null,
       }
     },
     computed: {
@@ -120,8 +125,6 @@
             minMax[0][1] -= diff
             if (minMax[0][1] < -90) minMax[0][1] = -90
           }
-
-          // console.log(minMax)
           
           return minMax
         }
@@ -133,20 +136,29 @@
         this.tryUpdateMap(newPosition)
       },
 
-      markerData (newMarkers) {
-        if (!newMarkers) return
-        this.recalculateMarkerData()
+      markerData (newMarkers, oldMarkers) {
+        if (!newMarkers || newMarkers == oldMarkers) return
+        // add new data to clusterer
+        this.clusterer.load(this.markerData.features)
+        this.calculateClusters()
       },
 
       highlight (newHighlight, oldHighlight) {
         for (let o of oldHighlight) {
+          console.log(this.currentMarkers.map(m => m._popup.options))
           const oldEl = this.currentMarkers
-            .find(m => m._popup.options.location === o)
+            .find(m => 
+              m._popup.options.location === o ||
+              m._popup.options.locations.find(l => l === o)
+            )
           if (oldEl) oldEl._element.classList.remove('highlight')
         }
         for (let n of newHighlight) {
           const newEl = this.currentMarkers
-            .find(m => m._popup.options.location === n)
+            .find(m =>
+              m._popup.options.location === n ||
+              m._popup.options.locations.find(l => l === n)
+            )
           if (newEl) newEl._element.classList.add('highlight')
         }
       }
@@ -157,26 +169,21 @@
     },
     methods: {
       tryUpdateMap () {
-        if (!this.componentReady || !mapboxgl || !this.mapPosition) {
+        if (!this.componentReady || !mapboxgl || !this.mapPosition || !this.markerData) {
           return setTimeout(() => this.tryUpdateMap(), 200)
         }
+
+        // add new data to clusterer
+        this.clusterer.load(this.markerData.features)
 
         mapboxgl.accessToken = apiKey
         const dest = {}
         for (let key of Object.keys(defaultPosition))
           dest[key] = this.mapPosition[key] || defaultPosition[key]
           
-        if (!this.map) {
-          this.map = new mapboxgl.Map({
-            container: 'map',
-            style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
-            ...dest
-          })
-          this.map.on('styledata', () =>
-            setTimeout(() => this.styleReady = true, 300)
-          )
-          this.recalculateMarkerData()
-        }
+        if (!this.map)
+          this.initializeMap(dest)
+        
         // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
         if (this.mapZone)
           this.map.fitBounds(this.mapZone)
@@ -189,45 +196,101 @@
           this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
       },
 
-      recalculateMarkerData () {
+      calculateDisplayedMarkerElements () {
         if (!this.componentReady || !mapboxgl || !this.map)
           return
         this.currentMarkers.forEach(marker => {
           marker.remove()
         })
         this.currentMarkers = []
-        this.markerData.features
+        this.currentClusters
           .sort((a, b) => a.geometry.coordinates[1] < b.geometry.coordinates[1])
           .forEach(marker => {
+            const isCluster = marker.properties.cluster
 
+            const locations = []
+            if (isCluster) {
+              const getLocationsRecursively = (root) => {
+                if (root.properties.cluster_id)
+                  this.clusterer.getChildren(root.properties.cluster_id)
+                    .forEach(child => getLocationsRecursively(child))
+                else if (root.properties.location)
+                  locations.push(root.properties.location)
+              }
+              getLocationsRecursively(marker)
+            }
             const popup = new mapboxgl.Popup({
-              offset: 20,
-              closeButton: false,
               location: marker.properties.location,
+              locations,
             })
 
             // create a HTML marker for each feature
             const markerElement = document.createElement('div')
-            markerElement.className = 'marker'
+            markerElement.className = isCluster ? 'cluster' : 'marker'
             const pin = document.createElement('div')
             pin.className = 'pin'
             const textBox = document.createElement('div')
             textBox.className = 'text'
-            const text = document.createTextNode(marker.properties.location)
+            const text = document.createTextNode(marker.properties.location || marker.properties.point_count_abbreviated)
             textBox.appendChild(text)
             markerElement.appendChild(textBox)
             markerElement.appendChild(pin)
-            markerElement.addEventListener('click', e => this.routeTo(marker.properties.location))
+            markerElement.addEventListener('click', e => {
+              if (isCluster) {
+                const children = this.clusterer.getChildren(marker.properties.cluster_id)
+                const centerPoint = children
+                  .map(c => c.geometry.coordinates)
+                  .reduce((acc, point) => {
+                    return [acc[0] + (point[0] / children.length), acc[1] + (point[1] / children.length)]
+                  }, [0,0])
+                this.map.flyTo({
+                  center: centerPoint,
+                  zoom: this.clusterer.getClusterExpansionZoom(marker.properties.cluster_id) + 1
+                })
+              }
+              else
+                this.routeTo(marker.properties.location)
+            })
 
             // make a marker for each feature and add to the map
             const newMarker = new mapboxgl.Marker(markerElement)
-              .setLngLat(marker.geometry.coordinates)
               .setPopup(popup)
+              .setLngLat(marker.geometry.coordinates)
               .addTo(this.map)
 
             this.currentMarkers.push(newMarker)
           })
-        }
+      },
+
+      calculateClusters () {
+        const cZone = this.mapZone ?
+          [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
+          [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
+        this.currentClusters = this.clusterer.getClusters(
+          cZone,
+          Math.round(this.map.getZoom())
+        )
+        this.calculateDisplayedMarkerElements()
+      },
+
+      initializeMap (dest) {
+        this.map = new mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
+          ...dest
+        })
+        this.map.on('styledata', () =>
+          setTimeout(() => this.styleReady = true, 300)
+        )
+        this.map.on('zoom', () => {
+          if (!this.limitZoomEvent)
+            this.limitZoomEvent = setTimeout(() => {
+              this.calculateClusters()
+              this.limitZoomEvent = null
+            }, 300)
+        })
+        this.calculateClusters()
+      }
     }
   }
 

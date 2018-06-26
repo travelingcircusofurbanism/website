@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="153px" height="206px" viewBox="0 0 153 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="168px" height="241px" viewBox="0 0 168 241" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
-    <title>Oval</title>
+    <title>pin</title>
     <desc>Created with Sketch.</desc>
     <defs></defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <path d="M76.5,205.210938 C76.5,205.210938 153,118.749783 153,76.5 C153,34.2502166 118.749783,0 76.5,0 C34.2502166,0 0,34.2502166 0,76.5 C0,118.749783 76.5,205.210938 76.5,205.210938 Z" id="Oval" fill="#D8D8D8"></path>
+        <g id="pin" fill="#D8D8D8">
+            <g transform="translate(8.000000, 0.000000)" id="Oval" fill-rule="nonzero">
+                <path d="M76.5,205.210938 C76.5,205.210938 153,118.749783 153,76.5 C153,34.2502166 118.749783,0 76.5,0 C34.2502166,0 0,34.2502166 0,76.5 C0,118.749783 76.5,205.210938 76.5,205.210938 Z"></path>
+            </g>
+            <path d="M57.289643,171.701244 C23.9923533,176.365755 7.10542736e-15,189.511733 7.10542736e-15,205 C7.10542736e-15,224.391303 37.608081,240.111061 84,240.111061 C130.391919,240.111061 168,224.391303 168,205 C168,189.651966 144.440141,176.603999 111.612494,171.830025 C96.8426401,191.261148 84.5,205.210938 84.5,205.210938 C84.5,205.210938 72.1027992,191.199483 57.289643,171.701244 Z" id="Oval-2" fill-opacity="0.400000006"></path>
+        </g>
     </g>
 </svg>

@@ -226,14 +226,14 @@ h4 {
 	display: none;
 }
 
-.marker {
+.marker, .cluster {
 	z-index: 100;
 	display: inline-block;
 	position: absolute;
 
 	.pin {
-		width: $unit * 5;
-		height: $unit * 5;
+		width: $unit * 6;
+		height: $unit * 6;
 		background-color: white;
 		mask-image: url('~/assets/pin.svg');
 		mask-repeat: no-repeat;
@@ -275,8 +275,39 @@ h4 {
 		}
 		.pin {
 			background-color: $activelight;
-			width: $unit * 7;
-			height: $unit * 7;
+			width: $unit * 8;
+			height: $unit * 8;
+		}
+	}
+}
+
+.cluster {
+	border: 1px solid red;
+	.text {
+		transform: translateX(-50%) translateY(30%);
+		color: $text;
+		text-shadow: none;
+		z-index: 2;
+		transition: all .2s;
+	}
+	.pin {
+		z-index: 1;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(-50%) translateY(-50%);
+		width: $unit * 8;
+		height: $unit * 8;
+		mask-image: url('~/assets/cluster.svg');
+	}
+
+  &.highlight, &:hover {
+		.text {
+			color: white;
+		}
+		.pin {
+			width: $unit * 10;
+			height: $unit * 10;
 		}
 	}
 }

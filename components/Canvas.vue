@@ -23,6 +23,7 @@ export default {
     background: #555;
     z-index: 2;
     position: relative;
+    overflow: hidden;
 
     & > .fill {
       position: relative;
