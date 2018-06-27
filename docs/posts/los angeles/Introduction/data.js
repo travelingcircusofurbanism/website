@@ -4,7 +4,7 @@ module.exports = {
 	category: 'place',
 	mapPosition:  [
 		{
-			location: 'Broadway',
+			location: 'Bringing Back Broadway',
 			bearing: 0,
 			center: [-118.481293, 34.0250545],
 			zoom: 12.00,

@@ -5,7 +5,7 @@ Few months ago a friend of mine showed me [a very interesting website](https://n
 
 By letting you play with their simulation and explaining the theory step by step along with it, it walks you through how a small demand for diversity can desegregate a neighborhood. I realized how much it helps me to understand the rhetoric if I get to be ‘involved’ and actively being part of a process.
 
-This leads me to the beauty of playability in the field of games, especially video games. The authors of the website were inspired by Ian Bogost’s book *[Persuasive Games: The Expressive Power of Videogames](http://bogost.com/books/persuasive_games/)* and I, inspired, decided to read it.
+This leads me to the beauty of playability in the field of games, especially video games. The authors of the website were inspired by Ian Bogost’s book [Persuasive Games: The Expressive Power of Videogames](http://bogost.com/books/persuasive_games/) and I, inspired, decided to read it.
 
 ## **Why video games are not as bad as we think**
 
@@ -43,7 +43,7 @@ It's also quite fun to look at all the imaginary cities created by other players
 
 ### 3. Block by Block (Minecraft)
 
-Minecraft is an older famous video game, but what I want to highlight is not Minecraft itself but the initiative called [Block by Block](https://blockbyblock.org/). Block by Block uses Minecraft to engage with challenged communities through a range of workshops, and raises funds for implementation of public spaces.
+Minecraft is an older, famous video game, but what I want to highlight is not Minecraft itself but the initiative called [Block by Block](https://blockbyblock.org/). Block by Block uses Minecraft to engage with challenged communities through a range of workshops, and raises funds for implementation of public spaces.
 
 I mean, it’s a super easy and fun game and you can create anything by hand — it’s a brilliant idea to use Minecraft to encourage citizen participation, and to raise awareness that everyone, including non-professionals, can and *should* engage in our cities and public spaces.
 
