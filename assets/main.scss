@@ -141,9 +141,12 @@ h4 {
 		}
 	}
 
-	em {
+	img + em {
 		display: block;
 		text-align: center;
+	}
+
+	em {
 
 		strong {
 			display: block;
@@ -158,6 +161,12 @@ h4 {
 		background: $offwhite;
 		margin: $unit * 15 auto;
 		width: 30%;
+	}
+
+	blockquote {
+		font-style: italic;
+		padding: $unit $unit * 4;
+		background: rgba($offwhite, .3);
 	}
 }
 
