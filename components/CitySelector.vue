@@ -1,6 +1,6 @@
 <template>
   <div class="selector">
-    <h3 class="sectionhead">{{ capitalize(this.type) }}</h3>
+    <h3 class="sectionhead mini">{{ capitalize(this.type) }}</h3>
     <div class="buttonlist">
       <nuxt-link 
         class="button secondary"
@@ -75,21 +75,30 @@ export default {
   .buttonlist {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: stretch;
     text-align: center;
 
     * {
       flex-shrink: 0;
-      margin: 0 $unit * 1 $unit * 2 $unit * 1;
+      flex-grow: 1;
+      // margin: 0 $unit * 1 $unit * 2 $unit * 1;
+      margin: 1px 0;
+      border: 2px solid transparent;
+      box-shadow: 0 0 0 2px $offwhite;
+
+      &:hover {
+        box-shadow: none;
+      }
     }
 
     .sub {
-      padding: $unit * 2 0;
+      padding: $unit * 2;
+      box-shadow: none;
     }
 
     @include width (mobile) {
       * {
-        margin: 0 $unit * .5 $unit * 1 $unit * .5;
+        // margin: 0 $unit * .5 $unit * 1 $unit * .5;
       }
 
       .sub {

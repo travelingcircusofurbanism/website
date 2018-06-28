@@ -1,10 +1,11 @@
 module.exports = {
 	public: false,
-	date: '4/13/2015',
+	date: '6/27/2018',
 	category: 'place',
+	image: 'arcosanti00.jpg',
 	mapPosition: {
 		bearing: 0,
-		center: [16.37381890000006, 48.2081743],
+		center: [-112.10055469999998, 34.3425315],
 		zoom: 12.00,
 		pitch: 0
 	}

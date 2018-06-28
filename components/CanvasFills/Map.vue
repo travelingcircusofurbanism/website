@@ -49,7 +49,7 @@
       },
 
       markerData () {
-        if (!this.uniqueLocations) return
+        if (!this.uniqueLocations) return []
         const markerData = {
           type: 'FeatureCollection',
           features: []
@@ -71,7 +71,7 @@
 
       // get a good starting point for our map, or return the single point to look for
       mapPosition () {
-        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
+        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return defaultPosition
 
         // if only one point, use that.
         if (this.mapMarkers.length === 1)

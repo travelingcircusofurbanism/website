@@ -47,6 +47,7 @@ export default {
     if (!this.city) return
     try {
       this.allCityPosts = require(`~/static/generated/${ this.city }.json`)
+        .filter(p => p.public === true)
     } catch (e) { console.log(e) }
   }
 }

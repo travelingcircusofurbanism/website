@@ -1,7 +1,7 @@
 <template>
   <section class="content">
 
-    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || forceShowLanguagePicker) && content.ja">
+    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || isDev) && content.ja">
       <template v-if="displayLanguage !== 'ja'">
         <img src="~/assets/japanFlag.svg" class="flag-icon" />
         <span>日本語版もあります。</span>
@@ -82,7 +82,7 @@ export default {
     return {
       mapPosition: this.mapPosition || {},
       displayLanguage: 'en',
-      forceShowLanguagePicker: false,
+      isDev: false,
     }
   },
   computed: {
@@ -90,7 +90,7 @@ export default {
     userLanguage () { return this.$store.state.language },
   },
   mounted () {
-    if (window.location.href.indexOf('localhost:') > -1) this.forceShowLanguagePicker = true
+    if (window.location.href.indexOf('localhost:') > -1) this.isDev = true
     this.$store.commit('setMapMarkers', this.mapPosition)
     this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)
     this.$nextTick(() => {
