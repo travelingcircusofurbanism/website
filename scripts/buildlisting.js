@@ -87,7 +87,8 @@ function getDataForPost(postDir, city, slug) {
 			.replace(/<.*>.*<\/.*>/g, '') // remove html tags
 			.replace(/[\n\r]#+/g, '') // remove #, ##, ###, #### headers
 			.replace('>', '') // remove > quotes
-			.replace('*', '') // remove * bolds
+			.replace(/\*/g, '') // remove * bolds
+			.replace('---', '') // remove <hr> lines
 			.replace('\n', ' ') // remove line breaks
 		if (description.length > 200) {
 			const afterLimit = description.substring(200)

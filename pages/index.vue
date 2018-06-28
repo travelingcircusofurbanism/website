@@ -3,7 +3,13 @@
     <div class="intro" v-if="showIntro">
       <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
     </div>
-    <CitySelector />
+    <Selector 
+      type="category"
+      title="Categories"
+      :moreHint="false"
+      urlPrefix="is/"
+    />
+    <Selector />
     <PostList
       :posts="posts"
       title="Recent Posts"
@@ -15,12 +21,12 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
-import CitySelector from '~/components/CitySelector'
+import Selector from '~/components/Selector'
 const { get, set } = require('~/assets/storage').default
 
 export default {
   head() { return { title: 'Home' } },
-  components: { Footer, PostList, CitySelector, },
+  components: { Footer, PostList, Selector, },
   asyncData () {
     const allPosts = require('~/static/generated/posts.json')
     return {

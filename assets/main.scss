@@ -77,17 +77,18 @@ h4 {
 	margin: 0 auto;
 	text-transform: uppercase;
 	font-weight: 600;
-	margin-top: $unit * 5;
+	margin-top: $unit * 8;
   margin-bottom: $unit * 7;
   padding-bottom: $unit * 3;
 	border-bottom: 2px solid $active;
 	max-width: 60%;
 
 	&.mini {
-		margin-top: $unit * 3;
+		margin-top: $unit * 2;
+		padding-bottom: $unit * 2;
 		margin-bottom: 0;
 		border-bottom: 0;
-		// font-size: 1.3rem;
+		font-size: 1.4rem;
 	}
 
 	@include width (mobile) {
@@ -193,6 +194,10 @@ h4 {
 	background: $text;
 	transition: .2s;
 	border: 2px solid transparent;
+
+	&.thin {
+		padding: $unit * 1.5 $unit * 3;
+	}
 
 	@include width (mobile) {
 		padding: $unit * 1.5 $unit * 2.5;

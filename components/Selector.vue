@@ -1,21 +1,21 @@
 <template>
   <div class="selector">
-    <h3 class="sectionhead mini">{{ capitalize(this.type) }}</h3>
+    <h3 class="sectionhead mini">{{ capitalize(title) }}</h3>
     <div class="buttonlist">
       <nuxt-link 
-        class="button secondary"
-        :to="`/${city}`"
+        class="button secondary thin"
+        :to="`/${ urlPrefix }${ item }`"
         exact
-        v-for="(city, key) in citiesToShow"
+        v-for="(item, key) in itemsToShow"
         :key="key"
       >
-        {{ capitalize(city) }}
+        {{ capitalize(item) }}
       </nuxt-link>
-      <div class="sub" v-if="orderedCities.length < cutoff">And more to come...</div>
+      <div class="sub" v-if="orderedItems.length < cutoff && moreHint">And more to come...</div>
     </div>
     <div
       class="button secondary full"
-      v-if="orderedCities.length > cutoff && !showAll"
+      v-if="orderedItems.length > cutoff && !showAll"
       @click="showAll = true"
     >
       Show All Cities
@@ -36,28 +36,45 @@ export default {
     type: {
       required: false,
       type: String,
-      default: 'cities'
-    }
+      default: 'city'
+    },
+    title: {
+      required: false,
+      default: 'Cities'
+    },
+    urlPrefix: {
+      required: false,
+      default: ''
+    },
+    cutoff: {
+      required: false,
+      type: Number,
+      default: 10
+    },
+    moreHint: {
+      required: false,
+      type: Boolean,
+      default: true
+    },
   },
   data () {
     return {
       showAll: false,
-      cutoff: 10,
     }
   },
   computed: {
-    orderedCities () {
-      const cityFrequency = {}
+    orderedItems () {
+      const typeFrequency = {}
       posts.forEach(p => {
-        if (this.hide && p.city.toLowerCase() === this.hide.toLowerCase()) return
-        cityFrequency[p.city] = 
-          (cityFrequency[p.city] ? cityFrequency[p.city] + 1 : 1)
+        if (this.hide && p[this.type].toLowerCase() === this.hide.toLowerCase()) return
+        typeFrequency[p[this.type]] = 
+          (typeFrequency[p[this.type]] ? typeFrequency[p[this.type]] + 1 : 1)
       })
-      return Object.keys(cityFrequency)
-        .sort((a, b) => cityFrequency[a] < cityFrequency[b])
+      return Object.keys(typeFrequency)
+        .sort((a, b) => typeFrequency[a] < typeFrequency[b])
     },
-    citiesToShow () {
-      return this.showAll ? this.orderedCities : this.orderedCities.slice(0, this.cutoff)
+    itemsToShow () {
+      return this.showAll ? this.orderedItems : this.orderedItems.slice(0, this.cutoff)
     }
   },
   methods: {
@@ -69,7 +86,7 @@ export default {
 <style scoped lang="scss">
 
   .selector {
-    margin-bottom: $unit * 10;
+    margin-bottom: $unit * 5;
   }
 
   .buttonlist {
@@ -92,7 +109,7 @@ export default {
     }
 
     .sub {
-      padding: $unit * 2;
+      padding: $unit * 1.5;
       box-shadow: none;
     }
 
