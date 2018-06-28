@@ -53,15 +53,13 @@ module.exports = function () {
 }
 
 function getDataForPost(postDir, city, slug) {
-	let jaContent
-	try {
-		jaContent = require(`${postDir}/${city}/${slug}/ja.md`)
-	} catch (e) {}
-	try {
-		const postData = require(`${postDir}/${city}/${slug}/data.js`)
-		const postContent = require(`${postDir}/${city}/${slug}/content.md`)
+	let jaContent, postData, postContent
+	try { postData = require(`${postDir}/${city}/${slug}/data.js`) } catch (e) { }
+	try { postContent = require(`${postDir}/${city}/${slug}/content.md`) } catch (e) { }
+	try { jaContent = require(`${postDir}/${city}/${slug}/ja.md`) } catch (e) { }
 
-		if (!postData.public) return
+	try {
+		if (!postData || !postContent) return
 
 		const languages = {
 			en: true,
@@ -131,6 +129,7 @@ function getDataForPost(postDir, city, slug) {
 			...postData,
 			image,
 			languages,
+			public: postData.public,
 		}
 		return data
 	} catch (e) { 

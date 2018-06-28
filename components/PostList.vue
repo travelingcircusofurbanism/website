@@ -7,6 +7,7 @@
 			v-for="(post, key) in postsToShow"
 			:key="key"
 			v-bind="post"
+			:class="{draft: post.public !== true}"
 		/>
 		<div 
 			class="show-more button secondary full"
@@ -41,14 +42,21 @@ export default {
 	components: { PostPreview, },
   data () {
     return {
-			shownPostCount: this.perPage
+			shownPostCount: this.perPage,
+			isDev: false,
     }
   },
   computed: {
-		totalPosts () { return this.posts.length },
-		postsToShow () { return this.posts.slice(0, this.shownPostCount) },
+		showablePosts () { 
+			return this.isDev ? 
+				this.posts :
+				this.posts.filter(p => p.public === true) 
+		},
+		totalPosts () { return this.showablePosts.length },
+		postsToShow () { return this.showablePosts.slice(0, this.shownPostCount) },
   },
   mounted () {
+		if (window.location.href.indexOf('localhost:') > -1) this.isDev = true
   },
   methods: {
   }
@@ -57,5 +65,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+
+	.draft {
+		opacity: .4;
+	}
 
 </style>
