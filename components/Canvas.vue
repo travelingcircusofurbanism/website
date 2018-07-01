@@ -25,10 +25,18 @@ export default {
     position: relative;
     overflow: hidden;
 
+    @include width (mobile) {
+      height: 35vh;
+    }
+
     & > .fill {
       position: relative;
       height: 100vh;
       width: 100%;
+
+      @include width (mobile) {
+        height: 100%;
+      }
     }
   }
   

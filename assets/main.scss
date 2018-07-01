@@ -39,6 +39,7 @@ h1 {
 
 	@include width (mobile) {
 		font-size: 2.5rem;
+		margin-top: $unit * 3;
 	}
 }
 
@@ -69,6 +70,39 @@ h4 {
   top: 2px;
 }
 
+.content {
+	min-height: 100vh;
+	width: 100%;
+	padding: $header-offset $content-padding;
+
+	@include width (mobile) {
+		padding: $content-padding-mobile;
+		min-height: 0%;
+	}
+
+	.content-top-full {
+		width: 100%;
+		box-sizing: content-box;
+		margin: -1 * $header-offset -1 * $content-padding;
+		margin-bottom: 0;
+		padding: $header-offset $content-padding;
+
+		&.mini {
+			padding-bottom: $unit * 2 ;
+		}
+
+		@include width (mobile) {
+			margin: -1 * $content-padding-mobile;
+			margin-bottom: 0;
+			padding: $content-padding-mobile;
+
+			&.mini {
+				padding: $content-padding-mobile / 2 $content-padding-mobile;
+			}
+		}
+	}
+}
+
 .sectionhead {
 	font-family: 'Unica One', 'Raleway', sans-serif;
 	font-size: 1.6rem;
@@ -89,44 +123,30 @@ h4 {
 		margin-bottom: 0;
 		border-bottom: 0;
 		font-size: 1.4rem;
-	}
-
-	@include width (mobile) {
-		max-width: 80%;
-		margin-top: $unit * 2;
-		margin-bottom: $unit * 4;
-
-		&.mini {
-			margin-bottom: 0;
-		}
-	}
-}
-
-.content {
-	min-height: 100vh;
-	width: 100%;
-	padding: $header-offset $content-padding;
-
-	@include width (mobile) {
-		padding: $content-padding-mobile;
-		min-height: 0%;
-	}
-
-	.content-top-full {
-		width: 100%;
-		box-sizing: content-box;
-		margin: -1 * $header-offset -1 * $content-padding;
-		margin-bottom: 0;
-		padding: $header-offset $content-padding;
+		letter-spacing: 1.5px;
 
 		@include width (mobile) {
-			margin: -1 * $content-padding-mobile;
+			font-size: 1.2rem;
+			margin-top: $unit;
+			padding-bottom: $unit;
+		}
+	}
+
+	@include width (mobile) {
+		font-size: 1.4rem;
+		max-width: 80%;
+		margin-top: $unit * 2;
+		margin-bottom: $unit * 3;
+		padding-bottom: 0;
+		border-bottom: none;
+
+		&.mini {
+			margin-top: 0;
+			padding-top: $unit;
 			margin-bottom: 0;
-			padding: $content-padding-mobile;
 		}
 	}
 }
-
 
 .markdown {
 	position: relative;
@@ -149,7 +169,10 @@ h4 {
 		padding: $unit * 3 0;
 
 		@include width (mobile) {
+			width: 100vw;
+			min-width: 100vw;
 			padding: $unit * 2 0;
+			margin: 0 $content-padding-mobile * -1;
 		}
 	}
 
@@ -193,10 +216,14 @@ h4 {
 	color: white;
 	background: $text;
 	transition: .2s;
-	border: 2px solid transparent;
 
-	&.thin {
-		padding: $unit * 1.5 $unit * 3;
+	&.mini {
+		padding: $unit * 1.5 $unit * 2;
+		margin: 2px;
+
+		@include width (mobile) {
+			margin: 4px;
+		}
 	}
 
 	@include width (mobile) {
@@ -207,8 +234,12 @@ h4 {
 
 	&.secondary {
 		color: darken($offwhite, 40%);
-		background: white;
-		border: 2px solid $offwhite;
+		box-shadow: 0 2px 4px $offwhite;
+		background: rgba(white, .8);
+		
+		&.onwhite {
+			background: $shade;
+		}
 	}
 
 	&.full {
@@ -216,20 +247,23 @@ h4 {
 	}
 
 	&:hover {
-		border: 2px solid transparent;
 		color: white;
-    background: $active;
+    background: $active !important;
 	}
 	
 	&.invert {
 		background: transparent;
-		border: 2px solid rgba(white, .6);
+    box-shadow: 0 0 0 2px rgba(white, .6);
 
 		&:hover {
-			background: $text;
-			border: 2px solid transparent;
+			background: $text !important;
+			box-shadow: none;
 		}
 	}
+
+	&.showall {
+    background: rgba($offwhite, .2);
+  }
 }
 
 .video-wrapper {
@@ -255,6 +289,11 @@ h4 {
 	z-index: 100;
 	display: inline-block;
 	position: absolute;
+	font-size: 1.2em;
+
+	@include width(mobile) {
+		font-size: 1em;
+	}
 
 	.pin {
 		width: $unit * 6;
@@ -283,7 +322,6 @@ h4 {
 			0 2px 12px $shadow,
 			0 -2px 12px $shadow,
 			-2px 0 12px $shadow;
-		font-size: 1.2em;
 		font-weight: 600;
 		letter-spacing: .8px;
 	}
@@ -307,13 +345,16 @@ h4 {
 }
 
 .cluster {
-	border: 1px solid red;
 	.text {
 		transform: translateX(-50%) translateY(30%);
 		color: $text;
 		text-shadow: none;
 		z-index: 2;
 		transition: all .2s;
+
+		@include width(mobile) {
+			font-size: 1.2em;
+		}
 	}
 	.pin {
 		z-index: 1;
@@ -335,6 +376,13 @@ h4 {
 			height: $unit * 10;
 		}
 	}
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .2s;
+}
+.fade-enter, .fade-leave-to {
+  opacity: 0;
 }
 
 .page-enter-active{

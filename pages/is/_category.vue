@@ -14,7 +14,7 @@ import PostList from '~/components/PostList'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalize(this.category) } },
+  head () { return { title: this.capitalize(this.category) } },
   components: { Footer, PostList, },
   asyncData ({ route, redirect }) {
     const category = route.path
@@ -44,7 +44,12 @@ export default {
     shownPosts () { return this.posts },
   },
   mounted () {
-    this.$store.commit ('setMapMarkers', this.posts)
+    this.$store.commit(
+      'setMapMarkers', 
+      window.location.href.indexOf('localhost:') > -1 ? 
+        this.posts :
+        this.posts.filter(p => p.public === true)
+    )
   },
   methods: {
     capitalize,

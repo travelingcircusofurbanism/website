@@ -14,10 +14,11 @@
     </div>
 
     <div class="top" v-if="!isMobile">
-      <nuxt-link to="/" exact class="button secondary">← Back to Home</nuxt-link>
+      <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
     </div>
 
     <PostDetails
+      class="details"
       :category="category"
       :mapPosition="mapPosition"
       :city="city"
@@ -75,12 +76,12 @@ export default {
       },
       title,
       ...data,
+      mapPosition: data.mapPosition ? Array.concat([], data.mapPosition) : [],
     }
   },
 
   data () {
     return {
-      mapPosition: this.mapPosition || {},
       displayLanguage: 'en',
       isDev: false,
     }
@@ -92,6 +93,7 @@ export default {
   mounted () {
     if (window.location.href.indexOf('localhost:') > -1) this.isDev = true
     this.$store.commit('setMapMarkers', this.mapPosition)
+    this.$store.commit('setCity', this.city)
     this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)
     this.$nextTick(() => {
       if (!Array.isArray(this.mapPosition)) return
@@ -156,6 +158,16 @@ export default {
   color: white;
   margin-bottom: $content-padding;
   text-align: center;
+
+  @include width(mobile) {
+    margin-bottom: $content-padding-mobile;
+  }
+}
+
+.details {
+  @include width (mobile) {
+    margin-top: 0;
+  }
 }
 
 </style>

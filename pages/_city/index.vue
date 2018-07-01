@@ -36,7 +36,12 @@ export default {
     shownPosts () { return this.posts },
   },
   mounted () {
-    this.$store.commit ('setMapMarkers', this.posts)
+    this.$store.commit(
+      'setMapMarkers', 
+      window.location.href.indexOf('localhost:') > -1 ? 
+        this.posts :
+        this.posts.filter(p => p.public === true)
+    )
   },
   methods: {
     capitalize,
