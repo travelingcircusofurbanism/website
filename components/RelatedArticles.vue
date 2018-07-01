@@ -84,7 +84,9 @@ h4 {
   }
 
   @include width (mobile) {
-    margin-bottom: $unit * 4;
+    margin-bottom: $unit * 5;
+    text-align: center;
+    text-decoration: underline;
     
     &:not(:last-of-type) {
       margin-right: 0;

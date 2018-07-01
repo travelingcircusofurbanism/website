@@ -10,7 +10,7 @@
 			:class="{draft: post.public !== true}"
 		/>
 		<div 
-			class="show-more button secondary full"
+			class="button secondary full showall"
 			v-if="shownPostCount < totalPosts"
 			@click="shownPostCount += perPage"
 		>

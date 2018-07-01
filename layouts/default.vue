@@ -1,8 +1,8 @@
 <template>
   <div class="master" ref="master" :class="{mobile: isMobile}">
-    <Header/>
-    <Canvas v-if="!isMobile" />
-    <nuxt/>
+    <Header />
+    <Canvas />
+    <nuxt />
   </div>
 </template>
 
@@ -45,11 +45,8 @@
       flex: 1;
       max-width: 50%;
       overflow: hidden;
-
-      &:not(#map){
-        overflow-y: auto;
-        height: 100vh;
-      }
+      overflow-y: auto;
+      height: 100vh;
     }
 
     @include width (mobile) {
@@ -58,11 +55,8 @@
 
       & > * {
         max-width: 100%;
-
-        &:not(#map){
-          overflow-y: visible;
-          height: auto;
-        }
+        overflow-y: visible;
+        height: auto;
       }
     }
   }

@@ -3,13 +3,15 @@
     <div class="intro" v-if="showIntro">
       <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
     </div>
-    <Selector />
-    <Selector
-      type="category"
-      title="Categories"
-      :moreHint="false"
-      urlPrefix="is/"
-    />
+    <div class="content-top-full mini">
+      <Selector />
+      <Selector
+        type="category"
+        title="Categories"
+        :moreHint="false"
+        urlPrefix="is/"
+      />
+    </div>
     <PostList
       :posts="posts"
       title="Recent Posts"
@@ -39,6 +41,9 @@ export default {
       showIntro: false,
     }
   },
+  computed: {
+    isMobile () { return this.$store.state.isMobile },
+  },
   mounted () {
     this.$store.commit('setMapMarkers', this.cityPosts)
     if (!this.get('visited')) {
@@ -56,9 +61,9 @@ export default {
 
   .intro {
     margin: $content-padding * -1;
-    margin-bottom: $content-padding * 1;
+    // margin-bottom: $content-padding * 1;
     padding: $content-padding * 1.5;
-    background: lighten($offwhite, 10%);//linear-gradient($offwhite, $offwhite, rgba($offwhite, 0));
+    background: $shade;
     line-height: 1.4;
     color: darken($offwhite, 60%);
     text-align: center;
@@ -69,6 +74,10 @@ export default {
       margin-bottom: $content-padding-mobile * 1;
       padding: $content-padding-mobile * 1.5;
     }
+  }
+
+  .content-top-full {
+    background: $shade;
   }
 
 </style>

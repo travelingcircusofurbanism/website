@@ -70,6 +70,7 @@ export default {
   grid-gap: $unit * 5;
 
   .previewimage {
+    background: $offwhite;
     height: 100%;
     width: 100%;
     background-size: cover;

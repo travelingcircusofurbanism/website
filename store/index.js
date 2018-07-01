@@ -7,6 +7,7 @@ export default () => {
       highlight: [],
       isMobile: true,
       language: 'en-US',
+      currentCity: null,
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
@@ -16,7 +17,22 @@ export default () => {
         //  a post
         //  an array of posts
         //    posts can have a mapPosition object
-        //    or an array of mapPosition objects 
+        //    or an array of mapPosition objects
+
+        // first, grab the city
+        try {
+            state.currentCity = newMarkers.center || newMarkers[0].center ?
+            null :
+            Array.isArray(newMarkers) ?
+              newMarkers.reduce((acc, curr) => {
+                if (acc === null) return null
+                if (acc !== 'none' && acc !== curr.city)
+                  return null
+                else return curr.city
+              }, 'none') :
+              newMarkers.city
+        } catch (e) {}
+          
         state.highlight = []  
         if (!newMarkers || newMarkers.length === 0 || Object.keys(newMarkers).length === 0)
           return state.mapMarkers = [] 
@@ -53,6 +69,10 @@ export default () => {
           .filter(l => l)
 
         state.highlight = parsedLocations
+      },
+
+      setCity (state, city) {
+        state.currentCity = city
       },
 
       setMobile (state, width) {

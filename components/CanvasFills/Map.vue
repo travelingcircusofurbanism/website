@@ -301,10 +301,14 @@
     top: -10vh;
     opacity: 0;
     transition: opacity 3s;
-    // overflow: hidden;
 
     &.ready {
       opacity: 1;
+    }
+
+    @include width (mobile) {
+      height: 100% !important;
+      top: 0;
     }
   }
 </style>
