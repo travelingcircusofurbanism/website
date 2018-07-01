@@ -18,11 +18,11 @@
 
 6. 18 places in LA where black architects left their mark - [this](https://la.curbed.com/maps/los-angeles-black-architects-projects-map) is a ultimate list and mapping.
 
-7. [GALLERIES AT SCI-ARC](https://sciarc.edu/events/exhibitions)
+7.  A world-renowned independent architecture schools, and it often has exhibition that is open to the public. [GALLERIES AT SCI-ARC](https://sciarc.edu/events/exhibitions)
 
-8. A famous architecture designed by Frank Lloyd Wright[Hollyhock House](https://buy.acmeticketing.com/events/335/list)
+8. A famous architecture designed by Frank Lloyd Wright - [Hollyhock House](https://buy.acmeticketing.com/events/335/list)
 
-9. A residential dwelling design by Frank Lloyd Wright [Ennis House](http://ennishouse.com/)
+9. A residential dwelling design by Frank Lloyd Wright - [Ennis House](http://ennishouse.com/)
 
 ### Read
 
@@ -31,6 +31,11 @@
 11. Get to know the overall picture of [what is happening in LA](https://www.planetizen.com/tag/los-angeles)
 
 12. Very helpful [resources](http://planning.lacity.org/urbandesign/resources/DowntownDesignGuide.php) to understand urban design principals in LA
+
+13. I spent hours to check out Curbed's all [mapping projects](https://la.curbed.com/maps) - it's a great way to get to know LA from various perspective. Especially these urban-renewal related mapping projects are helpful to check a slew of new developments that's is coming/happening to some neighborhood.
+- [Mapping the changes on Westlake’s horizon](https://la.curbed.com/maps/westlake-development-hotels-mixed-use-construction)
+- [Changes underway in Chinatown, mapped](https://la.curbed.com/maps/chinatown-development-gentrification-map)
+- [Mapping the Arts District's never-ending parade of development](https://la.curbed.com/maps/arts-district-los-angeles-development-map-2)
 
 ### Organization
 
