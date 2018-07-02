@@ -25,7 +25,7 @@ module.exports = function () {
 						log('yellow', 'Drafts:')
 					}
 					log('yellow', '  ', city)
-					log('white', '     ・ ' + cityDrafts.join('\n     ・ '))
+					log('white', '     ・ ' + cityDrafts.join('\n      ・ '))
 				}
 			})
 	} catch (e) {}

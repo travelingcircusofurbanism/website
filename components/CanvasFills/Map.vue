@@ -36,6 +36,7 @@
       // highlight comes in as an array of location names.
       highlight () { return this.$store.state.highlight },
 
+      // filters us down to unique named places
       uniqueLocations () {
         const uniqueLocations = {}
         for (let marker of this.mapMarkers) {
@@ -48,7 +49,8 @@
         return uniqueLocations
       },
 
-      markerData () {
+      // generates point data from unique locations
+      markerDataAsGeoJSON () {
         if (!this.uniqueLocations) return []
         const markerData = {
           type: 'FeatureCollection',
@@ -69,31 +71,10 @@
         return markerData
       },
 
-      // get a good starting point for our map, or return the single point to look for
+      // get a good starting point for our map
       mapPosition () {
-        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return defaultPosition
-
-        // if only one point, use that.
-        if (this.mapMarkers.length === 1)
-          return this.mapMarkers[0]
-
-        // otherwise, find a nice average center spot
-        let x = 0, y = 0, z = 0
-        const uniqueAsArr = Object.values(this.uniqueLocations)
-        const length = uniqueAsArr.length
-        for (let m of uniqueAsArr) {
-          x += m[0].center[0]
-          y += m[0].center[1]
-          z += m[0].zoom
-        }
-        const position = {...uniqueAsArr[0][0]}
-        position.center = [
-          x / length,
-          y / length
-        ]
-        position.zoom = (z / length) - 1
-
-        return position
+        if (!this.mapMarkers || Object.keys(this.mapMarkers).length === 0) return defaultPosition
+        return this.mapMarkers[0]
       },
 
       // if there are multiple points, find the best fit box
@@ -132,14 +113,14 @@
     },
     watch: {
 
-      mapPosition (newPosition) {
-        this.tryUpdateMap(newPosition)
+      mapPosition () {
+        this.tryUpdateMap()
       },
 
-      markerData (newMarkers, oldMarkers) {
+      markerDataAsGeoJSON (newMarkers, oldMarkers) {
         if (!newMarkers || newMarkers == oldMarkers) return
         // add new data to clusterer
-        this.clusterer.load(this.markerData.features)
+        this.clusterer.load(this.markerDataAsGeoJSON.features)
         this.calculateClusters()
       },
 
@@ -168,12 +149,12 @@
     },
     methods: {
       tryUpdateMap () {
-        if (!this.componentReady || !mapboxgl || !this.mapPosition || !this.markerData) {
+        if (!this.componentReady || !mapboxgl || !this.mapPosition || !this.markerDataAsGeoJSON) {
           return setTimeout(() => this.tryUpdateMap(), 200)
         }
 
         // add new data to clusterer
-        this.clusterer.load(this.markerData.features)
+        this.clusterer.load(this.markerDataAsGeoJSON.features)
 
         mapboxgl.accessToken = apiKey
         const dest = {}
