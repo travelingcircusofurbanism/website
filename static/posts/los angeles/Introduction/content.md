@@ -39,6 +39,8 @@
 
 ### Organization
 
-13. A great initiative that provides permanent supportive housing for people who need supports. [Skid Row Housing Trust](http://skidrow.org/)
+14. A great initiative that provides permanent supportive housing for people who need supports. [Skid Row Housing Trust](http://skidrow.org/)
 
-14. [Do ArT Foundation](http://doartfoundation.org/), a non-profit social enterprise created to produce publicArt programs, projects and exhibitions.
+15. [Do ArT Foundation](http://doartfoundation.org/), a non-profit social enterprise created to produce publicArt programs, projects and exhibitions.
+
+16. [L.A. Forum for Architecture and Urban Design](http://laforum.org/) is an independent nonprofit organization and organizes public programming, exhibitions, and publications. I went to one of their event "[TRANSFORMING THE CITY FROM INSIDE OUT // L.A. & TAIPEI CITY](http://laforum.org/event/adu-2-0-transforming-the-city-from-inside-out-l-a-taipei-city/)" and it was quite interesting. 

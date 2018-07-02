@@ -1,12 +1,13 @@
 module.exports = {
-	public: false,
-	date: '6/26/2018',
-	category: 'place',
+	public: true,
+	date: '7/01/2018',
+	category: 'essay',
+	image:'hiphop01.jpg',
 	mapPosition:  [
 		{
-			location: 'Bringing Back Broadway',
+			location: '',
 			bearing: 0,
-			center: [-118.481293, 34.0250545],
+			center: [-118.27631359999998, 34.0543414],
 			zoom: 12.00,
 			pitch: 0 
 		},
