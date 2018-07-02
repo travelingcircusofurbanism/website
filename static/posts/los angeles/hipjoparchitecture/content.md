@@ -7,13 +7,13 @@ Several days ago I got to know a brand new theory (at least for me) that is call
 
 It featured Sekou Cooke, who is a Jamaican-born architect, researcher and a professor at Syracuse University. He has been focusing on the emergent field of hip-hop architecture.
 
-I found this topic interesting and decided to write a short post about it in order to digest this still-new information.
+I found this topic interesting and decided to write a short post about it in order to digest this still-new information for me.
 
-## What is Hip-Hop Architecture?: Theory
+## What is Hip-Hop Architecture?
 
 According to Sekou Cooke, [Hip-Hop Architecture](http://hiphoparchitecture.com/) is a practice of architecture, urban planning, creative place making and economic development through the lens of hip hop culture, to create a meaningful impact on the built environment and to propose the alternatives.
 
-He started his presentation by talking about Kanye West - Read [Keep Talking Kanye: An Architect's Defense of Kanye West](https://www.archdaily.com/435952/keep-talking-kanye-an-architect-s-defense-of-kanye-west). There are still not so many of people in U.S. who identify themselves both black and architect, and Kanye -  as a black man, [an architect](https://www.archdaily.com/893988/kanye-wests-new-architecture-venture-who-what-why-and-really), and of course, a hip-hop star - is very rare and important figure. Why? Because when he talks, people listen.   
+He started his presentation by talking about Kanye West - Read [Keep Talking Kanye: An Architect's Defense of Kanye West](https://www.archdaily.com/435952/keep-talking-kanye-an-architect-s-defense-of-kanye-west). There are still not so many in U.S. who identify themselves both black and architect, and Kanye -  as a black man, [an architect](https://www.archdaily.com/893988/kanye-wests-new-architecture-venture-who-what-why-and-really), and of course, a hip-hop star - is very rare and important figure. Why? Because when he talks, people listen.   
 
 > Now black architects have a fighting chance at influencing the public consciousness in the way black artists, musicians, politicians and athletes have. Now the architecture of the hip-hop generation can take its rightful place alongside hip-hop music, dance, art and design. - Sekou Cooke, 2013.
 
