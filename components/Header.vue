@@ -60,7 +60,7 @@ export default {
     z-index: 10;
     height: 100vh;
     pointer-events: none;
-    max-width: 45%;
+    max-width: 48%;
 
     @include width (mobile) {
       display: block;
