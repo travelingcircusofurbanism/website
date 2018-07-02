@@ -1,8 +1,6 @@
 
 # Hip-Hop architecture
 
-## Introduction
-
 Several days ago I got to know a brand new theory (at least for me) that is called "Hip-Hop Architecture" by participating an event hosted by [MOCA](https://www.moca.org/) - The Museum of Contemporary Art, Los Angeles.
 
 It featured Sekou Cooke, who is a Jamaican-born architect, researcher and a professor at Syracuse University. He has been focusing on the emergent field of hip-hop architecture.
