@@ -37,10 +37,14 @@
 - [Changes underway in Chinatown, mapped](https://la.curbed.com/maps/chinatown-development-gentrification-map)
 - [Mapping the Arts District's never-ending parade of development](https://la.curbed.com/maps/arts-district-los-angeles-development-map-2)
 
+14. Watch **[Chinatown](https://en.wikipedia.org/wiki/Chinatown_(1974_film)) (1974)** and read [this](http://www.laweekly.com/arts/chinatown-is-the-story-of-white-supremacy-and-gentrification-in-la-8333951) interesting article about the movie, arguing about white supremacy and gentrification in L.A.
+
+15. Activist and journalist Alissa Walker's [blog](http://www.awalkerinla.com/) is a great introduction to the city and it makes wanna walk L.A.  
+
 ### Organization
 
-14. A great initiative that provides permanent supportive housing for people who need supports. [Skid Row Housing Trust](http://skidrow.org/)
+15. [Skid Row Housing Trust](http://skidrow.org/) is a great initiative that provides permanent supportive housing for people who need supports. For those who are not familiar with Skid Row area, watch this short [documentary](https://www.youtube.com/watch?v=vTJWdtX90C0).  
 
-15. [Do ArT Foundation](http://doartfoundation.org/), a non-profit social enterprise created to produce publicArt programs, projects and exhibitions.
+16. [Do ArT Foundation](http://doartfoundation.org/), a non-profit social enterprise created to produce publicArt programs, projects and exhibitions.
 
-16. [L.A. Forum for Architecture and Urban Design](http://laforum.org/) is an independent nonprofit organization and organizes public programming, exhibitions, and publications. I went to one of their event "[TRANSFORMING THE CITY FROM INSIDE OUT // L.A. & TAIPEI CITY](http://laforum.org/event/adu-2-0-transforming-the-city-from-inside-out-l-a-taipei-city/)" and it was quite interesting. 
+16. [L.A. Forum for Architecture and Urban Design](http://laforum.org/) is an independent nonprofit organization and organizes public programming, exhibitions, and publications. I went to one of their event "[TRANSFORMING THE CITY FROM INSIDE OUT // L.A. & TAIPEI CITY](http://laforum.org/event/adu-2-0-transforming-the-city-from-inside-out-l-a-taipei-city/)" and it was quite interesting.
