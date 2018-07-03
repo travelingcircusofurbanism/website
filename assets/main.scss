@@ -153,7 +153,7 @@ h4 {
 	margin-bottom: $unit * 10;
 
 	h1 {
-		margin-top: $unit * 8;
+		margin-top: $unit * 2;
 		margin-bottom: $unit * 8;
 
 		@include width (mobile) {
@@ -218,7 +218,7 @@ h4 {
 	transition: .2s;
 
 	&.mini {
-		padding: $unit * 1.5 $unit * 2;
+		padding: $unit * 1.2 $unit * 2;
 		margin: 2px;
 
 		@include width (mobile) {
@@ -324,6 +324,10 @@ h4 {
 			-2px 0 12px $shadow;
 		font-weight: 600;
 		letter-spacing: .8px;
+
+		@include width(mobile) {
+			top: $unit * -4;
+		}
 	}
 
 	&:hover {
@@ -351,6 +355,7 @@ h4 {
 		text-shadow: none;
 		z-index: 2;
 		transition: all .2s;
+		top: $unit * -5;
 
 		@include width(mobile) {
 			font-size: 1.2em;
@@ -379,7 +384,7 @@ h4 {
 }
 
 .fade-enter-active, .fade-leave-active {
-  transition: opacity .2s;
+  transition: opacity .5s;
 }
 .fade-enter, .fade-leave-to {
   opacity: 0;

@@ -3,12 +3,14 @@
     class="post-list"
   >
 		<h3 class="sectionhead" v-if="title">{{ title }}</h3>
-		<PostPreview
-			v-for="(post, key) in postsToShow"
-			:key="key"
-			v-bind="post"
-			:class="{draft: post.public !== true}"
-		/>
+		<transition-group name="fade">
+			<PostPreview
+				v-for="(post, key) in postsToShow"
+				:key="key"
+				v-bind="post"
+				:class="{draft: post.public !== true}"
+			/>
+		</transition-group>
 		<div 
 			class="button secondary full showall"
 			v-if="shownPostCount < totalPosts"

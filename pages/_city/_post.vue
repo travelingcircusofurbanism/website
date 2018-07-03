@@ -101,7 +101,7 @@ export default {
       this.$el.querySelectorAll('a')
         .forEach(e => {
           const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
-          const foundLocation = this.mapPosition.find(p => elText === p.location.toLowerCase())
+          const foundLocation = this.mapPosition.find(p => p.location && elText === p.location.toLowerCase())
           if (foundLocation){
             e.addEventListener('mouseover', () => this.highlight(foundLocation))
             e.addEventListener('mouseout', this.unHighlight)

@@ -16,7 +16,7 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head() { return { title: this.capitalize(this.location) } },
   components: { Footer, PostList, },
-  asyncData ({ route, redirect }) {
+  asyncData ({ route, redirect, isStatic }) {
     const location = route.path
       .replace('/at/', '')
       .replace('/', '')
@@ -27,6 +27,7 @@ export default {
     try {
       posts = require(`~/static/generated/posts.json`)
     } catch (e) { console.log(e) }
+    if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return redirect('/')
     let marker = {}

@@ -77,7 +77,6 @@ h4 {
   display: block;
   height: 100%;
   text-decoration: none;
-  color: $text !important;
 
   &:not(:last-of-type) {
     margin-right: $unit * 3;
