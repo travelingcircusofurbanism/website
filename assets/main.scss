@@ -324,6 +324,10 @@ h4 {
 			-2px 0 12px $shadow;
 		font-weight: 600;
 		letter-spacing: .8px;
+
+		@include width(mobile) {
+			top: $unit * -4;
+		}
 	}
 
 	&:hover {
@@ -351,6 +355,7 @@ h4 {
 		text-shadow: none;
 		z-index: 2;
 		transition: all .2s;
+		top: $unit * -5;
 
 		@include width(mobile) {
 			font-size: 1.2em;

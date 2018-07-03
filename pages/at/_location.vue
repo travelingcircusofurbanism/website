@@ -16,7 +16,7 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head() { return { title: this.capitalize(this.location) } },
   components: { Footer, PostList, },
-  asyncData ({ route, redirect }) {
+  asyncData ({ route, redirect, isStatic }) {
     const location = route.path
       .replace('/at/', '')
       .replace('/', '')
@@ -47,6 +47,7 @@ export default {
           return found
         }
       })
+    if (isStatic) posts = posts.filter(p => p.public === true)
     if (posts.length === 1)
       return redirect(posts[0].url)
     return {
