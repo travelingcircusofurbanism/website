@@ -29,8 +29,11 @@ const { get, set } = require('~/assets/storage').default
 export default {
   head() { return { title: 'Home' } },
   components: { Footer, PostList, Selector, },
-  asyncData () {
-    const allPosts = require('~/static/generated/posts.json')
+  asyncData ({ isStatic }) {
+    let allPosts = require('~/static/generated/posts.json')
+    if (isStatic) allPosts = allPosts.filter(p => p.public)
+    let cityPosts = require(`~/static/generated/${allPosts[0].city}.json`)
+    if (isStatic) cityPosts = cityPosts.filter(p => p.public)
     return {
       posts: allPosts,
       cityPosts: require(`~/static/generated/${allPosts[0].city}.json`)
