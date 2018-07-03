@@ -256,7 +256,7 @@
       initializeMap (dest) {
         this.map = new mapboxgl.Map({
           container: 'map',
-          style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk',
+          style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true',
           ...dest
         })
         this.map.on('styledata', () =>

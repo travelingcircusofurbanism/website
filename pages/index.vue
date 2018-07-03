@@ -36,7 +36,7 @@ export default {
     if (isStatic) cityPosts = cityPosts.filter(p => p.public)
     return {
       posts: allPosts,
-      cityPosts: require(`~/static/generated/${allPosts[0].city}.json`)
+      cityPosts: cityPosts
     }
   },
   data () {

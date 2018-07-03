@@ -16,7 +16,7 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head () { return { title: this.capitalize(this.category) } },
   components: { Footer, PostList, },
-  asyncData ({ route, redirect }) {
+  asyncData ({ route, redirect, isStatic }) {
     const category = route.path
       .replace('/is/', '')
       .replace('/', '')
@@ -27,6 +27,7 @@ export default {
     try {
       posts = require(`~/static/generated/posts.json`)
     } catch (e) { console.log(e) }
+    if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return redirect('/')
     posts = posts.filter(p => {
@@ -44,12 +45,7 @@ export default {
     shownPosts () { return this.posts },
   },
   mounted () {
-    this.$store.commit(
-      'setMapMarkers', 
-      window.location.href.indexOf('localhost:') > -1 ? 
-        this.posts :
-        this.posts.filter(p => p.public === true)
-    )
+    this.$store.commit('setMapMarkers', this.posts)
   },
   methods: {
     capitalize,

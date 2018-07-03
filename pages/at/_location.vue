@@ -27,6 +27,7 @@ export default {
     try {
       posts = require(`~/static/generated/posts.json`)
     } catch (e) { console.log(e) }
+    if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return redirect('/')
     let marker = {}
@@ -47,11 +48,8 @@ export default {
           return found
         }
       })
-    if (isStatic) posts = posts.filter(p => p.public === true)
     if (posts.length === 1)
       return redirect(posts[0].url)
-    if (posts.length === 0)
-      return redirect('/')
     return {
       posts,
       location,

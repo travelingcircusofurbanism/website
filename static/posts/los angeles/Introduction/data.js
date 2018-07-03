@@ -11,7 +11,7 @@ module.exports = {
 			pitch: 0 
 		},
 		{
-			location: 'Augustus F. Hawkins natural park',
+			location: 'Augustus F. Hawkins Natural Park',
 			bearing: 0,
 			center: [-118.2464493, 33.9900691],
 			zoom: 12.00,
