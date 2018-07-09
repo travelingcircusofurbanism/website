@@ -45,10 +45,10 @@ export default {
   data () {
     return {
 			shownPostCount: this.perPage,
-			isDev: false,
     }
   },
   computed: {
+		isDev () { return this.$store.state.isDev },
 		showablePosts () { 
 			return this.isDev ? 
 				this.posts :
@@ -57,9 +57,7 @@ export default {
 		totalPosts () { return this.showablePosts.length },
 		postsToShow () { return this.showablePosts.slice(0, this.shownPostCount) },
   },
-  mounted () {
-		if (window.location.href.indexOf('localhost:') > -1) this.isDev = true
-  },
+  mounted () {},
   methods: {
   }
 }

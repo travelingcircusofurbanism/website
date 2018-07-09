@@ -78,9 +78,15 @@ export default {
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
+    isDev () { return this.$store.state.isDev },
+    usablePosts () {
+      return this.isDev ?
+        posts :
+        posts.filter(p => p.public)
+    },
     orderedItems () {
       const typeFrequency = {}
-      posts.forEach(p => {
+      this.usablePosts.forEach(p => {
         if (this.hide && p[this.type].toLowerCase() === this.hide.toLowerCase()) return
         typeFrequency[p[this.type]] = 
           (typeFrequency[p[this.type]] ? typeFrequency[p[this.type]] + 1 : 1)

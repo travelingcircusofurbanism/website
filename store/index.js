@@ -8,6 +8,7 @@ export default () => {
       isMobile: true,
       language: 'en-US',
       currentCity: null,
+      isDev: false,
     },
     mutations: {
       setMapMarkers (state, newMarkers) {
@@ -83,6 +84,9 @@ export default () => {
         state.language = (lang.toLowerCase().indexOf('ja') !== -1) ? 'ja' : 'en'
       },
       
-    }
+      setDev (state, isDev) {
+        state.isDev = isDev
+      }
+    },
   })
 }

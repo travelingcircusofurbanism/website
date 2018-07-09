@@ -17,6 +17,7 @@
     },
     mounted() {
       this.$store.commit('setLanguage', window.navigator.userLanguage || window.navigator.language)
+      this.$store.commit('setDev', window.location.hostname.indexOf('localhost') === -1 )
       window.addEventListener('resize', this.checkWidth)
       this.checkWidth()
       this.$root._router.afterEach(this.resetScroll)
