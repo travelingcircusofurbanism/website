@@ -24,13 +24,13 @@
           {{ capitalize(item) }}
         </nuxt-link>
         <div class="sub" v-if="orderedItems.length < responsiveCutoff && moreHint">And more to come...</div>
-      </div>
-      <div
-        class="button secondary mini showall"
-        v-if="orderedItems.length > responsiveCutoff && !showAll"
-        @click="showAll = true"
-      >
-        Show All Cities
+        <div
+          class="button secondary mini showall"
+          v-if="orderedItems.length > responsiveCutoff && !showAll"
+          @click="showAll = true"
+        >
+          Show All Cities
+        </div>
       </div>
     </div>
   </div>
