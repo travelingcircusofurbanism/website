@@ -82,7 +82,8 @@ function getDataForPost(postDir, city, slug) {
 		// create nice truncated description
 		let description = title
 			.substring(title.indexOf('\n')) // remove title
-			.replace(/!\[.*\]\(.*\)/g, '') // remove markdown images
+			.replace(/!\[\]\(.*\)[\n\r]*\*.*\*/g, '') // remove images with captions
+			.replace(/!\[.*\]\(.*\)/g, '') // remove all images
 			.replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
 			.replace(/<.*>.*<\/.*>/g, '') // remove html tags
 			.replace(/[\n\r]#+/g, '') // remove #, ##, ###, #### headers
