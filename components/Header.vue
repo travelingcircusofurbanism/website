@@ -164,7 +164,7 @@ export default {
     display: inline-block;
     margin-top: $unit * 3;
     color: rgba(white, .8);
-    background: rgba($text, .6);
+    background: rgba($text, .75);
     padding: $unit * 1 $unit * 4;
     padding-left: $content-padding;
     transition: all .4s;
