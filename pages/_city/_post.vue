@@ -13,9 +13,9 @@
       </template>
     </div>
 
-    <div class="top" v-if="!isMobile">
+    <!--<div class="top" v-if="!isMobile">
       <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
-    </div>
+    </div>-->
 
     <PostDetails
       class="details"
