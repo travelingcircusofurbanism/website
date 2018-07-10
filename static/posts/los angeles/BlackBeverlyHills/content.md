@@ -1,10 +1,9 @@
 
 # This is not about race, but it is - gentrification of The black Beverly Hills
 
-
-<draft>
 ## Introduction
-- Songs
+
+
 Frank Ocean's song [Sweet life](https://www.youtube.com/watch?v=JDknpQzPY-o) depicts the life in Ladera Heights - "the black Beverly Hills".
 
 - about the event

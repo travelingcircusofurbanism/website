@@ -1,7 +1,7 @@
 module.exports = {
 	public: true,
-	date: '7/09/2018',
-	category: 'place',
+	date: '6/01/2018',
+	category: 'intro',
 	mapPosition:  [
 		{
 			location: 'Art Center Ongoing',
