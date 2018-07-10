@@ -80,7 +80,8 @@ function getDataForPost(postDir, city, slug) {
 			.substring(postContent.indexOf('#') + 1)
 
 		// create nice truncated description
-		let description = title
+		let description = postData.description
+		if (!description) description = title
 			.substring(title.indexOf('\n')) // remove title
 			.replace(/!\[\]\(.*\)[\n\r]*\*.*\*/g, '') // remove images with captions
 			.replace(/!\[.*\]\(.*\)/g, '') // remove all images
