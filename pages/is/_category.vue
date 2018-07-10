@@ -1,8 +1,14 @@
 <template>
   <section class="content">
-    <div class="top" v-if="!isMobile">
-      <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
-    </div>
+    <!--<div v-if="!isMobile" class="content-top-full mini gray">
+      <Selector
+        type="category"
+        title="Categories"
+        :moreHint="false"
+        urlPrefix="is/"
+        :hide="category"
+      />
+    </div>-->
     <PostList
       :posts="posts"
       :title="category"
@@ -14,6 +20,7 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
+// import Selector from '~/components/Selector'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -45,7 +52,7 @@ export default {
     }
   },
   computed: {
-    shownPosts () { return this.posts },
+    isMobile () { return this.$store.state.isMobile },
   },
   mounted () {
     this.$store.commit('setMapMarkers', this.posts)

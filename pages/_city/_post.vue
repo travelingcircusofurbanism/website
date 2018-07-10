@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <section class="content" :class="{ja: displayLanguage === 'ja'}">
 
     <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || isDev) && content.ja">
       <template v-if="displayLanguage !== 'ja'">
@@ -13,9 +13,9 @@
       </template>
     </div>
 
-    <div class="top" v-if="!isMobile">
+    <!--<div class="top" v-if="!isMobile">
       <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
-    </div>
+    </div>-->
 
     <PostDetails
       class="details"

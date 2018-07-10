@@ -1,8 +1,11 @@
 <template>
   <section class="content">
-    <div class="top" v-if="!isMobile">
-      <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
-    </div>
+    <!--<div v-if="!isMobile" class="content-top-full mini gray">
+      <Selector 
+        :moreHint="false"
+        :hide="city"
+      />
+    </div>-->
     <PostList
       :posts="posts"
       :title="city"
@@ -14,6 +17,7 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
+// import Selector from '~/components/Selector'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -21,9 +25,10 @@ export default {
   components: { Footer, PostList, },
   asyncData ({ route, redirect, isStatic }) {
     const city = route.path
-      .replace('/', '')
-      .replace('_', ' ')
-      .replace('%20', ' ')
+      .replace(/\//g, '')
+      .replace(/_/g, ' ')
+      .replace(/%20/g, ' ')
+      .toLowerCase()
     let posts = []
     try {
       posts = require(`~/static/generated/${city}.json`)
@@ -40,6 +45,7 @@ export default {
   },
   computed: {
     shownPosts () { return this.posts },
+    isMobile () { return this.$store.state.isMobile },
   },
   mounted () {
     this.$store.commit('setMapMarkers', this.posts)

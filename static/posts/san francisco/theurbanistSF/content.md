@@ -3,8 +3,7 @@
 ![](theurbanistSF03.jpg)
 ![](theurbanistSF04.jpg)
 
-[The Urbanist SF](http://www.theurbanistsf.com/) has super exiting
-[San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which is everything we need to explore the city. I love the idea of having a starter kit for newcomers to the city, which is packed with all the passion/knowledge/love of the urbanist!
+[The Urbanist SF](http://www.theurbanistsf.com/) has a super exciting [San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which is everything we need to explore the city. I love the idea of having a starter kit for newcomers to the city, which is packed with all the passion/knowledge/love of the urbanist!
 
 
 ### Welcome to SF kit and tour

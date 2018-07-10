@@ -73,7 +73,11 @@
 
       // get a good starting point for our map
       mapPosition () {
-        if (!this.mapMarkers || Object.keys(this.mapMarkers).length === 0) return defaultPosition
+        if (!this.mapMarkers || Object.keys(this.mapMarkers).length === 0) {
+          this.$emit('close')
+          return defaultPosition
+        }
+        this.$emit('open')
         return this.mapMarkers[0]
       },
 

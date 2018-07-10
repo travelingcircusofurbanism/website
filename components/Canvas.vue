@@ -1,6 +1,14 @@
 <template>
-  <div id="canvas">
-    <Map v-if="active === 'map'" class="fill" />
+  <div
+    id="canvas"
+    :class="{closed: closed}"
+  >
+    <Map
+      v-if="active === 'map'"
+      class="fill" 
+      @close="close"
+      @open="open"
+    />
   </div>
 </template>
 
@@ -12,7 +20,12 @@ export default {
   data () {
     return {
       active: 'map',
+      closed: false,
     }
+  },
+  methods: {
+    close () { this.closed = true },
+    open () { this.closed = false },
   }
 }
 </script>
@@ -27,6 +40,11 @@ export default {
 
     @include width (mobile) {
       height: 35vh;
+      transition: 1s;
+
+      &.closed {
+        height: 0;
+      }
     }
 
     & > .fill {

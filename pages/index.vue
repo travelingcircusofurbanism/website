@@ -3,7 +3,7 @@
     <div class="intro" v-if="showIntro">
       <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
     </div>
-    <div class="content-top-full mini">
+    <div class="content-top-full mini gray">
       <Selector />
       <Selector
         type="category"
@@ -77,10 +77,6 @@ export default {
       margin-bottom: $content-padding-mobile * 1;
       padding: $content-padding-mobile * 1.5;
     }
-  }
-
-  .content-top-full {
-    background: $shade;
   }
 
 </style>
