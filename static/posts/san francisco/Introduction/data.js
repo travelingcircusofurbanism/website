@@ -2,6 +2,7 @@ module.exports = {
 	public: true,
 	date: '7/03/2018',
 	category: 'place',
+	description: 'i like the mission yay',
 	mapPosition:  [
 		{
 			location: '',

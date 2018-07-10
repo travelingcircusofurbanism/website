@@ -1,5 +1,5 @@
 <template>
-  <section class="content">
+  <section class="content" :class="{ja: displayLanguage === 'ja'}">
 
     <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || isDev) && content.ja">
       <template v-if="displayLanguage !== 'ja'">

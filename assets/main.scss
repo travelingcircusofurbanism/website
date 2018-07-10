@@ -135,7 +135,7 @@ h4 {
 	@include width (mobile) {
 		font-size: 1.4rem;
 		max-width: 80%;
-		margin-top: $unit * 2;
+		margin-top: $unit * 3;
 		margin-bottom: $unit * 3;
 		padding-bottom: 0;
 		border-bottom: none;
@@ -156,9 +156,17 @@ h4 {
 		margin-top: $unit * 2;
 		margin-bottom: $unit * 8;
 
+		.ja & {
+			font-size: 2.5rem;
+		}
+
 		@include width (mobile) {
 			margin-top: $unit * 3;
 			margin-bottom: $unit * 3;
+
+			.ja & {
+				font-size: 2.0rem;
+			}
 		}
 	}
 

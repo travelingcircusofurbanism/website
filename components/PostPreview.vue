@@ -68,6 +68,7 @@ export default {
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;
+  min-height: $unit * 45;
 
   .previewimage {
     background: $offwhite;
@@ -87,6 +88,9 @@ export default {
   }
 
   @include width (mobile) {
+    min-height: auto;
+    grid-gap: $unit * 3;
+
     .previewimage {
       height: $unit * 30;
     }

@@ -40,6 +40,7 @@ export default {
   },
   computed: {
     shownPosts () { return this.posts },
+    isMobile () { return this.$store.state.isMobile },
   },
   mounted () {
     this.$store.commit('setMapMarkers', this.posts)

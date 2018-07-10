@@ -6,7 +6,7 @@
 
 ### Things to do, places/project to check out
 
-1. [The Urbanist SF](http://www.theurbanistsf.com/) has super exiting [San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which is everything we need to explore the city. I love the idea of having a starter kit for newcomers to the city, which is packed with all the passion/knowledge/love of the urbanist!
+1. [The Urbanist SF](http://www.theurbanistsf.com/) has a super exiting [San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which is everything we need to explore the city. I love the idea of having a starter kit for newcomers to the city, which is packed with all the passion/knowledge/love of the urbanist!
 
 2. [The Women’s Building](https://womensbuilding.org/) is a women-led community space that advocates self-determination, gender equality and social justice. It has such a beautiful building and interesting history!
 
