@@ -29,7 +29,9 @@ import Footer from '~/components/Footer'
 export default {
   head() { return { title: 'About' } },
   components: { Footer, },
-
+  mounted () {
+    this.$store.commit('setMapMarkers')
+  }
 }
 </script>
 

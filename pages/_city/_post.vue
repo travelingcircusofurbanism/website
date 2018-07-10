@@ -83,15 +83,14 @@ export default {
   data () {
     return {
       displayLanguage: 'en',
-      isDev: false,
     }
   },
   computed: {
+    isDev () { return this.$store.state.isDev },
     isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
   },
   mounted () {
-    if (window.location.href.indexOf('localhost:') > -1) this.isDev = true
     this.$store.commit('setMapMarkers', this.mapPosition)
     this.$store.commit('setCity', this.city)
     this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)

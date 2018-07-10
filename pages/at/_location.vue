@@ -1,5 +1,8 @@
 <template>
   <section class="content">
+    <div class="top" v-if="!isMobile">
+      <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
+    </div>
     <PostList
       :posts="posts"
       :title="location"

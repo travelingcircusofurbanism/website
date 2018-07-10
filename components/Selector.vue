@@ -24,13 +24,13 @@
           {{ capitalize(item) }}
         </nuxt-link>
         <div class="sub" v-if="orderedItems.length < responsiveCutoff && moreHint">And more to come...</div>
-      </div>
-      <div
-        class="button secondary mini showall"
-        v-if="orderedItems.length > responsiveCutoff && !showAll"
-        @click="showAll = true"
-      >
-        Show All Cities
+        <div
+          class="button secondary mini showall"
+          v-if="orderedItems.length > responsiveCutoff && !showAll"
+          @click="showAll = true"
+        >
+          Show All Cities
+        </div>
       </div>
     </div>
   </div>
@@ -78,9 +78,15 @@ export default {
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
+    isDev () { return this.$store.state.isDev },
+    usablePosts () {
+      return this.isDev ?
+        posts :
+        posts.filter(p => p.public)
+    },
     orderedItems () {
       const typeFrequency = {}
-      posts.forEach(p => {
+      this.usablePosts.forEach(p => {
         if (this.hide && p[this.type].toLowerCase() === this.hide.toLowerCase()) return
         typeFrequency[p[this.type]] = 
           (typeFrequency[p[this.type]] ? typeFrequency[p[this.type]] + 1 : 1)
