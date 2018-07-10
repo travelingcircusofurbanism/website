@@ -10,7 +10,7 @@
 
 - If you're an cyclist and want to experience biking in Tokyo, I absolutely recommend [TOKYO BY BIKE](https://flipboard.com/@byronkidd/tokyo-by-bike-2gjbbsugy) - this is a very helpful introduction to Japan's bike scene.
 
-- I love the art center [ongoing][http://www.ongoing.jp/ja/artcenter/index.php], which is a special art space / gallery that is very accessible to any artists, including un-famous, fledgling ones.
+- I love the art center [ongoing](http://www.ongoing.jp/ja/artcenter/index.php), which is a special art space / gallery that is very accessible to any artists, including un-famous, fledgling ones.
 
 ### Read
 
