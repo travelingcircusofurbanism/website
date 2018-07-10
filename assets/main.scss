@@ -166,7 +166,7 @@ h4 {
 		max-width: 100%;
 		margin: 0 auto;
 		display: block;
-		padding: $unit * 3 0;
+		padding: $unit * 2 0;
 
 		@include width (mobile) {
 			width: 100vw;
@@ -236,7 +236,7 @@ h4 {
 		color: darken($offwhite, 40%);
 		box-shadow: 0 2px 4px $offwhite;
 		background: rgba(white, .8);
-		
+
 		&.onwhite {
 			background: $shade;
 		}
@@ -250,7 +250,7 @@ h4 {
 		color: white;
     background: $active !important;
 	}
-	
+
 	&.invert {
 		background: transparent;
     box-shadow: 0 0 0 2px rgba(white, .6);

@@ -1,7 +1,7 @@
 
 # Things to do and read for urbanists @Amsterdam
 
-![](losangeles02.jpg)
+![]()
 *Photo by Jack Finnigan on Unsplash*
 
 ### Things to do, places/project to check out
@@ -10,7 +10,7 @@
 
 ### Read
 
-11.
+- [a city made by people](https://www.acitymadebypeople.com/)
 
 ### Organization / initiative
 
