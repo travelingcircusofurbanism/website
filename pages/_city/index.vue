@@ -1,10 +1,11 @@
 <template>
   <section class="content">
-    <div class="content-top-full mini gray">
+    <!--<div v-if="!isMobile" class="content-top-full mini gray">
       <Selector 
         :moreHint="false"
+        :hide="city"
       />
-    </div>
+    </div>-->
     <PostList
       :posts="posts"
       :title="city"
@@ -16,17 +17,18 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
-import Selector from '~/components/Selector'
+// import Selector from '~/components/Selector'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   head() { return { title: this.capitalize(this.city) } },
-  components: { Footer, PostList, Selector, },
+  components: { Footer, PostList, },
   asyncData ({ route, redirect, isStatic }) {
     const city = route.path
       .replace(/\//g, '')
       .replace(/_/g, ' ')
       .replace(/%20/g, ' ')
+      .toLowerCase()
     let posts = []
     try {
       posts = require(`~/static/generated/${city}.json`)

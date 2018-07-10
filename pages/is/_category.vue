@@ -1,13 +1,14 @@
 <template>
   <section class="content">
-    <div class="content-top-full mini gray">
+    <!--<div v-if="!isMobile" class="content-top-full mini gray">
       <Selector
         type="category"
         title="Categories"
         :moreHint="false"
         urlPrefix="is/"
+        :hide="category"
       />
-    </div>
+    </div>-->
     <PostList
       :posts="posts"
       :title="category"
@@ -19,12 +20,12 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
-import Selector from '~/components/Selector'
+// import Selector from '~/components/Selector'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   head () { return { title: this.capitalize(this.category) } },
-  components: { Footer, PostList, Selector, },
+  components: { Footer, PostList, },
   asyncData ({ route, redirect, isStatic }) {
     const category = route.path
       .replace('/is/', '')

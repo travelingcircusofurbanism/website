@@ -21,7 +21,7 @@ module.exports = function () {
 				.filter(pathName => pathName.indexOf('.') === -1)
 				.map(city => {
 					const cityDir = postDir + '/' + city
-					const cityFile = generatedDir + '/' + city + '.json'
+					const cityFile = generatedDir + '/' + city.toLowerCase() + '.json'
 					const cityPostData = fs.readdirSync(cityDir)
 						.filter(pathName => pathName.indexOf('.') === -1)
 						.map(post => {
@@ -115,7 +115,7 @@ function getDataForPost(postDir, city, slug) {
 		if (!image) {
 			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
 			if (!image) {
-				log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
+				// log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
 				image = ''
 			}
 			else image = image[1]
@@ -125,7 +125,7 @@ function getDataForPost(postDir, city, slug) {
 
 		const data = {
 			slug,
-			city,
+			city: city.toLowerCase(),
 			title,
 			description,
 			url: `/${city}/${slug}`,

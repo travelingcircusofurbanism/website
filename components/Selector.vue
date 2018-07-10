@@ -15,7 +15,8 @@
     <div v-if="!isMobile || isOpen" class="selector">
       <div class="buttonlist">
         <nuxt-link 
-          class="button secondary mini"
+          class="button mini"
+          :class="{secondary: highlight.toLowerCase() !== item.toLowerCase()}"
           :to="`/${ urlPrefix }${ item }`"
           exact
           v-for="(item, key) in itemsToShow"
@@ -68,6 +69,11 @@ export default {
       required: false,
       type: Boolean,
       default: true
+    },
+    highlight: {
+      required: false,
+      type: String,
+      default: ''
     },
   },
   data () {

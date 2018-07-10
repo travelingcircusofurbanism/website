@@ -1,6 +1,6 @@
 <template>
   <div class="relatedposts" v-if="postsToDisplay.length > 0">
-    <h4 class="sectionhead">More posts from {{ city.substring(0,1).toUpperCase() + city.substring(1) }}</h4>
+    <h4 class="sectionhead">More posts from {{ capitalize(city) }}</h4>
     <div class="postgrid">
       <nuxt-link
         v-for="(post, key) in postsToDisplay"
@@ -22,6 +22,7 @@
 
 
 <script>
+import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   props: [ 'city', 'current' ],
@@ -46,9 +47,12 @@ export default {
   mounted () {
     if (!this.city) return
     try {
-      this.allCityPosts = require(`~/static/generated/${ this.city }.json`)
+      this.allCityPosts = require(`~/static/generated/${ this.city.toLowerCase() }.json`)
         .filter(p => p.public === true)
     } catch (e) { console.log(e) }
+  },
+  methods: {
+    capitalize,
   }
 }
 
