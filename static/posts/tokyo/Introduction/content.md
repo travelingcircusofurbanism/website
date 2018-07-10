@@ -1,39 +1,31 @@
 
-# Things to do and read for urbanists @Los Angeles
+# Things to do and read for urbanists @Tokyo
 
-![](losangeles02.jpg)
-*Photo by Jack Finnigan on Unsplash*
+![](tokyo01.jpg)
+*Photo by Andre Benz on Unsplash*
 
 ### Things to do, places/project to check out
 
-1. Downtown Los Angeles's [Art Walk](http://downtownartwalk.org/)
+- Participate [URBANING_U](http://urbaning.org/u/) which is a two day camp, that let you learn more about Tokyo thorough urbanist's perspective.
 
-2. A public program that lets people to build a community parklet easily: [People St program](https://www.fastcompany.com/3026002/diy-kits-to-help-build-your-own-mini-park-anywhere-there-is-space-on-the-street?partner=rss)
+- If you're an cyclist and want to experience biking in Tokyo, I absolutely recommend [TOKYO BY BIKE](https://flipboard.com/@byronkidd/tokyo-by-bike-2gjbbsugy) - this is a very helpful introduction to Japan's bike scene.
 
-3. A 10-year economic development and revitalization initiative to get an identity back to the city. [Bringing Back Broadway](https://bringingbackbroadway.com/)
-
-4. An interesting project that brought the nature back to the former-industrial, challenged area. [Augustus F. Hawkin's natural park](https://www.laparks.org/reccenter/augustus-f-hawkins-natural)
-
-5. This modern take on a classic arcade combines retro video games, pinball machines & craft cocktails.) [EIGHTYTWO](http://eightytwo.la/)
-
-6. [HAUSER & WIRTH](https://www.hauserwirth.com/locations/10069-hauser-wirth-los-angeles)
-
-7. [Art Share L.A.](https://artsharela.org/)
-
-8. [GALLERIES AT SCI-ARC](https://sciarc.edu/events/exhibitions)
-
-9. A famous architecture designed by Frank Lloyd Wright[Hollyhock House](https://buy.acmeticketing.com/events/335/list)
-
-10. A residential dwelling design by Frank Lloyd Wright [Ennis House](http://ennishouse.com/)
+- I love the art center [ongoing][http://www.ongoing.jp/ja/artcenter/index.php], which is a special art space / gallery that is very accessible to any artists, including un-famous, fledgling ones.
 
 ### Read
 
-11. Get to know the overall picture of [what is happening in LA](https://www.planetizen.com/tag/los-angeles)
+- Follow [BeingTokyo](http://beingtokyo.com/), which is a rotation curation account on Twitter.
 
-12. Very helpful [resources](http://planning.lacity.org/urbandesign/resources/DowntownDesignGuide.php) to understand urban design principals in LA
+- Check out the books by [Flick Studio](http://www.flickstudio.jp/index.html), which is a publishing company specialized in Architecture and urban design.
+
+- I like watching NHK's project [Tokyo Miracle City](http://www.nhk.or.jp/special/tmc/) - fragments of everyday lives by Tokyoists.
 
 ### Organization
 
-13. A great initiative that provides permanent supportive housing for people who need supports. [Skid Row Housing Trust](http://skidrow.org/)
+- [mi-rimeter](http://mi-ri.com/) is a great team that practice bottom-up urban intervention and tactical urbanism. They also have a [design farm](http://urbaning.jp/)
 
-14. [Do ArT Foundation](http://doartfoundation.org/), a non-profit social enterprise created to produce publicArt programs, projects and exhibitions.
+- [Shibuya Hack Project](http://shibuyahack.com/) believes in the citizen's power and right to cities.
+
+- [Urbanist Meetup](https://www.facebook.com/groups/1546778725440736/) is an online community of people who love city, architecture, urban design, real estate and community development.
+
+- If you love gardening, you'd love [Tokyo Green Space](https://tokyogreenspace.com/tag/tokyo-diy-gardening/) and  this facebook community [Urban Farming Tokyo](https://www.facebook.com/groups/urbanfarmingtokyo/)

@@ -1,5 +1,5 @@
 
-# Hip-Hop architecture
+# Little Tokyo
 
 <draft>
 ## Introduction
