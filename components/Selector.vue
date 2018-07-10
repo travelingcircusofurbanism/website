@@ -87,9 +87,10 @@ export default {
     orderedItems () {
       const typeFrequency = {}
       this.usablePosts.forEach(p => {
-        if (this.hide && p[this.type].toLowerCase() === this.hide.toLowerCase()) return
-        typeFrequency[p[this.type]] = 
-          (typeFrequency[p[this.type]] ? typeFrequency[p[this.type]] + 1 : 1)
+        const typeName = p[this.type].toLowerCase()
+        if (this.hide && typeName === this.hide.toLowerCase()) return
+        typeFrequency[typeName] = 
+          (typeFrequency[typeName] ? typeFrequency[typeName] + 1 : 1)
       })
       return Object.keys(typeFrequency)
         .sort((a, b) => typeFrequency[a] < typeFrequency[b])
