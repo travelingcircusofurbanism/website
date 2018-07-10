@@ -24,10 +24,9 @@ export default {
   components: { Footer, PostList, Selector, },
   asyncData ({ route, redirect, isStatic }) {
     const city = route.path
-      .replace('/', '')
-      .replace('_', ' ')
-      .replace('%20', ' ')
-    console.log(route.path, city)
+      .replace(/\//g, '')
+      .replace(/_/g, ' ')
+      .replace(/%20/g, ' ')
     let posts = []
     try {
       posts = require(`~/static/generated/${city}.json`)
