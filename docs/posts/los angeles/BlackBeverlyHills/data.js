@@ -1,7 +1,7 @@
 module.exports = {
-	public: false,
-	date: '6/29/2018',
-	category: 'place',
+	public: true,
+	date: '7/09/2018',
+	category: 'essay',
 	mapPosition:  [
 		{
 			location: 'Ladera Heights',
@@ -11,9 +11,9 @@ module.exports = {
 			pitch: 0 
 		},
 		{
-			location: 'Augustus F. Hawkins natural park',
+			location: 'View Park',
 			bearing: 0,
-			center: [-118.34329990000003, 33.99954839999999],
+			center: [-118.34911690000001, 33.9929545],
 			zoom: 12.00,
 			pitch: 0
 		},

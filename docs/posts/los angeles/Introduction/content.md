@@ -37,7 +37,7 @@
 - [Changes underway in Chinatown, mapped](https://la.curbed.com/maps/chinatown-development-gentrification-map)
 - [Mapping the Arts District's never-ending parade of development](https://la.curbed.com/maps/arts-district-los-angeles-development-map-2)
 
-14. Watch **[Chinatown](https://en.wikipedia.org/wiki/Chinatown_(1974_film)) (1974)** and read [this](http://www.laweekly.com/arts/chinatown-is-the-story-of-white-supremacy-and-gentrification-in-la-8333951) interesting article about the movie, arguing about white supremacy and gentrification in L.A.
+14. Watch [Chinatown](https://en.wikipedia.org/wiki/Chinatown_(1974_film)) (1974) and read [this](http://www.laweekly.com/arts/chinatown-is-the-story-of-white-supremacy-and-gentrification-in-la-8333951) interesting article about the movie, arguing about white supremacy and gentrification in L.A.
 
 15. Activist and journalist Alissa Walker's [blog](http://www.awalkerinla.com/) is a great introduction to the city and it makes wanna walk L.A.  
 
