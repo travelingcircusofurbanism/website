@@ -14,7 +14,7 @@
       center: [180, 0],
       zoom: 1.00,
       pitch: 0,
-      speed: 1,
+      speed: 2,
     }
 
   export default {
@@ -25,7 +25,9 @@
         currentClusters: [],
         componentReady: false,
         styleReady: false,
-        clusterer: supercluster(),
+        clusterer: supercluster({
+          radius: 50,
+        }),
         limitZoomEvent: null,
       }
     },
@@ -295,5 +297,9 @@
       height: 100% !important;
       top: 0;
     }
+  }
+
+  .mapbox-ctrl-attrib {
+    display: none;
   }
 </style>

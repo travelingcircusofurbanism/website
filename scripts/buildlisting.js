@@ -91,7 +91,8 @@ function getDataForPost(postDir, city, slug) {
 			.replace('>', '') // remove > quotes
 			.replace(/\*/g, '') // remove * bolds
 			.replace('---', '') // remove <hr> lines
-			.replace('\n', ' ') // remove line breaks
+			.replace(/\n/g, ' ') // remove line breaks
+			.replace(/^\s*/, '') // remove excess spaces at the start
 		if (description.length > 200) {
 			const afterLimit = description.substring(200)
 			let min = 0

@@ -41,7 +41,16 @@ import RelatedArticles from '~/components/RelatedArticles'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalize(this.title) } },
+  head() { return { 
+    title: this.capitalize(this.title),
+    meta: [
+      { property: 'og:title', content: this.title },
+      { property: 'og:description', content: this.description },
+      { property: 'og:url', content: `https://travelingcircusofurbanism.com${ this.path }` },
+      { property: 'og:image', content: `https://travelingcircusofurbanism.com${ this.path }resized/${ this.image }` },
+      { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+    ]
+  } },
   components: { Footer, RelatedArticles, PostDetails },
 
   asyncData ({ route, redirect, env }) {
@@ -54,10 +63,13 @@ export default {
     city = city.substring(0, city.indexOf('/'))
       .replace('%20', ' ')
 
-    let data, en, ja
+    let data, en, ja, description
     try {
       data = require(`~/static${ path }data.js`)
       en = require(`~/static${ path }content.md`)
+      description = require(`~/static/generated/${city}.json`)
+        .find(p => `/${ p.city }/${ p.slug }` === slug)
+        .description
     } catch (e) {
       console.log('Error: Unable to find data for ' + path)
       return redirect('/')
@@ -70,6 +82,7 @@ export default {
       path,
       slug,
       city,
+      description,
       content: {
         en,
         ja

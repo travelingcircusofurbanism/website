@@ -130,9 +130,11 @@ h4 {
 		letter-spacing: 1.5px;
 
 		@include width (mobile) {
-			font-size: 1.2rem;
-			margin-top: $unit;
+			font-size: 1.1rem;
 			padding-bottom: $unit;
+			margin-top: 0;
+			padding-top: $unit;
+			margin-bottom: 0;
 		}
 	}
 
@@ -143,12 +145,6 @@ h4 {
 		margin-bottom: $unit * 3;
 		padding-bottom: 0;
 		border-bottom: none;
-
-		&.mini {
-			margin-top: 0;
-			padding-top: $unit;
-			margin-bottom: 0;
-		}
 	}
 }
 
@@ -224,7 +220,6 @@ h4 {
 }
 
 .button {
-	// font-family: 'Unica One', 'Raleway', sans-serif;
 	text-align: center;
 	cursor: pointer;
 	text-decoration: none;
@@ -241,6 +236,8 @@ h4 {
 
 		@include width (mobile) {
 			margin: 4px;
+			margin-left: 0;
+			margin-top: 0;
 		}
 	}
 
