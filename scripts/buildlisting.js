@@ -121,7 +121,7 @@ function getDataForPost(postDir, city, slug) {
 			}
 			else image = image[1]
 		}
-		if (image.substring(0, 4) !== 'http')
+		if (image.length > 0 && image.substring(0, 4) !== 'http')
 			image = `/posts/${city}/${slug}/resized/${image.replace('/', '')}`
 
 		const data = {

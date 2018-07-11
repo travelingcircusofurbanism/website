@@ -6,7 +6,7 @@
 
     <nuxt-link :to="url">
       <div
-        :style="{'background-image': `url('${image}')`}"
+        :style="{'background-image': image ? `url('${ image }')` : ''}"
         class="previewimage"
       ></div>
     </nuxt-link>

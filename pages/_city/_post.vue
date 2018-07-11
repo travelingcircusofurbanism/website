@@ -69,7 +69,7 @@ export default {
       data = require(`~/static${ path }data.js`)
       en = require(`~/static${ path }content.md`)
       description = require(`~/static/generated/${city}.json`)
-        .find(p => `/${ p.city }/${ p.slug }` === slug)
+        .find(p => slug.indexOf(p.slug) !== -1)
         .description
     } catch (e) {
       console.log('Error: Unable to find data for ' + path)
