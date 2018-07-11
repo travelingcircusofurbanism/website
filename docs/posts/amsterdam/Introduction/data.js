@@ -1,7 +1,7 @@
 module.exports = {
 	public: false,
 	date: '6/26/2018',
-	category: 'place',
+	category: 'intro',
 	mapPosition:  [
 		{
 			location: 'Bringing Back Broadway',
