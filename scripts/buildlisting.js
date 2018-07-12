@@ -91,7 +91,8 @@ function getDataForPost(postDir, city, slug) {
 			.replace('>', '') // remove > quotes
 			.replace(/\*/g, '') // remove * bolds
 			.replace('---', '') // remove <hr> lines
-			.replace('\n', ' ') // remove line breaks
+			.replace(/\n/g, ' ') // remove line breaks
+			.replace(/^\s*/, '') // remove excess spaces at the start
 		if (description.length > 200) {
 			const afterLimit = description.substring(200)
 			let min = 0
@@ -120,7 +121,7 @@ function getDataForPost(postDir, city, slug) {
 			}
 			else image = image[1]
 		}
-		if (image.substring(0, 4) !== 'http')
+		if (image.length > 0 && image.substring(0, 4) !== 'http')
 			image = `/posts/${city}/${slug}/resized/${image.replace('/', '')}`
 
 		const data = {

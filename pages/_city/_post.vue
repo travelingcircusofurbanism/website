@@ -41,23 +41,38 @@ import RelatedArticles from '~/components/RelatedArticles'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalize(this.title) } },
+  head() { return { 
+    title: this.capitalize(this.title),
+    meta: [
+      { property: 'og:title', content: this.capitalize(this.title) },
+      { property: 'og:type', content: 'article' },
+      { property: 'og:description', content: this.description, hid: `description` },
+      { property: 'og:url', content: `https://www.travelingcircusofurbanism.com${ this.rawPath }` },
+      { property: 'og:image', content: `https://www.travelingcircusofurbanism.com${ this.image ? this.image.replace(/\s/g, '%20') : '' }` },
+      { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+    ]
+  } },
   components: { Footer, RelatedArticles, PostDetails },
 
   asyncData ({ route, redirect, env }) {
-    const slug = route.path.replace(/\/$/g, '')
+    const slug = route.path.replace(/\/$/, '')
       .replace('%20', ' ')
 
     const path = '/posts' + slug + '/'
+    const rawPath = '/posts' + slug.replace(' ', '%20') + '/'
     
     let city = route.path.substring(1)
     city = city.substring(0, city.indexOf('/'))
       .replace('%20', ' ')
 
-    let data, en, ja
+    let data, en, ja, description, image
     try {
       data = require(`~/static${ path }data.js`)
       en = require(`~/static${ path }content.md`)
+      const post = require(`~/static/generated/${city}.json`)
+        .find(p => slug.indexOf(p.slug) !== -1)
+      description = post.description
+      image = post.image
     } catch (e) {
       console.log('Error: Unable to find data for ' + path)
       return redirect('/')
@@ -68,14 +83,17 @@ export default {
 
     return {
       path,
+      rawPath,
       slug,
       city,
+      description,
       content: {
         en,
         ja
       },
       title,
       ...data,
+      image,
       mapPosition: data.mapPosition ? Array.concat([], data.mapPosition) : [],
     }
   },

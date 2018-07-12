@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <div class="intro" v-if="showIntro">
+  <div class="intro" v-if="showIntro">
       <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
     </div>
     <div class="content-top-full mini gray">

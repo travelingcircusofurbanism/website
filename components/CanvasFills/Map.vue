@@ -4,9 +4,8 @@
 </template>
 
 <script>
-  const mapboxgl = require('mapbox-gl')
   import supercluster from 'supercluster'
-  const apiKey = require('../../mapboxApiKey.json').key
+  const ak = require('../../mapboxApiKey.json').key
   const allLocations = require('~/static/generated/locations.json')
 
   const defaultPosition = {
@@ -14,18 +13,21 @@
       center: [180, 0],
       zoom: 1.00,
       pitch: 0,
-      speed: 1,
+      speed: 2,
     }
 
   export default {
     data () {
       return {
+        mapboxgl: null,
         map: null,
         currentMarkers: [],
         currentClusters: [],
         componentReady: false,
         styleReady: false,
-        clusterer: supercluster(),
+        clusterer: supercluster({
+          radius: 50,
+        }),
         limitZoomEvent: null,
       }
     },
@@ -149,24 +151,24 @@
     },
     mounted () {
       this.componentReady = true
-      this.tryUpdateMap()
+      this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+      if (document) this.tryUpdateMap()
     },
     methods: {
       tryUpdateMap () {
-        if (!this.componentReady || !mapboxgl || !this.mapPosition || !this.markerDataAsGeoJSON) {
+        if (!this.componentReady || !this.mapPosition || !this.markerDataAsGeoJSON) {
           return setTimeout(() => this.tryUpdateMap(), 200)
         }
 
         // add new data to clusterer
         this.clusterer.load(this.markerDataAsGeoJSON.features)
+                  
+        if (!this.map)
+          this.initializeMap(dest)
 
-        mapboxgl.accessToken = apiKey
         const dest = {}
         for (let key of Object.keys(defaultPosition))
           dest[key] = this.mapPosition[key] || defaultPosition[key]
-          
-        if (!this.map)
-          this.initializeMap(dest)
         
         // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
         if (this.mapZone)
@@ -181,8 +183,9 @@
       },
 
       calculateDisplayedMarkerElements () {
-        if (!this.componentReady || !mapboxgl || !this.map)
+        if (!this.componentReady || !this.map || !document )
           return
+
         this.currentMarkers.forEach(marker => {
           marker.remove()
         })
@@ -203,7 +206,7 @@
               }
               getLocationsRecursively(marker)
             }
-            const popup = new mapboxgl.Popup({
+            const popup = new this.mapboxgl.Popup({
               location: marker.properties.location,
               locations,
             })
@@ -237,7 +240,7 @@
             })
 
             // make a marker for each feature and add to the map
-            const newMarker = new mapboxgl.Marker(markerElement)
+            const newMarker = new this.mapboxgl.Marker(markerElement)
               .setPopup(popup)
               .setLngLat(marker.geometry.coordinates)
               .addTo(this.map)
@@ -247,6 +250,7 @@
       },
 
       calculateClusters () {
+        if (!this.map || !document) return
         const cZone = this.mapZone ?
           [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
           [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
@@ -258,7 +262,8 @@
       },
 
       initializeMap (dest) {
-        this.map = new mapboxgl.Map({
+        this.mapboxgl.accessToken = ak
+        this.map = new this.mapboxgl.Map({
           container: 'map',
           style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true',
           ...dest
@@ -295,5 +300,9 @@
       height: 100% !important;
       top: 0;
     }
+  }
+
+  .mapbox-ctrl-attrib {
+    display: none;
   }
 </style>
