@@ -48,7 +48,7 @@ export default {
       { property: 'og:type', content: 'article' },
       { property: 'og:description', content: this.description, hid: `description` },
       { property: 'og:url', content: `https://travelingcircusofurbanism.com${ this.path }` },
-      { property: 'og:image', content: `https://travelingcircusofurbanism.com${ this.path }resized/${ this.image }` },
+      { property: 'og:image', content: `http://travelingcircusofurbanism.com${ this.path }resized/${ this.image }` },
       { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
     ]
   } },
