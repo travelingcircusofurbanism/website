@@ -47,30 +47,32 @@ export default {
       { property: 'og:title', content: this.capitalize(this.title) },
       { property: 'og:type', content: 'article' },
       { property: 'og:description', content: this.description, hid: `description` },
-      { property: 'og:url', content: `https://www.travelingcircusofurbanism.com${ this.path }` },
-      { property: 'og:image', content: `https://www.travelingcircusofurbanism.com${ this.path }resized/${ this.image }` },
+      { property: 'og:url', content: `https://www.travelingcircusofurbanism.com${ this.rawPath }` },
+      { property: 'og:image', content: `https://www.travelingcircusofurbanism.com${ this.image ? this.image.replace(/\s/g, '%20') : '' }` },
       { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
     ]
   } },
   components: { Footer, RelatedArticles, PostDetails },
 
   asyncData ({ route, redirect, env }) {
-    const slug = route.path.replace(/\/$/g, '')
+    const slug = route.path.replace(/\/$/, '')
       .replace('%20', ' ')
 
     const path = '/posts' + slug + '/'
+    const rawPath = '/posts' + slug.replace(' ', '%20') + '/'
     
     let city = route.path.substring(1)
     city = city.substring(0, city.indexOf('/'))
       .replace('%20', ' ')
 
-    let data, en, ja, description
+    let data, en, ja, description, image
     try {
       data = require(`~/static${ path }data.js`)
       en = require(`~/static${ path }content.md`)
-      description = require(`~/static/generated/${city}.json`)
+      const post = require(`~/static/generated/${city}.json`)
         .find(p => slug.indexOf(p.slug) !== -1)
-        .description
+      description = post.description
+      image = post.image
     } catch (e) {
       console.log('Error: Unable to find data for ' + path)
       return redirect('/')
@@ -81,9 +83,11 @@ export default {
 
     return {
       path,
+      rawPath,
       slug,
       city,
       description,
+      image,
       content: {
         en,
         ja
