@@ -87,13 +87,13 @@ export default {
       slug,
       city,
       description,
-      image,
       content: {
         en,
         ja
       },
       title,
       ...data,
+      image,
       mapPosition: data.mapPosition ? Array.concat([], data.mapPosition) : [],
     }
   },
