@@ -10,6 +10,8 @@
 
 2. [The Women’s Building](https://womensbuilding.org/) is a women-led community space that advocates self-determination, gender equality and social justice. It has such a beautiful building and interesting history!
 
+3. [Creative Growth](http://www.creativegrowth.org/category/news/) is a non-profit art center that serves artists with developmental, mental and physical disabilities. I found their office in Oakland - it's a bit far from San Francisco proper,but it might be an interesting place to visit.  
+
 ### Read
 
 3. [TraceSF](http://tracesf.com/) is an online journal that critically explores San Francisco Bay Area design, culture, and urbanism.
