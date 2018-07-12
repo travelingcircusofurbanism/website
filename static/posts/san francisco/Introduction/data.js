@@ -24,6 +24,13 @@ module.exports = {
 			zoom: 12.00,
 			pitch: 0 
 		},
+		{
+			location: 'Creative Growth Art Center',
+			bearing: 0,
+			center: [-122.26418230000002, 37.81293839999999],
+			zoom: 12.00,
+			pitch: 0 
+		},
 
 	]
 }
