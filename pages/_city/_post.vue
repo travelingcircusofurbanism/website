@@ -25,7 +25,9 @@
       :date="date"
     />
 
-    <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en )"></article>
+    <div v-lazy-container="{ selector: 'img'}">
+      <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en )"></article>
+    </div>
 
     <RelatedArticles :city="city" :current="slug" />
 
@@ -143,7 +145,8 @@ export default {
       const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
       let matches = imageElementRegex.exec(baseMD)
       while (matches != null) {
-        newMD = newMD.replace(matches[0], `<img src="${ this.path }resized/${ matches[1] }.${ matches[2] }"`)
+        const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`
+        newMD = newMD.replace(matches[0], `<img src="${ srcPath }" data-src="${ srcPath }"`)
         matches = imageElementRegex.exec(baseMD)
       }
       // fix external links
