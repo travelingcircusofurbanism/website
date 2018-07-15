@@ -25,9 +25,9 @@
       :date="date"
     />
 
-    <div v-lazy-container="{ selector: 'img'}">
+    <!--<div v-lazy-container="{ selector: 'img'}">-->
       <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en )"></article>
-    </div>
+    <!--</div>-->
 
     <RelatedArticles :city="city" :current="slug" />
 
@@ -71,7 +71,7 @@ export default {
     try {
       data = require(`~/static${ path }data.js`)
       en = require(`~/static${ path }content.md`)
-      const post = require(`~/static/generated/${city}.json`)
+      const post = require(`~/static/generated/${ city.toLowerCase() }.json`)
         .find(p => slug.indexOf(p.slug) !== -1)
       description = post.description
       image = post.image
