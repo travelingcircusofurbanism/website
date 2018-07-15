@@ -3,8 +3,8 @@
 
 Recently I got to know a little bit about a neighborhood in LA called View Park, which later I discovered is called "Black Beverly Hills" - as opposed to its dominantly white counterpart.
 
-![](viewparik01.jpeg)
-*courtesy of [our weekly](http://ourweekly.com/news/2016/aug/04/view-park-gets-national-nod/)*
+![](viewpark01.jpg)
+*courtesy of the California Office of Historic Preservation*
 
 Frank Ocean's song [Sweet life](https://www.youtube.com/watch?v=JDknpQzPY-o) depicts the life in "the black Beverly Hills" and its beauty (in this context Ladera Heights, a neighborhood that is next to View Park). Its residents are historically mostly African-American professionals - Musician Ray Charles, dancer Debbie Allen had a home in this neighborhood, just to name a few.
 
