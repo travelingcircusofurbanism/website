@@ -38,7 +38,8 @@
       "*/resized/*"
     ],
     "watch": [
-      "static/posts"
+      "static/posts",
+      "scripts"
     ],
     "ext": "jpg,jpeg,png,gif,webm,js,md"
   }

@@ -5,6 +5,7 @@ const postDir = process.cwd() + '/static/posts'
 
 module.exports = function () {
 	let anyDrafts = false
+	const drafts = {}
 	try {
 		fs.readdirSync(postDir)
 			.filter(pathName => pathName.indexOf('.') === -1)
@@ -26,10 +27,12 @@ module.exports = function () {
 					}
 					log('yellow', '  ', city)
 					log('white', '     ・ ' + cityDrafts.join('\n      ・ '))
+					drafts[city] = cityDrafts
 				}
 			})
 	} catch (e) {}
 
 	if(!anyDrafts) log('green', 'No current drafts.\n')
 	else log()
+	return drafts
 }
