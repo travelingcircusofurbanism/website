@@ -5,7 +5,7 @@ export default () => {
     state: {
       mapMarkers: [],
       highlight: [],
-      isMobile: true,
+      isMobile: false,
       language: 'en-US',
       currentCity: null,
       isDev: false,

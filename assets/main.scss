@@ -172,15 +172,14 @@ h4 {
 
 	img {
 		max-width: 100%;
-		margin: 0 auto;
+		margin: $unit * 4 auto;
 		display: block;
-		padding: $unit * 2 0;
+    // background: $offwhite;
 
 		@include width (mobile) {
 			width: 100vw;
 			min-width: 100vw;
-			padding: $unit * 2 0;
-			margin: 0 $content-padding-mobile * -1;
+			margin: $unit * 2 $content-padding-mobile * -1;
 		}
 	}
 
