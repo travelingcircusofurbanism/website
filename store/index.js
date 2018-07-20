@@ -6,7 +6,7 @@ export default () => {
       mapMarkers: [],
       highlight: [],
       isMobile: false,
-      language: 'en-US',
+      language: 'en',
       currentCity: null,
       isDev: false,
     },

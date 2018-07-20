@@ -53,16 +53,18 @@ module.exports = function () {
 }
 
 function getDataForPost(postDir, city, slug) {
-	let jaContent, postData, postContent
+	let jaContent, postData, enContent
 	try { postData = require(`${postDir}/${city}/${slug}/data.js`) } catch (e) { }
-	try { postContent = require(`${postDir}/${city}/${slug}/content.md`) } catch (e) { }
+	try { enContent = require(`${postDir}/${city}/${slug}/content.md`) } catch (e) { }
 	try { jaContent = require(`${postDir}/${city}/${slug}/ja.md`) } catch (e) { }
 
 	try {
-		if (!postData || !postContent) return
+		if (!postData || (!enContent && !jaContent)) return
+
+		const contentToUseForData = enContent || jaContent
 
 		const languages = {
-			en: true,
+			en: enContent ? true : false,
 			ja: jaContent ? true : false
 		}
 
@@ -76,8 +78,8 @@ function getDataForPost(postDir, city, slug) {
 				.filter(l => l)
 				.forEach(l => allLocations.add(l))
 
-		let title = postContent
-			.substring(postContent.indexOf('#') + 1)
+		let title = contentToUseForData
+			.substring(contentToUseForData.indexOf('#') + 1)
 
 		// create nice truncated description
 		let description = postData.description
@@ -93,19 +95,25 @@ function getDataForPost(postDir, city, slug) {
 			.replace('---', '') // remove <hr> lines
 			.replace(/\n/g, ' ') // remove line breaks
 			.replace(/^\s*/, '') // remove excess spaces at the start
-		if (description.length > 200) {
-			const afterLimit = description.substring(200)
+		let softLimit = (enContent ? 200 : 70)
+		if (description.length > softLimit) {
+			const afterLimit = description.substring(softLimit)
 			let min = 0
 			const nextSpace = [
 				afterLimit.indexOf(' '),
+				afterLimit.indexOf(' '), // ja space
 				afterLimit.indexOf(','),
+				afterLimit.indexOf('、'),
 				afterLimit.indexOf('.'),
+				afterLimit.indexOf('。'),
 				afterLimit.indexOf('!'),
+				afterLimit.indexOf('！'),
 				afterLimit.indexOf('?'),
+				afterLimit.indexOf('？'),
 				afterLimit.indexOf(';'),
 				afterLimit.indexOf(':'),
 				afterLimit.indexOf('-'),
-			].reduce((min, e) => (e < min && e >= 0) ? e : min) + 200
+			].reduce((min, e) => (e < min && e >= 0) ? e : min) + softLimit
 			description = description.substring(0, nextSpace) + '...'
 		}
 
@@ -114,7 +122,7 @@ function getDataForPost(postDir, city, slug) {
 		// create nice usable image path
 		let image = postData.image
 		if (!image) {
-			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(postContent)
+			image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(contentToUseForData)
 			if (!image) {
 				// log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
 				image = ''

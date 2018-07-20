@@ -34,7 +34,7 @@ export default {
 		perPage: {
 			type: Number,
 			required: false,
-			default: 5
+			default: 8
 		},
 		title: {
 			type: String,
@@ -49,17 +49,17 @@ export default {
   },
   computed: {
 		isDev () { return this.$store.state.isDev },
+		userLanguage () { return this.$store.state.language },
 		showablePosts () { 
-			return this.isDev ? 
+			return this.isDev ?
 				this.posts :
-				this.posts.filter(p => p.public === true) 
+				this.userLanguage === 'en' ?
+					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.posts.filter(p => p.public === true)
 		},
 		totalPosts () { return this.showablePosts.length },
 		postsToShow () { return this.showablePosts.slice(0, this.shownPostCount) },
   },
-  mounted () {},
-  methods: {
-  }
 }
 
 </script>

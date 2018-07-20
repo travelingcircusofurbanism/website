@@ -32,11 +32,14 @@ export default {
     }
   },
   computed: {
+    userLanguage () { return this.$store.state.language },
     postsToDisplay () {
       const postsToDisplay = []
       for (let p of this.allCityPosts) {
-        if (this.current !== p.url) postsToDisplay.push(p)
-        if (postsToDisplay.length === this.relatedPostCount) return postsToDisplay
+        if (this.current !== p.url && (p.languages[this.userLanguage] || p.languages.en))
+          postsToDisplay.push(p)
+        if (postsToDisplay.length === this.relatedPostCount)
+          return postsToDisplay
       }
       return postsToDisplay
     },

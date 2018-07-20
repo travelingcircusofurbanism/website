@@ -1,7 +1,10 @@
 <template>
   <section class="content" :class="{ja: displayLanguage === 'ja'}">
 
-    <div class="japanese-available content-top-full" v-if="(userLanguage === 'ja' || isDev) && content.ja">
+    <div 
+      class="japanese-available content-top-full" 
+      v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
+    >
       <template v-if="displayLanguage !== 'ja'">
         <img src="~/assets/japanFlag.svg" class="flag-icon" />
         <span>日本語版もあります。</span>
@@ -26,7 +29,7 @@
     />
 
     <!--<div v-lazy-container="{ selector: 'img'}">-->
-      <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en )"></article>
+      <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en || content.ja )"></article>
     <!--</div>-->
 
     <RelatedArticles :city="city" :current="slug" />
@@ -70,7 +73,6 @@ export default {
     let data, en, ja, description, image
     try {
       data = require(`~/static${ path }data.js`)
-      en = require(`~/static${ path }content.md`)
       const post = require(`~/static/generated/${ city.toLowerCase() }.json`)
         .find(p => slug.indexOf(p.slug) !== -1)
       description = post.description
@@ -79,9 +81,13 @@ export default {
       console.log('Error: Unable to find data for ' + path)
       return redirect('/')
     }
+
+    try { en = require(`~/static${ path }content.md`) } catch (e) {}
     try { ja = require(`~/static${ path }ja.md`) } catch (e) {}
 
-    const title = /<h1>(.*)<\/h1>/g.exec(en)[1]
+    if (!en && !ja) return redirect('/')
+
+    const title = /<h1>(.*)<\/h1>/g.exec(en || ja)[1]
 
     return {
       path,
@@ -102,7 +108,7 @@ export default {
 
   data () {
     return {
-      displayLanguage: 'en',
+      displayLanguage: 'en'
     }
   },
   computed: {
@@ -111,6 +117,7 @@ export default {
     userLanguage () { return this.$store.state.language },
   },
   mounted () {
+    this.displayLanguage = this.content.en ? 'en' : 'ja'
     this.$store.commit('setMapMarkers', this.mapPosition)
     this.$store.commit('setCity', this.city)
     this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)
