@@ -28,9 +28,9 @@
       :date="date"
     />
 
-    <!--<div v-lazy-container="{ selector: 'img'}">-->
+    <div v-lazy-container="{ selector: 'img'}">
       <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en || content.ja )"></article>
-    <!--</div>-->
+    </div>
 
     <RelatedArticles :city="city" :current="slug" />
 
@@ -149,12 +149,19 @@ export default {
     formatMarkdown (baseMD) {
       let newMD = baseMD
       // fix images
-      const imageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
-      let matches = imageElementRegex.exec(baseMD)
+      const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
+      let matches = localImageElementRegex.exec(baseMD)
       while (matches != null) {
         const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`
-        newMD = newMD.replace(matches[0], `<img src="${ srcPath }" data-src="${ srcPath }"`)
-        matches = imageElementRegex.exec(baseMD)
+        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`)
+        matches = localImageElementRegex.exec(baseMD)
+      }
+      const externalImageElementRegex = /<img src=\"((?:http|www\.).*)\"/gim
+      matches = externalImageElementRegex.exec(baseMD)
+      while (matches != null) {
+        const srcPath = matches[1]
+        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`)
+        matches = externalImageElementRegex.exec(baseMD)
       }
       // fix external links
       newMD = newMD.replace(/<a href="(.*)">/g, 

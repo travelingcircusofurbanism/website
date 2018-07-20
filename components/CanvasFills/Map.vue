@@ -1,5 +1,12 @@
 <template>
-  <div id="map" :class="{ready: styleReady}">
+  <div>
+    <img
+      src="/loading.svg"
+      class="loader"
+      :class="{off: styleReady}"
+    />
+    <div id="map" :class="{ready: styleReady}">
+    </div>
   </div>
 </template>
 
@@ -286,6 +293,19 @@
 </script>
 
 <style lang="scss" scoped>
+
+  .loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 1s;
+    
+    &.off {
+      opacity: 0;
+    }
+  }
+
   #map {
     height: 120vh !important;
     top: -10vh;

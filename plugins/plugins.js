@@ -5,5 +5,6 @@ Vue.use(VueLazyload, {
 	preLoad: 1.3,
 	// error: 'dist/error.png',
 	loading: '/loading.svg',
-	// attempt: 1
+	attempt: 1,
+	// silent: false,
 })
