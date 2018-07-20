@@ -1,6 +1,16 @@
 
 # サンフランシスコを10倍楽しむためのアーバニストキット！"The urbanist SF" ツアー体験談
 
+
+人間中心設計のリサーチをベースにしてデザインされた、サンフランシスコ初心者のための「アーバニスト・ウェルカムキット」
+
+Nate Mahoney is an urbanist and UX researcher, who focus on Human Centric design and experience of cities.
+
+Grew up in a suburb and get to travel everywhere with a car, he started to walk intensely when he made a move to San Francisco. In grad school, he encountered the word *Flâneur* and immediately fell in love with it. Because.. it makes so much sense! He was already doing it - he was walking around the city to experience, to learn, not necessarily to get point B from point A.
+
+As a pedestorian, he also started talking with people - fellow pedestrians and locals who live in the city. Gradually he started descovering more and more the
+
+
 ![](theurbanistSF03.jpg)
 ![](theurbanistSF04.jpg)
 
