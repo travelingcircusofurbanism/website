@@ -56,7 +56,7 @@ export default {
     this.$store.commit('setMapMarkers')
   },
   computed: {
-    userLanguage () { return this.$store.state.language },
+    displayLanguage () { return this.$store.state.language },
   },
 }
 </script>

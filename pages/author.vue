@@ -94,6 +94,9 @@ import Footer from '~/components/Footer'
 export default {
   head() { return { title: 'Author' } },
   components: { Footer, },
+  computed: {
+    displayLanguage () { return this.$store.state.language },
+  },
   mounted () {
     this.$store.commit(
       'setMapMarkers',
