@@ -17,7 +17,7 @@ As a pedestorian, he also started talking with people - fellow pedestrians and l
 
 [The Urbanist SF](http://www.theurbanistsf.com/) has a super exciting [San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which is everything we need to explore the city. I love the idea of having a starter kit for newcomers to the city, which is packed with all the passion/knowledge/love of the urbanist!
 
-I had an great oppotunity to join this tour with Nate and this post is to invite you to the beautity of *Flâneur* and human centred city. 
+I had an great oppotunity to join this tour with Nate and this post is to invite you to the beautity of *Flâneur* and human centred city.
 
 - what's Mission District?
 https://en.m.wikipedia.org/wiki/Mission_District,_San_Francisco
