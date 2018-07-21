@@ -1,17 +1,10 @@
 module.exports = {
 	public: false,
-	date: '7/11/2018',
+	date: '7/19/2018',
 	category: 'interview',
 	mapPosition:  [
 		{
 			location: 'Philz coffee',
-			bearing: 0,
-			center: [-122.41433330000001, 37.7523861],
-			zoom: 12.00,
-			pitch: 0 
-		},
-		{
-			location: 'Mission district',
 			bearing: 0,
 			center: [-122.41433330000001, 37.7523861],
 			zoom: 12.00,
