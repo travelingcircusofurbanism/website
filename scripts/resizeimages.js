@@ -7,6 +7,7 @@ const fullSizeDir = 'full/'
 const resizedDir = 'resized/'
 
 const defaultHeight = 500
+const maxWidth = 1200
 
 module.exports = function () {
 	// read all city directories in the master post directory ('tokyo', 'austin', etc)
@@ -49,7 +50,8 @@ module.exports = function () {
 									if (!existingImages.find(f => f === file)) {
 										// otherwise, resize it and put it in the post directory
 										sharp(inputPath + file)
-											.resize(null, defaultHeight)
+											.resize(maxWidth, defaultHeight)
+											.max()
 											.toFile(outputPath + file)
 											.then(function () {
 												log('cyan', 'Resized and saved', cityDir + postDir + fullSizeDir + file)

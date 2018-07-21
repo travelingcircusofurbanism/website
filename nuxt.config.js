@@ -12,7 +12,6 @@ posts.map(p => {
 })
 
 module.exports = {
-  // mode: 'spa',
   head: {
     titleTemplate (titleChunk) {
       return (titleChunk ? titleChunk + ' | ' : '') + `Traveling Circus of Urbanism`
@@ -42,7 +41,7 @@ module.exports = {
     breaks: true,
     typographer: true
   },
-  // plugins: ['~/plugins/plugins'],
+  plugins: ['~/plugins/plugins'],
   build: {
     styleResources: {
       scss: './assets/variables.scss',

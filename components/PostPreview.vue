@@ -16,9 +16,14 @@
         <h4>{{ title }}</h4>
       </nuxt-link>
 
-      <div class="japanese-available" v-if="currentLanguage === 'ja' && languages.ja">
+      <div
+        class="japanese-available"
+        v-if="(userLanguage === 'ja' || isDev) && languages.ja"
+      >
         <img src="~/assets/japanFlag.svg" class="flag-icon" />
-        <span class="sub">日本語版あり</span>
+        <span class="sub">{{
+          languages.en ? '日本語版あり' : '日本語での記事'
+        }}</span>
       </div>
 
       <PostDetails
@@ -46,7 +51,8 @@ export default {
   props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition', 'languages' ],
   components: { PostDetails, },
   computed: {
-    currentLanguage () { return this.$store.state.language },
+    isDev () { return this.$store.state.isDev },
+    userLanguage () { return this.$store.state.language },
   },
   methods: {
     capitalize,
@@ -99,6 +105,10 @@ export default {
   .titlelink {
     text-decoration: none;
   }
+}
+
+.japanese-available {
+  line-height: 1;
 }
 
 h4 {
