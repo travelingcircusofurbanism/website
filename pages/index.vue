@@ -50,14 +50,21 @@ export default {
     userLanguage () { return this.$store.state.language },
 		showablePosts () { 
 			return this.isDev ?
+				this.posts :
+				this.userLanguage === 'en' ?
+					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.posts.filter(p => p.public === true)
+		},
+    showableCityPosts () {
+      return this.isDev ?
 				this.cityPosts :
 				this.userLanguage === 'en' ?
 					this.cityPosts.filter(p => p.public === true && p.languages['en'] === true) :
 					this.cityPosts.filter(p => p.public === true)
-		},
+    }
   },
   mounted () {
-    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
+    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showableCityPosts) )
     if (!this.get('visited')) {
       this.showIntro = true
       this.set('visited', true)
