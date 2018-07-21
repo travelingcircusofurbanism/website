@@ -13,7 +13,7 @@
       />
     </div>
     <PostList
-      :posts="posts"
+      :posts="showablePosts"
       title="Recent Posts"
     />
     <Footer/>
@@ -46,9 +46,18 @@ export default {
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
+    isDev () { return this.$store.state.isDev },
+    userLanguage () { return this.$store.state.language },
+		showablePosts () { 
+			return this.isDev ?
+				this.cityPosts :
+				this.userLanguage === 'en' ?
+					this.cityPosts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.cityPosts.filter(p => p.public === true)
+		},
   },
   mounted () {
-    this.$store.commit('setMapMarkers', this.cityPosts)
+    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
     if (!this.get('visited')) {
       this.showIntro = true
       this.set('visited', true)
@@ -64,7 +73,6 @@ export default {
 
   .intro {
     margin: $content-padding * -1;
-    // margin-bottom: $content-padding * 1;
     padding: $content-padding * 1.5;
     background: $shade;
     line-height: 1.4;
