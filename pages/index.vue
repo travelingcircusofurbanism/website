@@ -32,7 +32,8 @@ export default {
   asyncData ({ isStatic }) {
     let allPosts = require('~/static/generated/posts.json')
     if (isStatic) allPosts = allPosts.filter(p => p.public)
-    let cityPosts = require(`~/static/generated/${allPosts[0].city}.json`)
+    const firstShownPost = allPosts.find(p => p.languages.en && p.public)
+    let cityPosts = require(`~/static/generated/${firstShownPost.city}.json`)
     if (isStatic) cityPosts = cityPosts.filter(p => p.public)
     return {
       posts: allPosts,
