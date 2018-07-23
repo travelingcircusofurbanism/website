@@ -1,5 +1,5 @@
 
-# Sunday for all the bike lovers - Sunday Parkways and Portland's exiting Green Loop Vision
+# Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision
 
 ![](sundayparkways0.jpg)
 
