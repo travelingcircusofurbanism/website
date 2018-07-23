@@ -13,7 +13,7 @@
       />
     </div>
     <PostList
-      :posts="posts"
+      :posts="showablePosts"
       title="Recent Posts"
     />
     <Footer/>
@@ -32,7 +32,8 @@ export default {
   asyncData ({ isStatic }) {
     let allPosts = require('~/static/generated/posts.json')
     if (isStatic) allPosts = allPosts.filter(p => p.public)
-    let cityPosts = require(`~/static/generated/${allPosts[0].city}.json`)
+    const firstShownPost = allPosts.find(p => p.languages.en && p.public)
+    let cityPosts = require(`~/static/generated/${firstShownPost.city}.json`)
     if (isStatic) cityPosts = cityPosts.filter(p => p.public)
     return {
       posts: allPosts,
@@ -46,9 +47,25 @@ export default {
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
+    isDev () { return this.$store.state.isDev },
+    userLanguage () { return this.$store.state.language },
+		showablePosts () { 
+			return this.isDev ?
+				this.posts :
+				this.userLanguage === 'en' ?
+					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.posts.filter(p => p.public === true)
+		},
+    showableCityPosts () {
+      return this.isDev ?
+				this.cityPosts :
+				this.userLanguage === 'en' ?
+					this.cityPosts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.cityPosts.filter(p => p.public === true)
+    }
   },
   mounted () {
-    this.$store.commit('setMapMarkers', this.cityPosts)
+    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showableCityPosts) )
     if (!this.get('visited')) {
       this.showIntro = true
       this.set('visited', true)
@@ -64,7 +81,6 @@ export default {
 
   .intro {
     margin: $content-padding * -1;
-    // margin-bottom: $content-padding * 1;
     padding: $content-padding * 1.5;
     background: $shade;
     line-height: 1.4;

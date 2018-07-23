@@ -7,7 +7,7 @@
       />
     </div>-->
     <PostList
-      :posts="posts"
+      :posts="showablePosts"
       :title="city"
     />
     <Footer/>
@@ -44,11 +44,19 @@ export default {
     }
   },
   computed: {
-    shownPosts () { return this.posts },
     isMobile () { return this.$store.state.isMobile },
+    isDev () { return this.$store.state.isDev },
+    userLanguage () { return this.$store.state.language },
+		showablePosts () { 
+			return this.isDev ?
+				this.posts :
+				this.userLanguage === 'en' ?
+					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
+					this.posts.filter(p => p.public === true)
+		},
   },
   mounted () {
-    this.$store.commit('setMapMarkers', this.posts)
+    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
   },
   methods: {
     capitalize,
