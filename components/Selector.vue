@@ -38,7 +38,6 @@
 </template>
 
 <script>
-const posts = require('~/static/generated/posts.json')
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -63,7 +62,7 @@ export default {
     cutoff: {
       required: false,
       type: Number,
-      default: 10
+      default: 8
     },
     moreHint: {
       required: false,
@@ -85,10 +84,12 @@ export default {
   computed: {
     isMobile () { return this.$store.state.isMobile },
     isDev () { return this.$store.state.isDev },
+    allPosts () { return this.$store.state.allPosts },
+    allPublicPosts () { return this.$store.state.allPublicPosts },
     usablePosts () {
       return this.isDev ?
-        posts :
-        posts.filter(p => p.public)
+        this.allPosts :
+        this.allPublicPosts
     },
     orderedItems () {
       const typeFrequency = {}

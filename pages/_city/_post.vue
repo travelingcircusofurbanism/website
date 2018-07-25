@@ -82,6 +82,7 @@ export default {
       return redirect('/')
     }
 
+    // note: we could fetch these from our own servers to reduce the initial bundle size -- content.md can get big!
     try { en = require(`~/static${ path }content.md`) } catch (e) {}
     try { ja = require(`~/static${ path }ja.md`) } catch (e) {}
 

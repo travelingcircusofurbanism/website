@@ -41,7 +41,7 @@ module.exports = {
     breaks: true,
     typographer: true
   },
-  plugins: ['~/plugins/plugins'],
+  // plugins: ['~/plugins/plugins'],
   build: {
     styleResources: {
       scss: './assets/variables.scss',
