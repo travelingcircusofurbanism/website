@@ -12,10 +12,16 @@
 
 - [EVERYBODY'S BIKE RENTALS & TOURS](http://www.pdxbikerentals.com/small-businessportland/)
 
+- [Kennedy School](https://www.mcmenamins.com/kennedy-school)
+
+- [Mcmenamins](https://www.mcmenamins.com/)
+
+- [Portland Night Market](http://www.pdxnm.com/)
+
 ### Read
 
 -
 
 ### Organization, initiative
 
--
+- [immigrant story](https://theimmigrantstory.org/immigrant-story/)
