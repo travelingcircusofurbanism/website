@@ -39,7 +39,7 @@ module.exports = {
 			pitch: 0 
 		},
 		{
-			location: 'Timbuk2 ',
+			location: 'Timbuk2',
 			bearing: 0,
 			center: [-122.41563300000001, 37.7590263],
 			zoom: 12.00,
