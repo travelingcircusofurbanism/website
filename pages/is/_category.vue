@@ -26,18 +26,16 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head () { return { title: this.capitalize(this.category) } },
   components: { Footer, PostList, },
-  asyncData ({ route, redirect, isStatic }) {
+  asyncData ({ route, redirect, isStatic, store }) {
     const category = route.path
       .replace('/is/', '')
       .replace('/', '')
       .replace('_', ' ')
       .replace('%20', ' ')
       .toLowerCase()
-    let posts = []
-    try {
-      posts = require(`~/static/generated/posts.json`)
-    } catch (e) { console.log(e) }
-    if (isStatic) posts = posts.filter(p => p.public)
+    let posts = isStatic ?
+      store.state.allPublicPosts :
+      store.state.allPosts
     if (!posts || posts.length === 0)
       return redirect('/')
     posts = posts.filter(p => {

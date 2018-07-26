@@ -3,6 +3,10 @@ import Vuex from 'vuex'
 export default () => {
   return new Vuex.Store({
     state: {
+      allPosts: [],
+      enPosts: [],
+      allPublicPosts: [],
+      enPublicPosts: [],
       mapMarkers: [],
       highlight: [],
       isMobile: false,
@@ -86,7 +90,19 @@ export default () => {
       
       setDev (state, isDev) {
         state.isDev = isDev
-      }
+      },
+
+      setPosts (state, posts) {
+        state.allPosts = posts
+        state.allPublicPosts = posts.filter(p => p.public === true)
+        state.enPosts = posts.filter(p => p.languages.en === true)
+        state.enPublicPosts = posts.filter(p => p.languages.en === true && p.public === true)
+      },
     },
+    actions: {
+      nuxtServerInit (context) {
+        context.commit('setPosts', require('~/static/generated/posts.json'))
+      }
+    }
   })
 }

@@ -28,9 +28,9 @@
       :date="date"
     />
 
-    <div v-lazy-container="{ selector: 'img'}">
+    <!--<div v-if="displayLanguage === 'ja'" v-lazy-container="{ selector: 'img'}">-->
       <article class="markdown" v-html="formatMarkdown( content[displayLanguage] || content.en || content.ja )"></article>
-    </div>
+    <!--</div>-->
 
     <RelatedArticles :city="city" :current="slug" />
 
@@ -82,6 +82,7 @@ export default {
       return redirect('/')
     }
 
+    // note: we could fetch these from our own servers to reduce the initial bundle size -- content.md can get big!
     try { en = require(`~/static${ path }content.md`) } catch (e) {}
     try { ja = require(`~/static${ path }ja.md`) } catch (e) {}
 
@@ -153,7 +154,7 @@ export default {
       let matches = localImageElementRegex.exec(baseMD)
       while (matches != null) {
         const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`
-        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`)
+        newMD = newMD.replace(matches[0], `<img src="${ srcPath }"`) // if lazy-load, src -> data-src
         matches = localImageElementRegex.exec(baseMD)
       }
       const externalImageElementRegex = /<img src=\"((?:http|www\.).*)\"/gim
