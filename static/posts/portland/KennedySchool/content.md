@@ -1,21 +1,27 @@
 
-# Things to do and read for urbanists @Portland
+#  Great adaptive reuse project: Kennedy School by Mcmenamins
 
-![]()
-*Photo by Jack Finnigan on Unsplash*
+### Mcmenamins, a pioneer in the adaptive reuse field
 
-### Things to do, places/project to check out
 
-- [The ReBuilding Center](https://www.rebuildingcenter.org/)
 
-- [Alberta Main Street](http://albertamainst.org/shoplocal/visit/)
+### Kennedy School
 
-- [EVERYBODY'S BIKE RENTALS & TOURS](http://www.pdxbikerentals.com/small-businessportland/)
-
-### Read
-
--
-
-### Organization, initiative
-
--
+![](kennedyschool0.jpg)
+![](kennedyschool1.jpg)
+![](kennedyschool2.jpg)
+![](kennedyschool3.jpg)
+![](kennedyschool4.jpg)
+![](kennedyschool5.jpg)
+![](kennedyschool6.jpg)
+![](kennedyschool7.jpg)
+![](kennedyschool8.jpg)
+![](kennedyschool9.jpg)
+![](kennedyschool10.jpg)
+![](kennedyschool11.jpg)
+![](kennedyschool12.jpg)
+![](kennedyschool13.jpg)
+![](kennedyschool14.jpg)
+![](kennedyschool15.jpg)
+![](kennedyschool16.jpg)
+![](kennedyschool17.jpg)
