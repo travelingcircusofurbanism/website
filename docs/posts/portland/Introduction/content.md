@@ -16,13 +16,17 @@
 
 - [Portland Night Market](http://www.pdxnm.com/)
 
-- [Movies in the park](https://www.portlandoregon.gov/parks/69554) is great for summer evening - the events are completely free and you can enjoy the quality of urban life. 
+- [Movies in the park](https://www.portlandoregon.gov/parks/69554) is great for summer evening - the events are completely free and you can enjoy the quality of urban life.
 
 ### Read
 
 - I enjoyed reading some articles recommended by one of my local friend, that explain rich history of North Williams Ave - once the vibrant heart of Portland’s Black community.
   - [Black Williams Project](http://blackwilliamsproject.com/)
   - [Portland Gentrification: The North Williams Avenue that Was -- 1956](https://www.theskanner.com/news/history/11409-portland-gentrification-the-north-williams-avenue-that-was-1956-2011-08-09)
+
+- I can't stop loving this [introduction document](https://www.portlandoregon.gov/bps/article/480760) about Portland's Central East district published by [bureau of planning and sustainability Portland](https://www.portlandoregon.gov/bps/) - very informative and has great design.
+
+- This academic thesis analyses Alberta district and explain how it transformed into arts district: [RE-IMAGING A NEIGHBORHOOD:THE CREATION OF THE ALBERTA ARTS DISTRICT, PORTLAND, OREGON](https://drive.google.com/file/d/0B0DL9k4mI4KtT0VETUVtX1I5eHM/edit)
 
 ### Organization, initiative
 
