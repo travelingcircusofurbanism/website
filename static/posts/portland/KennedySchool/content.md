@@ -15,14 +15,18 @@ The other day, I visited one of their venues in Portland called [Kennedy School]
 
 ![](kennedyschool0.jpg)
 
-The Kennedy School, a historic elementary school in northeast Portland that opened in 1915, has been transformed into a 57-room hotel with a restaurant, multiple small bars, a movie theater, a soaking pool and a brewery. There is more than 8,500 square feet of meeting space, including the 3,400-square-foot Gymnasium and 600-square-foot Agnes Kennedy White Library.
+Opened in 1915, The Kennedy School is a historic elementary school in northeast Portland. After it lost its function as a elementary school, it has been transformed into a 57-room hotel with a restaurant, multiple small bars, a movie theater, a swimming pool and a brewery.
 
 ![](kennedyschool1.jpg)
 ![](kennedyschool2.jpg)
 ![](kennedyschool3.jpg)
+*It is also part of [BikeTown](https://www.travelingcircusofurbanism.com/portland/Sundayparkways) area and has 4 racks*
+
 ![](kennedyschool4.jpg)
 ![](kennedyschool5.jpg)
 ![](kennedyschool6.jpg)
+It is open for public and you can enter the building for free - it is very interesting to see the remaining structure of a elementary school and all the whimsical/fun art pieces on the walls.
+
 ![](kennedyschool7.jpg)
 ![](kennedyschool8.jpg)
 ![](kennedyschool9.jpg)
@@ -30,9 +34,10 @@ The Kennedy School, a historic elementary school in northeast Portland that open
 ![](kennedyschool11.jpg)
 ![](kennedyschool13.jpg)
 ![](kennedyschool14.jpg)
-![](kennedyschool15.jpg)
 ![](kennedyschool16.jpg)
+![](kennedyschool15.jpg)
 
+I highly recommend for a visit, and watch a cheap movie / get drinks here, and enjoy how they breathe new life into this old building without failing to appreciate the beauty of the past. 
 
 References:
 - [McMenamins is a pioneer in the adaptive reuse field](https://www.meetingstoday.com/magazines/article-details/articleid/23520/title/mcmenamins-is-a-pioneer-in-the-adaptive-reuse-field)
