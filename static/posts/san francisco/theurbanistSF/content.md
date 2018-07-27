@@ -31,7 +31,7 @@ It's also famous for many artists living in the neighborhood and beautiful mural
 ![](theurbanistSF07.jpg)
 ![](theurbanistSF13.jpg)
 
-Below, I will walk through some of the highlights from the tour. It all felt special, especially when I was holding the items from the kit and listening to the great stories told by Mr. Mahoney.
+Below, I will walk through some of the highlights from the tour. It all felt special, especially when I was holding the items from the kit and listening to the great stories told by Nate.
 
 - [Philz coffee](https://en.m.wikipedia.org/wiki/Philz_Coffee)
 Philz coffee, opened in 2002, is an important local café that made a major contribution to the Bay Area's third wave coffee boom. They have built a very strong relationship with the local community. Currently, it expanded its brand throughout the city, but the original store in the Mission district still has an important meaning.
@@ -50,14 +50,14 @@ You can find a lot of murals at Balmy Alley, Clarion Alley, and the Women's buil
 
 - [Colpa press](https://www.colpapress.com/pages/about)
 A local print shop that publishes independent magazines and books. They also have galleries and hold workshops as a platform to support local artists.
-I highly recommend to check out [Mr. Mahoney's interview](https://youtu.be/wR3PSISQy5o) at the print shop.
+I highly recommend to check out [Nate's interview](https://youtu.be/wR3PSISQy5o) at the print shop.
 
-![](theurbanist SF 14.jpg)
+![](theurbanistSF14.jpg)
 
 The illustration map contained from the Kit was printed in this print shop. It was designed by a local artist [Carissa Potter](https://www.carissapotter.com/) and I fell in love with her project [People I've loved](https://www.peopleiveloved.com/).
 
 - [Timbuk2](https://en.m.wikipedia.org/wiki/Timbuk2)
-Mr. Mahoney's favorite! Timbuk2, a local bag brand founded in 1989, has great, high-quality products, and I enjoyed visiting their factory shop.
+Nate's favorite! Timbuk2, a local bag brand founded in 1989, has great, high-quality products, and I enjoyed visiting their factory shop.
 
 ![](theurbanistSF15.jpg)
 ![](theurbanistSF16.jpg)
@@ -78,9 +78,9 @@ The final spot of the tour was Dolores Park - everyone's favorite! From this sma
 
 ![](theurbanistSF19.jpg)
 
-> Small for such a dynamic city, San Francisco’s irreverent spirit is threaded into every neighborhood. Rich in history, the culture of San Francisco has always been a reflection of its pride, its fearlessness and its need to be seen and heard. San Francisco has a kaleidoscope of urban appeal, a place for adventure, delicacy and creature comforts.
+> Small for such a dynamic city, San Francisco’s irreverent spirit is threaded into every neighborhood. Rich in history, the culture of San Francisco has always been a reflection of its pride, its fearlessness and its need to be seen and heard. San Francisco has a kaleidoscope of urban appeal, a place for adventure, delicacy and creature comforts. - from [official website](http://www.theurbanistsf.com/)
 
-Mr. Mahoney cares a lot about the experience and livability of our cities — cities for people. It takes a lot of time and effort to prepare a tour like this, because it requires a ton of research about how people live in cities and how they interact with their urban environment. The most important thing is to walk around the city and listen to the stories from people, and to discover the charm of the place and find collaborators on your own two feet. This tour teaches us that.  
+Nate cares a lot about the experience and livability of our cities — cities for people. It takes a lot of time and effort to prepare a tour like this, because it requires a ton of research about how people live in cities and how they interact with their urban environment. The most important thing is to walk around the city and listen to the stories from people, and to discover the charm of the place and find collaborators on your own two feet. This tour teaches us that.  
 
 In the future, he is planning to spread this project to the other big cities in the U.S. such as Los Angeles and New York. I highly recommend The Urbanist SF to all city lovers.
 

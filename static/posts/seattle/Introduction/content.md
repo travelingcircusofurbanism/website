@@ -1,5 +1,5 @@
 
-# Things to do and read for urbanists @New York
+# Things to do and read for urbanists @Seattle
 
 ![]()
 *Photo by Jack Finnigan on Unsplash*
