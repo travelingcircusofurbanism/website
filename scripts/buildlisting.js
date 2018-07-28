@@ -14,6 +14,11 @@ module.exports = function () {
 	try {
 		if (!fs.existsSync(generatedDir))
 			fs.mkdirSync(generatedDir)
+		else // wipe the generated dir
+			fs.readdirSync(generatedDir)
+				.forEach(file => {
+					fs.unlinkSync(generatedDir + '/' + file)
+				})
 
 		fs.readdir(postDir, (err, posts) => {
 			if (err) return log('magenta', err)
