@@ -70,6 +70,8 @@ export default {
     city = city.substring(0, city.indexOf('/'))
       .replace('%20', ' ')
 
+    // note: we could fetch these from our own servers in created() to reduce the initial bundle size -- we're loading ALL the info for EVERY post!!
+
     let data, en, ja, description, image
     try {
       data = require(`~/static${ path }data.js`)
@@ -82,7 +84,6 @@ export default {
       return redirect('/')
     }
 
-    // note: we could fetch these from our own servers to reduce the initial bundle size -- content.md can get big!
     try { en = require(`~/static${ path }content.md`) } catch (e) {}
     try { ja = require(`~/static${ path }ja.md`) } catch (e) {}
 
@@ -119,8 +120,9 @@ export default {
   },
   mounted () {
     this.displayLanguage = this.content.en ? 'en' : 'ja'
-    this.$store.commit('setMapMarkers', this.mapPosition)
+    this.$store.commit('setView', this.mapPosition)
     this.$store.commit('setCity', this.city)
+    this.$store.commit('setPan', false)
     this.$store.commit('setHighlight', Array.isArray(this.mapPosition) ? null : this.mapPosition)
     this.$nextTick(() => {
       if (!Array.isArray(this.mapPosition)) return

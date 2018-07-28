@@ -98,6 +98,7 @@ export default {
     displayLanguage () { return this.$store.state.language },
   },
   mounted () {
+    this.$store.commit('setPan', true)
     this.$store.commit(
       'setMapMarkers',
       [

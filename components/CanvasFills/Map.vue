@@ -11,17 +11,18 @@
 </template>
 
 <script>
+
   import supercluster from 'supercluster'
   const ak = require('../../mapboxApiKey.json').key
   const allLocations = require('~/static/generated/locations.json')
 
   const defaultPosition = {
-      bearing: 0,
-      center: [180, 0],
-      zoom: 1.00,
-      pitch: 0,
-      speed: 2,
-    }
+    bearing: 0,
+    center: [180, 0],
+    zoom: 3.00,
+    pitch: 0,
+    speed: 2,
+  }
 
   export default {
     data () {
@@ -33,39 +34,38 @@
         componentReady: false,
         styleReady: false,
         clusterer: supercluster({
-          radius: 50,
+          radius: 45,
         }),
         limitZoomEvent: null,
+        panTimer: null,
       }
     },
+
     computed: {
-      // mapMarkers comes in as an array of mapPosition objects.
+      // mapMarkers and currentView come in as an array of mapPosition objects.
       mapMarkers () { return this.$store.state.mapMarkers },
+      currentView () { return this.$store.state.currentView },
 
       // highlight comes in as an array of location names.
       highlight () { return this.$store.state.highlight },
 
+      panMap () { return this.$store.state.panMap },
+
+      isMobile () { return this.$store.state.isMobile },
+
       // filters us down to unique named places
-      uniqueLocations () {
-        const uniqueLocations = {}
-        for (let marker of this.mapMarkers) {
-          if (!marker.location) continue
-          const location = marker.location.toLowerCase()
-          if (!uniqueLocations[location])
-            uniqueLocations[location] = []
-          uniqueLocations[location].push(marker)
-        }
-        return uniqueLocations
-      },
+      uniqueMarkerLocations () { return getUniqueLocations(this.mapMarkers) },
+
+      uniqueViewLocations () { return getUniqueLocations(this.currentView) },
 
       // generates point data from unique locations
-      markerDataAsGeoJSON () {
-        if (!this.uniqueLocations) return []
+      uniqueMarkerLocationsAsGeoJSONObjects () {
+        if (!this.uniqueMarkerLocations) return []
         const markerData = {
           type: 'FeatureCollection',
           features: []
         }
-        for (let marker of Object.values(this.uniqueLocations)) {
+        for (let marker of Object.values(this.uniqueMarkerLocations)) {
           markerData.features.push({
             type: 'Feature',
             geometry: {
@@ -82,59 +82,55 @@
 
       // get a good starting point for our map
       mapPosition () {
-        if (!this.mapMarkers || Object.keys(this.mapMarkers).length === 0) {
+        if (!this.currentView || Object.keys(this.currentView).length === 0) {
           this.$emit('close')
           return defaultPosition
         }
         this.$emit('open')
-        return this.mapMarkers[0]
+        return this.currentView[0]
       },
 
       // if there are multiple points, find the best fit box
       mapZone () {
-        if (!this.uniqueLocations || Object.keys(this.uniqueLocations).length === 0) return
-        if (Object.keys(this.uniqueLocations).length > 1) {
-          const minMax = [[180, 180], [-180, -180]]
-          for (let marker of Object.values(this.uniqueLocations)) {
-            const c = marker[0].center
-            if (c[0] < minMax[0][0]) minMax[0][0] = c[0] // min x
-            if (c[1] < minMax[0][1]) minMax[0][1] = c[1] // min y
-            if (c[0] > minMax[1][0]) minMax[1][0] = c[0] // max x
-            if (c[1] > minMax[1][1]) minMax[1][1] = c[1] // max y
-          }
-          const xDiff = Math.abs((minMax[1][0] + 180) - (minMax[0][0] + 180)),
-                yDiff = Math.abs((minMax[1][1] + 180) - (minMax[0][1] + 180)),
-                offsetMod = 0.75,
-                xOffset = xDiff * offsetMod,
-                yOffset = yDiff * offsetMod
-          
-          minMax[0][0] -= xOffset // offset min x
-          minMax[0][1] -= yOffset // offset min y
-          minMax[1][0] += xOffset // offset max x
-          minMax[1][1] += yOffset * 1.5 // offset max y
-
-          if (minMax[1][1] > 90) {
-            const diff = minMax[1][1] - 90
-            minMax[1][1] = 90
-            minMax[0][1] -= diff
-            if (minMax[0][1] < -90) minMax[0][1] = -90
-          }
-          
-          return minMax
+        if (!this.uniqueViewLocations || Object.keys(this.uniqueViewLocations).length <= 1) return
+        
+        const minMax = [[180, 180], [-180, -180]]
+        for (let marker of Object.values(this.uniqueViewLocations)) {
+          const c = marker[0].center
+          if (c[0] < minMax[0][0]) minMax[0][0] = c[0] // min x
+          if (c[1] < minMax[0][1]) minMax[0][1] = c[1] // min y
+          if (c[0] > minMax[1][0]) minMax[1][0] = c[0] // max x
+          if (c[1] > minMax[1][1]) minMax[1][1] = c[1] // max y
         }
+        const xDiff = Math.abs((minMax[1][0] + 180) - (minMax[0][0] + 180)),
+              yDiff = Math.abs((minMax[1][1] + 180) - (minMax[0][1] + 180)),
+              distanceFromBoxEdge = 0.7,
+              xOffset = xDiff * distanceFromBoxEdge,
+              yOffset = yDiff * distanceFromBoxEdge
+        
+        minMax[0][0] -= xOffset // offset min x
+        minMax[0][1] -= yOffset // offset min y
+        minMax[1][0] += xOffset // offset max x
+        minMax[1][1] += yOffset * 1.1 // offset max y
+
+        if (minMax[1][1] > 90) {
+          const diff = minMax[1][1] - 90
+          minMax[1][1] = 90
+          minMax[0][1] -= diff
+          if (minMax[0][1] < -90) minMax[0][1] = -90
+        }
+        
+        return minMax
       }
     },
-    watch: {
 
+    watch: {
       mapPosition () {
         this.tryUpdateMap()
       },
 
-      markerDataAsGeoJSON (newMarkers, oldMarkers) {
-        if (!newMarkers || newMarkers == oldMarkers) return
-        // add new data to clusterer
-        this.clusterer.load(this.markerDataAsGeoJSON.features)
-        this.calculateClusters()
+      panMap (shouldPan) {
+        this.setPan(shouldPan)
       },
 
       highlight (newHighlight, oldHighlight) {
@@ -154,28 +150,26 @@
             )
           if (newEl) newEl._element.classList.add('highlight')
         }
-      }
+      },
     },
+
     mounted () {
       this.componentReady = true
       this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
       if (document) this.tryUpdateMap()
     },
+
     methods: {
       tryUpdateMap () {
-        if (!this.componentReady || !this.mapPosition || !this.markerDataAsGeoJSON) {
+        if (!this.componentReady || !this.mapPosition || !this.uniqueMarkerLocationsAsGeoJSONObjects)
           return setTimeout(() => this.tryUpdateMap(), 200)
-        }
-
-        // add new data to clusterer
-        this.clusterer.load(this.markerDataAsGeoJSON.features)
-                  
-        if (!this.map)
-          this.initializeMap(dest)
 
         const dest = {}
         for (let key of Object.keys(defaultPosition))
           dest[key] = this.mapPosition[key] || defaultPosition[key]
+
+        if (!this.map)
+          this.initializeMap(dest)
         
         // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
         if (this.mapZone)
@@ -187,6 +181,43 @@
       routeTo (location) {
         if (allLocations.includes(location.toLowerCase()))
           this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
+      },
+
+      initializeMap (dest) {
+        this.mapboxgl.accessToken = ak
+        this.map = new this.mapboxgl.Map({
+          container: 'map',
+          style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true',
+          ...dest
+        })
+
+        this.map.on('styledata', () =>
+          setTimeout(() => this.styleReady = true, 300)
+        )
+
+        this.map.on('zoom', () => {
+          if (!this.limitZoomEvent)
+            this.limitZoomEvent = setTimeout(() => {
+              this.calculateClusters()
+              this.limitZoomEvent = null
+            }, 300)
+        })
+
+        this.calculateClusters()
+      },
+
+      calculateClusters () {
+        if (!this.map || !document) return
+        this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects.features)
+        const cZone = this.mapZone ?
+          [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
+          [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
+        this.currentClusters = this.clusterer.getClusters(
+          // cZone,
+          [-180, -85, 180, 85],
+          Math.round(this.map.getZoom())
+        )
+        this.calculateDisplayedMarkerElements()
       },
 
       calculateDisplayedMarkerElements () {
@@ -230,6 +261,7 @@
             markerElement.appendChild(textBox)
             markerElement.appendChild(pin)
             markerElement.addEventListener('click', e => {
+              this.setPan(false)
               if (isCluster) {
                 const children = this.clusterer.getChildren(marker.properties.cluster_id)
                 const centerPoint = children
@@ -256,38 +288,33 @@
           })
       },
 
-      calculateClusters () {
-        if (!this.map || !document) return
-        const cZone = this.mapZone ?
-          [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
-          [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
-        this.currentClusters = this.clusterer.getClusters(
-          cZone,
-          Math.round(this.map.getZoom())
-        )
-        this.calculateDisplayedMarkerElements()
+      setPan (shouldPan) {
+        clearInterval(this.panTimer)
+        if (!shouldPan || !this.map || this.isMobile) return
+        const duration = 1000
+        const panMap = () => {
+          if (this.map.isZooming()) return
+          this.map.panBy([12, 0], {
+              easing: t => t,
+              duration: duration
+          })
+        }
+        this.panTimer = setInterval(panMap, duration)
       },
 
-      initializeMap (dest) {
-        this.mapboxgl.accessToken = ak
-        this.map = new this.mapboxgl.Map({
-          container: 'map',
-          style: 'mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true',
-          ...dest
-        })
-        this.map.on('styledata', () =>
-          setTimeout(() => this.styleReady = true, 300)
-        )
-        this.map.on('zoom', () => {
-          if (!this.limitZoomEvent)
-            this.limitZoomEvent = setTimeout(() => {
-              this.calculateClusters()
-              this.limitZoomEvent = null
-            }, 300)
-        })
-        this.calculateClusters()
-      }
     }
+  }
+
+  function getUniqueLocations (markers) {
+    const uniqueLocations = {}
+    for (let marker of markers) {
+      if (!marker.location) continue
+      const location = marker.location.toLowerCase()
+      if (!uniqueLocations[location])
+        uniqueLocations[location] = []
+      uniqueLocations[location].push(marker)
+    }
+    return uniqueLocations
   }
 
 </script>

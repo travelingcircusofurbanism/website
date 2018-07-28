@@ -34,11 +34,11 @@ export default {
       store.state.allPublicPosts : 
       store.state.allPosts
     const firstShownPost = allPosts.find(p => p.languages.en)
-    // let cityPosts = require(`~/static/generated/${firstShownPost.city}.json`)
-    // if (isStatic) cityPosts = cityPosts.filter(p => p.public)
+    let cityPosts = require(`~/static/generated/${firstShownPost.city}.json`)
+    if (isStatic) cityPosts = cityPosts.filter(p => p.public)
     return {
       posts: allPosts,
-      // cityPosts
+      cityPosts: cityPosts
     }
   },
   data () {
@@ -56,12 +56,13 @@ export default {
 				this.userLanguage === 'en' ?
 					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
 					this.posts.filter(p => p.public === true)
-		}
+		},
   },
   mounted () {
-    this.$store.commit('setPan', true)
-    this.$store.commit('setMapMarkers', this.showablePosts)
-    this.$store.commit('setView', this.showablePosts)
+    this.$nextTick(() => {
+      this.$store.commit('setMapMarkers', this.showablePosts)
+      this.$store.commit('setPan', true)
+    })
     if (!this.get('visited')) {
       this.showIntro = true
       this.set('visited', true)

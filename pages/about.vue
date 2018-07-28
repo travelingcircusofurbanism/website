@@ -54,6 +54,7 @@ export default {
   components: { Footer, },
   mounted () {
     this.$store.commit('setMapMarkers')
+    this.$store.commit('setPan', false)
   },
   computed: {
     displayLanguage () { return this.$store.state.language },

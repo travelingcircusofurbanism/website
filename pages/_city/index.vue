@@ -56,7 +56,8 @@ export default {
 		},
   },
   mounted () {
-    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
+    this.$store.commit('setPan', false)
+    this.$store.commit('setView', this.showablePosts)
   },
   methods: {
     capitalize,
