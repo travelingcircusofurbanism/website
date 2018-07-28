@@ -161,17 +161,17 @@ export default {
       matches = externalImageElementRegex.exec(baseMD)
       while (matches != null) {
         const srcPath = matches[1]
-        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`)
+        newMD = newMD.replace(matches[0], `<img src="${ srcPath }"`) // here too
         matches = externalImageElementRegex.exec(baseMD)
       }
-      // fix external links
+      // make external links open in new tab
       newMD = newMD.replace(/<a href="(.*)">/g, 
         (match, url) => {
           const target = url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : ''
           return `<a ${ target } href="${ url }">`
         }
       )
-      // fix videos
+      // add wrapper to videos
       newMD = newMD.replace(/(<iframe.*<\/iframe>)/g, 
         (match, iframe) => `<div class="video-wrapper">${iframe}</div>`
       )
