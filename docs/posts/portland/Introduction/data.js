@@ -1,68 +1,54 @@
 module.exports = {
-	public: false,
-	date: '6/26/2018',
+	public: true,
+	date: '7/26/2018',
 	category: 'intro',
 	mapPosition:  [
 		{
-			location: 'Van Alen Institute',
+			location: 'The ReBuilding Center',
 			bearing: 0,
-			center: [-73.99183089999997, 40.74139729999999],
+			center: [-122.67591709999999, 45.548974],
 			zoom: 12.00,
 			pitch: 0 
 		},
 		{
-			location: '',
+			location: 'Alberta Main Street',
 			bearing: 0,
-			center: [-118.2464493, 33.9900691],
+			center: [-122.64720699999998, 45.558997],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Everybodys Bike Rentals & Tours',
 			bearing: 0,
-			center: [-118.23744390000002, 34.0454001],
+			center: [-122.66236249999997, 45.5578331],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Kennedy School',
 			bearing: 0,
-			center: [-118.23487999999998, 34.046146],
+			center: [-122.6301722, 45.5644706],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Bagdad Theater',
 			bearing: 0,
-			center: [-118.23640720000003, 34.0445952],
+			center: [-122.62552770000002, 45.5118816],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Portland Night Market',
 			bearing: 0,
-			center: [-118.23289219999998, 34.0450119],
+			center: [-122.66446989999997, 45.5178616],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'North Williams Ave',
 			bearing: 0,
-			center: [-118.29440799999998, 34.0999515],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29278959999999, 34.1161926],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2480433, 34.0434704],
+			center: [-122.66673689999999, 45.5559501],
 			zoom: 12.00,
 			pitch: 0
 		},

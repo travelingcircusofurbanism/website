@@ -1,21 +1,25 @@
 
-# Things to do and read for urbanists @Portland
+# Portland as a house - thought on the analogy of a city as a house
+
+https://www.happytraveler.jp/2016/05/pioneer-courthouse-square.html
+Pioneer courthouse
 
 ![]()
-*Photo by Jack Finnigan on Unsplash*
+**
 
-### Things to do, places/project to check out
+### Portland, ..
+- book and visualization
+![](cityasahouse01.jpg)
 
-- [The ReBuilding Center](https://www.rebuildingcenter.org/)
+What caught my eyes was this visualization - Portland as a house.
+![](cityasahouse.jpg)
 
-- [Alberta Main Street](http://albertamainst.org/shoplocal/visit/)
 
-- [EVERYBODY'S BIKE RENTALS & TOURS](http://www.pdxbikerentals.com/small-businessportland/)
 
-### Read
+- pioneer suare as a livingroom
 
--
 
-### Organization, initiative
+### City ls House and House ls City
 
--
+
+### Relationship between interior and exterior, private and public
