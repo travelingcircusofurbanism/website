@@ -28,17 +28,18 @@
       :date="date"
     />
 
-    <!--<div v-if="displayLanguage === 'ja'" v-lazy-container="{ selector: 'img'}">-->
-      <article
-        class="markdown"
-        ref="postcontent"
-        v-html="formatMarkdown(
-          $md.render(
-            content[displayLanguage] || content.en || content.ja || ''
-          )
-        )"
-      ></article>
-    <!--</div>-->
+    <div v-if="!content.en && !content.ja"><h1>{{ title }}</h1></div>
+    <article
+      v-else
+      v-lazy-container="{ selector: 'img'}"
+      class="markdown"
+      ref="postcontent"
+      v-html="formatMarkdown(
+        $md.render(
+          content[displayLanguage] || content.en || content.ja || ''
+        )
+      )"
+    ></article>
 
     <RelatedArticles :city="city" :current="slug" />
 
@@ -173,11 +174,11 @@ export default {
     capitalize,
 
     doubleHighlight (location) {
-      this.$store.commit('setDoubleHighlight', location)
+      this.$store.commit('setHighlight', location)
     },
 
     unDoubleHighlight () {
-      this.$store.commit('setDoubleHighlight')
+      this.$store.commit('setHighlight')
     },
 
     setLanguage (language) {
@@ -192,22 +193,23 @@ export default {
       const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
       let matches = localImageElementRegex.exec(baseMD)
       while (matches != null) {
-        const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`
-        newMD = newMD.replace(matches[0], `<img src="${ srcPath }"`) // if lazy-load, src -> data-src
+        const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`.replace(' ', '%20')
+        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`) // if lazy-load, src -> data-src
         matches = localImageElementRegex.exec(baseMD)
       }
       const externalImageElementRegex = /<img src=\"((?:http|www\.).*)\"/gim
       matches = externalImageElementRegex.exec(baseMD)
       while (matches != null) {
         const srcPath = matches[1]
-        newMD = newMD.replace(matches[0], `<img src="${ srcPath }"`) // here too
+        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`) // here too
         matches = externalImageElementRegex.exec(baseMD)
       }
       // make external links open in new tab
-      newMD = newMD.replace(/<a href="(.*)">/g, 
+      newMD = newMD.replace(/<a href="([^"]*)">/g, 
         (match, url) => {
-          const target = url.indexOf('travelingcircusofurbanism.com') === -1 ? 'target="_blank"' : ''
-          return `<a ${ target } href="${ url }">`
+          const externalAttributes = url.indexOf('travelingcircusofurbanism.com') === -1 ?
+            'target="_blank" class="external"' : ''
+          return `<a ${ externalAttributes } href="${ url }">`
         }
       )
       // add wrapper to videos

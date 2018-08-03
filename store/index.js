@@ -45,11 +45,20 @@ export default () => {
 
       setHighlight (state, mapPositions) {
         const parsedLocations = parseLocationNames(mapPositions)
-        state.highlight = parsedLocations
-      },
-
-      setDoubleHighlight(state, locationName) {
-        state.doubleHighlight = locationName
+        if (parsedLocations.length > 0) {
+          if (state.highlight.length === 0) {
+            state.doubleHighlight = []
+            state.highlight = parsedLocations
+          }
+          else
+            state.doubleHighlight = parsedLocations
+        }
+        else {
+          if (state.doubleHighlight.length > 0)
+            state.doubleHighlight = []
+          else
+            state.highlight = []
+        }
       },
 
       setCity (state, city) {
@@ -97,13 +106,26 @@ export default () => {
 }
 
 function parseLocationNames(source) {
-  // comes in as an array of mapPosition object or an array of names, or a single one of either
+  // comes in as an array of posts, mapPosition objects, an array of names, or a single one of any
   if (!source) source = []
   if (!Array.isArray(source))
     source = [source]
-  return source
-    .map(p => p.location || p)
-    .filter(l => l)
+  // if it's post objects, flatten it down to just mapPositions
+  if (source[0] && source[0].mapPosition)
+    source = [].concat.apply(
+      [], source
+        .map(post => post.mapPosition)
+        .filter(position => position)
+    )
+  // then grab just the names
+  source = source
+    .map(positionOrLocation => 
+      positionOrLocation.location ||
+      (positionOrLocation instanceof String ? positionOrLocation : null)
+    )
+    .filter(locationName => locationName)
+  // then return only unique names
+  return Array.from(new Set(source))
 }
 
 function parseMapPositionObjectsFromAnything (source) {

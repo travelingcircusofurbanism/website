@@ -6,7 +6,7 @@
 
     <nuxt-link :to="url">
       <div
-        :style="{'background-image': image ? `url('${ image }')` : ''}"
+        v-lazy:background-image="image"
         class="previewimage"
       ></div>
     </nuxt-link>
@@ -54,13 +54,24 @@ export default {
     isDev () { return this.$store.state.isDev },
     userLanguage () { return this.$store.state.language },
   },
+  data () {
+    return {
+      isDoubleHighlighting: false,
+    }
+  },
+  beforeDestroy () {
+    if (this.isDoubleHighlighting)
+      this.$store.commit('setHighlight')
+  },
   methods: {
     capitalize,
     mouseOver () {
       this.$store.commit('setHighlight', this.mapPosition)
+      this.isDoubleHighlighting = true
     },
     mouseOut () {
       this.$store.commit('setHighlight')
+      this.isDoubleHighlighting = false
     }
   }
 }
@@ -70,7 +81,7 @@ export default {
 <style lang="scss" scoped>
 
 .post-preview {
-  padding-bottom: $unit * 10;
+  margin-bottom: $unit * 10;
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;

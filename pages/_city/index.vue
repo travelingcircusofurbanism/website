@@ -51,9 +51,13 @@ export default {
         this.posts
 		},
   },
+  beforeDestroy () {
+    this.$store.commit('setHighlight')
+  },
   mounted () {
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.showablePosts)
+    this.$store.commit('setHighlight', this.showablePosts)
   },
   methods: {
     capitalize,

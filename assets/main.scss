@@ -182,7 +182,6 @@ h4 {
 		max-width: 100%;
 		margin: $unit * 4 auto;
 		display: block;
-    // background: $offwhite;
 
 		@include width (mobile) {
 			width: 100vw;
@@ -223,6 +222,13 @@ h4 {
 		font-style: italic;
 		padding: $unit $unit * 4;
 		background: rgba($offwhite, .3);
+	}
+
+	a.external {
+		background: url('~/assets/external.svg') center right no-repeat;
+		background-size: 12px;
+		padding-right: 16px;
+		margin-right: 2px;
 	}
 }
 

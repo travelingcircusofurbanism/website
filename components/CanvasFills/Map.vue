@@ -7,7 +7,7 @@
     />
     <div id="map" :class="{ready: styleReady}">
     </div>
-    <div class="hidden">This exists to make sure that the doubleHighlight variable updates. Silly, I know. {{ doubleHighlight }}</div>
+    <div class="hidden">This exists to make sure that the highlight variables update. Silly, I know. {{ doubleHighlight + ' ' + highlight }}</div>
   </div>
 </template>
 
@@ -48,7 +48,23 @@
       currentView () { return this.$store.state.currentView },
 
       // highlight comes in as an array of location names.
-      highlight () { return this.$store.state.highlight },
+      highlight () {
+        const newHighlight = this.$store.state.highlight
+        if (process.browser) {
+          [].forEach.call(document.querySelectorAll('.highlight'), el =>
+            el.classList.remove('highlight')
+          )
+          for (let n of newHighlight) {
+            const newEl = this.currentMarkers
+              .find(m =>
+                m._popup.options.location === n ||
+                m._popup.options.locations.find(l => l === n)
+              )
+            if (newEl) newEl._element.classList.add('highlight')
+          }
+        }
+        return newHighlight
+      },
 
       // doubleHighlight comes in as a string.
       doubleHighlight () {
@@ -57,11 +73,11 @@
           [].forEach.call(document.querySelectorAll('.doublehighlight'), el =>
             el.classList.remove('doublehighlight')
           )
-          if (newHighlight) {
+          for (let n of newHighlight) {
             const newEl = this.currentMarkers
               .find(m =>
-                m._popup.options.location === newHighlight ||
-                m._popup.options.locations.find(l => l === newHighlight)
+                m._popup.options.location === n ||
+                m._popup.options.locations.find(l => l === n)
               )
             if (newEl) newEl._element.classList.add('doublehighlight')
           }
@@ -156,25 +172,6 @@
         this.clusterer.load(newGeoJSON.features)
       },
 
-      highlight (newHighlight, oldHighlight) {
-        for (let o of oldHighlight) {
-          const oldEl = this.currentMarkers
-            .find(m => 
-              m._popup.options.location === o ||
-              m._popup.options.locations.find(l => l === o)
-            )
-          if (oldEl) oldEl._element.classList.remove('highlight')
-        }
-        for (let n of newHighlight) {
-          const newEl = this.currentMarkers
-            .find(m =>
-              m._popup.options.location === n ||
-              m._popup.options.locations.find(l => l === n)
-            )
-          if (newEl) newEl._element.classList.add('highlight')
-        }
-      },
-
     },
 
     mounted () {
@@ -200,10 +197,10 @@
         else if (this.mapZone) {
           // console.log('fitting to', ...this.mapZone)
           const padding = {
-            top: this.isMobile ? 20 : 300,
+            top: this.isMobile ? 50 : 300,
             left: this.isMobile ? 40 : 150,
             right: this.isMobile ? 40 : 150,
-            bottom: this.isMobile ? 20 : 150,
+            bottom: this.isMobile ? 30 : 150,
           }
           this.map.fitBounds(this.mapZone, {
             padding,
@@ -240,7 +237,7 @@
             }, 300)
         })
 
-        this.map.on('click', () => this.setPan(false))
+        this.map.on('mousedown', () => this.setPan(false))
         this.map.on('touchstart', () => this.setPan(false))
         this.map.on('wheel', () => this.setPan(false))
 
@@ -337,7 +334,7 @@
 
       setPan (shouldPan) {
         clearInterval(this.panTimer)
-        if (!this.map.isZooming()) this.map.stop()
+        if (!this.map.isZooming() || !shouldPan) this.map.stop()
         if (!shouldPan || !this.map || this.isMobile) return
 
         const duration = 1000

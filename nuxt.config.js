@@ -42,7 +42,7 @@ module.exports = {
     typographer: true,
     injected: true
   },
-  // plugins: ['~/plugins/plugins'],
+  plugins: ['~/plugins/plugins'],
   build: {
     styleResources: {
       scss: './assets/variables.scss',
