@@ -7,6 +7,7 @@
     />
     <div id="map" :class="{ready: styleReady}">
     </div>
+    <div class="hidden">This exists to make sure that the doubleHighlight variable updates. Silly, I know. {{ doubleHighlight }}</div>
   </div>
 </template>
 
@@ -18,8 +19,8 @@
 
   const defaultPosition = {
     bearing: 0,
-    center: [180, 0],
-    zoom: 3.00,
+    center: [-130, 30],
+    zoom: 1.5,
     pitch: 0,
     speed: 2,
   }
@@ -34,7 +35,7 @@
         componentReady: false,
         styleReady: false,
         clusterer: supercluster({
-          radius: 45,
+          radius: 50,
         }),
         limitZoomEvent: null,
         panTimer: null,
@@ -48,6 +49,25 @@
 
       // highlight comes in as an array of location names.
       highlight () { return this.$store.state.highlight },
+
+      // doubleHighlight comes in as a string.
+      doubleHighlight () {
+        const newHighlight = this.$store.state.doubleHighlight
+        if (process.browser) {
+          [].forEach.call(document.querySelectorAll('.doublehighlight'), el =>
+            el.classList.remove('doublehighlight')
+          )
+          if (newHighlight) {
+            const newEl = this.currentMarkers
+              .find(m =>
+                m._popup.options.location === newHighlight ||
+                m._popup.options.locations.find(l => l === newHighlight)
+              )
+            if (newEl) newEl._element.classList.add('doublehighlight')
+          }
+        }
+        return newHighlight
+      },
 
       panMap () { return this.$store.state.panMap },
 
@@ -82,6 +102,7 @@
 
       // get a good starting point for our map
       mapPosition () {
+        // TODO is this even necessary these days?
         if (!this.currentView || Object.keys(this.currentView).length === 0) {
           this.$emit('close')
           return defaultPosition
@@ -93,34 +114,32 @@
       // if there are multiple points, find the best fit box
       mapZone () {
         if (!this.uniqueViewLocations || Object.keys(this.uniqueViewLocations).length <= 1) return
-        
-        const minMax = [[180, 180], [-180, -180]]
+        let top = -90,
+            right = -180,
+            bottom = 90,
+            left = 180
         for (let marker of Object.values(this.uniqueViewLocations)) {
           const c = marker[0].center
-          if (c[0] < minMax[0][0]) minMax[0][0] = c[0] // min x
-          if (c[1] < minMax[0][1]) minMax[0][1] = c[1] // min y
-          if (c[0] > minMax[1][0]) minMax[1][0] = c[0] // max x
-          if (c[1] > minMax[1][1]) minMax[1][1] = c[1] // max y
+          if (c[1] > top) top = c[1] // max y
+          if (c[0] > right) right = c[0] // max x
+          if (c[1] < bottom) bottom = c[1] // min y
+          if (c[0] < left) left = c[0] // min x
         }
-        const xDiff = Math.abs((minMax[1][0] + 180) - (minMax[0][0] + 180)),
-              yDiff = Math.abs((minMax[1][1] + 180) - (minMax[0][1] + 180)),
-              distanceFromBoxEdge = 0.7,
-              xOffset = xDiff * distanceFromBoxEdge,
-              yOffset = yDiff * distanceFromBoxEdge
-        
-        minMax[0][0] -= xOffset // offset min x
-        minMax[0][1] -= yOffset // offset min y
-        minMax[1][0] += xOffset // offset max x
-        minMax[1][1] += yOffset * 1.1 // offset max y
 
-        if (minMax[1][1] > 90) {
-          const diff = minMax[1][1] - 90
-          minMax[1][1] = 90
-          minMax[0][1] -= diff
-          if (minMax[0][1] < -90) minMax[0][1] = -90
+        // check for very zoomed out view (homepage), and focus on fitting y values instead.
+        // this is to stop the map from zooming out so far that it shows antarctica, etc.
+        const xDifference = Math.abs(right - left)
+        if (xDifference > 100) {
+          const randomMarkerXValue = Object.values(this.uniqueViewLocations)[
+              Math.floor(
+                Math.random() * Object.values(this.uniqueViewLocations).length
+              )
+            ][0].center[0]
+          right = randomMarkerXValue + 1
+          left = randomMarkerXValue - 1
         }
-        
-        return minMax
+
+        return [[left, bottom], [right, top]]
       }
     },
 
@@ -131,6 +150,10 @@
 
       panMap (shouldPan) {
         this.setPan(shouldPan)
+      },
+
+      uniqueMarkerLocationsAsGeoJSONObjects (newGeoJSON) {
+        this.clusterer.load(newGeoJSON.features)
       },
 
       highlight (newHighlight, oldHighlight) {
@@ -151,6 +174,7 @@
           if (newEl) newEl._element.classList.add('highlight')
         }
       },
+
     },
 
     mounted () {
@@ -168,14 +192,27 @@
         for (let key of Object.keys(defaultPosition))
           dest[key] = this.mapPosition[key] || defaultPosition[key]
 
-        if (!this.map)
+        if (!this.map) {
           this.initializeMap(dest)
-        
+          // console.log('initializing at', dest)
+        }
         // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
-        if (this.mapZone)
-          this.map.fitBounds(this.mapZone)
-        else
+        else if (this.mapZone) {
+          // console.log('fitting to', ...this.mapZone)
+          const padding = {
+            top: this.isMobile ? 20 : 300,
+            left: this.isMobile ? 40 : 150,
+            right: this.isMobile ? 40 : 150,
+            bottom: this.isMobile ? 20 : 150,
+          }
+          this.map.fitBounds(this.mapZone, {
+            padding,
+          })
+        }
+        else {
           this.map.flyTo(dest)
+          // console.log('flying to', dest)
+        }
       },
 
       routeTo (location) {
@@ -203,12 +240,16 @@
             }, 300)
         })
 
+        this.map.on('click', () => this.setPan(false))
+        this.map.on('touchstart', () => this.setPan(false))
+        this.map.on('wheel', () => this.setPan(false))
+
+        this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects.features)
         this.calculateClusters()
       },
 
       calculateClusters () {
         if (!this.map || !document) return
-        this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects.features)
         const cZone = this.mapZone ?
           [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
           [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
@@ -217,10 +258,10 @@
           [-180, -85, 180, 85],
           Math.round(this.map.getZoom())
         )
-        this.calculateDisplayedMarkerElements()
+        this.createDisplayedMarkerElements()
       },
 
-      calculateDisplayedMarkerElements () {
+      createDisplayedMarkerElements () {
         if (!this.componentReady || !this.map || !document )
           return
 
@@ -248,10 +289,16 @@
               location: marker.properties.location,
               locations,
             })
+            const shouldHighlight = this.highlight
+              .find(nameToHighlight =>
+                marker.properties.location === nameToHighlight ||
+                locations.find(l => l === nameToHighlight)
+              ) ? true : false
 
             // create a HTML marker for each feature
             const markerElement = document.createElement('div')
-            markerElement.className = isCluster ? 'cluster' : 'marker'
+            markerElement.className = (isCluster ? 'cluster' : 'marker') + ' ' +
+              (shouldHighlight ? 'highlight' : '')
             const pin = document.createElement('div')
             pin.className = 'pin'
             const textBox = document.createElement('div')
@@ -271,7 +318,7 @@
                   }, [0,0])
                 this.map.flyTo({
                   center: centerPoint,
-                  zoom: this.clusterer.getClusterExpansionZoom(marker.properties.cluster_id) + 1
+                  zoom: this.clusterer.getClusterExpansionZoom(marker.properties.cluster_id) + .8
                 })
               }
               else
@@ -290,7 +337,9 @@
 
       setPan (shouldPan) {
         clearInterval(this.panTimer)
+        if (!this.map.isZooming()) this.map.stop()
         if (!shouldPan || !this.map || this.isMobile) return
+
         const duration = 1000
         const panMap = () => {
           if (this.map.isZooming()) return
@@ -299,9 +348,10 @@
               duration: duration
           })
         }
+        panMap()
         this.panTimer = setInterval(panMap, duration)
       },
-
+      
     }
   }
 
@@ -334,8 +384,7 @@
   }
 
   #map {
-    height: 120vh !important;
-    top: -10vh;
+    height: 100vh;
     opacity: 0;
     transition: opacity 3s;
 
@@ -349,7 +398,7 @@
     }
   }
 
-  .mapbox-ctrl-attrib {
+  .mapbox-ctrl-attrib, .mapboxgl-missing-css, .mapboxgl-control-container {
     display: none;
   }
 </style>

@@ -1,7 +1,7 @@
 <template>
   <div
     class="post-preview"
-    v-on="{mouseover: mouseOver, mouseout: mouseOut}"
+    v-on="{mouseenter: mouseOver, mouseleave: mouseOut}"
   >
 
     <nuxt-link :to="url">

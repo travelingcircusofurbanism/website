@@ -97,69 +97,74 @@ export default {
   computed: {
     displayLanguage () { return this.$store.state.language },
   },
+  beforeDestroy () {
+
+  },
   mounted () {
-    this.$store.commit('setPan', true)
-    this.$store.commit(
-      'setMapMarkers',
-      [
-        {
-          bearing: 0,
-          center: [139.69170639999993, 35.6894875],
-          zoom: 1,
-          pitch: 0,
-          location: 'Tokyo'
-        },
-        {
-          bearing: 0,
-          center: [16.37381890000006, 48.2081743],
-          zoom: 1,
-          pitch: 0,
-          location: 'Vienna'
-        },
-        {
-          bearing: 0,
-          center: [4.351710300000036, 50.8503396],
-          zoom: 1,
-          pitch: 0,
-          location: 'Brussels'
-        },
-        {
-          bearing: 0,
-          center: [-3.7037901999999576, 40.4167754],
-          zoom: 1,
-          pitch: 0,
-          location: 'Madrid'
-        },
-        {
-          bearing: 0,
-          center: [12.568337199999974, 55.6760968],
-          zoom: 1,
-          pitch: 0,
-          location: 'Copenhagen'
-        },
-        {
-          bearing: 0,
-          center: [10.203921000000037, 56.162939],
-          zoom: 1,
-          pitch: 0,
-          location: 'Aarhus'
-        },
-        {
-          bearing: 0,
-          center: [-95.71289100000001, 37.09024],
-          zoom: 1,
-          pitch: 0,
-          location: 'US cities'
-        },
-        {
-          bearing: 0,
-          center: [120.9842195, 14.5995124],
-          zoom: 1,
-          pitch: 0,
-          location: 'Manila'
-        }
-      ]
-    )
+    this.$nextTick(() => {
+      this.$store.commit('setPan', true)
+      this.$store.commit(
+        'setMapMarkers',
+        [
+          {
+            bearing: 0,
+            center: [139.69170639999993, 35.6894875],
+            zoom: 1,
+            pitch: 0,
+            location: 'Tokyo'
+          },
+          {
+            bearing: 0,
+            center: [16.37381890000006, 48.2081743],
+            zoom: 1,
+            pitch: 0,
+            location: 'Vienna'
+          },
+          {
+            bearing: 0,
+            center: [4.351710300000036, 50.8503396],
+            zoom: 1,
+            pitch: 0,
+            location: 'Brussels'
+          },
+          {
+            bearing: 0,
+            center: [-3.7037901999999576, 40.4167754],
+            zoom: 1,
+            pitch: 0,
+            location: 'Madrid'
+          },
+          {
+            bearing: 0,
+            center: [12.568337199999974, 55.6760968],
+            zoom: 1,
+            pitch: 0,
+            location: 'Copenhagen'
+          },
+          {
+            bearing: 0,
+            center: [10.203921000000037, 56.162939],
+            zoom: 1,
+            pitch: 0,
+            location: 'Aarhus'
+          },
+          {
+            bearing: 0,
+            center: [-95.71289100000001, 37.09024],
+            zoom: 1,
+            pitch: 0,
+            location: 'US cities'
+          },
+          {
+            bearing: 0,
+            center: [120.9842195, 14.5995124],
+            zoom: 1,
+            pitch: 0,
+            location: 'Manila'
+          }
+        ]
+      )
+    })
   }
 }
 </script>

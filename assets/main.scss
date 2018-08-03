@@ -17,6 +17,10 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
+.hidden {
+	display: none;
+}
+
 * { box-sizing: border-box; }
 
 a, a:active, a:visited, a:hover {
@@ -68,6 +72,10 @@ h4 {
   margin-right: $unit;
   position: relative;
   top: 2px;
+}
+
+.mapboxgl-canvas {
+	filter: brightness(0.9);
 }
 
 .content {
@@ -317,7 +325,7 @@ h4 {
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center center;
-		transition: width .2s, height .2s;
+		transition: width .2s, height .2s, background-color .2s;
 	}
 
 	.text {
@@ -338,6 +346,7 @@ h4 {
 			-2px 0 12px $shadow;
 		font-weight: 600;
 		letter-spacing: .8px;
+		transition: color .2s;
 
 		@include width(mobile) {
 			top: $unit * -4;
@@ -360,6 +369,15 @@ h4 {
 			height: $unit * 8;
 		}
 	}
+
+	&.doublehighlight {
+		.text {
+			color: $highlight;
+		}
+		.pin {
+			background-color: $highlight;
+		}	
+	}
 }
 
 .cluster {
@@ -368,7 +386,7 @@ h4 {
 		color: $text;
 		text-shadow: none;
 		z-index: 2;
-		transition: all .2s;
+		transition: all .1s;
 		top: $unit * -5;
 
 		@include width(mobile) {

@@ -10,6 +10,7 @@ export default () => {
       mapMarkers: [],
       currentView: [],
       highlight: [],
+      doubleHighlight: '',
       isMobile: false,
       language: 'en',
       currentCity: null,
@@ -43,16 +44,12 @@ export default () => {
       },
 
       setHighlight (state, mapPositions) {
-        // comes in as an array of mapPosition object or an array of names, or a single one of either
-        if (!mapPositions) mapPositions = []
-        if (!Array.isArray(mapPositions))
-          mapPositions = [mapPositions]
-
-        const parsedLocations = mapPositions
-          .map(p => p.location || p)
-          .filter(l => l)
-
+        const parsedLocations = parseLocationNames(mapPositions)
         state.highlight = parsedLocations
+      },
+
+      setDoubleHighlight(state, locationName) {
+        state.doubleHighlight = locationName
       },
 
       setCity (state, city) {
@@ -89,11 +86,24 @@ export default () => {
       },
     },
     actions: {
-      nuxtServerInit (context) {
-        context.commit('setPosts', require('~/static/generated/posts.json'))
+      nuxtServerInit(context, { isStatic }) {
+        const posts = require('~/static/generated/posts.json')
+        context.commit('setPosts', posts)
+        context.commit('setMapMarkers', posts.filter(p => p.public === true))
+        context.commit('setDev', !isStatic)
       }
     }
   })
+}
+
+function parseLocationNames(source) {
+  // comes in as an array of mapPosition object or an array of names, or a single one of either
+  if (!source) source = []
+  if (!Array.isArray(source))
+    source = [source]
+  return source
+    .map(p => p.location || p)
+    .filter(l => l)
 }
 
 function parseMapPositionObjectsFromAnything (source) {
