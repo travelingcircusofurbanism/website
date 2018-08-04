@@ -27,7 +27,19 @@ import Selector from '~/components/Selector'
 const { get, set } = require('~/assets/storage').default
 
 export default {
-  head() { return { title: 'Home' } },
+  head () { 
+    return { 
+      title: 'Home',
+      meta: [
+        { property: 'og:title', content: 'Traveling Circus of Urbanism' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
+        { property: 'og:url', content: `https://www.travelingcircusofurbanism.com` },
+        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
+        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+      ]
+    }
+  },
   components: { Footer, PostList, Selector, },
   asyncData ({ store }) {
     let posts = store.state.isDev ?

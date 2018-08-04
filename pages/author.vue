@@ -92,7 +92,19 @@
 <script>
 import Footer from '~/components/Footer'
 export default {
-  head() { return { title: 'Author' } },
+  head () { 
+    return { 
+      title: 'Author',
+      meta: [
+        { property: 'og:title', content: 'Author | Traveling Circus of Urbanism' },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
+        { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/author/` },
+        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
+        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+      ]
+    }
+  },
   components: { Footer, },
   computed: {
     displayLanguage () { return this.$store.state.language },

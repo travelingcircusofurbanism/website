@@ -21,7 +21,19 @@ import PostList from '~/components/PostList'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
-  head() { return { title: this.capitalize(this.city) } },
+  head () { 
+    return { 
+      title: this.capitalize(this.city),
+      meta: [
+        { property: 'og:title', content: `${ this.capitalize(this.city) } | Traveling Circus of Urbanism` },
+        { property: 'og:type', content: 'website' },
+        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
+        { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/${ this.city }` },
+        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
+        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+      ]
+    }
+  },
   components: { Footer, PostList, },
   asyncData ({ route, redirect, isStatic, store }) {
     const city = route.path
