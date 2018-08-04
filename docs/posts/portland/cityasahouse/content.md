@@ -1,5 +1,6 @@
 
 # Portland as a house - thought on the analogy of a city as a house
+https://www.pdx.edu/insidepsu/mapping-portlandness
 
 https://www.happytraveler.jp/2016/05/pioneer-courthouse-square.html
 Pioneer courthouse

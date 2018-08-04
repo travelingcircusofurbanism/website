@@ -248,11 +248,12 @@
 
       calculateClusters () {
         if (!this.map || !document) return
-        const cZone = this.mapZone ?
-          [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
-          [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
+        // const cZone = this.mapZone ?
+        //   [ this.mapZone[0][0], this.mapZone[0][1], this.mapZone[1][0], this.mapZone[1][1] ] :
+        //   [ this.mapPosition.center[0] - 1, this.mapPosition.center[1] - 1, this.mapPosition.center[0] + 1, this.mapPosition.center[1] + 1 ]
         this.currentClusters = this.clusterer.getClusters(
           // cZone,
+          // REALLY THIS SHOULD ONLY CALCULATE STUFF THAT'S ONSCREEN...
           [-180, -85, 180, 85],
           Math.round(this.map.getZoom())
         )

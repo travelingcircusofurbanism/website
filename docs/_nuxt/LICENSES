@@ -1,4 +1,11 @@
 /*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
  * Vue.js v2.5.16
  * (c) 2014-2018 Evan You
  * Released under the MIT License.
@@ -8,6 +15,12 @@
  * vuex v3.0.1
  * (c) 2017 Evan You
  * @license MIT
+ */
+
+/*!
+ * Vue-Lazyload.js v1.2.6
+ * (c) 2018 Awe <hilongjw@gmail.com>
+ * Released under the MIT License.
  */
 
 /*!
@@ -29,3 +42,5 @@ object-assign
 (c) Sindre Sorhus
 @license MIT
 */
+
+/*! https://mths.be/punycode v1.4.1 by @mathias */
