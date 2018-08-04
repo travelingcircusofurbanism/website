@@ -1,5 +1,5 @@
 
-# Walk, Listen, and learn - an insight from The Urbanist San Francisco tour
+# Walk, listen, and learn - an insight from The Urbanist San Francisco tour
 
 A few weeks ago I finally had the great opportunity to join a tour that I've been following online for a long time - [The Urbanist SF](http://www.theurbanistsf.com/). Of course, there are countless tours out there you can choose in a big city like San Francisco, but I'm telling you — this tour is not like the other tours, and you will see the city in a completely different way afterward. First of all, [The Urbanist SF](http://www.theurbanistsf.com/) has a super exciting [Welcome to San Francisco Kit](https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote), which contains some essential items for all the city lovers and urban explorers who want to discover the essence of the place.
 

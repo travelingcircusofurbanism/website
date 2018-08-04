@@ -9,7 +9,7 @@
 
 2. [Das Packhaus](http://www.daspackhaus.at/): The temporary use project and Vienna’s largest startup hub.
 
-3. Between 1918 and 1934, Vienna was ruled by the [Social Democrats](https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Austria) government and they launched an extraordinary campaign to provide housing for working-class residents. Visit [Karl Marx Hof](https://www.theguardian.com/cities/2015/apr/27/vienna-karl-marx-hof-architecture-politics-ideology-history-cities-50-buildings) and [the museum in the laundry room](http://dasrotewien-waschsalon.at/startseite/)!
+3. Between 1918 and 1934, Vienna was ruled by the [Social Democrats](https://en.wikipedia.org/wiki/Social_Democratic_Party_of_Austria) government and they launched an extraordinary campaign to provide housing for working-class residents. Visit [Karl Marx Hof](https://www.theguardian.com/cities/2015/apr/27/vienna-karl-marx-hof-architecture-politics-ideology-history-cities-50-buildings) and [The museum in the laundry room](http://dasrotewien-waschsalon.at/startseite/)!
 
 ### Read
 
@@ -21,4 +21,4 @@
 
 6. [Space and Place](http://spaceandplace.at/) — a non-profit group which uses social interventions to make important new connections across the city
 
-7. [Paradocks](http://www.paradocks.at/) is a project to connect vacant spaces and city’s demands by finding creative potential in them. Paradocks stands for the “paradox” of demand and supply of space in a city.
+7. [Paradocks / Das Packhaus](http://www.paradocks.at/) is a project to connect vacant spaces and city’s demands by finding creative potential in them. Paradocks stands for the “paradox” of demand and supply of space in a city.
