@@ -53,8 +53,7 @@ export default {
   head() { return { title: 'About' } },
   components: { Footer, },
   mounted () {
-    this.$store.commit('setMapMarkers')
-    this.$store.commit('setPan', false)
+    this.$store.commit('setHighlight')
   },
   computed: {
     displayLanguage () { return this.$store.state.language },

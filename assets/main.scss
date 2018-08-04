@@ -209,6 +209,12 @@ h4 {
 		}
 	}
 
+	ol, ul {
+		@include width (mobile) {
+			padding-left: $content-padding-mobile;
+		}
+	}
+
 	hr {
 		border: 0;
 		box-shadow: none;
@@ -309,7 +315,7 @@ h4 {
   }
 }
 
-.mapboxgl-missing-css {
+.mapboxgl-missing-css, .mapbox-improve-map, .mapboxgl-ctrl-attrib {
 	display: none;
 }
 
@@ -376,7 +382,7 @@ h4 {
 		}
 	}
 
-	&.doublehighlight {
+	&.doublehighlight, &.highlight:hover {
 		.text {
 			color: $highlight;
 		}

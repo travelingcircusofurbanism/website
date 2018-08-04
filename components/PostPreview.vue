@@ -52,6 +52,7 @@ export default {
   components: { PostDetails, },
   computed: {
     isDev () { return this.$store.state.isDev },
+    isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
   },
   data () {
@@ -60,16 +61,21 @@ export default {
     }
   },
   beforeDestroy () {
-    if (this.isDoubleHighlighting)
+    console.log(this.isDoubleHighlighting)
+    if (this.isDoubleHighlighting || this.isMobile) {
       this.$store.commit('setHighlight')
+      this.$store.commit('setHighlight')
+    }
   },
   methods: {
     capitalize,
     mouseOver () {
+      if (this.isMobile) return
       this.$store.commit('setHighlight', this.mapPosition)
       this.isDoubleHighlighting = true
     },
     mouseOut () {
+      if (this.isMobile) return
       this.$store.commit('setHighlight')
       this.isDoubleHighlighting = false
     }

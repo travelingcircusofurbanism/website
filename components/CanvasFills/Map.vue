@@ -39,6 +39,7 @@
         }),
         limitZoomEvent: null,
         panTimer: null,
+        panSpeed: 25,
       }
     },
 
@@ -198,9 +199,9 @@
           // console.log('fitting to', ...this.mapZone)
           const padding = {
             top: this.isMobile ? 50 : 300,
-            left: this.isMobile ? 40 : 150,
-            right: this.isMobile ? 40 : 150,
-            bottom: this.isMobile ? 30 : 150,
+            left: this.isMobile ? 60 : 150,
+            right: this.isMobile ? 60 : 150,
+            bottom: this.isMobile ? 40 : 150,
           }
           this.map.fitBounds(this.mapZone, {
             padding,
@@ -334,13 +335,13 @@
 
       setPan (shouldPan) {
         clearInterval(this.panTimer)
-        if (!this.map.isZooming() || !shouldPan) this.map.stop()
-        if (!shouldPan || !this.map || this.isMobile) return
+        if (!this.map.isZooming()) this.map.stop()
+        if (!shouldPan || !this.map) return
 
         const duration = 1000
         const panMap = () => {
           if (this.map.isZooming()) return
-          this.map.panBy([12, 0], {
+          this.map.panBy([this.panSpeed, 0], {
               easing: t => t,
               duration: duration
           })

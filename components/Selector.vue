@@ -103,7 +103,7 @@ export default {
         .sort((a, b) => typeFrequency[a] < typeFrequency[b])
     },
     responsiveCutoff () {
-      return parseInt(this.cutoff / (this.isMobile ? 2 : 1))
+      return parseInt(this.cutoff / (this.isMobile ? 1.5 : 1))
     },
     itemsToShow () {
       console.log()

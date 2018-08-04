@@ -84,7 +84,7 @@ export default () => {
       },
 
       setPan (state, shouldPan) {
-        state.panMap = state.isMobile ? false : shouldPan
+        state.panMap = shouldPan
       },
 
       setPosts (state, posts) {
@@ -105,6 +105,8 @@ export default () => {
   })
 }
 
+
+
 function parseLocationNames(source) {
   // comes in as an array of posts, mapPosition objects, an array of names, or a single one of any
   if (!source) source = []
@@ -121,7 +123,7 @@ function parseLocationNames(source) {
   source = source
     .map(positionOrLocation => 
       positionOrLocation.location ||
-      (positionOrLocation instanceof String ? positionOrLocation : null)
+      (positionOrLocation instanceof String || typeof positionOrLocation === 'string' ? positionOrLocation : null)
     )
     .filter(locationName => locationName)
   // then return only unique names
