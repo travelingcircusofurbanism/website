@@ -11,7 +11,8 @@
     "pregolive": "git pull && npm run prep",
     "golive": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
     "postgolive": "git add . && git commit -m \"Auto-pushing files to live\" && git push",
-    "generate": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME"
+    "generate": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
+    "analyze": "nuxt build -a"
   },
   "dependencies": {
     "@nuxtjs/google-analytics": "^2.0.2",

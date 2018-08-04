@@ -1,7 +1,7 @@
 <template>
   <div>
     <img
-      src="/loading.svg"
+      src="/images/loading.svg"
       class="loader"
       :class="{off: styleReady}"
     />

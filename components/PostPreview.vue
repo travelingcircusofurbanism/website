@@ -61,7 +61,6 @@ export default {
     }
   },
   beforeDestroy () {
-    console.log(this.isDoubleHighlighting)
     if (this.isDoubleHighlighting || this.isMobile) {
       this.$store.commit('setHighlight')
       this.$store.commit('setHighlight')
