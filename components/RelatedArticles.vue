@@ -33,10 +33,11 @@ export default {
   },
   computed: {
     userLanguage () { return this.$store.state.language },
+    posts () { return this.$store.state.allPublicPosts },
     postsToDisplay () {
       const postsToDisplay = []
       for (let p of this.allCityPosts) {
-        if (this.current !== p.url && (p.languages[this.userLanguage] || p.languages.en))
+        if (this.current !== p.slug && (p.languages[this.userLanguage] || p.languages.en))
           postsToDisplay.push(p)
         if (postsToDisplay.length === this.relatedPostCount)
           return postsToDisplay
@@ -49,10 +50,8 @@ export default {
   },
   mounted () {
     if (!this.city) return
-    try {
-      this.allCityPosts = require(`~/static/generated/${ this.city.toLowerCase() }.json`)
-        .filter(p => p.public === true)
-    } catch (e) { console.log(e) }
+    this.allCityPosts = this.posts
+      .filter(p => p.city === this.city.toLowerCase() && p.public === true)
   },
   methods: {
     capitalize,
@@ -106,7 +105,7 @@ h4 {
   .relatedimage {
     background-size: cover;
     height: $unit * 30;
-    margin-bottom: $unit * 3;
+    margin-bottom: $unit * 2;
   }
 }
 

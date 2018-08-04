@@ -17,6 +17,10 @@ body {
 	-webkit-overflow-scrolling: touch;
 }
 
+.hidden {
+	display: none;
+}
+
 * { box-sizing: border-box; }
 
 a, a:active, a:visited, a:hover {
@@ -68,6 +72,10 @@ h4 {
   margin-right: $unit;
   position: relative;
   top: 2px;
+}
+
+.mapboxgl-canvas {
+	filter: brightness(0.9);
 }
 
 .content {
@@ -174,7 +182,6 @@ h4 {
 		max-width: 100%;
 		margin: $unit * 4 auto;
 		display: block;
-    // background: $offwhite;
 
 		@include width (mobile) {
 			width: 100vw;
@@ -202,6 +209,12 @@ h4 {
 		}
 	}
 
+	ol, ul {
+		@include width (mobile) {
+			padding-left: $content-padding-mobile;
+		}
+	}
+
 	hr {
 		border: 0;
 		box-shadow: none;
@@ -215,6 +228,13 @@ h4 {
 		font-style: italic;
 		padding: $unit $unit * 4;
 		background: rgba($offwhite, .3);
+	}
+
+	a.external {
+		background: url('~/assets/external.svg') center right no-repeat;
+		background-size: 12px;
+		padding-right: 16px;
+		margin-right: 2px;
 	}
 }
 
@@ -295,7 +315,7 @@ h4 {
   }
 }
 
-.mapboxgl-missing-css {
+.mapboxgl-missing-css, .mapbox-improve-map, .mapboxgl-ctrl-attrib {
 	display: none;
 }
 
@@ -317,7 +337,7 @@ h4 {
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center center;
-		transition: width .2s, height .2s;
+		transition: width .2s, height .2s, background-color .2s;
 	}
 
 	.text {
@@ -338,6 +358,7 @@ h4 {
 			-2px 0 12px $shadow;
 		font-weight: 600;
 		letter-spacing: .8px;
+		transition: color .2s;
 
 		@include width(mobile) {
 			top: $unit * -4;
@@ -360,6 +381,15 @@ h4 {
 			height: $unit * 8;
 		}
 	}
+
+	&.doublehighlight, &.highlight:hover {
+		.text {
+			color: $highlight;
+		}
+		.pin {
+			background-color: $highlight;
+		}	
+	}
 }
 
 .cluster {
@@ -368,7 +398,7 @@ h4 {
 		color: $text;
 		text-shadow: none;
 		z-index: 2;
-		transition: all .2s;
+		transition: all .1s;
 		top: $unit * -5;
 
 		@include width(mobile) {

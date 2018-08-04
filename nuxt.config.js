@@ -39,9 +39,10 @@ module.exports = {
     html: true,
     linkify: true,
     breaks: true,
-    typographer: true
+    typographer: true,
+    injected: true
   },
-  // plugins: ['~/plugins/plugins'],
+  plugins: ['~/plugins/plugins'],
   build: {
     styleResources: {
       scss: './assets/variables.scss',

@@ -29,16 +29,12 @@ const { get, set } = require('~/assets/storage').default
 export default {
   head() { return { title: 'Home' } },
   components: { Footer, PostList, Selector, },
-  asyncData ({ isStatic, store }) {
-    let allPosts = isStatic ? 
-      store.state.allPublicPosts : 
-      store.state.allPosts
-    const firstShownPost = allPosts.find(p => p.languages.en)
-    let cityPosts = require(`~/static/generated/${firstShownPost.city}.json`)
-    if (isStatic) cityPosts = cityPosts.filter(p => p.public)
+  asyncData ({ store }) {
+    let posts = store.state.isDev ?
+      store.state.allPosts : 
+      store.state.allPublicPosts
     return {
-      posts: allPosts,
-      cityPosts: cityPosts
+      posts,
     }
   },
   data () {
@@ -51,22 +47,15 @@ export default {
     isDev () { return this.$store.state.isDev },
     userLanguage () { return this.$store.state.language },
 		showablePosts () { 
-			return this.isDev ?
-				this.posts :
-				this.userLanguage === 'en' ?
-					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
-					this.posts.filter(p => p.public === true)
-		},
-    showableCityPosts () {
-      return this.isDev ?
-				this.cityPosts :
-				this.userLanguage === 'en' ?
-					this.cityPosts.filter(p => p.public === true && p.languages['en'] === true) :
-					this.cityPosts.filter(p => p.public === true)
-    }
+			return this.userLanguage === 'en' ?
+        this.posts.filter(p => p.languages['en'] === true) :
+        this.posts
+		}
   },
   mounted () {
-    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showableCityPosts) )
+    this.$store.commit('setPan', true)
+    this.$store.commit('setView', this.showablePosts)
+    this.$store.commit('setHighlight')
     if (!this.get('visited')) {
       this.showIntro = true
       this.set('visited', true)

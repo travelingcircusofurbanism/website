@@ -23,16 +23,14 @@ import { capitalize } from '~/assets/commonFunctions.js'
 export default {
   head() { return { title: this.capitalize(this.city) } },
   components: { Footer, PostList, },
-  asyncData ({ route, redirect, isStatic }) {
+  asyncData ({ route, redirect, isStatic, store }) {
     const city = route.path
       .replace(/\//g, '')
       .replace(/_/g, ' ')
       .replace(/%20/g, ' ')
       .toLowerCase()
-    let posts = []
-    try {
-      posts = require(`~/static/generated/${city}.json`)
-    } catch (e) { console.log(e) }
+    let posts = store.state.allPosts
+      .filter(p => p.city.toLowerCase() === city)
     if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return redirect('/')
@@ -48,15 +46,18 @@ export default {
     isDev () { return this.$store.state.isDev },
     userLanguage () { return this.$store.state.language },
 		showablePosts () { 
-			return this.isDev ?
-				this.posts :
-				this.userLanguage === 'en' ?
-					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
-					this.posts.filter(p => p.public === true)
+			return this.userLanguage === 'en' ?
+        this.posts.filter(p => p.languages['en'] === true) :
+        this.posts
 		},
   },
+  beforeDestroy () {
+    this.$store.commit('setHighlight')
+  },
   mounted () {
-    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
+    this.$store.commit('setPan', false)
+    this.$store.commit('setView', this.showablePosts)
+    this.$store.commit('setHighlight', this.showablePosts)
   },
   methods: {
     capitalize,

@@ -39,8 +39,7 @@ export default {
     if (!posts || posts.length === 0)
       return redirect('/')
     posts = posts.filter(p => {
-      return p.category &&
-        p.category.toLowerCase() === category
+      return p.category && p.category.toLowerCase() === category
     })
     if (posts.length === 1)
       return redirect(posts[0].url)
@@ -54,15 +53,19 @@ export default {
     isDev () { return this.$store.state.isDev },
     userLanguage () { return this.$store.state.language },
 		showablePosts () { 
-			return this.isDev ?
-				this.posts :
-				this.userLanguage === 'en' ?
-					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
-					this.posts.filter(p => p.public === true)
+			return this.userLanguage === 'en' ?
+        this.posts.filter(p => p.languages['en'] === true) :
+        this.posts
 		},
   },
   mounted () {
-    this.$nextTick(() => this.$store.commit('setMapMarkers', this.showablePosts) )
+    this.$store.commit('setPan', false)
+    this.$store.commit('setView', this.showablePosts)
+    this.$store.commit('setHighlight', [].concat.apply(
+      [], this.showablePosts
+        .map(p => p.mapPosition)
+        .filter(p => p)
+    ))
   },
   methods: {
     capitalize,

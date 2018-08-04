@@ -1,12 +1,12 @@
 <template>
   <div
     class="post-preview"
-    v-on="{mouseover: mouseOver, mouseout: mouseOut}"
+    v-on="{mouseenter: mouseOver, mouseleave: mouseOut}"
   >
 
     <nuxt-link :to="url">
       <div
-        :style="{'background-image': image ? `url('${ image }')` : ''}"
+        v-lazy:background-image="image"
         class="previewimage"
       ></div>
     </nuxt-link>
@@ -52,15 +52,32 @@ export default {
   components: { PostDetails, },
   computed: {
     isDev () { return this.$store.state.isDev },
+    isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
+  },
+  data () {
+    return {
+      isDoubleHighlighting: false,
+    }
+  },
+  beforeDestroy () {
+    console.log(this.isDoubleHighlighting)
+    if (this.isDoubleHighlighting || this.isMobile) {
+      this.$store.commit('setHighlight')
+      this.$store.commit('setHighlight')
+    }
   },
   methods: {
     capitalize,
     mouseOver () {
+      if (this.isMobile) return
       this.$store.commit('setHighlight', this.mapPosition)
+      this.isDoubleHighlighting = true
     },
     mouseOut () {
+      if (this.isMobile) return
       this.$store.commit('setHighlight')
+      this.isDoubleHighlighting = false
     }
   }
 }
@@ -70,7 +87,7 @@ export default {
 <style lang="scss" scoped>
 
 .post-preview {
-  padding-bottom: $unit * 10;
+  margin-bottom: $unit * 10;
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 5;

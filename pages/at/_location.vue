@@ -58,7 +58,9 @@ export default {
     isMobile () { return this.$store.state.isMobile },
   },
   mounted () {
-    this.$store.commit ('setMapMarkers', this.marker)
+    this.$store.commit('setPan', false)
+    this.$store.commit('setView', this.marker)
+    this.$store.commit('setHighlight', this.marker)
   },
   methods: {
     capitalize,
