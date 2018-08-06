@@ -32,7 +32,11 @@ export default {
         { property: 'og:type', content: 'website' },
         { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/is/${ this.category }` },
-        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
+        { property: 'og:image', 
+          content: this.posts[0].image.substring(0, 4) === 'http' ?
+            this.posts[0].image :
+            `https://www.travelingcircusofurbanism.com${ this.posts[0].image }`
+        },
         { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
