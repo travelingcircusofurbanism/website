@@ -1,5 +1,5 @@
 
-# Seattle's Gas Works Park: Since when 'trash' became pretty?
+# Seattle's Gas Works Park: Since when did 'trash' become pretty?
 
 ![](gasworkspark3.jpg)
 
@@ -19,7 +19,7 @@ The park was designed by Seattle landscape architect Richard Haag, who proposed 
 ![](gasworkspark0.jpg)
 ![](gasworkspark2.jpg)
 
-The soil and groundwater of the site were contaminated during operation as a gasification plant, but after cleaning through bio-phytoremediation and other measures, this park is now the safe and joyful place to be in. Now you can get the breathtaking view over downtown Seattle from this park, as well as learning the history of its place through the ruins of the gas plant. 
+The soil and groundwater of the site were contaminated during operation as a gasification plant, but after cleaning through bio-phytoremediation and other measures, this park is now the safe and joyful place to be in. Now you can get the breathtaking view over downtown Seattle from this park, as well as learning the history of its place through the ruins of the gas plant.
 
 ![](gasworkspark7.jpg)
 ![](gasworkspark5.jpg)

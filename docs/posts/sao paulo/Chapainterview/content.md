@@ -3,29 +3,27 @@
 
 <iframe src="https://player.vimeo.com/video/211732237?wmode=opaque&amp;api=1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" width="640" height="360" id="yui_3_17_2_1_1530051896926_73"></iframe>
 
-## Chapa Project
+### Chapa Project
 
 ---
 
-***Thank you very much for your time. First of all, please tell me a bit more about your background and could you tell me a bit about your relationship with South America?***
+***Thank you very much for your time. First of all, please tell me a bit more about your background and your relationship with South America?***
 
-**Stiphany:** I travelled in Latin America prior to graduating from school, and was in Brazil for quite some time. During the stay I ended up meeting the then dean of an architecture school in Sao Paolo. She told me what architecture and urbanism in Latin America is all about.
+**Stiphany:** I travelled in Latin America prior to graduating from school, and was in Brazil for quite some time. During the stay, I ended up meeting my mentor who is a sociologist and  then dean of an architecture school in Sao Paolo. She told me what architecture and urbanism in Latin America is all about.
 
-It was XXXXX the residents had been constructing this XXXX over the course of, I think the developer had abandoned it after it had reached 3 stories, and now it was about 9 or 10 stories. So, I documented that project.
+She was an inter-disciplinarian  within an architectural school, which was important because she was interested in very serious research, really understanding, rather than speaking for communities, actually understanding what they want and how they actually live.
 
-I didn't speak Portuguese at the time and so technology was a way to communicate. Also, my  camera was always with me.
+I learned a lot from her for a year and I went to graduate school in architecture.  Within that trajectory I really kind of got away from this ***idea of informality***, I mean I really started to focus on the object.
 
-## Participatory technology
+>It was XXXXX the residents had been constructing this XXXX over the course of, I think the developer had abandoned it after it had reached 3 stories, and now it was about 9 or 10 stories. So, I documented that project.
 
-**Stiphany:** I am interested in Technology to the extent to which it de-familiarises us with city and things that we think we are familiar. I started that exploration as a photographer as an undergraduate in Fine Arts.
-
-But it de-familiarised me, coming from a very small town and also with my own perceptions of informality with what informality actually is on a day-to-day basis. My mentor  XXXX, she was the dean and a sociologist. She was an inter-disciplinarian  within an architectural school, which was important because she was interested in very serious research, really understanding, rather than speaking for communities, actually understanding what they want and how they actually live.
-
-I learned a lot from her, just shadowing here for a year and I went to graduate school in architecture.  Within that trajectory I really kind of got away from this ***idea of informality***, I mean I really started to focus on the object.
+### The idea of informality
 
 ***Could you explain more about the idea of informality and what it means to your project?***
 
-**Stiphany:** Architecture school is about creating the new, rather than this XXXX set that is the city, this layering dimension. I was really interested in this layering of these social issues, these technical issues and how that is informed by these broader processes, these Unchecked growths and informality. I got a job at Studio Gang in Chicago and then went on to do a full WRITE in Sao Paulo and I lived within BUMBOHAO which is a small, very small community of maybe 500-550 families in the North-Eastern sector of Sao Paulo.
+**Stiphany:** Architecture school is about creating the new, rather than this XXXX set that is the city, this layering dimension. I was really interested in this layering of these social issues, these technical issues and how that is informed by these broader processes, these Unchecked growths and informality.
+
+I got a job at Studio Gang in Chicago and then went on to do a full WRITE in Sao Paulo and I lived within BUMBOHAO which is a small, very small community of maybe 500-550 families in the North-Eastern sector of Sao Paulo.
 
 It was about interviewing people understanding where they got their materials how that informed house construction, how that informed social networks. So, I studied this community and the built in environment for a year and then watched in be torn down by a new development project. The fluidity, the extent to which those processes were created over time, that I learned about were wiped out by the government in a very short period of time resonated deeply with me.
 
@@ -33,10 +31,16 @@ I then went on to do a PhD focusing on re-development, this interface between br
 
 ***Right.***
 
+### Participatory technology and data
+>**Stiphany:** I am interested in Technology to the extent to which it de-familiarises us with city and things that we think we are familiar. I started that exploration as a photographer as an undergraduate in Fine Arts.
+>I didn't speak Portuguese at the time and so technology was a way to communicate. Also, my  camera was always with me.
+
+
 **Stiphany:** That is where the technology piece comes in. So the NSF post-doc and the XXXXX is really about helping citizens, communities and governments to design their futures using technology. The project had 2 main goals, one is to create this new database, to understand what is there rather than wiping out the settlements before you make design decisions. Instead of returning things to a modernist XXXX, also expanding the scope of architecture to include questions of infrastructure and how it can start to be something that is more socially and technically situated within the realities of the formality.
 
-The project is a collaboration between two community organisations and along the way, given that it is a random sample, we met all kinds of people much like what you (mariko) are
-doing.  Within these two communities that I thought I knew very intimately, ethnographically I took a totally  different journey through random selection. The stories begin to become even more layered. You have these different community organisations and we got into touch with the youth and got an understanding of their perspective of formality and their future role and interests. That really helped with the very practical things of designing technology that teenagers are going to go to before Facebook. I learned about FOMO and those sorts of terms through Brazilian youth in the Favelas. That informed the design of the tool. This really tried to have a set of policy makers are interested in until it is visualised into something that community members can see on a block by block basis, it really changed things.
+The project is a collaboration between two community organisations and along the way, given that it is a random sample, we met all kinds of people much like what you (mariko) are doing.
+
+Within these two communities that I thought I knew very intimately, ethnographically I took a totally  different journey through random selection. The stories begin to become even more layered. You have these different community organisations and we got into touch with the youth and got an understanding of their perspective of formality and their future role and interests. That really helped with the very practical things of designing technology that teenagers are going to go to before Facebook. I learned about FOMO and those sorts of terms through Brazilian youth in the Favelas. That informed the design of the tool. This really tried to have a set of policy makers are interested in until it is visualised into something that community members can see on a block by block basis, it really changed things.
 
 Another thing that was important about the data is that in Sao Paulo, like many cities around the world, but especially in the global south they are being lotted, and rightly so, for mapping informality and formality we understand not only where informality is happening.
 
