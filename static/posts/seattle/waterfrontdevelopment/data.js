@@ -1,12 +1,12 @@
 module.exports = {
 	public: false,
-	date: '6/26/2018',
-	category: 'intro',
+	date: '8/8/2018',
+	category: 'place',
 	mapPosition:  [
 		{
-			location: 'Van Alen Institute',
+			location: 'Friends of Waterfront Seattle',
 			bearing: 0,
-			center: [-73.99183089999997, 40.74139729999999],
+			center: [-122.33302529999999, 47.6068904],
 			zoom: 12.00,
 			pitch: 0 
 		},

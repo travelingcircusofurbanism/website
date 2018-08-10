@@ -10,6 +10,8 @@
 
 - Visit [Friends Of Waterfront Seattle](http://www.friendsofwaterfrontseattle.org/) to learn more about the waterfront urban development in Seattle.
 
+- Homelessness is one of the serious issues that all cities can relate to. Since 2008, [Path with Art](https://www.pathwithart.org/) has been working to transform the lives of people recovering from homelessness, addiction, and other trauma by the power of art and creative engagement. I visited one of their exhibitions [Unpacking Homelessness: A PATH WITH ART & PEARL JAM COLLABORATION](https://www.pathwithart.org/pearl-jam-collaboration) during my stay there, and saw the posters that are designed by the artists who experiences homelessness. All the staffs there are so kind and warm - I highly recommend to visit there and have conversation with them.
+
 ### Read
 
 - [Curbed Seattle](https://seattle.curbed.com/) is always informative fun platform to check out.
