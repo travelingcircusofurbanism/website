@@ -1,33 +1,42 @@
 
-# 3 truly inspiring Affordable Housing Projects in Seattle
+# 2 truly inspiring Affordable Housing Projects in Seattle
+
+The other day I participated an event by [the Urbanist](https://www.theurbanist.org/) about [Housing Community in South Seattle](https://www.theurbanist.org/2018/08/07/building-community-in-southeast-seattle-tour-this-saturday/)(they organize a lot of great events and meetups for all city lovers - [this post](https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment) is also based on their walking tour).
+
+![](affordablehousing03.jpg)
+
+Like all the other major cities in the world, Seattle is rapidly changing and growing, and unfortunately, becoming increasingly unaffordable. That is why it is crucial to discuss the importance of affordable housing for lower-income residents at risk of displacement.
+
+We took the Link light rail and visited South Seattle to learn more about affordable housing projects that have been invested by the city government for many years.
+
 ![](affordablehousing00.jpg)
 *Photo by Tom Rumble on Unsplash*
 
-Seattle is changing and growing increasingly unaffordable for working class people. One solution is to build more public and non-profit owner affordable housing to provide options for lower income residents at risk of being displaced. Seattle has been investing in affordable housing for many years and has a lot of wonderful projects built and in the works. Join The Urbanist and others as we learn about some these great community based affordable housing projects along the Link light rail line in South Seattle.
+First all - what is 'affordable housing' anyway? Many people assume that it means low-cost housings. There are many definitions of affordable housing, but the answer is No - at least it's more complicated than that. There are many poorly constructed low-valued housings out there, but if there is no rent regulation, an owner can charge serious price from tenants, and it is not 'affordable' anymore. Instead, affordable housing should involve some public subsidy or another sort of non-profit money, as well as rent control to cater to a certain section of society whose income is below the median household income.
 
-The other day I participated one of the Urbanist's events about [Housing Community in South Seattle](https://www.theurbanist.org/2018/08/07/building-community-in-southeast-seattle-tour-this-saturday/)
-
-1. Plaza Roberto Maestas
+- Plaza Roberto Maestas
 
 ![](affordablehousing01.jpg)
+
+First, we visited [Plaza Roberto Maestas](http://beacondevgroup.com/locations/plaza-roberto-maestas/), which is a landmark of equitable, community-inspired, transit-oriented development project in the heart of the Beacon Hill neighborhood of Seattle. There are the Beacon Hill Light Rail Station and the El Centro de la Raza schoolhouse right next to the housing block.
+
 ![](affordablehousing02.jpg)
 
-[Plaza Roberto Maestas](http://beacondevgroup.com/locations/plaza-roberto-maestas/)
+Completed in September 2016, this affordable housing consists of two six-story buildings that have an outdoor plaza, a multicultural community center, and office spaces. This is a great example of mixed-use development in a rapidly gentrifying neighborhood, historically occupied by Hispanic population.
 
-Miguel Maestas, the current housing and economic development director of El Centro de la Raza, explains that his organization decided to build Plaza Roberto Maestas when, in 2003, it learned that Sound Transit had plans to construct a light rail station on a vacant plot of land across the street from its historic building. The plot on which the subway station would rise is where the South China Restaurant on Beacon Avenue used to be. It had the most diverse bar in the city. The spirit of the Four Amigos has always been strong in this part of town. The transit-oriented project cost $45 million, was designed by the local architecture firm SMR Architects, has 112 rental units for people making from 30 to 80 percent of the area median income (which means if you earn 30 percent of the median income, you pay about $465 for a one-bedroom apartment—a market-rate studio apartment on Beacon Hill costs around $900 to $1,000). On the first day the apartments were made available to the public, more than 1,000 people applied. The 112 units were filled almost immediately. The waiting list is as good as eternal. Maestas calls the situation heartbreaking. There is nearly not enough affordable housing in this city.
+There are some murals in the plaza, designed by local artists. All the signs and posters in the school have multiple languages that indicate that the multicultural nature of its community.
 
-2. Seattle Mt.baker station
-![](affordablehousing03.jpg)
+- Othello Square
 
-3. Othello Square
 ![](affordablehousing04.jpg)
 
-[Othello Square](https://homesightwa.org/community-development/real-estate-development/othellosquare) (formerly the Southeast Economic Opportunity Center) will be a culturally relevant and welcoming place where people in Southeast Seattle and beyond can access opportunities for higher education, good paying jobs, and support to start and keep a business. Integrating shared space for cultural organizations and workforce housing will help stabilize communities at risk of displacement and engage diverse residents.
+The last visit was about [Othello Square](https://homesightwa.org/community-development/real-estate-development/othellosquare). The site is currently vacant and formerly known as the Southeast Economic Opportunity Center - once completed, Othello Square is going to be a welcoming mix-use shared space to invite people in Southeast Seattle (and beyond) to provide opportunities for higher education, jobs, and support to start and keep a business. There will be 265 apartments and for-sale homes, affordable retail and commercial space and community support services to help stabilize communities at risk of displacement.
 
+Behind it, there is [HomeSight](https://homesightwa.org/), which has worked to preserve and promote economically and culturally-diverse communities through affordable homeownership, business development, and community advocacy.
 
-HomeSight plans to develop 265 apartments and for-sale homes, affordable retail and commercial space and community support services.
+![](chuttersnap-622242-unsplash.jpg)
+*Photo by chuttersnap on Unsplash*
 
+Perhaps the crucial factor of success is not only focusing on the housing itself but people's actual lives there - we need not only housings but also decent access to other social services. Along with affordable rental and ownership housing, other facilities are needed such as cultural/community centers, educational institutions schools, low-income medical clinics, childcare, offices/commercial space to support local economic growth.
 
-
-
-We will use the light rail to travel the Rainier Valley learning about El Centro de la Raza's Plaza Roberto Maestas - a truly mixed use community next to the Beacon Hill Light rail station that includes affordable housing, retail, childcare, social program and public open space. We will then travel via light rail to explore another TBD project before continuing on to the Othello Station to learn about the proposed Othello Square project. This catalytic community project will incorporate affordable rental and ownership housing, a multi cultural community center, low income medical clinic, childcare, economic development offices, affordable commercial space, and a charter high school.
+In that way, we can learn a lot from these projects in Seattle who focus on their 'communities' and their real lives.

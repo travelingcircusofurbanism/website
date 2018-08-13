@@ -1,5 +1,5 @@
 module.exports = {
-	public: false,
+	public: true,
 	date: '8/10/2018',
 	category: 'place',
 	mapPosition:  [
@@ -9,13 +9,6 @@ module.exports = {
 			center: [-122.31141400000001, 47.5797496],
 			zoom: 12.00,
 			pitch: 0 
-		},
-		{
-			location: 'Mt.baker station',
-			bearing: 0,
-			center: [-122.29776400000003, 47.5763697],
-			zoom: 12.00,
-			pitch: 0
 		},
 		{
 			location: 'Othello Square',
