@@ -101,6 +101,10 @@ export default {
     background-position: center center;
   }
 
+  @include width (large) {
+    grid-template-columns: 1fr 1fr;
+  }
+
   @include width (midorsmaller) {
     grid-template-columns: 1fr;
 

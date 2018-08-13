@@ -26,4 +26,10 @@ $header-offset: $unit * 5;
   @if $size == "midorsmaller" {
     @media (max-width: 1300px) { @content; }
   }
+  @if $size == "large" {
+    @media (min-width: 1301px) and (max-width: 1600px) { @content; }
+  }
+  @if $size == "huge" {
+    @media (min-width: 1601px) { @content; }
+  }
 }
