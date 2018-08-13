@@ -1,7 +1,7 @@
 module.exports = {
 	public: true,
 	date: '8/9/2018',
-	category: 'true',
+	category: 'place',
 	mapPosition:
 		{
 			location: 'Freeway Park',

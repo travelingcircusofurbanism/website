@@ -1,7 +1,7 @@
 module.exports = {
 	public: true,
 	date: '8/5/2018',
-	category: 'true',
+	category: 'intro',
 	mapPosition:  [
 		{
 			location: 'Space.City',
