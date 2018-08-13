@@ -5,14 +5,14 @@ The other day I participated an event by [the Urbanist](https://www.theurbanist.
 
 ![](affordablehousing03.jpg)
 
-Like all the other major cities in the world, Seattle is rapidly changing and growing, and unfortunately, becoming increasingly unaffordable. That is why it is crucial to discuss the importance of affordable housing for lower-income residents at risk of being displaced.
+Like all the other major cities in the world, Seattle is rapidly changing and growing, and unfortunately, becoming increasingly unaffordable. That is why it is crucial to discuss the importance of affordable housing for lower-income residents at risk of displacement.
 
 We took the Link light rail and visited South Seattle to learn more about affordable housing projects that have been invested by the city government for many years.
 
 ![](affordablehousing00.jpg)
 *Photo by Tom Rumble on Unsplash*
 
-First all - what is 'affordable housing' anyway? Many people assume that it means low-cost housings. There are many definitions of affordable housing, but the answer is No - at least it's more complicated than that. There are many poorly constructed low-valued housings out there, but if there is no rent regulation, an owner can charge serious price from tenants, and it is not 'affordable' anymore. Instead, affordable housing should involve some public subsidy or another sort of non-profit money, as well as rent control to cater to a certain section of society whose income is below the median household income.
+First all - what is 'affordable housing' anyway? Many people assume that it means low-cost housings. There are many definitions of affordable housing, but the answer is No - at least it's more complicated than that. There are many poorly constructed low-valued housings out there, but if there is no rent regulation, an owner can charge serious price from tenants, and it is not 'affordable' anymore. Instead, affordable housing should involve some public subsidy or other kind of non-profit investment, as well as rent control to cater to a certain section of society whose income is below the median household income.
 
 - Plaza Roberto Maestas
 
@@ -37,6 +37,6 @@ Behind it, there is [HomeSight](https://homesightwa.org/), which has worked to p
 ![](chuttersnap-622242-unsplash.jpg)
 *Photo by chuttersnap on Unsplash*
 
-Perhaps the crucial factor of success is not only focusing on the housing itself but people's actual lives there - we need not only housings but also decent access to other social services. Along with affordable rental and ownership housing, other facilities are needed such as cultural/community centers, educational institutions schools, low-income medical clinics, childcare, offices/commercial space to support local economic growth.
+Perhaps the crucial factor of success is not only focusing on the housing itself but people's actual lives around it - we need not only housings but also decent access to other social services. Along with affordable rental and ownership housing, other facilities are needed such as cultural/community centers, educational institutions such as schools, low-income medical clinics, childcare, offices/commercial space to support local economic growth.
 
-In that way, we can learn a lot from these projects in Seattle who focus on their 'communities' and their real lives.
+In that way, we can learn a lot from these projects in Seattle who focus on their 'communities' and their real lives there.
