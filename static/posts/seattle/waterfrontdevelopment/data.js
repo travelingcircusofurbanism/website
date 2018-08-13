@@ -1,5 +1,5 @@
 module.exports = {
-	public: false,
+	public: true,
 	date: '8/8/2018',
 	category: 'place',
 	mapPosition:  [
@@ -11,58 +11,23 @@ module.exports = {
 			pitch: 0 
 		},
 		{
-			location: '',
+			location: 'Waterfront Park',
 			bearing: 0,
-			center: [-118.2464493, 33.9900691],
+			center: [-122.34182759999999, 47.60704],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Harbor Steps',
 			bearing: 0,
-			center: [-118.23744390000002, 34.0454001],
+			center: [-122.33873449999999, 47.6065856],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'Alaskan Way',
 			bearing: 0,
-			center: [-118.23487999999998, 34.046146],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23640720000003, 34.0445952],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23289219999998, 34.0450119],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29440799999998, 34.0999515],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29278959999999, 34.1161926],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2480433, 34.0434704],
+			center: [-122.3377021, 47.5892316],
 			zoom: 12.00,
 			pitch: 0
 		},
