@@ -2,7 +2,7 @@
   <div class="footer">
     <p>
       All content copyright Mariko Sugita, except where noted.</br>
-      Static site built using <a href="https://nuxtjs.org/guide" target="_blank">Nuxt.js</a> and hosted with <a href="https://github.com/mariko9012" target="_blank">Github Pages</a>.
+      <a href="mailto:travelingcircusofurbanism@gmail.com">Get in touch!</a>
     </p>
     <p>
       <a href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
