@@ -87,16 +87,20 @@ I want to have a place where we celebrate it. I think it's important to have an 
 
 ### We all travel
 
-***I like the term immigrants when you use it. it implies to everyone its not only people in colour.***
+![](imigratntstory03.jpg)
+*Photo by Barth Bailey on Unsplash. We all travel*
 
-**Mr Sankar:** Yeah, everybody, we talk about Eastern European immigrants, Russian immigrants, Irish and all of them.Basically, we are all immigrants let me tell you one story of myself which is very personal to me, the reason why am saying this it is very important to understand migration why it is a very good concept.I came from a very small village in India, very small community and nobody knows how long our community has been there.But then when I do my DNA it says I travelled through the spice route meaning I came from somewhere in the Middle East and they have travelled over the years through that spice route to the Indian and of Afghanistan, Iran through Pakistan through India and then care down to South of India.But the point is though even though my family says I am from that small village but the route the path we took its a true way to understand the human being, the human being travel and not the human beings, the purpose is on the cultures and also one what we consume every day.what we eat.
+***I like the term "immigrants" when you use it. It implies to everyone - it's not only people in color.***
 
-There is a beauty of that is that if you go to London, the beauty of it is that they made the curry the Indian food, as the official English food and thats what it's all about everything.In America, we hear the music is being influenced by the India classical music it only started 30 years ago and we see food, a culture influenced by the spices.It is all about the melting part the advantage of being a melting pot it's like that everything becomes a fusion of stuff and that the beauty of it we have to celebrate every one of it.It is everything that is born beautiful.
+**Mr Sankar:** Yeah, everybody! Basically, we are all immigrants.
 
-***I agree***
+Let me tell you one story of myself, which is very personal to me. I came from a very small village in India - very small community and nobody knows how long our community has been there.
 
-**Mr Sankar:** I really enjoy this culture when you go to any place, you go to Japan and the beauty of it is when you talk about that culture of food and whatever I love the rice farming, everything has a story, when people come here and bring their culture when I first came to this country they use to make fun of the California baseball teams and they started selling sushi because baseball youre supposed to go and have and have a hotdog the American tradition.So, when I first came to America you go to California you dont know what they do there dont sell sushi in baseball now that is what the nature of the game is.It has become so prevalent eating sushi in a baseball game.
+But then when I do my DNA, it says I travelled through the spice route -  meaning that I came from somewhere in the Middle East, and they have travelled over the years through that spice route to the Indian and of Afghanistan, Iran through Pakistan through India and then care down to South of India.
 
+My point is that, the path my ancestors took is a true way to understand human beings. Humans travel and not only humans, but also cultures, languages, food etc.
+
+***I agree. I can't wait to see a place that celebrates diversity and migration. Than you so much for the time today!***
 
 ![](immigrantstory01.jpg)
 *Photo by Wellington Rodrigues on Unsplash*
