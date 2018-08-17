@@ -1,7 +1,7 @@
 
 # City and migration: Interview with Sankar Raman from the Immigrant Story
 
-During my stay in Portland, I encountered a very inspiring project called [The Immigrant Story](https://theimmigrantstory.org/), which collects stories and photographs of immigrants in order to document/archive their voices. Sankar Raman, a founder of the project and a Northwest Digital Art Photographer, believes that ‘The Immigrant Story is the American Story'.
+During my stay in Portland, I encountered a very inspiring project called [The Immigrant Story](https://theimmigrantstory.org/), which collects stories and photographs of immigrants in order to document/archive their voices. Sankar Raman, a founder of the project and a Northwest Digital Art Photographer, believes that **"The Immigrant Story is the American Story"**.
 
 ![](immigrantstory.jpg)
 *Photo by Nitish Meena on Unsplash*
@@ -12,7 +12,7 @@ I've been always curious about the everyday life of immigrants in cities and how
 
 ### Background - rising wave of racism
 
-***Thank you so much for the time today. First, could you tell a little bit about the background of the project?***
+***Thank you so much for the time today. First, could you tell me a little bit about the background of the project?***
 
 **Mr. Sankar:** The first idea of the project was born during the elections in 2017. Since then, the immigrants are increasingly becoming a scapegoat - and there is a growing illusion and divisive political rhetoric that evolves 'Them versus Us'. I was not politically active and am not a political person, but I felt an urge to do something about it.
 
@@ -63,9 +63,9 @@ However, when I started this project, I started going to the other part of the c
 
 If was about a year ago, there was a shooting in the Mosque and two people were stabbed to death here in Portland. This kind of thing happens in Portland. After the incident, we did some interviews and an exhibition to tell their stories.
 
-***I'm always fascinated how the new ones experience the city? How they move here and interact with other communities? And how they experience discrimination and so on and it's always different from cities to cities. That's why its really important to listen to personal forces because they can be fully understood by personal experiences in their life.***
+***I'm always curious about how immigrants experience the city, how they move here and interact with other communities, and how they experience discrimination and challenges. That's why it's really important to listen to personal stories, because they can only be truly understood by personal experiences.***
 
-**Mr.Sankar:** Right now, we are working on the exhibition at [the Oregon Jewish Museum](http://www.ojmche.org/) in downtown.
+**Mr.Sankar:** Exactly. Right now, we are working on the exhibition at [the Oregon Jewish Museum](http://www.ojmche.org/) in downtown.
 
 It highlights the immigrant experience - what happened to this community, how the community was feeling at that time. You can see how their emotions, the intensity of emotions, their feelings from the exhibition.
 
