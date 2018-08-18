@@ -67,9 +67,7 @@ For example, about a year ago, there was a stabbing incident in the MAX Train an
 
 **Mr.Sankar:** Exactly. Right now, we have an exhibition hat is been shown at [the Oregon Jewish Museum](http://www.ojmche.org/) in downtown. We call it “Who We Are.” We interviewed six women who were affected by the MAX Incident over a period of one year.
 
-It highlights the immigrant experience - what happened to this community, how the community was feeling at that time. Through their personal experiences, we explore race, identity, and culture.
-
-You can learn from individual's stories - coming to the country, growing up, childhood and then migration and settlement, did you experience racial discrimination? How do you do in school? What are your hope and fears? What are you afraid of?
+It highlights the immigrant experience - what happened to this community, how the community was feeling at that time. You can see how their emotions, the intensity of emotions, their feelings from the exhibition. Through their personal expereinces, we explore race, identity, and culture.
 
 ### Place to celebrate diversity
 
