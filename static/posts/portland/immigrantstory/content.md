@@ -22,15 +22,15 @@ It became a big issue here - everybody was protesting. And it was when I realize
 
 ### Creating the counter-narratives
 
-**Mr. Sankar:** I am not a storyteller but I decided to start producing a **counter-narrative** against the dominant political rhetoric - that is all about the immigrant murderers, the rapists from shithole countries.
+**Mr. Sankar:** I am not a storyteller but I decided to start producing a **counter-narrative** against the dominant political rhetoric - that is all about portraying the immigrant as murderers, the rapists from shithole countries.
 
 When you really look at the history of this country, everybody here is a migrant - they came from somewhere else. Some of us came recently, some of us came years ago, some of us came in Mayflower, some of us came 10 thousand years ago. The fact remains that the country is built on the people who come here from the outside, and it is rightfully called a nation of migration.
 
 ***I agree***
 
-So how do we create change? I thought the way to do this is making the human connection by telling the real stories of immigrants. We also do some gallery exhibition with their pictures along with their stories.
+So how do we create change? I thought the way to do this is making the human connection by telling the real stories of immigrants. We also do some gallery exhibition with their pictures along with their stories and create conversations.
 
-I started writing stories and sharing these stories. My wife is an editor, so for the first few months we did all the publishing works by ourselves. After the few trials, I was really fortunate that so many journalists joined us.
+When I first started writing stories and sharing these stories, my wife was the editor, so for the first few months we did all the publishing works by ourselves. After the few trials, I was really fortunate that so many high-quality journalists joined us.
 
 All the talented journalists form a local newspaper, or other big media like the Los Angeles Times and Washington post have been working for us on a voluntary basis. We have about 20 volunteers and they were talented writers, photographers, web designers, visual designers, and artists.
 
@@ -57,17 +57,17 @@ That is my main way of finding people to interview, and I am very curious to gat
 
 **Mr.Sankar:** Portland is a very progressive city. However, it still acts like a white city, and we still have problems.
 
-For instance, in this part of town (Northwest), most of them are tech workers like me, working with Nike and Intel etc., and people are very diverse. This diversity, for some reason for me, I could navigate through that. I really don't care about identity and diversity at work.
+For instance, in this part of town (Northwest), most of them are tech workers like me, working with Nike and Intel etc., and people are very diverse. This diversity, for some reason for me, I could navigate through that. I do not see any issues racially from my experience.
 
-However, when I started this project, I started going to the other part of the city such as Southeast Portland. Different parts of the city have its own different cultural mix.
+However, when I started this project, I started going to the other part of the city such as Southeast Portland. Different parts of the city have its own different cultural mix. There I see different elements of racial undercurrent at play at different levels.
 
-If was about a year ago, there was a shooting in the Mosque and two people were stabbed to death here in Portland. This kind of thing happens in Portland. After the incident, we did some interviews and an exhibition to tell their stories.
+For example, about a year ago, there was a stabbing incident in the MAX Train and two people were stabbed to death here in Portland. This kind of thing happens in Portland.
 
 ***I'm always curious about how immigrants experience the city, how they move here and interact with other communities, and how they experience discrimination and challenges. That's why it's really important to listen to personal stories, because they can only be truly understood by personal experiences.***
 
-**Mr.Sankar:** Exactly. Right now, we are working on the exhibition at [the Oregon Jewish Museum](http://www.ojmche.org/) in downtown.
+**Mr.Sankar:** Exactly. Right now, we have an exhibition hat is been shown at [the Oregon Jewish Museum](http://www.ojmche.org/) in downtown. We call it “Who We Are.” We interviewed six women who were affected by the MAX Incident over a period of one year.
 
-It highlights the immigrant experience - what happened to this community, how the community was feeling at that time. You can see how their emotions, the intensity of emotions, their feelings from the exhibition.
+It highlights the immigrant experience - what happened to this community, how the community was feeling at that time. Through their personal experiences, we explore race, identity, and culture.
 
 You can learn from individual's stories - coming to the country, growing up, childhood and then migration and settlement, did you experience racial discrimination? How do you do in school? What are your hope and fears? What are you afraid of?
 
