@@ -6,6 +6,7 @@ During my stay in Portland, I encountered a very inspiring project called [The I
 Sankar Raman, a founder of the project and a Northwest digital art photographer, believes that **“The Immigrant Story is the American story.”**
 
 ![](Sankar-Raman-by-kim.jpg)
+*Photo by Kim Nguyen*
 
 I’ve been always curious about the everyday life of immigrants in cities and how they experience cities. I interviewed Mr. Raman to learn more about the project and to hear what he thinks about the topic of city and migration.
 
