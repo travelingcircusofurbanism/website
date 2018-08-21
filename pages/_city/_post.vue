@@ -1,6 +1,10 @@
 <template>
   <section class="content" :class="{ja: displayLanguage === 'ja'}">
 
+    <Breadcrumb 
+      :title="title"
+    />
+
     <div 
       class="japanese-available content-top-full" 
       v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
@@ -16,9 +20,8 @@
       </template>
     </div>
 
-    <!--<div class="top" v-if="!isMobile">
-      <nuxt-link to="/" exact class="button secondary onwhite">← Back to Home</nuxt-link>
-    </div>-->
+
+    <h1>{{ title }}</h1>
 
     <PostDetails
       class="details"
@@ -28,15 +31,13 @@
       :date="date"
     />
 
-    <div v-if="!content.en && !content.ja"><h1>{{ title }}</h1></div>
     <article
-      v-else
       v-lazy-container="{ selector: 'img'}"
       class="markdown"
       ref="postcontent"
       v-html="formatMarkdown(
         $md.render(
-          content[displayLanguage] || content.en || content.ja || ''
+          contentToDisplay
         )
       )"
     ></article>
@@ -53,6 +54,7 @@ import axios from 'axios'
 import Footer from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
+import Breadcrumb from '~/components/Breadcrumb'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -70,7 +72,7 @@ export default {
     }
   },
   
-  components: { Footer, RelatedArticles, PostDetails },
+  components: { Footer, RelatedArticles, PostDetails, Breadcrumb, },
 
   asyncData ({ route, redirect, env, store }) {
     const slug = route.path.replace(/\/$/, '')
@@ -114,6 +116,12 @@ export default {
     isDev () { return this.$store.state.isDev },
     isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
+    contentToDisplay () {
+      let contentToDisplay = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
+      // remove title
+      contentToDisplay = contentToDisplay.substring(contentToDisplay.indexOf('#'))
+      return contentToDisplay.substring(contentToDisplay.indexOf('\n'))
+    }
   },
 
   async created () {
@@ -144,18 +152,6 @@ export default {
     if (!(this.content.en || this.content.ja)) return this.$router.push('/')
     if (this.content.en) this.setLanguage('en')
     else this.setLanguage('ja')
-
-    // possibly unnecessary
-    // axios.get(this.path + 'data.js', axiosConfig)
-    //   .then(response =>
-    //     Object.keys(response.data).forEach(key => 
-    //       this[key] = response.data.key
-    //     )
-    //   )
-    //   .catch(e => {
-    //     console.log('Error: Unable to find postData for ' + this.path)
-    //     return this.$router.push('/')
-    //   })
   },
 
   mounted () {
@@ -239,9 +235,8 @@ export default {
 
 <style lang="scss" scoped>
 
-.top {
-  margin-bottom: $unit * 8 ;
-  margin-top: $unit * 2;
+h1 {
+		margin-bottom: $unit * 2;
 }
 
 .japanese-available {

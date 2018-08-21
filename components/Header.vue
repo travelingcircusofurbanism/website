@@ -4,6 +4,7 @@
       <h1>Traveling Circus of Urbanism</h1>
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
+    <br />
     <div class="sublinks">
       <nuxt-link to="/about">About</nuxt-link>
       <nuxt-link to="/author">Author</nuxt-link>
@@ -56,7 +57,6 @@ export default {
     position: fixed;
     display: inline-block;
     top: $header-offset;
-    // left: $header-offset;
     z-index: 10;
     height: 100vh;
     pointer-events: none;

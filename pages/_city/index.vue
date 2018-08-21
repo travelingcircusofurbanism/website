@@ -1,5 +1,8 @@
 <template>
   <section class="content">
+
+    <Breadcrumb />
+    
     <!--<div v-if="!isMobile" class="content-top-full mini gray">
       <Selector 
         :moreHint="false"
@@ -17,6 +20,7 @@
 <script>
 import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
+import Breadcrumb from '~/components/Breadcrumb'
 // import Selector from '~/components/Selector'
 import { capitalize } from '~/assets/commonFunctions.js'
 
@@ -38,7 +42,7 @@ export default {
       ]
     }
   },
-  components: { Footer, PostList, },
+  components: { Footer, PostList, Breadcrumb, },
   asyncData ({ route, redirect, isStatic, store }) {
     const city = route.path
       .replace(/\//g, '')

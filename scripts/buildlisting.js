@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { log } = require('../assets/commonFunctions')
+const { log, softTruncate } = require('../assets/commonFunctions')
 
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
@@ -100,27 +100,7 @@ function getDataForPost(postDir, city, slug) {
 			.replace('---', '') // remove <hr> lines
 			.replace(/\n/g, ' ') // remove line breaks
 			.replace(/^\s*/, '') // remove excess spaces at the start
-		let softLimit = (enContent ? 200 : 70)
-		if (description.length > softLimit) {
-			const afterLimit = description.substring(softLimit)
-			let min = 0
-			const nextSpace = [
-				afterLimit.indexOf(' '),
-				afterLimit.indexOf(' '), // ja space
-				afterLimit.indexOf(','),
-				afterLimit.indexOf('、'),
-				afterLimit.indexOf('.'),
-				afterLimit.indexOf('。'),
-				afterLimit.indexOf('!'),
-				afterLimit.indexOf('！'),
-				afterLimit.indexOf('?'),
-				afterLimit.indexOf('？'),
-				afterLimit.indexOf(';'),
-				afterLimit.indexOf(':'),
-				afterLimit.indexOf('-'),
-			].reduce((min, e) => (e < min && e >= 0) ? e : min) + softLimit
-			description = description.substring(0, nextSpace) + '...'
-		}
+		description = softTruncate(description, enContent ? 200 : 70)
 
 		title = title.substring(0, title.indexOf('\n'))
 
