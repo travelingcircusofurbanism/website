@@ -4,7 +4,10 @@
       All content copyright Mariko Sugita, except where noted.</br>
       <a href="mailto:travelingcircusofurbanism@gmail.com">Get in touch!</a>
     </p>
-    <p>
+    <p class="images">
+      <a href="https://twitter.com/tcurbanism" target="_blank">
+        <img src="~/assets/twitter.svg" width="30px" height="30px" />
+      </a>
       <a href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
         <img src="~/assets/facebook.svg" width="30px" height="30px" />
       </a>
@@ -28,6 +31,12 @@
       margin: $content-padding-mobile * -1;
       margin-top: $content-padding-mobile * 2;
       padding: $content-padding-mobile;
+    }
+
+    .images {
+      & > * {
+        padding: 10px;
+      }
     }
   }
 

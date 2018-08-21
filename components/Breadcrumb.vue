@@ -71,7 +71,6 @@ export default {
   position: relative;
   margin: 0;
   padding: $unit * 2 $unit * 4;
-  padding-left: $unit * 5;
   color: $text;
   text-decoration: none;
   display: inline-block;
