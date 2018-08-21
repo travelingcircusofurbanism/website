@@ -1,7 +1,8 @@
 module.exports = {
-	public: false,
-	date: '8/10/2018',
+	public: true,
+	date: '8/14/2018',
 	category: 'interview',
+	image:'immigrantstory01.jpg',
 	mapPosition:  [
 		{
 			location: '',

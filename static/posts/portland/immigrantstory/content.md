@@ -1,96 +1,109 @@
 
-# City and migration: Interview with Sankar Raman from the Immigrant Story
+# City and migration: Interview with Sankar Raman from The Immigrant Story
 
-During my stay in Portland I encountered a very inspiring project called [The Immigrant Story](https://theimmigrantstory.org/), which collects stories and photographs of immigrants in order to document/archive their voices. Sankar Raman, an founder of the project and a Northwest Digital Art Photographer, believes that ‘The Immigrant Story is the American Story'.
+During my stay in Portland, I encountered a very inspiring project called [The Immigrant Story]((https://theimmigrantstory.org/)), which collects stories and photographs of immigrants in order to document/archive their voices.
+
+Sankar Raman, a founder of the project and a Northwest digital art photographer, believes that **“The Immigrant Story is the American story.”**
+
+![](Sankar-Raman-by-kim.jpg)
+*Photo by Kim Nguyen*
+
+I’ve been always curious about the everyday life of immigrants in cities and how they experience cities. I interviewed Mr. Raman to learn more about the project and to hear what he thinks about the topic of city and migration.
+
+---
+
+### Background - rising wave of racism
+
+***Thank you so much for the time today. First, could you tell me a little bit about the background of the project?***
+
+**Mr. Sankar:** The first idea of the project was born right after the elections in 2017. During this time, the immigrants are increasingly becoming a scapegoat — and there is a growing tension and a divisive political rhetoric that makes us divided with “us versus them” mindset. I was not politically active and am not a political person, but I felt an urge to do something about it.
+
+Let me tell you a real example that happened here in Portland. There was a little girl called Fatemah, she was from Iran and she was supposed to come to Oregon Health & Science University to go through her heart surgery. She and her family came from Iran to Dubai and were on their way to here in Portland, and it was exactly the time the Muslim ban went into effect. Because of the ban, she could not travel to Portland.
+
+It became a big issue here; everybody was protesting. And it was then I realized that it is not just political rhetoric but real people (who) are getting affected by changes in policies made against immigrants. That has come to affect people in our community here in Portland.
+
+### Creating the counter-narratives
 
 ![](immigrantstory.jpg)
 *Photo by Nitish Meena on Unsplash*
 
-I've been always curious about the everyday life of immigrants in cities and how they experience cities. I interviewed Mr. Sankar Raman to learn more about the project and hear what he thinks about the topic of city and migration.
+**Mr. Sankar:** I was not a storyteller or a writer, but I decided to start producing a **counter-narrative** against the dominant political rhetoric, which was portraying the immigrants as murderers, rapists and from shithole countries.
 
----
-
-### Background - rising racism
-
-***Thank you so much for the time today. First, could you tell a little bit about the background of the project?***
-
-**Mr Sankar:** The first idea of the project was born during the elections in 2017. The immigrants are becoming a scapegoat - and there is an growing illusion and divisive political rhetoric that evolves 'Them versus Us'. I was not politically active and am not a political person, but I felt an urge to do something about it.
-
-There was a little girl called Fatemah, she is from Iran and she was supposed to come to Oregon health and science university to go through her heart surgery. She and her family came through Iran to Dubai and were on the way to here in Portland - and it was exactly the time the Muslim ban went into effect. She could not travel to Portalnd because of the ban.
-
-It became a big issue here - everybody was protesting. And it was when I realized that it is not just political rhetoric, but real people are getting effected here in the real life in Portland.
-
-### Creating the counter-narratives
-
-Am not a storyteller but I decided to start producing a **counter-narrative** against the dominant political rhetoric - that is all about the immigrant murderers, the rapists from shithole countries.
-
-When you really look at the history of this country, everybody here is a migrant - they came from somewhere else. Some of us came recently, some of us came years ago, some of us came in Mayflower, some of us came 10 thousand years ago. The fact remains that the country is built on the people who come here from the outside, and it is rightfully called a nation of immigrant.
-
-
-There are problems where people always find a scapegoat to say it is all because of them this problem exists. So how do we create change? I thought the way to do this is try to create anything by talking about the real stories of immigrants.
-
-You read a story and a picture of a person - who looks closer and the picture is focused on their eyes.it's usually focused on their eyes and is really closer deliberately designed that way with the way the shot focuses on the face.
-
-What we do is if you go there and you see this picture and those pictures are focusing on the eyes for example Joana.You can see; focused on her eyes and it is really big
-
-what we do is we go to public spaces which become more compelling we blow if out 3ft by 2ft in some kind of an exhibition, like something like that and it becomes huge and then we write a story really meet to it when we write the story nexr to it and then show this picture there is no way you're going to miss making the human connection, you know what I mean? It is like you have to connect with the idea you know we are here talking about is this person and this persons picture is so big so this is one of the exhibition, the picture where we have the gallery exhibition, it is like 3ft by 2ft and then we put one story to it so we have a few answers.We have a bunch of exhibitions just like that you know you came the other day? And actually we have people you can see how big the picture was right its a huge picture you cannot escape. When we blow a picture it gets  bigger you cannot escape the fact that those people are telling their story and youre bound to make some connection thats what we try to do.
-
-Hopefully what we try to do is pro-life this one across everyone.This exhibition, for example, you can see people are really immersed in it like people are intensely absorbing this person and reading about it, people come back to us and say hey, it is really working because they are connecting with a person so we go and promote this one, but our main focus is, the story is about 600 words people should be able to read it for about 10-15 minutes and it is like a person's real life and there is the photo of this person, the idea behind it is we want to tell them this is how our community looks like, this is the people in one community, they belong to different religion, different colours, different nationality.
-
-### The art of listening
-
-Mr Sankar: Shes a really nice lady and the idea here is we talk about all kinds of people different people.I went to her performance and I said I am going to take her because normally she doesnt dress in her traditional Japanese dress and she told me shes going to be dressed in Kimono and not in a normal dress, so I said okay I will come there so I went to her performance and took the picture before her performance and it turned out really nice.If I went to show people in their costumes bringing their culture, thats what the beauty is all about, thats what I want to promote our society, it comes from all over the world and we have  this brand name America and thats why the brand is so good, people want to come here.If you go and look at the recent Nobel prize winners 60% of them are coming from America if you go and look at every year more that than 60% of the Nobel prize winners are born somewhere else even though they are Americans they are born somewhere else.My professor who was a distinguished professor who taught me everything is Japanese.They come from different places because of the brand we give America because America is where you can go and thats why people are here and thats what makes this country a beautiful country but what am trying to say is if you go and hurt that brand meaning that  they dont want a dull image then the best brain people want to come here wont come then somebody else like Australia or Brazil, I dont know, naming two countries if they do what America does they would be a formidable force to reckon with purely from the economic perspective because America was built from the European professors who came from Europe top universities to build similar universities that Europe had.
-
-This country the Stanford, Yale and Harvard they are all built fashioned after the European professors who came over here and they brought their talent, they brought their skills and you cannot just say that they are rapists or murderers and stuff like that like thats what i'm trying to do am trying to talk about this folks and professors they are skilled people they are making the country actually better for everybody. That is what im trying to do the counter-narratives,
-
-### Creating the counter-narratives
-
-***I've been curious why you picked storytelling as means of analogy to tackle that challenge. So it is about the human connection creating empathy among people***
-
-**Mr Sankar:** Yes, exactly; I think we try to say we tell stories to change the world which we truly believe and I think that a way to do this is  when I hear about your story there's no way I can hate you, you know what I mean? Because thats what the human beings are like so anyway I think its working and I think and doing okay.What do you think of the story, you read any of them?
-
-I think you know the thing about it is the beauty of it is when I started it first, as you know; I came from India and English is not my first language, I had to learn English as you know it is not easy to master English even though am okay to communicate and the writing and other stuff.so I started writing stories and telling stories, my wife was the editor she would edit it and we would publish it for few months and then I started having a prototype and then once I had a prototype I was really fortunate that so many journalists joined us.so we had journalists form Gregorian local newspaper which had a tradition of newspaper print media and then people who  worked in Los Angeles times, people who had worked in Washington post, people who had published in all kinds of main newspaper companies.In short, basically editors and writers who were really really good and they worked for free on a voluntary basis and we had run this organization on a shoestring budget, we didnt have any budget, we had about 20 volunteers and they were talented writers, photographers, web designers, visual designers and artists.They all fit in they do all kind of different things and if youve noticed our organization is either a visual storytelling we are heavily into graphic art designs and yet we do at a lot of thinking in the visual arts photography and stuff I like that and then we have also spent a lot of time really trying to come up with the right way of telling those stories in the journalist sense and worry about the style, the frame and we do that all the time and the background also, what we do is we go into an interview like this we use iPhone just like what youre doing we record them and then we usually unlike the newspaper articles where  they go interview for a few minutes and write a story, we spend about 2 hours.When I went to this lady, I talked to her for 2 hours and then we talked about all kinds of things, she talked about where she was born, what she does, how her life was in Japan when she was growing up all kinds of things.We really talked about everything and then we choose a frame where there is a unique story.We spend a lot of time and energy in devising the story so that it comes out really authentic, it comes out natural and then we have a beautiful story, its fascinating to me its like I have millions of questions to ask you, right?
-
-So many things you can talk about because youre travelling, youre doing fascinating stuff.It is exciting so am interested in that and then writing about such a story and people cannot ignore the fact that your story is really unique and its really interesting and there is no way people are not going to really like you, you know they would say I want to meet this lady who is traveling and doing this and that; that's  what we want to create,  that I want people to read the story of this koto player and have the feeling of  listenening  to this instrument, I want to go and explore this culture.You know what I mean?
-
-***how do you find these people to interview with is it reported to you or do you find people on the internet or something and approach them.***
-
-Mr Sankar:   Its absolutely wonderful that I can talk to you a lot about storytelling, I really enjoy meeting people, I will just tell you the one thing it is fun when I meet people and curious about their life.For example I was in Tokyo I was meeting this guy who had a beautiful shop, his shop is about wall cameras, I walked into this camera store it was inside the city in Tokyo and he had all kinds in Tokyo, the moment I walked in he was there, he was probably 60 or 70 years old, he spoke nice English and he was asking if I had a Nikon camera with me I was a tourist, I was having a camera with me and I had a Nikon camera, I told him i  have a new camera but then all his camera were old cameras and he started telling me about every camera in the shop, he started telling me about this camera, that camera, the history of it.The reason am telling you this that whenever I meet people am always curious about the stories behind them and when they have an interesting story to tell I note it down, where are you from? What's you number? Do you want to participate in my project around here? That is my main made of finding but when I read about the stories like when I was reading yesterday about this lady who was south Korean she was an adopted kid here in the US she recently changed parties for example from Republican to the Democratic party.So I said that isnt just a story so I contracted her whenever am interacting with someone am always on the lookout for stories who would be interesting? Do they have a unique story to tell? And where are they from, in several cases I go after people like specific stories like am trying to do.I want to go after Japanese in torment story for example the reason for that is that it is exactly what will happen if this continues in other words, if we keep on saying that I want to build a wall, these are rapists, murderers next thing you know is going to take all of them put them in a camp that is what as happened in this country this people are getting old, they are dying over in the Japanese in torment.   So I specifically go after them and I found one person which I tried connecting with them, they are  really old folks now, because it happened long time ago and similarly I want holocaust survivors only 2 people in Portland that are from there.So, I go after specific stories like the Indian and Asian came before 1965 immigration act for example because America uses to be very white-centric and then the 1965 immigration act changed and that brought more races to the country.Anyway what am trying to say is that I try to sometimes specifically go after some stories and constantly looking for people and I want to have stories from all the countries and I want to have all stories of all conflicts like I want to have the story of the lost boy of Sudan, form different conflicts.Am very curious to gather all these stories.I have, vicious stories, stories of refugees and conflicts and then the I have Syrian stories.Those important stories will be documented if we read about its obviously repeating itself.
-
-### Urban narrative and immigrant story
-
-***I am curious about the other relationship between the city of Portland and this activity. How does the city affects your idea?***
-
-**Mr.Sankar:** Portland is a very progressive city, like in this part of town, and this part of town is more like tech workers working in the Northwest side most of them are tech workers like me.Even though the tech workers tend to be very diverse.The diversity like to solve problems able have Nike here and Intel there those folks tend to bring a lot of creative scientifically technology advanced people and they are all diverse.
-
-This diversity for some reason for me I could navigate through that, I dont worry about culture and, identify and stuff like that because I have a job to do and we go and work for a company that pays you to get a job done.You really dont care about raising identity at work so it doesnt affect me that much but when I started this project, I started going to the other part of Portland which brought me to the downtown area Southeast Portland, North Portland and other areas of Portland which has different cultural mix, mainly because Portland is a very progressive city.It still acts like a white city and the races even though they seem to be navigating okay but we still have problems.If was about a year ago like about to the election like May 26ththere was a shooting in the Mosque two people were stabbed to death because one person started having a hatred against two women who were African-American and they were wearing hijab a Muslim woman and the so they started  creating some tense situation and a good Samaritan came  to her then and two of them got killed; that kind of a thing exists in Portland right after that happened for example; I went after talking to the women of the same age group who was wearing hijab and that the one we did in exhibition so I did stories of six women, I did only is story and other writers did the rest stories, one we interviewed after the incident happened, and there one after.
-
-That and then six whole of the year; we are publishing that the exhibition is at the Oregon Jewish museum right now in downtown and the idea is you can hear then rise what happend to this community, how the community was feeling at that time when this incident happened and then you can just watch them healing and getting better over a period of time but nevertheless, even today if your head the six stories.You can feel the hardness in prolifically the first picture, second, then the interview was conducted so you can see how the emotions, the intensity of emotions, their feelings from the beginning to the end.So, in other to understand the works we do we explore underneath it all the questions like race, identity, religion, the country the culture and all those things comes out.When we ask about the questions: they talk about their interaction with the community; how they feel sometimes it's tense depending on the situations and time they live sometimes its really good but thats what we explore if you take some interview to Alabama or somewhere else if you ask some questions and put out some information Im sure the narration would be different based on where they come from so we initially even though we are telling just seeming, their story underneath we talk about it of race selections, list of identity questions we ask specific questions like what is your anxious dreams like for examples we have a bunch of question we ask questions like migration and settlements, race, dignity and future and the idea behind it is all designed in such a way that they put everything out when they talk and I think that the idea behind the state of it all, I bought this notepad because I always work around with it.Anyway the point is when we ask these questions they tell how they feel on their community basically.
-
-**Mr Sankar:** If you go systematically from the top to finish it talks about basic biographical data before coming to the country, growing up, childhood and then migration and settlement, did you experience racial discrimination? How do you do in school? What is your hope and fears? What are you afraid of?
-
-***I'm always fascinated how the new ones experience the city? How they move here and interact with other communities? And how they experience discrimination and so on and its always different from cities to cities.Thats why its really important to listen to personal forces because they can be fully understood by personal experiences in their life.***
-
-***So, what should I ask, what is your next step, what is your goal for the future?***
-
-**Mr Sankar:** I have a big vision -  Washington DC has got national monuments and national exhibitions and museum, and the Smithsonian and of course the worlds famous museum and they have museums for everything:  the vietnam war, the second world war, how they dropped the atomic bomb, everything you can considerably think about they is a museum for about this and that but there is no museum for the achievements of immigration, what the immigrants brought about they celebrate everything but what my goal is that the Smithsonian museum that explores the immigration that explores the achievements of immigrants various immigrants like one floor that takes about Irish immigrants, one floor for Eastern European immigrants, one floor for African slaves.These are all different people who come from different continents, nobody was here 10,000 years ago and we should talk about all their accomplishment, what they brought in, the food, the music, the culture, the language, the Indian, the Chinese, the Japanese all these folks come from different places.
-
-I want to have a place where we celebrate it. the reason that its important is that when someone causes out and says they are rapists and murderers and you can say  no have you ever been to that building, go and see what they have done to the country, dont tell me they are rapists and murders, they are not, thats what I want to do but I dont think it will happen in my lifetime but anyway thats my thing but what we do right now is that we write these stories and  then very soon we are going to introduce videos of people telling their stories.
-
-We will also do a podcast, thats what we are going to branch out to and write future stories and right now this particular story we are saying is profile story, we would profile that one person, we would branch out to different styles we would have a publisher an editor and experts in immigration policies and stuff like that.We will also take these things public spaces like we go to and have exhibitions and mainly create in conservations, every month well do some events, last month we did the Sunday parkways and next month were doing another Sunday parkways and September we're doing a visit to city hall.Basically, we want to try to bring all these things to public spaces and create conservation, and we want to go to Portland airport where a lot of refugees came through to come to this country.They came to settle in Portland thats what we are going to talk about.In long term I would like to have space where we celebrate, educate and promote the achievements of immigrants, all of them thats what I want to do.
-
-###We all travel
-
-***I like the term immigrants when you use it, it implies to everyone its not only people in colour.***
-
-**Mr Sankar:** Yeah, everybody, we talk about Eastern European immigrants, Russian immigrants, Irish and all of them.Basically, we are all immigrants let me tell you one story of myself which is very personal to me, the reason why am saying this it is very important to understand migration why it is a very good concept.I came from a very small village in India, very small community and nobody knows how long our community has been there.But then when I do my DNA it says I travelled through the spice route meaning I came from somewhere in the Middle East and they have travelled over the years through that spice route to the Indian and of Afghanistan, Iran through Pakistan through India and then care down to South of India.But the point is though even though my family says I am from that small village but the route the path we took its a true way to understand the human being, the human being travel and not the human beings, the purpose is on the cultures and also one what we consume every day.what we eat.
-
-There is a beauty of that is that if you go to London, the beauty of it is that they made the curry the Indian food, as the official English food and thats what it's all about everything.In America, we hear the music is being influenced by the India classical music it only started 30 years ago and we see food, a culture influenced by the spices.It is all about the melting part the advantage of being a melting pot it's like that everything becomes a fusion of stuff and that the beauty of it we have to celebrate every one of it.It is everything that is born beautiful.
+When you really look at the history of this country, everybody here came from somewhere else. Some of us came recently, some of us came years ago, some of us came (on the) Mayflower, some of us came 10,000 years ago. The fact remains that the country is built on the people who come here from the outside, and so it is rightfully called a nation of migration.
 
 ***I agree***
 
-**Mr Sankar:** I really enjoy this culture when you go to any place, you go to Japan and the beauty of it is when you talk about that culture of food and whatever I love the rice farming, everything has a story, when people come here and bring their culture when I first came to this country they use to make fun of the California baseball teams and they started selling sushi because baseball youre supposed to go and have and have a hotdog the American tradition.So, when I first came to America you go to California you dont know what they do there dont sell sushi in baseball now that is what the nature of the game is.It has become so prevalent eating sushi in a baseball game.
+So how do we create change? I thought the way to do this is making the human connection by telling the real stories of immigrants. These stories are short form human interest narratives, and published with close-up portraits. We also make very large prints and showcase these stories as a gallery exhibition to create conversations.
 
+When I first started writing stories and sharing these stories, my wife was the editor, so for the first few months we did all the publishing work by ourselves. After a few trials, I was really fortunate that so many high-quality journalists started to help us out.
+
+Today, there are more than 20 volunteers sharing their talents and skills to create a very high quality content for our project. These folks are talented journalists, writers, photographers. Some of them worked for local newspapers or other big media outlets like the Los Angeles Times or Washington Post. We also have graphic designers, web developers and visual artists volunteering with us. More information about their site can be found [here](https://theimmigrantstory.org/our-story/).
+
+### The art of listening
+
+![](immigrantstory02.jpg)
+*Reference: Sankar Raman/The Immigrant Story*
+
+***I’ve been curious why you picked storytelling as your methodology to tackle the challenge. So it is about the human connection, creating empathy among people, isn’t it?***
+
+**Mr. Sankar:** Yes, exactly. I mean, when I hear about your personal story, for instance, there’s no way I can hate you, right?
+
+We spend about two hours with each interviewee and learn about their life — where the person was born, what the person does, how was the life before coming to (the) U.S. etc. We also spend a lot of time and energy in crafting the story so that it comes out really authentic.
+
+***How do you find these people to interview with?***
+
+**Mr. Sankar:** I really enjoy meeting people, and whenever I meet people, I am always curious about the stories behind them. When they have an interesting story to tell I write it down and ask them if they want to be part of this project to share their stories. That is my main way of finding people to interview,.
+
+I am very curious to gather all these stories of diaspora, refugees and human displacements due to conflicts. These are very important stories to be documented.
+
+### Urban narratives and immigrant’s relationship with cities
+
+***I am curious about the relationship between the city of Portland and The Immigrant Story. How does the city affect your idea?***
+
+**Mr.Sankar:** Portland is a very progressive city. However, it still acts like a white city, and we still have problems.
+
+In this part of town (Northwest), most of them are tech workers like me, working in Nike and Intel etc., and people are very diverse. This diversity, for some reason for me, I could navigate through that. I have not experienced any issues racially from my experience living in this part of the town.
+
+However, when I started this project, I started going to the other parts of the city such as Southeast Portland. Different parts of the city have (their) own different cultural mix. There I see different elements of racial undercurrent at play at different levels.
+
+For example, about a year ago, there was a [stabbing incident in the MAX](https://en.wikipedia.org/wiki/2017_Portland_train_attack) Train and two people were stabbed to death here in Portland. This kind of thing happens in Portland. Not often, but it happens.
+
+***I’m always curious about how immigrants experience the city, how they move here and interact with other communities, and how they experience discrimination and challenges. That’s why it’s really important to listen to personal stories, because they can only be truly understood by personal experiences.***
+
+**Mr.Sankar:** Exactly. Right now, we have an exhibition, that is been shown at [the Oregon Jewish Museum]((http://www.ojmche.org/)) in downtown. We call it “[Who We Are](https://theimmigrantstory.org/who-we-are/).” It is a collection of stories of six muslim women from Portland that we designed to explore their emotions.
+
+In these stories we profile the immigrant experience, a sort of oral history of our community. It is kind of a indicator of how the community was feeling at that time. In some of the these stories, you could see the raw emotions, the intensity of their feelings in these stories. It is through their personal experiences, through that lens so to speak, we explore race, identity and culture.
+
+
+### Place to celebrate diversity
+
+***What is your next step?***
+
+**Mr. Sankar:** I have a big vision.
+
+There are museums and memorials for many things, but we don’t have one to signify the achievements and accomplishments of immigrants in this country. I want to change that.
+
+My goal is to create a museum that explores the immigration and their accomplishments. Just imagine a museum that has a floor that talks about Irish immigrants, another floor about Eastern European immigrants, etc.
+These are all different people who came from different continents, and we should display their accomplishments.
+
+I want to have a place where we celebrate it. I think it’s important to have an actual place where you can bring people in and explore visually. When you do that, you won't be able to speak ill of immigrants then.
+
+### We all travel
+
+![](imigratntstory03.jpg)
+*Photo by Barth Bailey on Unsplash. We all travel*
+
+***I like the way you interchangeably use the term “immigrants” to represent everyone. To you it implies everyone; it’s not only the people who arrived recently!***
+
+**Mr. Sankar:** Yeah, everybody! Basically, we are all immigrants. We all migrate continuously for some reason or the other.
+
+Let me tell you one story of myself, which is very personal to me. I came from a very small village in India — a very small community, and nobody knows how long our community has been there in that village.
+
+But then, when I do my DNA, it says I traveled through the spice route — meaning that I came from somewhere from the Middle East, and they have traveled over the years through that spice route to the Indian subcontinent through Iran, Afghanistan, through Pakistan to India, and then came down to south of India.
+
+My point is that the path my ancestors took is a true way to understand human beings. Humans travel — and not only humans but their cultures, languages, food, etc., with them. We have to keep it that way!
+
+***I agree. I can’t wait to see a place that celebrates diversity and migration. Thank you so much for the time today!***
 
 ![](immigrantstory01.jpg)
 *Photo by Wellington Rodrigues on Unsplash*
