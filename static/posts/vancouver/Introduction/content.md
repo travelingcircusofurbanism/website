@@ -17,7 +17,7 @@ Read: [Co-op Housing In Vancouver Is The Affordable Option You Didn't Know About
 
 - [Vancouver Is Awesome](https://www.vancouverisawesome.com/) is a online publication that shares everything about Vancouver, discussing about greatness and things to make people stay here. They have various [architecture-related articles](https://www.vancouverisawesome.com/category/architecture/), which are worth reading.
 
-- A friend of mine recommended me this [amazing infographic](https://brightoncollege.com/100-years-architecture-in-vancouver/) that summaries 100 years of amazing architecture in Vancouver.
+- A friend of mine recommended me this [amazing infographic](https://brightoncollege.com/100-years-architecture-in-vancouver/) that summaries 100 years of amazing architecture in Vancouver. This [Illustrations of Vancouver’s Architectural Landmarks](http://montecristomagazine.com/design/vancouvers-architectural-landmarks) are great to check out as well!
 
 ### Organization, initiative
 
@@ -28,3 +28,5 @@ Read: [Co-op Housing In Vancouver Is The Affordable Option You Didn't Know About
 - [Happy City](https://thehappycity.com/s)uses lessons from psychology and public health to design happiness into neighborhoods and cities. [This TED talk](https://www.youtube.com/watch?v=7WiQUzOnA5w) by Charles Montgomery is helpful to understand what happy city is really about.
 
 - [Modacity](http://www.modacitylife.com/) by Chris and Melissa Bruntlett, co-authors of the book “Building the Cycling City: The Dutch Blueprint for Urban Vitality”. This might be interesting for bike lovers!
+
+- [Urbanarium](https://urbanarium.org/) is a group of the most committed urbanites in Vancouver, including architects, planners and other citizens who are passionate about city making. They have various events such as city debateS and bike tours!
