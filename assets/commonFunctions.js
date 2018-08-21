@@ -8,6 +8,31 @@ exports.capitalize = function (s) {
 		.join(' ')
 }
 
+exports.softTruncate = function (string, softLimit) {
+	if (string.length > softLimit) {
+		const afterLimit = string.substring(softLimit)
+		let min = 0
+		const nextSpace = [
+			afterLimit.indexOf(' '),
+			afterLimit.indexOf(' '), // ja space
+			afterLimit.indexOf(','),
+			afterLimit.indexOf('、'),
+			afterLimit.indexOf('.'),
+			afterLimit.indexOf('。'),
+			afterLimit.indexOf('!'),
+			afterLimit.indexOf('！'),
+			afterLimit.indexOf('?'),
+			afterLimit.indexOf('？'),
+			afterLimit.indexOf(';'),
+			afterLimit.indexOf(':'),
+			afterLimit.indexOf('-'),
+			afterLimit.length,
+		].reduce((min, e) => (e < min && e >= 0) ? e : min) + softLimit
+		return string.substring(0, nextSpace) + '...'
+	}
+	return string
+}
+
 exports.log = function (color, ...args) {
 	const resetColor = '\x1b[0m'
 	const terminalColors = {

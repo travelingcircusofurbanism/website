@@ -277,6 +277,7 @@ h4 {
 	}
 
 	&.full {
+		display: block;
 		width: 100%;
 	}
 
@@ -383,9 +384,12 @@ h4 {
 	}
 
 	&.doublehighlight, &.highlight:hover {
+		z-index: 102;
+
 		.text {
 			color: $highlight;
 		}
+
 		.pin {
 			background-color: $highlight;
 		}	
@@ -423,6 +427,12 @@ h4 {
 		.pin {
 			width: $unit * 10;
 			height: $unit * 10;
+		}
+	}
+
+	&.doublehighlight, &.highlight:hover, &.doublehighlight:hover {
+		.text {
+			color: black;
 		}
 	}
 }
