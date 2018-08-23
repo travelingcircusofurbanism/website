@@ -1,11 +1,11 @@
 module.exports = {
-	public: false,
-	date: '6/03/2018',
-	category: 'interview',
+	public: true,
+	date: '8/20/2018',
+	category: 'place',
 	mapPosition: {
-		location: 'Sao Paulo',
+		location: 'Granville Island',
 		bearing: 0,
-		center: [-46.63330939999997, -23.5505199],
+		center: [-123.13399300000003, 49.27115670000001],
 		zoom: 12.00,
 		pitch: 0
 	}
