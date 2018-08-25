@@ -55,6 +55,7 @@ module.exports = {
   },
   generate: {
     dir: 'docs',
+    fallback: "404.html",
     routes: () => [
       ...cities.map(c => `/${c}`),
       ...posts.map(p => `/${p.city}/${p.slug}`),

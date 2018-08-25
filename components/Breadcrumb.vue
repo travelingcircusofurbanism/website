@@ -45,7 +45,7 @@ export default {
       pathEls.push({
         label: this.title ? 
           this.softTruncate(this.capitalize(this.title), 70) :
-          `${ pagePrefix ? pagePrefix + ': ' : '' }${ this.capitalize(postSlash) }`,
+          `${ pagePrefix ? pagePrefix + ': ' : '' }${ this.capitalize(postSlash).replace('%20', ' ') }`,
         url: `/${ path }`
       })
       return pathEls
