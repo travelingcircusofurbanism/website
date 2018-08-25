@@ -29,7 +29,7 @@ It became a big issue here; everybody was protesting. And it was then I realized
 
 **Mr. Sankar:** I was not a storyteller or a writer, but I decided to start producing a **counter-narrative** against the dominant political rhetoric, which was portraying the immigrants as murderers, rapists and from shithole countries.
 
-When you really look at the history of this country, everybody here came from somewhere else. Some of us came recently, some of us came years ago, some of us came (on the) Mayflower, some of us came 10,000 years ago. The fact remains that the country is built on the people who come here from the outside, and so it is rightfully called a nation of migration.
+When you really look at the history of this country, everybody here came from somewhere else. Some of us came recently, some of us came years ago, some of us came (on the) Mayflower, some of us came 10,000 years ago. The fact remains that the country is built on the people who come here from the outside, and so it is rightfully called a nation of immigrants.
 
 ***I agree***
 
