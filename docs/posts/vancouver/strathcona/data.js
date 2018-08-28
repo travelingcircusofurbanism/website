@@ -1,11 +1,11 @@
 module.exports = {
 	public: false,
-	date: '6/03/2018',
-	category: 'interview',
+	date: '8/20/2018',
+	category: 'place',
 	mapPosition: {
-		location: 'Sao Paulo',
+		location: 'Strathcona',
 		bearing: 0,
-		center: [-46.63330939999997, -23.5505199],
+		center: [-123.1649902, 49.2662234],
 		zoom: 12.00,
 		pitch: 0
 	}

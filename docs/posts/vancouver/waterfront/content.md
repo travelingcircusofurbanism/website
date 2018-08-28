@@ -1,4 +1,4 @@
-#
+# City Conversations about Vancouver Waterfront
 
 ![](waterfront04.jpg)
 *Photo by Aditya Chinchure on Unsplash*
@@ -25,7 +25,7 @@ The Waterfront Initiative has been an exercise since 2013 - they have been spend
 
 At the open-air conversation that took place in a public park just steps away from the Burrard inlet, the expats spoke only about 20 mins - the rest of the time was dedicated to participants; citizens. The conversation went from swim-ability of the water, the leadership of the redevelopment initiative, and ironically, lack of conversation between expats and citizens to create a big vision together.
 
-If you are interested in Waterfront development in other cities, I would recommend keeping an eye on the process of how the discussion would develop in Vancouver from now on. All the waterfront is different, obviously, but we can learn from a process itself about how we build a comprehensive plan from scratch with help of citizens. 
+If you are interested in Waterfront development in other cities, I would recommend keeping an eye on the process of how the discussion would develop in Vancouver from now on. All the waterfront is different, obviously, but we can learn from a process itself about how we build a comprehensive plan from scratch with help of citizens.
 
 - Read the [report summary](http://www.waterfrontinitiative.org/wp-content/uploads/2018/03/SnapshotReportWeb.pdf)
 

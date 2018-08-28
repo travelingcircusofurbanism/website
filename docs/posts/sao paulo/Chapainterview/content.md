@@ -1,29 +1,42 @@
 
 # Interview — Kristine Stiphany, a founder/director of Chapa urban studio
 
-<iframe src="https://player.vimeo.com/video/211732237?wmode=opaque&amp;api=1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" width="640" height="360" id="yui_3_17_2_1_1530051896926_73"></iframe>
+![](Stiphany-Kristine-orig.jpg)
 
-### Chapa Project
+In February 2018 I attended the [World Urban Forum 9 (WUF9)](http://wuf9.org/) in Kuala lumper, Malaysia. It was a place to take part in the active exchange of ideas and best urban practices in the world, and this is where I got to know about the project called [Chapa](www.chapa.io) (which means "urban guide" in Portuguese).
+
+There was a session during WUF9 about citizen-sourced data and participatory technologies, which was organized by a collaboration with Latin American Housing Network (LAHN) based at the University of Texas at Austin and Chapa, an urban laboratory for citizen-sourced data in São Paulo, Brazil. They had great discussion about big data and citizen participation, uniquely completing connections between technology, participation, and housing production in the fields of public policy, urban planning, and architecture.
+
+![](chapa01.jpeg)
+
+Few months later, I had the honor of meeting Kristine Stiphany, a founder and director of Chapa, in  Lubbock, Texas to get to know more about the project.
 
 ---
 
-***Thank you very much for your time. First of all, please tell me a bit more about your background and your relationship with South America?***
+***Thank you very much for your time today. First of all, could tell me a bit more about your background and your relationship with South America?***
 
-**Stiphany:** I travelled in Latin America prior to graduating from school, and was in Brazil for quite some time. During the stay, I ended up meeting my mentor who is a sociologist and  then dean of an architecture school in Sao Paolo. She told me what architecture and urbanism in Latin America is all about.
+**Stiphany:** I travelled in Latin America prior to graduating from school, and was in Brazil for quite some time. During the stay, I ended up meeting my mentor who is a sociologist and dean of an architecture school in Sao Paolo. She told me what architecture and urbanism in Latin America is all about.
 
-She was an inter-disciplinarian  within an architectural school, which was important because she was interested in very serious research, really understanding, rather than speaking for communities, actually understanding what they want and how they actually live.
+I learned a lot from her, about actually understanding what a people want and how they actually live in Brazil. There was a neighbourhood where the residents had been constructing buildings by themselves over years, after a developer had abandoned it. I started documenting the community.
 
-I learned a lot from her for a year and I went to graduate school in architecture.  Within that trajectory I really kind of got away from this ***idea of informality***, I mean I really started to focus on the object.
+I was there for a year, and then I went to graduate school in architecture.
 
->It was XXXXX the residents had been constructing this XXXX over the course of, I think the developer had abandoned it after it had reached 3 stories, and now it was about 9 or 10 stories. So, I documented that project.
+<iframe src="https://player.vimeo.com/video/211732237?wmode=opaque&amp;api=1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" width="640" height="360" id="yui_3_17_2_1_1530051896926_73"></iframe>
+*Chapa: Research at the intersection of Housing and Technology in Brazilian Informal Settlements*
 
 ### The idea of informality
 
-***Could you explain more about the idea of informality and what it means to your project?***
+***During your presentation in WUF9, I understood that the idea of "informality" is one of the key themes of your research. Could you explain what informality means in this context?***
 
-**Stiphany:** Architecture school is about creating the new, rather than this XXXX set that is the city, this layering dimension. I was really interested in this layering of these social issues, these technical issues and how that is informed by these broader processes, these Unchecked growths and informality.
+**Stiphany:** Within that trajectory I started to focus on *idea of informality*.
+
+
+I was really interested in this layering of these social issues, these technical issues and how that is informed by these broader processes, these Unchecked growths and informality.
 
 I got a job at Studio Gang in Chicago and then went on to do a full WRITE in Sao Paulo and I lived within BUMBOHAO which is a small, very small community of maybe 500-550 families in the North-Eastern sector of Sao Paulo.
+
+![](chapa02.jpg)
+![](chapa03.jpg)
 
 It was about interviewing people understanding where they got their materials how that informed house construction, how that informed social networks. So, I studied this community and the built in environment for a year and then watched in be torn down by a new development project. The fluidity, the extent to which those processes were created over time, that I learned about were wiped out by the government in a very short period of time resonated deeply with me.
 
@@ -124,3 +137,6 @@ We deal with situated data, Donna Haroway talks a lot about situated knowledge a
 **Stiphany:** II think I have also experienced that position in Brazil, always being an outsider but in many ways, Sao Paulo feels like home more than any other place for me. Its where I feel most comfortable, I have an office there, I have all the things, for me, that complete everyday life are contained within Sao Paulo. Trying to go between the United States and Brazil has been, in many ways, for me a way to de-familiarise both. I became interested in politics and the political dimensions of planning through Brazil, I wasn't interested in it before but now I am, just through the lens of Brazil.
 
 This position now for me, being a female in an informal settlement, changes things, it fundamentally changes things. I can never be a fly on the wall and I am not going to pretend to. Its more honest to say 'yes we have these differences so lets talk about them' .
+
+
+都市データというと、無味乾燥で数学的なイメージがありますが、このチームはフィールドワークを通してそのエリアの住民と共にデータを収集することに注力しています。データを自分たちで集め、自分たちで使いこなすという意味で、「都市データを市民の手に」というタイトルは的を射ていると感じました。
