@@ -7,7 +7,7 @@
         <br />
         <div v-if="error.statusCode === 404">That page wasn't found, sorry.</div>
         <br />
-        <nuxt-link to="/">Back to Home</nuxt-link>
+        <a href="/">Back to Home</a>
       </div>
     </div>
   </div>
