@@ -42,3 +42,6 @@ This **Waterfront Park** (pictures below) will also be rebuilt with an urban pla
 ![](waterfront16.jpg)
 
 If you want to engage in this project or just curious about the future of waterfront holds - you can check out [Community Engagement](https://waterfrontseattle.org/community-engagement) page by Friends of Waterfront Seattle to sign up for the email list, follow them on social media etc. I'm very much looking forward to coming back here after the project is done.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/4La-8egv1bk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+*This video is also very helpful to understand the Alaskan Way Viaduct "The Alaskan Way Viaduct: How Seattle chose the Bertha tunnel alternative" - by [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ)*
