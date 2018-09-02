@@ -32,11 +32,7 @@ export default {
       title: 'Home',
       meta: [
         { property: 'og:title', content: 'Traveling Circus of Urbanism' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com` },
-        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
-        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
   },
@@ -59,7 +55,7 @@ export default {
     isDev () { return this.$store.state.isDev },
     userLanguage () { return this.$store.state.language },
 		showablePosts () { 
-			return this.userLanguage === 'en' ?
+			return this.posts && this.userLanguage === 'en' ?
         this.posts.filter(p => p.languages['en'] === true) :
         this.posts
 		}

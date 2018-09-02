@@ -1,11 +1,13 @@
 <template>
   <div class="master">
-    <Header />
     <div class="error-center">
-      <div>
-        Whoops! Nothing here.
+      <div class="content">
+        <h1 v-if="error.statusCode === 404">We haven't traveled there yet!</h1>
+        <h1 v-else>An error occurred</h1>
         <br />
-        <a href="/">Back to Home</a>
+        <div v-if="error.statusCode === 404">That page wasn't found, sorry.</div>
+        <br />
+        <nuxt-link to="/">Back to Home</nuxt-link>
       </div>
     </div>
   </div>
@@ -15,6 +17,7 @@
   import Header from '~/components/Header'
 
   export default {
+    props: ['error'],
     components: { Header },
     computed: {
     },
@@ -27,6 +30,11 @@
 </script>
 
 <style lang="scss">
+
+  .content {
+    height: auto;
+    min-height: 0;
+  }
 
   .error-center {
     text-align: center;

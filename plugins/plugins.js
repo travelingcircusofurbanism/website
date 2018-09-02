@@ -4,7 +4,7 @@ import VueLazyload from 'vue-lazyload'
 Vue.use(VueLazyload, {
 	preLoad: 1.3,
 	// error: 'dist/error.png',
-	loading: '/images/loading.svg',
+	loading: '/assets/loading.svg',
 	attempt: 1,
 	// silent: false,
 })

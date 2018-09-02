@@ -23,22 +23,19 @@ export default {
       title: this.capitalize(this.location),
       meta: [
         { property: 'og:title', content: `${ this.capitalize(this.location) } | Traveling Circus of Urbanism` },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/at/${ this.location }` },
-        { property: 'og:image', 
+        { hid: `og:image`, property: 'og:image', 
           content: this.posts[0] && this.posts[0].image ? 
             this.posts[0].image.substring(0, 4) === 'http' ?
               this.posts[0].image :
               `https://www.travelingcircusofurbanism.com${ this.posts[0].image }`
             : ''
         },
-        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
   },
   components: { Footer, PostList, Breadcrumb, },
-  asyncData ({ route, redirect, isStatic, store }) {
+  asyncData ({ route, redirect, error, isStatic, store }) {
     const location = route.path
       .replace('/at/', '')
       .replace('/', '')
@@ -49,7 +46,7 @@ export default {
       store.state.allPublicPosts :
       store.state.allPosts
     if (!posts || posts.length === 0)
-      return redirect('/')
+      return error({ statusCode: 404, message: 'Page not found.' })
     let marker = {}
     posts = posts.filter(p => {
         if (Array.isArray(p.mapPosition)) {
