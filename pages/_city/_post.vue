@@ -1,6 +1,8 @@
 <template>
   <section class="content" :class="{ja: displayLanguage === 'ja'}">
 
+    <Lightbox />
+
     <Breadcrumb 
       :title="title"
     />
@@ -55,6 +57,7 @@ import Footer from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
+import Lightbox from '~/components/Lightbox'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -75,7 +78,7 @@ export default {
     }
   },
   
-  components: { Footer, RelatedArticles, PostDetails, Breadcrumb, },
+  components: { Footer, RelatedArticles, PostDetails, Breadcrumb, Lightbox, },
 
   asyncData ({ route, redirect, error, env, store }) {
     const slug = route.path.replace(/\/$/, '')
@@ -123,6 +126,7 @@ export default {
       let contentToDisplay = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
       // remove title
       contentToDisplay = contentToDisplay.substring(contentToDisplay.indexOf('#'))
+      this.$nextTick(this.addImageInteraction)
       return contentToDisplay.substring(contentToDisplay.indexOf('\n'))
     }
   },
@@ -260,6 +264,13 @@ export default {
           })
       })
     },
+
+    addImageInteraction () {
+      this.$el.querySelectorAll('img')
+        .forEach(e => {
+          e.addEventListener('click', () => this.$store.commit('setLightboxSrc', e.getAttribute('data-src')))
+        })
+    }
   }
 }
 </script>
