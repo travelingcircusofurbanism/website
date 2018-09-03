@@ -266,6 +266,7 @@ export default {
     },
 
     addImageInteraction () {
+      if (!this.$el) return
       this.$el.querySelectorAll('img')
         .forEach(e => {
           e.addEventListener('click', () => this.$store.commit('setLightboxSrc', e.getAttribute('data-src')))
