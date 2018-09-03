@@ -188,21 +188,49 @@ export default {
     formatMarkdown (baseMD) {
       if (!baseMD) return ''
       let newMD = baseMD
-      // fix images
-      const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpg|jpeg|png|gif|webm|svg)\"/gim
+      // fix internal images
+      const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpe?g|png|gif|webm|svg)" ?(?:alt(?:="(.*)")?)?/gim
       let matches = localImageElementRegex.exec(baseMD)
       while (matches != null) {
-        const srcPath = `${ this.path }resized/${ matches[1] }.${ matches[2] }`.replace(' ', '%20')
-        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`) // if lazy-load, src -> data-src
+        const srcImagePath = encodeURI(`${ this.path }resized/${ matches[1] }.${ matches[2] }`)
+        const fullSizeImagePath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.path }full/${ matches[1] }.${ matches[2] }`)
+        const description = (matches[3] || '').replace('"', '\'')
+        const postPath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.url }`)
+        const imageTagToSwapIn = `
+          <img 
+            data-src="${ srcImagePath }"
+            ${ description ? 
+              `alt="${ description }"
+              data-pin-description="${ description }"`
+              : ''
+            }
+            data-pin-url="${ postPath }"
+            data-pin-media="${ fullSizeImagePath }"`
+        newMD = newMD.replace(matches[0], imageTagToSwapIn)
         matches = localImageElementRegex.exec(baseMD)
       }
-      const externalImageElementRegex = /<img src=\"((?:http|www\.).*)\"/gim
+      // fix external images
+      const externalImageElementRegex = /<img src="((?:http|www\.).*(?:jpe?g|png|gif|webm|svg))" ?(?:alt(?:="(.*)")?)?/gim
       matches = externalImageElementRegex.exec(baseMD)
       while (matches != null) {
-        const srcPath = matches[1]
-        newMD = newMD.replace(matches[0], `<img data-src="${ srcPath }"`) // here too
+        const srcImagePath = matches[1]
+        const description = (matches[2] || '').replace('"', '\'')
+        const postPath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.url }`)
+        const imageTagToSwapIn = `
+          <img 
+            data-src="${ srcImagePath }"
+            ${ description ? 
+              `alt="${ description }"
+              data-pin-description="${ description }"`
+              : ''
+            }
+            data-pin-url="${ postPath }"
+            data-pin-media="${ srcImagePath }"`
+        console.log(imageTagToSwapIn)
+        newMD = newMD.replace(matches[0], imageTagToSwapIn)
         matches = externalImageElementRegex.exec(baseMD)
       }
+
       // make external links open in new tab
       newMD = newMD.replace(/<a href="([^"]*)">/g, 
         (match, url) => {
