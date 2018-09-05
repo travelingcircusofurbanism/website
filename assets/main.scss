@@ -182,6 +182,7 @@ h4 {
 		max-width: 100%;
 		margin: $unit * 4 auto;
 		display: block;
+		cursor: zoom-in;
 
 		@include width (mobile) {
 			width: 100vw;
