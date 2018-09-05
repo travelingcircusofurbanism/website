@@ -26,24 +26,24 @@ import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   head () { 
+    const description = `Urbanist case studies, interviews, and stories from ${ this.capitalize(this.city) } on the Traveling Circus of Urbanism.`
     return { 
       title: this.capitalize(this.city),
       meta: [
         { property: 'og:title', content: `${ this.capitalize(this.city) } | Traveling Circus of Urbanism` },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
+        { hid: 'description', name: 'description', content: description },
+        { hid: 'og:description', property: 'og:description', content: description },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/${ this.city }` },
         { property: 'og:image', 
           content: this.posts[0].image.substring(0, 4) === 'http' ?
             this.posts[0].image :
             `https://www.travelingcircusofurbanism.com${ this.posts[0].image }`
         },
-        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
   },
   components: { Footer, PostList, Breadcrumb, },
-  asyncData ({ route, redirect, isStatic, store }) {
+  asyncData ({ route, redirect, error, isStatic, store }) {
     const city = route.path
       .replace(/\//g, '')
       .replace(/_/g, ' ')
@@ -53,7 +53,7 @@ export default {
       .filter(p => p.city.toLowerCase() === city)
     if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
-      return redirect('/')
+      return error({ statusCode: 404, message: 'Page not found.' })
     if (posts.length === 1)
       return redirect(posts[0].url)
     return {

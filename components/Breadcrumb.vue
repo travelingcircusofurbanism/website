@@ -62,7 +62,8 @@ export default {
   background: $shade;
   margin-bottom: $unit * 5;
   padding: 0;
-  width: 250%;
+  width: 150%;
+  white-space: nowrap;
 }
 
 .crumb {
@@ -87,6 +88,7 @@ export default {
   & > * {
     position: relative;
     z-index: 4;
+    white-space: nowrap;
   }
 
   &::before {

@@ -16,6 +16,7 @@ export default () => {
       currentCity: null,
       isDev: false,
       panMap: false,
+      lightboxSrc: ''
     },
 
     mutations: {
@@ -81,6 +82,10 @@ export default () => {
       
       setDev (state, isDev) {
         state.isDev = isDev
+      },
+
+      setLightboxSrc (state, src) {
+        state.lightboxSrc = src
       },
 
       setPan (state, shouldPan) {

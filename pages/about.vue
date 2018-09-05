@@ -54,12 +54,8 @@ export default {
     return { 
       title: 'About',
       meta: [
-        { property: 'og:title', content: 'About the Traveling Circus of Urbanism' },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
+        { property: 'og:title', content: 'About Traveling Circus of Urbanism' },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/about/` },
-        { property: 'og:image', content: `https://www.travelingcircusofurbanism.com/images/sitethumbnail.jpg` },
-        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
   },

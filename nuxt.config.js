@@ -20,6 +20,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Urban narratives and practices, collected through travel' },
+      { hid: 'og:description', property: 'og:description', content: 'Urban narratives and practices, collected through travel' },
+      { hid: `og:type`, property: 'og:type', content: 'website' },
+      { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+      { hid: `og:image`, property: 'og:image', content: `https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg` },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },

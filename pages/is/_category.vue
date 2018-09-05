@@ -33,20 +33,17 @@ export default {
       title: this.capitalize(this.category),
       meta: [
         { property: 'og:title', content: `${ this.capitalize(this.category) } | Traveling Circus of Urbanism` },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:description', content: 'Urban narratives and practices, collected through travel', hid: `description` },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/is/${ this.category }` },
-        { property: 'og:image', 
+        { hid: `og:image`, property: 'og:image', 
           content: this.posts[0].image.substring(0, 4) === 'http' ?
             this.posts[0].image :
             `https://www.travelingcircusofurbanism.com${ this.posts[0].image }`
         },
-        { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       ]
     }
   },
   components: { Footer, PostList, Breadcrumb, },
-  asyncData ({ route, redirect, isStatic, store }) {
+  asyncData ({ route, redirect, error, isStatic, store }) {
     const category = route.path
       .replace('/is/', '')
       .replace('/', '')
@@ -57,7 +54,7 @@ export default {
       store.state.allPublicPosts :
       store.state.allPosts
     if (!posts || posts.length === 0)
-      return redirect('/')
+      return error({ statusCode: 404, message: 'Page not found.' })
     posts = posts.filter(p => {
       return p.category && p.category.toLowerCase() === category
     })
