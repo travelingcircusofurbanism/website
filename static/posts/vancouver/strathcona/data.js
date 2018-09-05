@@ -1,6 +1,6 @@
 module.exports = {
-	public: false,
-	date: '8/20/2018',
+	public: true,
+	date: '8/5/2018',
 	category: 'place',
 	mapPosition: {
 		location: 'Strathcona',

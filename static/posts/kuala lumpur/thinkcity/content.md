@@ -1,48 +1,34 @@
-# アジアから未来の都市を考える〜マレーシア発”Think City”の挑戦
+# Think City, rejuvenating the city together from Asia
+
+The 9 th World City Forum (WUF 9) was held in February in the capital city of Kuala Lumpur, Malaysia. The activity of the city making organization called "Think City" attracted a lot of attention in touching examples of each country's community development at exhibitions, talks, workshops and other events. Think City was in charge of the program in the city during the WUF 9 period, together with Urbanice under the WUF 9 local organizer, Urbanice of Urban Welfare, Housing and Local Government Administration.
+
+![](thinkcity7.jpg)
+*クアラルンプールのかつての商業中心地だったMedan Pasar*
 
 ![](thinkcity0.jpg)
 ![](thinkcity1.jpg)
-![](thinkcity2.jpg)
-![](thinkcity3.jpg)
-![](thinkcity4.jpg)
-![](thinkcity5.jpg)
-![](thinkcity6.jpg)
-![](thinkcity7.jpg)
-![](thinkcity8.jpg)
-![](thinkcity9.jpg)
-![](thinkcity10.jpg)
-![](thinkcity11.jpg)
-![](thinkcity12.jpg)
-![](thinkcity13.jpg)
-![](thinkcity14.jpg)
-![](thinkcity15.jpg)
-![](thinkcity16.jpg)
 
-マレーシアの首都クアラルンプールで2月に開催された、第9回世界都市フォーラム（以下WUF9）。展示やトーク、ワークショップなど連日のイベントで各国のまちづくりの事例に触れるなかでひときわ目を引いたのが、「Think City」という街づくり団体の活動です。Think Cityは、WUF9のローカルオーガナイザーである都市福祉・住宅・地方行政省の下部組織Urbaniceと共に、WUF9期間中の街なかでのプログラムを担当しました。
+When I say overseas cases of town planning, it is something that my eyes get into europe and America by all means. However, in fact it is a very challenging attempt even in Asia familiar. In particular, I think that the efforts of town planning in Southeast Asia in the era of rapid change with rapid economic development seems to be packed with many knowledge that can not be obtained only in Japan, Europe and the United States alone. Below, Sugita who participated in WUF 9 in Malaysia will look at Think City's efforts by walking around the city of Kuala Lumpur from two perspectives.
 
-今回は、ロフトワークが実施する「Shibuya Hack Project」と同様に、ボトムアップ型の街づくりを行うThink Cityの挑戦的な取り組みを紹介します。
-
-
-クアラルンプールのかつての商業中心地だったMedan Pasar
-
-## Introduction
+## What is Think City?
 イギリス植民地時代の面影を残す世界遺産の町、マレーシアペナン島ジョージタウンの活性化のために2009年に設立されたThink City。マレーシアの政府系ファンド「カザナ・ナショナル」傘下にある第三セクターとして、ボトムアップで地域課題を解決するための助成プログラムや、コーンウォリス要塞をはじめとしたマレーシアの文化的資産の保存活動などを行ってきました。240以上のプロジェクトを成功させたジョージタウンでの実績を活かし、2014年からはバターワース、クアラルンプール、ジョホールバルといった国内各地の都市に活動域を広げています。
 
+![](thinkcity2.jpg)
+*2 Hang Kasturi*
 
-Think Cityの拠点「2 Hang Kasturi」
-建物の内部にある仮設のコワーキングスペースの様子
-今回WUF9では、メイン会場であるコンベンションセンターとは別に、未来の都市生活のショーケースを公開実験として街なかに設置した「WUF9 Village」、そして各国からの参加者が集う拠点「2 Hang Kasturi」をプロデュース。多くの参加者が、クアラルンプールのかつての商業中心地だったMedan Pasar（マーケットスクエアの意）を訪れ、その活性化に向けた試みを現在進行形で体感することとなりました。
+![](thinkcity12.jpg)
 
-街づくりの海外事例というと、どうしてもヨーロッパやアメリカに目が入ってしまうもの。しかし、実は身近なアジアでも非常に挑戦的な試みがされているのです。特に、急激な経済発展とともに激変の時代にある東南アジアでの街づくりの取り組みには、日本や欧米だけでは得られない多くの知見が詰まっているように思います。以下、マレーシアでのWUF9に参加した杉田が、クアラルンプールの市内を歩き回りながら発見したThink Cityの取り組みを、２つの角度から考察していきます。
+![](thinkcity3.jpg)
+![](thinkcity4.jpg)
+![](thinkcity8.jpg)
+![](thinkcity9.jpg)
+
+In this time WUF 9 produces 'WUF 9 Village' set up in the town as a public experiment for the future urban life showcase separately from the convention center which is the main venue, and the base where participants from various countries gather "2 Hang Kasturi" . Many participants visited Medan Pasar (meaning Market Square), the former commercial center of Kuala Lumpur, and now we are experiencing an attempt to revitalize it in a progressive manner.
 
 
-クアラルンプールの街中にWUF9期間中に設置されたアート作品
+## Space Activation, Public realm improvement
 
-## 社会実験は、公共空間で市民と共に行う
-
-Think Cityの活動の趣旨の一つは、公共空間を、市民一人一人が使いこなせるようになること。日本でもよく耳にするテーマですが、文化や背景が異なると、公共空間へのアプローチも異なるものです。
-
-1. 広場を使った社会実験、「未来の住宅」
+1. WUF9 Village
 
 未来の都市生活のショーケースを公開実験として街なかに設置された「WUF9 Village」
 
@@ -52,12 +38,10 @@ Think Cityの活動の趣旨の一つは、公共空間を、市民一人一人�
 
 今回目にしたマイクロハウスは、この問題に対する取り組みとして、Think Cityがクアラルンプール市と共同で取り組んだ社会実験です。コミュナルリビングのコンセプトを設定した上で、2つの異なるデザイン事務所がプロトタイプを設計し、実際に建築したマイクロハウスをWUF9 Village内で展示しました。空間を見学できるだけでなく、デザイナー自身やThink Cityの関係者が24時間その中で生活している様子を見られるという、刺激的な社会実験となりました。
 
-2. スキマ空間を有効活用する「パークレット」
+2. Parklet
 
-道端に突然出現するパークレット
-
-
-仮設図書館などのスペースも。
+![](thinkcity13.jpg)
+![](thinkcity14.jpg)
 
 また、Think Cityの社会実験は広場だけではなく、ストリートにも及びます。
 
@@ -65,7 +49,7 @@ Think Cityの活動の趣旨の一つは、公共空間を、市民一人一人�
 
 街なかを歩いていると偶然出現するパークレットの展示は、もちろん参加自由。自由に座り込んだり、道行く人と会話したり、多くの市民が公共空間に集っている光景を目にすることができました。
 
-## 誰もが発言できる、市民参加の場をデザインする
+## Capacity Building
 
 「2 HANG KASTURI」内の展示の様子
 Think Cityは、現在「2 HANG KASTURI」という名の建物を拠点としています。1937年に建設されたアール・デコ様式の３階建ての歴史的建造物で、様々な文化イベントが行われるコミュニティスペースとして、2016年から市民に解放されています。ワークショップやセミナー、展示など、ローカルコミュニティのための活動の場を提供してきました。
@@ -73,12 +57,15 @@ Think Cityは、現在「2 HANG KASTURI」という名の建物を拠点とし�
 WUF9期間中は、この建物全体がフル稼働。地下は展示会場、1階は社会的企業によるソーシャル・エンタープライズ・マーケット、2階は24時間営業のコワーキングスペース＆カフェ、3階はインタラクティブな調査展示会場、4階は映画上映やトーク・ライブを行うシアターラウンジとして、都市における「包括的な体験の場」として機能しました。
 
 1. 市民による議論の場を用意する
+![](thinkcity10.jpg)
+![](thinkcity11.jpg)
 私が期間中連日参加していたのは、深夜12時までオープンしているルーフトップシアターラウンジ。連日ドキュメンタリー映画の上映と監督やプロデューサーによるトーク、各国の大学や文化機関によるトークを実施しており、WUF9のメイン会場とはまた異なる雰囲気の中で議論が交わされました。オープンでリラックスした場で、マレーシアの歴史やロヒンギャ難民の現状について学んだり、サイレント・マジョリティの声を聞くにはどうしたら良いか、都市における市民の権利とは何かといったトピックを議論したりしました。
 
 
-杉田が参加したドキュメンタリー映画の上映と監督によるトークの様子
-
 2. 地域のビジネスを支援する場を用意する：Social Enterprise Market
+
+![](thinkcity15.jpg)
+![](thinkcity16.jpg)
 
 インドネシアのジョグジャカルタで街おこしに挑戦する起業家のプレゼンテーション
 
@@ -94,6 +81,9 @@ WUF9期間中は、この建物全体がフル稼働。地下は展示会場、1
 
 ## Conclusion
 
-WUF9という大きな舞台において、様々なローカルコミュニティとゲスト双方に参加の場を提供したThink City。実験を地道に積み重ねていくという点でも、ロフトワークのShibuya Hack Projectの挑戦と非常に似た方向性を持っています。
+Research & Advocacy
+Content & Culture Curation
 
-さらにThink Cityは、自治体や地元コミュニティ、ステークホルダーとの関係作りを地道に行いながら、性格の違う東南アジアの他都市にも展開していたりと、挑戦的な実験を繰り返しています。他民族多宗教多言語のマレーシア。それぞれの文脈に気を使いながら、他国、他都市とも連携しながら展開していくやり方は、日本にはまだまだないモデルかもしれません。
+Think City that provided a place to participate in various local communities and guests on a big stage called WUF 9. Even in terms of accumulating experiments on a steady basis
+
+In addition, Think City repeatedly undergoes challenging experiments, while making the relationship with local governments, local communities, and stakeholders steadily while developing to other cities in Southeast Asia with different personality. Other ethnic multi-religion multilingual Malaysia. A way to develop in cooperation with other countries and other cities while worrying about each context may be a model that is not yet in Japan.
