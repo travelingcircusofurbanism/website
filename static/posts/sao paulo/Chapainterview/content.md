@@ -1,17 +1,11 @@
 
 # Interview — Kristine Stiphany, a founder/director of Chapa Urban Studio
 
-![](Stiphany-Kristine-orig.jpg)
-
 In February 2018 I attended the [World Urban Forum 9 (WUF9)](http://wuf9.org/) in Kuala Lumpur, Malaysia. It was a place to take part in an active exchange of ideas as well as the best urban practices in the world, and this is where I got to know about the project called [Chapa](www.chapa.io),which means "urban guide" in Portuguese).
 
 There was a session during WUF9 about citizen-sourced data and participatory technologies, organized in collaboration with the Latin American Housing Network (LAHN), based at the University of Texas at Austin, and Chapa, an urban laboratory for citizen-sourced data in São Paulo, Brazil. They have been gathering data through a large-scale household survey in São Paulo's informal communities.
 
 They had a great discussion about Big Data and citizen participation, uniquely forming connections between technology, participation, and housing production in the fields of public policy, urban planning, and architecture.
-
-![](chapa01.jpeg)
-<iframe src="https://player.vimeo.com/video/211732237?wmode=opaque&amp;api=1" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" frameborder="0" width="640" height="360" id="yui_3_17_2_1_1530051896926_73"></iframe>
-*Chapa: Research at the Intersection of Housing and Technology in Brazilian Informal Settlements*
 
 Few months later, I had the honor of meeting Kristine Stiphany, a founder and director of Chapa, in Lubbock, Texas, to get to know more about the project.
 
@@ -30,9 +24,6 @@ I was there for a year, and then I went to graduate school in architecture.
 ***During your presentation in WUF9, I understood that the idea of "informality" is one of the key themes of your research. Could you explain what informality means in this context?***
 
 **Stiphany:** Yes. A few years later I went back to São Paulo and lived in a neighborhood with a very small community of around 500-550 families, in the northeastern sector of São Paulo. Within that trajectory I started to focus on the *idea of informality*.
-
-![](chapa02.jpg)
-![](chapa03.jpg)
 
 **Stiphany:** I started studying this community by interviewing the residents in order to understand the built environment -- investigating from where they got their materials to construct their houses and their relationships with social networks.
 
