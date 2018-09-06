@@ -2,7 +2,6 @@ module.exports = {
 	public: false,
 	date: '8/23/2018',
 	category: 'interview',
-	image:'chapa02.jpg',
 	mapPosition: {
 		location: 'Sao Paulo',
 		bearing: 0,
