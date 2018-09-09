@@ -4,28 +4,51 @@
       <div class="content">
         <h1 v-if="error.statusCode === 404">We haven't traveled there yet!</h1>
         <h1 v-else>An error occurred</h1>
-        <br />
+        <!--<br />
         <div v-if="error.statusCode === 404">That page wasn't found, sorry.</div>
+        <br /> -->
+        <h4>You can go <a href="/">back to home</a>, <br />or you can check out this random post:</h4>
         <br />
-        <a href="/">Back to Home</a>
+        <div class="leftalign">
+          <PostList 
+            :posts="randomPosts"
+          />
+        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-  import Header from '~/components/Header'
+import PostList from '~/components/PostList'
+import axios from 'axios'
 
-  export default {
-    props: ['error'],
-    components: { Header },
-    computed: {
-    },
-    mounted() {
-    },
-    methods: {
+export default {
+  props: ['error'],
+  data () {
+    return {
+      randomPosts: [],
     }
+  },
+  components: { PostList, },
+  computed: {
+  },
+  async created () {
+    if (!process.browser) return
+    const axiosConfig = {
+      validateStatus: status => true,
+    }
+    axios.get('/generated/posts.json', axiosConfig)
+      .then(response => {
+        const posts = response.data
+          .filter(p => p.public)
+        this.randomPosts = [posts[Math.floor(Math.random() * posts.length)]]
+      })
+      .catch(e => console.log(e))
+  },
+  methods: {
   }
+}
 
 </script>
 
@@ -44,6 +67,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .leftalign {
+    text-align: left;
   }
 
   .master {
