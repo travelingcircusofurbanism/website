@@ -1,7 +1,8 @@
 module.exports = {
-	public: false,
-	date: '8/10/2018',
-	category: 'essey',
+	public: true,
+	date: '9/10/2018',
+	category: 'place',
+	image: 'komagatamaru4.jpg',
 	mapPosition: {
 		location: 'Komagata Maru Memorial',
 		bearing: 0,
