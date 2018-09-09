@@ -1,8 +1,6 @@
 
 # Event report: “Hack My City” — Connecting the Urban Scales from XS to XL
 
-
-
 In March 2018, some of my colleagues and I had an opportunity to invite some of the most prominent practitioners in the field of urban community planning in Japan to our one-day event “Hack my City”.
 
 The event was hosted by[ Shibuya Hack Project](http://shibuyahack.com/) and the theme of the day was “from XS to XL — the methodology of urban development to think across the scales”.
