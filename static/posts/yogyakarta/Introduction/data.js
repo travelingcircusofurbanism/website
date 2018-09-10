@@ -4,7 +4,7 @@ module.exports = {
 	category: 'intro',
 	mapPosition: [
 		{
-			location: 'Kotagede',
+			location: 'Great Mosque Kotagede Mataram',
 			bearing: 0,
 			center: [110.39812660000007, -7.8293251],
 			zoom: 12.00,
