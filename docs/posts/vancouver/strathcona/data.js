@@ -5,7 +5,7 @@ module.exports = {
 	mapPosition: {
 		location: 'Strathcona',
 		bearing: 0,
-		center: [-123.1649902, 49.2662234],
+		center: [-123.098061, 49.274719],
 		zoom: 12.00,
 		pitch: 0
 	}
