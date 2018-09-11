@@ -165,16 +165,14 @@ export default {
 
   mounted () {
     this.displayLanguage = this.content.en ? 'en' : 'ja'
-    this.$nextTick(() => {
-      if (!this.public && !this.isDev) {
-        this.$store.commit('setMapMarkers', this.allPosts)
-        console.log(this.userLanguage, this.public, this.isDev, this.allPosts.length, this.$store.state.mapMarkers[0])
-      }
-    })
     this.$store.commit('setView', this.mapPosition)
     this.$store.commit('setCity', this.city)
     this.$store.commit('setPan', false)
     this.$store.commit('setHighlight', this.mapPosition)
+    this.$nextTick(() => {
+      if (!this.public && !this.isDev)
+        this.$store.commit('setMapMarkers', this.allPosts)
+    })
   },
 
   beforeDestroy () {
