@@ -165,6 +165,7 @@ export default {
 
   mounted () {
     this.displayLanguage = this.content.en ? 'en' : 'ja'
+    console.log(this.public, this.isDev, this.allPosts.length)
     if (!this.public && !this.isDev)
       this.$store.commit('setMapMarkers', this.allPosts)
     this.$store.commit('setView', this.mapPosition)
