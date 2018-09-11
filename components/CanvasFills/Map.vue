@@ -34,9 +34,7 @@
         currentClusters: [],
         componentReady: false,
         styleReady: false,
-        clusterer: supercluster({
-          radius: 50,
-        }),
+        clusterer: supercluster({ radius: 50, }),
         limitZoomEvent: null,
         panTimer: null,
         panSpeed: 25,

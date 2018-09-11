@@ -72,11 +72,15 @@ export default () => {
       },
 
       setLanguage (state, lang) {
-        state.language = (lang.toLowerCase().indexOf('ja') !== -1) ? 'ja' : 'en'
+        const language = (lang.toLowerCase().indexOf('ja') !== -1) ? 'ja' : 'en'
+        const isDev = state.isDev
+        state.language = language
         state.mapMarkers = parseMapPositionObjectsFromAnything(
-          state.language === 'ja' ? 
-            state.allPublicPosts :
-            state.enPublicPosts
+          state[
+            (language === 'ja' ? 'all' : 'en') +
+            (isDev ? '' : 'Public') +
+            'Posts'
+          ]
         )
       },
       
@@ -102,9 +106,9 @@ export default () => {
     actions: {
       nuxtServerInit(context, { isStatic }) {
         const posts = require('~/static/generated/posts.json')
-        context.commit('setPosts', posts)
-        context.commit('setMapMarkers', posts.filter(p => p.public === true))
         context.commit('setDev', !isStatic)
+        context.commit('setPosts', posts)
+        context.commit('setMapMarkers', posts.filter(p => !isStatic || p.public === true))
       }
     }
   })
