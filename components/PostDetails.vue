@@ -1,19 +1,21 @@
 <template>
 	<p class="sub">
-		<nuxt-link :to="'/is/' + category.toLowerCase()" class="sublink">{{ capitalize(category) }}</nuxt-link> ・
+		<nuxt-link v-if="category" :to="'/is/' + category.toLowerCase()" class="sublink">{{ capitalize(category) }}</nuxt-link> ・
 		<span v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location">
 			<nuxt-link :to="'/at/' + mapPosition.location.toLowerCase()" class="sublink">{{ mapPosition.location }}</nuxt-link>{{ cityIsLocation ? ' ・ ' : ', '}}
 		</span>
-		<span v-if="!cityIsLocation">
-			<nuxt-link :to="'/' + city" class="sublink">{{ capitalize(city) }}</nuxt-link> ・
+		<span v-if="city && !cityIsLocation">
+			<nuxt-link :to="'/' + city" class="sublink">{{ capitalize(city) }}</nuxt-link>
 		</span>
-		{{
-			new Date(date)
-				.toLocaleDateString('en-US',
-					{ year: 'numeric', month: 'long', day: 'numeric' })
-		}}
+		<span v-if="date">
+			・ 
+			{{
+				new Date(date)
+					.toLocaleDateString('en-US',
+						{ year: 'numeric', month: 'long', day: 'numeric' })
+			}}
+		</span>
 	</p>
-  </div>
 </template>
 
 <script>
