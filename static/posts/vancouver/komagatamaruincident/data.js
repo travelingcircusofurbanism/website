@@ -6,7 +6,7 @@ module.exports = {
 	mapPosition: {
 		location: 'Komagata Maru Memorial',
 		bearing: 0,
-		center: [-123.16494489999998, 49.2661778],
+		center: [-123.119683, 49.289759],
 		zoom: 12.00,
 		pitch: 0
 	}
