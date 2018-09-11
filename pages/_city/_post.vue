@@ -122,6 +122,8 @@ export default {
     isDev () { return this.$store.state.isDev },
     isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
+    publicPosts () { return this.$store.state.enPublicPosts },
+    allPosts () { return this.$store.state.allPosts },
     contentToDisplay () {
       let contentToDisplay = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
       // remove title
@@ -163,6 +165,8 @@ export default {
 
   mounted () {
     this.displayLanguage = this.content.en ? 'en' : 'ja'
+    if (!this.public && !this.isDev)
+      this.$store.commit('setMapMarkers', this.allPosts)
     this.$store.commit('setView', this.mapPosition)
     this.$store.commit('setCity', this.city)
     this.$store.commit('setPan', false)
@@ -170,6 +174,8 @@ export default {
   },
 
   beforeDestroy () {
+    if (!this.public && !this.isDev)
+      this.$store.commit('setMapMarkers', this.publicPosts)
     this.$store.commit('setHighlight')
   },
 
