@@ -11,7 +11,7 @@
 ---
 
 ### Places to go, projects to check out
-- Kota Gede is an old town settlement area and the ex-Mataram Kingdom. Here, you can find an old mosque built on Mataram era, called [Great Mosque Kotagede Mataram](https://www.indonesia-tourism.com/forum/showthread.php?1480-The-Great-Mosque-of-Kotagede-Yogyakarta-Indonesia). There is a mix of many types of building here, such as local style, Kalang House, and Colonial style. Check out some workshop by a talented silversmith from [Selaka Kota Gede](https://www.airasiafoundation.com/social-enterprise/selaka-kotagede/) and take your chance to buy or (if you lucky) make a beautiful silver-craft by yourself.
+- Kota Gede is an old town settlement area and the former-Mataram Kingdom. Here, you can find an old mosque built in Mataram era, called [Great Mosque Kotagede Mataram](https://www.indonesia-tourism.com/forum/showthread.php?1480-The-Great-Mosque-of-Kotagede-Yogyakarta-Indonesia). There is a mix of many types of building here, from Kalang House to Colonial style. Check out some workshop by a talented silversmith from [Selaka Kota Gede](https://www.airasiafoundation.com/social-enterprise/selaka-kotagede/) and take your chance to buy or (if you lucky) make a beautiful silver-craft by yourself.
 
 - [Malioboro street](https://tourjogja.com/read/18/jalan-malioboro-the-24-hours-street.html) is a famous street market. Along this street, there are many old buildings and attractions also great for tourist.
 
