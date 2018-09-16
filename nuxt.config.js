@@ -36,28 +36,18 @@ module.exports = {
 
   loading: false,
 
-  // markdown module & settings
   modules: [
     '~/modules/postprep',
-    '@nuxtjs/markdownit',
     '@nuxtjs/feed',
     ['@nuxtjs/google-analytics', {
       id: 'UA-120224641-1'
     }]
   ],
 
-  markdownit: {
-    html: true,
-    linkify: true,
-    breaks: true,
-    typographer: true,
-    injected: true
-  },
-
   plugins: ['~/plugins/plugins'],
 
   build: {
-    watch: ['static/posts'],
+    watch: ['static/posts', 'components', 'pages', 'layouts', 'plugins', 'modules', 'nuxt.config.js'],
     styleResources: {
       scss: './assets/variables.scss',
     },

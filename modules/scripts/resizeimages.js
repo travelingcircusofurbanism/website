@@ -4,6 +4,7 @@ const { log } = require('../../assets/commonFunctions')
 
 const masterPostDir = process.cwd() + '/static/posts/'
 const fullSizeDir = 'full/'
+const generatedDir = 'generated/'
 const resizedDir = 'resized/'
 
 const defaultHeight = 500
@@ -21,16 +22,19 @@ module.exports = function () {
 					.filter(postDir => postDir.indexOf('.') === -1)
 					.forEach(postDir => {
 						postDir += '/'
-						// full size images are in /full, resized images are in /resized
+						// full size images are in /full, resized images are in /generated/resized
 						const inputPath = masterPostDir + cityDir + postDir + fullSizeDir
-						const outputPath = masterPostDir + cityDir + postDir + resizedDir
+						const generatedPath = masterPostDir + cityDir + postDir + generatedDir
+						const outputPath = generatedPath + resizedDir
 						if (!fs.existsSync(outputPath))
 							fs.mkdirSync(outputPath)
+						if (!fs.existsSync(generatedPath))
+							fs.mkdirSync(generatedPath)
 						if (!fs.existsSync(inputPath))
 							fs.mkdirSync(inputPath)
 
 						// look for existing resized images in the post directory
-						fs.readdir(masterPostDir + cityDir + postDir + resizedDir, (err, files) => {
+						fs.readdir(masterPostDir + cityDir + postDir + generatedDir + resizedDir, (err, files) => {
 							if (err) return console.log(err)
 							const existingImages = []
 							for (let file of files) {
@@ -55,7 +59,7 @@ module.exports = function () {
 												.max()
 												.toFile(outputPath + file)
 												.then(function () {
-													log('cyan', 'Resized and saved', cityDir + postDir + fullSizeDir + file)
+													log('cyan', ' Resized and saved', cityDir + postDir + fullSizeDir + file)
 												})
 												.catch(e => {
 													log('magenta', 'Our image processor had some trouble resizing the file at', inputPath + file + '. The full error details are:')
@@ -64,11 +68,11 @@ module.exports = function () {
 												})
 										}
 									}
-									// if the file isn't an image we can resize, just toss it in /resized anyway. (skips folders)
+									// if the file isn't an image we can resize, just toss it in /generated/resized anyway. (skips folders)
 									else if (file.indexOf('.') > 0) {
 										fs.copyFile(inputPath + file, outputPath + file, e => {
 											if (e) {
-												log('magenta', `For some reason, we couldn't copy`, inputPath + file ,`from /full to /resized. Here are the error details:`)
+												log('magenta', `For some reason, we couldn't copy`, inputPath + file ,`from /full to /generated/resized. Here are the error details:`)
 												console.log(e)
 												return log('magenta', 'Skipping this file for now.')
 											}

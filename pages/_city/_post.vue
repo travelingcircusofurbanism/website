@@ -37,11 +37,7 @@
       v-lazy-container="{ selector: 'img'}"
       class="markdown"
       ref="postcontent"
-      v-html="formatMarkdown(
-        $md.render(
-          contentToDisplay
-        )
-      )"
+      v-html="contentToDisplay"
     ></article>
 
     <RelatedArticles :city="city" :current="slug" />
@@ -142,7 +138,7 @@ export default {
     const contentPromises = []
     if (this.languages.en)
       contentPromises.push(
-        axios.get(this.path + 'content.md', axiosConfig)
+        axios.get(this.path + 'generated/html/content.html', axiosConfig)
           .then(response => {
             this.$set(this.content, 'en', response.data)
           })
@@ -150,7 +146,7 @@ export default {
       )
     if (this.languages.ja)
       contentPromises.push(
-        axios.get(this.path + 'ja.md', axiosConfig)
+        axios.get(this.path + 'generated/html/content.html', axiosConfig)
           .then(response => {
             this.$set(this.content, 'ja', response.data)
           })
@@ -195,67 +191,6 @@ export default {
     setLanguage (language) {
       this.displayLanguage = language
       this.$nextTick(this.addHighlightForLinks)
-    },
-
-    formatMarkdown (baseMD) {
-      if (!baseMD) return ''
-      let newMD = baseMD
-      // fix internal images
-      const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpe?g|png|gif|webm|svg)" ?(?:alt(?:="(.*)")?)?/gim
-      let matches = localImageElementRegex.exec(baseMD)
-      while (matches != null) {
-        const srcImagePath = encodeURI(`${ this.path }resized/${ matches[1] }.${ matches[2] }`)
-        const fullSizeImagePath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.path }full/${ matches[1] }.${ matches[2] }`)
-        const description = (matches[3] || '').replace('"', '\'')
-        const postPath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.url }`)
-        const imageTagToSwapIn = `
-          <img 
-            data-src="${ srcImagePath }"
-            ${ description ? 
-              `alt="${ description }"
-              data-pin-description="${ description }"`
-              : ''
-            }
-            data-pin-url="${ postPath }"
-            data-pin-media="${ fullSizeImagePath }"`
-        newMD = newMD.replace(matches[0], imageTagToSwapIn)
-        matches = localImageElementRegex.exec(baseMD)
-      }
-      // fix external images
-      const externalImageElementRegex = /<img src="((?:http|www\.).*(?:jpe?g|png|gif|webm|svg))" ?(?:alt(?:="(.*)")?)?/gim
-      matches = externalImageElementRegex.exec(baseMD)
-      while (matches != null) {
-        const srcImagePath = matches[1]
-        const description = (matches[2] || '').replace('"', '\'')
-        const postPath = encodeURI(`https://www.travelingcircusofurbanism.com${ this.url }`)
-        const imageTagToSwapIn = `
-          <img 
-            data-src="${ srcImagePath }"
-            ${ description ? 
-              `alt="${ description }"
-              data-pin-description="${ description }"`
-              : ''
-            }
-            data-pin-url="${ postPath }"
-            data-pin-media="${ srcImagePath }"`
-        console.log(imageTagToSwapIn)
-        newMD = newMD.replace(matches[0], imageTagToSwapIn)
-        matches = externalImageElementRegex.exec(baseMD)
-      }
-
-      // make external links open in new tab
-      newMD = newMD.replace(/<a href="([^"]*)">/g, 
-        (match, url) => {
-          const externalAttributes = url.indexOf('travelingcircusofurbanism.com') === -1 ?
-            'target="_blank" class="external"' : ''
-          return `<a ${ externalAttributes } href="${ url }">`
-        }
-      )
-      // add wrapper to videos
-      newMD = newMD.replace(/(<iframe.*<\/iframe>)/g, 
-        (match, iframe) => `<div class="video-wrapper">${iframe}</div>`
-      )
-      return newMD
     },
 
     addHighlightForLinks () {

@@ -47,7 +47,7 @@ module.exports = function () {
 
 				fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
 				fs.writeFileSync(generatedDir + '/locations.json', JSON.stringify(Array.from(allLocations)), 'utf8')
-				log('green', 'Generated post lists.\n')
+				log('green', ' Generated post data lists.\n')
 				resolve()
 			})
 		} catch (e) {
@@ -126,7 +126,7 @@ function getDataForPost(postDir, city, slug) {
 			else image = image[1]
 		}
 		if (image.length > 0 && image.substring(0, 4) !== 'http')
-			image = `/posts/${city}/${slug}/resized/${image.replace('/', '')}`
+			image = `/posts/${city}/${slug}/generated/resized/${image.replace('/', '')}`
 
 		const data = {
 			slug,

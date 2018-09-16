@@ -29,7 +29,7 @@ export default {
     isMobile () { return this.$store.state.isMobile },
     fullSizeSrc () {
      return this.src.indexOf('/') === 0 ?
-        this.src.replace('resized', 'full') :
+        this.src.replace('generated/resized', 'full') :
         this.src
     },
   },

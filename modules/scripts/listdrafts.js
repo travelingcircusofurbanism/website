@@ -27,7 +27,7 @@ module.exports = function () {
 							})
 						drafts = [].concat.apply([], drafts)
 						if (drafts.length) {
-							log('yellow', 'Drafts:')
+							log('yellow', ' Drafts:')
 							let lastCity = ''
 							drafts.forEach(d => {
 								const [path, city, title] = /.*\/([\w\d ]+)\/([\w\d ]+)$/gi.exec(d)
