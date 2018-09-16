@@ -4,7 +4,7 @@ const md = require('markdown-it')({
 	html: true,
 	linkify: true,
 	breaks: true,
-	typographer: true,
+	typographer: false,
 })
 
 const masterPostDir = process.cwd() + '/static/posts/'
@@ -27,10 +27,21 @@ module.exports = function () {
 					]
 					createDir(masterPostDir + cityDir + '/'  + postDir + generatedSubDir)
 					createOrWipeDir(masterPostDir + cityDir + '/' + postDir + generatedSubDir + htmlSubDir)
+
+					// grab english content for RSS
+					fs.readFile(markdownPaths[0], 'utf8', (err, markdown) => {
+						if (err) return
+						const generatedRSSHTML = formatMarkdownToRSSHTML(markdown, cityDir, postDir)
+						if (!generatedRSSHTML) return
+						const rssFileName = '/rssContent.html'
+						fs.writeFile(masterPostDir + cityDir + '/' + postDir + generatedSubDir + htmlSubDir + rssFileName, generatedRSSHTML, (err) => {})
+					})
+						
 					markdownPaths.forEach(markdownPath => {
 						fs.readFile(markdownPath, 'utf8', (err, markdown) => {
 							if (err) return
-							const generatedHTML = formatMarkdownToHTML(markdown, cityDir, postDir)
+
+							const generatedHTML = formatMarkdownToSiteHTML(markdown, cityDir, postDir)
 							if (!generatedHTML) return
 							const fileName = markdownPath.substring(markdownPath.lastIndexOf('/'), markdownPath.lastIndexOf('.')) + '.html'
 							fs.writeFile(masterPostDir + cityDir + '/' + postDir + generatedSubDir + htmlSubDir + fileName, generatedHTML, (err) => {})
@@ -40,12 +51,20 @@ module.exports = function () {
 		})
 }
 
-function formatMarkdownToHTML (baseMD, city, post) {
+function formatMarkdownToSiteHTML (baseMD, city, post) {
 	if (!baseMD) return
 	let generatedHTML = md.render(baseMD)
 	generatedHTML = fixImages(generatedHTML, city, post)
 	generatedHTML = fixLinks(generatedHTML)
 	generatedHTML = fixVideos(generatedHTML)
+	generatedHTML = removeExcessSpaces(generatedHTML)
+	return generatedHTML
+}
+
+function formatMarkdownToRSSHTML(baseMD, city, post) {
+	if (!baseMD) return
+	let generatedHTML = md.render(baseMD)
+	generatedHTML = fixImagesForRSS(generatedHTML, city, post)
 	generatedHTML = removeExcessSpaces(generatedHTML)
 	return generatedHTML
 }
@@ -107,14 +126,28 @@ function fixLinks (baseHTML) {
 
 function fixVideos (baseHTML) {
 	// add wrapper to videos
-	return baseHTML.replace(/(<iframe.*<\/iframe>)/g,
-		(match, iframe) => `<div class="video-wrapper">${iframe}</div>`
+	return baseHTML.replace(/<iframe.*<\/iframe>/g,
+		iframe => `<div class="video-wrapper">${iframe}</div>`
 	)
 }
 
 function removeExcessSpaces (baseHTML) {
 	return baseHTML.replace(/  /g, '')
 		.replace(/\n\n/g, '')
+}
+
+function fixImagesForRSS (baseHTML, city, post) {
+	let newHTML = baseHTML
+	const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpe?g|png|gif|webm|svg)" alt="([^>"]*)">/gim
+	let matches = localImageElementRegex.exec(baseHTML)
+	while (matches != null) {
+		const srcImagePath = encodeURI(`https://www.travelingcircusofurbanism.com/posts/${city}/${post}/generated/resized/${matches[1]}.${matches[2]}`)
+		const description = (matches[3] || '').replace(/<.*>/g, '').replace('"', '\'')
+		const imageTagToSwapIn = `<img alt="${ description }" src="${ srcImagePath }">`
+		newHTML = newHTML.replace(matches[0], imageTagToSwapIn)
+		matches = localImageElementRegex.exec(baseHTML)
+	}
+	return newHTML
 }
 
 function createDir (dir) {
@@ -124,7 +157,6 @@ function createDir (dir) {
 
 function createOrWipeDir (dir) {
 	createDir(dir)
-	// wipe the generated dir
 	fs.readdirSync(dir)
 		.forEach(file => {
 			fs.unlinkSync(dir + '/' + file)
@@ -132,7 +164,6 @@ function createOrWipeDir (dir) {
 }
 
 function wipeAndDeleteDir(dir) {
-	// wipe the generated dir
 	fs.readdirSync(dir)
 		.forEach(file => {
 			fs.unlinkSync(dir + '/' + file)

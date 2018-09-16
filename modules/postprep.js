@@ -3,7 +3,7 @@ const buildListing = require('./scripts/buildlisting')
 const listDrafts = require('./scripts/listdrafts')
 const transformMarkdown = require('./scripts/transformmarkdown')
 
-let timeBetweenUpkeeps = 2000
+const timeBetweenUpkeeps = 2000
 let timer
 
 module.exports = function postprep() {

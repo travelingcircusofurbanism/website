@@ -88,12 +88,12 @@ module.exports = {
 
         posts.forEach(post => {
           if (!post.public) return
+          const content = fs.readFileSync(`./static/posts/${ post.url }/generated/html/rssContent.html`)
           feed.addItem({
             title: post.title,
             id: post.url,
             link: `https://www.travelingcircusofurbanism.com${ post.url }`,
-            description: post.description,
-            content: '',
+            description: content,
             date: new Date(post.date),
             image: `https://www.travelingcircusofurbanism.com${ post.image }`
           })
@@ -110,7 +110,7 @@ module.exports = {
           link: 'https://www.travelingcircusofurbanism.com'
         })
       },
-      cacheTime: 1000 * 60 * 30, // How long should the feed be cached
+      cacheTime: 1000 * 60, // How long should the feed be cached, in ms
       type: 'rss2' // Can be: rss2, atom1, json1
     }
   ],
