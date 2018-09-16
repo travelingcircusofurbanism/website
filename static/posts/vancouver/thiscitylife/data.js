@@ -1,7 +1,7 @@
 module.exports = {
 	public: false,
 	date: '8/10/2018',
-	category: 'essey',
+	category: 'essay',
 	mapPosition: {
 		location: '',
 		bearing: 0,
