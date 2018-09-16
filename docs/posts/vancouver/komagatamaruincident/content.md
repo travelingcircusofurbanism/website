@@ -13,8 +13,7 @@ The Komagata Maru incident was one of the most notorious incidents in the histor
 
 Komagata Maru was a 55 steam liner - it arrived at Vancouver port with 376 passengers from Punjab, India, seeking to immigrate to Canada.
 
-Most of the passengers were not allowed to land in Canada and
-the ship was forced to return. It has been argued and recognized as the epitome of Canada's racist past. In the memorial, you can get a historical narrative of the incident, and imagine their despair with the cascading waves of Vancouver’s harbor.
+Most of the passengers were not allowed to land in Canada and the ship was forced to return. It has been argued and recognized as the epitome of Canada's racist past. In the memorial, you can get a historical narrative of the incident, and imagine their despair with the cascading waves of Vancouver’s harbor.
 
 ![](komagatamaru4.jpg)
 ![](komagatamaru5.jpg)
