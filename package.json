@@ -18,20 +18,20 @@
     "axios": "^0.18.0",
     "mapbox-gl": "^0.45.0",
     "markdown-it": "^8.4.2",
-    "node-sass": "^4.9.0",
-    "nodemon": "^1.17.5",
-    "nuxt": "^1.4.1",
-    "sass-loader": "^7.0.1",
-    "sharp": "^0.20.2",
-    "supercluster": "^4.0.1",
+    "node-sass": "^4.9.3",
+    "nodemon": "^1.18.4",
+    "nuxt": "^1.4.2",
+    "sass-loader": "^7.1.0",
+    "sharp": "^0.20.8",
+    "supercluster": "^4.1.1",
     "vue-loader": "^14.2.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.1",
+    "babel-eslint": "^8.2.6",
     "eslint": "^4.15.0",
     "eslint-friendly-formatter": "^3.0.0",
     "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.0.0",
+    "eslint-plugin-vue": "^4.7.1",
     "vue-lazyload": "^1.2.6"
   }
 }
