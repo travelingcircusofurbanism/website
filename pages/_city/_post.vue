@@ -122,10 +122,8 @@ export default {
     allPosts () { return this.$store.state.allPosts },
     contentToDisplay () {
       let contentToDisplay = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
-      // remove title
-      contentToDisplay = contentToDisplay.substring(contentToDisplay.indexOf('#'))
       this.$nextTick(this.addImageInteraction)
-      return contentToDisplay.substring(contentToDisplay.indexOf('\n'))
+      return contentToDisplay
     }
   },
 

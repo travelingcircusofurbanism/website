@@ -54,6 +54,7 @@ module.exports = function () {
 function formatMarkdownToSiteHTML (baseMD, city, post) {
 	if (!baseMD) return
 	let generatedHTML = md.render(baseMD)
+	generatedHTML = removeTitle(generatedHTML)
 	generatedHTML = fixImages(generatedHTML, city, post)
 	generatedHTML = fixLinks(generatedHTML)
 	generatedHTML = fixVideos(generatedHTML)
@@ -64,9 +65,15 @@ function formatMarkdownToSiteHTML (baseMD, city, post) {
 function formatMarkdownToRSSHTML(baseMD, city, post) {
 	if (!baseMD) return
 	let generatedHTML = md.render(baseMD)
+	generatedHTML = removeTitle(generatedHTML)
 	generatedHTML = fixImagesForRSS(generatedHTML, city, post)
 	generatedHTML = removeExcessSpaces(generatedHTML)
 	return generatedHTML
+}
+
+function removeTitle (baseHTML) {
+	const newHTML = baseHTML.substring(baseHTML.indexOf('<h1>'))
+	return newHTML.substring(newHTML.indexOf('\n'))
 }
 
 function fixImages (baseHTML, city, post) {
