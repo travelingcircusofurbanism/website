@@ -12,6 +12,7 @@ posts.map(p => {
 })
 
 module.exports = {
+
   head: {
     titleTemplate (titleChunk) {
       return (titleChunk ? titleChunk + ' | ' : '') + `Traveling Circus of Urbanism`
@@ -30,15 +31,21 @@ module.exports = {
     ],
     script: []
   },
+
   css: [ './assets/main.scss' ],
+
   loading: false,
+
   // markdown module & settings
   modules: [
+    '~/modules/postprep',
     '@nuxtjs/markdownit',
+    '@nuxtjs/feed',
     ['@nuxtjs/google-analytics', {
       id: 'UA-120224641-1'
     }]
   ],
+
   markdownit: {
     html: true,
     linkify: true,
@@ -46,8 +53,11 @@ module.exports = {
     typographer: true,
     injected: true
   },
+
   plugins: ['~/plugins/plugins'],
+
   build: {
+    watch: ['static/posts'],
     styleResources: {
       scss: './assets/variables.scss',
     },
@@ -57,6 +67,7 @@ module.exports = {
       config.module.noParse.push(/(mapbox-gl)\.js$/)
     }
   },
+
   generate: {
     dir: 'docs',
     fallback: "404.html",
@@ -66,5 +77,52 @@ module.exports = {
       ...locations.map(l => `/at/${l}`),
       ...categories.map(c => `/is/${c}`),
     ]
-  }
+  },
+
+  feed: [
+    {
+      path: '/feed.xml', // The route to your feed.
+      async create(feed) {
+        feed.options = {
+          title: 'Traveling Circus of Urbanism',
+          link: 'https://www.travelingcircusofurbanism.com/feed.xml',
+          description: 'Urban narratives and practices, collected through travel.',
+          image: "https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg",
+          favicon: "https://www.travelingcircusofurbanism.com/favicon.ico",
+          author: {
+            name: 'Mariko Sugita',
+            email: 'travelingcircusofurbanism@gmail.com',
+            link: 'https://www.travelingcircusofurbanism.com/author'
+          }
+        }
+
+        posts.forEach(post => {
+          if (!post.public) return
+          feed.addItem({
+            title: post.title,
+            id: post.url,
+            link: `https://www.travelingcircusofurbanism.com${ post.url }`,
+            description: post.description,
+            content: '',
+            date: new Date(post.date),
+            image: `https://www.travelingcircusofurbanism.com${ post.image }`
+          })
+        })
+
+        feed.addCategory('Urbanism')
+        feed.addCategory('Cities')
+        feed.addCategory('Design')
+        feed.addCategory('Travel')
+
+        feed.addContributor({
+          name: 'Mariko Sugita',
+          email: 'travelingcircusofurbanism@gmail.com',
+          link: 'https://www.travelingcircusofurbanism.com'
+        })
+      },
+      cacheTime: 1000 * 60 * 30, // How long should the feed be cached
+      type: 'rss2' // Can be: rss2, atom1, json1
+    }
+  ],
+
 }

@@ -1,27 +1,25 @@
 {
-  "name": "myfirstfunnuxtproject",
+  "name": "travelingcircusofurbanism",
   "version": "1.0.0",
   "description": "Nuxt.js project",
-  "author": "Mariko",
+  "author": "Mariko Sugita & Jasper Stephenson",
   "private": true,
   "scripts": {
-    "prep": "node ./scripts/postbot.js",
-    "dev": "npm run prep && nuxt",
-    "postbot": "nodemon ./scripts/postbot.js",
-    "pregolive": "git pull && npm run prep",
-    "golive": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "postgolive": "git add . && git commit -m \"Auto-pushing files to live\" && git push",
+    "analyze": "nuxt build -a",
+    "autopush": "git add . && git commit -m \"Auto-pushing files to live\" && git push",
+    "dev": "nuxt",
     "generate": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "analyze": "nuxt build -a"
+    "golive": "git pull && npm run generate && npm run autopush",
+    "prep": "node ./scripts/postbot.js"
   },
   "dependencies": {
+    "@nuxtjs/feed": "^0.1.1",
     "@nuxtjs/google-analytics": "^2.0.2",
     "@nuxtjs/markdownit": "^1.2.1",
     "axios": "^0.18.0",
     "mapbox-gl": "^0.45.0",
     "node-sass": "^4.9.0",
     "nodemon": "^1.17.5",
-    "npm": "^6.1.0",
     "nuxt": "^1.4.1",
     "sass-loader": "^7.0.1",
     "sharp": "^0.20.2",
@@ -35,15 +33,5 @@
     "eslint-loader": "^1.7.1",
     "eslint-plugin-vue": "^4.0.0",
     "vue-lazyload": "^1.2.6"
-  },
-  "nodemonConfig": {
-    "ignore": [
-      "*/resized/*"
-    ],
-    "watch": [
-      "static/posts",
-      "scripts"
-    ],
-    "ext": "jpg,jpeg,png,gif,webm,js,md"
   }
 }

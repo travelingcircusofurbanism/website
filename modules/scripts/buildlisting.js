@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { log, softTruncate } = require('../assets/commonFunctions')
+const { log, softTruncate } = require('../../assets/commonFunctions')
 
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
@@ -11,57 +11,68 @@ const generatedDir = process.cwd() + '/static/generated'
 const allLocations = new Set()
 
 module.exports = function () {
-	try {
-		if (!fs.existsSync(generatedDir))
-			fs.mkdirSync(generatedDir)
-		else // wipe the generated dir
-			fs.readdirSync(generatedDir)
-				.forEach(file => {
-					fs.unlinkSync(generatedDir + '/' + file)
-				})
+	return new Promise (resolve => {
+		try {
+			if (!fs.existsSync(generatedDir))
+				fs.mkdirSync(generatedDir)
+			else // wipe the generated dir
+				fs.readdirSync(generatedDir)
+					.forEach(file => {
+						fs.unlinkSync(generatedDir + '/' + file)
+					})
 
-		fs.readdir(postDir, (err, posts) => {
-			if (err) return log('magenta', err)
-			const allPostData = posts
-				.filter(pathName => pathName.indexOf('.') === -1)
-				.map(city => {
-					const cityDir = postDir + '/' + city
-					const cityFile = generatedDir + '/' + city.toLowerCase() + '.json'
-					const cityPostData = fs.readdirSync(cityDir)
-						.filter(pathName => pathName.indexOf('.') === -1)
-						.map(post => {
-							return getDataForPost(postDir, city, post)
-						})
-						.filter(d => d)
-						.sort((a, b) => new Date(a.date) < new Date(b.date))
-					fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
-					return cityPostData
-				})
-				.reduce((accumulator, currentValue) => {
-					return accumulator.concat(currentValue);
-				}, []
-				)
-				.filter(d => d)
-				.sort((a, b) => {
-					return new Date(b.date) - new Date(a.date)
-				})
+			fs.readdir(postDir, (err, posts) => {
+				if (err) return log('magenta', err)
+				const allPostData = posts
+					.filter(pathName => pathName.indexOf('.') === -1)
+					.map(city => {
+						const cityDir = postDir + '/' + city
+						const cityFile = generatedDir + '/' + city.toLowerCase() + '.json'
+						const cityPostData = fs.readdirSync(cityDir)
+							.filter(pathName => pathName.indexOf('.') === -1)
+							.map(post => getDataForPost(postDir, city, post))
+							.filter(d => d)
+							.sort((a, b) => new Date(a.date) < new Date(b.date))
+						fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
+						return cityPostData
+					})
+					.reduce((accumulator, currentValue) => {
+						return accumulator.concat(currentValue);
+					}, []
+					)
+					.filter(d => d)
+					.sort((a, b) => {
+						return new Date(b.date) - new Date(a.date)
+					})
 
-			fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
-			fs.writeFileSync(generatedDir + '/locations.json', JSON.stringify(Array.from(allLocations)), 'utf8')
-			log('green', 'Generated post lists.\n')
-		})
-	} catch (e) {
-		log('magenta', 'Uh oh, we failed in building out the post listings for your site. Error details are:')
-		console.log(e)
-		log('magenta', `We'd better fix this one before we do anything else. If it's something that should never break the site, let Jasper know and he'll make it so it never does again.`)
-	}
+				fs.writeFileSync(generatedDir + '/posts.json', JSON.stringify(allPostData), 'utf8')
+				fs.writeFileSync(generatedDir + '/locations.json', JSON.stringify(Array.from(allLocations)), 'utf8')
+				log('green', 'Generated post lists.\n')
+				resolve()
+			})
+		} catch (e) {
+			log('magenta', 'Uh oh, we failed in building out the post listings for your site. Error details are:')
+			console.log(e)
+			log('magenta', `We'd better fix this one before we do anything else. If it's something that should never break the site, let Jasper know and he'll make it so it never does again.`)
+			resolve()
+		}
+	})
 }
 
 function getDataForPost(postDir, city, slug) {
 	let jaContent, postData, enContent
-	try { postData = require(`${postDir}/${city}/${slug}/data.js`) } catch (e) { }
-	try { enContent = require(`${postDir}/${city}/${slug}/content.md`) } catch (e) { }
-	try { jaContent = require(`${postDir}/${city}/${slug}/ja.md`) } catch (e) { }
+	try {
+		delete require.cache[`${postDir}/${city}/${slug}/data.js`]
+		postData = require(`${postDir}/${city}/${slug}/data.js`)
+	} catch (e) { }
+	try {
+		delete require.cache[`${postDir}/${city}/${slug}/content.md`]
+		enContent = require(`${postDir}/${city}/${slug}/content.md`)
+	} catch (e) { }
+	try {
+		delete require.cache[`${postDir}/${city}/${slug}/ja.md`]
+		jaContent = require(`${postDir}/${city}/${slug}/ja.md`)
+	} catch (e) { }
 
 	try {
 		if (!postData || (!enContent && !jaContent)) return
@@ -98,7 +109,7 @@ function getDataForPost(postDir, city, slug) {
 			.replace('>', '') // remove > quotes
 			.replace(/\*/g, '') // remove * bolds
 			.replace('---', '') // remove <hr> lines
-			.replace(/\n/g, ' ') // remove line breaks
+			.replace(/[\n\r]/g, ' ') // remove line breaks
 			.replace(/^\s*/, '') // remove excess spaces at the start
 		description = softTruncate(description, enContent ? 200 : 70)
 
