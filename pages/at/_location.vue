@@ -36,11 +36,8 @@ export default {
   },
   components: { Footer, PostList, Breadcrumb, },
   asyncData ({ route, redirect, error, isStatic, store }) {
-    const location = route.path
+    const location = decodeURI(route.path)
       .replace('/at/', '')
-      .replace('/', '')
-      .replace('_', ' ')
-      .replace(/%20/g, ' ')
       .toLowerCase()
     let posts = isStatic ?
       store.state.allPublicPosts :

@@ -5,11 +5,17 @@
       <a href="mailto:travelingcircusofurbanism@gmail.com">Get in touch!</a>
     </p>
     <p class="images">
+      <a href="mailto:travelingcircusofurbanism@gmail.com">
+        <img src="~/assets/icons/email.svg" width="30px" height="30px" />
+      </a>
       <a href="https://twitter.com/tcurbanism" target="_blank">
-        <img src="~/assets/twitter.svg" width="30px" height="30px" />
+        <img src="~/assets/icons/twitter.svg" width="25px" height="25px" />
       </a>
       <a href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
-        <img src="~/assets/facebook.svg" width="30px" height="30px" />
+        <img src="~/assets/icons/facebook.svg" width="25px" height="25px" />
+      </a>
+      <a href="https://www.travelingcircusofurbanism.com/feed.xml" target="_blank">
+        <img src="~/assets/icons/rss.svg" width="25px" height="25px" />
       </a>
     </p>
   </div>
@@ -35,7 +41,13 @@
 
     .images {
       & > * {
+        opacity: .7;
         padding: 10px;
+        transition: all .2s;
+
+        &:hover {
+          opacity: 1;
+        }
       }
     }
   }

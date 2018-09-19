@@ -33,3 +33,14 @@ $header-offset: $unit * 5;
     @media (min-width: 1601px) { @content; }
   }
 }
+
+@mixin fade-to-color ($edge, $color) {
+  content: '';
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top:0;
+  left:0;
+  background-image: linear-gradient(to $edge, rgba($color ,0) 90%, $color 99.5%);
+}

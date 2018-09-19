@@ -20,7 +20,7 @@
         class="japanese-available"
         v-if="(userLanguage === 'ja' || isDev) && languages.ja"
       >
-        <img src="~/assets/japanFlag.svg" class="flag-icon" />
+        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
         <span class="sub">{{
           languages.en ? '日本語版あり' : '日本語での記事'
         }}</span>
