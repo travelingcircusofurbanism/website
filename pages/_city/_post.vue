@@ -199,7 +199,10 @@ export default {
             const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
             const foundLocation = this.mapPosition.find(p => p.location && elText === p.location.toLowerCase())
             if (foundLocation){
-              e.addEventListener('mouseover', () => this.doubleHighlight(foundLocation.location))
+              e.addEventListener('mouseover', () => {
+                this.doubleHighlight(foundLocation.location)
+                this.$store.commit('setView', foundLocation)
+              })
               e.addEventListener('mouseout', this.unDoubleHighlight)
             }
           })
