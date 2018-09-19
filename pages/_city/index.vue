@@ -44,10 +44,8 @@ export default {
   },
   components: { Footer, PostList, Breadcrumb, },
   asyncData ({ route, redirect, error, isStatic, store }) {
-    const city = route.path
+    const city = decodeURI(route.path)
       .replace(/\//g, '')
-      .replace(/_/g, ' ')
-      .replace(/%20/g, ' ')
       .toLowerCase()
     let posts = store.state.allPosts
       .filter(p => p.city.toLowerCase() === city)

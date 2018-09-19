@@ -10,9 +10,7 @@
       >
         <div 
           class="relatedimage"
-          :style="`
-            background-image: url('${post.image}');
-          `"
+          v-lazy:background-image="post.image"
         ></div>
         <div>{{ post.title }}</div>
       </nuxt-link>

@@ -213,7 +213,7 @@
 
       routeTo (location) {
         if (allLocations.includes(location.toLowerCase()))
-          this.$router.push('/at/' + location.toLowerCase().replace(' ', '%20'))
+          this.$router.push('/at/' + encodeURI(location).toLowerCase())
       },
 
       initializeMap (dest) {

@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isMobile" class="content-top-full">
+  <div v-if="!isMobile" class="breadcrumb content-top-full">
     <nuxt-link
       v-for="path, key in pathEls"
       :key="key"
@@ -45,7 +45,7 @@ export default {
       pathEls.push({
         label: this.title ? 
           this.softTruncate(this.capitalize(this.title), 70) :
-          `${ pagePrefix ? pagePrefix + ': ' : '' }${ this.capitalize(postSlash).replace('%20', ' ') }`,
+          `${ pagePrefix ? pagePrefix + ': ' : '' }${ this.capitalize(decodeURI(postSlash)) }`,
         url: `/${ path }`
       })
       return pathEls
@@ -58,12 +58,22 @@ export default {
 
 <style scoped lang="scss">
 
-.content-top-full {
+.breadcrumb {
   background: $shade;
   margin-bottom: $unit * 5;
   padding: 0;
-  width: 150%;
+  width: 50vw;
   white-space: nowrap;
+  position: relative;
+
+  & > * {
+    z-index: 1;
+  }
+
+  &:after {
+    @include fade-to-color(right, $shade);
+    z-index: 2;
+  }
 }
 
 .crumb {
@@ -115,8 +125,11 @@ export default {
   }
 
   &:hover::before {
-    background: white !important;
-    box-shadow: 0px 0 8px darken($shade, 5%) !important;
+    background: $shade !important;
+    height: 108%;
+    top: -4%;
+    z-index: 4;
+    box-shadow: 0px 2px 10px darken($shade, 20%) !important;
   }
 }
 </style>

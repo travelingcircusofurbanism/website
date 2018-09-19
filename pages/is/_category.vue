@@ -44,11 +44,8 @@ export default {
   },
   components: { Footer, PostList, Breadcrumb, },
   asyncData ({ route, redirect, error, isStatic, store }) {
-    const category = route.path
+    const category = decodeURI(route.path)
       .replace('/is/', '')
-      .replace('/', '')
-      .replace('_', ' ')
-      .replace('%20', ' ')
       .toLowerCase()
     let posts = isStatic ?
       store.state.allPublicPosts :

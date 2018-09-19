@@ -94,13 +94,13 @@ export default {
     orderedItems () {
       const typeFrequency = {}
       this.usablePosts.forEach(p => {
-        const typeName = p[this.type].toLowerCase()
+        const typeName = p[this.type.toLowerCase()].toLowerCase()
         if (this.hide && typeName === this.hide.toLowerCase()) return
         typeFrequency[typeName] = 
           (typeFrequency[typeName] ? typeFrequency[typeName] + 1 : 1)
       })
       return Object.keys(typeFrequency)
-        .sort((a, b) => typeFrequency[a] < typeFrequency[b])
+        .sort((a, b) => typeFrequency[b] - typeFrequency[a])
     },
     responsiveCutoff () {
       return parseInt(this.cutoff / (this.isMobile ? 1.5 : 1))
