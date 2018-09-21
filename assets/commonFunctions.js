@@ -1,4 +1,4 @@
-exports.capitalize = function (s) {
+const capitalize = function (s) {
 	if (!s) return ''
 	return s.split(' ')
 		.map(splitString =>
@@ -8,7 +8,7 @@ exports.capitalize = function (s) {
 		.join(' ')
 }
 
-exports.softTruncate = function (string, softLimit) {
+const softTruncate = function (string, softLimit) {
 	if (string.length > softLimit) {
 		const afterLimit = string.substring(softLimit)
 		let min = 0
@@ -33,7 +33,7 @@ exports.softTruncate = function (string, softLimit) {
 	return string
 }
 
-exports.log = function (color, ...args) {
+const log = function (color, ...args) {
 	const resetColor = '\x1b[0m'
 	const terminalColors = {
 		red: '\x1b[31m',
@@ -45,4 +45,10 @@ exports.log = function (color, ...args) {
 		white: '\x1b[37m',
 	}
 	console.log((terminalColors[color] || terminalColors.green), ...args, resetColor)
+}
+
+module.exports = {
+	capitalize,
+	softTruncate,
+	log,
 }

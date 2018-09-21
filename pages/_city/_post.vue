@@ -66,7 +66,13 @@ export default {
         { hid: `og:description`, property: 'og:description', content: this.description },
         { property: 'description', content: this.description, hid: `description` },
         { property: 'og:url', content: `https://www.travelingcircusofurbanism.com${ this.rawPath }` },
-        { hid: `og:image`, property: 'og:image', content: `https://www.travelingcircusofurbanism.com${ this.image ? encodeURI(this.image) : '' }` },
+        { hid: `og:image`, property: 'og:image', content: 
+          this.image ? // does it have an image?
+            this.image.substring(0, 4) === 'http' ? // is it external?
+              this.image : // if so, use it
+              `https://www.travelingcircusofurbanism.com${ encodeURI(this.image) }` : // otherwise, give it a prefix
+            'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg' // fallback to the site thumbnail.
+         },
       ],
       // script: [
       //   { src: '/assets/pinit.js', defer: true, async: true, "data-pin-hover":"true", "data-pin-round":"true" }

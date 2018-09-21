@@ -52,7 +52,9 @@ module.exports = {
       scss: './assets/variables.scss',
     },
     extend (config) {
-      if (!Array.isArray(config.module.noParse))
+      if (!config.module.noParse)
+        config.module.noParse = []
+      else if (!Array.isArray(config.module.noParse))
         config.module.noParse = [config.module.noParse]
       config.module.noParse.push(/(mapbox-gl)\.js$/)
     }
