@@ -1,26 +1,26 @@
 module.exports = {
-	public: false,
-	date: '9/14/2018',
+	public: true,
+	date: '9/23/2018',
 	category: 'intro',
 	mapPosition: [
 		{
-			location: '',
+			location: 'Waterfront Toronto',
 			bearing: 0,
-			center: [77.20902120000005, 28.6139391],
+			center: [-79.377889, 43.641951],
 			zoom: 12.00,
 			pitch: 0 
 		},
 		{
-			location: '',
+			location: 'The Bentway',
 			bearing: 0,
-			center: [16.390524700000014, 48.2065869],
+			center: [-79.406657, 43.637711],
 			zoom: 12.00,
 			pitch: 0
 		},
 		{
-			location: '',
+			location: 'The Canadian Urban Institute',
 			bearing: 0,
-			center: [16.365603100000044, 48.2516684],
+			center: [-79.389269, 43.651531],
 			zoom: 12.00,
 			pitch: 0
 		},
