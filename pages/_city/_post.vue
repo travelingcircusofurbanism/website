@@ -126,13 +126,13 @@ export default {
     publicPosts () { return this.$store.state.enPublicPosts },
     allPosts () { return this.$store.state.allPosts },
     contentInRightLanguage () {
-      let contentInRightLanguage = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
+      const contentInRightLanguage = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
       return contentInRightLanguage
     },
     contentToDisplay () {
+      const contentToDisplay = this.highlightLocationText(this.contentInRightLanguage)
       this.$nextTick(this.addImageInteraction)
       this.$nextTick(this.addMapMoveOnHighlightTextHover)
-      let contentToDisplay = this.highlightLocationText(this.contentInRightLanguage)
       return contentToDisplay
     },
   },
@@ -206,11 +206,9 @@ export default {
       let newContent = this.contentInRightLanguage
       this.mapPosition.map(positionObject => positionObject.location)
         .forEach(location => {
-          const locationRegex = new RegExp(`(${location})`, 'gi')
-          newContent = newContent.replace(
-            locationRegex,
-            `<span class="highlight">${location}</span>`
-          )
+          const locationRegex = new RegExp(`${location}`, 'gi')
+          newContent = newContent.split(locationRegex)
+            .join(`<span class="highlight">${location}</span>`)
         })
       return newContent
     },
