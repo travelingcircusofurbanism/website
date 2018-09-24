@@ -6,7 +6,7 @@ const transformMarkdown = require('./scripts/transformmarkdown')
 const timeBetweenUpkeeps = 2000
 let timer
 
-module.exports = function postprep() {
+module.exports = function () {
 	this.nuxt.hook('build:templates', upkeep)
 }
 

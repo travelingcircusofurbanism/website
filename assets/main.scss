@@ -229,6 +229,17 @@ h4 {
 		padding-right: 16px;
 		margin-right: 2px;
 	}
+
+	*.highlight {
+		padding: $unit * .5;
+		background: rgba($active, .12);
+		transition: all .1s;
+
+		&:hover {
+			color: white !important;
+			background: $highlight;
+		}
+	}
 }
 
 .button {
@@ -317,7 +328,7 @@ h4 {
 	z-index: 100;
 	display: inline-block;
 	position: absolute;
-	font-size: 1.2em;
+	font-size: 1.1em;
 
 	@include width(mobile) {
 		font-size: 1em;
@@ -331,14 +342,14 @@ h4 {
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center center;
-		transition: width .2s, height .2s, background-color .2s;
+		// transition: width .2s, height .2s, background-color .2s;
 	}
 
 	.text {
 		display: block;
 		position: absolute;
 		left: 50%;
-		top: $unit * -5;
+		top: $unit * -4.5;
 		padding-bottom: $unit * 2;
 		transform: translateX(-50%);
 		white-space: nowrap;
@@ -352,7 +363,7 @@ h4 {
 			-2px 0 12px $shadow;
 		font-weight: 600;
 		letter-spacing: .8px;
-		transition: color .2s;
+		// transition: color .2s;
 
 		@include width(mobile) {
 			top: $unit * -4;
@@ -371,8 +382,8 @@ h4 {
 		}
 		.pin {
 			background-color: $activelight;
-			width: $unit * 8;
-			height: $unit * 8;
+			width: $unit * 6.5;
+			height: $unit * 6.5;
 		}
 	}
 
@@ -391,11 +402,11 @@ h4 {
 
 .cluster {
 	.text {
-		transform: translateX(-50%) translateY(30%);
+		transform: translateX(-50%) translateY(35%);
 		color: $text;
 		text-shadow: none;
 		z-index: 2;
-		transition: all .1s;
+		// transition: all .1s;
 		top: $unit * -5;
 
 		@include width(mobile) {
@@ -418,14 +429,14 @@ h4 {
 			color: white;
 		}
 		.pin {
-			width: $unit * 10;
-			height: $unit * 10;
+			width: $unit * 9;
+			height: $unit * 9;
 		}
 	}
 
 	&.doublehighlight, &.highlight:hover, &.doublehighlight:hover {
 		.text {
-			color: black;
+			color: white;
 		}
 	}
 }

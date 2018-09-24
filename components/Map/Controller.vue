@@ -1,0 +1,156 @@
+<template></template>
+<script>
+export default {
+  props: {
+    mapboxgl: {
+      type: Object,
+      required: true
+    },
+    map: {
+      type: Object,
+      required: true
+    },
+    markers: {
+      type: Array,
+      required: true
+    },
+  },
+
+  data () {
+    return {
+			panTimer: null,
+			panSpeed: 25,
+      defaultPosition: {
+				bearing: 0,
+				center: [-130, 30],
+				zoom: 1.5,
+				pitch: 0,
+				speed: 2,
+			},
+    }
+  },
+
+  computed: {
+		panMap () { return this.$store.state.panMap },
+
+		// currentView comes in as an array of mapPosition objects.
+		currentView () { return this.$store.state.currentView },
+
+		// this filters us down to unique named places and their location data
+		uniqueViewLocations () { return this.getUniqueLocations(this.currentView) },
+
+		// get a good single point object, zoom and all
+		mapPosition () {
+			if (!this.currentView || Object.keys(this.currentView).length === 0)
+				return this.defaultPosition
+			return this.currentView[0]
+		},
+
+		// find the best fit box for our map
+		mapZone () {
+			if (!this.uniqueViewLocations || Object.keys(this.uniqueViewLocations).length <= 1) return
+			let top = -90,
+					right = -180,
+					bottom = 90,
+					left = 180
+			for (let marker of Object.values(this.uniqueViewLocations)) {
+				const c = marker[0].center
+				if (c[1] > top) top = c[1] // max y
+				if (c[0] > right) right = c[0] // max x
+				if (c[1] < bottom) bottom = c[1] // min y
+				if (c[0] < left) left = c[0] // min x
+			}
+
+			// check for very zoomed out view (homepage), and focus on fitting y values instead.
+			// this is to stop the map from zooming out so far that it shows antarctica, etc.
+			const xDifference = Math.abs(right - left)
+			if (xDifference > 100) {
+				const randomMarkerXValue = Object.values(this.uniqueViewLocations)[
+						Math.floor(
+							Math.random() * Object.values(this.uniqueViewLocations).length
+						)
+					][0].center[0]
+				right = randomMarkerXValue + 1
+				left = randomMarkerXValue - 1
+			}
+
+			return [[left, bottom], [right, top]]
+		},
+    
+  },
+
+	watch: {
+		mapPosition () {
+			this.updateMap()
+		},
+
+		panMap (shouldPan) {
+			this.setPan(shouldPan)
+		},
+
+	},
+
+	mounted () {
+    this.map.on('mousedown', () => this.setPan(false))
+    this.map.on('touchstart', () => this.setPan(false))
+    this.map.on('wheel', () => this.setPan(false))
+		this.updateMap()
+		this.setPan(this.panMap)
+	},
+
+  methods: {
+		updateMap () {
+			const dest = {}
+			for (let key of Object.keys(this.defaultPosition))
+				dest[key] = this.mapPosition[key] || this.defaultPosition[key]
+
+			// data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
+			if (this.mapZone) {
+				// console.log('fitting to', ...this.mapZone)
+				const padding = {
+					top: this.isMobile ? 70 : 300,
+					left: this.isMobile ? 60 : 150,
+					right: this.isMobile ? 60 : 150,
+					bottom: this.isMobile ? 50 : 150,
+				}
+				this.map.fitBounds(this.mapZone, {
+					padding,
+				})
+			}
+			else {
+				this.map.flyTo(dest)
+				// console.log('flying to', dest)
+			}
+		},
+
+    getUniqueLocations (positionDatas) {
+			const uniqueLocations = {}
+			for (let positionData of positionDatas) {
+				if (!positionData.location) continue
+				const location = positionData.location.toLowerCase()
+				if (!uniqueLocations[location])
+					uniqueLocations[location] = []
+				uniqueLocations[location].push(positionData)
+			}
+			return uniqueLocations
+		},
+
+    setPan (shouldPan) {
+      clearInterval(this.panTimer)
+      if (!this.map.isZooming()) this.map.stop()
+      if (!shouldPan || !this.map) return
+
+      const duration = 1000
+      const panMap = () => {
+        if (this.map.isZooming()) return
+        this.map.panBy([this.panSpeed, 0], {
+            easing: t => t,
+            duration: duration
+        })
+      }
+      panMap()
+      this.panTimer = setInterval(panMap, duration)
+    },
+  }
+}
+</script>

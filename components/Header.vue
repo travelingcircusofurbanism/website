@@ -1,6 +1,11 @@
 <template>
   <div id="header" :class="{hide: scrollDirection === 'down'}">
-    <nuxt-link exact to="/" class="logo">
+    <nuxt-link 
+      exact
+      to="/"
+      class="logo"
+      @click.native="resetView"
+    >
       <h1>Traveling Circus of Urbanism</h1>
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
@@ -37,7 +42,12 @@ export default {
   },
   mounted () {},
   methods: {
-    capitalize
+    capitalize,
+    resetView () {
+      this.$store.commit('setView', this.$store.state.allPublicPosts)
+      this.$store.commit('setPan', false)
+      this.$nextTick(() => this.$store.commit('setPan', true))
+    },
   }
 }
 

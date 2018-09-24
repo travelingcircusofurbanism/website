@@ -134,7 +134,7 @@ function parseLocationNames(source) {
       positionOrLocation.location ||
       (positionOrLocation instanceof String || typeof positionOrLocation === 'string' ? positionOrLocation : null)
     )
-    .filter(locationName => locationName)
+    // .filter(locationName => locationName)
   // then return only unique names
   return Array.from(new Set(source))
 }

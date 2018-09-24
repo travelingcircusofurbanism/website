@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import Map from '~/components/CanvasFills/Map'
+import Map from '~/components/Map/Map'
 
 export default {
   components: { Map, },

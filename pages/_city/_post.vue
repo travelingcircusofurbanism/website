@@ -125,11 +125,16 @@ export default {
     userLanguage () { return this.$store.state.language },
     publicPosts () { return this.$store.state.enPublicPosts },
     allPosts () { return this.$store.state.allPosts },
+    contentInRightLanguage () {
+      let contentInRightLanguage = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
+      return contentInRightLanguage
+    },
     contentToDisplay () {
-      let contentToDisplay = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
       this.$nextTick(this.addImageInteraction)
+      this.$nextTick(this.addMapMoveOnHighlightTextHover)
+      let contentToDisplay = this.highlightLocationText(this.contentInRightLanguage)
       return contentToDisplay
-    }
+    },
   },
 
   async created () {
@@ -193,25 +198,37 @@ export default {
 
     setLanguage (language) {
       this.displayLanguage = language
-      this.$nextTick(this.addHighlightForLinks)
     },
 
-    addHighlightForLinks () {
-      if (!Array.isArray(this.mapPosition)) return
-      this.$nextTick(() => {
-        this.$refs.postcontent.querySelectorAll('a')
-          .forEach(e => {
-            const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
-            const foundLocation = this.mapPosition.find(p => p.location && elText === p.location.toLowerCase())
-            if (foundLocation){
-              e.addEventListener('mouseover', () => {
-                this.doubleHighlight(foundLocation.location)
-                this.$store.commit('setView', foundLocation)
-              })
-              e.addEventListener('mouseout', this.unDoubleHighlight)
-            }
-          })
-      })
+    highlightLocationText () {
+      if (!Array.isArray(this.mapPosition) || this.mapPosition.length === 1 || this.isMobile)
+        return this.contentInRightLanguage
+      let newContent = this.contentInRightLanguage
+      this.mapPosition.map(positionObject => positionObject.location)
+        .forEach(location => {
+          const locationRegex = new RegExp(`(${location})`, 'gi')
+          newContent = newContent.replace(
+            locationRegex,
+            `<span class="highlight">${location}</span>`
+          )
+        })
+      return newContent
+    },
+
+    addMapMoveOnHighlightTextHover () {
+      if (!Array.isArray(this.mapPosition) || this.mapPosition.length === 1 || this.isMobile || !this.$refs || !this.$refs.postcontent) return
+      this.$refs.postcontent.querySelectorAll('.highlight')
+        .forEach(e => {
+          const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
+          const foundLocation = this.mapPosition.find(p => p.location && elText === p.location.toLowerCase())
+          if (foundLocation) {
+            e.addEventListener('mouseover', () => {
+              this.doubleHighlight(foundLocation.location)
+              this.$store.commit('setView', foundLocation)
+            })
+            e.addEventListener('mouseout', this.unDoubleHighlight)
+          }
+        })
     },
 
     addImageInteraction () {
