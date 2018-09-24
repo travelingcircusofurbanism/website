@@ -25,13 +25,14 @@ export default {
   },
   computed: {
     isMobile () { return this.$store.state.isMobile },
-    currentCity () { return this.$store.state.currentCity },
+    // currentCity () { return this.$store.state.currentCity },
     pathEls () {
       const path = this.$nuxt.$route.path.substring(1)
       const pathEls = [{
         label: 'Home',
         url: '/'
       }]
+
       let preSlash = path.substring(0, path.indexOf('/'))
       let postSlash = path.substring(path.indexOf('/') + 1)
       let pagePrefix = ''
@@ -39,8 +40,8 @@ export default {
         pagePrefix = preSlash
       else if (preSlash !== '')
         pathEls.push({
-          label: this.capitalize(this.currentCity),
-          url: `/${ this.currentCity }`
+          label: this.capitalize(decodeURI(preSlash)),
+          url: `/${ preSlash }`
         })
       pathEls.push({
         label: this.title ? 
