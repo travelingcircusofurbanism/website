@@ -1,10 +1,16 @@
+const dontCapitalize = [
+	'a', 'an', 'the',
+	'but', 'or', 'for', 'nor',
+	'on', 'at', 'to', 'from', 'by'
+]
 const capitalize = function (s) {
 	if (!s) return ''
 	return s.split(' ')
-		.map(splitString =>
-			splitString.substring(0, 1).toUpperCase() +
-			splitString.substring(1)
-		)
+		.map((splitString, index) => {
+			if (index !== 0 && dontCapitalize.includes(splitString))
+				return splitString
+			return splitString.substring(0, 1).toUpperCase() + splitString.substring(1)
+		})
 		.join(' ')
 }
 
