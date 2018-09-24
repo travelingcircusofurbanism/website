@@ -206,6 +206,7 @@ export default {
       let newContent = this.contentInRightLanguage
       this.mapPosition.map(positionObject => positionObject.location)
         .forEach(location => {
+          if (location.length < 2) return
           const locationRegex = new RegExp(`${location}`, 'gi')
           newContent = newContent.split(locationRegex)
             .join(`<span class="highlight">${location}</span>`)
