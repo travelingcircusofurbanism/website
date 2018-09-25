@@ -31,6 +31,7 @@ export default {
   },
 
   computed: {
+		isMobile () { return this.$store.state.isMobile },
 		panMap () { return this.$store.state.panMap },
 
 		// currentView comes in as an array of mapPosition objects.
@@ -109,8 +110,8 @@ export default {
 				// console.log('fitting to', ...this.mapZone)
 				const padding = {
 					top: this.isMobile ? 70 : 300,
-					left: this.isMobile ? 60 : 150,
-					right: this.isMobile ? 60 : 150,
+					left: this.isMobile ? 70 : 150,
+					right: this.isMobile ? 70 : 150,
 					bottom: this.isMobile ? 50 : 150,
 				}
 				this.map.fitBounds(this.mapZone, {
