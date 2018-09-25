@@ -28,6 +28,8 @@ My Favorite:
 
 6. [Streetblog SF](https://sf.streetsblog.org/), a daily news source connecting people to information about sustainable transportation and livable communities.
 
+7. Read [Cool Gray City of Love: 49 Views of San Francisco](https://www.amazon.com/Cool-Gray-City-Love-Francisco/dp/1608199606), a book with personal insights, history, reporting and analysis that portraits San Francisco.
+
 ### Organization
 
 7. [Walk San Francisco](http://walksf.org/) is SF's only pedestrian advocacy organization to make the city more livable, walkable.
