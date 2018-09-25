@@ -1,16 +1,5 @@
 const fs = require('fs')
 
-const cities = fs.readdirSync('./static/posts')
-  .filter(c => c.indexOf('.') !== 0)
-const posts = require('./static/generated/posts.json')
-const locations = require('./static/generated/locations.json')
-let categories = []
-posts.map(p => {
-  // find categories
-  if (categories.indexOf(p.category.toLowerCase()) === -1)
-    categories.push(p.category.toLowerCase())
-})
-
 module.exports = {
 
   head: {
@@ -63,12 +52,24 @@ module.exports = {
   generate: {
     dir: 'docs',
     fallback: "404.html",
-    routes: () => [
-      ...cities.map(c => `/${c}`),
-      ...posts.map(p => `/${p.city}/${p.slug}`),
-      ...locations.map(l => `/at/${l}`),
-      ...categories.map(c => `/is/${c}`),
-    ]
+    routes: () => {
+      const cities = fs.readdirSync('./static/posts')
+        .filter(c => c.indexOf('.') !== 0)
+      const posts = require('./static/generated/posts.json')
+      const locations = require('./static/generated/locations.json')
+      let categories = []
+      posts.map(p => {
+        // find categories
+        if (categories.indexOf(p.category.toLowerCase()) === -1)
+          categories.push(p.category.toLowerCase())
+      })
+      return [
+        ...cities.map(c => `/${c}`),
+        ...posts.map(p => `/${p.city}/${p.slug}`),
+        ...locations.map(l => `/at/${l}`),
+        ...categories.map(c => `/is/${c}`),
+      ]
+    }
   },
 
   feed: [
@@ -88,6 +89,7 @@ module.exports = {
           }
         }
 
+        const posts = require('./static/generated/posts.json')
         posts.forEach(post => {
           if (!post.public) return
           const content = fs.readFileSync(`./static/posts/${ post.url }/generated/html/rssContent.html`)
