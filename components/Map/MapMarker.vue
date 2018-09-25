@@ -99,8 +99,21 @@ export default {
       pinElement.className = 'pin'
       const textBoxElement = document.createElement('div')
       textBoxElement.className = 'text'
-      const textElement = document.createTextNode(this.markerData.properties.location || this.markerData.properties.point_count_abbreviated)
-      textBoxElement.appendChild(textElement)
+      const textElements = []
+      if (this.isCluster) {
+        textElements.push(document.createTextNode(this.markerData.properties.point_count_abbreviated))
+      }
+      else {
+        const lines = this.softSplitStringEveryXCharacters(this.markerData.properties.location, 8)
+        lines.forEach(string => {
+          const newDiv = document.createElement('div')
+          newDiv.appendChild(document.createTextNode(string))
+          textElements.push(newDiv)
+        })
+      }
+      textElements.forEach(el => 
+        textBoxElement.appendChild(el)
+      )
       this.markerElement.appendChild(textBoxElement)
       this.markerElement.appendChild(pinElement)
       this.markerElement.addEventListener('click', e => {
@@ -153,6 +166,20 @@ export default {
         zoom: this.clusterer.getClusterExpansionZoom(this.markerData.properties.cluster_id) + .8
       })
     },
+
+    softSplitStringEveryXCharacters (string, characterCount) {
+      let newStrings = []
+      let prevCutoff = 0, currCutoff = 0
+      while (currCutoff <= string.length) {
+        if ((string.charAt(currCutoff) === ' ' && currCutoff - prevCutoff >= characterCount) ||
+          (currCutoff === string.length)) {
+          newStrings.push(string.substring(prevCutoff, currCutoff))
+          prevCutoff = currCutoff + 1
+        }
+        currCutoff ++
+      }
+      return newStrings
+    }
   }
 }
 </script>

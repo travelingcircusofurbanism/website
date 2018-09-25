@@ -32,7 +32,7 @@ export default {
 			mapboxgl: null,
 			map: null,
 			clusterer: supercluster({
-        radius: 50,
+        radius: 60,
         maxZoom: 15,
       }),
       markers: [],

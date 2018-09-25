@@ -329,12 +329,14 @@ h4 {
 	display: inline-block;
 	position: absolute;
 	font-size: 1.1em;
+	pointer-events: none;
 
 	@include width(mobile) {
 		font-size: 1em;
 	}
 
 	.pin {
+		pointer-events: auto;
 		width: $unit * 6;
 		height: $unit * 6;
 		background-color: white;
@@ -342,20 +344,20 @@ h4 {
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center center;
+		margin: 0 auto;
 		// transition: width .2s, height .2s, background-color .2s;
 	}
 
 	.text {
-		display: block;
-		position: absolute;
+		pointer-events: auto;
+		margin: 0 auto;
+		position: relative;
 		left: 50%;
-		width: $unit * 25;
+		max-width: $unit * 25;
 		line-height: 1;
 		top: $unit * -4.5;
 		text-align: center;
-		// padding-bottom: $unit * 2;
-		transform: translateX(-50%) translateY(-100%) translateY($unit * 3.5);
-		// white-space: nowrap;
+		transform: translateX(-50%) translateY($unit * 3.5);
 		color: white;
 		$shadow: rgba($text, .3);
 		text-shadow:
@@ -385,8 +387,8 @@ h4 {
 		}
 		.pin {
 			background-color: $activelight;
-			width: $unit * 6.5;
-			height: $unit * 6.5;
+			// width: $unit * 6.5;
+			// height: $unit * 6.5;
 		}
 	}
 
@@ -404,13 +406,18 @@ h4 {
 }
 
 .cluster {
+	position: relative;
+	top: $unit * -7;
+
 	.text {
-		transform: translateX(-50%) translateY(35%);
+		position: absolute;
+		transform: translateX(-50%);
 		color: $text;
 		text-shadow: none;
 		z-index: 2;
 		// transition: all .1s;
-		top: $unit * -3;
+		top: 0;
+		left: 0;
 		width: auto;
 
 		@include width(mobile) {
@@ -422,7 +429,8 @@ h4 {
 		position: absolute;
 		top: 0;
 		left: 0;
-		transform: translateX(-50%) translateY(-50%);
+		transform: none;
+		transform: translateX(-50%) translateY(-28%);
 		width: $unit * 8;
 		height: $unit * 8;
 		mask-image: url('~/assets/cluster.svg');
