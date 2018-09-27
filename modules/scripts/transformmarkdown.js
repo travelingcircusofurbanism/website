@@ -88,17 +88,15 @@ function fixImages (baseHTML, city, post) {
 		const fullSizeImagePath = encodeURI(`https://www.travelingcircusofurbanism.com/posts/${city}/${post}/full/${matches[1]}.${matches[2]}`)
 		const description = (matches[3] || '').replace(/<.*>/g, '').replace('"', '\'')
 		const postPath = encodeURI(`https://www.travelingcircusofurbanism.com/${city}/${post}`)
-		const imageTagToSwapIn = `
-					<img 
-						${ first ? 
+		const imageTagToSwapIn = `<img ${ 
+						first ? 
 							`src="${ srcImagePath }"` :
 							`data-loading="${ loaderImagePath }" data-src="${ srcImagePath }"`
-						}
-						${ description ?
+						}${ 
+						description ?
 							`alt="${description}" data-pin-description="${ description }"`
 							: ''
-						}
-            data-pin-url="${ postPath }"
+						} data-pin-url="${ postPath }"
             data-pin-media="${ fullSizeImagePath }">`
 		newHTML = newHTML.replace(matches[0], imageTagToSwapIn)
 		matches = localImageElementRegex.exec(baseHTML)
