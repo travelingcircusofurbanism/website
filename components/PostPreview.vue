@@ -6,7 +6,10 @@
 
     <nuxt-link :to="url">
       <div
-        v-lazy:background-image="image"
+        v-lazy:background-image="{
+          src: image,
+          loading: loader,
+        }"
         class="previewimage"
       ></div>
     </nuxt-link>
@@ -54,6 +57,11 @@ export default {
     isDev () { return this.$store.state.isDev },
     isMobile () { return this.$store.state.isMobile },
     userLanguage () { return this.$store.state.language },
+    loader () {
+      return this.image.includes('generated/resized/') ?
+        this.image.replace('/resized', '/resized/loader') :
+        undefined
+    },
   },
   data () {
     return {
@@ -93,7 +101,7 @@ export default {
   min-height: $unit * 45;
 
   .previewimage {
-    background: $offwhite;
+    background: $shade;
     height: 100%;
     width: 100%;
     background-size: cover;

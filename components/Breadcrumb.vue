@@ -1,5 +1,5 @@
 <template>
-  <div v-if="!isMobile" class="breadcrumb content-top-full">
+  <div v-if="isMobile === false" class="breadcrumb content-top-full">
     <nuxt-link
       v-for="path, key in pathEls"
       :key="key"

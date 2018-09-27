@@ -33,8 +33,17 @@
       :date="date"
     />
 
+    <LoaderIcon
+      v-if="loading"
+      :active="loading"
+      :absolute="false"
+    />
+
     <article
-      v-lazy-container="{ selector: 'img'}"
+      v-lazy-container="{
+        selector: 'img[data-src]',
+        preLoad: 1.5, // screen heights away to start loading
+      }"
       class="markdown"
       ref="postcontent"
       v-html="contentToDisplay"
@@ -54,6 +63,7 @@ import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
 import Lightbox from '~/components/Lightbox'
+import LoaderIcon from '~/components/LoaderIcon'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
@@ -80,7 +90,7 @@ export default {
     }
   },
   
-  components: { Footer, RelatedArticles, PostDetails, Breadcrumb, Lightbox, },
+  components: { Footer, RelatedArticles, PostDetails, Breadcrumb, Lightbox, LoaderIcon },
 
   asyncData ({ route, redirect, error, env, store }) {
     const removeTrailingSlash = (string) => string.replace(/\/$/, '')
@@ -112,6 +122,7 @@ export default {
   data () {
     return {
       displayLanguage: 'en',
+      loading: true,
       content: {
         en: null,
         ja: null
@@ -165,6 +176,7 @@ export default {
     if (!(this.content.en || this.content.ja)) return this.$router.push('/')
     if (this.content.en) this.setLanguage('en')
     else this.setLanguage('ja')
+    this.loading = false
   },
 
   mounted () {

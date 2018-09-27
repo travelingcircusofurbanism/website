@@ -33,7 +33,7 @@ export default {
 <style scoped lang="scss">
 
   #canvas {
-    background: #555;
+    background: #333;
     z-index: 2;
     position: relative;
     overflow: hidden;

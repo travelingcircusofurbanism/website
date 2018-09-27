@@ -37,7 +37,6 @@
           :coordinates="[139.7029729, 35.5720944]"
         />-->
 
-
 			</template>
 		</MapboxMapLoader>
 
@@ -51,7 +50,6 @@ import MapMarker from '~/components/Map/MapMarker'
 import Controller from '~/components/Map/Controller'
 import MarkerManager from '~/components/Map/MarkerManager'
 // import DebugMarker from '~/components/Map/DebugMarker'
-
 
 export default {
   components: { MapboxMapLoader, MapMarker, Controller, MarkerManager, /*DebugMarker*/ },
@@ -88,41 +86,9 @@ export default {
       this.markers = newMarkers
     }
   }
-
 }
 
 </script>
 
 <style lang="scss" scoped>
-
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 1s;
-    
-    &.off {
-      opacity: 0;
-    }
-  }
-
-  #map {
-    height: 100vh;
-    opacity: 0;
-    transition: opacity 3s;
-
-    &.ready {
-      opacity: 1;
-    }
-
-    @include width (mobile) {
-      height: 100% !important;
-      top: 0;
-    }
-  }
-
-  .mapbox-ctrl-attrib, .mapboxgl-missing-css, .mapboxgl-control-container {
-    display: none;
-  }
 </style>

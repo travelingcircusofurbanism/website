@@ -6,9 +6,10 @@ const masterPostDir = process.cwd() + '/static/posts/'
 const fullSizeDir = 'full/'
 const generatedDir = 'generated/'
 const resizedDir = 'resized/'
+const loaderDir = 'resized/loader/'
+const loaderDimensions = [48, 20]
 
-const defaultHeight = 500
-const maxWidth = 1200
+const defaultResizeDimensions = [1200, 500]
 
 module.exports = function () {
 	return new Promise (resolve => {
@@ -26,12 +27,12 @@ module.exports = function () {
 						const inputPath = masterPostDir + cityDir + postDir + fullSizeDir
 						const generatedPath = masterPostDir + cityDir + postDir + generatedDir
 						const outputPath = generatedPath + resizedDir
-						if (!fs.existsSync(outputPath))
-							fs.mkdirSync(outputPath)
-						if (!fs.existsSync(generatedPath))
-							fs.mkdirSync(generatedPath)
-						if (!fs.existsSync(inputPath))
-							fs.mkdirSync(inputPath)
+						const loaderPath = generatedPath + loaderDir
+
+						if (!fs.existsSync(generatedPath)) fs.mkdirSync(generatedPath)
+						if (!fs.existsSync(outputPath)) fs.mkdirSync(outputPath)
+						if (!fs.existsSync(loaderPath)) fs.mkdirSync(loaderPath)
+						if (!fs.existsSync(inputPath)) fs.mkdirSync(inputPath)
 
 						// look for existing resized images in the post directory
 						fs.readdir(masterPostDir + cityDir + postDir + generatedDir + resizedDir, (err, files) => {
@@ -54,8 +55,18 @@ module.exports = function () {
 										// if image already exists, skip it
 										if (!existingImages.find(f => f === file)) {
 											// otherwise, resize it and put it in the post directory
+											// also, make a tiny loader that shows up first when we're lazy loading
 											sharp(inputPath + file)
-												.resize(maxWidth, defaultHeight)
+												.resize(...loaderDimensions)
+												.max()
+												.toFile(loaderPath + file)
+												.catch(e => {
+													log('magenta', 'Our image processor had some trouble resizing the file at', inputPath + file + '. The full error details are:')
+													console.log(e)
+													log('magenta', `Take a look at that image and make sure it's a valid jpeg, jpg, or png file. Regardless, we've skipped this image for now.`)
+												})
+											sharp(inputPath + file)
+												.resize(...defaultResizeDimensions)
 												.max()
 												.toFile(outputPath + file)
 												.then(function () {
@@ -66,6 +77,7 @@ module.exports = function () {
 													console.log(e)
 													log('magenta', `Take a look at that image and make sure it's a valid jpeg, jpg, or png file. Regardless, we've skipped this image for now.`)
 												})
+											
 										}
 									}
 									// if the file isn't an image we can resize, just toss it in /generated/resized anyway. (skips folders)
