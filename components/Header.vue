@@ -96,7 +96,7 @@ export default {
     padding: $unit * 4 $unit * 5 $unit * 3 $content-padding;
     font-weight: 600;
     background: $active;
-    box-shadow: 0 10px 20px rgba(#333, .7);
+    box-shadow: $over-map-shadow;
 
     @include width (mobile) {
       text-align: center;
@@ -141,7 +141,7 @@ export default {
     display: inline-block;
     font-weight: 400;
     pointer-events: none;
-    box-shadow: 0 10px 20px rgba(#333, .7);
+    box-shadow: $over-map-shadow;
 
     @include width (mobile) {
       margin-top: 0;
