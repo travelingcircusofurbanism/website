@@ -30,6 +30,8 @@ My Favorite:
 
 7. Read [Cool Gray City of Love: 49 Views of San Francisco](https://www.amazon.com/Cool-Gray-City-Love-Francisco/dp/1608199606), a book with personal insights, history, reporting and analysis that portraits San Francisco.
 
+8. [OldSF](http://www.oldsf.org/#) is a great tool for you to discover the history behind the places you see every day.
+
 ### Organization
 
 7. [Walk San Francisco](http://walksf.org/) is SF's only pedestrian advocacy organization to make the city more livable, walkable.
