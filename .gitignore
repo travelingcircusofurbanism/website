@@ -8,12 +8,14 @@ node_modules
 npm-debug.log
 
 # Nuxt build
-.nuxt
+nuxt/.nuxt
 
-# Nuxt generate
-dist
+# generated files
+nuxt/static/generated
+nuxt/static/posts
+nuxt/static/feed.xml
 
 # api keys
-mapboxApiKey.json
+nuxt/mapboxApiKey.json
 
-dashboard
+nuxt/dashboard

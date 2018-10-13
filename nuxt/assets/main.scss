@@ -1,0 +1,522 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Unica+One');
+@import 'variables';
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  overflow: auto;
+  margin: 0;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hidden {
+  display: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a,
+a:active,
+a:visited,
+a:hover {
+  color: $active;
+
+  &.subtle {
+    color: inherit;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 3.2rem;
+  line-height: 1.1;
+  text-transform: uppercase;
+  font-family: 'Unica One', 'Raleway', sans-serif;
+
+  @include width(mobile) {
+    font-size: 2.5rem;
+    margin-top: $unit * 3;
+  }
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+h3 {
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+.sub {
+  opacity: 0.6;
+
+  a {
+    color: $text !important;
+  }
+}
+
+.flag-icon {
+  height: 1em;
+  margin-right: $unit;
+  position: relative;
+  top: 2px;
+}
+
+.mapboxgl-canvas {
+  filter: brightness(0.85);
+}
+
+.content {
+  min-height: 100vh;
+  width: 100%;
+  padding: $header-offset $content-padding;
+  position: relative;
+
+  @include width(mobile) {
+    padding: $content-padding-mobile;
+    min-height: 0%;
+  }
+
+  .content-top-full {
+    width: 100%;
+    box-sizing: content-box;
+    margin: -1 * $header-offset -1 * $content-padding;
+    margin-bottom: 0;
+    padding: $header-offset $content-padding;
+
+    &.mini {
+      padding-bottom: $unit * 2;
+    }
+
+    &.gray {
+      background: $shade;
+    }
+
+    @include width(mobile) {
+      margin: -1 * $content-padding-mobile;
+      margin-bottom: 0;
+      padding: $content-padding-mobile;
+
+      &.mini {
+        padding: $content-padding-mobile / 2 $content-padding-mobile;
+      }
+    }
+  }
+}
+
+.sectionhead {
+  font-family: 'Unica One', 'Raleway', sans-serif;
+  font-size: 1.6rem;
+  letter-spacing: 3px;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: $unit * 8;
+  margin-bottom: $unit * 7;
+  padding-bottom: $unit * 3;
+  border-bottom: 2px solid $active;
+  max-width: 60%;
+
+  &.mini {
+    margin-top: $unit * 2;
+    padding-bottom: $unit * 2;
+    margin-bottom: 0;
+    border-bottom: 0;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+
+    @include width(mobile) {
+      font-size: 1.1rem;
+      padding-bottom: $unit;
+      margin-top: 0;
+      padding-top: $unit;
+      margin-bottom: 0;
+    }
+  }
+
+  @include width(mobile) {
+    font-size: 1.4rem;
+    max-width: 80%;
+    margin-top: $unit * 3;
+    margin-bottom: $unit * 3;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+}
+
+.markdown {
+  position: relative;
+  margin-bottom: $unit * 10;
+
+  h1 {
+    margin-top: $unit * 12;
+    line-height: 1.4;
+    font-size: 1.6rem;
+    text-transform: none;
+    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+      Roboto, 'Helvetica Neue', Arial, sans-serif;
+  }
+
+  img {
+    max-width: 100%;
+    margin: $unit * 4 auto;
+    display: block;
+    cursor: zoom-in;
+    transition: filter 0.3s;
+
+    @include width(mobile) {
+      width: 100vw;
+      min-width: 100vw;
+      margin: $unit * 2 $content-padding-mobile * -1;
+    }
+  }
+
+  img[lazy='loading'] {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: blur(4px);
+
+    @include width(mobile) {
+      max-height: auto;
+      width: 100vw;
+    }
+  }
+
+  img + em,
+  img + br + em {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: $unit * -2;
+  }
+  img + br {
+    display: none;
+  }
+
+  h1 + p img:first-of-type {
+    padding-top: 0;
+  }
+
+  em {
+    strong {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  ol,
+  ul {
+    @include width(mobile) {
+      padding-left: $content-padding-mobile;
+    }
+  }
+
+  hr {
+    border: 0;
+    box-shadow: none;
+    height: 2px;
+    background: $offwhite;
+    margin: $unit * 12 auto;
+    width: 30%;
+  }
+
+  blockquote {
+    font-style: italic;
+    padding: $unit $unit * 4;
+    background: rgba($offwhite, 0.3);
+  }
+
+  a.external {
+    background: url('~assets/icons/external.svg') center right no-repeat;
+    background-size: 11px;
+    padding-right: 16px;
+    margin-right: 2px;
+  }
+
+  *.highlight {
+    padding: $unit * 0.5;
+    background: rgba($active, 0.12);
+    transition: all 0.1s;
+
+    &:hover {
+      color: white !important;
+      background: $highlight;
+    }
+  }
+}
+
+.button {
+  text-align: center;
+  cursor: pointer;
+  text-decoration: none;
+  padding: $unit * 2 $unit * 4;
+  margin-right: $unit * 4;
+  margin-bottom: $unit * 2;
+  color: white;
+  background: $text;
+  transition: 0.2s;
+
+  &.mini {
+    padding: $unit * 1.2 $unit * 2;
+    margin: 2px;
+
+    @include width(mobile) {
+      margin: 4px;
+      margin-left: 0;
+      margin-top: 0;
+    }
+  }
+
+  @include width(mobile) {
+    padding: $unit * 1.5 $unit * 2.5;
+    margin-right: $unit * 2;
+    margin-bottom: $unit * 1;
+  }
+
+  &.secondary {
+    color: darken($offwhite, 40%);
+    box-shadow: 0 2px 4px $offwhite;
+    background: rgba(white, 0.8);
+
+    &.onwhite {
+      background: $shade;
+    }
+  }
+
+  &.full {
+    display: block;
+    width: 100%;
+  }
+
+  &:hover {
+    color: white;
+    background: $active !important;
+  }
+
+  &.invert {
+    background: transparent;
+    box-shadow: 0 0 0 2px rgba(white, 0.6);
+
+    &:hover {
+      background: $text !important;
+      box-shadow: none;
+    }
+  }
+
+  &.showall {
+    background: rgba($offwhite, 0.2);
+  }
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  width: 100%;
+
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.mapboxgl-missing-css,
+.mapbox-improve-map,
+.mapboxgl-ctrl-attrib {
+  display: none;
+}
+
+.marker,
+.cluster {
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.05em;
+  pointer-events: none;
+
+  @include width(mobile) {
+    font-size: 1em;
+  }
+
+  .pin {
+    pointer-events: auto;
+    width: $unit * 6;
+    height: $unit * 6;
+    background-color: white;
+    mask-image: url('~assets/pin.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+    margin: 0 auto;
+    // transition: width .2s, height .2s, background-color .2s;
+  }
+
+  .text {
+    pointer-events: auto;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    max-width: $unit * 25;
+    line-height: 1;
+    top: $unit * -4.2;
+    text-align: center;
+    transform: translateX(-50%) translateY($unit * 3.5);
+    color: white;
+    $shadow: rgba($text, 0.3);
+    text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+      0 -2px 12px $shadow, -2px 0 12px $shadow;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+    // transition: color .2s;
+
+    @include width(mobile) {
+      top: $unit * -4;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.highlight,
+  &:hover {
+    z-index: 101;
+
+    .text {
+      color: $activelight;
+    }
+    .pin {
+      background-color: $activelight;
+      // width: $unit * 6.5;
+      // height: $unit * 6.5;
+    }
+  }
+
+  &.doublehighlight,
+  &.highlight:hover {
+    z-index: 102;
+
+    .text {
+      color: $highlight;
+    }
+
+    .pin {
+      background-color: $highlight;
+    }
+  }
+}
+
+.cluster {
+  position: relative;
+  top: $unit * -7;
+
+  .text {
+    position: absolute;
+    transform: translateX(-50%);
+    color: $text;
+    text-shadow: none;
+    z-index: 2;
+    // transition: all .1s;
+    top: 0;
+    left: 0;
+    width: auto;
+
+    @include width(mobile) {
+      font-size: 1.2em;
+    }
+  }
+  .pin {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    transform: translateX(-50%) translateY(-28%);
+    width: $unit * 8;
+    height: $unit * 8;
+    mask-image: url('~assets/cluster.svg');
+  }
+
+  &.highlight,
+  &:hover {
+    .text {
+      color: white;
+    }
+    .pin {
+      width: $unit * 9;
+      height: $unit * 9;
+    }
+  }
+
+  &.doublehighlight,
+  &.highlight:hover,
+  &.doublehighlight:hover {
+    .text {
+      color: white;
+    }
+  }
+}
+
+img[lazy='loaded'] {
+  // animation-duration: .5s;
+  // animation-fill-mode: both;
+  // animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.page-enter-active {
+  transition: opacity 0.4s;
+}
+.page-leave-active {
+  transition: opacity 0.2s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+}

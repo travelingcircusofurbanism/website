@@ -10,29 +10,14 @@
  * @license MIT
  */
 
-/*!
- * Determine if an object is a Buffer
- *
- * @author   Feross Aboukhadijeh <https://feross.org>
- * @license  MIT
- */
-
-/*!
- * Vue-Lazyload.js v1.2.6
- * (c) 2018 Awe <hilongjw@gmail.com>
- * Released under the MIT License.
- */
-
-/*!
- * @overview es6-promise - a tiny implementation of Promises/A+.
- * @copyright Copyright (c) 2014 Yehuda Katz, Tom Dale, Stefan Penner and contributors (Conversion to ES6 API by Jake Archibald)
- * @license   Licensed under MIT license
- *            See https://raw.githubusercontent.com/stefanpenner/es6-promise/master/LICENSE
- * @version   v4.2.5+7f2b526d
- */
+/**
+  * vue-router v3.0.1
+  * (c) 2017 Evan You
+  * @license MIT
+  */
 
 /**
- * vue-meta v1.5.3
+ * vue-meta v1.5.5
  * (c) 2018 Declan de Wet & Sébastien Chopin (@Atinux)
  * @license MIT
  */
@@ -42,3 +27,22 @@ object-assign
 (c) Sindre Sorhus
 @license MIT
 */
+
+/*!
+ * Determine if an object is a Buffer
+ *
+ * @author   Feross Aboukhadijeh <https://feross.org>
+ * @license  MIT
+ */
+
+/*!
+ * vue-no-ssr v1.0.0
+ * (c) 2018-present egoist <0x142857@gmail.com>
+ * Released under the MIT License.
+ */
+
+/*!
+ * Vue-Lazyload.js v1.2.6
+ * (c) 2018 Awe <hilongjw@gmail.com>
+ * Released under the MIT License.
+ */
