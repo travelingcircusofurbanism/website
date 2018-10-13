@@ -3,7 +3,7 @@
 
 > “Old ideas can sometimes use new buildings. New ideas must use old buildings.” *– Jane Jacobs, The Death and Life of Great American Cities, 1961.*
 
-I don't know how to explain the joy when I found the entrance to [401 Richmond Building](http://www.401richmond.com/) for the first time during my late afternoon walk in the Fashion district in Toronto. 
+I don't know how to describe the joy I felt when I found the entrance to [401 Richmond Building](http://www.401richmond.com/) for the first time during my late afternoon walk in the Fashion district in Toronto. 
 
 ![401 Richmond Building](richmond4.jpg)
 ![401 Richmond Building](richmond5.jpg)
