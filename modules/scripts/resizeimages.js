@@ -1,16 +1,16 @@
 const fs = require('fs')
 const sharper = require('./sharper')
-const { log } = require('../../assets/commonFunctions')
+import { log } from '../../assets/commonFunctions'
 
 const masterPostDir = process.cwd() + '/static/posts/'
 const fullSizeDir = 'full/'
 const resizedDir = '../generated/resized/'
 const loaderDir = '../generated/resized/loader/'
-const loaderDimensions = [48, 20]
 
 const defaultResizeDimensions = [1200, 500]
+const defaultLoaderDimensions = [48, 20]
 
-module.exports = function () {
+export default function () {
 	return new Promise (resolve => {
 		let first = true
 		// read all city directories in the master post directory ('tokyo', 'austin', etc)
@@ -37,8 +37,8 @@ module.exports = function () {
 							{
 								source: inputPath,
 								outputFolder: loaderDir,
-								width: loaderDimensions[0],
-								height: loaderDimensions[1],
+								width: defaultLoaderDimensions[0],
+								height: defaultLoaderDimensions[1],
 								overwrite: false,
 							},
 						])

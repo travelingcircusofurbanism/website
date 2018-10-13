@@ -22,6 +22,7 @@
 </template>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
 
   .footer {
     margin: $content-padding * -1;

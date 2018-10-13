@@ -14,9 +14,6 @@ export default {
       type: Object,
       required: true
     },
-		markers: {
-			type: Array
-		}
   },
 
   data () {
@@ -26,28 +23,22 @@ export default {
   },
 
   computed: {
-		// mapMarkers comes in as an array of mapPosition objects.
-		// this filters us down to unique named places and their location data
-		uniqueMarkerLocations () { return this.getUniqueLocations(this.$store.state.mapMarkers) },
-
 		// generates GeoJSON point data from unique locations
 		uniqueMarkerLocationsAsGeoJSONObjects () {
-			if (!this.uniqueMarkerLocations) return []
-			const markerData = []
-			for (let marker of Object.values(this.uniqueMarkerLocations)) {
-				markerData.push({
-					type: 'Feature',
-					geometry: {
-						type: 'Point',
-						coordinates: marker[0].center
-					},
-					properties: {
-						location: marker[0].location
-					}
-				})
-			}
-			return markerData
+			return this.markerLocationsToGeoJSONObjects(
+				this.getUniqueLocations(
+					this.$store.state.mapMarkers
+				)
+			)
 		},
+
+		// cityLocationsAsGeoJSONObjects () {
+		// 	return this.markerLocationsToGeoJSONObjects(
+		// 		this.getCityLocations(
+		// 			this.$store.state.mapMarkers
+		// 		)
+		// 	)
+		// },
   },
 
 	watch: {
@@ -62,14 +53,14 @@ export default {
 				this.limitCalculateEvent = setTimeout(() => {
 					this.calculateClusters()
 					this.limitCalculateEvent = null
-				}, 100)
+				}, 200)
 		})
 		this.map.on('move', () => {
 			if (!this.limitCalculateEvent)
 				this.limitCalculateEvent = setTimeout(() => {
 					this.calculateClusters()
 					this.limitCalculateEvent = null
-				}, 100)
+				}, 200)
 		})
 		this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects)
 		this.calculateClusters()
@@ -86,6 +77,18 @@ export default {
 				uniqueLocations[location].push(marker)
 			}
 			return uniqueLocations
+		},
+
+		getCityLocations (markers) {
+			const cityLocations = {}
+			for (let marker of markers) {
+				if (marker.location || !marker.city) continue
+				const location = marker.city.toLowerCase()
+				if (!cityLocations[location])
+					cityLocations[location] = []
+				cityLocations[location].push(marker)
+			}
+			return cityLocations
 		},
 
 		calculateClusters () {
@@ -130,6 +133,24 @@ export default {
         locations.push(markerData.properties.location)
       return locations
     },
+
+		markerLocationsToGeoJSONObjects (locations) {
+			if (!locations) return []
+			const markerData = []
+			for (let marker of Object.values(locations)) {
+				markerData.push({
+					type: 'Feature',
+					geometry: {
+						type: 'Point',
+						coordinates: marker[0].center
+					},
+					properties: {
+						location: marker[0].location
+					}
+				})
+			}
+			return markerData
+		}
 	}
 }
 </script>

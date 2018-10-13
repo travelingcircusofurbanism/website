@@ -3,7 +3,7 @@ const dontCapitalize = [
 	'but', 'or', 'for', 'nor',
 	'on', 'at', 'to', 'from', 'by'
 ]
-const capitalize = function (s) {
+export function capitalize (s) {
 	if (!s) return ''
 	return s.split(' ')
 		.map((splitString, index) => {
@@ -14,7 +14,7 @@ const capitalize = function (s) {
 		.join(' ')
 }
 
-const softTruncate = function (string, softLimit) {
+export function softTruncate (string, softLimit) {
 	if (string.length > softLimit) {
 		const afterLimit = string.substring(softLimit)
 		let min = 0
@@ -39,7 +39,7 @@ const softTruncate = function (string, softLimit) {
 	return string
 }
 
-const log = function (color, ...args) {
+export function log (color, ...args) {
 	const resetColor = '\x1b[0m'
 	const terminalColors = {
 		red: '\x1b[31m',
@@ -51,10 +51,4 @@ const log = function (color, ...args) {
 		white: '\x1b[37m',
 	}
 	console.log((terminalColors[color] || terminalColors.green), ...args, resetColor)
-}
-
-module.exports = {
-	capitalize,
-	softTruncate,
-	log,
 }

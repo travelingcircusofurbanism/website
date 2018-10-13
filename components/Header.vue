@@ -11,8 +11,7 @@
     </nuxt-link>
     <br />
     <div class="sublinks">
-      <nuxt-link to="/about">About</nuxt-link>
-      <nuxt-link to="/author">Author</nuxt-link>
+      <nuxt-link to="/about">About</nuxt-link><nuxt-link to="/author">Author</nuxt-link>
     </div>
     <div>
       <div class="citylabel" :class="{active: currentCity}">
@@ -24,7 +23,7 @@
 
 <script>
 import Selector from '~/components/Selector'
-import { capitalize } from '~/assets/commonFunctions'
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
@@ -54,6 +53,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
 
   a, a:hover, a:visited, a:active {
     display: inline-block;

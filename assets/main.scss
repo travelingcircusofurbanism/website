@@ -240,7 +240,7 @@ h4 {
 	}
 
 	a.external {
-		background: url('~/assets/icons/external.svg') center right no-repeat;
+		background: url('~assets/icons/external.svg') center right no-repeat;
 		background-size: 11px;
 		padding-right: 16px;
 		margin-right: 2px;
@@ -344,7 +344,7 @@ h4 {
 	z-index: 100;
 	display: inline-block;
 	position: absolute;
-	font-size: 1.1em;
+	font-size: 1.05em;
 	pointer-events: none;
 
 	@include width(mobile) {
@@ -356,7 +356,7 @@ h4 {
 		width: $unit * 6;
 		height: $unit * 6;
 		background-color: white;
-		mask-image: url('~/assets/pin.svg');
+		mask-image: url('~assets/pin.svg');
 		mask-repeat: no-repeat;
 		mask-size: contain;
 		mask-position: center center;
@@ -371,7 +371,7 @@ h4 {
 		left: 50%;
 		max-width: $unit * 25;
 		line-height: 1;
-		top: $unit * -4.5;
+		top: $unit * -4.2;
 		text-align: center;
 		transform: translateX(-50%) translateY($unit * 3.5);
 		color: white;
@@ -449,7 +449,7 @@ h4 {
 		transform: translateX(-50%) translateY(-28%);
 		width: $unit * 8;
 		height: $unit * 8;
-		mask-image: url('~/assets/cluster.svg');
+		mask-image: url('~assets/cluster.svg');
 	}
 
   &.highlight, &:hover {

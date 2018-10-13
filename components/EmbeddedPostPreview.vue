@@ -25,7 +25,7 @@
 
 
 <script>
-import { capitalize, softTruncate } from '~/assets/commonFunctions.js'
+const  { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
@@ -64,6 +64,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/variables.scss';
 
 a, a:hover, a:visited, a:active {
   text-decoration: none !important;

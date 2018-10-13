@@ -34,7 +34,6 @@ export default {
         radius: 60,
         maxZoom: 15,
       }),
-      markers: [],
 			styleReady: false,
 		}
 	},
@@ -62,6 +61,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/variables.scss';
 
   #map {
     height: 100vh;

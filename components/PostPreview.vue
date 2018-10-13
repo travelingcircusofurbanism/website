@@ -47,7 +47,7 @@
 
 
 <script>
-import { capitalize } from '~/assets/commonFunctions.js'
+const { capitalize } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
@@ -92,6 +92,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/variables.scss';
 
 .post-preview {
   margin-bottom: $unit * 10;

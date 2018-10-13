@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { log } = require('../../assets/commonFunctions')
+import { log } from '../../assets/commonFunctions'
 const md = require('markdown-it')({
 	html: true,
 	linkify: true,
@@ -11,7 +11,7 @@ const masterPostDir = process.cwd() + '/static/posts/'
 const generatedSubDir = '/generated'
 const htmlSubDir = '/html'
 
-module.exports = function () {
+export default function () {
 	log('green', ' Generating HTML from Markdown.')
 	// read all city directories in the master post directory ('tokyo', 'austin', etc)
 	fs.readdirSync(masterPostDir)

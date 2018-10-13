@@ -38,7 +38,7 @@
 </template>
 
 <script>
-import { capitalize } from '~/assets/commonFunctions.js'
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
@@ -121,6 +121,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
 
   .selectorframe {
     display: grid;

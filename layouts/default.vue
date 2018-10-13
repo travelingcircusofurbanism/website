@@ -34,6 +34,7 @@
 </script>
 
 <style lang="scss">
+@import '~/assets/variables.scss';
 
   .master {
     display: flex;

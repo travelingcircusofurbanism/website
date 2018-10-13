@@ -12,7 +12,7 @@
 
 3. A 10-year economic development and revitalization initiative to get an identity back to the city. [Bringing Back Broadway](https://bringingbackbroadway.com/)
 
-4. An interesting project that brought the nature back to the former-industrial, challenged area. [Augustus F. Hawkin's natural park](https://www.laparks.org/reccenter/augustus-f-hawkins-natural)
+4. An interesting project that brought the nature back to the former-industrial, challenged area. [Augustus F. Hawkins natural park](https://www.laparks.org/reccenter/augustus-f-hawkins-natural)
 
 5. Famous art spaces like [HAUSER & WIRTH](https://www.hauserwirth.com/locations/10069-hauser-wirth-los-angeles) and [Art Share L.A.](https://artsharela.org/) are also worth visiting.
 

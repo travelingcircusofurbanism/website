@@ -38,7 +38,7 @@ module.exports = {
   build: {
     watch: ['static/posts', 'components', 'pages', 'layouts', 'plugins', 'modules', 'nuxt.config.js'],
     styleResources: {
-      scss: './assets/variables.scss',
+      scss: 'assets/variables.scss',
     },
     extend (config) {
       if (!config.module.noParse)

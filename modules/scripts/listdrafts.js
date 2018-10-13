@@ -1,9 +1,9 @@
 const fs = require('fs')
-const { log } = require('../../assets/commonFunctions')
+import { log } from '../../assets/commonFunctions'
 
 const postDir = process.cwd() + '/static/posts'
 
-module.exports = function () {
+export default function () {
 	return new Promise (resolve => {
 		try {
 			const postListPromises = fs.readdirSync(postDir)

@@ -15,7 +15,7 @@
 </template>
 
 <script>
-import { capitalize, softTruncate } from '~/assets/commonFunctions.js'
+const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
@@ -58,6 +58,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
 
 .breadcrumb {
   background: $shade;

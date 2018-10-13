@@ -1,5 +1,5 @@
 const fs = require('fs')
-const { log, softTruncate } = require('../../assets/commonFunctions')
+import { log, softTruncate } from '../../assets/commonFunctions'
 
 require.extensions['.md'] = function (module, filename) {
 	module.exports = fs.readFileSync(filename, 'utf8')
@@ -10,7 +10,7 @@ const generatedDir = process.cwd() + '/static/generated'
 
 const allLocations = new Set()
 
-module.exports = function () {
+export default function () {
 	return new Promise (resolve => {
 		try {
 			if (!fs.existsSync(generatedDir))

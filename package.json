@@ -13,25 +13,21 @@
     "prep": "node ./scripts/postbot.js"
   },
   "dependencies": {
+    "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
+    "@babel/plugin-syntax-dynamic-import": "^7.0.0",
     "@nuxtjs/feed": "^0.1.1",
     "@nuxtjs/google-analytics": "^2.0.2",
     "axios": "^0.18.0",
     "mapbox-gl": "^0.45.0",
     "markdown-it": "^8.4.2",
     "node-sass": "^4.9.3",
-    "nodemon": "^1.18.4",
-    "nuxt": "^1.4.2",
+    "nuxt": "^2.0.0",
     "sass-loader": "^7.1.0",
     "sharp": "^0.20.8",
     "supercluster": "^4.1.1",
     "vue-loader": "^14.2.3"
   },
   "devDependencies": {
-    "babel-eslint": "^8.2.6",
-    "eslint": "^4.15.0",
-    "eslint-friendly-formatter": "^3.0.0",
-    "eslint-loader": "^1.7.1",
-    "eslint-plugin-vue": "^4.7.1",
     "vue-lazyload": "^1.2.6"
   }
 }

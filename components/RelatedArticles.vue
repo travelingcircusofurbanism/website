@@ -59,6 +59,8 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/variables.scss';
+
 .relatedposts {
   margin-bottom: $unit * 10;
 }

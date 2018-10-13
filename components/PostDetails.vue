@@ -19,7 +19,7 @@
 </template>
 
 <script>
-import { capitalize } from '~/assets/commonFunctions.js'
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   props: [ 'category', 'mapPosition', 'city', 'date', ],

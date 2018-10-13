@@ -25,7 +25,7 @@ import Footer from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
 // import Selector from '~/components/Selector'
-import { capitalize } from '~/assets/commonFunctions.js'
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   head () { 

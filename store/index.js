@@ -156,15 +156,29 @@ function parseMapPositionObjectsFromAnything (source) {
     // or, pull mapPosition object or an array of mapPosition objects from posts
     Array.isArray(source) ?
       // if we have multiple posts, for each...
-      source.map(post =>
-        // if it's not an array of mapPositions, make it one
-        Array.isArray(post.mapPosition) ?
-          post.mapPosition : [post.mapPosition]
-      )
+      source.map(post => {
+        const arrayOfPositions = Array.isArray(post.mapPosition) ?
+          post.mapPosition.map(p => {
+            const city = post.city
+            return {
+              ...p,
+              city,
+            }
+          }) :
+          // if it's not an array of mapPositions, make it one
+          [{
+            ...post.mapPosition,
+            city: post.city
+          }]
+        return arrayOfPositions
+      })
         // then smash 'em all together
         .reduce((acc, curr) => acc.concat(curr), []) :
       // otherwise, we just use it straight up.
-      source.mapPosition
+      {
+        ...source.mapPosition,
+        city: source.city
+      }
 
   if (!Array.isArray(parsedMapPositions))
     parsedMapPositions = [parsedMapPositions]

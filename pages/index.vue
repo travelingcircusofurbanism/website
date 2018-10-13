@@ -76,6 +76,7 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
 
   .intro {
     margin: $content-padding * -1;

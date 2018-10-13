@@ -10,6 +10,10 @@ export default {
       type: Object,
       required: true
     },
+		clusterer: {
+			type: Object,
+			required: true
+		},
     markers: {
       type: Array,
       required: true
@@ -44,7 +48,46 @@ export default {
 		mapPosition () {
 			if (!this.currentView || Object.keys(this.currentView).length === 0)
 				return this.defaultPosition
-			return this.currentView[0]
+			// multiple markers will default to mapZone anyway
+			if (!this.currentView[0].location || this.currentView.length > 1)
+				return this.currentView[0]
+			// otherwise, we have to figure out just how far we need to zoom into not have it fall in a cluster.
+			// ...it ain't easy to do that.
+			let zoomLevel = 12, lastZoomLevel = 0
+			const locationName = this.currentView[0].location
+			const bounds = [
+				this.currentView[0].center[0] - 0.1,
+				this.currentView[0].center[1] - 0.1, 
+				this.currentView[0].center[0] + 0.1, 
+				this.currentView[0].center[1] + 0.1, 
+			]
+			while (zoomLevel < 20) {
+				lastZoomLevel = zoomLevel
+				let clusters, foundIn
+				try {
+					clusters = this.clusterer.getClusters(bounds, zoomLevel)
+				} catch (e) { return this.currentView[0] }
+				if (clusters) {
+					foundIn = clusters.find(marker => {
+						return this.getLocationsInMarker(marker).includes(locationName)
+					})
+				}
+				if (foundIn) {
+					if (this.getLocationsInMarker(foundIn).length === 1) break
+					zoomLevel = this.clusterer.getClusterExpansionZoom(foundIn.id)
+					if (lastZoomLevel === zoomLevel) zoomLevel++
+					continue
+				}
+				zoomLevel++
+				continue
+			}
+
+			zoomLevel = Math.max(this.currentView[0].zoom, zoomLevel)
+			
+			return {
+				...this.currentView[0],
+				zoom: zoomLevel
+			}
 		},
 
 		// find the best fit box for our map
@@ -100,6 +143,23 @@ export default {
 	},
 
   methods: {
+		getLocationsInMarker (markerData) {
+      const locations = []
+      if (markerData.properties.cluster) {
+        const getLocationsRecursively = (root) => {
+          if (root.properties.cluster_id)
+            this.clusterer.getChildren(root.properties.cluster_id)
+              .forEach(child => getLocationsRecursively(child))
+          else if (root.properties.location)
+            locations.push(root.properties.location)
+        }
+        getLocationsRecursively(markerData)
+      }
+      else
+        locations.push(markerData.properties.location)
+      return locations
+    },
+
 		updateMap () {
 			const dest = {}
 			for (let key of Object.keys(this.defaultPosition))

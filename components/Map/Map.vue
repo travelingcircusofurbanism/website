@@ -18,6 +18,7 @@
         <Controller
           :mapboxgl="mapboxgl"
           :map="map"
+          :clusterer="clusterer"
           :markers="markers"
         />
 

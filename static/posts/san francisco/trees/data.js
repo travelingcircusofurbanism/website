@@ -13,7 +13,7 @@ module.exports = {
 		{
 			location: 'Mission district',
 			bearing: 0,
-			center: [-122.41433330000001, 37.7523861],
+			center: [-122.418, 37.7523861],
 			zoom: 12.00,
 			pitch: 0 
 		},

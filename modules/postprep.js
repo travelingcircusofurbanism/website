@@ -1,9 +1,9 @@
-const resizeImages = require('./scripts/resizeimages')
-const buildListing = require('./scripts/buildlisting')
-const listDrafts = require('./scripts/listdrafts')
-const transformMarkdown = require('./scripts/transformmarkdown')
+import resizeImages from './scripts/resizeimages'
+import buildListing from './scripts/buildlisting'
+import listDrafts from './scripts/listdrafts'
+import transformMarkdown from './scripts/transformmarkdown'
 
-const timeBetweenUpkeeps = 2000
+const timeBetweenUpkeeps = 3000
 let timer
 
 module.exports = function () {
