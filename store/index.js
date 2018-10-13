@@ -11,7 +11,7 @@ export default () => {
       currentView: [],
       highlight: [],
       doubleHighlight: '',
-      isMobile: false,
+      isMobile: null,
       language: 'en',
       currentCity: null,
       isDev: false,

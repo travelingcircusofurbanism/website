@@ -1,17 +1,18 @@
 const fs = require('fs')
-const sharp = require('sharp')
+const sharper = require('./sharper')
 const { log } = require('../../assets/commonFunctions')
 
 const masterPostDir = process.cwd() + '/static/posts/'
 const fullSizeDir = 'full/'
-const generatedDir = 'generated/'
-const resizedDir = 'resized/'
+const resizedDir = '../generated/resized/'
+const loaderDir = '../generated/resized/loader/'
+const loaderDimensions = [48, 20]
 
-const defaultHeight = 500
-const maxWidth = 1200
+const defaultResizeDimensions = [1200, 500]
 
 module.exports = function () {
 	return new Promise (resolve => {
+		let first = true
 		// read all city directories in the master post directory ('tokyo', 'austin', etc)
 		fs.readdirSync(masterPostDir)
 			.filter(cityDir => cityDir.indexOf('.') === -1)
@@ -20,68 +21,36 @@ module.exports = function () {
 				// read all individual post directories in each city directory
 				fs.readdirSync(masterPostDir + cityDir)
 					.filter(postDir => postDir.indexOf('.') === -1)
-					.forEach(postDir => {
+					.forEach(async postDir => {
 						postDir += '/'
 						// full size images are in /full, resized images are in /generated/resized
 						const inputPath = masterPostDir + cityDir + postDir + fullSizeDir
-						const generatedPath = masterPostDir + cityDir + postDir + generatedDir
-						const outputPath = generatedPath + resizedDir
-						if (!fs.existsSync(outputPath))
-							fs.mkdirSync(outputPath)
-						if (!fs.existsSync(generatedPath))
-							fs.mkdirSync(generatedPath)
-						if (!fs.existsSync(inputPath))
-							fs.mkdirSync(inputPath)
-
-						// look for existing resized images in the post directory
-						fs.readdir(masterPostDir + cityDir + postDir + generatedDir + resizedDir, (err, files) => {
-							if (err) return console.log(err)
-							const existingImages = []
-							for (let file of files) {
-								if (/(.jpe?g|.png)$/g.test(file)) {
-									existingImages.push(file)
-								}
+						
+						const result = await sharper([
+							{
+								source: inputPath,
+								outputFolder: resizedDir,
+								width: defaultResizeDimensions[0],
+								height: defaultResizeDimensions[1],
+								overwrite: false,
+							},
+							{
+								source: inputPath,
+								outputFolder: loaderDir,
+								width: loaderDimensions[0],
+								height: loaderDimensions[1],
+								overwrite: false,
+							},
+						])
+						
+						if (result.resized.length > 0) {
+							if (first) {
+								log('cyan', '\nResized:')
+								first = false
 							}
+							log('cyan', '', result.resized.length, `image${ result.resized.length > 1 ? 's' : ''} from`, cityDir + postDir)
+						}
 
-							// look through all full size images
-							fs.readdir(inputPath, (err, files) => {
-								if (err) {
-									if (err.code !== 'ENOENT') return console.log(err)
-									else return
-								}
-								files.forEach(file => {
-									if (/(.jpe?g|.png)$/g.test(file)) {
-										// if image already exists, skip it
-										if (!existingImages.find(f => f === file)) {
-											// otherwise, resize it and put it in the post directory
-											sharp(inputPath + file)
-												.resize(maxWidth, defaultHeight)
-												.max()
-												.toFile(outputPath + file)
-												.then(function () {
-													log('cyan', ' Resized and saved', cityDir + postDir + fullSizeDir + file)
-												})
-												.catch(e => {
-													log('magenta', 'Our image processor had some trouble resizing the file at', inputPath + file + '. The full error details are:')
-													console.log(e)
-													log('magenta', `Take a look at that image and make sure it's a valid jpeg, jpg, or png file. Regardless, we've skipped this image for now.`)
-												})
-										}
-									}
-									// if the file isn't an image we can resize, just toss it in /generated/resized anyway. (skips folders)
-									else if (file.indexOf('.') > 0) {
-										fs.copyFile(inputPath + file, outputPath + file, e => {
-											if (e) {
-												log('magenta', `For some reason, we couldn't copy`, inputPath + file ,`from /full to /generated/resized. Here are the error details:`)
-												console.log(e)
-												return log('magenta', 'Skipping this file for now.')
-											}
-											log('cyan', 'Copied (non-jpg/png file)', cityDir + postDir + fullSizeDir + file)
-										})
-									}
-								})
-							})
-						})
 					})
 			})
 			resolve()

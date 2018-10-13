@@ -81,22 +81,26 @@ function fixImages (baseHTML, city, post) {
 	// fix internal images
 	const localImageElementRegex = /<img src=\"(?!http|www\.)\/?(?:(?:[^\/,"]+\/)*)(.+)\.(jpe?g|png|gif|webm|svg)" alt="([^>"]*)">/gim
 	let matches = localImageElementRegex.exec(baseHTML)
+	let first = true
 	while (matches != null) {
 		const srcImagePath = encodeURI(`/posts/${city}/${post}/generated/resized/${matches[1]}.${matches[2]}`)
+		const loaderImagePath = encodeURI(`/posts/${city}/${post}/generated/resized/loader/${matches[1]}.${matches[2]}`)
 		const fullSizeImagePath = encodeURI(`https://www.travelingcircusofurbanism.com/posts/${city}/${post}/full/${matches[1]}.${matches[2]}`)
 		const description = (matches[3] || '').replace(/<.*>/g, '').replace('"', '\'')
 		const postPath = encodeURI(`https://www.travelingcircusofurbanism.com/${city}/${post}`)
-		const imageTagToSwapIn = `
-          <img 
-            data-src="${ srcImagePath }" ${ description ?
-							`alt="${description}"
-              data-pin-description="${ description }"`
+		const imageTagToSwapIn = `<img ${ 
+						first ? 
+							`src="${ srcImagePath }"` :
+							`data-loading="${ loaderImagePath }" data-src="${ srcImagePath }"`
+						}${ 
+						description ?
+							`alt="${description}" data-pin-description="${ description }"`
 							: ''
-						}
-            data-pin-url="${ postPath }"
+						} data-pin-url="${ postPath }"
             data-pin-media="${ fullSizeImagePath }">`
 		newHTML = newHTML.replace(matches[0], imageTagToSwapIn)
 		matches = localImageElementRegex.exec(baseHTML)
+		first = false
 	}
 	// fix external images
 	const externalImageElementRegex = /<img src="((?:http|www\.).*(?:jpe?g|png|gif|webm|svg))" alt="([^>"]*)">/gim

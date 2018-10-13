@@ -1,10 +1,6 @@
 <template>
   <div>
-    <img
-      src="/assets/loading.svg"
-      class="loader"
-      :class="{off: styleReady}"
-    />
+    <LoaderIcon :active="!styleReady" />
     <div id="map" :class="{ready: styleReady}">
     </div>
 		<template v-if="styleReady">
@@ -18,6 +14,7 @@
 </template>
 
 <script>
+import LoaderIcon from '~/components/LoaderIcon'
 import supercluster from 'supercluster'
 
 export default {
@@ -26,6 +23,8 @@ export default {
 		'defaultPosition',
     'mapboxStyle',
 	],
+
+  components: { LoaderIcon, },
 
 	data () {
 		return {
@@ -63,18 +62,6 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
-  .loader {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 1s;
-    
-    &.off {
-      opacity: 0;
-    }
-  }
 
   #map {
     height: 100vh;

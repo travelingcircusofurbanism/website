@@ -71,6 +71,7 @@ export default {
     height: 100vh;
     pointer-events: none;
     max-width: 48%;
+    padding-right: $unit * 4;
 
     @include width (mobile) {
       display: block;
@@ -82,6 +83,7 @@ export default {
       left: 0;
       overflow: hidden;
       transition: all .4s;
+      padding-right: 0;
 
       &.hide {
         bottom: 100%;
@@ -94,7 +96,7 @@ export default {
     padding: $unit * 4 $unit * 5 $unit * 3 $content-padding;
     font-weight: 600;
     background: $active;
-    box-shadow: 0 10px 20px rgba(#444, .7);
+    box-shadow: $over-map-shadow;
 
     @include width (mobile) {
       text-align: center;
@@ -139,7 +141,7 @@ export default {
     display: inline-block;
     font-weight: 400;
     pointer-events: none;
-    box-shadow: 0 10px 20px rgba(#444, .7);
+    box-shadow: $over-map-shadow;
 
     @include width (mobile) {
       margin-top: 0;
