@@ -66,10 +66,13 @@ export default {
 				let clusters, foundIn
 				try {
 					clusters = this.clusterer.getClusters(bounds, zoomLevel)
-				} catch (e) { return this.currentView[0] }
+				} catch (e) { 
+					console.log(e)
+					continue
+				}
 				if (clusters) {
 					foundIn = clusters.find(marker => {
-						return this.getLocationsInMarker(marker).includes(locationName)
+						return this.getLocationsInMarker(marker).find(location => location.toLowerCase() === locationName.toLowerCase())
 					})
 				}
 				if (foundIn) {

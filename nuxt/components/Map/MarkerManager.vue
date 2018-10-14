@@ -63,6 +63,7 @@ export default {
 				}, 200)
 		})
 		this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects)
+		this.clusterer.hasLoaded = true
 		this.calculateClusters()
 	},
 

@@ -16,6 +16,7 @@
         />
 
         <Controller
+          v-if="clusterer.hasLoaded"
           :mapboxgl="mapboxgl"
           :map="map"
           :clusterer="clusterer"

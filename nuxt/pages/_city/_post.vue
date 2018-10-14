@@ -220,12 +220,13 @@ export default {
       if (!Array.isArray(this.mapPosition) || this.mapPosition.length === 1 || this.isMobile)
         return this.contentInRightLanguage
       let newContent = this.contentInRightLanguage
+        .replace('&amp;', '&')
       this.mapPosition.map(positionObject => positionObject.location)
         .forEach(location => {
           if (location.length < 4) return
           const locationRegex = new RegExp(`[\s\n >]${location}`, 'gi')
-          newContent = newContent.replace(locationRegex, match => 
-            match.replace(location, `<span class="highlight">${location}</span>`)
+          newContent = newContent.replace(locationRegex, match =>
+            match.replace(new RegExp(`${location}`, 'gi'), `<span class="highlight">${location}</span>`)
           )
         })
       return newContent
@@ -251,7 +252,7 @@ export default {
       if (!this.$el) return
       this.$el.querySelectorAll('img')
         .forEach(e => {
-          e.addEventListener('click', () => this.$store.commit('setLightboxSrc', e.getAttribute('data-src')))
+          e.addEventListener('click', () => this.$store.commit('setLightboxSrc', e.getAttribute('src')))
         })
     }
   }

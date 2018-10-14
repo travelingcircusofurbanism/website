@@ -37,10 +37,9 @@ export default {
 			const newHighlight = this.$store.state.highlight
 			if (process.browser) {
 				for (let n of newHighlight) {
-					if (this.locationsInMarker.find(l =>	l === n))
+					if (this.locationsInMarker.find(l => l.toLowerCase() === n.toLowerCase()))
             return 'highlight'
 				}
-        
 			}
       return ''
 		},
@@ -48,7 +47,7 @@ export default {
     doubleHighlight () {
       const newDoubleHighlight = this.$store.state.doubleHighlight
       for (let n of newDoubleHighlight) {
-        if (this.locationsInMarker.find(l =>	l === n))
+        if (this.locationsInMarker.find(l => l.toLowerCase() === n.toLowerCase()))
           return 'doublehighlight'
       }
       return ''
