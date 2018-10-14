@@ -10,6 +10,9 @@ npm-debug.log
 # Nuxt build
 .nuxt
 
+# legacy static folder
+/static
+
 # generated files
 nuxt/static/generated
 nuxt/static/posts
