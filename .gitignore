@@ -16,6 +16,6 @@ nuxt/static/posts
 nuxt/static/feed.xml
 
 # api keys
-nuxt/mapboxApiKey.json
+mapboxApiKey.json
 
 nuxt/dashboard
