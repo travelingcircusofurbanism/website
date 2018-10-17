@@ -1,7 +1,9 @@
 
 # Jane-Finch, Canada's most diverse neighborhood
 
-![]()
+![](janeandfinch0.jpg)
+![](janeandfinch2.jpg)
+![](janeandfinch1.jpg)
 
 WIki https://en.wikipedia.org/wiki/Jane_and_Finch#cite_note-NFB_1098_homefeeling-6
 
@@ -19,3 +21,4 @@ https://nowtoronto.com/news/9-things-we-love-about-jane-finch/
 Home Feeling: Struggle for a Community by Jennifer Hodge & Roger McTair
 1983 | 57 min
 https://www.nfb.ca/film/home_feeling_struggle_for_a_community/
+
