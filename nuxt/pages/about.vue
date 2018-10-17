@@ -1,5 +1,6 @@
 <template>
   <section class="content">
+    <img src="~assets/about.jpg" alt="About the traveling circus of urbanism" />
     <template v-if="displayLanguage === 'ja'">
       <h1 class="title">
         <span class="small">このサイトについて</span>
@@ -25,7 +26,7 @@
         What is the traveling circus of urbanism?
       </h1>
       <p>
-        Traveling Circus of Urbanism is a platform for other urban narratives that are collected from the world through traveling.
+        The Traveling Circus of Urbanism is a platform for other urban narratives that are collected from the world through traveling.
         This is an exploration of various urban practices with a global perspective, in a way to challenge the focus on localism and ignorance of urbanists for what is happening in the world.
       </p>
       <p>
@@ -41,6 +42,29 @@
       <p>
         It covers a wide range of topics such as urban design, inclusive urbanism, community development, urban art and culture,  politics and urban sustainability and more.
       </p>
+      <h3 class="sectionhead">Core Team</h3>
+      <div class="personlist">
+        <div class="person">
+          <img src="~/assets/staff/marikocolor.jpg" />
+          <span>
+            <span class="name">Mariko Sugita</span>
+            <span class="title">Founder, Editor in Chief</span>
+            <div>
+              Mariko is an urbanist and city lover. Her professional fields are research, marketing, and editing and writing in the field of architecture and urbanism. <a href="https://www.linkedin.com/in/mariko-sugita-28327bb6/" target="_blank">Full profile</a>
+            </div>
+          </span>
+        </div>
+        <div class="person">
+          <img src="~/assets/staff/jaspercolor.jpg" />
+          <span>
+            <span class="name">Jasper Stephenson</span>
+            <span class="title">Designer, Developer</span>
+            <div>
+                Jasper is a traveler and creative polymath. He spends his free time learning languages and designing and developing his latest passion projects. <a href="https://www.jasperstephenson.com" target="_blank">Website</a>
+            </div>
+          </span>
+        </div>
+      </div>
     </template>
 
     <Footer />
@@ -60,17 +84,69 @@ export default {
     }
   },
   components: { Footer, },
-  mounted () {
-    this.$store.commit('setHighlight')
-  },
   computed: {
     displayLanguage () { return this.$store.state.language },
   },
+  mounted () {
+    this.$nextTick(() => {
+      this.$store.commit('setHighlight')
+    })
+  }
 }
 </script>
 
 <style scoped lang="scss">
+@import '~/assets/variables.scss';
+
+img {
+  width: 100%;
+}
+
 .small{
   font-size: .6em;
 }
+.sectionhead {
+   @include width(mobile) {
+     margin-top: $unit * 6;
+   }
+}
+.personlist {
+  // display: flex;
+  // flex-wrap: wrap;
+  // justify-content: center;
+}
+.person {
+  $img-height: $unit * 18;
+  display: inline-block;
+  margin: 0 0$unit * 8 0;
+  display: grid;
+  grid-template-columns: $img-height 1fr;
+  grid-gap: $unit * 4;
+
+  @include width(mobile) {
+    grid-template-columns: 1fr;
+  }
+
+  & > img {
+    width: $img-height;
+    height: $img-height;
+    border-radius: $img-height / 2;
+  }
+
+  & > span {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .name {
+      font-weight: 600;
+    }
+    .title {
+      font-weight: 600;
+      opacity: .3;
+      margin-bottom: $unit;
+    }
+  }
+}
+
 </style>

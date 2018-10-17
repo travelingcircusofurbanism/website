@@ -11,7 +11,7 @@
     </nuxt-link>
     <br />
     <div class="sublinks">
-      <nuxt-link to="/about">About</nuxt-link><nuxt-link to="/author">Author</nuxt-link>
+      <nuxt-link to="/about">About</nuxt-link><nuxt-link to="/getinvolved">Get Involved</nuxt-link>
     </div>
     <div>
       <div class="citylabel" :class="{active: currentCity}">
@@ -93,7 +93,7 @@ export default {
 
   .logo {
     display: inline-block;
-    padding: $unit * 4 $unit * 5 $unit * 3 $content-padding;
+    padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding;
     font-weight: 600;
     background: $active;
     box-shadow: $over-map-shadow;
@@ -129,7 +129,7 @@ export default {
     opacity: .8;
     font-size: 1rem;
     margin: 0;
-    margin-top: $unit;
+    // margin-top: $unit / 2;
     font-weight: 400;
 
     @include width (mobile) {
@@ -141,20 +141,39 @@ export default {
     display: inline-block;
     font-weight: 400;
     pointer-events: none;
+    background: $text;
     box-shadow: $over-map-shadow;
+    padding-left: $content-padding / 2;
 
     @include width (mobile) {
+      padding-left: 0;
       margin-top: 0;
       display: flex;
       box-shadow: none;
     }
 
     a {
-      padding: $unit * 2 $content-padding;
+      padding: $unit * 2 $content-padding / 2;
       background: $text;
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        bottom: 22%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 0;
+        background: $active;
+        height: 2px;
+        transition: all .2s;
+      }
 
       &:hover {
-        background: $active;
+        &:after {
+          width: 40px;
+        }
+        background: rgba($active, .25);
       }
 
       @include width (mobile) {
@@ -162,8 +181,8 @@ export default {
         flex: 1;
         padding: $unit * 1.5 $unit * 3;
 
-        &:hover {
-          background: $text;
+        &:after {
+          display: none;
         }
       }
     }

@@ -1,47 +1,47 @@
 <template>
   <div>
-  
-    <MapboxMapLoader
-			:apikey="ak"
-			:defaultPosition="defaultPosition"
-      mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
-		>
-			<template slot-scope="{ mapboxgl, map, clusterer }">
+    <no-ssr>
+      <MapboxMapLoader
+        :apikey="ak"
+        :defaultPosition="defaultPosition"
+        mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
+      >
+        <template slot-scope="{ mapboxgl, map, clusterer }">
 
-        <MarkerManager
-          :mapboxgl="mapboxgl"
-          :map="map"
-          :clusterer="clusterer"
-          @updateMarkers="updateMarkers"
-        />
+          <MarkerManager
+            :mapboxgl="mapboxgl"
+            :map="map"
+            :clusterer="clusterer"
+            @updateMarkers="updateMarkers"
+          />
 
-        <Controller
-          v-if="clusterer.hasLoaded"
-          :mapboxgl="mapboxgl"
-          :map="map"
-          :clusterer="clusterer"
-          :markers="markers"
-        />
+          <Controller
+            v-if="clusterer.hasLoaded"
+            :mapboxgl="mapboxgl"
+            :map="map"
+            :clusterer="clusterer"
+            :markers="markers"
+          />
 
-        <MapMarker
-          v-if="markers"
-          v-for="marker, key in markers"
-          :key="key + '_' + updatePrefix"
-          :mapboxgl="mapboxgl"
-          :map="map"
-          :clusterer="clusterer"
-          :markerData="marker"
-        />
+          <MapMarker
+            v-if="markers"
+            v-for="marker, key in markers"
+            :key="key + '_' + updatePrefix"
+            :mapboxgl="mapboxgl"
+            :map="map"
+            :clusterer="clusterer"
+            :markerData="marker"
+          />
 
-        <!--<DebugMarker
-          :mapboxgl="mapboxgl"
-          :map="map"
-          :coordinates="[139.7029729, 35.5720944]"
-        />-->
+          <!--<DebugMarker
+            :mapboxgl="mapboxgl"
+            :map="map"
+            :coordinates="[139.7029729, 35.5720944]"
+          />-->
 
-			</template>
-		</MapboxMapLoader>
-
+        </template>
+      </MapboxMapLoader>
+    </no-ssr>
   </div>
 </template>
 

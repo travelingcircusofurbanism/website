@@ -16,91 +16,87 @@ export default () => {
       currentCity: null,
       isDev: false,
       panMap: false,
-      lightboxSrc: ''
+      lightboxSrc: '',
     },
 
     mutations: {
-
-      setView (state, newView) {
+      setView(state, newView) {
         // first, grab the city
         try {
-          state.currentCity = newView.center || newView[0].center ?
-            null :
-            Array.isArray(newView) ?
-              newView.reduce((acc, curr) => {
-                if (acc === null) return null
-                if (acc !== 'none' && acc !== curr.city)
-                  return null
-                else return curr.city
-              }, 'none') :
-              newView.city
+          state.currentCity =
+            newView.center || newView[0].center
+              ? null
+              : Array.isArray(newView)
+                ? newView.reduce((acc, curr) => {
+                    if (acc === null) return null
+                    if (acc !== 'none' && acc !== curr.city) return null
+                    else return curr.city
+                  }, 'none')
+                : newView.city
         } catch (e) {}
 
         state.currentView = parseMapPositionObjectsFromAnything(newView)
       },
 
-      setMapMarkers (state, newMarkers) {
+      setMapMarkers(state, newMarkers) {
         state.highlight = []
         state.mapMarkers = parseMapPositionObjectsFromAnything(newMarkers)
       },
 
-      setHighlight (state, mapPositions) {
+      setHighlight(state, mapPositions) {
         const parsedLocations = parseLocationNames(mapPositions)
         if (parsedLocations.length > 0) {
           if (state.highlight.length === 0) {
             state.doubleHighlight = []
             state.highlight = parsedLocations
-          }
-          else
-            state.doubleHighlight = parsedLocations
-        }
-        else {
-          if (state.doubleHighlight.length > 0)
-            state.doubleHighlight = []
-          else
-            state.highlight = []
+          } else state.doubleHighlight = parsedLocations
+        } else {
+          if (state.doubleHighlight.length > 0) state.doubleHighlight = []
+          else state.highlight = []
         }
       },
 
-      setCity (state, city) {
+      setCity(state, city) {
         state.currentCity = city
       },
 
-      setMobile (state, width) {
+      setMobile(state, width) {
         const mobileBreakpoint = 768
         state.isMobile = parseInt(width) <= mobileBreakpoint
       },
 
-      setLanguage (state, lang) {
-        const language = (lang.toLowerCase().indexOf('ja') !== -1) ? 'ja' : 'en'
+      setLanguage(state, lang) {
+        const language = lang.toLowerCase().indexOf('ja') !== -1 ? 'ja' : 'en'
         const isDev = state.isDev
         state.language = language
         state.mapMarkers = parseMapPositionObjectsFromAnything(
           state[
             (language === 'ja' ? 'all' : 'en') +
-            (isDev ? '' : 'Public') +
-            'Posts'
+              (isDev ? '' : 'Public') +
+              'Posts'
           ]
         )
       },
-      
-      setDev (state, isDev) {
+
+      setDev(state, isDev) {
         state.isDev = isDev
       },
 
-      setLightboxSrc (state, src) {
+      setLightboxSrc(state, src) {
         state.lightboxSrc = src
       },
 
-      setPan (state, shouldPan) {
+      setPan(state, shouldPan) {
         state.panMap = shouldPan
       },
 
-      setPosts (state, posts) {
+      setPosts(state, posts) {
         state.allPosts = posts
         state.allPublicPosts = posts.filter(p => p.public === true)
         state.enPosts = posts.filter(p => p.languages.en === true)
-        state.enPublicPosts = posts.filter(p => p.languages.en === true && p.public === true)
+        state.enPublicPosts = posts.filter(
+          p => p.languages.en === true && p.public === true
+        )
       },
     },
     actions: {
@@ -108,38 +104,41 @@ export default () => {
         const posts = require('~/static/generated/posts.json')
         context.commit('setDev', !isStatic)
         context.commit('setPosts', posts)
-        context.commit('setMapMarkers', posts.filter(p => !isStatic || p.public === true))
-      }
-    }
+        context.commit(
+          'setMapMarkers',
+          posts.filter(p => !isStatic || p.public === true)
+        )
+      },
+    },
   })
 }
-
-
 
 function parseLocationNames(source) {
   // comes in as an array of posts, mapPosition objects, an array of names, or a single one of any
   if (!source) source = []
-  if (!Array.isArray(source))
-    source = [source]
+  if (!Array.isArray(source)) source = [source]
   // if it's post objects, flatten it down to just mapPositions
   if (source[0] && source[0].mapPosition)
     source = [].concat.apply(
-      [], source
-        .map(post => post.mapPosition)
-        .filter(position => position)
+      [],
+      source.map(post => post.mapPosition).filter(position => position)
     )
   // then grab just the names
   source = source
-    .map(positionOrLocation => 
-      positionOrLocation.location ||
-      (positionOrLocation instanceof String || typeof positionOrLocation === 'string' ? positionOrLocation : null)
+    .map(
+      positionOrLocation =>
+        positionOrLocation.location ||
+        (positionOrLocation instanceof String ||
+        typeof positionOrLocation === 'string'
+          ? positionOrLocation
+          : null)
     )
-    // .filter(locationName => locationName)
+    .filter(locationName => locationName)
   // then return only unique names
   return Array.from(new Set(source))
 }
 
-function parseMapPositionObjectsFromAnything (source) {
+function parseMapPositionObjectsFromAnything(source) {
   // comes in as:
   //  a mapPosition object
   //  an array of mapPostition objects
@@ -147,38 +146,42 @@ function parseMapPositionObjectsFromAnything (source) {
   //  an array of posts
   //    posts can have a mapPosition object
   //    or an array of mapPosition objects
-  
+
   if (!source || source.length === 0 || Object.keys(source).length === 0)
     return []
-  let parsedMapPositions = source.center || source[0].center ?
-    // we can directly use a mapPosition object or an array of mapPosition objects
-    source :
-    // or, pull mapPosition object or an array of mapPosition objects from posts
-    Array.isArray(source) ?
-      // if we have multiple posts, for each...
-      source.map(post => {
-        const arrayOfPositions = Array.isArray(post.mapPosition) ?
-          post.mapPosition.map(p => {
-            const city = post.city
-            return {
-              ...p,
-              city,
-            }
-          }) :
-          // if it's not an array of mapPositions, make it one
-          [{
-            ...post.mapPosition,
-            city: post.city
-          }]
-        return arrayOfPositions
-      })
-        // then smash 'em all together
-        .reduce((acc, curr) => acc.concat(curr), []) :
-      // otherwise, we just use it straight up.
-      {
-        ...source.mapPosition,
-        city: source.city
-      }
+  let parsedMapPositions =
+    source.center || source[0].center
+      ? // we can directly use a mapPosition object or an array of mapPosition objects
+        source
+      : // or, pull mapPosition object or an array of mapPosition objects from posts
+        Array.isArray(source)
+        ? // if we have multiple posts, for each...
+          source
+            .map(post => {
+              const arrayOfPositions = Array.isArray(post.mapPosition)
+                ? post.mapPosition.map(p => {
+                    const city = post.city
+                    return {
+                      ...p,
+                      city,
+                    }
+                  })
+                : // if it's not an array of mapPositions, make it one
+                  [
+                    {
+                      ...post.mapPosition,
+                      city: post.city,
+                    },
+                  ]
+              return arrayOfPositions
+            })
+            // then smash 'em all together
+            .reduce((acc, curr) => acc.concat(curr), [])
+        : // otherwise, we just use it straight up.
+          {
+            ...source.mapPosition,
+            city: source.city,
+          }
 
   if (!Array.isArray(parsedMapPositions))
     parsedMapPositions = [parsedMapPositions]
