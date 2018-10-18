@@ -1,5 +1,5 @@
 
-# Inside of Tronto's most famous Urban laboratory: Sidewalk Labs 307
+# Inside Sidewalk Labs 307： Toronto's most famous Urban laboratory
 
 ![SidewalkLab Toronto](sidewalklab9.jpg)
 
