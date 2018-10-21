@@ -30,7 +30,7 @@
           v-if="orderedItems.length > responsiveCutoff && !showAll"
           @click="showAll = true"
         >
-          Show All Cities
+          Show All ({{orderedItems.length}})
         </div>
       </div>
     </div>
@@ -125,7 +125,7 @@ export default {
 
   .selectorframe {
     display: grid;
-    grid-template-columns: 120px 1fr;
+    grid-template-columns: 110px 1fr;
     grid-gap: $unit * 3;
 
     .sectionhead {

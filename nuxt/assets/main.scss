@@ -134,24 +134,41 @@ h4 {
 
 .sectionhead {
   font-family: 'Unica One', 'Raleway', sans-serif;
-  font-size: 1.6rem;
-  letter-spacing: 3px;
-  text-align: center;
+  font-size: 1.9rem;
+  letter-spacing: 2px;
+  position: relative;
+  display: inline-block;
+  // width: 100%;
+  z-index: 2;
+  text-align: left;
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: $unit * 8;
+  margin-top: $unit * 7;
   margin-bottom: $unit * 7;
-  padding-bottom: $unit * 3;
+  // padding-bottom: $unit * 3;
   border-bottom: 2px solid $active;
-  max-width: 60%;
+  // max-width: 60%;
+
+  &:not(.mini) {
+    &:after {
+      // content: '';
+      // position: absolute;
+      // width: 100%;
+      // height: 2px;
+      // top: 100%;
+      // left: 0;
+      // z-index: 1;
+      // background: $active;
+    }
+  }
 
   &.mini {
     margin-top: $unit * 2;
     padding-bottom: $unit * 2;
     margin-bottom: 0;
     border-bottom: 0;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     letter-spacing: 1.5px;
 
     @include width(mobile) {
@@ -165,11 +182,11 @@ h4 {
 
   @include width(mobile) {
     font-size: 1.4rem;
-    max-width: 80%;
+    // max-width: 80%;
     margin-top: $unit * 3;
-    margin-bottom: $unit * 3;
+    margin-bottom: $unit * 4;
     padding-bottom: 0;
-    border-bottom: none;
+    // border-bottom: none;
   }
 }
 
@@ -260,8 +277,8 @@ h4 {
 
   a.external {
     background: url('~assets/icons/external.svg') center right no-repeat;
-    background-size: 11px;
-    padding-right: 16px;
+    background-size: 9px;
+    padding-right: 12px;
     margin-right: 2px;
   }
 
@@ -310,8 +327,8 @@ h4 {
   }
 
   &.secondary {
-    color: darken($offwhite, 40%);
-    box-shadow: 0 2px 4px $offwhite;
+    color: darken($offwhite, 50%);
+    box-shadow: 0 1px 3px $offwhite;
     background: rgba(white, 0.8);
 
     &.onwhite {

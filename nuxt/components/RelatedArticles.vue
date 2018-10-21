@@ -66,8 +66,8 @@ export default {
 }
 
 h4 {
-  display: block;
-  text-align: center;
+  display: inline-block;
+  // text-align: center;
 }
 
 .postgrid {
@@ -83,6 +83,11 @@ h4 {
   display: block;
   height: 100%;
   text-decoration: none;
+  color: $text;
+
+  &:hover {
+    color: $active;
+  }
 
   &:not(:last-of-type) {
     margin-right: $unit * 3;

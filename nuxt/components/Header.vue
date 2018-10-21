@@ -102,7 +102,7 @@ export default {
       text-align: center;
       box-shadow: none;
       width: 100%;
-      padding: $unit * 3 $unit;
+      padding: $unit * 2 $unit;
 
       .tagline {
         display: none;
