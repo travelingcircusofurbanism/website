@@ -97,6 +97,8 @@ h4 {
   width: 100%;
   padding: $header-offset $content-padding;
   position: relative;
+  z-index: 2;
+  box-shadow: $unit * -3 0 $unit * 3 rgba($text, 0.1);
 
   @include width(mobile) {
     padding: $content-padding-mobile;
