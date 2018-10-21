@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Wed, 17 Oct 2018 15:07:41 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 18 Oct 2018 23:56:07 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -38,7 +38,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Inside of Tronto's most famous Urban laboratory: Sidewalk Labs 307]]></title>
+            <title><![CDATA[ Inside Sidewalk Labs 307： Toronto's most famous Urban laboratory]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</guid>
             <pubDate>Mon, 15 Oct 2018 04:00:00 GMT</pubDate>
