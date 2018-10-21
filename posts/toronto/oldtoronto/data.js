@@ -1,19 +1,12 @@
 module.exports = {
   public: false,
-  date: '10/15/2018',
-  category: 'essay',
+  date: '10/20/2018',
+  category: 'place',
   mapPosition: [
     {
-      location: 'Waterfront Toronto',
+      location: 'The Distillery District',
       bearing: 0,
-      center: [-79.377889, 43.641951],
-      zoom: 12.0,
-      pitch: 0,
-    },
-    {
-      location: 'The Bentway',
-      bearing: 0,
-      center: [-79.406657, 43.637711],
+      center: [-79.359339, 43.650255],
       zoom: 12.0,
       pitch: 0,
     },
