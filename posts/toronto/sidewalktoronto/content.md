@@ -1,5 +1,5 @@
 
-# Inside Sidewalk Labs 307： Toronto's most famous Urban laboratory
+# Inside Sidewalk Labs 307： Toronto's famous Urban laboratory
 
 ![SidewalkLab Toronto](sidewalklab9.jpg)
 

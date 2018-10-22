@@ -18,7 +18,7 @@ Portland's Sunday Parkways is about opening the streets back to the citizens and
 ![](sundayparkways4.jpg)
 ![](sundayparkways5.jpg)
 
-I used [BikeTown](https://www.biketownpdx.com/) (which is affordable works great and!), but [This one](http://www.pdxbikerentals.com/#biketownpdx) looks super cool too. It looks like there is a bunch of other options too - while biking on the route today I found several cycling shops with workshops/tours, cyclist organizations, and several other services that make it easier/more enjoyable to use a bicycle.
+I used [BikeTown](https://www.biketownpdx.com/) (which is affordable and works great!), but [this one](http://www.pdxbikerentals.com/#biketownpdx) looks super cool too. It looks like there is a bunch of other options too - while biking on the route today I found several cycling shops with workshops/tours, cyclist organizations, and several other services that make it easier/more enjoyable to use a bicycle.
 
 ![](sundayparkways7.jpg)
 ![](sundayparkways8.jpg)
