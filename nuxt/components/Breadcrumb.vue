@@ -61,7 +61,7 @@ export default {
 
 .breadcrumb {
   background: $shade;
-  margin-bottom: $unit * 5;
+  margin-bottom: $unit * 3;
   padding: 0;
   width: 50vw;
   white-space: nowrap;

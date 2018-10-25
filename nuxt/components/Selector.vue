@@ -125,7 +125,7 @@ export default {
 
   .selectorframe {
     display: grid;
-    grid-template-columns: 110px 1fr;
+    grid-template-columns: 105px 1fr;
     grid-gap: $unit * 3;
 
     .sectionhead {

@@ -93,7 +93,7 @@ export default {
 
   .logo {
     display: inline-block;
-    padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding;
+    padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * .75;
     font-weight: 600;
     background: $active;
     box-shadow: $over-map-shadow;
@@ -119,6 +119,7 @@ export default {
     font-family: 'Unica One', 'Raleway', sans-serif;
     font-size: 2.2rem;
     margin: 0;
+    color: white !important;
 
     @include width (mobile) {
       font-size: 1.6rem;
@@ -143,7 +144,7 @@ export default {
     pointer-events: none;
     background: $text;
     box-shadow: $over-map-shadow;
-    padding-left: $content-padding / 2;
+    padding-left: $content-padding / 4;
 
     @include width (mobile) {
       padding-left: 0;
