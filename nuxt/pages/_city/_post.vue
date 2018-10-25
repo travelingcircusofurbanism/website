@@ -23,7 +23,9 @@
     </div>
 
 
-    <h1>{{ title }}</h1>
+    <h1
+      :class="{ja: displayLanguage === 'ja'}"
+    >{{ titleInLanguage }}</h1>
 
     <PostDetails
       class="details"
@@ -140,6 +142,11 @@ export default {
     userLanguage () { return this.$store.state.language },
     publicPosts () { return this.$store.state.enPublicPosts },
     allPosts () { return this.$store.state.allPosts },
+    titleInLanguage () {
+      return this.displayLanguage === 'ja'
+        ? this.jaTitle
+        : this.title
+    },
     contentInRightLanguage () {
       const contentInRightLanguage = this.content[this.displayLanguage] || this.content.en || this.content.ja || ''
       return contentInRightLanguage
@@ -169,7 +176,7 @@ export default {
       )
     if (this.languages.ja)
       contentPromises.push(
-        axios.get(this.path + '/content.html', axiosConfig)
+        axios.get(this.path + '/ja.html', axiosConfig)
           .then(response => {
             this.$set(this.content, 'ja', response.data)
           })
@@ -270,6 +277,7 @@ h1 {
   background: $active;
   color: white;
   margin-bottom: $content-padding;
+  margin-top: -3 * $unit;
   text-align: center;
 
   @include width(mobile) {

@@ -112,6 +112,12 @@ function getDataForPost(postDir, city, slug) {
       contentToUseForData.indexOf('#') + 1
     )
 
+    let jaTitle = null
+    if (jaContent) {
+      jaTitle = jaContent.substring(jaContent.indexOf('#') + 1)
+      jaTitle = jaTitle.substring(0, jaTitle.indexOf('\n'))
+    }
+
     // create nice truncated description
     let description = postData.description
     if (!description)
@@ -156,6 +162,7 @@ function getDataForPost(postDir, city, slug) {
       languages,
       public: postData.public,
     }
+    if (jaTitle) data.jaTitle = jaTitle
     return data
   } catch (e) {
     log(
