@@ -370,7 +370,7 @@ h4 {
   }
 
   &.mini {
-    padding: $unit * 1.2 $unit * 2;
+    padding: $unit * 1 $unit * 2;
     margin: 2px;
 
     @include width(mobile) {
@@ -417,7 +417,7 @@ h4 {
   }
 
   &.showall {
-    background: rgba($offwhite, 0.2);
+    background: rgba($offwhite, 0.25);
   }
 }
 

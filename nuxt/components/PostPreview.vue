@@ -36,7 +36,7 @@
         :date="date"
       />
 
-      <div>
+      <div class="description">
         {{ description }}
         <nuxt-link :to="url">Keep Reading →</nuxt-link>
       </div>
@@ -144,6 +144,10 @@ h4 {
   color: $text !important;
   margin-top: 0;
   margin-bottom: $unit * 2;
+}
+
+.description {
+  word-break: break-word;
 }
 
 </style>

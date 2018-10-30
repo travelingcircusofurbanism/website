@@ -11,7 +11,17 @@
     </nuxt-link>
     <br />
     <div class="sublinks">
-      <nuxt-link to="/about">About</nuxt-link><nuxt-link to="/getinvolved">Get Involved</nuxt-link>
+      <nuxt-link
+        to="/about"
+        :class="{currentpage: path === '/about'}"
+      >
+        About
+      </nuxt-link><nuxt-link
+        to="/getinvolved"
+        :class="{currentpage: path === '/getinvolved'}"
+      >
+        Get Involved
+      </nuxt-link>
     </div>
     <div>
       <div class="citylabel" :class="{active: currentCity}">
@@ -38,6 +48,7 @@ export default {
   computed: {
     currentCity () { return this.$store.state.currentCity },
     isMobile () { return this.$store.state.isMobile },
+    path () { return this.$nuxt.$route.path },
   },
   mounted () {},
   methods: {
@@ -159,22 +170,30 @@ export default {
       position: relative;
 
       &:after {
+        $underlineheight: 3px;
         content: '';
         position: absolute;
-        bottom: 22%;
+        bottom: 0;//($unit * 2) - $underlineheight;
         left: 50%;
         transform: translateX(-50%);
+        // border-radius: $underlineheight / 2;
         width: 0;
         background: $active;
-        height: 2px;
+        height: $underlineheight;
         transition: all .2s;
       }
 
       &:hover {
         &:after {
-          width: 40px;
+          width: 100%;
         }
         background: rgba($active, .25);
+      }
+
+      &.currentpage {
+        &:after {
+          width: 100%;
+        }
       }
 
       @include width (mobile) {
