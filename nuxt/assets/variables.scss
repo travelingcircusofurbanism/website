@@ -1,13 +1,12 @@
-
 // colors
 $active: rgb(0, 173, 204);
 $activelight: lighten($active, 15%);
-$highlight: #FDB833;
+$highlight: #fdb833;
 $text: #222;
 $offwhite: rgb(224, 223, 214);
 $shade: rgb(247, 246, 243);
 
-$over-map-shadow: 0 10px 20px rgba(#333, .7);
+$over-map-shadow: 0 10px 20px rgba(#333, 0.7);
 
 // sizing
 $unit: 6px;
@@ -16,33 +15,51 @@ $content-padding: $unit * 8;
 $content-padding-mobile: $unit * 3;
 $header-offset: $unit * 5;
 
-
 // mixins
-@mixin width ($size) {
-  @if $size == "mobile" {
-    @media (max-width: 768px) { @content; }
+@mixin width($size) {
+  @if $size == 'mobile' {
+    @media (max-width: 768px) {
+      @content;
+    }
   }
-  @if $size == "mid" {
-    @media (min-width: 769px) and (max-width: 1300px) { @content; }
+  @if $size == 'mid' {
+    @media (min-width: 769px) and (max-width: 1300px) {
+      @content;
+    }
   }
-  @if $size == "midorsmaller" {
-    @media (max-width: 1300px) { @content; }
+  @if $size == 'midorsmaller' {
+    @media (max-width: 1300px) {
+      @content;
+    }
   }
-  @if $size == "large" {
-    @media (min-width: 1301px) and (max-width: 1600px) { @content; }
+  @if $size == 'large' {
+    @media (min-width: 1301px) and (max-width: 1600px) {
+      @content;
+    }
   }
-  @if $size == "huge" {
-    @media (min-width: 1601px) { @content; }
+  @if $size == 'huge' {
+    @media (min-width: 1601px) {
+      @content;
+    }
+  }
+  @if $size == 'desktop' {
+    @media (min-width: 769px) {
+      @content;
+    }
   }
 }
 
-@mixin fade-to-color ($edge, $color) {
+@mixin fade-to-color($edge, $color) {
   content: '';
   pointer-events: none;
   position: absolute;
   right: 0;
   bottom: 0;
-  top:0;
-  left:0;
-  background-image: linear-gradient(to $edge, rgba($color ,0) 90%, $color 99.5%);
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(
+    to $edge,
+    rgba($color, 0) 90%,
+    $color 99.5%
+  );
 }

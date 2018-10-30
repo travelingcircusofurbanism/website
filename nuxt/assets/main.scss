@@ -51,7 +51,7 @@ h4 {
 
 h1 {
   font-size: 3.2rem;
-  line-height: 1.1;
+  line-height: 1;
   text-transform: uppercase;
   font-family: 'Unica One', 'Raleway', sans-serif;
   position: relative;
@@ -62,16 +62,16 @@ h1 {
     margin-top: $unit * 3;
   }
 
-  &:before {
-    content: '';
-    position: absolute;
-    width: $content-padding * 0.35;
-    height: 95%;
-    top: 2.5%;
-    left: -1 * $content-padding;
-    z-index: 1;
-    background: $active;
-  }
+  // &:before {
+  //   content: '';
+  //   position: absolute;
+  //   width: $content-padding * 0.1;
+  //   height: 95%;
+  //   top: 2.5%;
+  //   left: -0.6 * $content-padding;
+  //   z-index: 1;
+  //   background: $active;
+  // }
 
   &.ja {
     font-size: 2.4rem;
@@ -156,43 +156,71 @@ h4 {
 
 .sectionhead {
   font-family: 'Unica One', 'Raleway', sans-serif;
-  font-size: 2.4rem;
+  font-size: 2rem;
+  line-height: 1;
   // letter-spacing: 1px;
   position: relative;
-  display: inline-block;
+  // padding-right: $unit * 3;
+  // padding-left: $content-padding;
+  // left: -1 * $content-padding;
+  // background: $active;
+  display: table;
   // width: 100%;
+  text-align: center;
   z-index: 2;
-  text-align: left;
+  // text-align: left;
   margin: 0 auto;
   text-transform: uppercase;
   font-weight: 600;
-  margin-top: $unit * 5;
+  margin-top: $unit * 7;
   margin-bottom: $unit * 7;
+  // color: white;
   color: $active;
+  // width: 100%;
   // padding-bottom: $unit * 3;
-  // border-bottom: 2px solid $active;
-  // max-width: 60%;
+  max-width: 60%;
 
   &:not(.mini) {
+    // border: 2px solid rgba($active, 1);
+    padding: $unit $unit * 5;
+
+    // @include width(desktop) {
     &:before {
       content: '';
       position: absolute;
-      width: $content-padding * 0.5;
-      height: $content-padding * 0.7;
+      width: $unit * 10;
+      height: 3px;
+      // // width: $content-padding * 0.5;
+      // // height: $content-padding * 0.6;
       // width: 0;
       // height: 0;
       // border-top: $content-padding * 0.4 solid transparent;
       // border-bottom: $content-padding * 0.4 solid transparent;
       // border-left: $content-padding * 0.6 solid $active;
-      top: 20%;
-      left: -1 * $content-padding;
-      // transform: translateX(-50%) rotateZ(45deg);
+      // top: 15%;
+      bottom: 48%;
+      left: 100%;
+      // // left: -1 * $content-padding;
+      // // transform: translateX(-50%) rotateZ(45deg);
       z-index: 1;
       background: $active;
     }
+    &:after {
+      content: '';
+      position: absolute;
+      width: $unit * 10;
+      height: 3px;
+      bottom: 48%;
+      right: 100%;
+      z-index: 1;
+      background: $active;
+    }
+    // }
   }
 
   &.mini {
+    padding-right: 0;
+    background: transparent;
     color: $text;
     margin-top: $unit * 2;
     padding-bottom: $unit * 2;
@@ -211,10 +239,10 @@ h4 {
   }
 
   @include width(mobile) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     // max-width: 80%;
-    margin-top: $unit * 3;
-    margin-bottom: $unit * 4;
+    margin-top: $unit * 4;
+    margin-bottom: $unit * 3;
     padding-bottom: 0;
     // border-bottom: none;
   }

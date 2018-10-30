@@ -66,7 +66,7 @@ export default {
 }
 
 h4 {
-  display: inline-block;
+  // display: inline-block;
   // text-align: center;
 }
 
