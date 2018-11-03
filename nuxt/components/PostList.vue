@@ -8,7 +8,7 @@
 				v-for="(post, key) in postsToShow"
 				:key="key"
 				v-bind="post"
-				:class="{draft: post.public !== true}"
+				:class="{fade: post.public !== true || new Date(post.date) > new Date()}"
 			/>
 		</transition-group>
 		<div 
@@ -54,8 +54,8 @@ export default {
 			return this.isDev ?
 				this.posts :
 				this.userLanguage === 'en' ?
-					this.posts.filter(p => p.public === true && p.languages['en'] === true) :
-					this.posts.filter(p => p.public === true)
+					this.posts.filter(p => p.public === true && p.languages['en'] === true && new Date(post.date) < new Date()) :
+					this.posts.filter(p => p.public === true && new Date(post.date) < new Date())
 		},
 		totalPosts () { return this.showablePosts.length },
 		postsToShow () { return this.showablePosts.slice(0, this.shownPostCount) },
@@ -66,7 +66,7 @@ export default {
 
 <style lang="scss" scoped>
 
-	.draft {
+	.fade {
 		opacity: .4;
 	}
 

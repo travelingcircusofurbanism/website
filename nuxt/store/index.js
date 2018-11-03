@@ -92,10 +92,15 @@ export default () => {
 
       setPosts(state, posts) {
         state.allPosts = posts
-        state.allPublicPosts = posts.filter(p => p.public === true)
+        state.allPublicPosts = posts.filter(
+          p => p.public === true && new Date(p.date) < new Date()
+        )
         state.enPosts = posts.filter(p => p.languages.en === true)
         state.enPublicPosts = posts.filter(
-          p => p.languages.en === true && p.public === true
+          p =>
+            p.languages.en === true &&
+            p.public === true &&
+            new Date(p.date) < new Date()
         )
       },
     },
