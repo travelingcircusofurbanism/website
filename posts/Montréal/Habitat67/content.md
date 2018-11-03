@@ -1,43 +1,35 @@
 
-#  Iconic Canadian housing complex and its comeback
+#  Habitat 67 and Habitat 2.0?? Iconic Canadian housing complex and its comeback
 
 ![](habitat673.jpg)
-The other pavilion to live on is [Habitat 67](https://www.theguardian.com/cities/2015/may/13/habitat-67-montreal-expo-moshe-safdie-history-cities-50-buildings-day-35) – the young Israeli-Canadian architect Moshe Safdie’s wildly ambitious, government-sponsored attempt at reimagining apartment living, and one of the most important buildings of the 1960s.
 
-You simply can't leave Montréal without checking out Habitat 67. This famous apartment buildings of the 1960s were designed by the Israeli-Canadian architect Moshe Safdie for Montréal’s world Expo in 1967. 
+You simply can't leave Montréal without checking out [Habitat 67](http://www.habitat67.com/en/). This famous apartment buildings of the 1960s were ambitious, a government-sponsored attempt at reimagining the future of apartment living. It was designed by the Israeli-Canadian architect [Moshe Safdie](https://www.archdaily.com/tag/moshe-safdie) for Montréal’s world Expo in 1967. 
 
 ### A functioning icon of 1960s utopianism
 
 ![](habitat672.jpg)
 
-
-Habitat 67 echoes a little known post-war Japanese architectural movement called Metabolism, whose proponents believed buildings should be designed as living, organic, interconnected webs of prefabricated cells. Perhaps the most famous Metabolist incarnation is Tokyo’s Nakagin Capsule Tower, another pile of concrete cubes dotted with porthole-like windows, erected in 1972. The influence of Le Corbusier, especially the French master’s love affair with concrete, on Habitat 67 is also clear. But Safdie set his own course, attempting to balance cold geometry against living, breathing nature.
+Until the visit, I didn't realize that Habitat 67 echoes with *[Metabolism](https://en.wikipedia.org/wiki/Metabolism_(architecture))* - Japanese post-war architectural movement. Of course, it has some similarities with Tokyo’s [Nakagin Capsule Tower](https://www.nationalgeographic.com/photography/proof/2017/10/nakagin-capsule-tower/), for instance, that are constructed with 140 removable capsules. These buildings are designed with interconnected webs of prefabricated cells of concrete. 
 
 ![](habitat674.jpg)
 
-### Its comeback as Habitat 2.0 by BIG
+### Habitat 67 is coming back as Habitat 2.0 
 
-Now,  after the 50th anniversary of Habitat 67, 
+Now, there is not so much more to say about HHabitat 67 here, it is interesting to know that we are expecting its comeback very soon in Toronto. After the 50th anniversary of Habitat 67, Bjarke Ingels of [BIG](http://www.big.dk/) is planning Habitat 2.0 in downtown Toronto - King Street West. The project is currently is now going through the city’s approval process. 
 
 ![](habitat678.jpg)
 
-Bjarke Ingels of [BIG](http://www.big.dk/), who thinks Habitat ’67 is “jaw dropping.” For a site in downtown Toronto, BIG has proposed a collection of rectilinear units arranged in jagged stacks, grouped around interior courtyards. The project, which is currently wending its way through the city’s approval process, is clad in stone instead of concrete, and it certainly won’t be prefabricated, but the family resemblance is obvious. Ingels has referred to this development as “Habitat 2.0.”
-
 ![](DSC02085.jpg)
-*A model of Habitat 2.0 is being exbited at [Unzipped Toronto](http://unzippedtoronto.com/), Bjarke Ingels’s Serpentine Pavilion, at Kings Street in Toronto.*
+*A model of Habitat 2.0 is being exhibited at [Unzipped Toronto](http://unzippedtoronto.com/), Bjarke Ingels’s Serpentine Pavilion, at Kings Street in Toronto.*
 
-Proposed for a site between King Street West and Wellington Street, the BIG-designed development includes 500 apartments contained within a pixelated-looking block that rises and falls to create five peaks.
+Although the resemblance is obvious with pixelated-looking blocks, instead of being an experimental utopia in an isolated island that is far from downtown Montréal (it is true, it is rather hard to get there), a proposed site for Habitat 2.0 is in the heart of downtown Toronto. 
 
-It is this modular arrangement that gives the design a similar aesthetic to Safdie's Habitat 67 – the three-dimensional landscape of 354 stacked concrete "boxes" built for the Montreal Expo of 1967.
+Instead of cherishing the old masterpieces as static, never-updating artifacts, it is always fascinating to see how architectural visions and philosophy (or we can even call it "ideology") sometimes unexpectedly come back to the present. 
 
-
-But the building mass will be broken up into cuboidal modules, each twisted by 45 degrees to create more opportunities to bring in daylight.
-The five tower elements will each be between 15 and 17 storeys high. There will also be openings at ground level, allowing pedestrians to potentially walk through the courtyard.
-
+You can check the detailed plan and images of Habitat 2.0 [here](https://www.dezeen.com/2016/02/26/bjarke-ingels-group-big-habitat-2-0-king-street-west-wellington-toronto-canada/). 
 
 ![](habitat671.jpg)
-*Is it permitted to take photos of Habitat 67 for personal and non-commercial use. Howeverm Habitat 67 is a private property, so respect its residents.*
+*Is it permitted to take photos of Habitat 67 for personal and non-commercial use. However Habitat 67 is a private property, so respect its residents.*
 
 Reference 
 - [Habitat 2.0: Moshe Safdie’s iconic Canadian complex makes a comeback](https://www.curbed.com/2017/8/30/16216154/iconic-habitat-67-montreal-moshe-safdie-bjarke-ingels)
-- [BIG designs "Habitat 2.0" for Toronto](https://www.dezeen.com/2016/02/26/bjarke-ingels-group-big-habitat-2-0-king-street-west-wellington-toronto-canada/)
