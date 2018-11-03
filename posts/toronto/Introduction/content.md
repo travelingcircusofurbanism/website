@@ -10,6 +10,7 @@
 
 - [The Bentway](http://www.thebentway.ca/) is an interesting & innovative public space project under the Gardiner Expressway in Toronto. Monocle’s podcast [The Urbanist](https://monocle.com/radio/shows/the-urbanist/tall-stories-121/) has an episode about this place - check it out!
 
+- You can check [Urban Toronto Development Map](http://urbantoronto.ca/map/) and see all the development plans on a map. You can filter the map by buiidling status, building type and developer. It's a great tool to imagine what the future of Toronto would like. 
 
 ### Read
 

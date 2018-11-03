@@ -6,16 +6,13 @@ http://sotonoba.place/2018nyc10sen
 ![new york urbanist](newyork01.jpg)
 *Photo by Yucel Moran on Unsplash*
 
-### Things to do, places/project to check out
+### Things to do, places to go
 
 - Obviously [High Line](https://www.thehighline.org/)
 
 ### Read
 
 - [Jackson Heights](https://ny.curbed.com/2017/4/19/15328342/jackson-heights-queens-history) is known to be the most ethnically and culturally diverse neighborhood in the world. The documentary [In Jackson Heights](https://vimeo.com/141051231) depicts everyday life of people in Jackson Heights, their community, and also their struggle.
-
-? Vishaan Chakrabarti
-https://www.youtube.com/results?search_query=Vishaan+Chakrabarti+new+york
 
 - [CurbedNY](https://ny.curbed.com/maps)
 
@@ -34,4 +31,7 @@ https://www.youtube.com/results?search_query=Vishaan+Chakrabarti+new+york
 
 - [Van Alen Institute](https://www.vanalen.org/) is an organization that believes design can transform cities, landscapes, and regions to improve people’s lives. Their projects and website are full of inspiration.
 
-- [The center for urban pedagogy](http://welcometocup.org/) is a nonprofit organization that uses the power of design and art to increase meaningful civic engagement.
+- [URBAN-X](https://www.urban-x.com/) supports startups working with reimagining cities and urban life. It is interetsing to see a acceralation program that is specific to urban initiatives. I learned a concept of "urbanist in residence" from here, too. 
+
+- [Urban Deisgn Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges. 
+

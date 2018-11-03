@@ -4,7 +4,11 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
+<<<<<<< HEAD
         <lastBuildDate>Sat, 03 Nov 2018 02:00:32 GMT</lastBuildDate>
+=======
+        <lastBuildDate>Sat, 03 Nov 2018 00:54:28 GMT</lastBuildDate>
+>>>>>>> b9f193ededbb4dc1cd09a4e853a3fa2dde491abf
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -17,7 +21,45 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
+<<<<<<< HEAD
             <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
+=======
+            <title><![CDATA[ Evergreen Brick Works: Ravines define Toronto, and it's time to talk about nature in cities]]></title>
+            <link>https://www.travelingcircusofurbanism.com/toronto/evergreen</link>
+            <guid>https://www.travelingcircusofurbanism.com/toronto/evergreen</guid>
+            <pubDate>Sun, 28 Oct 2018 04:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen12.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen5.jpg"></p>
+<p>Although Toronto has many great examples of making the best use of old industrial buildings, such as <a href="https://www.travelingcircusofurbanism.com/toronto/401richmond">401 Richimond</a> and <a href="https://www.travelingcircusofurbanism.com/toronto/oldtoronto">the Distillery District</a>, I feel like <a href="https://www.evergreen.ca/">Evergreen Brick Works</a> stands out the most with its scale and vision for cities of the future.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen18.jpg"><br>
+<em>&quot;The skyline of Toronto spells Don Valley Product&quot;</em></p>
+<p>Evergreen Brick Works is located in the Don River Valley, and as the name suggests, it used to be a brickworks factory. Opened in 1889, the brickworks operated for almost 100 years. It is not too much to say that most of the well-known Toronto landmarks are constructed by using the brinks that were created here.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen10.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen4.jpg"><br>
+After the closure of the factory, the site has been converted into a community and cultural center by non-profit organization Evergreen, surrounded by a large, beautiful city park. Opened its doors in 2010, It is a place to learn &amp; experience green, environmentally sustainable design and practices for cities in the future.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg"><br>
+<em>Children's Garden in Evergreen Brick Works</em></p>
+<h1>Ravines define Toronto</h1>
+<p>During the early 20th century, this area was largely neglected, and adjacent ravines were used as landfills for garbage and industrial refuse. Now, the city of Toronto has been working on <a href="https://donrivervalleypark.ca/">revitalizing the area</a>, putting the focus on the city's neglected ravine spaces.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen6.jpg"><br>
+<em>Description panel that explains how important ravines are to Toronto. Evergreen Brick Works is like a museum - you can walk around and read these stories everywhere on the site.</em></p>
+<p>In Toronto, <a href="https://www.toronto.ca/explore-enjoy/parks-gardens-beaches/ravines-natural-parklands/">ravine system</a> is undoubtly one of the most distinctive geographical features that characterises the city, and it is also the site of the city's recent strategic focus to create ecological services and recreation opportunities. So of course, it is not a coincidence that they have the low carbon hub for green design in this location in Don Valley.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen14.jpg"><br>
+<em>The park section of the Brick Works is managed by the City of Toronto, and you can take a walk and embrace the nature of the city. This lookout is only about 20 mins away from the Welcome Centre by foot. Check out a map <a href="https://donrivervalleypark.ca/park-map/">here</a></em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen7.jpg"><br>
+<em>There are always events and workshops you can participate throughout a week</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen9.jpg"></p>
+<p>Just Imagine Toronto coexisting with a great diversity of wildlife species. Cities are getting bigger worldwide, but it doesn't mean that we can stop thinking about the nature - in fact, it is very crucial, and obviously Toronto seems to know that. If you're an urbanist who is curious about ecological sustainability and biodiversity in/with cities, I'd recommend to check out Evergreen Brick Works immediately.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen17.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
+>>>>>>> b9f193ededbb4dc1cd09a4e853a3fa2dde491abf
             <link>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</guid>
             <pubDate>Sat, 20 Oct 2018 07:00:00 GMT</pubDate>
@@ -148,6 +190,9 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 </li>
 <li>
 <p><a href="http://www.thebentway.ca/">The Bentway</a> is an interesting &amp; innovative public space project under the Gardiner Expressway in Toronto. Monocle’s podcast <a href="https://monocle.com/radio/shows/the-urbanist/tall-stories-121/">The Urbanist</a> has an episode about this place - check it out!</p>
+</li>
+<li>
+<p>You can check <a href="http://urbantoronto.ca/map/">Urban Toronto Development Map</a> and see all the development plans on a map. You can filter the map by buiidling status, building type and developer. It's a great tool to imagine what the future of Toronto would like.</p>
 </li>
 </ul>
 <h3>Read</h3>
@@ -759,6 +804,7 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
             </enclosure>
         </item>
         <item>
+<<<<<<< HEAD
             <title><![CDATA[  Adaptive reuse project: a renovated historic elementary school Kennedy School by McMenamins]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/KennedySchool</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/KennedySchool</guid>
@@ -802,6 +848,8 @@ It is open for public and you can enter the building for free - it is very inter
             </enclosure>
         </item>
         <item>
+=======
+>>>>>>> b9f193ededbb4dc1cd09a4e853a3fa2dde491abf
             <title><![CDATA[ Things to do and read for urbanists @Portland]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/Introduction</guid>
@@ -855,7 +903,54 @@ It is open for public and you can enter the building for free - it is very inter
             </enclosure>
         </item>
         <item>
+<<<<<<< HEAD
             <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
+=======
+            <title><![CDATA[  Adaptive reuse project: a renovated historic elementary school Kennedy School by McMenamins]]></title>
+            <link>https://www.travelingcircusofurbanism.com/portland/KennedySchool</link>
+            <guid>https://www.travelingcircusofurbanism.com/portland/KennedySchool</guid>
+            <pubDate>Thu, 26 Jul 2018 04:00:00 GMT</pubDate>
+            <description><![CDATA[
+<h3>McMenamins, a pioneer in the adaptive reuse field</h3>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg"><br>
+Started in 1974 by the McMenamins brothers, the Oregon-based company <a href="https://www.mcmenamins.com/">McMenamins</a> has been reusing old buildings that once served as schools, churches, theaters and homes.Their properties include historic hotels, pubs, concert venues and movie theaters, and all of them are whimsical and wonderfully special.</p>
+<p>They recognized the local values and potentials of these abandoned buildings, as well as the environmental responsibility in restoring old buildings - they also use recycled materials wherever possible in new construction. Thus, McMenamins is a great example for adaptive reuse, adding new vales to the old buildings for the future while paying respect to their histories.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool12.jpg"></p>
+<p>The other day, I visited one of their venues in Portland called <a href="https://www.mcmenamins.com/kennedy-school">Kennedy School</a> - which includes hotels, pubs, an event venue and a swimming pool, dining and movie theater.</p>
+<h3>Kennedy School</h3>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool0.jpg"></p>
+<p>Opened in 1915, The Kennedy School is a historic elementary school in northeast Portland. After it lost its function as a elementary school, it has been transformed into a 57-room hotel with a restaurant, multiple small bars, a movie theater, a swimming pool and a brewery.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool2.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool3.jpg"><br>
+<em>It is also part of <a href="https://www.travelingcircusofurbanism.com/portland/Sundayparkways">BikeTown</a> area and has 4 racks</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool5.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool6.jpg"><br>
+It is open for public and you can enter the building for free - it is very interesting to see the remaining structure of a elementary school and all the whimsical/fun art pieces on the walls.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool7.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool9.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool10.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool11.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool13.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool14.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool16.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool15.jpg"></p>
+<p>I highly recommend for a visit, and watch a cheap movie / get drinks here, and enjoy how they breathe new life into this old building without failing to appreciate the beauty of the past.</p>
+<p>References:</p>
+<ul>
+<li><a href="https://www.meetingstoday.com/magazines/article-details/articleid/23520/title/mcmenamins-is-a-pioneer-in-the-adaptive-reuse-field">McMenamins is a pioneer in the adaptive reuse field</a></li>
+<li><a href="http://www.spiritedbiz.com/vision-versatility-story-mcmenamins/#slide-5">VISION AND VERSATILITY: THE STORY OF MCMENAMINS</a></li>
+<li><a href="https://www.ankrommoisan.com/blog/2016/04/05/mcmenamins-renovations-modernizing-future-while-honoring-past">McMenamins Renovations: Modernizing for the Future while Honoring the Past</a></li>
+</ul>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
+>>>>>>> b9f193ededbb4dc1cd09a4e853a3fa2dde491abf
             <link>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</guid>
             <pubDate>Sun, 22 Jul 2018 07:00:00 GMT</pubDate>
@@ -1341,6 +1436,40 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
             </enclosure>
         </item>
         <item>
+            <title><![CDATA[ Mueller - a former industrial zone to a sustainable enclave]]></title>
+            <link>https://www.travelingcircusofurbanism.com/austin/Mueller</link>
+            <guid>https://www.travelingcircusofurbanism.com/austin/Mueller</guid>
+            <pubDate>Mon, 28 May 2018 04:00:00 GMT</pubDate>
+            <description><![CDATA[
+<h2>Mueller doesn't look like anywhere else in Austin</h2>
+<p>During my stay in Austin, I had a chance to visit a neighborhood called Mueller - Austin's 700-acre wide 'showplace' of new urbanism and enlightened sustainable living.</p>
+<p>The neighborhood looks lovely, with the beautifully designed houses and green street trees etc. It is hard to believe that this area used to be an industrial site not so long time ago - it was an outdated municipal airport, which closed in 1999.</p>
+<p>Now it turned into a vibrant neighborhood, with the residential houses and shops, open space and parks, communal summing pools and other necessary facilities. This is a city's effort to bring new residents into the central part of Austin to this greener, more sustainable neighborhood.</p>
+<h2>Austin as “carbon neutral”city</h2>
+<p>In recent years, many cities are pledging to become “carbon neutral” by 2050 - Austin, where car ownership and car-dependent lifestyle seem to be still highly valued, is not the exception. According to <a href="https://www.nationalgeographic.com/environment/urban-expeditions/austin/austin-green-buildings-fight-urban-sprawl/">this article</a>, Austin adopted a new legislation to make&quot;all new homes are to be rated net-zero capable, meaning they produce as much electricity as they consume.&quot;</p>
+<p>Mueller is one of the pioneers of this green buildings movement, aiming to invite the residents back to the city core to live in the sustainable, eco-friendly designed neighborhood.</p>
+<p>Of course, there is a downside too - once a low-income industrial neighborhood, the prices and development have increased rapidly in recent years. According to this well-written article, a market study showed a shortage of nearly 50,000 affordable apartments in 2014.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller01.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller02.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller03.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller04.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09673.jpg"></p>
+<h2>On racial diversity and 'a meaningful community'</h2>
+<p>Aside from the gentrification issue, it's easy to praise this neighborhood - sustainable, well maintained and functioning central city neighborhood. However, Mueller also struggles with other urban problems like the other neighborhoods in the city.I found <a href="https://www.npr.org/2015/02/13/385495327/a-community-takes-on-racial-tensions-once-hidden-under-the-surface">the article</a> that talks about the racial tension of Mueller and I found it more interesting.</p>
+<p>Mueller is created based on the idea of &quot;new urbanism&quot;, in which a meaningful community plays a great rule. However, there have been some issues with African-American residents who don't feel so welcomed in this neighborhood.</p>
+<p>It is quite interesting to know that Austin is one of the nation's fastest-growing metropolis but the only fast-growing city in America with a declining black population (University of Texas report). According to <a href="https://www.texastribune.org/2014/07/18/african-american-austin/">this report</a>, Austin's general population jumped 20 percent from 2000 to 2010, but the number of African-Americans shrank by 5 percent.</p>
+<p>Racial tension and everyday racism are of course not limited in Mueller, but while walking around this beautiful neighborhood, I couldn't stop but thinking what 'a meaningful community' is about and how we can create one in our cities in diversity.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09674.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09676.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09682.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09685.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09689.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09692.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller01.jpg">
+            </enclosure>
+        </item>
+        <item>
             <title><![CDATA[ Urbanism-Related Things to do and read @Austin]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/austin/Introduction</guid>
@@ -1410,6 +1539,7 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
             </enclosure>
         </item>
         <item>
+<<<<<<< HEAD
             <title><![CDATA[ Mueller - a former industrial zone to a sustainable enclave]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/Mueller</link>
             <guid>https://www.travelingcircusofurbanism.com/austin/Mueller</guid>
@@ -1444,6 +1574,8 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
             </enclosure>
         </item>
         <item>
+=======
+>>>>>>> b9f193ededbb4dc1cd09a4e853a3fa2dde491abf
             <title><![CDATA[ Austin Creative Reuse]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/CreativeReuse</link>
             <guid>https://www.travelingcircusofurbanism.com/austin/CreativeReuse</guid>
