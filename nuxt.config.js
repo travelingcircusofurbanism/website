@@ -74,7 +74,7 @@ module.exports = {
 
   generate: {
     dir: './docs',
-    fallback: '404.html',
+    // fallback: '404.html',
     routes: () => {
       const cities = fs
         .readdirSync('./nuxt/static/posts')
@@ -88,6 +88,7 @@ module.exports = {
           categories.push(p.category.toLowerCase())
       })
       return [
+        '404',
         ...cities.map(c => `/${c}`),
         ...posts.map(p => `/${p.city}/${p.slug}`),
         ...locations.map(l => `/at/${l}`),

@@ -1,19 +1,17 @@
 <template>
-  <no-ssr>
-    <div class="error-center">
-      <h1>We haven't traveled there yet!</h1>
-      <h3><a href="/">Back to home</a></h3>
-      <br />
-      <div class="centered">
-        <div>Or, you can check out some of our all-time favorite posts!</div>
-        <EmbeddedPostPreview
-          v-for="calloutPost, key in calloutPosts"
-          :key="key"
-          v-bind="calloutPost"
-        />
-      </div>
+  <div class="error-center">
+    <h1>We haven't traveled there yet!</h1>
+    <h3><a href="/">Back to home</a></h3>
+    <br />
+    <div class="centered">
+      <div>Or, you can check out some of our all-time favorite posts!</div>
+      <EmbeddedPostPreview
+        v-for="calloutPost, key in calloutPosts"
+        :key="key"
+        v-bind="calloutPost"
+      />
     </div>
-  </no-ssr>
+  </div>
 </template>
 
 <script>
