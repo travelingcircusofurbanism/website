@@ -15,21 +15,26 @@ export default function() {
         })
 
       Promise.all(postListPromises).then(postLists => {
-        let drafts = postLists.map(list => {
-          return list
-            .filter(pathName => pathName.indexOf('.') === -1)
-            .map(post => {
-              const postData = require(`${post}/data.js`)
-              if (!postData.public) return post
-            })
-            .filter(d => d)
-        })
+        let drafts = postLists
+          .map(list => {
+            return list
+              .filter(pathName => pathName.indexOf('.') === -1)
+              .map(post => {
+                let postData
+                try {
+                  postData = require(`${post}/data.js`)
+                } catch (e) {}
+                if (!postData || !postData.public) return post
+              })
+              .filter(d => d)
+          })
+          .filter(d => d)
         drafts = [].concat.apply([], drafts)
         if (drafts.length) {
           log('yellow', ' Drafts:')
           let lastCity = ''
           drafts.forEach(d => {
-            const [path, city, title] = /.*\/([\w\d ]+)\/([\w\d ]+)$/gi.exec(d)
+            const [path, city, title] = /.*\/([^/]+)\/([^/]+)$/gi.exec(d)
             if (city !== lastCity) {
               lastCity = city
               log('yellow', '  ', city)
