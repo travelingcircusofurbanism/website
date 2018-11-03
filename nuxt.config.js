@@ -118,7 +118,7 @@ module.exports = {
 
         const posts = require('./nuxt/static/generated/posts.json')
         posts.forEach(post => {
-          if (!post.public) return
+          if (!post.public || new Date(post.date) > new Date()) return
           const content = fs.readFileSync(
             `./nuxt/static/posts/${post.url}/rssContent.html`
           )
