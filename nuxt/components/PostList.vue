@@ -27,47 +27,59 @@ import PostPreview from '~/components/PostPreview'
 
 export default {
   props: {
-		posts: {
-			type: Array,
-			required: true
-		}, 
-		perPage: {
-			type: Number,
-			required: false,
-			default: 8
-		},
-		title: {
-			type: String,
-			required: false
-		},
-	},
-	components: { PostPreview, },
-  data () {
+    posts: {
+      type: Array,
+      required: true,
+    },
+    perPage: {
+      type: Number,
+      required: false,
+      default: 8,
+    },
+    title: {
+      type: String,
+      required: false,
+    },
+  },
+  components: { PostPreview },
+  data() {
     return {
-			shownPostCount: this.perPage,
+      shownPostCount: this.perPage,
     }
   },
   computed: {
-		isDev () { return this.$store.state.isDev },
-		userLanguage () { return this.$store.state.language },
-		showablePosts () { 
-			return this.isDev ?
-				this.posts :
-				this.userLanguage === 'en' ?
-					this.posts.filter(p => p.public === true && p.languages['en'] === true && new Date(post.date) < new Date()) :
-					this.posts.filter(p => p.public === true && new Date(post.date) < new Date())
-		},
-		totalPosts () { return this.showablePosts.length },
-		postsToShow () { return this.showablePosts.slice(0, this.shownPostCount) },
+    isDev() {
+      return this.$store.state.isDev
+    },
+    userLanguage() {
+      return this.$store.state.language
+    },
+    showablePosts() {
+      return this.isDev
+        ? this.posts
+        : this.userLanguage === 'en'
+          ? this.posts.filter(
+              p =>
+                p.public === true &&
+                p.languages['en'] === true &&
+                new Date(p.date) < new Date()
+            )
+          : this.posts.filter(
+              p => p.public === true && new Date(p.date) < new Date()
+            )
+    },
+    totalPosts() {
+      return this.showablePosts.length
+    },
+    postsToShow() {
+      return this.showablePosts.slice(0, this.shownPostCount)
+    },
   },
 }
-
 </script>
 
 <style lang="scss" scoped>
-
-	.fade {
-		opacity: .4;
-	}
-
+.fade {
+  opacity: 0.4;
+}
 </style>
