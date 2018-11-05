@@ -119,7 +119,7 @@ export default {
     const slug = removeTrailingSlash(decodeURI(route.path))
 
     const path = '/posts' + slug + '/'
-    const publicPath = '/' + removeTrailingSlash(route.path) + '/'
+    const publicPath = '/' + slug + '/'
 
     let city = route.path.substring(1)
     city = decodeURI(city.substring(0, city.indexOf('/'))).toLowerCase()
@@ -201,6 +201,7 @@ export default {
     }
 
     const contentPromises = []
+    console.log(this.path)
     if (this.languages.en)
       contentPromises.push(
         axios
