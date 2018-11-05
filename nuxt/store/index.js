@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+const { MDYToDate } = require('~/assets/commonFunctions.js')
 
 export default () => {
   return new Vuex.Store({
@@ -93,14 +94,16 @@ export default () => {
       setPosts(state, posts) {
         state.allPosts = posts
         state.allPublicPosts = posts.filter(
-          p => p.public === true && new Date(p.date) < new Date()
+          p =>
+            p.public === true &&
+            MDYToDate(p.date).getTime() < new Date().getTime()
         )
         state.enPosts = posts.filter(p => p.languages.en === true)
         state.enPublicPosts = posts.filter(
           p =>
             p.languages.en === true &&
             p.public === true &&
-            new Date(p.date) < new Date()
+            MDYToDate(p.date).getTime() < new Date().getTime()
         )
       },
     },

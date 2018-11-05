@@ -8,7 +8,7 @@
 				v-for="(post, key) in postsToShow"
 				:key="key"
 				v-bind="post"
-				:class="{fade: post.public !== true || new Date(post.date) > new Date()}"
+				:class="{fade: post.public !== true || MDYToDate(post.date).getTime() > new Date().getTime()}"
 			/>
 		</transition-group>
 		<div 
@@ -24,6 +24,7 @@
 
 <script>
 import PostPreview from '~/components/PostPreview'
+const { MDYToDate } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
@@ -62,10 +63,12 @@ export default {
               p =>
                 p.public === true &&
                 p.languages['en'] === true &&
-                new Date(p.date) < new Date()
+                MDYToDate(p.date).getTime() < new Date().getTime()
             )
           : this.posts.filter(
-              p => p.public === true && new Date(p.date) < new Date()
+              p =>
+                p.public === true &&
+                MDYToDate(p.date).getTime() < new Date().getTime()
             )
     },
     totalPosts() {
@@ -74,6 +77,9 @@ export default {
     postsToShow() {
       return this.showablePosts.slice(0, this.shownPostCount)
     },
+  },
+  methods: {
+    MDYToDate,
   },
 }
 </script>

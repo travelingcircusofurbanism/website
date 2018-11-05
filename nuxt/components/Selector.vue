@@ -44,152 +44,154 @@ export default {
   props: {
     hide: {
       required: false,
-      type: String
+      type: String,
     },
     type: {
       required: false,
       type: String,
-      default: 'city'
+      default: 'city',
     },
     title: {
       required: false,
-      default: 'Cities'
+      default: 'Cities',
     },
     urlPrefix: {
       required: false,
-      default: ''
+      default: '',
     },
     cutoff: {
       required: false,
       type: Number,
-      default: 8
+      default: 8,
     },
     moreHint: {
       required: false,
       type: Boolean,
-      default: true
+      default: true,
     },
     highlight: {
       required: false,
       type: String,
-      default: ''
+      default: '',
     },
   },
-  data () {
+  data() {
     return {
       showAll: false,
       isOpen: false,
     }
   },
   computed: {
-    isMobile () { return this.$store.state.isMobile },
-    isDev () { return this.$store.state.isDev },
-    allPosts () { return this.$store.state.allPosts },
-    allPublicPosts () { return this.$store.state.allPublicPosts },
-    usablePosts () {
-      return this.isDev ?
-        this.allPosts :
-        this.allPublicPosts
+    isMobile() {
+      return this.$store.state.isMobile
     },
-    orderedItems () {
+    isDev() {
+      return this.$store.state.isDev
+    },
+    usablePosts() {
+      return this.isDev
+        ? this.$store.state.allPosts
+        : this.userLanguage === 'en'
+          ? this.$store.state.enPublicPosts
+          : this.$store.state.allPublicPosts
+    },
+    orderedItems() {
       const typeFrequency = {}
       this.usablePosts.forEach(p => {
         const typeName = p[this.type.toLowerCase()].toLowerCase()
         if (this.hide && typeName === this.hide.toLowerCase()) return
-        typeFrequency[typeName] = 
-          (typeFrequency[typeName] ? typeFrequency[typeName] + 1 : 1)
+        typeFrequency[typeName] = typeFrequency[typeName]
+          ? typeFrequency[typeName] + 1
+          : 1
       })
-      return Object.keys(typeFrequency)
-        .sort((a, b) => typeFrequency[b] - typeFrequency[a])
+      return Object.keys(typeFrequency).sort(
+        (a, b) => typeFrequency[b] - typeFrequency[a]
+      )
     },
-    responsiveCutoff () {
+    responsiveCutoff() {
       return parseInt(this.cutoff / (this.isMobile ? 1.5 : 1))
     },
-    itemsToShow () {
+    itemsToShow() {
       console.log()
-      return (
-        this.showAll ? 
-          this.orderedItems : 
-          this.orderedItems.slice(0, this.responsiveCutoff)
-      )
-    }
+      return this.showAll
+        ? this.orderedItems
+        : this.orderedItems.slice(0, this.responsiveCutoff)
+    },
   },
   methods: {
     capitalize,
-  }
+  },
 }
 </script>
 
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-  .selectorframe {
-    display: grid;
-    grid-template-columns: 105px 1fr;
-    grid-gap: $unit * 3;
+.selectorframe {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  grid-gap: $unit * 3;
+
+  .sectionhead {
+    margin: 0;
+    margin-top: $unit * 1.5;
+  }
+
+  @include width(mobile) {
+    grid-template-columns: 1fr;
+    grid-gap: 0;
 
     .sectionhead {
-      margin: 0;
-      margin-top: $unit * 1.5;
-    }
-
-    @include width (mobile) {
-      grid-template-columns: 1fr;
-      grid-gap: 0;
-
-      .sectionhead {
-        text-align: left;
-        margin-top: 0;
-      }
+      text-align: left;
+      margin-top: 0;
     }
   }
+}
 
-  .selector {
-    margin-bottom: $unit * 4;
+.selector {
+  margin-bottom: $unit * 4;
 
-    @include width (mobile) {
-      margin-bottom: $unit * 2;
-    }
+  @include width(mobile) {
+    margin-bottom: $unit * 2;
+  }
+}
+
+.toggle {
+  margin-left: $unit;
+  opacity: 0.3;
+  font-size: 0.7em;
+  display: inline-block;
+  transition: all 0.2s;
+  transform: rotate(0deg);
+
+  &.open {
+    transform: rotate(90deg);
+  }
+}
+
+.buttonlist {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: stretch;
+  text-align: center;
+
+  .sub {
+    border: 2px solid transparent;
+    padding: $unit * 1 $unit * 1.5;
+    box-shadow: none;
+    flex: 1;
+    white-space: nowrap;
   }
 
-  .toggle {
-    margin-left: $unit;
-    opacity: .3;
-    font-size: .7em;
-    display: inline-block;
-    transition: all .2s;
-    transform: rotate(0deg);
-
-    &.open {
-      transform: rotate(90deg);
-    }
-  }
-
-  .buttonlist {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: stretch;
-    text-align: center;
-
+  @include width(mobile) {
     .sub {
-      border: 2px solid transparent;
-      padding: $unit * 1 $unit * 1.5;
-      box-shadow: none;
-      flex: 1;
-      white-space: nowrap;
-    }
-
-    @include width (mobile) {
-
-      .sub {
-        padding: $unit * 1 0;
-      }
+      padding: $unit * 1 0;
     }
   }
+}
 
-  .button {
-    flex-shrink: 0;
-    flex-grow: 1;
-  }
-
+.button {
+  flex-shrink: 0;
+  flex-grow: 1;
+}
 </style>

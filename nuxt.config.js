@@ -1,4 +1,5 @@
 const fs = require('fs')
+const { MDYToDate } = require('~/assets/commonFunctions.js')
 
 module.exports = {
   srcDir: 'nuxt/',
@@ -74,7 +75,6 @@ module.exports = {
 
   generate: {
     dir: './docs',
-    // fallback: '404.html',
     routes: () => {
       const cities = fs
         .readdirSync('./nuxt/static/posts')
@@ -118,7 +118,11 @@ module.exports = {
 
         const posts = require('./nuxt/static/generated/posts.json')
         posts.forEach(post => {
-          if (!post.public || new Date(post.date) > new Date()) return
+          if (
+            !post.public ||
+            MDYToDate(post.date).getTime() > new Date().getTime()
+          )
+            return
           const content = fs.readFileSync(
             `./nuxt/static/posts/${post.url}/rssContent.html`
           )
