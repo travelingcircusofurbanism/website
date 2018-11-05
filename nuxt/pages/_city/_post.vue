@@ -201,26 +201,31 @@ export default {
     }
 
     const contentPromises = []
-    console.log(this.path)
-    if (this.languages.en)
-      contentPromises.push(
-        axios
-          .get(this.path + 'content.html', axiosConfig)
-          .then(response => {
-            this.$set(this.content, 'en', response.data)
-          })
-          .catch(e => console.log(e))
-      )
-    if (this.languages.ja)
-      contentPromises.push(
-        axios
-          .get(this.path + 'ja.html', axiosConfig)
-          .then(response => {
-            this.$set(this.content, 'ja', response.data)
-          })
-          .catch(e => console.log(e))
-      )
-    await Promise.all(contentPromises)
+
+    try {
+      if (this.languages.en)
+        contentPromises.push(
+          axios
+            .get(this.path + 'content.html', axiosConfig)
+            .then(response => {
+              this.$set(this.content, 'en', response.data)
+            })
+            .catch(e => console.log(e))
+        )
+      if (this.languages.ja)
+        contentPromises.push(
+          axios
+            .get(this.path + 'ja.html', axiosConfig)
+            .then(response => {
+              this.$set(this.content, 'ja', response.data)
+            })
+            .catch(e => console.log(e))
+        )
+      await Promise.all(contentPromises)
+    } catch (e) {
+      console.log(e)
+      return this.$router.push('/')
+    }
 
     if (!(this.content.en || this.content.ja)) return this.$router.push('/')
     if (this.content.en) this.setLanguage('en')
