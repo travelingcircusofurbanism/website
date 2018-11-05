@@ -1,5 +1,4 @@
 const fs = require('fs')
-const { MDYToDate } = require('~/assets/commonFunctions.js')
 
 module.exports = {
   srcDir: 'nuxt/',
@@ -120,7 +119,7 @@ module.exports = {
         posts.forEach(post => {
           if (
             !post.public ||
-            MDYToDate(post.date).getTime() > new Date().getTime()
+            new Date(post.date).getTime() > new Date().getTime()
           )
             return
           const content = fs.readFileSync(
