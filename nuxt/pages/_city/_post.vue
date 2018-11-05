@@ -204,7 +204,7 @@ export default {
     if (this.languages.en)
       contentPromises.push(
         axios
-          .get(this.path + '/content.html', axiosConfig)
+          .get(this.path + 'content.html', axiosConfig)
           .then(response => {
             this.$set(this.content, 'en', response.data)
           })
@@ -213,7 +213,7 @@ export default {
     if (this.languages.ja)
       contentPromises.push(
         axios
-          .get(this.path + '/ja.html', axiosConfig)
+          .get(this.path + 'ja.html', axiosConfig)
           .then(response => {
             this.$set(this.content, 'ja', response.data)
           })
