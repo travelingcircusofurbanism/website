@@ -25,6 +25,7 @@ export default function() {
         const allPostData = posts
           .filter(pathName => pathName.indexOf('.') === -1)
           .map(city => {
+            city = city.toLowerCase()
             const cityDir = postDir + '/' + city
             const cityFile = generatedDir + '/' + city.toLowerCase() + '.json'
             const cityPostData = fs
@@ -153,7 +154,7 @@ function getDataForPost(postDir, city, slug) {
 
     const data = {
       slug,
-      city: city.toLowerCase(),
+      city,
       title,
       description,
       url: `/${city}/${slug}`,
