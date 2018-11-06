@@ -50,7 +50,7 @@
             <span class="name">Mariko Sugita</span>
             <span class="title">Founder, Editor in Chief</span>
             <div>
-              Mariko is an urbanist and city lover. Her professional fields are research, marketing, and editing and writing in the field of architecture and urbanism. <a href="https://www.linkedin.com/in/mariko-sugita-28327bb6/" target="_blank">Full profile</a>
+              Mariko is an urbanist and city lover. Her professional fields are research, marketing, and editing and writing in the field of architecture and urbanism. <a href="www.linkedin.com/in/marikosugita" target="_blank">Full profile</a>
             </div>
           </span>
         </div>
