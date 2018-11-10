@@ -22,9 +22,7 @@ export default function() {
       .filter(cityDir => cityDir.indexOf('.') === -1)
       .forEach(cityDir => {
         cityDir += '/'
-        const formattedCityDir = decodeURI(
-          encodeURI(cityDir.toLowerCase()).replace(/e%CC%81/g, '%C3%A9')
-        )
+        const formattedCityDir = decodeURI(encodeURI(cityDir.toLowerCase()))
         // read all individual post directories in each city directory
         fs.readdirSync(masterPostDir + cityDir)
           .filter(postDir => postDir.indexOf('.') === -1)

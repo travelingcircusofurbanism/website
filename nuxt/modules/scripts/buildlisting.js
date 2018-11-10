@@ -25,9 +25,7 @@ export default function() {
         const allPostData = posts
           .filter(pathName => pathName.indexOf('.') === -1)
           .map(city => {
-            const formattedCityDir = decodeURI(
-              encodeURI(city.toLowerCase()).replace(/e%CC%81/g, '%C3%A9')
-            )
+            const formattedCityDir = decodeURI(encodeURI(city.toLowerCase()))
             const inputDir = postDir + '/' + city
             const cityFile = generatedDir + '/' + formattedCityDir + '.json'
             const cityPostData = fs
