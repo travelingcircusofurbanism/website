@@ -2,6 +2,7 @@ module.exports = {
 	public: false,
 	date: '10/23/2018',
 	category: 'place',
+	image: 'batiment71.jpg',
 	mapPosition:  [
 		{
 			location: 'Bâtiment 7',
