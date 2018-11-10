@@ -16,7 +16,7 @@ export default function() {
   const postDirList = fs
     .readdirSync(pathToStaticPosts)
     .filter(cityDir => cityDir.indexOf('.') === -1)
-  const unnecessaryPostDirs = postDirList
+  postDirList
     .filter(
       postDir =>
         !cityDirList.find(cityDir => {
@@ -30,16 +30,20 @@ export default function() {
 
   // then, create all new dirs we need
   cityDirList.forEach(cityDir => {
-    cityDir = cityDir.toLowerCase()
-    createDir(pathToStaticPosts + cityDir)
+    const formattedCityDir = cityDir.toLowerCase()
+    createDir(pathToStaticPosts + formattedCityDir)
     // read all individual post directories in each city directory
     fs.readdirSync(masterPostDir + cityDir)
       .filter(postDir => postDir.indexOf('.') === -1)
       .forEach(postDir => {
-        createDir(pathToStaticPosts + cityDir + '/' + postDir)
-        createDir(pathToStaticPosts + cityDir + '/' + postDir + '/tiny')
-        createDir(pathToStaticPosts + cityDir + '/' + postDir + '/med')
-        createDir(pathToStaticPosts + cityDir + '/' + postDir + '/large')
+        createDir(pathToStaticPosts + formattedCityDir + '/' + postDir)
+        createDir(
+          pathToStaticPosts + formattedCityDir + '/' + postDir + '/tiny'
+        )
+        createDir(pathToStaticPosts + formattedCityDir + '/' + postDir + '/med')
+        createDir(
+          pathToStaticPosts + formattedCityDir + '/' + postDir + '/large'
+        )
       })
   })
 }

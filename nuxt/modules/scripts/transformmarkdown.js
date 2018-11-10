@@ -17,14 +17,14 @@ export default function() {
   fs.readdirSync(masterPostDir)
     .filter(cityDir => cityDir.indexOf('.') === -1)
     .forEach(cityDir => {
-      const cityDirLowerCase = cityDir.toLowerCase()
+      const formattedCityDir = cityDir.toLowerCase()
       // read all individual post directories in each city directory
       fs.readdirSync(masterPostDir + cityDir)
         .filter(postDir => postDir.indexOf('.') === -1)
         .forEach(postDir => {
           const markdownPaths = [
-            masterPostDir + cityDirLowerCase + '/' + postDir + '/content.md',
-            masterPostDir + cityDirLowerCase + '/' + postDir + '/ja.md',
+            masterPostDir + cityDir + '/' + postDir + '/content.md',
+            masterPostDir + cityDir + '/' + postDir + '/ja.md',
           ]
 
           // grab english content for RSS
@@ -32,14 +32,14 @@ export default function() {
             if (err) return
             const generatedRSSHTML = formatMarkdownToRSSHTML(
               markdown,
-              cityDirLowerCase,
+              formattedCityDir,
               postDir
             )
             if (!generatedRSSHTML) return
             const rssFileName = '/rssContent.html'
             fs.writeFile(
               pathToStaticPosts +
-                cityDirLowerCase +
+                formattedCityDir +
                 '/' +
                 postDir +
                 rssFileName,
@@ -54,7 +54,7 @@ export default function() {
 
               const generatedHTML = formatMarkdownToSiteHTML(
                 markdown,
-                cityDirLowerCase,
+                formattedCityDir,
                 postDir
               )
               if (!generatedHTML) return
@@ -64,7 +64,7 @@ export default function() {
                   markdownPath.lastIndexOf('.')
                 ) + '.html'
               fs.writeFile(
-                pathToStaticPosts + cityDirLowerCase + '/' + postDir + fileName,
+                pathToStaticPosts + formattedCityDir + '/' + postDir + fileName,
                 generatedHTML,
                 err => {}
               )
