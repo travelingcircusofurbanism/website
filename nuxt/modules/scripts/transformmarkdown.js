@@ -17,13 +17,14 @@ export default function() {
   fs.readdirSync(masterPostDir)
     .filter(cityDir => cityDir.indexOf('.') === -1)
     .forEach(cityDir => {
+      const cityDirLowerCase = cityDir.toLowerCase()
       // read all individual post directories in each city directory
       fs.readdirSync(masterPostDir + cityDir)
         .filter(postDir => postDir.indexOf('.') === -1)
         .forEach(postDir => {
           const markdownPaths = [
-            masterPostDir + cityDir + '/' + postDir + '/content.md',
-            masterPostDir + cityDir + '/' + postDir + '/ja.md',
+            masterPostDir + cityDirLowerCase + '/' + postDir + '/content.md',
+            masterPostDir + cityDirLowerCase + '/' + postDir + '/ja.md',
           ]
 
           // grab english content for RSS
@@ -31,13 +32,17 @@ export default function() {
             if (err) return
             const generatedRSSHTML = formatMarkdownToRSSHTML(
               markdown,
-              cityDir,
+              cityDirLowerCase,
               postDir
             )
             if (!generatedRSSHTML) return
             const rssFileName = '/rssContent.html'
             fs.writeFile(
-              pathToStaticPosts + cityDir + '/' + postDir + rssFileName,
+              pathToStaticPosts +
+                cityDirLowerCase +
+                '/' +
+                postDir +
+                rssFileName,
               generatedRSSHTML,
               err => {}
             )
@@ -49,7 +54,7 @@ export default function() {
 
               const generatedHTML = formatMarkdownToSiteHTML(
                 markdown,
-                cityDir,
+                cityDirLowerCase,
                 postDir
               )
               if (!generatedHTML) return
@@ -59,7 +64,7 @@ export default function() {
                   markdownPath.lastIndexOf('.')
                 ) + '.html'
               fs.writeFile(
-                pathToStaticPosts + cityDir + '/' + postDir + fileName,
+                pathToStaticPosts + cityDirLowerCase + '/' + postDir + fileName,
                 generatedHTML,
                 err => {}
               )

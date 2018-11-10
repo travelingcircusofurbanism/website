@@ -12,6 +12,7 @@ export default function() {
   fs.readdirSync(masterPostDir)
     .filter(cityDir => cityDir.indexOf('.') === -1)
     .forEach(cityDir => {
+      cityDir = cityDir.toLowerCase()
       createDir(pathToStaticPosts + cityDir)
       // read all individual post directories in each city directory
       fs.readdirSync(masterPostDir + cityDir)

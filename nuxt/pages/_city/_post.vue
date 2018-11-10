@@ -208,7 +208,6 @@ export default {
           axios
             .get(this.path + 'content.html', axiosConfig)
             .then(response => {
-              if (response.data.substring(0, 6) === '<title') return
               this.$set(this.content, 'en', response.data)
             })
             .catch(e => console.log(e))
@@ -218,7 +217,6 @@ export default {
           axios
             .get(this.path + 'ja.html', axiosConfig)
             .then(response => {
-              if (response.data.substring(0, 6) === '<title') return
               this.$set(this.content, 'ja', response.data)
             })
             .catch(e => console.log(e))
