@@ -30,7 +30,9 @@ export default function() {
 
   // then, create all new dirs we need
   cityDirList.forEach(cityDir => {
-    const formattedCityDir = cityDir.toLowerCase()
+    const formattedCityDir = decodeURI(
+      encodeURI(cityDir.toLowerCase()).replace(/e%CC%81/g, '%C3%A9')
+    )
     createDir(pathToStaticPosts + formattedCityDir)
     // read all individual post directories in each city directory
     fs.readdirSync(masterPostDir + cityDir)
