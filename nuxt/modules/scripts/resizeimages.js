@@ -21,7 +21,8 @@ export default function() {
     fs.readdirSync(masterPostDir)
       .filter(cityDir => cityDir.indexOf('.') === -1)
       .forEach(cityDir => {
-        cityDir = cityDir.toLowerCase() + '/'
+        cityDir += '/'
+        const formattedCityDir = decodeURI(encodeURI(cityDir.toLowerCase()))
         // read all individual post directories in each city directory
         fs.readdirSync(masterPostDir + cityDir)
           .filter(postDir => postDir.indexOf('.') === -1)
@@ -29,9 +30,12 @@ export default function() {
             postDir += '/'
             // full size images are in /full, resized images are in /generated/resized
             const inputPath = masterPostDir + cityDir + postDir + inputDir
-            const resizedPath = pathToStaticPosts + cityDir + postDir + medDir
-            const tinyPath = pathToStaticPosts + cityDir + postDir + tinyDir
-            const largePath = pathToStaticPosts + cityDir + postDir + largeDir
+            const resizedPath =
+              pathToStaticPosts + formattedCityDir + postDir + medDir
+            const tinyPath =
+              pathToStaticPosts + formattedCityDir + postDir + tinyDir
+            const largePath =
+              pathToStaticPosts + formattedCityDir + postDir + largeDir
 
             const result = await sharper([
               {

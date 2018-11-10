@@ -25,11 +25,11 @@ export default function() {
         const allPostData = posts
           .filter(pathName => pathName.indexOf('.') === -1)
           .map(city => {
-            city = city.toLowerCase()
-            const cityDir = postDir + '/' + city
-            const cityFile = generatedDir + '/' + city.toLowerCase() + '.json'
+            const formattedCityDir = decodeURI(encodeURI(city.toLowerCase()))
+            const inputDir = postDir + '/' + city
+            const cityFile = generatedDir + '/' + formattedCityDir + '.json'
             const cityPostData = fs
-              .readdirSync(cityDir)
+              .readdirSync(inputDir)
               .filter(pathName => pathName.indexOf('.') === -1)
               .map(post => getDataForPost(postDir, city, post))
               .filter(d => d)
