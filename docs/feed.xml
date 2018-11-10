@@ -4,7 +4,11 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
+<<<<<<< HEAD
         <lastBuildDate>Sat, 10 Nov 2018 19:24:01 GMT</lastBuildDate>
+=======
+        <lastBuildDate>Sat, 10 Nov 2018 19:14:09 GMT</lastBuildDate>
+>>>>>>> 56d99e2be2415ebe718a0364b08cf40a4fdab717
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -17,7 +21,7 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
-            <title><![CDATA[  Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok  - interview with a community architect]]></title>
+            <title><![CDATA[  Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok  - interview with a community architect]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</link>
             <guid>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</guid>
             <pubDate>Sat, 10 Nov 2018 08:00:00 GMT</pubDate>
@@ -57,37 +61,37 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[  Habitat 67 and Habitat 2.0?? Iconic Canadian housing complex and its comeback]]></title>
-            <link>https://www.travelingcircusofurbanism.com/montréal/habitat67</link>
-            <guid>https://www.travelingcircusofurbanism.com/montréal/habitat67</guid>
+            <title><![CDATA[  Habitat 67 and Habitat 2.0?? Iconic Canadian housing complex and its comeback]]></title>
+            <link>https://www.travelingcircusofurbanism.com/montréal/habitat67</link>
+            <guid>https://www.travelingcircusofurbanism.com/montréal/habitat67</guid>
             <pubDate>Mon, 05 Nov 2018 08:00:00 GMT</pubDate>
             <description><![CDATA[
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/habitat673.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/habitat673.jpg"></p>
 <p>You simply can't leave Montréal without checking out <a href="http://www.habitat67.com/en/">Habitat 67</a>. This famous apartment buildings of the 1960s were ambitious, a government-sponsored attempt at reimagining the future of apartment living. It was designed by the Israeli-Canadian architect <a href="https://www.archdaily.com/tag/moshe-safdie">Moshe Safdie</a> for Montréal’s world Expo in 1967.</p>
 <h3>A functioning icon of 1960s utopianism</h3>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/habitat672.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/habitat672.jpg"></p>
 <p>Until the visit, I didn't realize that Habitat 67 echoes with <em><a href="https://en.wikipedia.org/wiki/Metabolism_(architecture)">Metabolism</a></em> - Japanese post-war architectural movement. Of course, it has some similarities with Tokyo’s <a href="https://www.nationalgeographic.com/photography/proof/2017/10/nakagin-capsule-tower/">Nakagin Capsule Tower</a>, for instance, that are constructed with 140 removable capsules. These buildings are designed with interconnected webs of prefabricated cells of concrete.</p>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/habitat674.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/habitat674.jpg"></p>
 <h3>Habitat 67 is coming back as Habitat 2.0</h3>
 <p>Now, there is not so much more to say about HHabitat 67 here, it is interesting to know that we are expecting its comeback very soon in Toronto. After the 50th anniversary of Habitat 67, Bjarke Ingels of <a href="http://www.big.dk/">BIG</a> is planning Habitat 2.0 in downtown Toronto - King Street West. The project is currently is now going through the city’s approval process.</p>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/habitat678.jpg"></p>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/DSC02085.jpg"><br>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/habitat678.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/DSC02085.jpg"><br>
 <em>A model of Habitat 2.0 is being exhibited at <a href="http://unzippedtoronto.com/">Unzipped Toronto</a>, Bjarke Ingels’s Serpentine Pavilion, at Kings Street in Toronto.</em></p>
 <p>Although the resemblance is obvious with pixelated-looking blocks, instead of being an experimental utopia in an isolated island that is far from downtown Montréal (it is true, it is rather hard to get there), a proposed site for Habitat 2.0 is in the heart of downtown Toronto.</p>
 <p>Instead of cherishing the old masterpieces as static, never-updating artifacts, it is always fascinating to see how architectural visions and philosophy (or we can even call it &quot;ideology&quot;) sometimes unexpectedly come back to the present.</p>
 <p>You can check the detailed plan and images of Habitat 2.0 <a href="https://www.dezeen.com/2016/02/26/bjarke-ingels-group-big-habitat-2-0-king-street-west-wellington-toronto-canada/">here</a>.</p>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montr%C3%A9al/habitat67/med/habitat671.jpg"><br>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montre%CC%81al/habitat67/med/habitat671.jpg"><br>
 <em>Is it permitted to take photos of Habitat 67 for personal and non-commercial use. However Habitat 67 is a private property, so respect its residents.</em></p>
 <p>Reference</p>
 <ul>
 <li><a href="https://www.curbed.com/2017/8/30/16216154/iconic-habitat-67-montreal-moshe-safdie-bjarke-ingels">Habitat 2.0: Moshe Safdie’s iconic Canadian complex makes a comeback</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montréal/habitat67/med/habitat673.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montréal/habitat67/med/habitat673.jpg">
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Evergreen Brick Works: Ravines define Toronto, and it's time to talk about nature in cities]]></title>
+            <title><![CDATA[ Evergreen Brick Works: Ravines define Toronto, and it's time to talk about nature in cities]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/evergreen</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/evergreen</guid>
             <pubDate>Sun, 28 Oct 2018 07:00:00 GMT</pubDate>
@@ -121,7 +125,7 @@ After the closure of the factory, the site has been converted into a community a
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
+            <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</guid>
             <pubDate>Sat, 20 Oct 2018 07:00:00 GMT</pubDate>
@@ -150,7 +154,7 @@ After the closure of the factory, the site has been converted into a community a
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Jane and Finch, Canada's most diverse neighborhood]]></title>
+            <title><![CDATA[ Jane and Finch, Canada's most diverse neighborhood]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</guid>
             <pubDate>Mon, 15 Oct 2018 07:00:00 GMT</pubDate>
@@ -171,7 +175,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Inside Sidewalk Labs 307： Toronto's famous Urban laboratory]]></title>
+            <title><![CDATA[ Inside Sidewalk Labs 307： Toronto's famous Urban laboratory]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</guid>
             <pubDate>Mon, 15 Oct 2018 07:00:00 GMT</pubDate>
@@ -202,7 +206,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ A hidden spot for creatives: 401 Richmond]]></title>
+            <title><![CDATA[ A hidden spot for creatives: 401 Richmond]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/401richmond</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/401richmond</guid>
             <pubDate>Fri, 12 Oct 2018 07:00:00 GMT</pubDate>
@@ -238,7 +242,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The urbanist's guide to Toronto]]></title>
+            <title><![CDATA[ The urbanist's guide to Toronto]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/Introduction</guid>
             <pubDate>Sun, 23 Sep 2018 07:00:00 GMT</pubDate>
@@ -295,7 +299,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Things we can learn from zoning]]></title>
+            <title><![CDATA[ Things we can learn from zoning]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/zoning</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/zoning</guid>
             <pubDate>Wed, 19 Sep 2018 07:00:00 GMT</pubDate>
@@ -339,7 +343,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Urbanism-Related Things to do and read @Yogyakarta]]></title>
+            <title><![CDATA[ Urbanism-Related Things to do and read @Yogyakarta]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</guid>
             <pubDate>Fri, 14 Sep 2018 07:00:00 GMT</pubDate>
@@ -408,7 +412,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Confronting the history of discrimination and exclusion: Komagata Maru Memorial]]></title>
+            <title><![CDATA[ Confronting the history of discrimination and exclusion: Komagata Maru Memorial]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</guid>
             <pubDate>Mon, 10 Sep 2018 07:00:00 GMT</pubDate>
@@ -433,7 +437,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Walk Strathcona, and check out Vancouver's registered heritage buildings]]></title>
+            <title><![CDATA[ Walk Strathcona, and check out Vancouver's registered heritage buildings]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/strathcona</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/strathcona</guid>
             <pubDate>Tue, 04 Sep 2018 07:00:00 GMT</pubDate>
@@ -484,7 +488,7 @@ In the 1950s, City planners earmarked Strathcona for demolition as part of a mas
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ City Conversations about Vancouver Waterfront]]></title>
+            <title><![CDATA[ City Conversations about Vancouver Waterfront]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/waterfront</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/waterfront</guid>
             <pubDate>Thu, 23 Aug 2018 07:00:00 GMT</pubDate>
@@ -563,7 +567,7 @@ The report is a great piece of work, and, in my opinion, worth reading.</p>
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ City and migration: Interview with Sankar Raman from The Immigrant Story]]></title>
+            <title><![CDATA[ City and migration: Interview with Sankar Raman from The Immigrant Story]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/immigrantstory</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/immigrantstory</guid>
             <pubDate>Tue, 14 Aug 2018 07:00:00 GMT</pubDate>
@@ -755,7 +759,7 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The future of Waterfront Seattle]]></title>
+            <title><![CDATA[ The future of Waterfront Seattle]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</link>
             <guid>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</guid>
             <pubDate>Wed, 08 Aug 2018 07:00:00 GMT</pubDate>
@@ -962,7 +966,7 @@ It is open for public and you can enter the building for free - it is very inter
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
+            <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</guid>
             <pubDate>Sun, 22 Jul 2018 07:00:00 GMT</pubDate>
@@ -1106,7 +1110,7 @@ The final spot of the tour was Dolores Park - everyone's favorite! From this sma
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Things to do and read for urbanists @San Francisco]]></title>
+            <title><![CDATA[ Things to do and read for urbanists @San Francisco]]></title>
             <link>https://www.travelingcircusofurbanism.com/san francisco/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/san francisco/Introduction</guid>
             <pubDate>Tue, 03 Jul 2018 07:00:00 GMT</pubDate>
@@ -1672,7 +1676,7 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Event report: “Hack My City” — Connecting the Urban Scales from XS to XL]]></title>
+            <title><![CDATA[ Event report: “Hack My City” — Connecting the Urban Scales from XS to XL]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</link>
             <guid>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</guid>
             <pubDate>Tue, 13 Mar 2018 07:00:00 GMT</pubDate>
