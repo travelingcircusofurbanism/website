@@ -171,7 +171,7 @@ function fixLinks(baseHTML) {
       url.indexOf('travelingcircusofurbanism.com') === -1
         ? 'target="_blank" class="external"'
         : ''
-    return `<a ${externalAttributes} href="${url}">`
+    return `<a href="${url}" ${externalAttributes}>`
   })
 }
 
