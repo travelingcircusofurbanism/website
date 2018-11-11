@@ -62,7 +62,7 @@ export default {
     display: block;
     height: auto;
 
-    & > * {
+    & > *:not(.lightbox) {
       max-width: 100%;
       overflow-y: visible;
       height: auto;
