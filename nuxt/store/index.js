@@ -9,6 +9,7 @@ export default () => {
       allPublicPosts: [],
       enPublicPosts: [],
       mapMarkers: [],
+      mapPolygons: [],
       currentView: [],
       highlight: [],
       doubleHighlight: '',
@@ -22,6 +23,7 @@ export default () => {
 
     mutations: {
       setView(state, newView) {
+        if (!newView) return (state.currentView = [])
         // first, grab the city
         try {
           state.currentCity =
@@ -89,6 +91,11 @@ export default () => {
 
       setPan(state, shouldPan) {
         state.panMap = shouldPan
+      },
+
+      setPolygons(state, polygons) {
+        state.mapPolygons = polygons || []
+        state.currentView = state.currentView.concat(polygonsBounds(polygons))
       },
 
       setPosts(state, posts) {
@@ -195,4 +202,48 @@ function parseMapPositionObjectsFromAnything(source) {
     parsedMapPositions = [parsedMapPositions]
   parsedMapPositions = parsedMapPositions.filter(m => m)
   return parsedMapPositions
+}
+
+function polygonsBounds(polygons) {
+  if (!polygons) return []
+  return [
+    {
+      location: 'polygonsTopLeft',
+      center: [
+        Math.min(
+          ...polygons.reduce(
+            (flattened, polygon) =>
+              flattened.concat(polygon.map(coord => coord[0])),
+            []
+          )
+        ),
+        Math.min(
+          ...polygons.reduce(
+            (flattened, polygon) =>
+              flattened.concat(polygon.map(coord => coord[1])),
+            []
+          )
+        ),
+      ],
+    },
+    {
+      location: 'polygonsBottomRight',
+      center: [
+        Math.max(
+          ...polygons.reduce(
+            (flattened, polygon) =>
+              flattened.concat(polygon.map(coord => coord[0])),
+            []
+          )
+        ),
+        Math.max(
+          ...polygons.reduce(
+            (flattened, polygon) =>
+              flattened.concat(polygon.map(coord => coord[1])),
+            []
+          )
+        ),
+      ],
+    },
+  ]
 }

@@ -33,6 +33,13 @@
             :markerData="marker"
           />
 
+          <MapPolygon
+            :map="map"
+            v-for="polygon, key in mapPolygons"
+            :key="key"
+            :coordinates="polygon"
+          />
+
           <!--<DebugMarker
             :mapboxgl="mapboxgl"
             :map="map"
@@ -46,16 +53,23 @@
 </template>
 
 <script>
-
 import MapboxMapLoader from '~/components/Map/MapboxMapLoader'
 import MapMarker from '~/components/Map/MapMarker'
 import Controller from '~/components/Map/Controller'
 import MarkerManager from '~/components/Map/MarkerManager'
+import MapPolygon from '~/components/Map/MapPolygon'
 // import DebugMarker from '~/components/Map/DebugMarker'
 
 export default {
-  components: { MapboxMapLoader, MapMarker, Controller, MarkerManager, /*DebugMarker*/ },
-  data () {
+  components: {
+    MapboxMapLoader,
+    MapMarker,
+    Controller,
+    MarkerManager,
+    MapPolygon,
+    /*DebugMarker, */
+  },
+  data() {
     return {
       defaultPosition: {
         bearing: 0,
@@ -71,25 +85,29 @@ export default {
   },
 
   computed: {
-    currentView () { return this.$store.state.currentView },
+    currentView() {
+      return this.$store.state.currentView
+    },
+
+    mapPolygons() {
+      return this.$store.state.mapPolygons
+    },
   },
 
   watch: {
-    currentView (newView) {
-      if (!newView || Object.keys(newView).length === 0)
-        this.$emit('close')
+    currentView(newView) {
+      if (!newView || Object.keys(newView).length === 0) this.$emit('close')
       else this.$emit('open')
     },
   },
 
   methods: {
-    updateMarkers (newMarkers) {
+    updateMarkers(newMarkers) {
       this.updatePrefix++
       this.markers = newMarkers
-    }
-  }
+    },
+  },
 }
-
 </script>
 
 <style lang="scss" scoped>

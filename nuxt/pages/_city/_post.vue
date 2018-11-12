@@ -238,6 +238,7 @@ export default {
     this.$store.commit('setView', this.mapPosition)
     this.$store.commit('setCity', this.city)
     this.$store.commit('setPan', false)
+    if (this.polygons) this.$store.commit('setPolygons', this.polygons)
     this.$store.commit('setHighlight', this.mapPosition)
     this.$nextTick(() => {
       if (!this.public && !this.isDev)
@@ -249,6 +250,7 @@ export default {
     if (!this.public && !this.isDev)
       this.$store.commit('setMapMarkers', this.publicPosts)
     this.$store.commit('setHighlight')
+    this.$store.commit('setPolygons')
   },
 
   methods: {

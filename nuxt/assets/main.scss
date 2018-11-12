@@ -449,6 +449,7 @@ h4 {
   position: absolute;
   font-size: 1.05em;
   pointer-events: none;
+  user-select: none;
 
   @include width(mobile) {
     font-size: 1em;

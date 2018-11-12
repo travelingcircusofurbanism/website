@@ -164,6 +164,7 @@ function getDataForPost(postDir, city, slug) {
       public: postData.public,
     }
     if (jaTitle) data.jaTitle = jaTitle
+    if (postData.polygons) data.polygons = postData.polygons
     return data
   } catch (e) {
     log(
