@@ -7,7 +7,6 @@
         mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
       >
         <template slot-scope="{ mapboxgl, map, clusterer }">
-
           <MarkerManager
             :mapboxgl="mapboxgl"
             :map="map"
@@ -20,12 +19,11 @@
             :mapboxgl="mapboxgl"
             :map="map"
             :clusterer="clusterer"
-            :markers="markers"
           />
 
           <MapMarker
             v-if="markers"
-            v-for="marker, key in markers"
+            v-for="(marker, key) in markers"
             :key="key + '_' + updatePrefix"
             :mapboxgl="mapboxgl"
             :map="map"
@@ -35,17 +33,19 @@
 
           <MapPolygon
             :map="map"
-            v-for="polygon, key in mapPolygons"
-            :key="key"
-            :coordinates="polygon"
+            :mapboxgl="mapboxgl"
+            v-for="(polygon, key) in mapPolygons"
+            :key="key + 1"
+            :polygonData="polygon"
           />
 
-          <!--<DebugMarker
-            :mapboxgl="mapboxgl"
-            :map="map"
-            :coordinates="[139.7029729, 35.5720944]"
-          />-->
-
+          <!--
+            <DebugMarker
+              :mapboxgl="mapboxgl"
+              :map="map"
+              :coordinates="[139.7029729, 35.5720944]"
+            />
+          -->
         </template>
       </MapboxMapLoader>
     </no-ssr>
@@ -110,5 +110,4 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
-</style>
+<style lang="scss" scoped></style>

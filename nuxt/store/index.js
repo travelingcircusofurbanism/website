@@ -30,12 +30,12 @@ export default () => {
             newView.center || newView[0].center
               ? null
               : Array.isArray(newView)
-                ? newView.reduce((acc, curr) => {
-                    if (acc === null) return null
-                    if (acc !== 'none' && acc !== curr.city) return null
-                    else return curr.city
-                  }, 'none')
-                : newView.city
+              ? newView.reduce((acc, curr) => {
+                  if (acc === null) return null
+                  if (acc !== 'none' && acc !== curr.city) return null
+                  else return curr.city
+                }, 'none')
+              : newView.city
         } catch (e) {}
 
         state.currentView = parseMapPositionObjectsFromAnything(newView)
@@ -93,9 +93,18 @@ export default () => {
         state.panMap = shouldPan
       },
 
-      setPolygons(state, polygons) {
+      setPolygons(state, postObjects) {
+        const polygons = postObjects.reduce(
+          (allPolygons, post) =>
+            post.polygons ? allPolygons.concat(post.polygons) : allPolygons,
+          []
+        )
         state.mapPolygons = polygons || []
-        state.currentView = state.currentView.concat(polygonsBounds(polygons))
+      },
+
+      setViewPolygons(state, polygons) {
+        if (polygons)
+          state.currentView = state.currentView.concat(polygonsBounds(polygons))
       },
 
       setPosts(state, posts) {
@@ -121,6 +130,10 @@ export default () => {
         context.commit('setPosts', posts)
         context.commit(
           'setMapMarkers',
+          posts.filter(p => !isStatic || p.public === true)
+        )
+        context.commit(
+          'setPolygons',
           posts.filter(p => !isStatic || p.public === true)
         )
       },
@@ -169,34 +182,34 @@ function parseMapPositionObjectsFromAnything(source) {
       ? // we can directly use a mapPosition object or an array of mapPosition objects
         source
       : // or, pull mapPosition object or an array of mapPosition objects from posts
-        Array.isArray(source)
-        ? // if we have multiple posts, for each...
-          source
-            .map(post => {
-              const arrayOfPositions = Array.isArray(post.mapPosition)
-                ? post.mapPosition.map(p => {
-                    const city = post.city
-                    return {
-                      ...p,
-                      city,
-                    }
-                  })
-                : // if it's not an array of mapPositions, make it one
-                  [
-                    {
-                      ...post.mapPosition,
-                      city: post.city,
-                    },
-                  ]
-              return arrayOfPositions
-            })
-            // then smash 'em all together
-            .reduce((acc, curr) => acc.concat(curr), [])
-        : // otherwise, we just use it straight up.
-          {
-            ...source.mapPosition,
-            city: source.city,
-          }
+      Array.isArray(source)
+      ? // if we have multiple posts, for each...
+        source
+          .map(post => {
+            const arrayOfPositions = Array.isArray(post.mapPosition)
+              ? post.mapPosition.map(p => {
+                  const city = post.city
+                  return {
+                    ...p,
+                    city,
+                  }
+                })
+              : // if it's not an array of mapPositions, make it one
+                [
+                  {
+                    ...post.mapPosition,
+                    city: post.city,
+                  },
+                ]
+            return arrayOfPositions
+          })
+          // then smash 'em all together
+          .reduce((acc, curr) => acc.concat(curr), [])
+      : // otherwise, we just use it straight up.
+        {
+          ...source.mapPosition,
+          city: source.city,
+        }
 
   if (!Array.isArray(parsedMapPositions))
     parsedMapPositions = [parsedMapPositions]
@@ -213,14 +226,14 @@ function polygonsBounds(polygons) {
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.map(coord => coord[0])),
+              flattened.concat(polygon.coords.map(coord => coord[0])),
             []
           )
         ),
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.map(coord => coord[1])),
+              flattened.concat(polygon.coords.map(coord => coord[1])),
             []
           )
         ),
@@ -232,14 +245,14 @@ function polygonsBounds(polygons) {
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.map(coord => coord[0])),
+              flattened.concat(polygon.coords.map(coord => coord[0])),
             []
           )
         ),
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.map(coord => coord[1])),
+              flattened.concat(polygon.coords.map(coord => coord[1])),
             []
           )
         ),

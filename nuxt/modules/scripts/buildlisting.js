@@ -106,8 +106,13 @@ function getDataForPost(postDir, city, slug) {
               ? postData.mapPosition.location.toLowerCase()
               : null,
           ]
-      : null
-    if (locations) locations.filter(l => l).forEach(l => allLocations.add(l))
+      : []
+    if (postData.polygons)
+      postData.polygons.forEach(polygon =>
+        locations.push(polygon.location.toLowerCase())
+      )
+    if (locations.length > 0)
+      locations.filter(l => l).forEach(l => allLocations.add(l))
 
     let title = contentToUseForData.substring(
       contentToUseForData.indexOf('#') + 1
