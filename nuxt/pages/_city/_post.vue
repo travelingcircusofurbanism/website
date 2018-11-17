@@ -267,13 +267,17 @@ export default {
 
     highlightLocationText() {
       if (
-        !Array.isArray(this.mapPosition) ||
-        this.mapPosition.length === 1 ||
+        (!this.mapPosition && !this.polygons) ||
+        (!Array.isArray(this.mapPosition) && !this.polygons) ||
+        (this.mapPosition.length === 1 && !this.polygons) ||
         this.isMobile
       )
         return this.contentInRightLanguage
       let newContent = this.contentInRightLanguage.replace('&amp;', '&')
-      this.mapPosition
+      const toCheck = this.polygons
+        ? [...this.mapPosition, ...this.polygons]
+        : this.mapPosition
+      toCheck
         .map(positionObject => positionObject.location)
         .forEach(location => {
           if (location.length < 4) return
@@ -290,22 +294,29 @@ export default {
 
     addMapMoveOnHighlightTextHover() {
       if (
-        !Array.isArray(this.mapPosition) ||
-        this.mapPosition.length === 1 ||
+        (!this.mapPosition && !this.polygons) ||
+        (!Array.isArray(this.mapPosition) && !this.polygons) ||
+        (this.mapPosition.length === 1 && !this.polygons) ||
         this.isMobile ||
         !this.$refs ||
         !this.$refs.postcontent
       )
         return
+      const toCheck = this.polygons
+        ? [...this.mapPosition, ...this.polygons]
+        : this.mapPosition
       this.$refs.postcontent.querySelectorAll('.highlight').forEach(e => {
         const elText = e.innerHTML.toLowerCase().replace('&amp;', '&')
-        const foundLocation = this.mapPosition.find(
+        const foundLocation = toCheck.find(
           p => p.location && elText === p.location.toLowerCase()
         )
         if (foundLocation) {
           e.addEventListener('mouseover', () => {
             this.doubleHighlight(foundLocation.location)
-            this.$store.commit('setView', foundLocation)
+            if (foundLocation.coordinates) {
+              this.$store.commit('setView')
+              this.$store.commit('setViewPolygons', [foundLocation])
+            } else this.$store.commit('setView', foundLocation)
           })
           e.addEventListener('mouseout', this.unDoubleHighlight)
         }

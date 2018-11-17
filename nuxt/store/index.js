@@ -226,14 +226,14 @@ function polygonsBounds(polygons) {
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coords.map(coord => coord[0])),
+              flattened.concat(polygon.coordinates.map(coord => coord[0])),
             []
           )
         ),
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coords.map(coord => coord[1])),
+              flattened.concat(polygon.coordinates.map(coord => coord[1])),
             []
           )
         ),
@@ -245,14 +245,14 @@ function polygonsBounds(polygons) {
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coords.map(coord => coord[0])),
+              flattened.concat(polygon.coordinates.map(coord => coord[0])),
             []
           )
         ),
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coords.map(coord => coord[1])),
+              flattened.concat(polygon.coordinates.map(coord => coord[1])),
             []
           )
         ),
