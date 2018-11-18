@@ -1,9 +1,8 @@
 <template>
   <div
     class="post-preview"
-    v-on="{mouseenter: mouseOver, mouseleave: mouseOut}"
+    v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }"
   >
-
     <nuxt-link :to="url">
       <div
         v-lazy:background-image="{
@@ -40,35 +39,50 @@
         {{ description }}
         <nuxt-link :to="url">Keep Reading →</nuxt-link>
       </div>
-
     </div>
   </div>
 </template>
-
 
 <script>
 const { capitalize } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
-  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'description', 'mapPosition', 'languages' ],
-  components: { PostDetails, },
+  props: [
+    'url',
+    'image',
+    'title',
+    'category',
+    'city',
+    'date',
+    'description',
+    'mapPosition',
+    'languages',
+    'polygons',
+  ],
+  components: { PostDetails },
   computed: {
-    isDev () { return this.$store.state.isDev },
-    isMobile () { return this.$store.state.isMobile },
-    userLanguage () { return this.$store.state.language },
-    loader () {
-      return this.image.includes('/med/') ?
-        this.image.replace('/med/', '/tiny/') :
-        undefined
+    isDev() {
+      return this.$store.state.isDev
+    },
+    isMobile() {
+      return this.$store.state.isMobile
+    },
+    userLanguage() {
+      return this.$store.state.language
+    },
+    loader() {
+      return this.image.includes('/med/')
+        ? this.image.replace('/med/', '/tiny/')
+        : undefined
     },
   },
-  data () {
+  data() {
     return {
       isDoubleHighlighting: false,
     }
   },
-  beforeDestroy () {
+  beforeDestroy() {
     if (this.isDoubleHighlighting || this.isMobile) {
       this.$store.commit('setHighlight')
       this.$store.commit('setHighlight')
@@ -76,19 +90,25 @@ export default {
   },
   methods: {
     capitalize,
-    mouseOver () {
+    mouseOver() {
       if (this.isMobile) return
-      this.$store.commit('setHighlight', this.mapPosition)
+      this.$store.commit(
+        'setHighlight',
+        this.polygons
+          ? Array.isArray(this.mapPosition)
+            ? [...this.mapPosition, ...this.polygons]
+            : [this.mapPosition, ...this.polygons]
+          : this.mapPosition
+      )
       this.isDoubleHighlighting = true
     },
-    mouseOut () {
+    mouseOut() {
       if (this.isMobile) return
       this.$store.commit('setHighlight')
       this.isDoubleHighlighting = false
-    }
-  }
+    },
+  },
 }
-
 </script>
 
 <style lang="scss" scoped>
@@ -98,7 +118,7 @@ export default {
   margin-bottom: $unit * 10;
   display: grid;
   grid-template-columns: 40% 1fr;
-  grid-gap: $unit * 5;
+  grid-gap: $unit * 4;
   min-height: $unit * 45;
 
   .previewimage {
@@ -110,11 +130,11 @@ export default {
     background-position: center center;
   }
 
-  @include width (large) {
+  @include width(large) {
     grid-template-columns: 45% 1fr;
   }
 
-  @include width (midorsmaller) {
+  @include width(midorsmaller) {
     grid-template-columns: 100%;
 
     .previewimage {
@@ -122,7 +142,7 @@ export default {
     }
   }
 
-  @include width (mobile) {
+  @include width(mobile) {
     min-height: auto;
     grid-gap: $unit * 3;
 
@@ -149,5 +169,4 @@ h4 {
 .description {
   word-break: break-word;
 }
-
 </style>

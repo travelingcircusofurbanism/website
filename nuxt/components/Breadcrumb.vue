@@ -19,41 +19,45 @@ const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 export default {
   props: {
     title: {
-      required: false
-    }
+      required: false,
+    },
   },
   computed: {
-    isMobile () { return this.$store.state.isMobile },
+    isMobile() {
+      return this.$store.state.isMobile
+    },
     // currentCity () { return this.$store.state.currentCity },
-    pathEls () {
+    pathEls() {
       const path = this.$nuxt.$route.path.substring(1)
-      const pathEls = [{
-        label: 'Home',
-        url: '/'
-      }]
+      const pathEls = [
+        {
+          label: 'Home',
+          url: '/',
+        },
+      ]
 
       let preSlash = path.substring(0, path.indexOf('/'))
       let postSlash = path.substring(path.indexOf('/') + 1)
       let pagePrefix = ''
-      if (preSlash === 'is' || preSlash === 'at')
-        pagePrefix = preSlash
+      if (preSlash === 'is' || preSlash === 'at') pagePrefix = preSlash
       else if (preSlash !== '')
         pathEls.push({
           label: this.capitalize(decodeURI(preSlash)),
-          url: `/${ preSlash }`
+          url: `/${preSlash}`,
         })
       pathEls.push({
-        label: this.title ? 
-          this.softTruncate(this.capitalize(this.title), 70) :
-          `${ pagePrefix ? pagePrefix + ': ' : '' }${ this.capitalize(decodeURI(postSlash)) }`,
-        url: `/${ path }`
+        label: this.title
+          ? this.softTruncate(this.title, 70)
+          : `${pagePrefix ? pagePrefix + ': ' : ''}${this.capitalize(
+              decodeURI(postSlash)
+            )}`,
+        url: `/${path}`,
       })
       return pathEls
-    }
+    },
   },
   methods: { capitalize, softTruncate },
 }
-
 </script>
 
 <style scoped lang="scss">
@@ -78,7 +82,7 @@ export default {
 }
 
 .crumb {
-  transition: all .2s;
+  transition: all 0.2s;
   color: lighten($text, 25%) !important;
   position: relative;
   margin: 0;
@@ -103,7 +107,7 @@ export default {
   }
 
   &::before {
-    transition: all .2s;
+    transition: all 0.2s;
     content: '';
     position: absolute;
     top: 0;

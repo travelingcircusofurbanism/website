@@ -21,6 +21,7 @@
     "markdown-it": "^8.4.2",
     "node-sass": "^4.9.3",
     "nuxt": "^2.2.0",
+    "polylabel": "^1.0.2",
     "sass-loader": "^7.1.0",
     "sharp": "^0.20.8",
     "supercluster": "^4.1.1",

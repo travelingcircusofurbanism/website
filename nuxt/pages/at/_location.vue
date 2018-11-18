@@ -1,13 +1,9 @@
 <template>
   <section class="content">
-
     <Breadcrumb />
 
-    <PostList
-      :posts="posts"
-      :title="location"
-    />
-    <Footer/>
+    <PostList :posts="posts" :title="location" />
+    <footer />
   </section>
 </template>
 
@@ -18,52 +14,64 @@ import Breadcrumb from '~/components/Breadcrumb'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
-  head () { 
-    return { 
+  head() {
+    return {
       title: this.capitalize(this.location),
       meta: [
-        { property: 'og:title', content: `${ this.capitalize(this.location) } | Traveling Circus of Urbanism` },
-        { property: 'og:url', content: `https://www.travelingcircusofurbanism.com/at/${ this.location }` },
-        { hid: `og:image`, property: 'og:image', 
-          content: this.posts[0] && this.posts[0].image ? 
-            this.posts[0].image.substring(0, 4) === 'http' ?
-              this.posts[0].image :
-              `https://www.travelingcircusofurbanism.com${ this.posts[0].image }`
-            : ''
+        {
+          property: 'og:title',
+          content: `${this.capitalize(
+            this.location
+          )} | Traveling Circus of Urbanism`,
         },
-      ]
+        {
+          property: 'og:url',
+          content: `https://www.travelingcircusofurbanism.com/at/${
+            this.location
+          }`,
+        },
+        {
+          hid: `og:image`,
+          property: 'og:image',
+          content:
+            this.posts[0] && this.posts[0].image
+              ? this.posts[0].image.substring(0, 4) === 'http'
+                ? this.posts[0].image
+                : `https://www.travelingcircusofurbanism.com${
+                    this.posts[0].image
+                  }`
+              : '',
+        },
+      ],
     }
   },
-  components: { Footer, PostList, Breadcrumb, },
-  asyncData ({ route, redirect, error, isStatic, store }) {
+  components: { Footer, PostList, Breadcrumb },
+  asyncData({ route, redirect, error, isStatic, store }) {
     const location = decodeURI(route.path)
       .replace('/at/', '')
       .toLowerCase()
-    let posts = isStatic ?
-      store.state.allPublicPosts :
-      store.state.allPosts
+    let posts = isStatic ? store.state.allPublicPosts : store.state.allPosts
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
     let marker = {}
     posts = posts.filter(p => {
-        if (Array.isArray(p.mapPosition)) {
-          const found = p.mapPosition.find(singlePosition => 
+      const toCheck = (Array.isArray(p.mapPosition)
+        ? p.mapPosition
+        : [p.mapPosition]
+      )
+        .concat(p.polygons)
+        .filter(p => p)
+      if (toCheck.length > 0) {
+        const found = toCheck.find(
+          singlePosition =>
             singlePosition.location &&
             singlePosition.location.toLowerCase() === location
-          )
-          if (found) marker = found
-          return found
-        }
-        else {
-          const found = p.mapPosition && 
-            p.mapPosition.location && 
-            p.mapPosition.location.toLowerCase() === location
-          if (found) marker = p.mapPosition
-          return found
-        }
-      })
-    if (posts.length === 1)
-      return redirect(posts[0].url)
+        )
+        if (found) marker = found
+        return found
+      }
+    })
+    if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       location,
@@ -71,19 +79,19 @@ export default {
     }
   },
   computed: {
-    isMobile () { return this.$store.state.isMobile },
+    isMobile() {
+      return this.$store.state.isMobile
+    },
   },
-  mounted () {
+  mounted() {
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.marker)
     this.$store.commit('setHighlight', this.marker)
   },
   methods: {
     capitalize,
-  }
+  },
 }
 </script>
 
-<style scoped lang="scss">
-
-</style>
+<style scoped lang="scss"></style>

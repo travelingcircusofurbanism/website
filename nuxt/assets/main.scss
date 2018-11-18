@@ -8,6 +8,7 @@ html {
   overflow: hidden;
   font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
     'Helvetica Neue', Arial, sans-serif;
+  font-size: 15.5px;
   line-height: 1.6;
 }
 
@@ -440,6 +441,42 @@ h4 {
 .mapbox-improve-map,
 .mapboxgl-ctrl-attrib {
   display: none;
+}
+
+.polygonlabel {
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  user-select: none;
+  color: white;
+  $shadow: rgba($text, 0.15);
+  text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+    0 -2px 12px $shadow, -2px 0 12px $shadow;
+  font-weight: 600;
+  letter-spacing: 0.8px;
+  transition: opacity 0.35s;
+
+  &.off {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &.highlight,
+  &:hover,
+  &.hover {
+    color: $activelight;
+  }
+
+  &.doublehighlight,
+  &.highlight:hover,
+  &.highlight.hover {
+    color: $highlight;
+  }
 }
 
 .marker,

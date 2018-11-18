@@ -6,23 +6,23 @@ export default {
   props: {
     mapboxgl: {
       type: Object,
-      required: true
+      required: true,
     },
     map: {
       type: Object,
-      required: true
+      required: true,
     },
     clusterer: {
       type: Object,
-      required: true
+      required: true,
     },
     markerData: {
       type: Object,
-      required: true
+      required: true,
     },
   },
 
-  data () {
+  data() {
     return {
       marker: null,
       markerElement: null,
@@ -30,58 +30,65 @@ export default {
   },
 
   computed: {
-    isCluster () { return this.markerData.properties.cluster ? true : false },
+    isCluster() {
+      return this.markerData.properties.cluster ? true : false
+    },
 
     // highlights come in as an array of location names.
-		highlight () {
-			const newHighlight = this.$store.state.highlight
-			if (process.browser) {
-				for (let n of newHighlight) {
-					if (this.locationsInMarker.find(l => l.toLowerCase() === n.toLowerCase()))
+    highlight() {
+      const newHighlight = this.$store.state.highlight
+      if (process.browser) {
+        for (let n of newHighlight) {
+          if (
+            this.locationsInMarker.find(
+              l => l.toLowerCase() === n.toLowerCase()
+            )
+          )
             return 'highlight'
-				}
-			}
+        }
+      }
       return ''
-		},
+    },
 
-    doubleHighlight () {
+    doubleHighlight() {
       const newDoubleHighlight = this.$store.state.doubleHighlight
       for (let n of newDoubleHighlight) {
-        if (this.locationsInMarker.find(l => l.toLowerCase() === n.toLowerCase()))
+        if (
+          this.locationsInMarker.find(l => l.toLowerCase() === n.toLowerCase())
+        )
           return 'doublehighlight'
       }
       return ''
     },
 
     // returns array of named locations in marker or cluster
-    locationsInMarker () {
+    locationsInMarker() {
       const locations = []
       if (this.isCluster) {
-        const getLocationsRecursively = (root) => {
+        const getLocationsRecursively = root => {
           if (root.properties.cluster_id)
-            this.clusterer.getChildren(root.properties.cluster_id)
+            this.clusterer
+              .getChildren(root.properties.cluster_id)
               .forEach(child => getLocationsRecursively(child))
           else if (root.properties.location)
             locations.push(root.properties.location)
         }
         getLocationsRecursively(this.markerData)
-      }
-      else
-        locations.push(this.markerData.properties.location)
+      } else locations.push(this.markerData.properties.location)
       return locations
     },
   },
 
   watch: {
-    highlight () {
+    highlight() {
       this.updateHighlight()
     },
-    doubleHighlight () {
+    doubleHighlight() {
       this.updateHighlight()
-    }
+    },
   },
 
-  mounted () {
+  mounted() {
     this.spawnMarker()
     this.updateHighlight()
   },
@@ -91,97 +98,114 @@ export default {
   },
 
   methods: {
-    buildMarkerElement () {
+    buildMarkerElement() {
       this.markerElement = document.createElement('div')
-      this.markerElement.className = (this.isCluster ? 'cluster' : 'marker') + ' ' + this.highlight + ' ' + this.doubleHighlight
+      this.markerElement.className =
+        (this.isCluster ? 'cluster' : 'marker') +
+        ' ' +
+        this.highlight +
+        ' ' +
+        this.doubleHighlight
       const pinElement = document.createElement('div')
       pinElement.className = 'pin'
       const textBoxElement = document.createElement('div')
       textBoxElement.className = 'text'
       const textElements = []
       if (this.isCluster) {
-        textElements.push(document.createTextNode(this.markerData.properties.point_count_abbreviated))
-      }
-      else {
-        const lines = this.softSplitStringEveryXCharacters(this.markerData.properties.location, 8)
+        textElements.push(
+          document.createTextNode(
+            this.markerData.properties.point_count_abbreviated
+          )
+        )
+      } else {
+        const lines = this.softSplitStringEveryXCharacters(
+          this.markerData.properties.location,
+          8
+        )
         lines.forEach(string => {
           const newDiv = document.createElement('div')
           newDiv.appendChild(document.createTextNode(string))
           textElements.push(newDiv)
         })
       }
-      textElements.forEach(el => 
-        textBoxElement.appendChild(el)
-      )
+      textElements.forEach(el => textBoxElement.appendChild(el))
       this.markerElement.appendChild(textBoxElement)
       this.markerElement.appendChild(pinElement)
       this.markerElement.addEventListener('click', e => {
         this.$store.commit('setPan', false)
-        if (this.isCluster)
-          this.zoomIntoCluster()
-        else
-          this.routeTo(this.markerData.properties.location)
+        if (this.isCluster) this.zoomIntoCluster()
+        else this.routeTo(this.markerData.properties.location)
       })
     },
-    spawnMarker () {
-      if (!this.markerElement)
-        this.buildMarkerElement()
+    spawnMarker() {
+      if (!this.markerElement) this.buildMarkerElement()
       this.marker = new this.mapboxgl.Marker({
-          element: this.markerElement,
-          anchor: 'bottom',
-          offset: [0, 5],
-        })
+        element: this.markerElement,
+        anchor: 'bottom',
+        offset: [0, 5],
+      })
         .setLngLat(this.markerData.geometry.coordinates)
         .addTo(this.map)
     },
 
-    destroyMarker () {
+    destroyMarker() {
       if (this.marker) this.marker.remove()
     },
 
-    updateHighlight () {
+    updateHighlight() {
       this.markerElement.classList.remove('highlight')
       this.markerElement.classList.remove('doublehighlight')
-      if (this.highlight)
-        this.markerElement.classList.add(this.highlight)
+      if (this.highlight) this.markerElement.classList.add(this.highlight)
       if (this.doubleHighlight)
         this.markerElement.classList.add(this.doubleHighlight)
     },
 
-    routeTo (location) {
+    routeTo(location) {
       if (allLocations.includes(location.toLowerCase()))
         this.$router.push('/at/' + encodeURI(location).toLowerCase())
     },
 
-    zoomIntoCluster () {
-      const children = this.clusterer.getChildren(this.markerData.properties.cluster_id)
+    zoomIntoCluster() {
+      const children = this.clusterer.getChildren(
+        this.markerData.properties.cluster_id
+      )
       const centerPoint = children
         .map(c => c.geometry.coordinates)
-        .reduce((acc, point) => {
-          return [acc[0] + (point[0] / children.length), acc[1] + (point[1] / children.length)]
-        }, [0,0])
+        .reduce(
+          (acc, point) => {
+            return [
+              acc[0] + point[0] / children.length,
+              acc[1] + point[1] / children.length,
+            ]
+          },
+          [0, 0]
+        )
       this.map.flyTo({
         center: centerPoint,
-        zoom: this.clusterer.getClusterExpansionZoom(this.markerData.properties.cluster_id) + .8
+        zoom:
+          this.clusterer.getClusterExpansionZoom(
+            this.markerData.properties.cluster_id
+          ) + 0.8,
       })
     },
 
-    softSplitStringEveryXCharacters (string, characterCount) {
+    softSplitStringEveryXCharacters(string, characterCount) {
       let newStrings = []
-      let prevCutoff = 0, currCutoff = 0
+      let prevCutoff = 0,
+        currCutoff = 0
       while (currCutoff <= string.length) {
-        if ((string.charAt(currCutoff) === ' ' && currCutoff - prevCutoff >= characterCount) ||
-          (currCutoff === string.length)) {
+        if (
+          (string.charAt(currCutoff) === ' ' &&
+            currCutoff - prevCutoff >= characterCount) ||
+          currCutoff === string.length
+        ) {
           newStrings.push(string.substring(prevCutoff, currCutoff))
           prevCutoff = currCutoff + 1
         }
-        currCutoff ++
+        currCutoff++
       }
       return newStrings
-    }
-  }
+    },
+  },
 }
 </script>
-
-<style scoped>
-</style>

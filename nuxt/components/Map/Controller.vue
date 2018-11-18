@@ -14,10 +14,6 @@ export default {
       type: Object,
       required: true,
     },
-    markers: {
-      type: Array,
-      required: true,
-    },
   },
 
   data() {
