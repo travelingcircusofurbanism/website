@@ -2,13 +2,22 @@ module.exports = {
   public: false,
   date: '1/1/2000',
   category: 'essay',
-  mapPosition: {
-    location: 'Test!',
-    bearing: 0,
-    center: [-67.13734351262877, 48.137451890638886],
-    zoom: 12.0,
-    pitch: 0,
-  },
+  mapPosition: [
+    {
+      location: 'Test!',
+      bearing: 0,
+      center: [-67.13734351262877, 48.137451890638886],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Ampersand & Test',
+      bearing: 0,
+      center: [-65.13734351262877, 46.137451890638886],
+      zoom: 12.0,
+      pitch: 0,
+    },
+  ],
   polygons: [
     {
       location: 'Wacky area',
