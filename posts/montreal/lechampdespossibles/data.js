@@ -6,7 +6,7 @@ module.exports = {
 		{
 			location: 'Le Champ Des Possibles',
 			bearing: 0,
-			center: [45.528735, -73.598372],
+			center: [-73.598372, 45.528735],
 			zoom: 12.00,
 			pitch: 0 
 		},

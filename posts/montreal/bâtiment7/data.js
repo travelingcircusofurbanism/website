@@ -7,7 +7,7 @@ module.exports = {
 		{
 			location: 'Bâtiment 7',
 			bearing: 0,
-			center: [45.480979, -73.552220],
+			center: [-73.552220, 45.480979],
 			zoom: 12.00,
 			pitch: 0 
 		},
