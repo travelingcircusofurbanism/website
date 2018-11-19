@@ -454,7 +454,7 @@ h4 {
     0 -2px 12px $shadow, -2px 0 12px $shadow;
   font-weight: 600;
   letter-spacing: 0.8px;
-  transition: opacity 0.35s;
+  transition: opacity 0.35s, color 0.1s;
 
   &.off {
     display: none;

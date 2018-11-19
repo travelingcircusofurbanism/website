@@ -62,7 +62,6 @@ export default {
         type: 'fill',
         source: this.sourceId,
         paint: {
-          'fill-color-transition': { duration: 1000 },
           'fill-color': [
             'case',
             [
@@ -102,7 +101,6 @@ export default {
         type: 'line',
         source: this.sourceId,
         paint: {
-          'line-color-transition': { duration: 1 },
           'line-color': [
             'case',
             [
