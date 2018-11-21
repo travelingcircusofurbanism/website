@@ -17,7 +17,9 @@
       </template>
     </div>
 
-    <h1 :class="{ ja: displayLanguage === 'ja' }">{{ titleInLanguage }}</h1>
+    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">
+      {{ titleInLanguage }}
+    </h1>
 
     <PostDetails
       class="details"
@@ -225,10 +227,7 @@ export default {
 
   mounted() {
     this.displayLanguage = this.content.en ? 'en' : 'ja'
-    this.$store.commit('setView', this.mapPosition)
-    this.$store.commit('setViewPolygons', this.polygons)
-    this.$store.commit('setCity', this.city)
-    this.$store.commit('setPan', false)
+    this.resetView()
     this.$store.commit(
       'setHighlight',
       this.polygons
@@ -263,6 +262,13 @@ export default {
 
     setLanguage(language) {
       this.displayLanguage = language
+    },
+
+    resetView() {
+      this.$store.commit('setView', this.mapPosition)
+      this.$store.commit('setViewPolygons', this.polygons)
+      this.$store.commit('setCity', this.city)
+      this.$store.commit('setPan', false)
     },
 
     highlightLocationText() {
