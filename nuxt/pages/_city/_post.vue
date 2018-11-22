@@ -170,21 +170,19 @@ export default {
     },
     contentInRightLanguage() {
       const contentInRightLanguage =
-        this.content[this.displayLanguage] ||
-        this.content.en ||
-        this.content.ja ||
-        ''
+        this.content[this.displayLanguage || 'en'] || this.content.ja || ''
       return contentInRightLanguage
     },
     contentToDisplay() {
-      const contentToDisplay = this.highlightLocationText(
-        this.contentInRightLanguage
-      )
+      if (!this.contentInRightLanguage.length) return ''
+      const contentToDisplay = this.highlightLocationText()
       this.$nextTick(this.addImageInteraction)
       this.$nextTick(this.addMapMoveOnHighlightTextHover)
       return contentToDisplay
     },
   },
+
+  watch: {},
 
   async created() {
     if (!process.browser) return
@@ -279,7 +277,8 @@ export default {
         this.isMobile
       )
         return this.contentInRightLanguage
-      let newContent = this.contentInRightLanguage.replace('&amp;', '&')
+      let newContent = this.contentInRightLanguage.replace(/&amp;/g, '&')
+      console.log(newContent)
       const toCheck = this.polygons
         ? [...this.mapPosition, ...this.polygons]
         : this.mapPosition
@@ -288,12 +287,13 @@ export default {
         .forEach(location => {
           if (location.length < 4) return
           const locationRegex = new RegExp(`[\s\n >]${location}`, 'gi')
-          newContent = newContent.replace(locationRegex, match =>
-            match.replace(
+          newContent = newContent.replace(locationRegex, match => {
+            console.log(match, location)
+            return match.replace(
               new RegExp(`${location}`, 'gi'),
               `<span class="highlight">${location}</span>`
             )
-          )
+          })
         })
       return newContent
     },

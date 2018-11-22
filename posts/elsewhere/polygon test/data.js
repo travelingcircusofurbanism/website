@@ -4,14 +4,14 @@ module.exports = {
   category: 'essay',
   mapPosition: [
     {
-      location: 'Test!',
+      location: 'HAUSEN & WIRTH test',
       bearing: 0,
       center: [-67.13734351262877, 48.137451890638886],
       zoom: 12.0,
       pitch: 0,
     },
     {
-      location: 'Ampersand & Test',
+      location: 'C2O library & collabtive test',
       bearing: 0,
       center: [-65.13734351262877, 46.137451890638886],
       zoom: 12.0,
