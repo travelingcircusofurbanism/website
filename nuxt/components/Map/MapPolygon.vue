@@ -27,7 +27,7 @@ export default {
       labelId: 'label' + `${Math.random()}`.substring(2),
       label: null,
       labelElement: null,
-      prevZoneHidden: null,
+      prevZoneShown: null,
       updateDebounce: null,
       hovering: false,
     }
@@ -164,7 +164,7 @@ export default {
       const boundsMod = Math.sqrt(averageBoundsDiff)
       let zoomToShow = 6 / boundsMod
       if (zoomToShow > 9) zoomToShow = 9
-      return zoomToShow
+      return parseInt(zoomToShow)
     },
   },
 
@@ -180,9 +180,9 @@ export default {
   mounted() {
     this.spawnPolygon()
     this.spawnLabel()
-    this.updateZoneHidden()
+    this.updateZoneShown()
     this.updateHighlights(this.isHighlighted, this.isDoubleHighlighted)
-    this.map.on('zoom', this.updateZoneHidden)
+    this.map.on('zoom', this.updateZoneShown)
   },
 
   beforeDestroy() {
@@ -238,21 +238,24 @@ export default {
 
     show() {
       this.labelElement.classList.remove('off')
+      this.prevZoneShown = true
     },
 
     hide() {
       this.labelElement.classList.add('off')
+      this.prevZoneShown = false
     },
 
-    updateZoneHidden() {
+    updateZoneShown() {
       if (this.updateDebounceTimer) return
 
-      const zoneHidden =
-        parseInt(this.map.getZoom()) < parseInt(this.zoomToShow)
-      if (zoneHidden !== this.prevZoneHidden) this.prevZoneHidden = zoneHidden
-      else return
+      const zoneShown =
+        this.isHighlighted ||
+        this.isDoubleHighlighted ||
+        parseInt(this.map.getZoom()) >= this.zoomToShow
+      if (zoneShown === this.prevZoneShown) return
 
-      if (!zoneHidden) this.show()
+      if (zoneShown) this.show()
       else this.hide()
 
       this.updateDebounceTimer = setTimeout(() => {
@@ -290,6 +293,7 @@ export default {
       this.map.getSource(this.sourceId).setData(this.geoJSONData())
       this.map.getCanvas().style.cursor = 'pointer'
       this.labelElement.classList.add('hover')
+      this.show()
     },
 
     unHover(e) {
@@ -297,6 +301,7 @@ export default {
       this.map.getSource(this.sourceId).setData(this.geoJSONData())
       this.map.getCanvas().style.cursor = ''
       this.labelElement.classList.remove('hover')
+      this.$nextTick(this.updateZoneShown)
     },
 
     geoJSONData() {
