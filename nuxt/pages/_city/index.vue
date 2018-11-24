@@ -11,12 +11,12 @@
       </div>
     -->
     <PostList :posts="showablePosts" :title="city" />
-    <footer />
+    <ContentFooter />
   </section>
 </template>
 
 <script>
-import Footer from '~/components/Footer'
+import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
 // import Selector from '~/components/Selector'
@@ -58,7 +58,7 @@ export default {
       ],
     }
   },
-  components: { Footer, PostList, Breadcrumb },
+  components: { ContentFooter, PostList, Breadcrumb },
   asyncData({ route, redirect, error, isStatic, store }) {
     const city = decodeURI(route.path)
       .replace(/\//g, '')

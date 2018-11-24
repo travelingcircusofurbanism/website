@@ -3,12 +3,12 @@
     <Breadcrumb />
 
     <PostList :posts="posts" :title="location" />
-    <footer />
+    <ContentFooter />
   </section>
 </template>
 
 <script>
-import Footer from '~/components/Footer'
+import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
 const { capitalize } = require('~/assets/commonFunctions.js')
@@ -45,7 +45,7 @@ export default {
       ],
     }
   },
-  components: { Footer, PostList, Breadcrumb },
+  components: { ContentFooter, PostList, Breadcrumb },
   asyncData({ route, redirect, error, isStatic, store }) {
     const location = decodeURI(route.path)
       .replace('/at/', '')

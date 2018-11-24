@@ -1,8 +1,10 @@
 <template>
   <section class="content">
-    <!--<div class="intro" v-if="showIntro">
-      <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
-    </div>-->
+    <!--
+      <div class="intro" v-if="showIntro">
+        <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
+      </div>
+    -->
     <div class="content-top-full mini gray">
       <Selector />
       <Selector
@@ -12,16 +14,13 @@
         urlPrefix="is/"
       />
     </div>
-    <PostList
-      :posts="showablePosts"
-      title="Recent Posts"
-    />
-    <Footer/>
+    <PostList :posts="showablePosts" title="Recent Posts" />
+    <ContentFooter />
   </section>
 </template>
 
 <script>
-import Footer from '~/components/Footer'
+import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Selector from '~/components/Selector'
 const { get, set } = require('~/assets/storage').default
@@ -39,7 +38,7 @@ export default {
       ],
     }
   },
-  components: { Footer, PostList, Selector },
+  components: { ContentFooter, PostList, Selector },
   asyncData({ store }) {
     let posts = store.state.isDev
       ? store.state.allPosts

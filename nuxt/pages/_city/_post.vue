@@ -43,13 +43,13 @@
 
     <RelatedArticles :city="city" :current="slug" />
 
-    <footer />
+    <ContentFooter />
   </section>
 </template>
 
 <script>
 import axios from 'axios'
-import Footer from '~/components/Footer'
+import ContentFooter from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
@@ -98,7 +98,7 @@ export default {
   },
 
   components: {
-    Footer,
+    ContentFooter,
     RelatedArticles,
     PostDetails,
     Breadcrumb,
