@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Sat, 24 Nov 2018 01:54:47 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 08 Dec 2018 21:12:21 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -17,7 +17,45 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
-            <title><![CDATA[  Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok  - interview with a community architect]]></title>
+            <title><![CDATA[ Urbanist's guide to Chicago]]></title>
+            <link>https://www.travelingcircusofurbanism.com/chicago/Introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/chicago/Introduction</guid>
+            <pubDate>Tue, 04 Dec 2018 08:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="Chicago urbanist" src="https://www.travelingcircusofurbanism.com/posts/chicago/Introduction/med/chicago.jpg"></p>
+<h3>Things to do, places to go</h3>
+<ul>
+<li>
+<p>It's been said that Chicago's Neighborhood Parks is one of <a href="https://interactive.wttw.com/ten/parks/chicagos-neighborhood-parks">the 10 parks that changed America</a>. In the late 19C, the two designers <a href="http://www.fredericklawolmsted.com/">Frederick Law Olmsted</a> and Calvert Vaux executed that vision in a system of smaller neighborhood parks that serve better for immigrants and working-class people in Chicago.</p>
+</li>
+<li>
+<p>Downtown Chicago is beautiful - but once you take the stairs to go down to the ground, you see the completely different landscape of <a href="https://www.chicagodetours.com/exploring-underground-chicago-layers/">underground space</a> of the city. There are hidden restaurants and bars &amp; clubs, and it's quite fun for urban adventurers.</p>
+</li>
+<li>
+<p>It's quite interesting to learn how Chicago sold one of its skyways to the private sector. <a href="https://www.youtube.com/watch?v=L5TFhucZ-R4">Chicago sold the Chicago Skyway for $1.8 billion</a></p>
+</li>
+</ul>
+<h3>Read</h3>
+<ul>
+<li>
+<p>Curbed Chicago has great <a href="https://chicago.curbed.com/maps">maps</a> to get the gist of the city.</p>
+</li>
+<li>
+<p>This essay depicts a personal sense of place in a beautiful and delicate manner, and it's about Chicago.<br>
+<a href="https://thebolditalic.com/where-im-not-from-ce9c3231598a">Where I’m (Not) From Becoming and un-becoming in a city that defies definition</a></p>
+</li>
+</ul>
+<p>Overall, I think these videos are the best introduction for urbanists;</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/JyuZi9fHC4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><em><a href="https://www.youtube.com/watch?v=JyuZi9fHC4Y">Chicago's Geography Advantage</a> by City Beautiful</em></p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/S7-UAcRTW58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p><em><a href="https://www.youtube.com/watch?v=S7-UAcRTW58">Chicago and St. Louis</a> Compared by Mr. Beat</em></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/chicago/Introduction/med/chicago.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok - interview with a community architect]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</link>
             <guid>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</guid>
             <pubDate>Sat, 10 Nov 2018 08:00:00 GMT</pubDate>
@@ -25,33 +63,33 @@
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture3.jpg"></p>
 <p>In August 2018, the Indonesian island of Lombok has been shaken by two strong earthquakes. After weeks of tremors, it was reported that hundreds of people got killed during the disaster. After the event, I talked with <a href="https://sketchmemories.wordpress.com/">Puspitaningtyas Sulistyowati</a>, a community architect who is based in Indonesia. With <a href="https://arkomjogja.or.id/">ARKOM Jogja</a>, she is currently working on building shelters for the victims of the earthquake.</p>
 <hr>
-<p><em><strong>First of all, could you explain your background a little bit?</strong></em></p>
+<p><strong><em>First of all, could you explain your background a little bit?</em></strong></p>
 <p><strong>Puspitaningtyas:</strong> I did my BA in architecture and MA in urban design at ITS (Institut Teknologi Sepuluh Nopember) in Surabaya, Indonesia. When I was in the third year of my bachelor degree, I got to know a concept and practice of “Community Architecture” by ARKOM Jogja, which leads to my current career. I had worked in an architectural studio for 2 years after graduation, and afterward, I started to focus more seriously on Community Architecture.</p>
-<p><em><strong>What exactly is Community Architecture?</strong></em></p>
+<p><strong><em>What exactly is Community Architecture?</em></strong></p>
 <p><strong>Puspitaningtyas:</strong> Community Architecture is not only about making buildings as physical forms but also about “building communities”. Architecture, in this process, is just one of the mediums to communicate with people, especially marginalized ones.</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture2.JPG"><br>
 <img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture1.JPG"></p>
-<p>We do various things to understand and work together with communities, such asorganizing events and workshops. We invite people from a community to participate, and often we ask them to sketch &amp; take photos of their community - their houses, streets, their everyday lives, and things they care about... We select these sketches &amp; photos, and eventually exhibit them to the public. Through these activities, by focusing on a positive aspect and values of communities, we help them to build their own Kampong* (<em>Kampong means ‘a village’ in Indonesia</em>)</p>
+<p>We do various things to understand and work together with communities, such as organizing events and workshops. We invite people from a community to participate, and often we ask them to sketch &amp; take photos of their community - their houses, streets, their everyday lives, and things they care about... We select these sketches &amp; photos, and eventually exhibit them to the public. Through these activities, by focusing on a positive aspect and values of communities, we help them to build their own Kampong* (*Kampong means ‘a village’ in Indonesia*)</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture5.jpg"></p>
-<p><em><strong>Could you tell me why urban sketch is important?</strong></em></p>
+<p><strong><em>Could you tell me why urban sketch is important?</em></strong></p>
 <p><strong>Puspitaningtyas:</strong> In 2016, I got involved in an urban research program by an independent library and coworking community in Surabaya called <a href="https://c2o-library.net/">C2O library &amp; collabtive</a>. We decided to use sketches as a tool to present my research data that was about the space of women's activities inside kampung Ampel.</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/IMG20180824172400.jpg"><br>
 <img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/IMG20180824172437.jpg"></p>
 <p>Knowing how useful sketches could be to communicate with others and deliver information, I used urban sketch methodology in my community architecture practice called “ARKOM Jatim” in Railway Settlement in Sidotopo, Surabaya. We invited people from a community in Surabaya to create sketches and take pictures that represent their kampung. After that, all sketches and photographs were exhibited and used as tools for a community to define and understand their kampung. I do urban sketching for myself, too. It is like a letter for me. It is about documenting, and deeply understanding what is around us in cities.</p>
-<p><em><strong>What kind of project are you working on at the moment?</strong></em></p>
+<p><strong><em>What kind of project are you working on at the moment?</em></strong></p>
 <p><strong>Puspitaningtyas:</strong> Two months ago, two earthquakes struck Lombok. There are still aftershocks, and a lot of people are suffering from this disaster. We’ve been working on creating temporary shelters for those who lost their homes. Through the method of community architecture with a people-driven approach, we’ve built 8 - 10 shelters so far together with people within a community.</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture4.jpg"></p>
-<p>During this project, we don’t make everything FOR them. Rather, we build things WITH them. We only make architectural models by consulting with local communities and understanding their needs. Based on the models we create, we build together with people from a community. In this way, they can learn how to make these shelters, and eventually be able to duplicate them by themselves without our help.</p>
+<p>During this project, <strong>we don’t make everything FOR them. Rather, we build things WITH them</strong>. We only make architectural models by consulting with local communities and understanding their needs. Based on the models we create, we build together with people from a community. In this way, they can learn how to make these shelters, and eventually be able to duplicate them by themselves without our help.</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture6.jpg"><br>
 <img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture7.jpg"></p>
 <p>We also learn from how they make these buildings - so that we can constantly update our models for further improvement. We also use materials that are sustainable and accessible within a community. For instance, in the current project, we try to get the best use of local timber and bamboo.</p>
 <p>Of course, building shelters is just a beginning of our goal. After the earthquakes, they eventually need to have permanent houses and rebuild the community. Currently We are also working in a city of Palu which was attacked by multiple disasters: earthquakes, tsunami, and liquefaction.</p>
-<p><em><strong>What is the challenges of working with communities?</strong></em></p>
+<p><strong><em>What is the challenges of working with communities?</em></strong></p>
 <p><strong>Puspitaningtyas:</strong> Working with them is like being on a roller coaster. They are humans! It’s not like working with PC, so there are a lot of things that we wouldn’t expect. We need to learn how to communicate with them and understand them, understanding their own situation and background.</p>
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture8.jpg"></p>
 <p>Sometimes they don’t see that there is a problem in their community. Sometimes it’s just part of their normal everyday lives - It’s hard to make them realize that they are facing some problems.</p>
 <p>But it’s not only us telling them what’s right and what’s wrong. We also learn a lot from them too! Their local knowledge, culture and lifestyle patterns are very rich resources for architects to understand what kind of places people need and desire. Communities always have a lot to say - so just talk to them, and become their friend!</p>
-<p><em><strong>Thank you for sharing your thoughts!</strong></em></p>
+<p><strong><em>Thank you for sharing your thoughts!</em></strong></p>
 <hr>
 <p><img alt="Puspitaningtyas Sulistyowati" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/IMG_3833_1600x1067.JPG"><br>
 <em>Puspitaningtyas Sulistyowati is a community architect based in Indonesia. She is also passionate about urban sketch. You can check her illustrations <a href="https://sketchmemories.wordpress.com/">here</a> and <a href="https://www.instagram.com/f_tyas/">instagram</a></em></p>

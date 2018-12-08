@@ -20,7 +20,9 @@
 Overall, I think these videos are the best introduction for urbanists;
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/JyuZi9fHC4Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-*[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by City Beautiful*
+
+_[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by City Beautiful_
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/S7-UAcRTW58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-*[Chicago and St. Louis](https://www.youtube.com/watch?v=S7-UAcRTW58) Compared by Mr. Beat*
+
+_[Chicago and St. Louis](https://www.youtube.com/watch?v=S7-UAcRTW58) Compared by Mr. Beat_
