@@ -1,29 +1,14 @@
+
 http://sotonoba.place/2018nyc10sen
 
 # Urbanist's guide to New York
 
 ![new york urbanist](newyork01.jpg)
-_Photo by Yucel Moran on Unsplash_
+*Photo by Yucel Moran on Unsplash*
 
 ### Things to do, places to go
 
 - Obviously [High Line](https://www.thehighline.org/)
-
-- Washington square park / Jane Jacobs
-
-- [Open House New York](https://ohny.org/) weekend is an annual event to give people access to the extraordinary architecture of New York. Open House New York was founded in 2001 to engage New Yorkers in the city’s architecture, public space, and the future of urban life.
-
-- [Brooklyn Army Terminal](https://www.bklynarmyterminal.com/)
-
-- [Brooklyn Waterfront Artists](http://bwac.org/)
-
-- [Center for Architecture](https://www.centerforarchitecture.org/)
-
-- [Museum of the City of New York](https://www.mcny.org/)
-
-- [Walks of New York](https://www.walksofnewyork.com/blog/category/neighborhoods)
-
-- The Hole - [short video](https://vimeo.com/13401051)
 
 ### Read
 
@@ -31,11 +16,8 @@ _Photo by Yucel Moran on Unsplash_
 
 - [CurbedNY](https://ny.curbed.com/maps)
 
-- [Do the Right Thing](https://www.imdb.com/title/tt0097216/) by Spike Lee is set in Bedford-Stuyvesant, Brooklyn, and they story is about neighborhood's simmering racial tension. Bed-Stuy street has re-Named 'Do The Right Thing Way' to honor the movie.
+- [Do the Right Thing](https://www.imdb.com/title/tt0097216/) by Spike Lee
 
-- [Forgotten New York](http://forgotten-ny.com/)
-
-- [Open City](https://www.amazon.com/Open-City-Novel-Teju-Cole/dp/0812980093) by Teju Cole
 
 ### Organization, initiative
 
@@ -49,8 +31,7 @@ _Photo by Yucel Moran on Unsplash_
 
 - [Van Alen Institute](https://www.vanalen.org/) is an organization that believes design can transform cities, landscapes, and regions to improve people’s lives. Their projects and website are full of inspiration.
 
-- [URBAN-X](https://www.urban-x.com/) supports startups working with reimagining cities and urban life. It is interetsing to see a acceralation program that is specific to urban initiatives. I learned a concept of "urbanist in residence" from here, too.
+- [URBAN-X](https://www.urban-x.com/) supports startups working with reimagining cities and urban life. It is interetsing to see a acceralation program that is specific to urban initiatives. I learned a concept of "urbanist in residence" from here, too. 
 
-- [Urban Deisgn Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges.
+- [Urban Deisgn Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges. 
 
-- [Brooklyn Grange farms rooftops](https://www.brooklyngrangefarm.com/)
