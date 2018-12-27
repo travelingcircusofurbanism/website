@@ -1,70 +1,71 @@
 module.exports = {
-	public: false,
-	date: '6/26/2018',
-	category: 'intro',
-	mapPosition:  [
-		{
-			location: 'Van Alen Institute',
-			bearing: 0,
-			center: [-73.99183089999997, 40.74139729999999],
-			zoom: 12.00,
-			pitch: 0 
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2464493, 33.9900691],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23744390000002, 34.0454001],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23487999999998, 34.046146],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23640720000003, 34.0445952],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23289219999998, 34.0450119],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29440799999998, 34.0999515],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29278959999999, 34.1161926],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2480433, 34.0434704],
-			zoom: 12.00,
-			pitch: 0
-		},
-	]
+  public: false,
+  date: '12/29/2018',
+  category: 'intro',
+  image: 'newyork01.jpg',
+  mapPosition: [
+    {
+      location: 'High Line',
+      bearing: 0,
+      center: [-74.004706, 40.747992],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Washington square park',
+      bearing: 0,
+      center: [-73.997514, 40.730839],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Brooklyn Army Terminal',
+      bearing: 0,
+      center: [-74.024946, 40.645084],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Brooklyn Waterfront Artists',
+      bearing: 0,
+      center: [-74.017565, 40.6729],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Center for Architecture',
+      bearing: 0,
+      center: [-73.998599, 40.728945],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Museum of the City of New York',
+      bearing: 0,
+      center: [-73.951909, 40.792567],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'The Hole',
+      bearing: 0,
+      center: [-73.860632, 40.672376],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Jackson Heights',
+      bearing: 0,
+      center: [-73.883461, 40.755387],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.2480433, 34.0434704],
+      zoom: 12.0,
+      pitch: 0,
+    },
+  ],
 }

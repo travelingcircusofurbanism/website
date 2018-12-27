@@ -7,39 +7,39 @@ _Photo by Yucel Moran on Unsplash_
 
 ### Things to do, places to go
 
-- Obviously [High Line](https://www.thehighline.org/)
+- Obviously [High Line](https://www.thehighline.org/) - one of New York's finest urban parks and urban planner's dream.
 
-- Washington square park / Jane Jacobs
+- There’s no place better to appreciate all things Jane Jacobs than New York City! Definitely visit [Washington square park](https://www.nycgovparks.org/parks/washington-square-park) and her neighrbouood [Greenwich Village](https://www.nycgo.com/boroughs-neighborhoods/manhattan/greenwich-village). In addition, Jane Jacobs’ home still stands today at 555 Hudson Street.
 
 - [Open House New York](https://ohny.org/) weekend is an annual event to give people access to the extraordinary architecture of New York. Open House New York was founded in 2001 to engage New Yorkers in the city’s architecture, public space, and the future of urban life.
 
-- [Brooklyn Army Terminal](https://www.bklynarmyterminal.com/)
+- [Brooklyn Army Terminal](https://www.bklynarmyterminal.com/) is not open to public, but it's worth paying attention to. The Brooklyn Army Terminal was built during World War II, and it used to be the largest military supply base in the country. Now, it's a large renovated warehouse complex in Sunset Park.
 
-- [Brooklyn Waterfront Artists](http://bwac.org/)
+- [Brooklyn Waterfront Artists](http://bwac.org/) is Brooklyn's largest, artist-run organization, and they have an exhibition space you can visit.
 
-- [Center for Architecture](https://www.centerforarchitecture.org/)
+- [Center for Architecture](https://www.centerforarchitecture.org/) offers various events and workshops about architecture, city and design. Some of them are even free!
 
-- [Museum of the City of New York](https://www.mcny.org/)
+- New York has countess of art museums. However, if you want to know more about the city itself (which itself is the most impressive art of all times), visit [Museum of the City of New York](https://www.mcny.org/).
 
-- [Walks of New York](https://www.walksofnewyork.com/blog/category/neighborhoods)
+- [Walks of New York](https://www.walksofnewyork.com/blog/category/neighborhoods) seem to have some interesting information about self-guided walking tour ideas. I used it when I walked Brookyln Heights and it worked great.
 
-- The Hole - [short video](https://vimeo.com/13401051)
+- The Hole is one of the New York's forgotton neighrbouhood that is 12 Feet Below Street Level. [This](https://medium.com/hidden-new-york/way-down-in-the-hole-8e1ad83d5743) is a great article for you to understand more about this neglected neighbouhood. Or watch this [short video](https://vimeo.com/13401051) if you are curious how it looks like.
 
 ### Read
 
 - [Jackson Heights](https://ny.curbed.com/2017/4/19/15328342/jackson-heights-queens-history) is known to be the most ethnically and culturally diverse neighborhood in the world. The documentary [In Jackson Heights](https://vimeo.com/141051231) depicts everyday life of people in Jackson Heights, their community, and also their struggle.
 
-- [CurbedNY](https://ny.curbed.com/maps)
+- [CurbedNY](https://ny.curbed.com/maps) is always very informative.
 
 - [Do the Right Thing](https://www.imdb.com/title/tt0097216/) by Spike Lee is set in Bedford-Stuyvesant, Brooklyn, and they story is about neighborhood's simmering racial tension. Bed-Stuy street has re-Named 'Do The Right Thing Way' to honor the movie.
 
-- [Forgotten New York](http://forgotten-ny.com/)
+- [Forgotten New York](http://forgotten-ny.com/) seems like an interesting website if you are seeking for sources to understand the city that is NOT about famous museums and the statue of Liberty.
 
-- [Open City](https://www.amazon.com/Open-City-Novel-Teju-Cole/dp/0812980093) by Teju Cole
+- [Open City](https://www.amazon.com/Open-City-Novel-Teju-Cole/dp/0812980093) by Teju Cole is a great urban novel. The main character walks around the city like "flaneur" - I am quite sure that this book makes you wannt to walk everywhere in New York.
 
 ### Organization, initiative
 
-- [NYCurbanism](https://www.nycurbanism.com/wtc)
+- [NYCurbanism](https://www.nycurbanism.com/) explores architecture, urbanism, history, planning and real estate in New York City.
 
 - [The Center for Urban Pedagogy (CUP)](http://www.welcometocup.org/) is a nonprofit organization that uses the power of design and art to increase meaningful civic engagement. It's quite inspiring to see how they collaborate with artists, designers, students, and citizens to increase awareness around urban issues and build communities.
 
@@ -53,4 +53,4 @@ _Photo by Yucel Moran on Unsplash_
 
 - [Urban Deisgn Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges.
 
-- [Brooklyn Grange farms rooftops](https://www.brooklyngrangefarm.com/)
+- [Brooklyn Grange farms rooftops](https://www.brooklyngrangefarm.com/) is an interesting urban farm project that uses the rooftops.
