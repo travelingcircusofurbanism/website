@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Wed, 16 Jan 2019 16:57:24 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Jan 2019 17:03:02 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -18,8 +18,8 @@
         <category>Travel</category>
         <item>
             <title><![CDATA[ Urbanist's guide to New York]]></title>
-            <link>https://www.travelingcircusofurbanism.com/new york/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/new york/Introduction</guid>
+            <link>https://www.travelingcircusofurbanism.com/new%20york/Introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/new%20york/Introduction</guid>
             <pubDate>Sat, 29 Dec 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="new york urbanist" src="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg"><br>
@@ -100,13 +100,13 @@
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new york/Introduction/med/newyork01.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[ Industry City, the "SoHo" of Sunset Park and fear of gentrification]]></title>
-            <link>https://www.travelingcircusofurbanism.com/new york/industrycity</link>
-            <guid>https://www.travelingcircusofurbanism.com/new york/industrycity</guid>
+            <link>https://www.travelingcircusofurbanism.com/new%20york/industrycity</link>
+            <guid>https://www.travelingcircusofurbanism.com/new%20york/industrycity</guid>
             <pubDate>Wed, 26 Dec 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Industry City" src="https://www.travelingcircusofurbanism.com/posts/new%20york/industrycity/med/industrycity1.jpg"></p>
@@ -137,13 +137,13 @@
 <li>Reference: <a href="https://ny.curbed.com/2018/11/8/18075198/industry-city-sunset-park-brooklyn-gentrification-photo-essay">As Industry City gears up for rezoning, locals question who will benefit</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new york/industrycity/med/industrycity1.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/industrycity/med/industrycity1.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[ Jackson Heights, the World’s "Most Diverse Neighborhood"]]></title>
-            <link>https://www.travelingcircusofurbanism.com/new york/jacksonheights</link>
-            <guid>https://www.travelingcircusofurbanism.com/new york/jacksonheights</guid>
+            <link>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</link>
+            <guid>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</guid>
             <pubDate>Tue, 25 Dec 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights2.jpg"></p>
@@ -164,7 +164,7 @@
 <p>The documentary <a href="https://www.imdb.com/title/tt4936064/">In Jackson Heights</a> also captures dynamic local politics, where a new wave of investments and newcomers gradually started to take over the neighborhood, &quot;amid creeping gentrification.&quot;</p>
 <p>Jackson Heights enjoys its great location - reasonable access to Manhattan - and the rich diverse culture and affordable housing price offer great potential for new development in the future. It's worth paying attention to who is moving in and who suffer from displacement during the new wave of gentrification. I recommend you to visit there to experience the chaotic, yet beautiful mix of cultures, ethnicities, languages, and people's everyday lives.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new york/jacksonheights/med/jacksonheights4.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights4.jpg">
             </enclosure>
         </item>
         <item>
@@ -1181,8 +1181,8 @@ It is open for public and you can enter the building for free - it is very inter
         </item>
         <item>
             <title><![CDATA[ Walk, listen, and learn - an insight from The Urbanist San Francisco tour]]></title>
-            <link>https://www.travelingcircusofurbanism.com/san francisco/theurbanistSF</link>
-            <guid>https://www.travelingcircusofurbanism.com/san francisco/theurbanistSF</guid>
+            <link>https://www.travelingcircusofurbanism.com/san%20francisco/theurbanistSF</link>
+            <guid>https://www.travelingcircusofurbanism.com/san%20francisco/theurbanistSF</guid>
             <pubDate>Thu, 19 Jul 2018 05:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>A few weeks ago I finally had the great opportunity to join a tour that I've been following online for a long time - <a href="http://www.theurbanistsf.com/">The Urbanist SF</a>. Of course, there are countless tours out there you can choose in a big city like San Francisco, but I'm telling you — this tour is not like the other tours, and you will see the city in a completely different way afterward. First of all, <a href="http://www.theurbanistsf.com/">The Urbanist SF</a> has a super exciting <a href="https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote">Welcome to San Francisco Kit</a>, which contains some essential items for all the city lovers and urban explorers who want to discover the essence of the place.</p>
@@ -1256,13 +1256,13 @@ The final spot of the tour was Dolores Park - everyone's favorite! From this sma
 <p>In the future, he is planning to spread this project to the other big cities in the U.S. such as Los Angeles and New York. I highly recommend The Urbanist SF to all city lovers.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF02.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san francisco/theurbanistSF/med/theurbanistSF01.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF01.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[ This is not about race, but it is - thinking about white gentrification in "Black Beverly Hills"]]></title>
-            <link>https://www.travelingcircusofurbanism.com/los angeles/BlackBeverlyHills</link>
-            <guid>https://www.travelingcircusofurbanism.com/los angeles/BlackBeverlyHills</guid>
+            <link>https://www.travelingcircusofurbanism.com/los%20angeles/BlackBeverlyHills</link>
+            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/BlackBeverlyHills</guid>
             <pubDate>Mon, 09 Jul 2018 05:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Recently I got to know a little bit about a neighborhood in LA called View Park, which later I discovered is called &quot;Black Beverly Hills&quot; - as opposed to its dominantly white counterpart.</p>
@@ -1294,13 +1294,13 @@ The final spot of the tour was Dolores Park - everyone's favorite! From this sma
 <li><a href="https://www.bisnow.com/los-angeles/news/neighborhood/view-park-the-black-beverly-hills-of-los-angeles-85295?utm_source=CopyShare&amp;utm_medium=Browser%5D(https://www.bisnow.com/los-angeles/news/neighborhood/view-park-the-black-beverly-hills-of-los-angeles-85295)">Residents Grapple With Change Coming To View Park, LA's 'Black Beverly Hills'</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los angeles/BlackBeverlyHills/med/viewpark01.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/BlackBeverlyHills/med/viewpark01.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[ Things to do and read for urbanists @San Francisco]]></title>
-            <link>https://www.travelingcircusofurbanism.com/san francisco/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/san francisco/Introduction</guid>
+            <link>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</guid>
             <pubDate>Tue, 03 Jul 2018 05:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/Introduction/med/sanfrancisco01.jpg"><br>
@@ -1361,13 +1361,13 @@ My Favorite:</p>
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san francisco/Introduction/med/sanfrancisco01.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/Introduction/med/sanfrancisco01.jpg">
             </enclosure>
         </item>
         <item>
             <title><![CDATA[ Hip-Hop architecture]]></title>
-            <link>https://www.travelingcircusofurbanism.com/los angeles/hiphoparchitecture</link>
-            <guid>https://www.travelingcircusofurbanism.com/los angeles/hiphoparchitecture</guid>
+            <link>https://www.travelingcircusofurbanism.com/los%20angeles/hiphoparchitecture</link>
+            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/hiphoparchitecture</guid>
             <pubDate>Sun, 01 Jul 2018 05:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Several days ago I got to know a brand new theory (at least for me) that is called &quot;Hip-Hop Architecture&quot; by participating an event hosted by <a href="https://www.moca.org/">MOCA</a> - The Museum of Contemporary Art, Los Angeles.</p>
@@ -1389,7 +1389,7 @@ My Favorite:</p>
 <p>I believe this is an extremely helpful approach to invite not only kids but anyone who has been excluded from the traditional sphere of architecture and urban design and their privileged professionalism.</p>
 <p>In this way, hip-hop architecture and urbanism help us to ask what kind of architecture/city and physical environment at large can be realized from the bottom up, outside of traditional strategies and approaches.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los angeles/hiphoparchitecture/med/hiphop01.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/hiphoparchitecture/med/hiphop01.jpg">
             </enclosure>
         </item>
         <item>
@@ -1488,8 +1488,8 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
         </item>
         <item>
             <title><![CDATA[ Things to do and read for urbanists @Los Angeles]]></title>
-            <link>https://www.travelingcircusofurbanism.com/los angeles/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/los angeles/Introduction</guid>
+            <link>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</guid>
             <pubDate>Tue, 26 Jun 2018 05:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg"><br>
@@ -1565,7 +1565,7 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los angeles/Introduction/med/losangeles02.jpg">
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg">
             </enclosure>
         </item>
         <item>
@@ -1916,8 +1916,8 @@ Part3: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%
         </item>
         <item>
             <title><![CDATA[ 2 alternative spots to visit in Kuala Lumpur]]></title>
-            <link>https://www.travelingcircusofurbanism.com/kuala lumpur/alternativespot</link>
-            <guid>https://www.travelingcircusofurbanism.com/kuala lumpur/alternativespot</guid>
+            <link>https://www.travelingcircusofurbanism.com/kuala%20lumpur/alternativespot</link>
+            <guid>https://www.travelingcircusofurbanism.com/kuala%20lumpur/alternativespot</guid>
             <pubDate>Fri, 16 Feb 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Few months ago I found this interesting website <a href="https://alternativeasia.net/">ALTERNATIVE ASIA</a>, which introduces the interesting independent art spaces in the south east Asian countries. Most of these spaces are owned and managed by the artists themselves, and they are using the spacesnot only as galleries, but inviting a wide range of people to have workshops, festivals and symposiums and so on.</p>
@@ -2210,8 +2210,8 @@ Facebook: <a href="https://www.facebook.com/illutron/">https://www.facebook.com/
         </item>
         <item>
             <title><![CDATA[ Interview — Christian Dimmer, Urban Studies Prof of Waseda University]]></title>
-            <link>https://www.travelingcircusofurbanism.com/tokyo/Interview ChristianDimmer</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/Interview ChristianDimmer</guid>
+            <link>https://www.travelingcircusofurbanism.com/tokyo/Interview%20ChristianDimmer</link>
+            <guid>https://www.travelingcircusofurbanism.com/tokyo/Interview%20ChristianDimmer</guid>
             <pubDate>Thu, 24 Nov 2016 06:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I had a great opportunity to interview Christian Dimmer, a space / environment designer who is teaching Urbanism at Waseda University. He has been living in Tokyo for over 15 years to understand Japanese Urbanism, and involving himself in a range of different projects.</p>

@@ -127,11 +127,15 @@ module.exports = {
           )
           feed.addItem({
             title: post.title,
-            id: post.url,
-            link: `https://www.travelingcircusofurbanism.com${post.url}`,
+            id: encodeURI(post.url),
+            link: encodeURI(
+              `https://www.travelingcircusofurbanism.com${post.url}`
+            ),
             description: content,
             date: new Date(post.date),
-            image: `https://www.travelingcircusofurbanism.com${post.image}`,
+            image: encodeURI(
+              `https://www.travelingcircusofurbanism.com${post.image}`
+            ),
           })
         })
 
