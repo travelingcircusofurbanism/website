@@ -3,7 +3,7 @@ http://sotonoba.place/2018nyc10sen
 # Urbanist's guide to New York
 
 ![new york urbanist](newyork01.jpg)
-_Photo by Yucel Moran on Unsplash_
+_Photo by Patrick Hendry on Unsplash_
 
 ### Things to do, places to go
 
