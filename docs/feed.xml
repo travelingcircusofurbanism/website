@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Wed, 16 Jan 2019 17:33:01 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 16 Jan 2019 23:22:14 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>Feed for Node.js</generator>
         <image>
@@ -22,8 +22,8 @@
             <guid>https://www.travelingcircusofurbanism.com/new%20york/Introduction</guid>
             <pubDate>Sat, 29 Dec 2018 06:00:00 GMT</pubDate>
             <description><![CDATA[
-<p><img alt="new york urbanist" src="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg"></p>
-<p><em>Photo by Yucel Moran on Unsplash</em></p>
+<p><img alt="new york urbanist" src="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg"><br>
+<em>Photo by Patrick Hendry on Unsplash</em></p>
 <h3>Things to do, places to go</h3>
 <ul>
 <li>
@@ -104,7 +104,7 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Industry City, the "SoHo" of Sunset Park and fear of gentrification]]></title>
+            <title><![CDATA[ Industry City, the "SoHo" of Sunset Park and fear of gentrification]]></title>
             <link>https://www.travelingcircusofurbanism.com/new%20york/industrycity</link>
             <guid>https://www.travelingcircusofurbanism.com/new%20york/industrycity</guid>
             <pubDate>Wed, 26 Dec 2018 06:00:00 GMT</pubDate>
@@ -141,7 +141,7 @@
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Jackson Heights, the World’s "Most Diverse Neighborhood"]]></title>
+            <title><![CDATA[ Jackson Heights, the World’s "Most Diverse Neighborhood"]]></title>
             <link>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</link>
             <guid>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</guid>
             <pubDate>Tue, 25 Dec 2018 06:00:00 GMT</pubDate>
@@ -206,7 +206,7 @@ _[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok - interview with a community architect]]></title>
+            <title><![CDATA[ Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok - interview with a community architect]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</link>
             <guid>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</guid>
             <pubDate>Sat, 10 Nov 2018 06:00:00 GMT</pubDate>
@@ -313,7 +313,7 @@ After the closure of the factory, the site has been converted into a community a
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
+            <title><![CDATA[ The Distillery District: Conserving & updating heritage buildings  ]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</guid>
             <pubDate>Sat, 20 Oct 2018 05:00:00 GMT</pubDate>
@@ -342,7 +342,7 @@ After the closure of the factory, the site has been converted into a community a
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Jane and Finch, Canada's most diverse neighborhood]]></title>
+            <title><![CDATA[ Jane and Finch, Canada's most diverse neighborhood]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</guid>
             <pubDate>Mon, 15 Oct 2018 05:00:00 GMT</pubDate>
@@ -363,7 +363,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Inside Sidewalk Labs 307： Toronto's famous Urban laboratory]]></title>
+            <title><![CDATA[ Inside Sidewalk Labs 307： Toronto's famous Urban laboratory]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</guid>
             <pubDate>Mon, 15 Oct 2018 05:00:00 GMT</pubDate>
@@ -394,7 +394,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ A hidden spot for creatives: 401 Richmond]]></title>
+            <title><![CDATA[ A hidden spot for creatives: 401 Richmond]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/401richmond</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/401richmond</guid>
             <pubDate>Fri, 12 Oct 2018 05:00:00 GMT</pubDate>
@@ -430,7 +430,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The urbanist's guide to Toronto]]></title>
+            <title><![CDATA[ The urbanist's guide to Toronto]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/toronto/Introduction</guid>
             <pubDate>Sun, 23 Sep 2018 05:00:00 GMT</pubDate>
@@ -487,7 +487,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Things we can learn from zoning]]></title>
+            <title><![CDATA[ Things we can learn from zoning]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/zoning</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/zoning</guid>
             <pubDate>Wed, 19 Sep 2018 05:00:00 GMT</pubDate>
@@ -531,7 +531,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Urbanism-Related Things to do and read @Yogyakarta]]></title>
+            <title><![CDATA[ Urbanism-Related Things to do and read @Yogyakarta]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</guid>
             <pubDate>Fri, 14 Sep 2018 05:00:00 GMT</pubDate>
@@ -600,7 +600,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Confronting the history of discrimination and exclusion: Komagata Maru Memorial]]></title>
+            <title><![CDATA[ Confronting the history of discrimination and exclusion: Komagata Maru Memorial]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</guid>
             <pubDate>Mon, 10 Sep 2018 05:00:00 GMT</pubDate>
@@ -625,7 +625,7 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Walk Strathcona, and check out Vancouver's registered heritage buildings]]></title>
+            <title><![CDATA[ Walk Strathcona, and check out Vancouver's registered heritage buildings]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/strathcona</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/strathcona</guid>
             <pubDate>Tue, 04 Sep 2018 05:00:00 GMT</pubDate>
@@ -676,7 +676,7 @@ In the 1950s, City planners earmarked Strathcona for demolition as part of a mas
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ City Conversations about Vancouver Waterfront]]></title>
+            <title><![CDATA[ City Conversations about Vancouver Waterfront]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/waterfront</link>
             <guid>https://www.travelingcircusofurbanism.com/vancouver/waterfront</guid>
             <pubDate>Thu, 23 Aug 2018 05:00:00 GMT</pubDate>
@@ -755,7 +755,7 @@ The report is a great piece of work, and, in my opinion, worth reading.</p>
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ City and migration: Interview with Sankar Raman from The Immigrant Story]]></title>
+            <title><![CDATA[ City and migration: Interview with Sankar Raman from The Immigrant Story]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/immigrantstory</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/immigrantstory</guid>
             <pubDate>Tue, 14 Aug 2018 05:00:00 GMT</pubDate>
@@ -947,7 +947,7 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The future of Waterfront Seattle]]></title>
+            <title><![CDATA[ The future of Waterfront Seattle]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</link>
             <guid>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</guid>
             <pubDate>Wed, 08 Aug 2018 05:00:00 GMT</pubDate>
@@ -1154,7 +1154,7 @@ It is open for public and you can enter the building for free - it is very inter
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
+            <title><![CDATA[ Sunday for all the bike lovers - Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</link>
             <guid>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</guid>
             <pubDate>Sun, 22 Jul 2018 05:00:00 GMT</pubDate>
@@ -1298,7 +1298,7 @@ The final spot of the tour was Dolores Park - everyone's favorite! From this sma
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Things to do and read for urbanists @San Francisco]]></title>
+            <title><![CDATA[ Things to do and read for urbanists @San Francisco]]></title>
             <link>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</guid>
             <pubDate>Tue, 03 Jul 2018 05:00:00 GMT</pubDate>
@@ -1447,46 +1447,6 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ The urbanist’s guide to video games!]]></title>
-            <link>https://www.travelingcircusofurbanism.com/elsewhere/Games</link>
-            <guid>https://www.travelingcircusofurbanism.com/elsewhere/Games</guid>
-            <pubDate>Tue, 26 Jun 2018 05:00:00 GMT</pubDate>
-            <description><![CDATA[
-<p>Few months ago a friend of mine showed me <a href="https://ncase.me/polygons/">a very interesting website</a> that blew my mind — Parable of Polygons: an playable post on the shape of society. It shows a simulation of segregation that is playfully designed to make it easier for readers to understand. This website is based off the work of Nobel Prize-winning game theorist Thomas Schelling and his 1971 paper on dynamic models of segregation.</p>
-<p>By letting you play with their simulation and explaining the theory step by step along with it, it walks you through how a small demand for diversity can desegregate a neighborhood. I realized how much it helps me to understand the rhetoric if I get to be ‘involved’ and actively being part of a process.</p>
-<p>This leads me to the beauty of playability in the field of games, especially video games. The authors of the website were inspired by Ian Bogost’s book <a href="http://bogost.com/books/persuasive_games/">Persuasive Games: The Expressive Power of Videogames</a> and I, inspired, decided to read it.</p>
-<h2><strong>Why video games are not as bad as we think</strong></h2>
-<p>This book is an analysis of how video games can influence players, even their fundamental attitudes and beliefs about the world.</p>
-<p>Of course, video games have suffered from a negative social connotation and are often not taken seriously.</p>
-<blockquote>
-<p>Despite their commercial success, video games still struggle for acceptance as a cultural form. They are perceived to serve no cultural or social function save distraction at best, moral baseness at worst. (Bogost, 2010, p15)</p>
-</blockquote>
-<p>However, according to this book, video games can be a great storytelling medium that have significant impact on players (if they're used well, of course).</p>
-<blockquote>
-<p>I’m saying that this is a mature storytelling medium that has enormous power to shape the debates within our culture. (…) this book suggests that video games open a new domain for persuasion, thanks to their core representational mode, procedurally.(…) I call this new form procedural rhetoric, the art of persuasion through rule-based representations and interactions rather than the spoken word, writing, images, or moving pictures. (Bogost, 2010, p21)</p>
-</blockquote>
-<p>With that in mind, I started digging into the games that have a close relationship with the fields of urban design and architecture. Some of them are amazing tools for urban simulation or education, and even for citizen participation.</p>
-<p>Here are three video games I have been playing and loving so far.</p>
-<h2>Video games that are great for city lovers</h2>
-<h3>1. Block’hood</h3>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*eFwmbDY3I9wIF63Z.jpg" alt="Photo from the official website: https://www.plethora-project.com/blockhood/"><em>Photo from the official website: <a href="https://www.plethora-project.com/blockhood/">https://www.plethora-project.com/blockhood/</a></em></p>
-<p>I only started to play <a href="https://www.plethora-project.com/blockhood/">Block’hood</a> recently but this city building simulator video game hasn’t let me down so far. You get to build a city vertically and experience the unique ecosystems within. If you play in story mode, it walks you through the basic principles of urban design (such as connectivity, energy sufficiency, necessary resources and so on) and I think it’s quite helpful for educational purposes.</p>
-<h3>2. Cities: Skylines</h3>
-<p><a href="https://www.paradoxplaza.com/cities-skylines/CSCS00GSK-MASTER.html">Cities: Skylines</a> is my absolute favorite. I love this TED talk shown below as much as I do the game itself. It is a quite advanced and realistic game and I’m quite sure that you'll need to use your urban planning knowledge to succeed.</p>
-<iframe src="https://embed.ted.com/talks/lang/en/karoliina_korppoo_how_a_video_game_might_help_us_build_better_cities" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
-<p>It's also quite fun to look at all the imaginary cities created by other players, and get to know how/why they built it and how it works in the game.</p>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game01.jpg"><em>Photo from Steam</em><br>
-<img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game02.jpg"><em>Photo from <a href="https://www.youtube.com/watch?v=9xj4ciP0Riw">Cities:Skylines Review</a></em></p>
-<h3>3. Block by Block (Minecraft)</h3>
-<p>Minecraft is an older, famous video game, but what I want to highlight is not Minecraft itself but the initiative called <a href="https://blockbyblock.org/">Block by Block</a>. Block by Block uses Minecraft to engage with challenged communities through a range of workshops, and raises funds for implementation of public spaces.</p>
-<p>I mean, it’s a super easy and fun game and you can create anything by hand — it’s a brilliant idea to use Minecraft to encourage citizen participation, and to raise awareness that everyone, including non-professionals, can and <em>should</em> engage in our cities and public spaces.</p>
-<p><img src="https://cdn-images-1.medium.com/max/2000/0*0tpzhR-cNmhy-bau.jpg" alt="Photo from the official website: Block by Block"><em>Photo from the official website: <a href="https://blockbyblock.org/">Block by Block</a></em></p>
-<p>Thanks for reading and please contact me if you have any recommendations!</p>
-]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game03.jpg">
-            </enclosure>
-        </item>
-        <item>
             <title><![CDATA[ Things to do and read for urbanists @Los Angeles]]></title>
             <link>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</link>
             <guid>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</guid>
@@ -1566,6 +1526,46 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 </ol>
 ]]></description>
             <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ The urbanist’s guide to video games!]]></title>
+            <link>https://www.travelingcircusofurbanism.com/elsewhere/Games</link>
+            <guid>https://www.travelingcircusofurbanism.com/elsewhere/Games</guid>
+            <pubDate>Tue, 26 Jun 2018 05:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>Few months ago a friend of mine showed me <a href="https://ncase.me/polygons/">a very interesting website</a> that blew my mind — Parable of Polygons: an playable post on the shape of society. It shows a simulation of segregation that is playfully designed to make it easier for readers to understand. This website is based off the work of Nobel Prize-winning game theorist Thomas Schelling and his 1971 paper on dynamic models of segregation.</p>
+<p>By letting you play with their simulation and explaining the theory step by step along with it, it walks you through how a small demand for diversity can desegregate a neighborhood. I realized how much it helps me to understand the rhetoric if I get to be ‘involved’ and actively being part of a process.</p>
+<p>This leads me to the beauty of playability in the field of games, especially video games. The authors of the website were inspired by Ian Bogost’s book <a href="http://bogost.com/books/persuasive_games/">Persuasive Games: The Expressive Power of Videogames</a> and I, inspired, decided to read it.</p>
+<h2><strong>Why video games are not as bad as we think</strong></h2>
+<p>This book is an analysis of how video games can influence players, even their fundamental attitudes and beliefs about the world.</p>
+<p>Of course, video games have suffered from a negative social connotation and are often not taken seriously.</p>
+<blockquote>
+<p>Despite their commercial success, video games still struggle for acceptance as a cultural form. They are perceived to serve no cultural or social function save distraction at best, moral baseness at worst. (Bogost, 2010, p15)</p>
+</blockquote>
+<p>However, according to this book, video games can be a great storytelling medium that have significant impact on players (if they're used well, of course).</p>
+<blockquote>
+<p>I’m saying that this is a mature storytelling medium that has enormous power to shape the debates within our culture. (…) this book suggests that video games open a new domain for persuasion, thanks to their core representational mode, procedurally.(…) I call this new form procedural rhetoric, the art of persuasion through rule-based representations and interactions rather than the spoken word, writing, images, or moving pictures. (Bogost, 2010, p21)</p>
+</blockquote>
+<p>With that in mind, I started digging into the games that have a close relationship with the fields of urban design and architecture. Some of them are amazing tools for urban simulation or education, and even for citizen participation.</p>
+<p>Here are three video games I have been playing and loving so far.</p>
+<h2>Video games that are great for city lovers</h2>
+<h3>1. Block’hood</h3>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*eFwmbDY3I9wIF63Z.jpg" alt="Photo from the official website: https://www.plethora-project.com/blockhood/"><em>Photo from the official website: <a href="https://www.plethora-project.com/blockhood/">https://www.plethora-project.com/blockhood/</a></em></p>
+<p>I only started to play <a href="https://www.plethora-project.com/blockhood/">Block’hood</a> recently but this city building simulator video game hasn’t let me down so far. You get to build a city vertically and experience the unique ecosystems within. If you play in story mode, it walks you through the basic principles of urban design (such as connectivity, energy sufficiency, necessary resources and so on) and I think it’s quite helpful for educational purposes.</p>
+<h3>2. Cities: Skylines</h3>
+<p><a href="https://www.paradoxplaza.com/cities-skylines/CSCS00GSK-MASTER.html">Cities: Skylines</a> is my absolute favorite. I love this TED talk shown below as much as I do the game itself. It is a quite advanced and realistic game and I’m quite sure that you'll need to use your urban planning knowledge to succeed.</p>
+<iframe src="https://embed.ted.com/talks/lang/en/karoliina_korppoo_how_a_video_game_might_help_us_build_better_cities" width="854" height="480" style="position:absolute;left:0;top:0;width:100%;height:100%" frameborder="0" scrolling="no" allowfullscreen></iframe>
+<p>It's also quite fun to look at all the imaginary cities created by other players, and get to know how/why they built it and how it works in the game.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game01.jpg"><em>Photo from Steam</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game02.jpg"><em>Photo from <a href="https://www.youtube.com/watch?v=9xj4ciP0Riw">Cities:Skylines Review</a></em></p>
+<h3>3. Block by Block (Minecraft)</h3>
+<p>Minecraft is an older, famous video game, but what I want to highlight is not Minecraft itself but the initiative called <a href="https://blockbyblock.org/">Block by Block</a>. Block by Block uses Minecraft to engage with challenged communities through a range of workshops, and raises funds for implementation of public spaces.</p>
+<p>I mean, it’s a super easy and fun game and you can create anything by hand — it’s a brilliant idea to use Minecraft to encourage citizen participation, and to raise awareness that everyone, including non-professionals, can and <em>should</em> engage in our cities and public spaces.</p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*0tpzhR-cNmhy-bau.jpg" alt="Photo from the official website: Block by Block"><em>Photo from the official website: <a href="https://blockbyblock.org/">Block by Block</a></em></p>
+<p>Thanks for reading and please contact me if you have any recommendations!</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game03.jpg">
             </enclosure>
         </item>
         <item>
@@ -1864,7 +1864,7 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
             </enclosure>
         </item>
         <item>
-            <title><![CDATA[ Event report: “Hack My City” — Connecting the Urban Scales from XS to XL]]></title>
+            <title><![CDATA[ Event report: “Hack My City” — Connecting the Urban Scales from XS to XL]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</link>
             <guid>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</guid>
             <pubDate>Tue, 13 Mar 2018 06:00:00 GMT</pubDate>
