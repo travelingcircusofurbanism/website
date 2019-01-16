@@ -123,8 +123,10 @@ module.exports = {
           )
             return
           const content = fs.readFileSync(
-            `./nuxt/static/posts/${post.url}/rssContent.html`
+            `./nuxt/static/posts/${post.url}/rssContent.html`,
+            'utf8'
           )
+          console.log(content)
           feed.addItem({
             title: post.title,
             id: encodeURI(post.url),
