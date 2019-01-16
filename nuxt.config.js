@@ -124,7 +124,7 @@ module.exports = {
             return
           const content = fs.readFileSync(
             `./nuxt/static/posts/${post.url}/rssContent.html`,
-            'utf8'
+            'utf-8'
           )
           console.log(content)
           feed.addItem({
