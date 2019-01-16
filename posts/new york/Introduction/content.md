@@ -35,7 +35,7 @@ _Photo by Patrick Hendry on Unsplash_
 
 - [Forgotten New York](http://forgotten-ny.com/) seems like an interesting website if you are seeking sources to understand the city that is NOT about famous museums and the statue of Liberty.
 
-- [Open City](https://www.amazon.com/Open-City-Novel-Teju-Cole/dp/0812980093) by Teju Cole is a great urban novel. The main character walks around the city like "flaneur" - I am quite sure that this book makes you want to walk everywhere in New York.
+- [Open City](https://www.amazon.com/Open-City-Novel-Teju-Cole/dp/0812980093) by Teju Cole is a great urban novel. The main character walks around the city like "flaneur" - I am quite sure that this book makes you want to walk everywhere in New York.
 
 ### Organization and initiative
 

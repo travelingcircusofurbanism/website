@@ -129,13 +129,14 @@ function getDataForPost(postDir, city, slug) {
     if (!description)
       description = title
         .substring(title.indexOf('\n')) // remove title
-        .replace(/!\[\]\(.*\)[\n\r]*\*.*\*/g, '') // remove images with captions
-        .replace(/!\[.*\]\(.*\)/g, '') // remove all images
+        .replace(/!\[[^\]]*\]\(.*\)[\n\r]*[*_].*[*_]/g, '') // remove images with captions
+        .replace(/!\[[^\]]*\]\(.*\)/g, '') // remove all images
         .replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
         .replace(/<.*>.*<\/.*>/g, '') // remove html tags
         .replace(/[\n\r]#+/g, '') // remove #, ##, ###, #### headers
         .replace('>', '') // remove > quotes
         .replace(/\*/g, '') // remove * bolds
+        .replace(/_/g, '') // remove _ italics
         .replace('---', '') // remove <hr> lines
         .replace(/[\n\r]/g, ' ') // remove line breaks
         .replace(/^\s*/, '') // remove excess spaces at the start
