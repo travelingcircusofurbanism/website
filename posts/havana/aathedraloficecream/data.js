@@ -1,12 +1,12 @@
 module.exports = {
-  public: false,
-  date: '6/27/2018',
+  public: true,
+  date: '1/10/2019',
   category: 'place',
-  image: 'arcosanti00.jpg',
+  image: 'icecream1.jpg',
   mapPosition: {
-    location: 'Arcosanti',
+    location: 'Parque Coppelia',
     bearing: 0,
-    center: [-112.10055469999998, 34.3425315],
+    center: [-82.384448, 23.139841],
     zoom: 12.0,
     pitch: 0,
   },

@@ -1,12 +1,12 @@
 module.exports = {
   public: false,
-  date: '6/27/2018',
+  date: '1/08/2019',
   category: 'place',
-  image: 'arcosanti00.jpg',
+  image: '',
   mapPosition: {
-    location: 'Arcosanti',
+    location: 'Callejon de Hamel',
     bearing: 0,
-    center: [-112.10055469999998, 34.3425315],
+    center: [-82.375215, 23.138853],
     zoom: 12.0,
     pitch: 0,
   },
