@@ -38,8 +38,8 @@ During the tour within Arcosanti, we are informed that this desert “utopia” 
 
 What I could see during my visit there is only 5% of the whole plan. Once it's completed (still 95% to go!), Arcosanti will be a dense, complex urban space that can host 5,000 people.
 
- ![](arcosanti30.jpg)*Photo by Cory Doctorow, [flickr](https://www.flickr.com/photos/doctorow/16488755554/in/photostream/)*
- ![](arcosanti31.jpg)*Photo by Cory Doctorow, [flickr](https://www.flickr.com/photos/doctorow/16488755554/in/photostream/)*
+![](arcosanti30.jpg)_Photo by Cory Doctorow, [flickr](https://www.flickr.com/photos/doctorow/16488755554/in/photostream/)_
+![](arcosanti31.jpg)_Photo by Cory Doctorow, [flickr](https://www.flickr.com/photos/doctorow/16488755554/in/photostream/)_
 
 ![](arcosanti18.jpg)
 ![](arcosanti19.jpg)

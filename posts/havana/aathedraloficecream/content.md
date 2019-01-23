@@ -2,15 +2,11 @@
 
 ![](havana01.jpg)
 
-![](havana02.jpg)
-
-_Architecture of decadence_
+![](havana02.jpg) _Architecture of decadence_
 
 In Havana, I felt confused with the blend of different architectural types, and beautiful yet overwhelming architecture of decadence. [Cuba: Architecture and the Social Order](https://surface.syr.edu/cgi/viewcontent.cgi?article=1271&context=architecture_tpreps) helped me to get a gist of Cuban architecture, and understand how they speak of the essence of society from the different time of the history.
 
-![](icecream1.jpg)
-
-_Parque Coppelia - the cathedral of ice-cream_
+![](icecream1.jpg) _Parque Coppelia - the cathedral of ice-cream_
 
 If you want to see truly local Cuban architecture, rather than Soviet-influenced concrete boxes, you need to visit [Parque Coppelia](http://www.bbc.com/travel/story/20180808-cubas-communist-ice-cream-cathedral), Cuba’s socialist ice-cream cathedral. In the 1960s, Fidel Castro created this a state-run ice‑cream parlor as "architecture for people" that came to embody Cuba’s revolutionary ideology.
 
@@ -28,9 +24,7 @@ The Cuban modern architecture is characterized by circular structures and curvil
 
 It is designed as the expression of the Cuban identity and cultural tradition. I like how the interior spaces are connected to the exterior spaces, which makes more sense in the tropical climate of the island and its architectural requirements.
 
-![](icecream6.jpg)
-
-_In Parque Coppelia, there are black-and-white pictures of Fidel Castro and architect Mario Girona._
+![](icecream6.jpg) _In Parque Coppelia, there are black-and-white pictures of Fidel Castro and architect Mario Girona._
 
 The Cuban architecture might be unsung, but it's interesting to see how architecture is mirrored to its society. The exhibition [Cuban Architects at Home and in Exile](https://cubanartnews.org/2016/10/25/preview-cuban-architects-at-home-and-in-exile-the-modernist-generation/) might be interesting if you want to know more about Cuban architecture.
 
