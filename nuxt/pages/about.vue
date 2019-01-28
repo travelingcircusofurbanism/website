@@ -57,6 +57,7 @@
         urbanism, community development, urban art and culture, politics and
         urban sustainability and more.
       </p>
+
       <h3 class="sectionhead">Core Team</h3>
       <div class="personlist">
         <div class="person">
@@ -90,6 +91,12 @@
           </span>
         </div>
       </div>
+      <p>
+      <center>
+        Also, thanks to Ramon Bauer and <a href="https://www.4cities.eu/" target="_blank"
+                >4CITIES</a> for the name inspiration!  
+      </center>
+      </p>
     </template>
 
     <ContentFooter />
