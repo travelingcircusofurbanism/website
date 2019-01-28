@@ -1,7 +1,6 @@
 <template>
   <section class="content">
     <Breadcrumb />
-
     <PostList :posts="posts" :title="location" />
     <ContentFooter />
   </section>
@@ -15,6 +14,9 @@ const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   head() {
+    const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
+      this.city
+    )} on the Traveling Circus of Urbanism.`
     return {
       title: this.capitalize(this.location),
       meta: [
@@ -23,6 +25,12 @@ export default {
           content: `${this.capitalize(
             this.location
           )} | Traveling Circus of Urbanism`,
+        },
+        { hid: 'description', name: 'description', content: description },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content: description,
         },
         {
           property: 'og:url',
@@ -51,7 +59,6 @@ export default {
       .replace('/at/', '')
       .toLowerCase()
     let posts = isStatic ? store.state.allPublicPosts : store.state.allPosts
-    console.log(location, posts)
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
     let marker = {}
@@ -72,8 +79,7 @@ export default {
         return found
       }
     })
-    console.log(posts)
-    if (posts.length === 1) return redirect(posts[0].url)
+    // if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       location,

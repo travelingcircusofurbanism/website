@@ -30,6 +30,9 @@
     color: rgba(white, .6);
     background: $text;
     padding: $content-padding;
+    box-shadow: 0 50vh 0 50vh $text;
+
+    
     * {
       text-align: center;
     }

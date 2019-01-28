@@ -278,7 +278,6 @@ export default {
       )
         return this.contentInRightLanguage
       let newContent = this.contentInRightLanguage.replace(/&amp;/g, '&')
-      console.log(newContent)
       const toCheck = this.polygons
         ? [...this.mapPosition, ...this.polygons]
         : this.mapPosition
@@ -288,7 +287,6 @@ export default {
           if (location.length < 4) return
           const locationRegex = new RegExp(`[\s\n >]${location}`, 'gi')
           newContent = newContent.replace(locationRegex, match => {
-            console.log(match, location)
             return match.replace(
               new RegExp(`${location}`, 'gi'),
               `<span class="highlight">${location}</span>`
