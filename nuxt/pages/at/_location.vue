@@ -51,6 +51,7 @@ export default {
       .replace('/at/', '')
       .toLowerCase()
     let posts = isStatic ? store.state.allPublicPosts : store.state.allPosts
+    console.log(location, posts)
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
     let marker = {}
@@ -71,6 +72,7 @@ export default {
         return found
       }
     })
+    console.log(posts)
     if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
