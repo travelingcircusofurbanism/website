@@ -78,7 +78,9 @@ module.exports = {
       const cities = fs
         .readdirSync('./nuxt/static/posts')
         .filter(c => c.indexOf('.') !== 0)
-      const posts = require('./nuxt/static/generated/posts.json')
+      const posts = require('./nuxt/static/generated/posts.json').filter(
+        post => post.public || post.preview
+      )
       const locations = require('./nuxt/static/generated/locations.json')
       let categories = []
       posts.map(p => {
