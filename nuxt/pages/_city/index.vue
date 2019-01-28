@@ -62,6 +62,7 @@ export default {
   asyncData({ route, redirect, error, isStatic, store }) {
     const city = decodeURI(route.path)
       .replace(/\//g, '')
+      .replace(/\/$/, '')
       .toLowerCase()
     let posts = store.state.allPosts.filter(p => p.city.toLowerCase() === city)
     if (isStatic) posts = posts.filter(p => p.public)

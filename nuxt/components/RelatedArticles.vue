@@ -1,7 +1,10 @@
 <template>
   <div class="relatedposts" v-if="postsToDisplay.length > 0">
     <h4 class="sectionhead">
-      More posts from <nuxt-link :to="/city">{{ capitalize(city) }}</nuxt-link>
+      More posts from
+      <nuxt-link :to="`/${city}`" class="citylink">{{
+        capitalize(city)
+      }}</nuxt-link>
     </h4>
     <div class="postgrid">
       <nuxt-link
@@ -73,6 +76,12 @@ export default {
 h4 {
   // display: inline-block;
   // text-align: center;
+}
+.citylink {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .postgrid {

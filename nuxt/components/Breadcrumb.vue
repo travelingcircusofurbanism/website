@@ -1,12 +1,12 @@
 <template>
   <div v-if="isMobile === false" class="breadcrumb content-top-full">
     <nuxt-link
-      v-for="path, key in pathEls"
+      v-for="(path, key) in pathEls"
       :key="key"
       :to="path.url"
       exact
       class="crumb"
-      :class="(key === pathEls.length - 1 ? 'last ' : '') + `gray${ key }`"
+      :class="(key === pathEls.length - 1 ? 'last ' : '') + `gray${key}`"
     >
       <span>{{ path.label }}</span>
     </nuxt-link>
@@ -49,7 +49,7 @@ export default {
         label: this.title
           ? this.softTruncate(this.title, 70)
           : `${pagePrefix ? pagePrefix + ': ' : ''}${this.capitalize(
-              decodeURI(postSlash)
+              decodeURI(postSlash.replace(/\/$/, ''))
             )}`,
         url: `/${path}`,
       })

@@ -57,6 +57,7 @@ export default {
   asyncData({ route, redirect, error, isStatic, store }) {
     const location = decodeURI(route.path)
       .replace('/at/', '')
+      .replace(/\/$/, '')
       .toLowerCase()
     let posts = isStatic ? store.state.allPublicPosts : store.state.allPosts
     if (!posts || posts.length === 0)
