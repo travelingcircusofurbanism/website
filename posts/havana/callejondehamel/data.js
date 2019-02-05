@@ -1,5 +1,5 @@
 module.exports = {
-  public: false,
+  public: true,
   date: '1/08/2019',
   category: 'place',
   image: '',
