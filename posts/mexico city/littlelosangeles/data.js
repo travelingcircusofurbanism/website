@@ -1,12 +1,12 @@
 module.exports = {
-  public: false,
-  date: '6/27/2018',
+  public: true,
+  date: '2/03/2019',
   category: 'place',
   image: '',
   mapPosition: {
-    location: 'Casa Estudio Luis Barragán',
+    location: 'Little Los Angeles',
     bearing: 0,
-    center: [-99.192411, 19.411202],
+    center: [-99.154559, 19.436072],
     zoom: 12.0,
     pitch: 0,
   },
