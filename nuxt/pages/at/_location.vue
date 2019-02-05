@@ -80,7 +80,7 @@ export default {
         return found
       }
     })
-    // if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       location,
@@ -93,6 +93,10 @@ export default {
     },
   },
   mounted() {
+    if (this.posts.length === 1)
+      return this.$router.replace({
+        path: this.posts[0].url,
+      })
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.marker)
     this.$store.commit('setHighlight', this.marker)
