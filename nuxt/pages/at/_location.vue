@@ -92,11 +92,13 @@ export default {
       return this.$store.state.isMobile
     },
   },
-  mounted() {
+  created() {
     if (this.posts.length === 1)
       return this.$router.replace({
         path: this.posts[0].url,
       })
+  },
+  mounted() {
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.marker)
     this.$store.commit('setHighlight', this.marker)

@@ -93,11 +93,13 @@ export default {
   beforeDestroy() {
     this.$store.commit('setHighlight')
   },
-  mounted() {
+  created() {
     if (this.showablePosts.length === 1)
       return this.$router.replace({
         path: this.posts[0].url,
       })
+  },
+  mounted() {
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.showablePosts)
     const polygons = this.showablePosts
