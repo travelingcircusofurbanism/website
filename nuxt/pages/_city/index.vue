@@ -68,7 +68,7 @@ export default {
     if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
-    if (posts.length === 1) return redirect(posts[0].url)
+    // if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       city,

@@ -80,7 +80,7 @@ export default {
         return found
       }
     })
-    if (posts.length === 1) return redirect(posts[0].url)
+    // if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       location,
