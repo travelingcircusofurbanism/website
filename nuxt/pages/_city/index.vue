@@ -1,8 +1,9 @@
 <template>
   <section class="content">
-    <Breadcrumb />
+    <template v-if="posts.length > 1">
+      <Breadcrumb />
 
-    <!--
+      <!--
       <div v-if="!isMobile" class="content-top-full mini gray">
         <Selector
           :moreHint="false"
@@ -10,8 +11,9 @@
         />
       </div>
     -->
-    <PostList :posts="showablePosts" :title="city" />
-    <ContentFooter />
+      <PostList :posts="showablePosts" :title="city" />
+      <ContentFooter />
+    </template>
   </section>
 </template>
 
