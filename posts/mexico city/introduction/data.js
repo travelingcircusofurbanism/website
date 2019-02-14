@@ -1,7 +1,7 @@
 module.exports = {
   public: true,
   date: '2/10/2019',
-  category: 'place',
+  category: 'intro',
   image: '',
   mapPosition: [
     {
@@ -36,13 +36,6 @@ module.exports = {
       location: 'Ruta de la aistad - torre de los vientos',
       bearing: 0,
       center: [-99.191747, 19.301841],
-      zoom: 12.0,
-      pitch: 0,
-    },
-    {
-      location: 'Biblioteca de México José Vasconcelos',
-      bearing: 0,
-      center: [-99.149627, 19.42866],
       zoom: 12.0,
       pitch: 0,
     },
