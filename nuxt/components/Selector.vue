@@ -1,36 +1,34 @@
 <template>
   <div class="selectorframe">
-    <h3
-      class="sectionhead mini"
-      @click="isOpen = !isOpen"
-    >
+    <h3 class="sectionhead mini" @click="isOpen = !isOpen">
       {{ capitalize(title) }}
       <span v-if="isMobile">({{ orderedItems.length }})</span>
-      <span
-        v-if="isMobile"
-        class="toggle"
-        :class="{open: isOpen}"
-      >►</span>
+      <span v-if="isMobile" class="toggle" :class="{ open: isOpen }">►</span>
     </h3>
     <div v-if="!isMobile || isOpen" class="selector">
       <div class="buttonlist">
-        <nuxt-link 
+        <nuxt-link
           class="button mini"
-          :class="{secondary: highlight.toLowerCase() !== item.toLowerCase()}"
-          :to="`/${ urlPrefix }${ item }`"
+          :class="{ secondary: highlight.toLowerCase() !== item.toLowerCase() }"
+          :to="`/${urlPrefix}${item}`"
           exact
           v-for="(item, key) in itemsToShow"
           :key="key"
         >
           {{ capitalize(item) }}
         </nuxt-link>
-        <div class="sub" v-if="orderedItems.length < responsiveCutoff && moreHint">And more to come...</div>
+        <div
+          class="sub"
+          v-if="orderedItems.length < responsiveCutoff && moreHint"
+        >
+          And more to come...
+        </div>
         <div
           class="button secondary mini showall"
           v-if="orderedItems.length > responsiveCutoff && !showAll"
           @click="showAll = true"
         >
-          Show All ({{orderedItems.length}})
+          Show All ({{ orderedItems.length }})
         </div>
       </div>
     </div>
@@ -89,11 +87,7 @@ export default {
       return this.$store.state.isDev
     },
     usablePosts() {
-      return this.isDev
-        ? this.$store.state.allPosts
-        : this.userLanguage === 'en'
-          ? this.$store.state.enPublicPosts
-          : this.$store.state.allPublicPosts
+      return this.$store.state.currentShowablePosts
     },
     orderedItems() {
       const typeFrequency = {}

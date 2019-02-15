@@ -1,14 +1,9 @@
 <template>
   <div>
     <LoaderIcon :active="!styleReady" />
-    <div id="map" :class="{ready: styleReady}">
-    </div>
-		<template v-if="styleReady">
-      <slot
-				:mapboxgl="mapboxgl"
-        :map="map"
-				:clusterer="clusterer"
-      />
+    <div id="map" :class="{ ready: styleReady }"></div>
+    <template v-if="styleReady">
+      <slot :mapboxgl="mapboxgl" :map="map" :clusterer="clusterer" />
     </template>
   </div>
 </template>

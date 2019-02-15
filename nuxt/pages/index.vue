@@ -14,6 +14,7 @@
         urlPrefix="is/"
       />
     </div>
+    <LanguagePicker />
     <PostList :posts="showablePosts" title="Recent Posts" />
     <ContentFooter />
   </section>
@@ -23,7 +24,8 @@
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Selector from '~/components/Selector'
-const { get, set } = require('~/assets/storage').default
+import LanguagePicker from '~/components/LanguagePicker'
+// const { get, set } = require('~/assets/storage').default
 
 export default {
   head() {
@@ -38,18 +40,16 @@ export default {
       ],
     }
   },
-  components: { ContentFooter, PostList, Selector },
+  components: { ContentFooter, PostList, Selector, LanguagePicker },
   asyncData({ store }) {
-    let posts = store.state.isDev
-      ? store.state.allPosts
-      : store.state.allPublicPosts
+    let posts = store.state.allPosts
     return {
       posts,
     }
   },
   data() {
     return {
-      showIntro: false,
+      // showIntro: false,
     }
   },
   computed: {
@@ -62,24 +62,29 @@ export default {
     userLanguage() {
       return this.$store.state.language
     },
-    showablePosts() {
-      return this.posts && this.userLanguage === 'en'
-        ? this.posts.filter(p => p.languages['en'] === true)
-        : this.posts
+    onlyShowLanguage() {
+      return this.$store.state.onlyShowLanguage
     },
+    showablePosts() {
+      return this.posts.filter(p =>
+        this.$store.state.currentShowablePosts.includes(p)
+      )
+    },
+  },
+  created() {
+    // if (!this.get('visited')) {
+    //   this.showIntro = true
+    //   // this.set('visited', true)
+    // }
   },
   mounted() {
     this.$store.commit('setPan', true)
     this.$store.commit('setView', this.showablePosts)
     this.$store.commit('setHighlight')
-    if (!this.get('visited')) {
-      this.showIntro = true
-      // this.set('visited', true)
-    }
   },
   methods: {
-    get,
-    set,
+    // get,
+    // set,
   },
 }
 </script>

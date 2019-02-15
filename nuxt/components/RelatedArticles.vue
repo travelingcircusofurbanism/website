@@ -35,7 +35,7 @@ export default {
       return this.$store.state.language
     },
     posts() {
-      return this.$store.state.allPublicPosts
+      return this.$store.state.currentShowablePosts
     },
     postsToDisplay() {
       const postsToDisplay = []

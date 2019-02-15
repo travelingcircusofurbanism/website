@@ -110,7 +110,7 @@ export default {
     const slug = removeTrailingSlash(decodeURI(route.path))
 
     const path = '/posts' + slug + '/'
-    const publicPath = '/' + slug + '/'
+    const publicPath = slug + '/'
 
     let city = route.path.substring(1)
     city = decodeURI(city.substring(0, city.indexOf('/'))).toLowerCase()
@@ -159,8 +159,11 @@ export default {
     userLanguage() {
       return this.$store.state.language
     },
-    publicPosts() {
-      return this.$store.state.enPublicPosts
+    onlyShowLanguage() {
+      return this.$store.state.onlyShowLanguage
+    },
+    currentShowablePosts() {
+      return this.$store.state.currentShowablePosts
     },
     allPosts() {
       return this.$store.state.allPosts
@@ -218,13 +221,13 @@ export default {
     }
 
     if (!(this.content.en || this.content.ja)) return this.$router.push('/')
-    if (this.content.en) this.setLanguage('en')
-    else this.setLanguage('ja')
+    this.setLanguage(
+      this.onlyShowLanguage === 'ja' || !this.content.en ? 'ja' : 'en'
+    )
     this.loading = false
   },
 
   mounted() {
-    this.displayLanguage = this.content.en ? 'en' : 'ja'
     this.resetView()
     this.$store.commit(
       'setHighlight',
@@ -234,6 +237,8 @@ export default {
           : [this.mapPosition, ...this.polygons]
         : this.mapPosition
     )
+
+    // this is for live previews online
     this.$nextTick(() => {
       if (!this.public && !this.isDev)
         this.$store.commit('setMapMarkers', this.allPosts)
@@ -242,7 +247,7 @@ export default {
 
   beforeDestroy() {
     if (!this.public && !this.isDev)
-      this.$store.commit('setMapMarkers', this.publicPosts)
+      this.$store.commit('setMapMarkers', this.currentShowablePosts)
     this.$store.commit('setHighlight')
     this.$store.commit('setViewPolygons')
   },
@@ -260,6 +265,7 @@ export default {
 
     setLanguage(language) {
       this.displayLanguage = language
+      if (language === 'en') this.$store.dispatch('setOnlyShowLanguage')
     },
 
     resetView() {
@@ -285,6 +291,7 @@ export default {
         .map(positionObject => positionObject.location)
         .forEach(location => {
           if (location.length < 4) return
+          location = location.replace('’', "'")
           const locationRegex = new RegExp(`[\s\n >]${location}`, 'gi')
           newContent = newContent.replace(locationRegex, match => {
             return match.replace(

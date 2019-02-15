@@ -180,8 +180,8 @@ export default {
   mounted() {
     this.spawnPolygon()
     this.spawnLabel()
-    this.updateZoneShown()
     this.updateHighlights(this.isHighlighted, this.isDoubleHighlighted)
+    this.updateZoneShown()
     this.map.on('zoom', this.updateZoneShown)
   },
 
@@ -202,9 +202,9 @@ export default {
     },
 
     destroyPolygon() {
-      this.map.removeSource(this.sourceId)
       this.map.removeLayer(this.fillId)
       this.map.removeLayer(this.outlineId)
+      this.map.removeSource(this.sourceId)
       this.map.off('click', this.fillId, this.click)
       this.map.off('click', this.outlineId, this.click)
       this.map.off('mouseenter', this.fillId, this.hover)

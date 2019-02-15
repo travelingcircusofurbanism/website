@@ -1,5 +1,5 @@
 <template>
-  <div class="master" ref="master" :class="{mobile: isMobile}">
+  <div class="master" ref="master" :class="{ mobile: isMobile }">
     <Lightbox class="lightbox" />
     <Header />
     <Canvas />
@@ -20,7 +20,7 @@ export default {
     },
   },
   mounted() {
-    this.$store.commit(
+    this.$store.dispatch(
       'setLanguage',
       window
         ? window.navigator.userLanguage || window.navigator.language

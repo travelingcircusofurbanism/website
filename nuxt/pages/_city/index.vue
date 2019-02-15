@@ -1,19 +1,9 @@
 <template>
   <section class="content">
-    <template v-if="posts.length > 1">
-      <Breadcrumb />
-
-      <!--
-      <div v-if="!isMobile" class="content-top-full mini gray">
-        <Selector
-          :moreHint="false"
-          :hide="city"
-        />
-      </div>
-    -->
-      <PostList :posts="showablePosts" :title="city" />
-      <ContentFooter />
-    </template>
+    <Breadcrumb />
+    <LanguagePicker />
+    <PostList :posts="showablePosts" :title="city" />
+    <ContentFooter />
   </section>
 </template>
 
@@ -21,7 +11,7 @@
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
-// import Selector from '~/components/Selector'
+import LanguagePicker from '~/components/LanguagePicker'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
@@ -60,20 +50,24 @@ export default {
       ],
     }
   },
-  components: { ContentFooter, PostList, Breadcrumb },
+  components: { ContentFooter, PostList, Breadcrumb, LanguagePicker },
   asyncData({ route, redirect, error, isStatic, store }) {
     const city = decodeURI(route.path)
       .replace(/\//g, '')
       .replace(/\/$/, '')
       .toLowerCase()
     let posts = store.state.allPosts.filter(p => p.city.toLowerCase() === city)
-    if (isStatic) posts = posts.filter(p => p.public)
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
     // if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       city,
+    }
+  },
+  data() {
+    return {
+      skippingToFirstPost: false,
     }
   },
   computed: {
@@ -86,22 +80,30 @@ export default {
     userLanguage() {
       return this.$store.state.language
     },
+    onlyShowLanguage() {
+      return this.$store.state.onlyShowLanguage
+    },
     showablePosts() {
-      return this.userLanguage === 'en'
-        ? this.posts.filter(p => p.languages['en'] === true)
-        : this.posts
+      return this.posts.filter(p =>
+        this.$store.state.currentShowablePosts.includes(p)
+      )
     },
   },
   beforeDestroy() {
     this.$store.commit('setHighlight')
   },
   created() {
-    if (this.showablePosts.length === 1)
+    if (this.showablePosts.length === 1) {
+      this.$store.commit('setHighlight')
+      this.$store.commit('setViewPolygons')
+      this.skippingToFirstPost = true
       return this.$router.replace({
-        path: this.posts[0].url,
+        path: this.showablePosts[0].url,
       })
+    }
   },
   mounted() {
+    if (this.skippingToFirstPost) return
     this.$store.commit('setPan', false)
     this.$store.commit('setView', this.showablePosts)
     const polygons = this.showablePosts

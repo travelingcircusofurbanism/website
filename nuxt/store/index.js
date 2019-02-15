@@ -5,9 +5,7 @@ export default () => {
   return new Vuex.Store({
     state: {
       allPosts: [],
-      enPosts: [],
-      allPublicPosts: [],
-      enPublicPosts: [],
+      currentShowablePosts: [],
       mapMarkers: [],
       mapPolygons: [],
       currentView: [],
@@ -15,6 +13,7 @@ export default () => {
       doubleHighlight: '',
       isMobile: null,
       language: 'en',
+      onlyShowLanguage: null,
       currentCity: null,
       isDev: false,
       panMap: false,
@@ -41,15 +40,10 @@ export default () => {
         state.currentView = parseMapPositionObjectsFromAnything(newView)
       },
 
-      setMapMarkers(state, newMarkers) {
-        state.highlight = []
-        state.mapMarkers = parseMapPositionObjectsFromAnything(newMarkers)
-      },
-
       setHighlight(state, mapPositions) {
         const parsedLocations = parseLocationNames(mapPositions)
         if (parsedLocations.length > 0) {
-          if (state.highlight.length === 0) {
+          if (!state.highlight || state.highlight.length === 0) {
             state.doubleHighlight = []
             state.highlight = parsedLocations
           } else state.doubleHighlight = parsedLocations
@@ -57,6 +51,7 @@ export default () => {
           if (state.doubleHighlight.length > 0) state.doubleHighlight = []
           else state.highlight = []
         }
+        // console.log(state.highlight, state.doubleHighlight)
       },
 
       setCity(state, city) {
@@ -66,19 +61,6 @@ export default () => {
       setMobile(state, width) {
         const mobileBreakpoint = 768
         state.isMobile = parseInt(width) <= mobileBreakpoint
-      },
-
-      setLanguage(state, lang) {
-        const language = lang.toLowerCase().indexOf('ja') !== -1 ? 'ja' : 'en'
-        const isDev = state.isDev
-        state.language = language
-        state.mapMarkers = parseMapPositionObjectsFromAnything(
-          state[
-            (language === 'ja' ? 'all' : 'en') +
-              (isDev ? '' : 'Public') +
-              'Posts'
-          ]
-        )
       },
 
       setDev(state, isDev) {
@@ -109,33 +91,45 @@ export default () => {
 
       setPosts(state, posts) {
         state.allPosts = posts
-        state.allPublicPosts = posts.filter(
-          p =>
-            p.public === true &&
-            MDYToDate(p.date).getTime() < new Date().getTime()
-        )
-        state.enPosts = posts.filter(p => p.languages.en === true)
-        state.enPublicPosts = posts.filter(
-          p =>
-            p.languages.en === true &&
-            p.public === true &&
-            MDYToDate(p.date).getTime() < new Date().getTime()
-        )
       },
     },
     actions: {
-      nuxtServerInit(context, { isStatic }) {
+      nuxtServerInit({ commit, state, dispatch }, { isStatic }) {
         const posts = require('~/static/generated/posts.json')
-        context.commit('setDev', !isStatic)
-        context.commit('setPosts', posts)
-        context.commit(
-          'setMapMarkers',
-          posts.filter(p => !isStatic || p.public === true)
+        commit('setDev', !isStatic)
+        commit('setPosts', posts)
+        dispatch('updateShowablePosts')
+      },
+
+      setLanguage({ dispatch, commit, state }, lang) {
+        const language = lang.toLowerCase().indexOf('ja') !== -1 ? 'ja' : 'en'
+        state.language = language
+        dispatch('updateShowablePosts')
+      },
+
+      setOnlyShowLanguage({ dispatch, state }, lang) {
+        state.onlyShowLanguage = lang
+        dispatch('updateShowablePosts')
+      },
+
+      updateShowablePosts({ commit, state }) {
+        const showablePosts = state.allPosts.filter(
+          p =>
+            // only show specific language posts if set
+            (!state.onlyShowLanguage ||
+              p.languages[state.onlyShowLanguage] === true) &&
+            // only show english posts to english readers, show all posts to others
+            (!state.language === 'en' || p.languages['en'] === true) &&
+            // only show public posts
+            (state.isDev || p.public === true) &&
+            // only show posts that are published in the past
+            MDYToDate(p.date).getTime() < new Date().getTime()
         )
-        context.commit(
-          'setPolygons',
-          posts.filter(p => !isStatic || p.public === true)
-        )
+        if (state.currentShowablePosts === showablePosts) return
+        state.currentShowablePosts = showablePosts
+        state.mapMarkers = parseMapPositionObjectsFromAnything(showablePosts)
+        commit('setPolygons', showablePosts)
+        // commit('setView', showablePosts)
       },
     },
   })

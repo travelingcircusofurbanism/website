@@ -128,6 +128,9 @@ h4 {
     min-height: 0%;
   }
 
+  &.ja {
+  }
+
   & > *:not(.content-top-full):not(.relatedposts):not(footer):not(.footer) {
     margin-left: auto;
     margin-right: auto;
@@ -572,7 +575,7 @@ h4 {
 
   .text {
     position: absolute;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(10%);
     color: $text;
     text-shadow: none;
     z-index: 2;

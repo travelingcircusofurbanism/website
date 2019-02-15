@@ -34,30 +34,27 @@ export default {
   watch: {
     uniqueMarkerLocationsAsGeoJSONObjects(newGeoJSON) {
       this.clusterer.load(newGeoJSON)
+      this.updateMap()
     },
   },
 
   mounted() {
-    this.map.on('zoom', () => {
-      if (!this.limitCalculateEvent)
-        this.limitCalculateEvent = setTimeout(() => {
-          this.calculateClusters()
-          this.limitCalculateEvent = null
-        }, 200)
-    })
-    this.map.on('move', () => {
-      if (!this.limitCalculateEvent)
-        this.limitCalculateEvent = setTimeout(() => {
-          this.calculateClusters()
-          this.limitCalculateEvent = null
-        }, 200)
-    })
+    this.map.on('zoom', this.updateMap)
+    this.map.on('move', this.updateMap)
     this.clusterer.load(this.uniqueMarkerLocationsAsGeoJSONObjects)
     this.clusterer.hasLoaded = true
     this.calculateClusters()
   },
 
   methods: {
+    updateMap() {
+      if (!this.limitCalculateEvent)
+        this.limitCalculateEvent = setTimeout(() => {
+          this.calculateClusters()
+          this.limitCalculateEvent = null
+        }, 200)
+    },
+
     getUniqueLocations(markers) {
       const uniqueLocations = {}
       for (let marker of markers) {

@@ -1,5 +1,5 @@
-
 # The future of Waterfront Seattle
+
 ![](waterfront0.jpg)
 
 I love [the Urbanist](https://www.theurbanist.org/), a Seattle-based non-profit organization who believes in cities as a unique platform for addressing many of the most difficult problems we face. They focus on writing and researching, as well as organizing educational events and Meetup to engage with citizens to discuss the future of cities.
@@ -9,9 +9,9 @@ I've been following their work and reading some of the most helpful articles by 
 ### Background
 
 ![](Illustrative-Site-Plan-Phase.jpg)
-*Completed map of the development plan from [here](https://waterfrontseattle.org/overview)*
+_Completed map of the development plan from [here](https://waterfrontseattle.org/overview)_
 
-We visited [Friends of Waterfront Seattle](https://waterfrontseattle.org/), part of the City of Seattle's Office of the Waterfront, which is working closely with civic leaders, stakeholders, and the broader Seattle public to create a "Waterfront for All." You can check out their [Documents Library](https://waterfrontseattle.org/documents), and this [presentation](https://waterfrontseattle.org/Media/Default/Library/Presentations/2018_0807_Urbanist_WFS_FINAL_public.pdf) is particularly helpful to understand the project broadly.  
+We visited [Friends of Waterfront Seattle](https://waterfrontseattle.org/), part of the City of Seattle's Office of the Waterfront, which is working closely with civic leaders, stakeholders, and the broader Seattle public to create a "Waterfront for All." You can check out their [Documents Library](https://waterfrontseattle.org/documents), and this [presentation](https://waterfrontseattle.org/Media/Default/Library/Presentations/2018_0807_Urbanist_WFS_FINAL_public.pdf) is particularly helpful to understand the project broadly.
 
 ![](waterfront1.jpg)
 ![](waterfront2.jpg)
@@ -44,4 +44,5 @@ This **Waterfront Park** (pictures below) will also be rebuilt with an urban pla
 If you want to engage in this project or just curious about the future of waterfront holds - you can check out [Community Engagement](https://waterfrontseattle.org/community-engagement) page by Friends of Waterfront Seattle to sign up for the email list, follow them on social media etc. I'm very much looking forward to coming back here after the project is done.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/4La-8egv1bk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-*This video is also very helpful to understand the Alaskan Way Viaduct "The Alaskan Way Viaduct: How Seattle chose the Bertha tunnel alternative" - by [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ)*
+
+_This video is also very helpful to understand the Alaskan Way Viaduct "The Alaskan Way Viaduct: How Seattle chose the Bertha tunnel alternative" - by [City Beautiful](https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ)</a>_
