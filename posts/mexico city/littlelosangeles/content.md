@@ -1,4 +1,4 @@
-# Little L.A. - returning migrants' hub to start a new life in Mexico City
+# Little L.A. - returnee migrants' hub to start a new life in Mexico City
 
 It has become familiar with most of the western cities to have the neighborhoods called "Little -". Little Italy, Little Tokyo, Little Greece just to name a few. These neighborhoods have historically functioned as a hub to accommodate immigrants and provided them social networks and opportunities for them to establish their lives in an unfamiliar country. In this context, "Little Los Angeles" didn't sound familiar to me at first.
 
