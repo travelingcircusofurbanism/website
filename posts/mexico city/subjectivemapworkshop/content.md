@@ -1,6 +1,18 @@
-#
+# Subjective Map Working @Puebla
 
-##
+introducion
+
+## Puebla, ---- city
+
+introduction of the city
+Living City project
+
+## Why subjective map?
+
+## raising critical awareness for geographical representation
+
+and having your own lenses to see the word
+some of the result
 
 ![](subjectivemapworkshop_puebla1.jpg)
 ![](subjectivemapworkshop_puebla2.jpg)

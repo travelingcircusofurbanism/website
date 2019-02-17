@@ -1,29 +1,26 @@
-#
+# What should a public space sound like? Audiorama, a hidden gem in Bosque de Chapultepec
 
-## Chapultepec
-
-Chapultepec is the largest forest in Latin America, which contains the only castle in Mexico. The forest has full of attraction, from a lake where you can ///, to //. However, I think the most attrcative
-
-One of its most attractive corners -and literally corner because it is a secret space- is the Audiorama , designed to rest in the company of nothing but trees and music.
-
-is a forest of countless stories. Around here, almost all of the capital's population has passed from time to time, be it to walk, navigate its lake, visit a monument, museum or historical space contained among its wooded landscapes, or simply to enjoy a comfortable weekend together with the family.
-
-![](auditorium1.jpg)
-![](auditorium2.jpg)
-![](auditorium3.jpg)
-
-## Soundscape of public space
-
-- What should a public space sound like?
-- Chapultepec / trrafic
-
-## Audiorama
-
-![](auditorium4.jpg)
-![](auditorium5.jpg)
-![](auditorium6.jpg)
-![](auditorium7.jpg)
-![](auditorium8.jpg)
 ![](auditorium9.jpg)
 
-One of its most attractive corners -and literally corner because it is a secret space- is the Audiorama, designed to rest in the company of nothing but trees and music.
+Chapultepec is one of the most important landmarks of Mexico City since the Pre-Columbian era. This large, over 686 hectares forest park is where Mexicans want to visit to enjoy a comfortable weekend together with the family. The wooden landscapes and the lake create a perfect environment to enjoy a walk or a picnic - there are also many museums and historical monuments (including [a castle](https://en.wikipedia.org/wiki/Chapultepec_Castle)!) to embrace the charm of Mexico city.
+
+![](auditorium3.jpg)
+![](auditorium4.jpg)
+
+One of its most attractive spaces in Chapultepec is, in my opinion, Audiorama. Located in a small corner of Chapultepec since 1972, it is a place for people to rest in the company of nothing but trees and music. It is an open-air concert auditorium, and there are several colorful benches surrounded by speakers that play the music all day long - the type of music differs by the day of the week, from classical, Jazz to Mexican. There are some books for you to borrow and read on the spot, too.
+
+![](auditorium2.jpg)
+![](auditorium8.jpg)
+
+Chapultepec is lovely - but it’s also true that it’s surrounded by major highways. Unless you are at the very heart of the park, it’s hard not to forget the presence of cars around it, because you can simply hear the noise of traffic all the time. Audiorama, however, offers nothing but the exquisite music and the shade & sounds of the trees. Its compact, naturally-shaped hidden position with trees and rocks makes it perfect to block out noise outside, and provide a comfortable cocoon-like space that is also perfect for a quick meditation.
+
+![](auditorium7.jpg)
+![](auditorium1.jpg)
+_Preservation of natural soundscape and acoustic ecology have been an important park management issue too. In Audiorama, you can enjoy the harmoney of music and sounds of trees._
+
+Within urban settings, artificially created sounds like street traffic and aircraft overflights can negatively affect the character of public spaces and even prevent the intended use of an outdoor facility. When it comes to designing public space, one can easily focus on visual aesthetics. Yet, a multisensorial perception of space including auditory sense is a crucial element in the human experience in our urban daily life. That’s why a concept of [soundscape](https://www.sciencedirect.com/science/article/pii/S1687404815000048) is crucial to pay attention to quality and diversity of sounds & music as one of the neglected areas of urban design.
+
+“[what should a public space sound like?](https://static.aminer.org/pdf/PDF/000/331/092/first_specifications_of_an_information_system_for_urban_soundscape.pdf)” is a fundamental question in urban soundscape planning and design. I personally believe that Audiorama drops a great hint for it.
+
+![](auditorium5.jpg)
+![](auditorium6.jpg)
