@@ -7,6 +7,8 @@
         mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
       >
         <template slot-scope="{ mapboxgl, map, clusterer }">
+          // v-slot instead of slot-scope in vue 2.6+, everything else should be
+          fine
           <MarkerManager
             :mapboxgl="mapboxgl"
             :map="map"
@@ -35,7 +37,7 @@
             :map="map"
             :mapboxgl="mapboxgl"
             v-for="(polygon, key) in mapPolygons"
-            :key="key + 1"
+            :key="'polygon' + (key + 1)"
             :polygonData="polygon"
           />
 
@@ -67,7 +69,7 @@ export default {
     Controller,
     MarkerManager,
     MapPolygon,
-    /*DebugMarker, */
+    /* DebugMarker, */
   },
   data() {
     return {
