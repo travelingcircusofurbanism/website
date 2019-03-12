@@ -121,6 +121,7 @@ module.exports = {
         posts.forEach(post => {
           if (
             !post.public ||
+            post.languages.en !== true ||
             new Date(post.date).getTime() > new Date().getTime()
           )
             return
