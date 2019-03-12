@@ -3,6 +3,7 @@
     <Lightbox class="lightbox" />
     <Header />
     <Canvas />
+    <!--<DevOverlay class="devoverlay" /> -->
     <nuxt />
   </div>
 </template>
@@ -11,9 +12,10 @@
 import Canvas from '~/components/Canvas'
 import Header from '~/components/Header'
 import Lightbox from '~/components/Lightbox'
+import DevOverlay from '~/components/DevOverlay'
 
 export default {
-  components: { Canvas, Header, Lightbox },
+  components: { Canvas, Header, Lightbox, DevOverlay },
   computed: {
     isMobile() {
       return this.$store.state.isMobile
@@ -50,7 +52,7 @@ export default {
   width: 100vw;
   height: 100vh;
 
-  & > *:not(.lightbox) {
+  & > *:not(.lightbox):not(.devoverlay) {
     flex: 1;
     max-width: 50%;
     overflow: hidden;
@@ -62,7 +64,7 @@ export default {
     display: block;
     height: auto;
 
-    & > *:not(.lightbox) {
+    & > *:not(.lightbox):not(.devoverlay) {
       max-width: 100%;
       overflow-y: visible;
       height: auto;

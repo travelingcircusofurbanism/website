@@ -118,8 +118,11 @@ export default () => {
             // only show specific language posts if set
             (!state.onlyShowLanguage ||
               p.languages[state.onlyShowLanguage] === true) &&
-            // only show english posts to english readers, show all posts to others
-            (!state.language === 'en' || p.languages['en'] === true) &&
+            // only show english posts to english readers, show all posts to others (still show all if onlyShow is set, and show devs ALL posts)
+            (!state.language === 'en' ||
+              p.languages[state.onlyShowLanguage] === true ||
+              p.languages['en'] === true ||
+              state.isDev) &&
             // only show public posts
             (state.isDev || p.public === true) &&
             // only show posts that are published in the past
