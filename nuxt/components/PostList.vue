@@ -1,26 +1,27 @@
 <template>
-  <div
-    class="post-list"
-  >
-		<h3 class="sectionhead" v-if="title">{{ title }}</h3>
-		<transition-group name="fade">
-			<PostPreview
-				v-for="(post, key) in postsToShow"
-				:key="key"
-				v-bind="post"
-				:class="{fade: post.public !== true || MDYToDate(post.date).getTime() > new Date().getTime()}"
-			/>
-		</transition-group>
-		<div 
-			class="button secondary full showall"
-			v-if="shownPostCount < totalPosts"
-			@click="shownPostCount += perPage"
-		>
-			Show more posts
+  <div class="post-list">
+    <h3 class="sectionhead" v-if="title">{{ title }}</h3>
+    <transition-group name="fade">
+      <PostPreview
+        v-for="(post, key) in postsToShow"
+        :key="key"
+        v-bind="post"
+        :class="{
+          fade:
+            post.public !== true ||
+            MDYToDate(post.date).getTime() > new Date().getTime(),
+        }"
+      />
+    </transition-group>
+    <div
+      class="button secondary full showall"
+      v-if="shownPostCount < totalPosts"
+      @click="shownPostCount += perPage"
+    >
+      Show more posts
     </div>
   </div>
 </template>
-
 
 <script>
 import PostPreview from '~/components/PostPreview'
@@ -56,20 +57,23 @@ export default {
       return this.$store.state.language
     },
     showablePosts() {
-      return this.isDev
-        ? this.posts
-        : this.userLanguage === 'en'
-          ? this.posts.filter(
-              p =>
-                p.public === true &&
-                p.languages['en'] === true &&
-                MDYToDate(p.date).getTime() < new Date().getTime()
-            )
-          : this.posts.filter(
-              p =>
-                p.public === true &&
-                MDYToDate(p.date).getTime() < new Date().getTime()
-            )
+      return this.posts.filter(p =>
+        this.$store.state.currentShowablePosts.includes(p)
+      )
+      // return this.isDev
+      //   ? this.posts
+      //   : this.userLanguage === 'en'
+      //     ? this.posts.filter(
+      //         p =>
+      //           p.public === true &&
+      //           p.languages['en'] === true &&
+      //           MDYToDate(p.date).getTime() < new Date().getTime()
+      //       )
+      //     : this.posts.filter(
+      //         p =>
+      //           p.public === true &&
+      //           MDYToDate(p.date).getTime() < new Date().getTime()
+      //       )
     },
     totalPosts() {
       return this.showablePosts.length

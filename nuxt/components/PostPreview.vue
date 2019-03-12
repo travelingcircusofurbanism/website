@@ -9,6 +9,7 @@
           src: image,
           loading: loader,
         }"
+        :key="image"
         class="previewimage"
       ></div>
     </nuxt-link>
