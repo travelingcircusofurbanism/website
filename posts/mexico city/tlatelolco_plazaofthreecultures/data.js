@@ -2,7 +2,7 @@ module.exports = {
   public: true,
   date: '3/01/2019',
   category: 'place',
-  image: '',
+  image: 'squareofthreecultures4.jpg',
   mapPosition: {
     location: 'Plaza de las Tres Culturas',
     bearing: 0,
