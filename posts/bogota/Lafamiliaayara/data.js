@@ -2,7 +2,7 @@ module.exports = {
   public: false,
   date: '3/02/2019',
   category: 'interview',
-  image:'Lafamiliaayara1.jpg'
+  image: 'Lafamiliaayara1.jpg',
   mapPosition: [
     {
       location: 'La Familia Ayara',
