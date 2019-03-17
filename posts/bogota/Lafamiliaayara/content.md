@@ -1,7 +1,7 @@
 # Voices of the barrios: Bogota, Columbia
 
 ![](Lafamiliaayara11.jpg)
-**_Jeffer Renteria, known artistically as Don Popo._**
+_Jeffer Renteria, known artistically as Don Popo._
 
 The ninth session of the World Urban Forum (WUF9) in 2018 that took place in Kuala Lumpur, Malaysia was one of the most fruitful conferences I've ever attended in my life. I've met a number of quite interesting practitioners and researchers from all over the world, which helped me to expand my perspective to see cities with a global set of mind in different contexts.
 
@@ -54,7 +54,3 @@ La Familia Ayara's work that catered for a vulnerable population, with children 
 ![](Lafamiliaayara8.jpg)
 
 La Familia Ayara's methodologies could be applied in other cities and contexts as well, which opens up the potential of international collaboration. They are constantly learning through participating children too, and letting themselves grow even more. Meanwhile, I can not wait to see the radical future transformation of Bogota with his innovative vision that combines city, culture and people together.
-
----
-
-**Profile: Don Popo**

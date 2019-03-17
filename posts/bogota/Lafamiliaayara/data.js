@@ -1,5 +1,6 @@
 module.exports = {
   public: false,
+  preview: true,
   date: '3/02/2019',
   category: 'interview',
   image: 'Lafamiliaayara1.jpg',
