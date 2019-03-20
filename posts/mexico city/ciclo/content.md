@@ -1,6 +1,6 @@
 # CICLO: Using art and culture for reappropriating our cities
 
-**_I am interested in urbanism in the way that it reflects our society. How we live in our cities is how we live in our society,” said Laura Reséndiz, an art director of CICLO._**
+**_"I am interested in urbanism in the way that it reflects our society. How we live in our cities is how we live in our society,”_** said Laura Reséndiz, an art director of CICLO.
 
 CICLO is a Mexico-based organization that conducts artistic interventions to provoke memories and local identities in urban public spaces. By collaborating with artists, CICLO has made several public arts in the streets, as well as organized workshops, tours, and art exhibitions all over the world. Laura Reséndiz, CICLO´s director has shared her concept and approach of CICLO with us during our stay in México.
 
