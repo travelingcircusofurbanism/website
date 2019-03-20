@@ -52,5 +52,6 @@ La Familia Ayara's work that catered for a vulnerable population, with children 
 ”_It's time to give a radical change to Bogotá. It is time to put a greater level of creativity at the service of the city. It is time to free Bogota and its inhabitants from the limits that have been putting us to block our ability to innovate and grow the city further._" - Por una ciudad sin límites (For the city without limit) by Don Popo
 
 ![](Lafamiliaayara8.jpg)
+_La Familia Ayara's crew_
 
 La Familia Ayara's methodologies could be applied in other cities and contexts as well, which opens up the potential of international collaboration. They are constantly learning through participating children too, and letting themselves grow even more. Meanwhile, I can not wait to see the radical future transformation of Bogota with his innovative vision that combines city, culture and people together.

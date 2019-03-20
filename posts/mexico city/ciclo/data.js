@@ -1,12 +1,12 @@
 module.exports = {
-  public: false,
-  date: '6/27/2018',
-  category: 'place',
-  image: '',
+  public: true,
+  date: '3/19/2019',
+  category: 'interview',
+  image: 'ciclo10.jpg',
   mapPosition: {
-    location: 'Casa Estudio Luis Barragán',
+    location: 'Casa Barrio Tepito',
     bearing: 0,
-    center: [-99.192411, 19.411202],
+    center: [-99.123235, 19.442602],
     zoom: 12.0,
     pitch: 0,
   },

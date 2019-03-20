@@ -1,70 +1,71 @@
 module.exports = {
-	public: false,
-	date: '6/26/2018',
-	category: 'intro',
-	mapPosition:  [
-		{
-			location: 'Chidori Bunka',
-			bearing: 0,
-			center: [135.475075, 34.621664,],
-			zoom: 12.00,
-			pitch: 0 
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2464493, 33.9900691],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23744390000002, 34.0454001],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23487999999998, 34.046146],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23640720000003, 34.0445952],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.23289219999998, 34.0450119],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29440799999998, 34.0999515],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.29278959999999, 34.1161926],
-			zoom: 12.00,
-			pitch: 0
-		},
-		{
-			location: '',
-			bearing: 0,
-			center: [-118.2480433, 34.0434704],
-			zoom: 12.00,
-			pitch: 0
-		},
-	]
+  public: false,
+  date: '2/28/2019',
+  category: 'intro',
+  image: 'bogota01.jpg',
+  mapPosition: [
+    {
+      location: 'Parque Bicentenario',
+      bearing: 0,
+      center: [-74.069374, 4.610913],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Biblioteca Virgilio',
+      bearing: 0,
+      center: [-74.088468, 4.657131],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Parque de la Candelaria',
+      bearing: 0,
+      center: [-74.068346, 4.597527],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'BD Bacatá',
+      bearing: 0,
+      center: [-118.23487999999998, 34.046146],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.23640720000003, 34.0445952],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.23289219999998, 34.0450119],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.29440799999998, 34.0999515],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.29278959999999, 34.1161926],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: '',
+      bearing: 0,
+      center: [-118.2480433, 34.0434704],
+      zoom: 12.0,
+      pitch: 0,
+    },
+  ],
 }
