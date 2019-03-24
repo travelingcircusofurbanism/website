@@ -306,6 +306,15 @@ h4 {
     text-align: center;
     position: relative;
     top: $unit * -2;
+    font-size: 0.85em;
+    opacity: 0.65;
+    line-height: 1.35;
+    padding: 0 5%;
+
+    @include width(mobile) {
+      top: $unit * -0.5;
+      padding: 0 0 $unit * 2 0;
+    }
   }
   img + br {
     display: none;
