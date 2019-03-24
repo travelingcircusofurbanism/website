@@ -38,3 +38,5 @@ _Photo by Yucel Moran on Unsplash_
 ### Organization, initiative
 
 - Rad (Research for Architectural Domain)
+
+- [Kyoto Design Lab](https://www.d-lab.kit.ac.jp/)
