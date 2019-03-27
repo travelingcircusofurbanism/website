@@ -15,7 +15,7 @@ Jeffer Renteria, known artistically as Don Popo, founded the organization [La Fa
 
 In burritos, some of the poor neighborhoods in suburban Columbia, there are issues of conflicts, poverty, and violence - sexual abuse is also one of them, and kids and woman without voices are in need to have a safe place to express themselves.
 
-"_Instead of teaching the mere skills, our aim is to change how they think about themselves and gradually shift their life in a better direction with confidence, with the help of hip-hop culture._" directors of La Familia Ayara and teachers of these cultural classes, who gathered to the interview told me.
+"_Instead of teaching mere skills, our aim is to change how they think about themselves and gradually shift their life to a better direction with confidence, with the help of hip-hop culture,_" I was told by directors and cultural class teachers of La Familia Ayara.
 
 So far, La Familia Ayara has managed to provide activities for about 17,000 young children in some of the most vulnerable areas in Columbia, including prisons, where they are in critical situations of abuse and neglect.
 
@@ -27,7 +27,7 @@ Rap debate is one of their key activities, where they mix the act of debating wi
 
 Don Popo was one of the young leaders of the Safest Cities Program of UN-Habitat, and his work seems to always have a connection with urban conditions and how people live in a city.
 
-"_Rap let them interpret their relationship with the community, with the city, the institutions and all the problems that affect them. They talk about what happens at home, in the neighborhood, in the street._" says Don Popo.
+"_Rap lets them interpret their relationship with the community, with the city, with the institutions and all the problems that affect them. They talk about what happens at home, in the neighborhood, in the street._" says Don Popo.
 
 Through their work in local neighborhoods and prisons, they hold out their hands to some of the most forgotten members of Colombian society, welcoming them into their "family".
 
@@ -41,7 +41,7 @@ Although Don Popo already left the responsibility of the organization to the suc
 
 This year at March 4, Don Popo officially pre-registered his candidacy for the Bogota City Hall in the Cambio Radical Party. During the pre-registration, he addressed his core plan to make Bogota a "City Without Limits".
 
-"_politics is closely connected to a social, cultural aspect of our society and vice versa. For me, thus, it is a natural choice to be politically active._" said Don Popo during the interview.
+"_Politics is closely connected to a social, cultural aspect of our society and vice versa. For me, thus, it is a natural choice to be politically active._" said Don Popo during the interview.
 
 ![](Lafamiliaayara3.jpg)
 ![](Lafamiliaayara7.jpg)
@@ -49,7 +49,7 @@ This year at March 4, Don Popo officially pre-registered his candidacy for the B
 He is an active artist, too. With more than 30 years of artistic life, he became one of the founding leaders of the urban movement in the city - through
 La Familia Ayara's work that catered for a vulnerable population, with children and women in protection for physical, sexual and psychological abuse, including young people in jails and drug rehabilitation sites.
 
-”_It's time to give a radical change to Bogotá. It is time to put a greater level of creativity at the service of the city. It is time to free Bogota and its inhabitants from the limits that have been putting us to block our ability to innovate and grow the city further._" - Por una ciudad sin límites (For the city without limit) by Don Popo
+”_It's time to give a radical change to Bogotá. It is time to put a greater level of creativity at the service of the city. It is time to free Bogota and its inhabitants from the limits that have been blocking our ability to innovate and grow the city further._" - Por una ciudad sin límites (For the city without limit) by Don Popo
 
 ![](Lafamiliaayara8.jpg)
 _La Familia Ayara's crew_
