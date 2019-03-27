@@ -1,6 +1,6 @@
 module.exports = {
   public: false,
-  date: '2/28/2019',
+  date: '3/20/2019',
   category: 'intro',
   image: 'bogota01.jpg',
   mapPosition: [
@@ -28,7 +28,7 @@ module.exports = {
     {
       location: 'BD Bacatá',
       bearing: 0,
-      center: [-118.23487999999998, 34.046146],
+      center: [-74.070362, 4.604445],
       zoom: 12.0,
       pitch: 0,
     },

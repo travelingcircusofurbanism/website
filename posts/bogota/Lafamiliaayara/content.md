@@ -1,23 +1,23 @@
-# Voices of the barrios: Bogota, Columbia
+# Voices of the barrios: Bogota, Colombia
 
 ![](Lafamiliaayara11.jpg)
 _Jeffer Renteria, known artistically as Don Popo._
 
 The ninth session of the World Urban Forum (WUF9) in 2018 that took place in Kuala Lumpur, Malaysia was one of the most fruitful conferences I've ever attended in my life. I've met a number of quite interesting practitioners and researchers from all over the world, which helped me to expand my perspective to see cities with a global set of mind in different contexts.
 
-During my stay in Bogota, one of the Columbian urbanists I met during WUF9 introduced me to the local artist called Don Popo. Don Popo, a founder of an innovative organization La Familia Ayara, invited me with his whole team to share how they use hip-hop culture to empower people living in violence and oppression in Columbia.
+During my stay in Bogota, one of the Colombian urbanists I met during WUF9 introduced me to the local artist called Don Popo. Don Popo, a founder of an innovative organization La Familia Ayara, invited me with his whole team to share how they use hip-hop culture to empower people living in violence and oppression in Colombia.
 
 ## Use hip hop culture to give everyone a voice
 
-Jeffer Renteria, known artistically as Don Popo, founded the organization [La Familia Ayara](https://ayara.com.co/) more than 29 years ago, in order to use the culture of hip hop to encourage inclusive participation and create social change in Columbia. They work closely with kids and women especially from poor, socially excluded "barrios" - neighborhoods in Bogota, as well as other cities in the country. They provide free classes, workshops and cultural events of breakdance, rap, photography and beyond to give them a voice.
+Jeffer Renteria, known artistically as Don Popo, founded the organization [La Familia Ayara](https://ayara.com.co/) more than 23 years ago, in order to use the culture of hip hop to encourage inclusive participation and create social change in Colombia. They work closely with kids and women especially from poor, socially excluded "barrios" - neighborhoods in Bogota, as well as other cities in the country. They provide free classes, workshops and cultural events of breakdance, rap, photography and beyond to give them a voice.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Fp33RbmHjCk?list=PLONG5h-BghjHdTs-MMY7kwxyEkg7xUgLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-In burritos, some of the poor neighborhoods in suburban Columbia, there are issues of conflicts, poverty, and violence - sexual abuse is also one of them, and kids and woman without voices are in need to have a safe place to express themselves.
+In burritos, some of the poor neighborhoods in suburban Colombia, there are issues of conflicts, poverty, and violence - sexual abuse is also one of them, and kids and woman without voices are in need to have a safe place to express themselves.
 
 "_Instead of teaching mere skills, our aim is to change how they think about themselves and gradually shift their life to a better direction with confidence, with the help of hip-hop culture,_" I was told by directors and cultural class teachers of La Familia Ayara.
 
-So far, La Familia Ayara has managed to provide activities for about 17,000 young children in some of the most vulnerable areas in Columbia, including prisons, where they are in critical situations of abuse and neglect.
+So far, La Familia Ayara has managed to provide activities for about 17,000 young children in some of the most vulnerable areas in Colombia, including prisons, where they are in critical situations of abuse and neglect.
 
 ![](Lafamiliaayara1.jpg)
 ![](Lafamiliaayara2.jpg)
@@ -28,6 +28,8 @@ Rap debate is one of their key activities, where they mix the act of debating wi
 Don Popo was one of the young leaders of the Safest Cities Program of UN-Habitat, and his work seems to always have a connection with urban conditions and how people live in a city.
 
 "_Rap lets them interpret their relationship with the community, with the city, with the institutions and all the problems that affect them. They talk about what happens at home, in the neighborhood, in the street._" says Don Popo.
+
+"_The Ayara family works for the prevention of all types of violence. We use a language of Hip Hop to encourage children and adolescents, in order to strengthen their personal skills to face the challenges of this century in a country in the process of reconciliation. It is through Hip Hop, that children learn about recognizing their rights, and from there they can take actions._" One of Don Popo's colleagues summerises.
 
 Through their work in local neighborhoods and prisons, they hold out their hands to some of the most forgotten members of Colombian society, welcoming them into their "family".
 
