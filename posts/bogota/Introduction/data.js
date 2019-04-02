@@ -1,5 +1,5 @@
 module.exports = {
-  public: false,
+  public: true,
   date: '3/20/2019',
   category: 'intro',
   image: 'bogota01.jpg',
@@ -33,9 +33,9 @@ module.exports = {
       pitch: 0,
     },
     {
-      location: '',
+      location: 'Jorge Eliécer Gaitán Monument',
       bearing: 0,
-      center: [-118.23640720000003, 34.0445952],
+      center: [-74.073429, 4.601356],
       zoom: 12.0,
       pitch: 0,
     },

@@ -1,36 +1,25 @@
 # Sento / Kujoyu
 
-![](kujoyu1.jpg)
+![](kujoyu8.jpg)
+
+There is absolutely no better way to relax than soaking in a hot good _sento_ - Japanese traditional public bath. While hundreds of sento have closed thier business in the past decades, there is still a good chance to stumble across a local _sento_ in Kyoto's neighrbouhoods. They are small, local, and architecturally beatifull. It simply breaks my heart that _sento_ is a dissapring spieces.
+
+However, Some of the _sento_ maintain to be a social hub even after they closure of thier business. In the past, a _sento_ was simply a place to bathe - These days, however, there are some interesting renovation projects that preserves its architectural, cultural value and breathe new life into it.
+
+![](kujoyu4.jpg)
+
+# Kujoyu - From nostalgia to
+
+[Kujoyu](https://kujoyu.com/rentalspace/) was a _sento_ that opened earyly 昭和時代 and closed down 10 years ago. The owner of the buildings saw a value in a traditional woodenbudiling and decided to renovate it as an open event space.
+
+Some parts are still in the same shape as it was back then - Bathtabs, a weighing machine, sinks and fans. There is just no water in the bathtabs, but you can sill enjoy its nostalgic feeling.
+
 ![](kujoyu2.jpg)
 ![](kujoyu3.jpg)
-![](kujoyu4.jpg)
-![](kujoyu5.jpg)
 ![](kujoyu6.jpg)
-![](kujoyu7.jpg)
-![](kujoyu8.jpg)
-![](kujoyu9.jpg)
-
-https://www.japantimes.co.jp/life/2016/11/05/lifestyle/washed-tokyos-iconic-communal-bath-houses-face-uncertain-future/
 
 # Public bath culture in Japan
 
-# Kujoyu
+It is located in a residential neighrborhood and is rather hard to find, but it is definitely worth visiting to experiece how new spirits and culture can live in a old structure.
 
-[Kujoyu](https://kujoyu.com/rentalspace/)
-
-昭和の銭湯、レンタルスペースに改装　京都・九条湯印刷用画面を開く
-１０年前に廃業した銭湯を改装したレンタルスペース。９月のプレオープンイベントではボードゲーム大会が開かれた（京都市南区東九条中御霊町、写真上）、唐破風屋根が目を引く外観
-１０年前に廃業した銭湯を改装したレンタルスペース。９月のプレオープンイベントではボードゲーム大会が開かれた（京都市南区東九条中御霊町、写真上）、唐破風屋根が目を引く外観
-　京都市南区東九条中御霊町にあった銭湯「九条湯」が、廃業から１０年を経て今秋、レンタルスペースに生まれ変わった。特徴的な外観や内装、浴場など昔懐かしい銭湯の雰囲気をほぼ残して改装した。関係者は「かつて地域の社交場だった場所。地元住民や観光客など誰でも気軽に訪れてもらえる施設にしたい」と話している。
-
-九条湯は昭和初期に開業。唐破風屋根や格（ごう）天井が目を引く木造建築で、地域住民に長く親しまれたが、２００８年に廃業した。
-
-１５年に現在の大家が建物を父親から相続。しかし、銭湯として再オープンするには体力、費用の両面で厳しく途方に暮れていたところ、知人を通じて、空き家の再活用を手掛ける「猪（いの）べーしょんハウス」（伏見区）に話が伝わった。
-
-京都駅に近いものの路地裏にある立地が課題だったが、同社代表の猪飼直之さん（４６）は「人々が目的を持って訪れる場所にしたら面白そう」と可能性を感じ、イベントスペースとしてよみがえらせることにした。
-
-１７年末から本格的に改修工事を開始。男湯は意匠をほぼそのまま残した一方、女湯にはバーカウンターや厨房（ちゅうぼう）、カフェテーブルなどを設け飲食のイベントに使いやすいようにするなど、目的に合わせて用途分けした。貫表記の体重計やお釜形のヘアドライヤーなど哀愁感を漂わせる物品も残っており、和の雰囲気を堪能できる空間になっている。
-
-猪飼さんは「貴重な建物なのでさまざまな人に見てもらいたい。誰もが参加できる開かれたイベントを行う人に借りてもらえたら」と呼び掛ける。男湯と女湯、２階の和室４部屋も借りられる。問い合わせは同社メールアドレスｉｎｏ．ｈｏｕｓｅ２０１６＠ｇｍａｉｌ．ｃｏｍへ。
-
-# From nostalgia to ///
+![](kujoyu7.jpg)

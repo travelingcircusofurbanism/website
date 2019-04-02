@@ -1,7 +1,8 @@
 module.exports = {
   public: false,
-  date: '3/27/2019',
+  date: '3/26/2019',
   category: 'place',
+  image: 'kujoyu9.jpg',
   mapPosition: [
     {
       location: 'Kujoyu',
