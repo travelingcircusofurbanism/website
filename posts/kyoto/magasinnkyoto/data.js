@@ -1,8 +1,9 @@
 module.exports = {
+  preview: true,
   public: false,
-  date: '3/26/2019',
+  date: '4/20/2019',
   category: 'interview',
-  image: '',
+  image: 'magasinn5.jpg',
   mapPosition: [
     {
       location: 'Magasinn Kyoto',
