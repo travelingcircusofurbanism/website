@@ -17,9 +17,7 @@
       class="button secondary full showall"
       v-if="shownPostCount < totalPosts"
       @click="shownPostCount += perPage"
-    >
-      Show more posts
-    </div>
+    >Show more posts</div>
   </div>
 </template>
 
@@ -60,20 +58,6 @@ export default {
       return this.posts.filter(p =>
         this.$store.state.currentShowablePosts.includes(p)
       )
-      // return this.isDev
-      //   ? this.posts
-      //   : this.userLanguage === 'en'
-      //     ? this.posts.filter(
-      //         p =>
-      //           p.public === true &&
-      //           p.languages['en'] === true &&
-      //           MDYToDate(p.date).getTime() < new Date().getTime()
-      //       )
-      //     : this.posts.filter(
-      //         p =>
-      //           p.public === true &&
-      //           MDYToDate(p.date).getTime() < new Date().getTime()
-      //       )
     },
     totalPosts() {
       return this.showablePosts.length
@@ -82,8 +66,29 @@ export default {
       return this.showablePosts.slice(0, this.shownPostCount)
     },
   },
+  mounted() {
+    this.$el.parentNode.addEventListener('scroll', this.scroll)
+  },
+  beforeDestroy() {
+    this.$el.parentNode.removeEventListener('scroll', this.scroll)
+  },
   methods: {
     MDYToDate,
+    showMore() {
+      if (this.shownPostCount < this.showablePosts.length) {
+        this.shownPostCount += this.perPage
+        if (this.shownPostCount > this.showablePosts.length)
+          this.shownPostCount = this.showablePosts.length
+      }
+    },
+    scroll() {
+      const contentBox = this.$el.parentNode
+      const scrollDistanceLeft =
+        this.$el.offsetHeight -
+        (document.documentElement.clientHeight || window.innerHeight) -
+        contentBox.scrollTop
+      if (scrollDistanceLeft < 500) this.showMore()
+    },
   },
 }
 </script>
