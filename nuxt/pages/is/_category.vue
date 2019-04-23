@@ -1,9 +1,11 @@
 <template>
   <section class="content">
-    <Breadcrumb />
-    <LanguagePicker />
-    <PostList :posts="showablePosts" :title="category" />
-    <ContentFooter />
+    <Breadcrumb/>
+    <LanguagePicker
+      v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
+    />
+    <PostList :posts="showablePosts" :title="category"/>
+    <ContentFooter/>
   </section>
 </template>
 

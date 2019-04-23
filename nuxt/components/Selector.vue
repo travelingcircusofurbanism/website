@@ -14,22 +14,16 @@
           exact
           v-for="(item, key) in itemsToShow"
           :key="key"
-        >
-          {{ capitalize(item) }}
-        </nuxt-link>
+        >{{ capitalize(item) }}</nuxt-link>
         <div
           class="sub"
           v-if="orderedItems.length < responsiveCutoff && moreHint"
-        >
-          And more to come...
-        </div>
+        >And more to come...</div>
         <div
           class="button secondary mini showall"
           v-if="orderedItems.length > responsiveCutoff && !showAll"
           @click="showAll = true"
-        >
-          Show All ({{ orderedItems.length }})
-        </div>
+        >Show All ({{ orderedItems.length }})</div>
       </div>
     </div>
   </div>
@@ -125,6 +119,7 @@ export default {
   display: grid;
   grid-template-columns: 105px 1fr;
   grid-gap: $unit * 3;
+  vertical-align: middle;
 
   .sectionhead {
     margin: 0;
@@ -168,6 +163,7 @@ export default {
   flex-wrap: wrap;
   justify-content: stretch;
   text-align: center;
+  vertical-align: middle;
 
   .sub {
     border: 2px solid transparent;
