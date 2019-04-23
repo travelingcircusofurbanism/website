@@ -29,13 +29,13 @@ export default () => {
             newView.center || newView[0].center
               ? null
               : Array.isArray(newView)
-              ? newView.reduce((acc, curr) => {
+                ? newView.reduce((acc, curr) => {
                   if (acc === null) return null
                   if (acc !== 'none' && acc !== curr.city) return null
                   else return curr.city
                 }, 'none')
-              : newView.city
-        } catch (e) {}
+                : newView.city
+        } catch (e) { }
 
         state.currentView = parseMapPositionObjectsFromAnything(newView)
       },
@@ -109,6 +109,7 @@ export default () => {
 
       setOnlyShowLanguage({ dispatch, state }, lang) {
         state.onlyShowLanguage = lang
+        state.language = lang
         dispatch('updateShowablePosts')
       },
 
@@ -154,7 +155,7 @@ function parseLocationNames(source) {
       positionOrLocation =>
         positionOrLocation.location ||
         (positionOrLocation instanceof String ||
-        typeof positionOrLocation === 'string'
+          typeof positionOrLocation === 'string'
           ? positionOrLocation
           : null)
     )
@@ -177,32 +178,32 @@ function parseMapPositionObjectsFromAnything(source) {
   let parsedMapPositions =
     source.center || source[0].center
       ? // we can directly use a mapPosition object or an array of mapPosition objects
-        source
+      source
       : // or, pull mapPosition object or an array of mapPosition objects from posts
       Array.isArray(source)
-      ? // if we have multiple posts, for each...
+        ? // if we have multiple posts, for each...
         source
           .map(post => {
             const arrayOfPositions = Array.isArray(post.mapPosition)
               ? post.mapPosition.map(p => {
-                  const city = post.city
-                  return {
-                    ...p,
-                    city,
-                  }
-                })
+                const city = post.city
+                return {
+                  ...p,
+                  city,
+                }
+              })
               : // if it's not an array of mapPositions, make it one
-                [
-                  {
-                    ...post.mapPosition,
-                    city: post.city,
-                  },
-                ]
+              [
+                {
+                  ...post.mapPosition,
+                  city: post.city,
+                },
+              ]
             return arrayOfPositions
           })
           // then smash 'em all together
           .reduce((acc, curr) => acc.concat(curr), [])
-      : // otherwise, we just use it straight up.
+        : // otherwise, we just use it straight up.
         {
           ...source.mapPosition,
           city: source.city,

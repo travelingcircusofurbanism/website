@@ -1,9 +1,6 @@
 <template>
-  <div
-    class="post-preview"
-    v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }"
-  >
-    <nuxt-link :to="url">
+  <div class="post-preview" v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }">
+    <nuxt-link :to="languageUrl">
       <div
         v-lazy:background-image="{
           src: image,
@@ -15,30 +12,24 @@
     </nuxt-link>
 
     <div>
-      <nuxt-link :to="url" class="titlelink">
-        <h4>{{ title }}</h4>
+      <nuxt-link :to="languageUrl" class="titlelink">
+        <h4>{{ languageTitle }}</h4>
       </nuxt-link>
 
-      <div
-        class="japanese-available"
-        v-if="(userLanguage === 'ja' || isDev) && languages.ja"
-      >
-        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
-        <span class="sub">{{
+      <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
+        <img src="~/assets/icons/japanFlag.svg" class="flag-icon">
+        <span class="sub">
+          {{
           languages.en ? '日本語版あり' : '日本語での記事'
-        }}</span>
+          }}
+        </span>
       </div>
 
-      <PostDetails
-        :category="category"
-        :mapPosition="mapPosition"
-        :city="city"
-        :date="date"
-      />
+      <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date"/>
 
       <div class="description">
         {{ description }}
-        <nuxt-link :to="url">Keep Reading →</nuxt-link>
+        <nuxt-link :to="languageUrl">Keep Reading →</nuxt-link>
       </div>
     </div>
   </div>
@@ -53,6 +44,7 @@ export default {
     'url',
     'image',
     'title',
+    'jaTitle',
     'category',
     'city',
     'date',
@@ -71,6 +63,20 @@ export default {
     },
     userLanguage() {
       return this.$store.state.language
+    },
+    languageUrl() {
+      return this.userLanguage === 'ja'
+        ? this.url.replace(
+            /(\/?[^/]+\/)(.*)/g,
+            (wholestring, firsthalf, secondhalf) =>
+              firsthalf + 'ja/' + secondhalf
+          )
+        : this.url
+    },
+    languageTitle() {
+      return this.userLanguage === 'ja' && this.jaTitle
+        ? this.jaTitle
+        : this.title
     },
     loader() {
       return this.image.includes('/med/')
