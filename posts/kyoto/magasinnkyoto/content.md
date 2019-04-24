@@ -16,11 +16,11 @@ I asked Tatsuya Iwasaki from [MAGASINN KYOTO](https://www.magasinn.xyz/), a uniq
 ![](magasinn3.jpg)
 _There is a select shop space just next to a guest room._
 ![](magasinn1.jpg)
-_Even in the hallway towards the bathroom, guests can enjoy well-curated exibitions and artistic items._
+_Even in the hallway towards the bathroom, guests can enjoy well-curated exhibitions and artistic items._
 
-Iwasaki used to work as a web director and owned a select shop, and was looking for an inspiration of a space for people to gather. He came up with the idea of creating a travel accommodation, but his imagination didn't stop there.
+Iwasaki used to work as a creative director and owned a select shop, and was looking for an inspiration of space for people to gather. He came up with the idea of creating a travel accommodation, but his imagination didn't stop there.
 
-"I thought it would be fun to highlight a certain theme or topic every month and exibit it in this space - that leads to our concept of "lodging magazine". says Iwasaki. In 2016, he turned this idea to reality by renovating a 100 years old Japanese house and converting it into a guesthouse that is also an exhibition & event space and a shop.
+"I thought it would be fun to highlight a certain theme or topic every month and exhibit it in this space - that leads to our concept of "lodging magazine". says Iwasaki. In 2016, he turned this idea to reality by renovating a 100 years old Japanese house and converting it into a guesthouse that is also an exhibition & event space and a shop.
 
 The entrance resembles a magazine cover - every now and then they pick a specific theme, which corresponds to exhibitions and items in the curated select shop. Anyone can walk in to check out their exhibitions and events freely, and guests can enjoy these while actually staying there in a same space. I mean, haven't you ever dreamed of spending a night in a museum or a gallery? I have.
 
@@ -42,9 +42,9 @@ Everyone is an outsider at the beginning. The key is not to stay as an outsider 
 
 ![](magasinn4.jpg)
 ![](magasinn7.jpg)
-_Thier creative exibition space._
+_Thier creative exhibition space._
 
-"I still don't know how to describe this space in one word - it could be an art space, Airbnb, or a shop and event space and more.", says Isawamki with a smile. "I believe it is an actually good thing that it's hard to name it in one word, letting imagination wondering and potentials to grow."
+"I still don't know how to describe this space in one word - it could be an art space, Airbnb, or a shop and event space and more.", says Iwasaki with a smile. "I believe it is an actually good thing that it's hard to name it in one word, letting imagination wondering and potentials to grow."
 
 Come to think of it, I still haven't seen many critical studies or experiments on the topic of hotels, hostels and guesthouses and other touristic facilities in our city, and their impact on local cultures and communities. There are undoubtedly more and more creative initiatives in a traditional city like Kyoto though, such as an art hostel [Kumagusuku](http://kumagusuku.info/), and I'd love to see more dialogues before jumping into a conclusion of saying "no more guest house."
 
@@ -52,5 +52,6 @@ Come to think of it, I still haven't seen many critical studies or experiments o
 
 ![](magasinn6.jpg)
 
-Tatsuya Iwasaki
-profile ...
+_Profile / Tatsuya Iwasaki_
+
+_Tatsuya Iwasaki was born in Japan in 1985 and currently live in Kyoto. He is working as a lecturer at the department of Service MBA at Kyoto University, as well as at the Kyoto Seika University. He had worked in Recruit Communications and Rakuten as a director in Tokyo until he moved to Kyoto in 2014 and started working in Loftwork.inc. He became independent and started Magasinn Kyoto in 2016, and founded EDIIT Inc. in the following year._
