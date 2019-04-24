@@ -230,13 +230,13 @@ export default {
 
     // this is for live previews online
     this.$nextTick(() => {
-      if (!this.public && !this.isDev)
+      if (!this.public && !this.isDev && this.preview)
         this.$store.commit('setMapMarkers', this.allPosts)
     })
   },
 
   beforeDestroy() {
-    if (!this.public && !this.isDev)
+    if (!this.public && !this.isDev && this.preview)
       this.$store.commit('setMapMarkers', this.currentShowablePosts)
     this.$store.commit('setHighlight')
     this.$store.commit('setViewPolygons')

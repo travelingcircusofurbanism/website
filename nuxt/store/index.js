@@ -75,6 +75,10 @@ export default () => {
         state.panMap = shouldPan
       },
 
+      setMapMarkers(state, postData) {
+        state.mapMarkers = parseMapPositionObjectsFromAnything(postData)
+      },
+
       setPolygons(state, postObjects) {
         const polygons = postObjects.reduce(
           (allPolygons, post) =>
@@ -131,7 +135,7 @@ export default () => {
         )
         if (state.currentShowablePosts === showablePosts) return
         state.currentShowablePosts = showablePosts
-        state.mapMarkers = parseMapPositionObjectsFromAnything(showablePosts)
+        commit('setMapMarkers', showablePosts)
         commit('setPolygons', showablePosts)
         // commit('setView', showablePosts)
       },
