@@ -28,6 +28,7 @@ export default {
     SearchSelector,
     LanguagePicker,
   },
+  scrollToTop: true,
   head() {
     return {
       title: this.capitalize(this.category),

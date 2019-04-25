@@ -27,6 +27,7 @@ import PostFullDisplay from '~/components/PostFullDisplay'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
+  scrollToTop: true,
   head() {
     return {
       title: this.capitalize(this.title),

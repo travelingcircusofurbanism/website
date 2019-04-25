@@ -184,11 +184,12 @@ export default {
       if (this.mapZone) {
         // console.log('fitting to', ...this.mapZone)
         const padding = {
-          top: this.isMobile ? 70 : 300,
-          left: this.isMobile ? 70 : 150,
-          right: this.isMobile ? 70 : 150,
-          bottom: this.isMobile ? 50 : 150,
+          top: this.isMobile ? 20 : 300,
+          left: this.isMobile ? 20 : 150,
+          right: this.isMobile ? 20 : 150,
+          bottom: this.isMobile ? 10 : 150,
         }
+        console.log(padding)
         this.map.fitBounds(this.mapZone, {
           padding,
         })

@@ -198,10 +198,7 @@ h3 {
   padding-left: $content-padding / 4;
 
   @include width(mobile) {
-    padding-left: 0;
-    margin-top: 0;
-    display: flex;
-    box-shadow: none;
+    display: none;
   }
 
   & > a {

@@ -26,6 +26,7 @@ export default {
     SearchSelector,
     LanguagePicker,
   },
+  scrollToTop: true,
   head() {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
       this.location
