@@ -136,6 +136,9 @@ export default {
         : this.mapPosition
     )
 
+    window.scrollTo(0, 0)
+    this.$el.scrollTop = 0
+
     if (this.content[this.displayLanguage])
       this.setLanguage(this.displayLanguage)
 
