@@ -162,7 +162,7 @@ export default {
           Math.abs(this.bounds[0].center[1] - this.bounds[1].center[1])) /
         2
       const boundsMod = Math.sqrt(averageBoundsDiff)
-      let zoomToShow = 6 / boundsMod
+      let zoomToShow = 4 / boundsMod
       if (zoomToShow > 9) zoomToShow = 9
       return parseInt(zoomToShow)
     },
@@ -238,16 +238,30 @@ export default {
 
     show() {
       this.labelElement.classList.remove('off')
+      this.spawnPolygon()
       this.prevZoneShown = true
     },
 
     hide() {
       this.labelElement.classList.add('off')
+      this.destroyPolygon()
       this.prevZoneShown = false
     },
 
     updateZoneShown() {
       if (this.updateDebounceTimer) return
+
+      const mapBounds = this.map.getBounds()
+
+      // offscreen check
+      if (
+        this.bounds[0].center[0] > mapBounds._ne.lng ||
+        this.bounds[1].center[0] < mapBounds._sw.lng ||
+        this.bounds[0].center[1] > mapBounds._ne.lat ||
+        this.bounds[1].center[1] < mapBounds._sw.lat
+      ) {
+        return this.prevZoneShown ? this.hide() : null
+      }
 
       const zoneShown =
         this.isHighlighted ||
@@ -260,7 +274,7 @@ export default {
 
       this.updateDebounceTimer = setTimeout(() => {
         this.updateDebounceTimer = false
-      }, 300)
+      }, 400)
     },
 
     updateHighlights(highlighted, doubleHighlighted, skipLayers) {
@@ -272,9 +286,10 @@ export default {
       else if (doubleHighlighted !== null)
         this.labelElement.classList.remove('doublehighlight')
 
-      this.$nextTick(() =>
-        this.map.getSource(this.sourceId).setData(this.geoJSONData())
-      )
+      this.$nextTick(() => {
+        if (this.prevZoneShown)
+          this.map.getSource(this.sourceId).setData(this.geoJSONData())
+      })
     },
 
     click(e) {

@@ -4,31 +4,31 @@
       v-if="category"
       :to="'/is/' + category.toLowerCase()"
       class="sublink"
-      >{{ capitalize(category) }}</nuxt-link
-    >
-    ・
+    >{{ capitalize(category) }}</nuxt-link>・
     <span
-      v-if="mapPosition && !Array.isArray(mapPosition) && mapPosition.location"
+      v-if="mapPosition && (!Array.isArray(mapPosition) || mapPosition.length === 1) && (mapPosition.location || mapPosition[0].location)"
     >
       <nuxt-link
-        :to="'/at/' + mapPosition.location.toLowerCase()"
+        :to="'/at/' + (mapPosition.location || mapPosition[0].location).toLowerCase()"
         class="sublink"
-        >{{ mapPosition.location }}</nuxt-link
-      >{{ cityIsLocation ? ' ・ ' : ', ' }}
+      >{{ (mapPosition.location || mapPosition[0].location) }}</nuxt-link>
+      {{ cityIsLocation ? ' ・ ' : ', ' }}
     </span>
     <span v-if="city && !cityIsLocation">
-      <nuxt-link :to="'/' + city" class="sublink">{{
+      <nuxt-link :to="'/' + city" class="sublink">
+        {{
         capitalize(city)
-      }}</nuxt-link>
+        }}
+      </nuxt-link>
     </span>
     <span v-if="date">
       ・
       {{
-        new Date(date).toLocaleDateString('en-US', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric',
-        })
+      new Date(date).toLocaleDateString('en-US', {
+      year: 'numeric',
+      month: 'long',
+      day: 'numeric',
+      })
       }}
     </span>
   </p>
