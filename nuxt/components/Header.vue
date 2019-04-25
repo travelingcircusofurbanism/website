@@ -150,7 +150,7 @@ a:active {
   @include width(mobile) {
     box-shadow: none;
     width: 100%;
-    padding: $unit * 2 $unit $unit * 2 $unit * 8;
+    padding: $unit * 2.2 $unit $unit * 2.2 $unit * 8;
 
     .tagline {
       display: none;
@@ -158,9 +158,6 @@ a:active {
 
     &:hover {
       background: $active;
-    }
-    h1 {
-      font-size: 1.45rem;
     }
   }
 }
@@ -173,7 +170,7 @@ h1 {
   color: white !important;
 
   @include width(mobile) {
-    font-size: 1.6rem;
+    font-size: 1.45rem;
   }
 }
 
