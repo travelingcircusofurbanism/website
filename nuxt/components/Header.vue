@@ -18,7 +18,7 @@
       </svg>
     </div>
     <nuxt-link exact to="/" class="logo" @click.native="resetView">
-      <h1>{{ isMobile ? 'TCU' : 'Traveling Circus of Urbanism' }}</h1>
+      <h1>Traveling Circus of Urbanism</h1>
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
     <br>
@@ -148,10 +148,9 @@ a:active {
   box-shadow: $over-map-shadow;
 
   @include width(mobile) {
-    text-align: center;
     box-shadow: none;
     width: 100%;
-    padding: $unit * 2 $unit;
+    padding: $unit * 2 $unit $unit * 2 $unit * 8;
 
     .tagline {
       display: none;
@@ -159,6 +158,9 @@ a:active {
 
     &:hover {
       background: $active;
+    }
+    h1 {
+      font-size: 1.45rem;
     }
   }
 }

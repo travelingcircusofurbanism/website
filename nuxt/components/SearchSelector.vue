@@ -42,10 +42,12 @@
           </span>
         </nuxt-link>
       </div>
-      <div class="listsectionlabel" v-if="locations.length">Locations</div>
-      <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
-        <nuxt-link class="listlink" :to="`/at/${element}`">{{capitalize(element)}}</nuxt-link>
-      </div>
+      <template v-if="searchTerm !== ''">
+        <div class="listsectionlabel" v-if="locations.length">Places</div>
+        <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
+          <nuxt-link class="listlink" :to="`/at/${element}`">{{capitalize(element)}}</nuxt-link>
+        </div>
+      </template>
       <div
         class="listsectionlabel"
         v-if="!locations.length && !orderedCities.length && !orderedCategories.length"
@@ -261,7 +263,7 @@ $searchcolor: lighten($shade, 1.5%);
     width: 100%;
     background: rgba(lighten($text, 0%), 0.97);
     color: rgba(white, 0.7);
-    padding: 0 0 $unit * 4 0;
+    padding: 0 0 $unit * 12 0;
     // max-height: $unit * 60;
     overflow-y: auto;
 

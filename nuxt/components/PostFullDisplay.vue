@@ -54,6 +54,8 @@ import SearchSelector from '~/components/SearchSelector'
 import LoaderIcon from '~/components/LoaderIcon'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
+//TODO doesn't scroll to top on mobile
+
 export default {
   props: [
     'title',
@@ -136,8 +138,10 @@ export default {
         : this.mapPosition
     )
 
-    window.scrollTo(0, 0)
-    this.$el.scrollTop = 0
+    this.$nextTick(() => {
+      window.scrollTo(0, 0)
+      this.$el.scrollTop = 0
+    })
 
     if (this.content[this.displayLanguage])
       this.setLanguage(this.displayLanguage)
