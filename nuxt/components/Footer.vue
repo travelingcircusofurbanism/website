@@ -30,7 +30,7 @@
     color: rgba(white, .6);
     background: $text;
     padding: $content-padding;
-    box-shadow: 0 50vh 0 50vh $text;
+    box-shadow: 0 5000vh 0 5000vh $text;
 
     
     * {

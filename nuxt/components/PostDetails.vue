@@ -6,12 +6,12 @@
       class="sublink"
     >{{ capitalize(category) }}</nuxt-link>・
     <span
-      v-if="mapPosition && (!Array.isArray(mapPosition) || mapPosition.length === 1) && (mapPosition.location || mapPosition[0].location)"
+      v-if="mapPosition && ((!Array.isArray(mapPosition) && mapPosition.location) || (mapPosition.length === 1 && mapPosition[0].location))"
     >
       <nuxt-link
-        :to="'/at/' + (mapPosition.location || mapPosition[0].location).toLowerCase()"
+        :to="'/at/' + (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location).toLowerCase()"
         class="sublink"
-      >{{ (mapPosition.location || mapPosition[0].location) }}</nuxt-link>
+      >{{ (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location) }}</nuxt-link>
       {{ cityIsLocation ? ' ・ ' : ', ' }}
     </span>
     <span v-if="city && !cityIsLocation">

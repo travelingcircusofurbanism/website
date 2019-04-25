@@ -1,29 +1,16 @@
 <template>
   <section class="content">
-    <!--
-      <div class="intro" v-if="showIntro">
-        <strong>This is a blog by <nuxt-link to="/author" exact class="subtle">Mariko Sugita</nuxt-link>,</strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more – <strong>all about cities!</strong>
-      </div>
-    -->
-    <div class="content-top-full mini gray">
-      <Selector />
-      <Selector
-        type="category"
-        title="Categories"
-        :moreHint="false"
-        urlPrefix="is/"
-      />
-    </div>
-    <LanguagePicker />
-    <PostList :posts="showablePosts" title="Recent Posts" />
-    <ContentFooter />
+    <LanguagePicker/>
+    <SearchSelector/>
+    <PostList :posts="showablePosts" title="Recent Posts"/>
+    <ContentFooter/>
   </section>
 </template>
 
 <script>
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
-import Selector from '~/components/Selector'
+import SearchSelector from '~/components/SearchSelector'
 import LanguagePicker from '~/components/LanguagePicker'
 // const { get, set } = require('~/assets/storage').default
 
@@ -40,7 +27,12 @@ export default {
       ],
     }
   },
-  components: { ContentFooter, PostList, Selector, LanguagePicker },
+  components: {
+    ContentFooter,
+    PostList,
+    SearchSelector,
+    LanguagePicker,
+  },
   asyncData({ store }) {
     let posts = store.state.allPosts
     return {

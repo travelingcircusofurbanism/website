@@ -15,6 +15,9 @@ $content-padding: $unit * 8;
 $content-padding-mobile: $unit * 3;
 $header-offset: $unit * 5;
 
+$font-stack: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+    'Helvetica Neue', Arial, sans-serif;
+
 // mixins
 @mixin width($size) {
   @if $size == 'mobile' {

@@ -6,6 +6,7 @@ export default () => {
     state: {
       allPosts: [],
       currentShowablePosts: [],
+      locations: [],
       mapMarkers: [],
       mapPolygons: [],
       currentView: [],
@@ -18,6 +19,7 @@ export default () => {
       isDev: false,
       panMap: false,
       lightboxSrc: '',
+      mobileSearchSelectorIsOpen: false,
     },
 
     mutations: {
@@ -71,12 +73,17 @@ export default () => {
         state.lightboxSrc = src
       },
 
+      setMobileSearchSelectorIsOpen(state, isOpen) {
+        state.mobileSearchSelectorIsOpen = isOpen
+      },
+
       setPan(state, shouldPan) {
         state.panMap = shouldPan
       },
 
       setMapMarkers(state, postData) {
         state.mapMarkers = parseMapPositionObjectsFromAnything(postData)
+        state.locations = [...new Set(state.mapMarkers.map(marker => marker.location).filter(m => m))]
       },
 
       setPolygons(state, postObjects) {

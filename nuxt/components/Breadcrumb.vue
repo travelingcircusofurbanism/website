@@ -63,20 +63,27 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
+$bgcolor: $shade;
+
 .breadcrumb {
-  background: $shade;
-  margin-bottom: $unit * 3;
+  background: $bgcolor;
+  // margin-bottom: $unit * 3;
   padding: 0;
   width: 50vw;
   white-space: nowrap;
   position: relative;
+  border-bottom: 1px solid rgba($offwhite, 0.5);
+  font-size: 0.9em;
+  position: relative;
+  z-index: 3;
+  overflow: hidden;
 
   & > * {
     z-index: 1;
   }
 
   &:after {
-    @include fade-to-color(right, $shade);
+    @include fade-to-color(right, $bgcolor);
     z-index: 2;
   }
 }
@@ -106,7 +113,7 @@ export default {
     white-space: nowrap;
   }
 
-  &::before {
+  &:before {
     transition: all 0.2s;
     content: '';
     position: absolute;
@@ -115,14 +122,19 @@ export default {
     width: 100%;
     height: 100%;
     transform: skew(-25deg);
+    border-right: 1px solid rgba($offwhite, 0.7);
     z-index: 3;
   }
 
+  &:last-of-type:before {
+    border-right: none;
+  }
+
   &.gray0:not(:last-of-type)::before {
-    background: darken($shade, 8%);
+    // background: darken($shade, 8%);
   }
   &.gray1:not(:last-of-type)::before {
-    background: darken($shade, 4%);
+    // background: darken($shade, 4%);
   }
 
   &:not(:last-of-type)::before {
@@ -130,9 +142,9 @@ export default {
   }
 
   &:hover::before {
-    background: $shade !important;
-    height: 108%;
-    top: -4%;
+    background: darken($bgcolor, 3%) !important;
+    // height: 108%;
+    // top: -4%;
     z-index: 4;
     box-shadow: 0px 2px 10px darken($shade, 20%) !important;
   }

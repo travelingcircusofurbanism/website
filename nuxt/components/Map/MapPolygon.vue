@@ -178,8 +178,9 @@ export default {
   },
 
   mounted() {
-    this.spawnPolygon()
     this.spawnLabel()
+    this.spawnPolygon()
+    this.updateZoneShown()
     this.updateHighlights(this.isHighlighted, this.isDoubleHighlighted)
     this.updateZoneShown()
     this.map.on('zoom', this.updateZoneShown)
@@ -192,23 +193,27 @@ export default {
 
   methods: {
     spawnPolygon() {
-      this.map.addSource(this.sourceId, this.geoJSONSource)
-      this.map.addLayer(this.geoJSONFill)
-      this.map.addLayer(this.geoJSONStroke)
-      this.map.on('click', this.fillId, this.click)
-      this.map.on('click', this.outlineId, this.click)
-      this.map.on('mouseenter', this.fillId, this.hover)
-      this.map.on('mouseleave', this.fillId, this.unHover)
+      try {
+        this.map.addSource(this.sourceId, this.geoJSONSource)
+        this.map.addLayer(this.geoJSONFill)
+        this.map.addLayer(this.geoJSONStroke)
+        this.map.on('click', this.fillId, this.click)
+        this.map.on('click', this.outlineId, this.click)
+        this.map.on('mouseenter', this.fillId, this.hover)
+        this.map.on('mouseleave', this.fillId, this.unHover)
+      } catch (e) {}
     },
 
     destroyPolygon() {
-      this.map.removeLayer(this.fillId)
-      this.map.removeLayer(this.outlineId)
-      this.map.removeSource(this.sourceId)
-      this.map.off('click', this.fillId, this.click)
-      this.map.off('click', this.outlineId, this.click)
-      this.map.off('mouseenter', this.fillId, this.hover)
-      this.map.off('mouseleave', this.fillId, this.unHover)
+      try {
+        this.map.off('click', this.fillId, this.click)
+        this.map.off('click', this.outlineId, this.click)
+        this.map.off('mouseenter', this.fillId, this.hover)
+        this.map.off('mouseleave', this.fillId, this.unHover)
+        this.map.removeLayer(this.fillId)
+        this.map.removeLayer(this.outlineId)
+        this.map.removeSource(this.sourceId)
+      } catch (e) {}
     },
 
     buildLabelElement() {
@@ -260,7 +265,7 @@ export default {
         this.bounds[0].center[1] > mapBounds._ne.lat ||
         this.bounds[1].center[1] < mapBounds._sw.lat
       ) {
-        return this.prevZoneShown ? this.hide() : null
+        return this.prevZoneShown === true ? this.hide() : null
       }
 
       const zoneShown =
@@ -270,7 +275,7 @@ export default {
       if (zoneShown === this.prevZoneShown) return
 
       if (zoneShown) this.show()
-      else this.hide()
+      else if (this.prevZoneShown === true) this.hide()
 
       this.updateDebounceTimer = setTimeout(() => {
         this.updateDebounceTimer = false
@@ -287,7 +292,7 @@ export default {
         this.labelElement.classList.remove('doublehighlight')
 
       this.$nextTick(() => {
-        if (this.prevZoneShown)
+        if (this.prevZoneShown === true)
           this.map.getSource(this.sourceId).setData(this.geoJSONData())
       })
     },

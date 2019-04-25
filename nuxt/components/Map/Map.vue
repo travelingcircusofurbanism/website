@@ -7,8 +7,8 @@
         mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
       >
         <template slot-scope="{ mapboxgl, map, clusterer }">
-          // v-slot instead of slot-scope in vue 2.6+, everything else should be
-          fine
+          <!--v-slot instead of slot-scope in vue 2.6+, everything else should be
+          fine-->
           <MarkerManager
             :mapboxgl="mapboxgl"
             :map="map"

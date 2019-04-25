@@ -1,9 +1,10 @@
 <template>
   <section class="content">
-    <Breadcrumb/>
     <LanguagePicker
       v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
     />
+    <Breadcrumb/>
+    <SearchSelector/>
     <PostList :posts="showablePosts" :title="category"/>
     <ContentFooter/>
   </section>
@@ -13,10 +14,20 @@
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
+import SearchSelector from '~/components/SearchSelector'
 import LanguagePicker from '~/components/LanguagePicker'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
+//TODO double highlights some stuff when navigating around between /is/ pages
+
 export default {
+  components: {
+    ContentFooter,
+    PostList,
+    Breadcrumb,
+    SearchSelector,
+    LanguagePicker,
+  },
   head() {
     return {
       title: this.capitalize(this.category),
@@ -46,7 +57,6 @@ export default {
       ],
     }
   },
-  components: { ContentFooter, PostList, Breadcrumb, LanguagePicker },
   asyncData({ route, redirect, error, isStatic, store }) {
     const category = decodeURI(route.path)
       .replace('/is/', '')

@@ -1,25 +1,35 @@
 <template>
   <div id="header" :class="{ hide: scrollDirection === 'down' }">
-    <nuxt-link exact to="/" class="logo" @click.native="resetView">
-      <h1>Traveling Circus of Urbanism</h1>
-      <h3 class="tagline">
-        Urban narratives and practices, collected through traveling
-      </h3>
-    </nuxt-link>
-    <br />
-    <div class="sublinks">
-      <nuxt-link to="/about" :class="{ currentpage: path === '/about' }">
-        About </nuxt-link
-      ><nuxt-link
-        to="/getinvolved"
-        :class="{ currentpage: path === '/getinvolved' }"
+    <div class="hamburger" v-if="isMobile" @click="openMobileSearchSelector">
+      <svg
+        width="122px"
+        height="85px"
+        viewBox="0 0 107 71"
+        version="1.1"
+        preserveAspectRatio="none"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
       >
-        Get Involved
-      </nuxt-link>
+        <g stroke="#979797" stroke-width="8">
+          <path d="M0,10 L107,10" id="Line-2"></path>
+          <path d="M0,35 L107,35" id="Line-2-Copy"></path>
+          <path d="M0,60 L107,60" id="Line-2-Copy-2"></path>
+        </g>
+      </svg>
+    </div>
+    <nuxt-link exact to="/" class="logo" @click.native="resetView">
+      <h1>{{ isMobile ? 'TCU' : 'Traveling Circus of Urbanism' }}</h1>
+      <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
+    </nuxt-link>
+    <br>
+    <div class="sublinks" v-if="!isMobile">
+      <nuxt-link to="/about" :class="{ currentpage: path === '/about' }">About</nuxt-link>
+      <nuxt-link to="/getinvolved" :class="{ currentpage: path === '/getinvolved' }">Get Involved</nuxt-link>
     </div>
     <div>
       <div class="citylabel" :class="{ active: currentCity }">
-        Current City: <span>{{ capitalize(currentCity) }}</span>
+        Current City:
+        <span>{{ capitalize(currentCity) }}</span>
       </div>
     </div>
   </div>
@@ -57,6 +67,9 @@ export default {
       this.$store.commit('setView', this.$store.state.currentShowablePosts)
       this.$store.commit('setPan', false)
       this.$nextTick(() => this.$store.commit('setPan', true))
+    },
+    openMobileSearchSelector() {
+      this.$store.commit('setMobileSearchSelectorIsOpen', true)
     },
   },
 }
@@ -104,8 +117,31 @@ a:active {
   }
 }
 
+.hamburger {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: 100%;
+  padding: 0 $unit * 2;
+  color: white;
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: $unit * 3.5;
+    height: $unit * 3;
+
+    g {
+      stroke: white;
+    }
+  }
+}
+
 .logo {
   display: inline-block;
+  position: relative;
   padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * 0.75;
   font-weight: 600;
   background: $active;
@@ -166,7 +202,7 @@ h3 {
     box-shadow: none;
   }
 
-  a {
+  & > a {
     padding: $unit * 2 $content-padding / 2;
     background: $text;
     position: relative;
@@ -201,7 +237,7 @@ h3 {
     @include width(mobile) {
       text-align: center;
       flex: 1;
-      padding: $unit * 1.5 $unit * 3;
+      padding: $unit * 1.5 $unit * 0;
 
       &:after {
         display: none;

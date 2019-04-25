@@ -1,9 +1,10 @@
 <template>
   <section class="content">
-    <Breadcrumb/>
     <LanguagePicker
       v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
     />
+    <Breadcrumb/>
+    <SearchSelector/>
     <PostList :posts="showablePosts" :title="location"/>
     <ContentFooter/>
   </section>
@@ -13,10 +14,18 @@
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
+import SearchSelector from '~/components/SearchSelector'
 import LanguagePicker from '~/components/LanguagePicker'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
+  components: {
+    ContentFooter,
+    PostList,
+    Breadcrumb,
+    SearchSelector,
+    LanguagePicker,
+  },
   head() {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
       this.location
@@ -57,7 +66,6 @@ export default {
       ],
     }
   },
-  components: { ContentFooter, PostList, Breadcrumb, LanguagePicker },
   asyncData({ route, redirect, error, isStatic, store }) {
     const location = decodeURI(route.path)
       .replace('/at/', '')

@@ -1,6 +1,7 @@
 <template>
   <div class="post-list">
     <h3 class="sectionhead" v-if="title">{{ title }}</h3>
+    <div v-else class="spacer"></div>
     <transition-group name="fade">
       <PostPreview
         v-for="(post, key) in postsToShow"
@@ -94,6 +95,11 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+@import '~/assets/variables.scss';
+
+.spacer {
+  height: $unit * 10;
+}
 .fade {
   opacity: 0.4;
 }

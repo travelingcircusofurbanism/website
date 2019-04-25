@@ -1,10 +1,11 @@
 <template>
   <div class="master" ref="master" :class="{ mobile: isMobile }">
-    <Lightbox class="lightbox" />
-    <Header />
-    <Canvas />
+    <Lightbox class="lightbox"/>
+    <MobileSearchSelectorOverlay class="mobilesearch"/>
+    <Header/>
+    <Canvas/>
     <!--<DevOverlay class="devoverlay" /> -->
-    <nuxt />
+    <nuxt/>
   </div>
 </template>
 
@@ -12,10 +13,17 @@
 import Canvas from '~/components/Canvas'
 import Header from '~/components/Header'
 import Lightbox from '~/components/Lightbox'
+import MobileSearchSelectorOverlay from '~/components/MobileSearchSelectorOverlay'
 import DevOverlay from '~/components/DevOverlay'
 
 export default {
-  components: { Canvas, Header, Lightbox, DevOverlay },
+  components: {
+    Canvas,
+    Header,
+    Lightbox,
+    MobileSearchSelectorOverlay,
+    DevOverlay,
+  },
   computed: {
     isMobile() {
       return this.$store.state.isMobile
@@ -52,7 +60,7 @@ export default {
   width: 100vw;
   height: 100vh;
 
-  & > *:not(.lightbox):not(.devoverlay) {
+  & > *:not(.lightbox):not(.devoverlay):not(.mobilesearch) {
     flex: 1;
     max-width: 50%;
     overflow: hidden;
@@ -64,7 +72,7 @@ export default {
     display: block;
     height: auto;
 
-    & > *:not(.lightbox):not(.devoverlay) {
+    & > *:not(.lightbox):not(.devoverlay):not(.mobilesearch) {
       max-width: 100%;
       overflow-y: visible;
       height: auto;

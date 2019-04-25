@@ -1,7 +1,5 @@
 <template>
   <section class="content" :class="{ ja: displayLanguage === 'ja' }">
-    <Breadcrumb :title="titleInLanguage"/>
-
     <div
       class="japanese-available content-top-full"
       v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
@@ -16,6 +14,7 @@
         <span class="button invert" @click="setLanguage('en')">英語に戻る</span>
       </template>
     </div>
+    <Breadcrumb :title="titleInLanguage"/>
 
     <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ titleInLanguage }}</h1>
 
@@ -51,6 +50,7 @@ import ContentFooter from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
+import SearchSelector from '~/components/SearchSelector'
 import LoaderIcon from '~/components/LoaderIcon'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
@@ -80,6 +80,7 @@ export default {
     RelatedArticles,
     PostDetails,
     Breadcrumb,
+    SearchSelector,
     LoaderIcon,
   },
 
@@ -271,8 +272,7 @@ h1 {
 .japanese-available {
   background: $active;
   color: white;
-  margin-bottom: $content-padding;
-  margin-top: -3 * $unit;
+  // margin-bottom: $unit * 5;
   text-align: center;
 
   @include width(mobile) {
