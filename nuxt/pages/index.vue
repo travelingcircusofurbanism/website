@@ -2,6 +2,14 @@
   <section class="content">
     <LanguagePicker/>
     <SearchSelector/>
+    <div class="intro" v-if="showIntro">
+      <strong>
+        This is a blog by
+        <nuxt-link to="/about" exact class="subtle">Mariko Sugita</nuxt-link>,
+      </strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more –
+      <strong>all about cities!</strong>
+    </div>
+
     <PostList :posts="showablePosts" title="Recent Posts"/>
     <ContentFooter/>
   </section>
@@ -12,7 +20,7 @@ import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import SearchSelector from '~/components/SearchSelector'
 import LanguagePicker from '~/components/LanguagePicker'
-// const { get, set } = require('~/assets/storage').default
+const { get, set } = require('~/assets/storage').default
 
 export default {
   head() {
@@ -41,7 +49,7 @@ export default {
   },
   data() {
     return {
-      // showIntro: false,
+      showIntro: false,
     }
   },
   computed: {
@@ -63,20 +71,18 @@ export default {
       )
     },
   },
-  created() {
-    // if (!this.get('visited')) {
-    //   this.showIntro = true
-    //   // this.set('visited', true)
-    // }
-  },
   mounted() {
+    // if (this.isDev || !this.get('visited')) {
+    //   this.showIntro = true
+    //   this.set('visited', true)
+    // }
     this.$store.commit('setPan', true)
     this.$store.commit('setView', this.showablePosts)
     this.$store.commit('setHighlight')
   },
   methods: {
-    // get,
-    // set,
+    get,
+    set,
   },
 }
 </script>
@@ -86,12 +92,12 @@ export default {
 
 .intro {
   margin: $content-padding * -1;
-  padding: $content-padding * 1.5;
-  background: $shade;
+  padding: $content-padding * 1.7 $content-padding * 1.5 $content-padding * 1
+    $content-padding * 1.5;
   line-height: 1.4;
   color: darken($offwhite, 60%);
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.15rem;
 
   @include width(mobile) {
     margin: $content-padding-mobile * -1;

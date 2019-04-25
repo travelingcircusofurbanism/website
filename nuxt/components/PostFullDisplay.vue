@@ -141,6 +141,13 @@ export default {
     if (this.content[this.displayLanguage])
       this.setLanguage(this.displayLanguage)
 
+    this.$nextTick(() => {
+      this.$el.scrollTop = 0
+      this.$el.parentNode.scrollTop = 0
+      document.querySelector('body').scrollTop = 0
+      window.scrollTo(0, 0)
+    })
+
     // this is for live previews online
     this.$nextTick(() => {
       if (!this.public && !this.isDev && this.preview)
