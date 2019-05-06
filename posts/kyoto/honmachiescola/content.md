@@ -1,6 +1,6 @@
 # Honmachi Escola
 
-It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) is about in one word.
+It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) is about in one word. It's not really about definition, but rather what this place, at the deepest level, mightmean fr those who live there and visit there.
 
 ![](honmachiescola1.jpg)
 ![](honmachiescola4.jpg)
@@ -8,24 +8,11 @@ It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-i
 
 ## "Escola" - a place to learn
 
-- ブラジル音楽の拠点
-- HAPS: 佐々木さん
-- 2014 年夏に話が出た。
-- 京都市が空き家活用の支援をしている
-- デザインを自分達で
+Honmachi Escola started to utilize a complex of 8 unused buildings and 350㎡ open aquare in Honmachi neighrbhoood close to [Sanjusangendo](https://kyoto.travel/en/shrine_temple/159). This area is known by its aging population and high ratio of vacant houses, and old buildings in the narrow alleyways make the reconstructoin almost impossible to reconstruct and find new tenants. also common ownership
 
-路地奥で再建築ができないという物件が多い京都。
-高齢化、空き家率も京都市内で最も高いエリア、東山区
-→ 広場の北側には 20 軒ほどの別の長屋群もあるので、活用するとなると近隣の住民の方たちの理解が必要となってきます。
+This project was born in 2014 with a support of [HAPS](http://haps-kyoto.com/en/), non-profit organization to support Kyoto-based artists, and public funding from the city of Kyoto. Sasaki, an artist of Brazilian music, first had the idea of creating a place to gather people and enjoy music. They named this place "Escola", a portogees word for "school", aiming to make this place ///.
 
-Honmachi Escola started to utilize a complex of 8 unused buildings and 350㎡ open aquare in Honmachi neighrbhoood close to [Sanjusangendo](https://kyoto.travel/en/shrine_temple/159).
-
-一般的な不動産の流通にはのれない物件
-土地や建物が相続などを経て複数名で共同所有となっていることも、新たな借り手の募集にあたり状況を複雑にしていました。
-「柔軟かつクリエイティブに使ってもらえたら」いう期待をよせ、HAPS へ一括での運用を探ってほしい
-
-「学校」、さらに「公民館」を含意するポルトガル語の「エスコーラ」（ブラジル音楽のチームもエスコーラ）
-長屋のうち 3 軒は住まいとして、3 軒は事務所やアーティストのスタジオとして機能
+They made a proposal by themselves, designed by themselves, and did relf renovation. Currently three buildings of the complex are used for accomodations, the rest are studios and offices.
 
 - 入居者自身がそれぞれ内装に手を入れていくため、意匠や表面の仕上げは設計者の意図をあまり加えていません。
 - 大きな家と集合住宅の間のようなイメージ
