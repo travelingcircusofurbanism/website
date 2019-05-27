@@ -1,6 +1,7 @@
 const dontCapitalize = [
   'a',
   'an',
+  'as',
   'the',
   'but',
   'or',

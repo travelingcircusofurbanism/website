@@ -97,7 +97,7 @@ h4 {
 
 .sub {
   opacity: 0.6;
-  font-size: .9rem;
+  font-size: 0.9rem;
 
   a {
     color: $text !important;
@@ -153,7 +153,8 @@ h4 {
     }
 
     & + .content-top-full {
-      margin-top: 0; margin-bottom: 0;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     @include width(mobile) {
@@ -296,7 +297,7 @@ h4 {
     object-fit: contain;
     position: relative;
     z-index: 1;
-    // filter: blur(4px);
+    filter: blur(2px);
 
     @include width(mobile) {
       max-height: auto;
@@ -354,8 +355,21 @@ h4 {
 
   blockquote {
     font-style: italic;
-    padding: $unit $unit * 4;
-    background: rgba($offwhite, 0.3);
+    padding: $unit * 2 $unit * 4;
+    // background: rgba($offwhite, 0.3);
+    position: relative;
+
+    &:before {
+      content: '"';
+      position: absolute;
+      top: $unit * -12;
+      left: $unit * -10;
+      color: $active;
+      opacity: 0.2;
+      font-size: 13em;
+      font-weight: 700;
+      font-family: 'Unica One', 'Raleway', sans-serif;
+    }
   }
 
   a.external {
@@ -461,7 +475,8 @@ h4 {
 
 .mapboxgl-missing-css,
 .mapbox-improve-map,
-.mapboxgl-ctrl-attrib, .mapboxgl-control-container {
+.mapboxgl-ctrl-attrib,
+.mapboxgl-control-container {
   display: none;
 }
 

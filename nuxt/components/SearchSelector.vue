@@ -24,7 +24,7 @@
       <div>✕</div>
     </div>
     <div class="megalist" v-if="isOpen">
-      <div class="listsectionlabel" v-if="orderedCategories.length">Categories</div>
+      <div class="listsectionlabel" v-if="orderedCategories.length">Category</div>
       <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
         <nuxt-link class="listlink" :to="`/is/${element.label}`">
           {{capitalize(element.label)}}
@@ -33,7 +33,7 @@
           </span>
         </nuxt-link>
       </div>
-      <div class="listsectionlabel" v-if="orderedCities.length">Cities</div>
+      <div class="listsectionlabel" v-if="orderedCities.length">City</div>
       <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
         <nuxt-link class="listlink" :to="`/${element.label}`">
           {{capitalize(element.label)}}
@@ -43,7 +43,11 @@
         </nuxt-link>
       </div>
       <template v-if="searchTerm !== ''">
-        <div class="listsectionlabel" v-if="locations.length">Places</div>
+        <div class="listsectionlabel" v-if="tags.length">Tag</div>
+        <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
+          <nuxt-link class="listlink" :to="`/tag/${element}`">{{capitalize(element)}}</nuxt-link>
+        </div>
+        <div class="listsectionlabel" v-if="locations.length">Place</div>
         <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
           <nuxt-link class="listlink" :to="`/at/${element}`">{{capitalize(element)}}</nuxt-link>
         </div>
@@ -81,6 +85,12 @@ export default {
     },
     locations() {
       return this.$store.state.locations
+        .map(l => l.toLowerCase())
+        .filter(text => text.indexOf(this.searchTerm.toLowerCase()) !== -1)
+        .sort((a, b) => (a > b ? 1 : -1))
+    },
+    tags() {
+      return this.$store.state.tags
         .filter(text => text.indexOf(this.searchTerm.toLowerCase()) !== -1)
         .sort((a, b) => (a > b ? 1 : -1))
     },
@@ -154,6 +164,7 @@ $searchcolor: lighten($shade, 1.5%);
   &:after {
     content: '';
     position: absolute;
+    pointer-events: none;
     top: 77%;
     left: $content-padding;
     right: $content-padding;

@@ -2,6 +2,8 @@
 <script>
 const allLocations = require('~/static/generated/locations.json')
 
+// TODO click zooms in too far on mobile for clusters
+
 export default {
   props: {
     mapboxgl: {

@@ -1,12 +1,10 @@
 <template>
-  <PostListPage :postListTitle="category" :posts="posts"/>
+  <PostListPage :postListTitle="`#${tag}`" :posts="posts"/>
 </template>
 
 <script>
 import PostListPage from '~/components/PostListPage'
 const { capitalize } = require('~/assets/commonFunctions.js')
-
-//TODO double highlights some stuff when navigating around between /is/ pages
 
 export default {
   components: {
@@ -15,19 +13,17 @@ export default {
   scrollToTop: true,
   head() {
     return {
-      title: this.capitalize(this.category),
+      title: this.capitalize(this.tag),
       meta: [
         {
           property: 'og:title',
           content: `${this.capitalize(
-            this.category
+            this.tag
           )} | Traveling Circus of Urbanism`,
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/is/${
-            this.category
-          }`,
+          content: `https://www.travelingcircusofurbanism.com/tag/${this.tag}`,
         },
         {
           hid: `og:image`,
@@ -43,19 +39,19 @@ export default {
     }
   },
   asyncData({ route, redirect, error, isStatic, store }) {
-    const category = decodeURI(route.path)
-      .replace('/is/', '')
+    const searchTag = decodeURI(route.path)
+      .replace('/tag/', '')
       .toLowerCase()
     let posts = store.state.allPosts
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
     posts = posts.filter(p => {
-      return p.category && p.category.toLowerCase() === category
+      return p.tags && p.tags.find(t => t.toLowerCase() === searchTag)
     })
     if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
-      category,
+      tag: searchTag,
     }
   },
   methods: {

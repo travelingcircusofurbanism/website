@@ -18,6 +18,7 @@ module.exports = {
       pitch: 0,
     },
   ],
+  tags: ['bicycle', 'park', 'reuse', 'travel'],
   polygons: [
     {
       location: 'Wacky area',

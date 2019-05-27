@@ -39,7 +39,8 @@ export default {
       let preSlash = path.substring(0, path.indexOf('/'))
       let postSlash = path.substring(path.indexOf('/') + 1)
       let pagePrefix = ''
-      if (preSlash === 'is' || preSlash === 'at') pagePrefix = preSlash
+      if (preSlash === 'is' || preSlash === 'at') pagePrefix = preSlash + ': '
+      if (preSlash === 'tag') pagePrefix = '#'
       else if (preSlash !== '')
         pathEls.push({
           label: this.capitalize(decodeURI(preSlash)),
@@ -47,8 +48,8 @@ export default {
         })
       pathEls.push({
         label: this.title
-          ? this.softTruncate(this.title, 70)
-          : `${pagePrefix ? pagePrefix + ': ' : ''}${this.capitalize(
+          ? this.capitalize(this.softTruncate(this.title, 70))
+          : `${pagePrefix ? pagePrefix : ''}${this.capitalize(
               decodeURI(postSlash.replace(/\/$/, ''))
             )}`,
         url: `/${path}`,

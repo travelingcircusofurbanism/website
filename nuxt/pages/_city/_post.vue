@@ -18,6 +18,7 @@
     :polygons="polygons"
     :public="public"
     :preview="preview"
+    :tags="tags"
   />
 </template>
 

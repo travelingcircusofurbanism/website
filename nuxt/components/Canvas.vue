@@ -7,8 +7,6 @@
 <script>
 import Map from '~/components/Map/Map'
 
-// TODO too long, hidden partially on mobile!
-
 export default {
   components: { Map },
   data() {

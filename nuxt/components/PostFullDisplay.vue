@@ -26,12 +26,14 @@
       :date="date"
     />
 
+    <Tags :tags="tags"/>
+
     <LoaderIcon v-if="loading" :active="loading" :absolute="false"/>
 
     <article
       v-lazy-container="{
         selector: 'img[data-src]',
-        preLoad: 1.5, // screen heights away to start loading
+        preLoad: 2, // screen heights away to start loading
       }"
       class="markdown"
       ref="postcontent"
@@ -52,6 +54,7 @@ import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
 import SearchSelector from '~/components/SearchSelector'
 import LoaderIcon from '~/components/LoaderIcon'
+import Tags from '~/components/Tags'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 //TODO doesn't scroll to top on mobile
@@ -75,6 +78,7 @@ export default {
     'polygons',
     'public',
     'preview',
+    'tags',
   ],
 
   components: {
@@ -84,6 +88,7 @@ export default {
     Breadcrumb,
     SearchSelector,
     LoaderIcon,
+    Tags,
   },
 
   data() {

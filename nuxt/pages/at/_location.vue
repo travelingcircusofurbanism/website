@@ -1,30 +1,14 @@
 <template>
-  <section class="content">
-    <LanguagePicker
-      v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
-    />
-    <Breadcrumb/>
-    <SearchSelector/>
-    <PostList :posts="showablePosts" :title="location"/>
-    <ContentFooter/>
-  </section>
+  <PostListPage :postListTitle="location" :posts="posts" :marker="marker"/>
 </template>
 
 <script>
-import ContentFooter from '~/components/Footer'
-import PostList from '~/components/PostList'
-import Breadcrumb from '~/components/Breadcrumb'
-import SearchSelector from '~/components/SearchSelector'
-import LanguagePicker from '~/components/LanguagePicker'
+import PostListPage from '~/components/PostListPage'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
-    ContentFooter,
-    PostList,
-    Breadcrumb,
-    SearchSelector,
-    LanguagePicker,
+    PostListPage,
   },
   scrollToTop: true,
   head() {
@@ -99,43 +83,6 @@ export default {
       location,
       marker,
     }
-  },
-  data() {
-    return {
-      skippingToFirstPost: false,
-    }
-  },
-  computed: {
-    isMobile() {
-      return this.$store.state.isMobile
-    },
-    userLanguage() {
-      return this.$store.state.language
-    },
-    onlyShowLanguage() {
-      return this.$store.state.onlyShowLanguage
-    },
-    showablePosts() {
-      return this.posts.filter(p =>
-        this.$store.state.currentShowablePosts.includes(p)
-      )
-    },
-  },
-  created() {
-    if (this.showablePosts.length === 1) {
-      this.$store.commit('setHighlight')
-      this.$store.commit('setViewPolygons')
-      this.skippingToFirstPost = true
-      this.$router.replace({
-        path: this.showablePosts[0].url,
-      })
-    }
-  },
-  mounted() {
-    if (this.skippingToFirstPost) return
-    this.$store.commit('setPan', false)
-    this.$store.commit('setView', this.marker)
-    this.$store.commit('setHighlight', this.marker)
   },
   methods: {
     capitalize,
