@@ -48,8 +48,7 @@ This year at March 4, Don Popo officially pre-registered his candidacy for the B
 ![](Lafamiliaayara3.jpg)
 ![](Lafamiliaayara7.jpg)
 
-He is an active artist, too. With more than 30 years of artistic life, he became one of the founding leaders of the urban movement in the city - through
-La Familia Ayara's work that catered for a vulnerable population, with children and women in protection for physical, sexual and psychological abuse, including young people in jails and drug rehabilitation sites.
+He is an active artist, too. With more than 30 years of artistic life, he became one of the founding leaders of the urban movement in the city - through La Familia Ayara's work that catered for a vulnerable population, with children and women in protection for physical, sexual and psychological abuse, including young people in jails and drug rehabilitation sites.
 
 ”_It's time to give a radical change to Bogotá. It is time to put a greater level of creativity at the service of the city. It is time to free Bogota and its inhabitants from the limits that have been blocking our ability to innovate and grow the city further._" - Por una ciudad sin límites (For the city without limit) by Don Popo
 

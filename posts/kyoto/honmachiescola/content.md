@@ -1,81 +1,58 @@
-# Honmachi Escola
+# Honmachi Escola: In praise of Do It Yourselfism
 
-It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) is about in one word. It's not really about definition, but rather what this place, at the deepest level, mightmean fr those who live there and visit there.
+One thing that we've encountered and continuiysly been impressed by in Kyoto is the culture of "make it your own". We've seen a number of sustainable self-build projects, that is lodging an eloquent protest against the homogenization of our cities and uncontainable consumerism now rolling across the globe.
 
-![](honmachiescola1.jpg)
-![](honmachiescola4.jpg)
+Above all, we believe [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) helps us reconceive our relationship with communities in cities and our way of living.
+
+Honmachi Escola is a project to utilize a complex of 8 unused buildings and 350㎡ open aquare in Honmachi neighrbhoood close to [Sanjusangendo](https://kyoto.travel/en/shrine_temple/159). Currently three buildings of the complex are used for accomodations, the rest are studios and offices. It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) is about in one word, thought. Probably that is the point - it might not really be about definition, but rather what this place, at the deepest level, might mean for those who live there and visit there.
+
+![](honmachiescola24.jpg)
 ![](honmachiescola5.jpg)
+_The complex of Honmachi Escola and thier garden, that are hidden in the back of narrow alleyways_
 
 ## "Escola" - a place to learn
 
-Honmachi Escola started to utilize a complex of 8 unused buildings and 350㎡ open aquare in Honmachi neighrbhoood close to [Sanjusangendo](https://kyoto.travel/en/shrine_temple/159). This area is known by its aging population and high ratio of vacant houses, and old buildings in the narrow alleyways make the reconstructoin almost impossible to reconstruct and find new tenants. also common ownership
+This area is known by its aging population and high ratio of vacant houses, and old buildings in the narrow alleyways that are typical to old neighrbouoood like this are usually quite hard to process reconstruction. The complex now knowen as Honmachi Escola used to be one of those abandoned property, and common ownership of the place made revitalization even more challenging.
 
-This project was born in 2014 with a support of [HAPS](http://haps-kyoto.com/en/), non-profit organization to support Kyoto-based artists, and public funding from the city of Kyoto. Sasaki, an artist of Brazilian music, first had the idea of creating a place to gather people and enjoy music. They named this place "Escola", a portogees word for "school", aiming to make this place ///.
-
-They made a proposal by themselves, designed by themselves, and did relf renovation. Currently three buildings of the complex are used for accomodations, the rest are studios and offices.
-
-- 入居者自身がそれぞれ内装に手を入れていくため、意匠や表面の仕上げは設計者の意図をあまり加えていません。
-- 大きな家と集合住宅の間のようなイメージ
-
-## DIY Spirit
-
-![](honmachiescola2.jpg)
 ![](honmachiescola3.jpg)
+_Inside of one of thier shared studios. Tenants have customized thier space by themselves._
 
-「コミュニティの自立」、「建築の自立」、「インフラの自立」の３点
-建築の自立：入居者自ら参加しつくっていく建築のあり方
+The project was born in 2014 with a support of [HAPS](http://haps-kyoto.com/en/), non-profit organization to support Kyoto-based artists, and public funding from the city of Kyoto. Sasaki, an artist of Brazilian music, first had an idea of creating a gathering place to invite music lovers like himself. With a help of Jun Yamaguchi, an architectural researcher of the Ritsumei University, as well as other community members, the project has evoled since then. They named the place "escola" - a portugieese word for "school". Honmachi Escola is surelly a place people can learn from each other.
 
-- 設計のプロセス：セルフビルド、ものづくり、DIY の研究、エコロジーの研究
-- 佐々木さん
-- 京都市大波　皮なめしのワークショップ → ブラジル
-- 山口さん（最初の人）じゅんさん
-- 10 人ほど住んでいる → 人づて、講義など、京都新聞など、山上カフェなどの紹介
-- マーケットも年に 3 回
-- ソウルの社会学者、スンドモ
+## DIY Spirit and an art of self building
 
-* 「コミュニティの自立」住んでいる人で、自分達で
-* 「建築の自立」DIY
-* 「インフラの自立」畑や蜂など
-* Everybody has its own concept / direction
-* 住民の多様性：リノベーションの人、エコロジー、スキルの交換、
-* リサイクル！！なんでも作れる！！アイデアは無限大！インディオなどを古いトイレで！
+Sasaki, Yamaguchi, and the other community members designed a whole renovation plan and slowlly started updating & costomizig the place based on thier needs. Now there are appomimetly 10 people in the community who are activily living and using thier studios there, being part of the ever-updating self-building process in the Escola.
 
-![](honmachiescola6.jpg)
-![](honmachiescola7.jpg)
-![](honmachiescola8.jpg)
-![](honmachiescola9.jpg)
+> "Human creativity can't play its role in the fixed, given condition. That's why it's important that we do it by ourselves"
+
+says Jun Yagaguchi, who particitated the interview with us.
+
 ![](honmachiescola12.jpg)
+_A tea room in the garden that was build by community members._
 ![](honmachiescola13.jpg)
+_Outdoor space that is streached out from the kitchen._
 ![](honmachiescola25.jpg)
+_There is even a composting toilet (!) they build by themselves in the garden._
 
-> セルフビルド：住んでいる人がデザインする、与えられたもの・固定されたものを与えると学びが少ない、完璧なものだと何も変更を加えられます。
+They are aiming for creating an storng community and sustainable buildings and infrustructures in the heart of the city. The tenants have thier own unique skills and expertises too, that varies from architecture to ecology. "When we bring everyone's skills together, we can make almost anything that we use in our everyday lives." passionately says Leo, one of the residents in Escola.
 
-- 政治概念も違う人たちが住んでいる
-- アートはいない、けれど３ヶ月レジデンスがあったり、新しい流れ
+![](honmachiescola1.jpg)
+_The first thing that greeted me at the entrance was this sign - which was used at a workshop they organized few weeks ago. I'd love to live in a community where such an interesting workshop like this would be held._
+![](honmachiescola6.jpg)
+![](honmachiescola8.jpg)
+_Leo, who studies ecology, esplains how they grow vegitables and herbs in thier garden. They get animal excrement from a zoo and make natural manure and fertilizer by themselves._
 
-## Independent village in the heart of the city -whta's next?
+## Whta's next?
 
-「京都」という場所の土地性がプロジェクトにもたらす影響、エリアなど
-本町通り、古い街道
-長屋が密集して立っている、大路地、低所 t 区の人々が住んでいる
-工場など
-芸大が入ってくる
+They are open to the public fews times a year, hosting events, fairs and workshops to invite people for this community. They have various programs to invite students and artist to hold fieldworks nd short-term artist in residece etc.
 
-街が小さい、すべての人が知り合いの知り合い
-東京、似たジャンルの人々が集まる
+Residencts' passion for do-it-youselfism never stops. too. They are continuously developing ideas such as installing sustainable energy systemm, updated water system, raising chickens and bees, and more.
 
-エスコーラの他の活動：「TeTsUcola」とは？
-佐々木さん、ミュージシャン、鉄鋼
+They are also counscious to develop more meaningful relationship with the neighrbohood.
 
-今後どのような活動を展開していきたいか？
-
-- 発電、蓄膿、教育、蜂、日本の環境の研究、水タンク
-- 地域との関係性
-- Politiconio U.S. パートナーシップを結んだ：フィールドワークで 1 年に一回やってくる
-- エリアのマップを作ってローカルショップを紹介する → ゲストハウスに配る、コンビニでは勿体無い！ローカルの祭り、マーケット、銭湯など
-
-> ジェントリフィケーション：資本主義経済から離れたギフトエコノミー、ものを作って交換できる
+"This neighbrohood is one of the oldest neighrbohoods in Kyoto. We are witnessing a new wave of redevelopment around here, but we try to sustain & deepen our relationship with the neighrbohods. I am from Paris, and I know what happens to cities through gentrification. I don't want it to happen here, and we try our best to play our role to fight against the homogenization of our cities and consumerism." says Leo.
 
 ![](honmachiescola15.jpg)
-![](honmachiescola18.jpg)
-![](honmachiescola24.jpg)
+_Jun Yamaguchi, Leo //, Keisuke Sumida_
+
+Recently, interest has surged in the idea of small-scale, incremental, do-it-yourself urban improvement. Self-building project that is resident-generated, low budget, and substantially bottom-up like Honmachi Escola, has a potential to encourage people for alternative urban way of living.
