@@ -2,7 +2,7 @@
 
 One thing that we've encountered and continuously been impressed by in Kyoto is the culture of "make it your own". We've seen a number of sustainable self-build projects, that is lodging an eloquent protest against the homogenization of our cities and uncontainable consumerism now rolling across the globe.
 
-Above all, we believe [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) helps us reconceive our relationship with communities in cities and our way of living.
+Above all, we believe [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) helps us reconceive our relationship with communities in cities and our way of living.
 
 Honmachi Escola is a project to utilize a complex of 8 unused buildings and 350㎡ open square in Honmachi neighborhood close to [Sanjusangendo](https://kyoto.travel/en/shrine_temple/159). Currently, three buildings of the complex are used for accommodations, the rests are studios and offices. It's hard to explain what [Honmachi Escola](http://www.escola-kyoto.com/escola-index.html) is about in one word, though. Probably that is the point - it might not really be about the definition, but rather what this place, at the deepest level, might mean for those who live there and visit there.
 
