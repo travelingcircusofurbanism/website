@@ -12,12 +12,12 @@ _The complex of Honmachi Escola and their garden, that are hidden in the back of
 
 ## "Escola" - a place to learn
 
-This area is known by its aging population and high ratio of vacant houses, and old buildings in the narrow alleyways that are typical to an old neighborhood like this are usually quite hard to process reconstruction. The complex now known as Honmachi Escola used to be one of those abandoned properties, and common ownership of the place made revitalization even more challenging.
+This area is known by its aging population and high ratio of vacant houses, and old buildings in the narrow alleyways that are typical to an old neighborhood like this are usually quite hard to process reconstruction. The complex now known as Honmachi Escola used to be one of those abandoned properties.
 
 ![](honmachiescola3.jpg)
 _Inside of one of their shared studios. Tenants have customized their space by themselves._
 
-The project was born in 2014 with support of [HAPS](http://haps-kyoto.com/en/), non-profit organization to support Kyoto-based artists, and public funding from the city of Kyoto. Sasaki, an artist of Brazilian music, first had an idea of creating a gathering place to invite music lovers like himself. With the help of Jun Yamaguchi, an architectural researcher of the Ritsumei University, as well as other community members, the project has evolved since then. They named the place "Escola" - a Portuguese word for "school". Honmachi Escola is surely a place people can learn from each other.
+The project was born in 2014 with support of [HAPS](http://haps-kyoto.com/en/), non-profit organization to support Kyoto-based artists, and public funding from the city of Kyoto. Sasaki, an artist of Brazilian music, first had an idea of creating a gathering place to invite music lovers like himself. With the help of Jun Yamaguchi, an architectural researcher of the Ritsumei University at a time, as well as other community members, the project has evolved since then. They named the place "Escola" - a Portuguese word for "school". Honmachi Escola is surely a place people can learn from each other.
 
 ## DIY Spirit and art of self-building
 
@@ -40,7 +40,8 @@ They are aiming for creating a strong community and sustainable buildings and in
 _The first thing that greeted me at the entrance was this sign - which was used at a workshop they organized a few weeks ago. I'd love to live in a community where such an interesting workshop like this would be held._
 ![](honmachiescola6.jpg)
 ![](honmachiescola8.jpg)
-_Leo, who studies ecology, explains how they grow vegetables and herbs in their garden. They get animal excrement from a zoo and make natural manure and fertilizer by themselves._
+\_Leo, who studies ecology, explains how they grow vegetables and herbs in their garden.
+They get ready-to-use natural manure (elephant, giraffe, and zebra) from Kyoto City Zoo, where Leo studied for a year, and use ithem as a fertilizer as well as for improving thier homemade compost.
 
 ## What's next?
 
