@@ -1,9 +1,9 @@
 module.exports = {
   public: true,
   preview: true,
-  date: '5/29/2019',
+  date: '6/3/2019',
   category: 'interview',
-  image: 'honmachiescola13.jpg',
+  image: 'honmachiescola8.jpg',
   mapPosition: [
     {
       location: 'Honmachi Escola',
