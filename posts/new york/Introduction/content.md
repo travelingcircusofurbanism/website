@@ -13,6 +13,8 @@ _Photo by Patrick Hendry on Unsplash_
 
 - [Open House New York](https://ohny.org/) weekend is an annual event to give people access to the extraordinary architecture of New York. Open House New York was founded in 2001 to engage New Yorkers in the city’s architecture, public space, and the future of urban life.
 
+- [Domino Park](https://www.dominopark.com/) is a 6-acre public park built on the site of the former Domino Sugar Refinery, and it's a great place to hang out.
+
 - [Brooklyn Army Terminal](https://www.bklynarmyterminal.com/) is not open to the public, but it's worth paying attention to. The Brooklyn Army Terminal was built during World War II, and it used to be the largest military supply base in the country. Now, it's a large renovated warehouse complex in Sunset Park.
 
 - [Brooklyn Waterfront Artists](http://bwac.org/) is Brooklyn's largest, artist-run organization, and they have an exhibition space you can visit.
@@ -24,6 +26,8 @@ _Photo by Patrick Hendry on Unsplash_
 - [Walks of New York](https://www.walksofnewyork.com/blog/category/neighborhoods) seem to have some interesting information about self-guided walking tour ideas. I used it when I walked Brooklyn Heights and it worked great.
 
 - The Hole is one of the New York's forgotten neighborhood that is 12 Feet Below Street Level. [This](https://medium.com/hidden-new-york/way-down-in-the-hole-8e1ad83d5743) is a great article for you to understand more about this neglected neighborhood. Or watch this [short video](https://vimeo.com/13401051) if you are curious how it looks like.
+
+- [Brooklyn Navy Yard](https://brooklynnavyyard.org/) is a former shipyard and industrial complex located in Brooklyn, which is now used to fuel New York City's economic vitality by supporting modern industrial sector of the city. [building 92](https://brooklynnavyyard.org/visit/bldg-92) is a museum featuring the history & innovation of the Brooklyn Navy Yard. [New Lab](https://newlab.com/) is a coworking space inside of this facility and is for forward-thinking entrepreneurs.
 
 ### Read
 
@@ -54,3 +58,10 @@ _Photo by Patrick Hendry on Unsplash_
 - [Urban Design Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges.
 
 - [Brooklyn Grange farms rooftops](https://www.brooklyngrangefarm.com/) is an interesting urban farm project that uses the rooftops.
+
+- [A/D/O](https://a-d-o.com/) is a design and creative institute you can visit in Greenpoint, Brooklyn.
+
+- [The Lot Radio](https://www.facebook.com/thelotradio/)
+  An independent online radio station live streaming 24/7 from a reclaimed shipping container on an empty lot in NYC.
+
+- [Collosal Media](https://colossalmedia.com/) does hand painted outdoor advertisings. It's interesting to see the relationship between mural arts, urban infrastructure, and industries.
