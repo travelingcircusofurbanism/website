@@ -27,6 +27,8 @@ _Photo by Patrick Hendry on Unsplash_
 
 - The Hole is one of the New York's forgotten neighborhood that is 12 Feet Below Street Level. [This](https://medium.com/hidden-new-york/way-down-in-the-hole-8e1ad83d5743) is a great article for you to understand more about this neglected neighborhood. Or watch this [short video](https://vimeo.com/13401051) if you are curious how it looks like.
 
+- [Brooklyn Navy Yard](https://brooklynnavyyard.org/) is a former shipyard and industrial complex located in Brooklyn, which is now used to fuel New York City's economic vitality by supporting modern industrial sector of the city. [building 92](https://brooklynnavyyard.org/visit/bldg-92) is a museum featuring the history & innovation of the Brooklyn Navy Yard. [New Lab](https://newlab.com/) is a coworking space inside of this facility and is for forward-thinking entrepreneurs.
+
 ### Read
 
 - [Jackson Heights](https://ny.curbed.com/2017/4/19/15328342/jackson-heights-queens-history) is known to be the most ethnically and culturally diverse neighborhood in the world. The documentary [In Jackson Heights](https://vimeo.com/141051231) depicts the everyday life of people in Jackson Heights, their community, and also their struggle.
@@ -56,3 +58,10 @@ _Photo by Patrick Hendry on Unsplash_
 - [Urban Design Forum](https://urbandesignforum.org/) is an independent membership organization that advances bold solutions to urban challenges.
 
 - [Brooklyn Grange farms rooftops](https://www.brooklyngrangefarm.com/) is an interesting urban farm project that uses the rooftops.
+
+- [A/D/O](https://a-d-o.com/) is a design and creative institute you can visit in Greenpoint, Brooklyn.
+
+- [The Lot Radio](https://www.facebook.com/thelotradio/)
+  An independent online radio station live streaming 24/7 from a reclaimed shipping container on an empty lot in NYC.
+
+- [Collosal Media](https://colossalmedia.com/) does hand painted outdoor advertisings. It's interesting to see the relationship between mural arts, urban infrastructure, and industries.
