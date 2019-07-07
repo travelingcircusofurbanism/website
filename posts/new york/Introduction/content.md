@@ -13,6 +13,8 @@ _Photo by Patrick Hendry on Unsplash_
 
 - [Open House New York](https://ohny.org/) weekend is an annual event to give people access to the extraordinary architecture of New York. Open House New York was founded in 2001 to engage New Yorkers in the city’s architecture, public space, and the future of urban life.
 
+- [Domino Park](https://www.dominopark.com/) is a 6-acre public park built on the site of the former Domino Sugar Refinery, and it's a great place to hang out.
+
 - [Brooklyn Army Terminal](https://www.bklynarmyterminal.com/) is not open to the public, but it's worth paying attention to. The Brooklyn Army Terminal was built during World War II, and it used to be the largest military supply base in the country. Now, it's a large renovated warehouse complex in Sunset Park.
 
 - [Brooklyn Waterfront Artists](http://bwac.org/) is Brooklyn's largest, artist-run organization, and they have an exhibition space you can visit.

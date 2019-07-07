@@ -1,8 +1,7 @@
-
 # Things to do and read for urbanists @Portland
 
 ![](portland01.jpg)
-*Photo by Anna Holowetzki on Unsplash*
+_Photo by Anna Holowetzki on Unsplash_
 
 ### Things to do, places/project to check out
 
@@ -21,8 +20,11 @@
 ### Read
 
 - I enjoyed reading some articles recommended by one of my local friend, that explain rich history of North Williams Ave - once the vibrant heart of Portland’s Black community.
+
   - [Black Williams Project](http://blackwilliamsproject.com/)
   - [Portland Gentrification: The North Williams Avenue that Was -- 1956](https://www.theskanner.com/news/history/11409-portland-gentrification-the-north-williams-avenue-that-was-1956-2011-08-09)
+
+- [Portlandness: A Cultural Atlas](http://www.sasquatchbooks.com/book/?isbn=9781632170002&portlandness-by-david-banis) includes 150 infographic maps of Portland, explaining the city from various angles - highly recommended for map lovers!
 
 - I can't stop loving this [introduction document](https://www.portlandoregon.gov/bps/article/480760) about Portland's Central East district published by [bureau of planning and sustainability Portland](https://www.portlandoregon.gov/bps/) - very informative and has great design.
 

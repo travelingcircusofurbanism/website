@@ -12,6 +12,8 @@ _Photo by Yucel Moran on Unsplash_
   まちの保育園のアイデアになった場所
   クリエイティブリユーず：Remida, the creative recycling centre もある
 
+- [Gucci Reinvents a Former Aircraft Factory for Its New Milan Headquarters](https://www.dezeen.com/2018/02/23/piuarch-architecture-abandoned-aircraft-factory-gucci-milan-headquarters-italy/)
+
 ### Read
 
 - [Urbanism and Empire in Roman Sicily](https://utpress.utexas.edu/books/pfuntner-urbanism-and-empire-in-roman-sicily)
