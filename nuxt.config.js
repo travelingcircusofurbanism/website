@@ -84,6 +84,7 @@ module.exports = {
       const jaPosts = posts.filter(post => post.languages.ja === true)
       const enPosts = posts.filter(post => post.languages.en === true)
       const locations = require('./nuxt/static/generated/locations.json')
+      const tags = require('./nuxt/static/generated/tags.json')
       let categories = []
       posts.map(p => {
         // find categories
@@ -96,6 +97,7 @@ module.exports = {
         ...enPosts.map(p => `/${p.city}/${p.slug}`),
         ...jaPosts.map(p => `/${p.city}/ja/${p.slug}`),
         ...locations.map(l => `/at/${l}`),
+        ...tags.map(t => `/tag/${t}`),
         ...categories.map(c => `/is/${c}`),
       ]
     },

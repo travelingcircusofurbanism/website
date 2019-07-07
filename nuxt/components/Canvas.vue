@@ -1,6 +1,11 @@
 <template>
   <div id="canvas" :class="{closed: closed}">
-    <Map v-if="active === 'map'" class="fill" @close="close" @open="open"/>
+    <div
+      v-if="activeImage"
+      class="fill imagefill"
+      :style="{'background-image': `url(${activeImage})`}"
+    ></div>
+    <Map v-else class="fill" @close="close" @open="open" />
   </div>
 </template>
 
@@ -11,9 +16,13 @@ export default {
   components: { Map },
   data() {
     return {
-      active: 'map',
       closed: false,
     }
+  },
+  computed: {
+    activeImage() {
+      return this.$store.state.canvasImage
+    },
   },
   methods: {
     close() {
@@ -51,6 +60,11 @@ export default {
 
     @include width(mobile) {
       height: 100%;
+    }
+
+    &.imagefill {
+      background-position: center center;
+      background-size: cover;
     }
   }
 }

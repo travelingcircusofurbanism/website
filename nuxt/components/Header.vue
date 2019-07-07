@@ -11,9 +11,9 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <g stroke="#979797" stroke-width="8">
-          <path d="M0,10 L107,10" id="Line-2"></path>
-          <path d="M0,35 L107,35" id="Line-2-Copy"></path>
-          <path d="M0,60 L107,60" id="Line-2-Copy-2"></path>
+          <path d="M0,10 L107,10" id="Line-2" />
+          <path d="M0,35 L107,35" id="Line-2-Copy" />
+          <path d="M0,60 L107,60" id="Line-2-Copy-2" />
         </g>
       </svg>
     </div>
@@ -21,7 +21,7 @@
       <h1>Traveling Circus of Urbanism</h1>
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
-    <br>
+    <br />
     <div class="sublinks" v-if="!isMobile">
       <nuxt-link to="/about" :class="{ currentpage: path === '/about' }">About</nuxt-link>
       <nuxt-link to="/getinvolved" :class="{ currentpage: path === '/getinvolved' }">Get Involved</nuxt-link>
@@ -187,7 +187,7 @@ h3 {
 }
 
 .sublinks {
-  display: inline-block;
+  display: inline-flex;
   font-weight: 400;
   pointer-events: none;
   background: $text;
@@ -202,6 +202,7 @@ h3 {
     padding: $unit * 2 $content-padding / 2;
     background: $text;
     position: relative;
+    display: inline-block;
 
     &:after {
       $underlineheight: 3px;

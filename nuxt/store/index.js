@@ -17,6 +17,7 @@ export default () => {
       language: 'en',
       onlyShowLanguage: null,
       currentCity: null,
+      canvasImage: null,
       isDev: false,
       panMap: false,
       lightboxSrc: '',
@@ -76,6 +77,10 @@ export default () => {
 
       setMobileSearchSelectorIsOpen(state, isOpen) {
         state.mobileSearchSelectorIsOpen = isOpen
+      },
+
+      setCanvasImage(state, image) {
+        state.canvasImage = image
       },
 
       setPan(state, shouldPan) {

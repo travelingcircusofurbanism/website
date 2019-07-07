@@ -10,10 +10,7 @@
         Circus of Urbanismは、そんな想いで活動しています。
       </p>
       <p>
-        <strong>Travel(旅)</strong>をすることで、場のエッセンスを発見し、今までと異なる視点で都市を経験することが出来ます。また、世界中の各都市は決して独自のものではなく、
-        <a
-          href="https://www.unc.edu/courses/2006spring/geog/021/001/massey.pdf"
-        >グローバルに関係しあっている</a>こともわかります。
+        <strong>Travel(旅)</strong>をすることで、場のエッセンスを発見し、今までと異なる視点で都市を経験することが出来ます。また、世界中の各都市は決して独自のものではなく、グローバルに関係しあっていることもわかります。
       </p>
       <p>
         <strong>A circus(サーカス)</strong>は、様々な都市を転々と移動しながら、旅によって得た物語や知見を広めて行きます。
@@ -37,10 +34,7 @@
       </p>
       <p>
         <strong>Travel</strong> is a way to unravel the essence of places,
-        seeing them from different perspectives and revealing how
-        <a
-          href="https://www.unc.edu/courses/2006spring/geog/021/001/massey.pdf"
-        >they are globally connected.</a>
+        seeing them from different perspectives and revealing how they are globally connected.
       </p>
       <p>
         <strong>A circus</strong> moves from a city to another, telling stories

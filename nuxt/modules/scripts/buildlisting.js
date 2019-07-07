@@ -1,7 +1,7 @@
 const fs = require('fs')
 import { log, softTruncate } from '../../assets/commonFunctions'
 
-require.extensions['.md'] = function (module, filename) {
+require.extensions['.md'] = function(module, filename) {
   module.exports = fs.readFileSync(filename, 'utf8')
 }
 
@@ -9,8 +9,9 @@ const postDir = process.cwd() + '/posts'
 const generatedDir = process.cwd() + '/nuxt/static/generated'
 
 const allLocations = new Set()
+const allTags = new Set()
 
-export default function () {
+export default function() {
   return new Promise(resolve => {
     try {
       if (!fs.existsSync(generatedDir)) fs.mkdirSync(generatedDir)
@@ -55,6 +56,11 @@ export default function () {
           JSON.stringify(Array.from(allLocations)),
           'utf8'
         )
+        fs.writeFileSync(
+          generatedDir + '/tags.json',
+          JSON.stringify(Array.from(allTags)),
+          'utf8'
+        )
         log('green', ' Generated post data lists.')
         resolve()
       })
@@ -78,15 +84,15 @@ function getDataForPost(postDir, city, slug) {
   try {
     delete require.cache[`${postDir}/${city}/${slug}/data.js`]
     postData = require(`${postDir}/${city}/${slug}/data.js`)
-  } catch (e) { }
+  } catch (e) {}
   try {
     delete require.cache[`${postDir}/${city}/${slug}/content.md`]
     enContent = require(`${postDir}/${city}/${slug}/content.md`)
-  } catch (e) { }
+  } catch (e) {}
   try {
     delete require.cache[`${postDir}/${city}/${slug}/ja.md`]
     jaContent = require(`${postDir}/${city}/${slug}/ja.md`)
-  } catch (e) { }
+  } catch (e) {}
 
   try {
     if (!postData || (!enContent && !jaContent)) return
@@ -102,10 +108,10 @@ function getDataForPost(postDir, city, slug) {
       ? Array.isArray(postData.mapPosition)
         ? postData.mapPosition.map(p => p.location.toLowerCase())
         : [
-          postData.mapPosition.location
-            ? postData.mapPosition.location.toLowerCase()
-            : null,
-        ]
+            postData.mapPosition.location
+              ? postData.mapPosition.location.toLowerCase()
+              : null,
+          ]
       : []
     if (postData.polygons)
       postData.polygons.forEach(polygon =>
@@ -113,6 +119,8 @@ function getDataForPost(postDir, city, slug) {
       )
     if (locations.length > 0)
       locations.filter(l => l).forEach(l => allLocations.add(l))
+    if (postData.tags && postData.tags.length > 0)
+      postData.tags.forEach(t => allTags.add(t))
 
     let title = contentToUseForData.substring(
       contentToUseForData.indexOf('#') + 1
@@ -144,7 +152,10 @@ function getDataForPost(postDir, city, slug) {
         .replace(/\s+/g, ' ') // remove multiple spaces in a row
     description = softTruncate(description, enContent ? 200 : 70)
 
-    title = title.substring(0, title.indexOf('\n')).replace(/^\s*/g, '').replace(/\s*$/g, '')
+    title = title
+      .substring(0, title.indexOf('\n'))
+      .replace(/^\s*/g, '')
+      .replace(/\s*$/g, '')
 
     // create nice usable image path
     let image = postData.image
