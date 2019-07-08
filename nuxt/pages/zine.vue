@@ -1,42 +1,42 @@
 <template>
   <section class="content">
-    <template v-if="displayLanguage === 'ja'">
+    <main v-if="displayLanguage === 'ja'">
       <h1 class="title">TCUジン Vol. 0: Thesis</h1>
       <h3>Vol. 0: Thesis</h3>
       <BuyButton />
 
       <BuyButton />
-    </template>
-    <template v-else>
-      <h1 class="title">TCU Zine</h1>
-      <h3>Vol. 0: Thesis</h3>
+    </main>
+    <main v-else>
+      <h1 class="title">Our Zines</h1>
+      <img src="/assets/zine/1.jpg" />
+      <h3 class="sectionhead">Volume 0: Thesis</h3>
       <BuyButton />
-      <img src />
-      <p>
-        <b>Text about the magazine</b> text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-      </p>
-      <img src />
-      <img src />
-      <p>
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-      </p>
-      <img src />
-      <img src />
-      <p>
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-        Text about the magazine text about the magazine. Text about the magazine text about the magazine, text.
-      </p>
-      <BuyButton />
-    </template>
+      <div class="p">
+        It's finally here! Compiled and edited over more than a year of motion and learning, this is our thesis statement. Volume 0 journeys across Asia and the Americas and back again, uncovering what urbanism has to gain from transnational lifestyles and ideologies. If you are an urbanist, an architect, or simply love cities and the ways people engage with them, this is the zine for you. And at
+        <BuyButton :isButton="false">$7, it's too good to miss.</BuyButton>
+      </div>
+      <div class="p">
+        <img src />
+      </div>
+      <div
+        class="p"
+      >The zine features 40 pages of content with all-new stories, photos, and interviews exclusive to the physical edition alongside some retouched versions of our favorite web articles from the past year. As the first in the series, it's a slightly shorter prototype for us to explore new ideas and test storytelling methods and printing techniques — hence 'Volume 0'. We hope you like it as much as we do!</div>
+      <div class="p">
+        <img src />
+      </div>
+      <div class="p">
+        In future volumes of our Traveling Circus of Urbanism zine, we hope to curate stories from a global network of writers who have unique points of view about their region. If you're interested in piching a story about your city for the next zine, or in being a part of this project,
+        <a
+          href="mailto:travelingcircusofurbanism@gmail.com"
+          target="_blank"
+        >drop us a line!</a>
+      </div>
+      <div class="p">
+        <img src />
+      </div>
+      <BuyButton buttonText="Get your copy of Volume 0!" />
+    </main>
     <ContentFooter />
   </section>
 </template>
@@ -56,6 +56,12 @@ export default {
         {
           property: 'og:url',
           content: `https://www.travelingcircusofurbanism.com/zine/`,
+        },
+        {
+          hid: `og:image`,
+          property: 'og:image',
+          content:
+            'https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg',
         },
       ],
       script: [
@@ -93,7 +99,7 @@ export default {
   },
   mounted() {
     // set canvas to zine picture
-    this.$store.commit('setCanvasImage', '/assets/sitethumbnail.jpg')
+    this.$store.commit('setCanvasImage', '/assets/zine/hero.jpg')
   },
 }
 </script>
@@ -101,7 +107,23 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
+h3,
+.sectionhead {
+  margin-top: $unit * 6;
+  margin-bottom: $unit * 5;
+  color: $text;
+
+  &:before,
+  &:after {
+    background: $text;
+  }
+}
+
 img {
   width: 100%;
+}
+
+.p {
+  margin: $unit * 3 0;
 }
 </style>

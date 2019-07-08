@@ -32,6 +32,11 @@ a:active,
 a:visited,
 a:hover {
   color: $active;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &.subtle {
     color: inherit;
