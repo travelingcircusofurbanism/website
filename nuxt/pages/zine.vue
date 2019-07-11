@@ -1,10 +1,36 @@
 <template>
   <section class="content">
     <main v-if="displayLanguage === 'ja'">
-      <h1 class="title">TCUジン Vol. 0: Thesis</h1>
-      <h3>Vol. 0: Thesis</h3>
+      <h1 class="title">Our Zines</h1>
+      <h3 class="sectionhead">Vol. 0: Thesis</h3>
       <BuyButton />
-
+      <img src="/assets/zine/1.jpg" />
+      <div class="p">Traveling Circus of Urbanismが、zineになりました。</div>
+      <div
+        class="p"
+      >旅と越境、移動のなかで、「都市」というよく分からないも のへの興味から始まった「Traveling Circus of Urbanism(アーバニズムの旅するサー カス)」。2018年から2019年の 春にかけての1年間で、アメリカ、カナダ、メキシコ、コロンビア、カリブ諸国を転々としながら、7ヶ国約40都市を訪問し、都市やまちづくり、建築に関するプロジェクトや人物を訪ね歩きました。このzineでは、そうして1年かけて集めた物語の一部を紹介しています。</div>
+      <div class="p">
+        <img src="/assets/zine/2.jpg" />
+      </div>
+      <div
+        class="p"
+      >第１冊目のテーマは「Volume0: Thesis」。あえてひとつのテーマに絞らず、「Traveling Circus of Urbanism」の活動を紹介するための最初のプロトタイプとして作成しました。紹介されているキーワードは、アーバン・ジャーナリズム、ヒップホップ・アーキテクチャー、主観的地図、建築とエコロジーの融合であるアーコロジーなど。B5版、40ページとコンパクトなボリュームで、日英バイリンガルで作られています。</div>
+      <div class="p">
+        <img src="/assets/zine/4.jpg" />
+      </div>
+      <div class="p">
+        ２冊目以降は、今回よりもぐっとボリュームを増やし、冊子のマガジンを定期的に出版することを予定しています。記事を書いてみたいという方、出版協力に興味がある方は、
+        <a
+          href="mailto:travelingcircusofurbanism@gmail.com"
+          target="_blank"
+        >こちら</a>からお気軽にご連絡ください。
+      </div>
+      <div class="p">
+        <img src="/assets/zine/5.jpg" />
+      </div>
+      <div class="p">
+        <img src="/assets/zine/3.jpg" />
+      </div>
       <BuyButton />
     </main>
     <main v-else>
@@ -14,7 +40,7 @@
       <img src="/assets/zine/1.jpg" />
       <div class="p">
         It's finally here! Compiled and edited over more than a year of motion and learning, this is our thesis statement. Volume 0 journeys across Asia and the Americas and back again, uncovering what urbanism has to gain from transnational lifestyles and perspectives. If you are an urbanist, an architect, or simply love cities and the ways people engage with them, this is the zine for you. And at
-        <BuyButton :isButton="false">$7, it's too good to miss.</BuyButton>
+        <BuyButton :isButton="false">$8, it's too good to miss.</BuyButton>
       </div>
       <div class="p">
         <img src="/assets/zine/2.jpg" />
@@ -67,25 +93,25 @@ export default {
             'https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg',
         },
       ],
-      script: [
-        {
-          src:
-            'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-        },
-        {
-          src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-          id: 'snipcart',
-          'data-api-key':
-            'OWNjMjAwM2ItMWVkMy00YTA0LTk1MWYtNDAyYmIzN2UyNjA4NjM2OTgxMDA1NjMzMzM3Mzg1',
-        },
-      ],
-      link: [
-        {
-          href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-          type: 'text/css',
-          rel: 'stylesheet',
-        },
-      ],
+      // script: [
+      //   {
+      //     src:
+      //       'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
+      //   },
+      //   {
+      //     src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
+      //     id: 'snipcart',
+      //     'data-api-key':
+      //       'OWNjMjAwM2ItMWVkMy00YTA0LTk1MWYtNDAyYmIzN2UyNjA4NjM2OTgxMDA1NjMzMzM3Mzg1',
+      //   },
+      // ],
+      // link: [
+      //   {
+      //     href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
+      //     type: 'text/css',
+      //     rel: 'stylesheet',
+      //   },
+      // ],
     }
   },
   data() {
@@ -95,6 +121,7 @@ export default {
   computed: {
     displayLanguage() {
       return this.$store.state.language
+      // return 'ja'
     },
   },
   beforeDestroy() {
