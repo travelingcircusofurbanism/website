@@ -116,6 +116,11 @@ export default {
           content: `We've made our first zine! Check it out here.`,
           hid: `description`,
         },
+        {
+          hid: `og:description`,
+          property: 'og:description',
+          content: `We've made our first zine! Check it out here.`,
+        },
       ],
       // script: [
       //   {
