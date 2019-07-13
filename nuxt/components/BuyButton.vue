@@ -142,5 +142,6 @@ button {
   color: $active;
   max-width: 400px;
   margin: 0 auto;
+  margin-bottom: 4 * $unit;
 }
 </style>

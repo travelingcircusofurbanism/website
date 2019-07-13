@@ -17,14 +17,21 @@
         </g>
       </svg>
     </div>
-    <nuxt-link exact to="/" class="logo" @click.native="resetView">
+    <nuxt-link
+      exact
+      to="/"
+      class="logo"
+      :class="{hasshadow: !canvasImage}"
+      @click.native="resetView"
+    >
       <h1>Traveling Circus of Urbanism</h1>
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
     <br />
-    <div class="sublinks" v-if="!isMobile">
+    <div class="sublinks" :class="{hasshadow: !canvasImage}" v-if="!isMobile">
       <nuxt-link to="/about" :class="{ currentpage: path === '/about' }">About</nuxt-link>
       <nuxt-link to="/getinvolved" :class="{ currentpage: path === '/getinvolved' }">Get Involved</nuxt-link>
+      <nuxt-link to="/zine" class="zinehighlight" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
     </div>
     <div>
       <div class="citylabel" :class="{ active: currentCity }">
@@ -58,6 +65,9 @@ export default {
     },
     path() {
       return this.$nuxt.$route.path
+    },
+    canvasImage() {
+      return this.$store.state.canvasImage
     },
   },
   mounted() {},
@@ -145,7 +155,10 @@ a:active {
   padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * 0.75;
   font-weight: 600;
   background: $active;
-  box-shadow: $over-map-shadow;
+
+  &.hasshadow {
+    box-shadow: $over-map-shadow;
+  }
 
   @include width(mobile) {
     box-shadow: none;
@@ -187,19 +200,23 @@ h3 {
 }
 
 .sublinks {
+  position: relative;
   display: inline-flex;
   font-weight: 400;
   pointer-events: none;
   background: $text;
-  box-shadow: $over-map-shadow;
-  padding-left: $content-padding / 4;
+  padding-left: $content-padding / 2.5;
+
+  &.hasshadow {
+    box-shadow: $over-map-shadow;
+  }
 
   @include width(mobile) {
     display: none;
   }
 
   & > a {
-    padding: $unit * 2 $content-padding / 2;
+    padding: $unit * 2 $content-padding / 2.5;
     background: $text;
     position: relative;
     display: inline-block;
@@ -229,6 +246,10 @@ h3 {
       &:after {
         width: 100%;
       }
+    }
+
+    &.zinehighlight {
+      color: lighten($active, 10%);
     }
 
     @include width(mobile) {
