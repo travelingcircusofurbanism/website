@@ -19,6 +19,7 @@ export default () => {
       currentCity: null,
       canvasImage: null,
       isDev: false,
+      viewingAsDev: false,
       panMap: false,
       lightboxSrc: '',
       mobileSearchSelectorIsOpen: false,
@@ -69,7 +70,10 @@ export default () => {
 
       setDev(state, isDev) {
         state.isDev = isDev
+        state.viewingAsDev = isDev
       },
+      setViewingAsDev: (state, viewingAsDev) =>
+        (state.viewingAsDev = viewingAsDev),
 
       setLightboxSrc(state, src) {
         state.lightboxSrc = src
@@ -144,7 +148,7 @@ export default () => {
 
       setOnlyShowLanguage({ dispatch, state }, lang) {
         state.onlyShowLanguage = lang
-        state.language = lang
+        state.language = lang || state.language
         dispatch('updateShowablePosts')
       },
 
@@ -158,9 +162,9 @@ export default () => {
             (!state.language === 'en' ||
               p.languages[state.onlyShowLanguage] === true ||
               p.languages['en'] === true ||
-              state.isDev) &&
+              state.viewingAsDev) &&
             // only show public posts
-            (state.isDev || p.public === true) &&
+            (state.viewingAsDev || p.public === true) &&
             // only show posts that are published in the past
             MDYToDate(p.date).getTime() < new Date().getTime()
         )

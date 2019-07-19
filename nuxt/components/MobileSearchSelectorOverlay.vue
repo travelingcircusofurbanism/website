@@ -8,7 +8,7 @@
         <div class="listsectionlabel sitename">
           <nuxt-link to="/" @click.native="close" exact>
             Traveling circus
-            <br>of urbanism
+            <br />of urbanism
           </nuxt-link>
         </div>
         <div class="listentry">
@@ -53,7 +53,7 @@ export default {
       return this.$store.state.mobileSearchSelectorIsOpen
     },
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     currentShowablePosts() {
       return this.$store.state.currentShowablePosts

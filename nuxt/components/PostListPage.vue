@@ -3,10 +3,10 @@
     <LanguagePicker
       v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
     />
-    <Breadcrumb/>
-    <SearchSelector/>
-    <PostList :posts="showablePosts" :title="postListTitle"/>
-    <ContentFooter/>
+    <Breadcrumb />
+    <SearchSelector />
+    <PostList :posts="showablePosts" :title="postListTitle" />
+    <ContentFooter />
   </section>
 </template>
 
@@ -48,7 +48,7 @@ export default {
       return this.$store.state.isMobile
     },
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     userLanguage() {
       return this.$store.state.language

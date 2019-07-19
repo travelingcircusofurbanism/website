@@ -17,7 +17,7 @@
       </nuxt-link>
 
       <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
-        <img src="~/assets/icons/japanFlag.svg" class="flag-icon">
+        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
         <span class="sub">
           {{
           languages.en ? '日本語版あり' : '日本語での記事'
@@ -25,7 +25,7 @@
         </span>
       </div>
 
-      <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date"/>
+      <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
       <div class="description">
         {{ description }}
@@ -56,7 +56,7 @@ export default {
   components: { PostDetails },
   computed: {
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     isMobile() {
       return this.$store.state.isMobile

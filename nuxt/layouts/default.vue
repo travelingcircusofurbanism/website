@@ -1,11 +1,11 @@
 <template>
   <div class="master" ref="master" :class="{ mobile: isMobile }">
-    <Lightbox class="lightbox"/>
-    <MobileSearchSelectorOverlay class="mobilesearch"/>
-    <Header/>
-    <Canvas/>
-    <!--<DevOverlay class="devoverlay" /> -->
-    <nuxt/>
+    <Lightbox class="lightbox" />
+    <MobileSearchSelectorOverlay class="mobilesearch" />
+    <Header />
+    <Canvas />
+    <DevOverlay class="devoverlay" />
+    <nuxt />
   </div>
 </template>
 

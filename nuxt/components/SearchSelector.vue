@@ -8,9 +8,14 @@
       xmlns="http://www.w3.org/2000/svg"
       xmlns:xlink="http://www.w3.org/1999/xlink"
     >
-      <g fill="none" transform="translate(11.000000, 11.000000)" stroke="#979797" stroke-width="14">
-        <circle id="Oval" cx="42" cy="42" r="42"></circle>
-        <path d="M73.5761719,73.5761719 L107.720703,107.720703" id="Line" stroke-linecap="square"></path>
+      <g
+        fill="none"
+        transform="translate(11.000000, 11.000000)"
+        stroke="#979797"
+        stroke-width="14"
+      >
+        <circle id="Oval" cx="42" cy="42" r="42" />
+        <path d="M73.5761719,73.5761719 L107.720703,107.720703" id="Line" stroke-linecap="square" />
       </g>
     </svg>
     <input
@@ -19,7 +24,7 @@
       class="searchinput"
       :class="{open: isOpen}"
       @focus="open"
-    >
+    />
     <div class="closebutton" v-if="isOpen" @click="close">
       <div>✕</div>
     </div>
@@ -78,7 +83,7 @@ export default {
       return this.$store.state.isMobile
     },
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     currentShowablePosts() {
       return this.$store.state.currentShowablePosts

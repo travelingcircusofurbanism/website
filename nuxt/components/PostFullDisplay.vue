@@ -5,7 +5,7 @@
       v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
     >
       <template v-if="displayLanguage !== 'ja'">
-        <img src="~/assets/icons/japanFlag.svg" class="flag-icon">
+        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
         <span>日本語版もあります。</span>
         <span class="button invert" @click="setLanguage('ja')">切り替える</span>
       </template>
@@ -14,7 +14,7 @@
         <span class="button invert" @click="setLanguage('en')">英語に戻る</span>
       </template>
     </div>
-    <Breadcrumb :title="titleInLanguage"/>
+    <Breadcrumb :title="titleInLanguage" />
 
     <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ titleInLanguage }}</h1>
 
@@ -26,9 +26,9 @@
       :date="date"
     />
 
-    <Tags :tags="tags"/>
+    <Tags :tags="tags" />
 
-    <LoaderIcon v-if="loading" :active="loading" :absolute="false"/>
+    <LoaderIcon v-if="loading" :active="loading" :absolute="false" />
 
     <article
       v-lazy-container="{
@@ -40,9 +40,9 @@
       v-html="contentToDisplay"
     ></article>
 
-    <RelatedArticles :city="city" :current="slug"/>
+    <RelatedArticles :city="city" :current="slug" />
 
-    <ContentFooter/>
+    <ContentFooter />
   </section>
 </template>
 
@@ -100,7 +100,7 @@ export default {
 
   computed: {
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     isMobile() {
       return this.$store.state.isMobile

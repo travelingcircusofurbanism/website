@@ -1,7 +1,7 @@
 <template>
   <section class="content">
-    <LanguagePicker/>
-    <SearchSelector/>
+    <LanguagePicker />
+    <SearchSelector />
     <div class="intro" v-if="showIntro">
       <strong>
         This is a blog by
@@ -10,8 +10,8 @@
       <strong>all about cities!</strong>
     </div>
 
-    <PostList :posts="showablePosts" title="Recent Posts"/>
-    <ContentFooter/>
+    <PostList :posts="showablePosts" title="Recent Posts" />
+    <ContentFooter />
   </section>
 </template>
 
@@ -57,7 +57,7 @@ export default {
       return this.$store.state.isMobile
     },
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     userLanguage() {
       return this.$store.state.language

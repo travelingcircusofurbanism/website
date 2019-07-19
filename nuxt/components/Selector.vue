@@ -78,7 +78,7 @@ export default {
       return this.$store.state.isMobile
     },
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     usablePosts() {
       return this.$store.state.currentShowablePosts

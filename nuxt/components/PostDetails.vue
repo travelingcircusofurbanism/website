@@ -11,8 +11,8 @@
       <nuxt-link
         :to="'/at/' + (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location).toLowerCase()"
         class="sublink"
-      >{{ (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location) }}</nuxt-link>
-      {{ cityIsLocation ? ' ・ ' : ', ' }}
+      >{{ (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location) }}{{ cityIsLocation ? '' : ', ' }}</nuxt-link>
+      {{ cityIsLocation ? ' ・ ' : '' }}
     </span>
     <span v-if="city && !cityIsLocation">
       <nuxt-link :to="'/' + city" class="sublink">

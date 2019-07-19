@@ -35,7 +35,7 @@ export default {
   },
   computed: {
     isDev() {
-      return this.$store.state.isDev
+      return this.$store.state.viewingAsDev
     },
     onlyShowLanguage() {
       return this.$store.state.onlyShowLanguage

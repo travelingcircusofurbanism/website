@@ -1,12 +1,12 @@
 <template>
   <div id="devoverlay" v-if="isDev">
     Dev menu!
-    <select v-model="userLang">
+    <select v-if="!viewingAsDev" v-model="userLang">
       <option value="en">EN User</option>
       <option value="ja">JA User</option>
     </select>
-    <input type="checkbox" v-model="showDrafts" />Drafts
-    <input type="checkbox" v-model="asDev" />View As Dev
+    <input type="checkbox" @click="toggleDevView" :checked="viewingAsDev" />
+    <span @click="toggleDevView">View As Dev</span>
   </div>
 </template>
 
@@ -15,24 +15,31 @@ export default {
   data() {
     return {
       userLang: this.$store.state.language,
-      showDrafts: true,
-      asDev: true,
     }
   },
   computed: {
     isDev() {
       return this.$store.state.isDev
     },
+    viewingAsDev() {
+      return this.$store.state.viewingAsDev
+    },
   },
   watch: {
     userLang(newLang) {
       this.$store.dispatch('setLanguage', newLang)
-    },
-    asDev(newSetting) {
-      this.$store.commit('setDev', newSetting)
+      this.$store.dispatch('setOnlyShowLanguage')
     },
   },
-  methods: {},
+  mounted() {
+    // console.log(this.isDev)
+  },
+  methods: {
+    toggleDevView() {
+      this.$store.commit('setViewingAsDev', !this.viewingAsDev)
+      this.$store.dispatch('updateShowablePosts')
+    },
+  },
 }
 </script>
 
@@ -48,6 +55,7 @@ export default {
   top: 0;
   left: 0;
   color: white;
+  font-size: 12px;
 
   @include width(mobile) {
   }
