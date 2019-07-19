@@ -50,7 +50,9 @@
         gain from transnational lifestyles and perspectives. If you are an
         urbanist, an architect, or simply love cities and the ways people engage
         with them, this is the zine for you. And at
-        <BuyButton :isButton="false">$8, it's too good to miss.</BuyButton>
+        <BuyButton :isButton="false">
+          <button type="submit">$8, it's too good to miss.</button>
+        </BuyButton>
       </div>
       <div class="p">
         <img src="/assets/zine/2.jpg" />
@@ -149,8 +151,8 @@ export default {
   components: { ContentFooter, BuyButton },
   computed: {
     displayLanguage() {
-      // return this.$store.state.language
-      return 'ja'
+      return this.$store.state.language
+      // return 'ja'
     },
   },
   beforeDestroy() {

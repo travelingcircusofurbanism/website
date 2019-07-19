@@ -1,4 +1,5 @@
 <template>
+  <!-- JPY -->
   <form
     action="https://www.paypal.com/cgi-bin/webscr"
     method="post"
@@ -6,7 +7,11 @@
     :class="{fullwidth: isButton}"
   >
     <input type="hidden" name="cmd" value="_s-xclick" />
-    <input type="hidden" name="hosted_button_id" value="MM4R7DRB7AF8Q" />
+    <input
+      type="hidden"
+      name="hosted_button_id"
+      :value="displayLanguage === 'ja' ? 'MM4R7DRB7AF8Q' : 'GEQXLFP5ER8GA'"
+    />
     <div :class="{inline: !isButton, fakeLink: !isButton, center: isButton }">
       <slot>
         <button class="button blue" type="submit">
@@ -16,7 +21,7 @@
         </button>
         <div
           class="price"
-        >{{displayLanguage === 'ja' ? '￥800 送料込 (Paypalで支払う)' : '800 Yen, or about $7.30 USD. Worldwide shipping included. (Payment through Paypal)'}}</div>
+        >{{displayLanguage === 'ja' ? '￥800 送料込 (Paypalで支払う)' : '$8 USD, worldwide shipping included. (Payment through Paypal)'}}</div>
       </slot>
     </div>
     <!-- <input
@@ -115,6 +120,20 @@ button {
 
 .inline {
   display: inline;
+
+  button {
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: none;
+    color: $active;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .fakeLink {
