@@ -78,6 +78,7 @@ function formatMarkdownToSiteHTML(baseMD, city, post) {
   if (!baseMD) return
   let generatedHTML = md.render(baseMD)
   generatedHTML = removeTitle(generatedHTML)
+  generatedHTML = fixSpecialCharacters(generatedHTML)
   generatedHTML = fixImages(generatedHTML, city, post)
   generatedHTML = fixLinks(generatedHTML)
   generatedHTML = fixVideos(generatedHTML)
@@ -89,6 +90,7 @@ function formatMarkdownToRSSHTML(baseMD, city, post) {
   if (!baseMD) return
   let generatedHTML = md.render(baseMD)
   generatedHTML = removeTitle(generatedHTML)
+  generatedHTML = fixSpecialCharacters(generatedHTML)
   generatedHTML = fixImagesForRSS(generatedHTML, city, post)
   generatedHTML = removeExcessSpaces(generatedHTML)
   return generatedHTML
@@ -97,6 +99,14 @@ function formatMarkdownToRSSHTML(baseMD, city, post) {
 function removeTitle(baseHTML) {
   const newHTML = baseHTML.substring(baseHTML.indexOf('<h1>'))
   return newHTML.substring(newHTML.indexOf('\n'))
+}
+
+function fixSpecialCharacters(baseHTML) {
+  const newHTML = baseHTML
+    .replace(/㎡/gim, 'm<sup>2</sup>')
+    .replace(/ - /gim, ' — ')
+    .replace(/h1>/gim, 'h2>')
+  return newHTML
 }
 
 function fixImages(baseHTML, city, post) {

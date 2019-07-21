@@ -33,12 +33,12 @@
       <nuxt-link to="/getinvolved" :class="{ currentpage: path === '/getinvolved' }">Get Involved</nuxt-link>
       <nuxt-link to="/zine" class="zinehighlight" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
     </div>
-    <div>
+    <!-- <div>
       <div class="citylabel" :class="{ active: currentCity }">
         Current City:
         <span>{{ capitalize(currentCity) }}</span>
       </div>
-    </div>
+    </div>-->
   </div>
 </template>
 
@@ -181,6 +181,9 @@ h1 {
   font-size: 2.2rem;
   margin: 0;
   color: white !important;
+  white-space: nowrap;
+  line-height: 1;
+  // letter-spacing: -0.5px;
 
   @include width(mobile) {
     font-size: 1.45rem;
@@ -216,13 +219,13 @@ h3 {
   }
 
   & > a {
-    padding: $unit * 2 $content-padding / 2.5;
+    padding: $unit * 1.5 $content-padding / 2.5;
     background: $text;
     position: relative;
     display: inline-block;
 
     &:after {
-      $underlineheight: 3px;
+      $underlineheight: 1px;
       content: '';
       position: absolute;
       bottom: 0; //($unit * 2) - $underlineheight;

@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <img src="~assets/about.jpg" alt="About the traveling circus of urbanism">
+    <img src="~assets/about.jpg" alt="About the traveling circus of urbanism" />
     <template v-if="displayLanguage === 'ja'">
       <h1 class="title">
         <span class="small">このサイトについて</span>
@@ -50,10 +50,10 @@
         urban sustainability and more.
       </p>
 
-      <h3 class="sectionhead">Core Team</h3>
+      <div class="sectionhead">Core Team</div>
       <div class="personlist">
         <div class="person">
-          <img src="~/assets/staff/marikocolor.jpg">
+          <img src="~/assets/staff/marikocolor.jpg" />
           <span>
             <span class="name">Mariko Sugita</span>
             <span class="title">Founder, Editor in Chief</span>
@@ -69,7 +69,7 @@
           </span>
         </div>
         <div class="person">
-          <img src="~/assets/staff/jaspercolor.jpg">
+          <img src="~/assets/staff/jaspercolor.jpg" />
           <span>
             <span class="name">Jasper Stephenson</span>
             <span class="title">Designer, Developer</span>
@@ -93,7 +93,7 @@
       </p>
     </template>
 
-    <ContentFooter/>
+    <ContentFooter />
   </section>
 </template>
 
@@ -140,6 +140,8 @@ img {
   font-size: 0.6em;
 }
 .sectionhead {
+  margin-left: 0 !important;
+
   @include width(mobile) {
     margin-top: $unit * 6;
   }

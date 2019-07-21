@@ -1,5 +1,5 @@
 <template>
-  <div id="devoverlay" v-if="isDev">
+  <div id="devoverlay" v-if="isDev && !hide">
     Dev menu!
     <select v-if="!viewingAsDev" v-model="userLang">
       <option value="en">EN User</option>
@@ -7,6 +7,7 @@
     </select>
     <input type="checkbox" @click="toggleDevView" :checked="viewingAsDev" />
     <span @click="toggleDevView">View As Dev</span>
+    <button @click="hide = true">Hide for now</button>
   </div>
 </template>
 
@@ -15,6 +16,7 @@ export default {
   data() {
     return {
       userLang: this.$store.state.language,
+      hide: false,
     }
   },
   computed: {
@@ -38,6 +40,10 @@ export default {
     toggleDevView() {
       this.$store.commit('setViewingAsDev', !this.viewingAsDev)
       this.$store.dispatch('updateShowablePosts')
+      if (this.viewingAsDev) {
+        this.$store.dispatch('setLanguage', 'en')
+        this.$store.dispatch('setOnlyShowLanguage')
+      }
     },
   },
 }
@@ -58,6 +64,12 @@ export default {
   font-size: 12px;
 
   @include width(mobile) {
+    position: absolute;
+    top: $unit * 8;
+    select,
+    button {
+      background: white;
+    }
   }
 }
 </style>

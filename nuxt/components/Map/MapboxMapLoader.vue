@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss" >
 @import '~/assets/variables.scss';
 
 #map {
@@ -64,11 +64,11 @@ export default {
     height: 100% !important;
     top: 0;
   }
-}
 
-.mapbox-ctrl-attrib,
-.mapboxgl-missing-css,
-.mapboxgl-control-container {
-  display: none;
+  .mapbox-ctrl-attrib,
+  .mapboxgl-missing-css,
+  .mapboxgl-control-container {
+    display: none;
+  }
 }
 </style>

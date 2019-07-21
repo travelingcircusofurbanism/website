@@ -170,7 +170,7 @@ export default {
 
 h1 {
   width: 100%;
-  text-align: center;
+  // text-align: center;
 }
 
 h3,

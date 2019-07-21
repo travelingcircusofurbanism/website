@@ -15,7 +15,8 @@
       </a>
     </p>
     <p>
-      All content copyright Mariko Sugita, except where noted.</br>
+      All content copyright Mariko Sugita, except where noted.
+      <br />
       <a href="mailto:travelingcircusofurbanism@gmail.com">Get in touch!</a>
     </p>
   </div>
@@ -24,36 +25,35 @@
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-  .footer {
-    margin: $content-padding * -1;
-    margin-top: $content-padding * 2;
-    color: rgba(white, .6);
-    background: $text;
-    padding: $content-padding;
-    box-shadow: 0 5000vh 0 5000vh $text;
+.footer {
+  grid-column: 1 / -1;
+  margin: $content-padding * -1;
+  margin-top: $content-padding * 2;
+  color: rgba(white, 0.6);
+  background: $text;
+  padding: $content-padding;
+  box-shadow: 0 5000vh 0 5000vh $text;
 
-    
-    * {
-      text-align: center;
-    }
+  * {
+    text-align: center;
+  }
 
-    @include width (mobile) {
-      margin: $content-padding-mobile * -1;
-      margin-top: $content-padding-mobile * 2;
-      padding: $content-padding-mobile;
-    }
+  @include width(mobile) {
+    margin: $content-padding-mobile * -1;
+    margin-top: $content-padding-mobile * 2;
+    padding: $content-padding-mobile;
+  }
 
-    .images {
-      & > * {
-        opacity: .7;
-        padding: 10px;
-        transition: all .2s;
+  .images {
+    & > * {
+      opacity: 0.7;
+      padding: 10px;
+      transition: all 0.2s;
 
-        &:hover {
-          opacity: 1;
-        }
+      &:hover {
+        opacity: 1;
       }
     }
   }
-
+}
 </style>

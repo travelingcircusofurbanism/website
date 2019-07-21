@@ -12,7 +12,7 @@
       name="hosted_button_id"
       :value="displayLanguage === 'ja' ? 'MM4R7DRB7AF8Q' : 'GEQXLFP5ER8GA'"
     />
-    <div :class="{inline: !isButton, fakeLink: !isButton, center: isButton }">
+    <div class="visiblebuycontent" :class="{inline: !isButton, fakeLink: !isButton }">
       <slot>
         <button class="button blue" type="submit">
           <span
@@ -98,6 +98,12 @@ form {
   width: 100%;
 }
 
+.visiblebuycontent {
+  // margin-top: $unit * 4;
+  display: flex;
+  align-items: center;
+}
+
 button {
   border: none;
   outline: none;
@@ -110,6 +116,9 @@ button {
   display: inline-block;
   margin-right: 0;
   margin-bottom: $unit;
+  flex-shrink: 0;
+  flex-grow: 0;
+  margin-right: $unit * 4;
 
   &:hover,
   div,
@@ -145,9 +154,9 @@ button {
   }
 }
 
-.center {
-  text-align: center;
-}
+// .center {
+//   text-align: center;
+// }
 
 .cta {
   font-size: 1em;
@@ -156,11 +165,12 @@ button {
 }
 
 .price {
-  font-size: 1em;
+  font-size: 0.88em;
   font-weight: 200;
   color: $active;
   max-width: 400px;
-  margin: 0 auto;
-  margin-bottom: 4 * $unit;
+  line-height: 1.3;
+  // margin: 0 auto;
+  // margin-bottom: 4 * $unit;
 }
 </style>

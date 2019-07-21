@@ -1,0 +1,146 @@
+@import 'variables';
+
+.markdown {
+  position: relative;
+  margin-top: $unit * 6;
+  margin-bottom: $unit * 10;
+  hyphens: auto;
+  text-align: justify;
+
+  @include width(mobile) {
+    margin-top: $unit * 3;
+  }
+
+  h2 {
+    margin-top: $unit * 8;
+    margin-bottom: $unit * 2;
+    line-height: 1.2;
+  }
+
+  h1,
+  h2 {
+    text-align: left;
+    hyphens: none;
+  }
+
+  img {
+    max-width: 100%;
+    margin: $unit * 4 auto;
+    display: block;
+    cursor: zoom-in;
+    transition: filter 0.3s;
+
+    @include width(mobile) {
+      margin: $unit * 2 auto;
+    }
+    @media (max-width: 630px) {
+      width: 100vw;
+      min-width: 100vw;
+      margin: $unit * 3 $content-padding-mobile * -1;
+    }
+  }
+
+  img[lazy='loading'] {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    position: relative;
+    z-index: 1;
+    filter: blur(2px);
+
+    @include width(mobile) {
+      max-height: auto;
+      width: 100vw;
+    }
+  }
+
+  img + em,
+  img + br + em {
+    display: block;
+    text-align: center;
+    position: relative;
+    top: $unit * -2;
+    font-size: 0.85em;
+    opacity: 0.65;
+    line-height: 1.35;
+    padding: 0 5%;
+
+    @include width(mobile) {
+      top: $unit * -0.5;
+      padding: 0 0 $unit * 2 0;
+    }
+  }
+  img + br,
+  img + br + em + br {
+    display: none;
+  }
+
+  h1 + p img:first-of-type {
+    padding-top: 0;
+  }
+
+  em {
+    strong {
+      display: block;
+      text-align: left;
+    }
+  }
+
+  ol,
+  ul {
+    @include width(mobile) {
+      padding-left: $content-padding-mobile;
+    }
+  }
+
+  hr {
+    border: 1.5px dashed $offwhite;
+    box-shadow: none;
+    transform: scale(3, 1);
+    height: 0;
+    // background: $offwhite;
+    margin: $unit * 12 auto;
+    width: 6%;
+
+    @include width(mobile) {
+      margin: $unit * 8 auto;
+    }
+  }
+
+  blockquote {
+    font-style: italic;
+    padding: $unit * 2 $unit * 4;
+    // background: rgba($offwhite, 0.3);
+    position: relative;
+
+    &:before {
+      content: '"';
+      position: absolute;
+      top: $unit * -12;
+      left: $unit * -10;
+      color: $active;
+      opacity: 0.2;
+      font-size: 13em;
+      font-weight: 700;
+      font-family: 'Unica One', 'Raleway', sans-serif;
+    }
+  }
+
+  a.external {
+    // background: url('~assets/icons/external.svg') center right no-repeat;
+    // background-size: 9px;
+    // padding-right: 12px;
+    // margin-right: 2px;
+  }
+
+  *.highlight {
+    padding: $unit * 0.5;
+    background: rgba($active, 0.12);
+    transition: all 0.1s;
+
+    &:hover {
+      color: white !important;
+      background: $highlight;
+    }
+  }
+}

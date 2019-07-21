@@ -1,11 +1,13 @@
 <template>
   <div class="relatedposts" v-if="postsToDisplay.length > 0">
-    <h4 class="sectionhead">
+    <div class="sectionhead">
       More posts from
-      <nuxt-link :to="`/${city}`" class="citylink">{{
+      <nuxt-link :to="`/${city}`" class="citylink">
+        {{
         capitalize(city)
-      }}</nuxt-link>
-    </h4>
+        }}
+      </nuxt-link>
+    </div>
     <div class="postgrid">
       <nuxt-link
         v-for="(post, key) in postsToDisplay"

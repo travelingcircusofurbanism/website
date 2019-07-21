@@ -40,7 +40,7 @@ export default {
       let postSlash = path.substring(path.indexOf('/') + 1)
       let pagePrefix = ''
       if (preSlash === 'is' || preSlash === 'at') pagePrefix = preSlash + ': '
-      if (preSlash === 'tag') pagePrefix = '#'
+      else if (preSlash === 'tag') pagePrefix = '#'
       else if (preSlash !== '')
         pathEls.push({
           label: this.capitalize(decodeURI(preSlash)),

@@ -1,7 +1,7 @@
 <template>
   <div class="error-center">
     <h1>We haven't traveled there yet!</h1>
-    <h3><a href="/">Back to home</a></h3>
+    <a class="subtle button blue" href="/">Back to home</a>
     <br />
     <div class="centered">
       <div>Or, you can check out some of our all-time favorite posts!</div>
@@ -161,6 +161,11 @@ export default {
   align-items: center;
   flex-direction: column;
   margin-bottom: $unit * 5;
+}
+
+a.subtle.button {
+  color: white !important;
+  text-decoration: none;
 }
 
 .error-center {

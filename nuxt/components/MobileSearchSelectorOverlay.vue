@@ -127,7 +127,7 @@ $overlaybg: rgba($text, 1);
   .megalist {
     width: 100%;
     color: rgba(white, 0.7);
-    padding: 0 0 $unit * 4 0;
+    padding: 0 0 $unit * 8 0;
     overflow-y: auto;
 
     .listsectionlabel {

@@ -1,6 +1,6 @@
 <template>
   <div class="post-list">
-    <h3 class="sectionhead" v-if="title">{{ title }}</h3>
+    <h3 class="sectionhead" v-if="title">{{ capitalize(title) }}</h3>
     <div v-else class="spacer"></div>
     <transition-group name="fade">
       <PostPreview
@@ -25,6 +25,7 @@
 <script>
 import PostPreview from '~/components/PostPreview'
 const { MDYToDate } = require('~/assets/commonFunctions.js')
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
@@ -46,11 +47,15 @@ export default {
   data() {
     return {
       shownPostCount: this.perPage,
+      scrollElement: null,
     }
   },
   computed: {
     isDev() {
       return this.$store.state.viewingAsDev
+    },
+    isMobile() {
+      return this.$store.state.isMobile
     },
     userLanguage() {
       return this.$store.state.language
@@ -67,14 +72,25 @@ export default {
       return this.showablePosts.slice(0, this.shownPostCount)
     },
   },
+  watch: {
+    isMobile(isMobile) {
+      this.scrollElement.removeEventListener('scroll', this.scroll)
+      this.scrollElement = isMobile
+        ? document.querySelector('body')
+        : this.$el.parentNode
+      this.scrollElement.addEventListener('scroll', this.scroll)
+    },
+  },
   mounted() {
-    this.$el.parentNode.addEventListener('scroll', this.scroll)
+    this.scrollElement = this.isMobile ? window : this.$el.parentNode
+    this.scrollElement.addEventListener('scroll', this.scroll)
   },
   beforeDestroy() {
-    this.$el.parentNode.removeEventListener('scroll', this.scroll)
+    this.scrollElement.removeEventListener('scroll', this.scroll)
   },
   methods: {
     MDYToDate,
+    capitalize,
     showMore() {
       if (this.shownPostCount < this.showablePosts.length) {
         this.shownPostCount += this.perPage
@@ -83,11 +99,12 @@ export default {
       }
     },
     scroll() {
-      const contentBox = this.$el.parentNode
+      const contentBox = this.scrollElement
       const scrollDistanceLeft =
         this.$el.offsetHeight -
         (document.documentElement.clientHeight || window.innerHeight) -
         contentBox.scrollTop
+      console.log(scrollDistanceLeft)
       if (scrollDistanceLeft < 500) this.showMore()
     },
   },

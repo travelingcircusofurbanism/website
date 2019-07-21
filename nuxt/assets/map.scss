@@ -1,0 +1,199 @@
+@import 'variables';
+
+$mapnumberfontstack: 'Helvetica Neue', 'Helvetica', -apple-system,
+  BlinkMacSystemFont, 'Segoe UI', Arial, sans-serif;
+$maplabelfontweight: 400;
+$mapwordsfontsize: 0.95em;
+
+#map {
+}
+
+.mapboxgl-canvas {
+  filter: brightness(0.67);
+}
+
+.mapboxgl-missing-css,
+.mapbox-improve-map,
+.mapboxgl-ctrl-attrib,
+.mapboxgl-control-container {
+  display: none;
+}
+
+.polygonlabel {
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  user-select: none;
+  color: white;
+  $shadow: rgba($text, 0.15);
+  text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+    0 -2px 12px $shadow, -2px 0 12px $shadow;
+  font-weight: $maplabelfontweight;
+  font-size: $mapwordsfontsize;
+  letter-spacing: 0.8px;
+  transition: opacity 0.35s, color 0.1s;
+
+  &.off {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @include width(desktop) {
+    &.highlight,
+    &:hover,
+    &.hover {
+      color: $activelight;
+    }
+
+    &.doublehighlight,
+    &.highlight:hover,
+    &.highlight.hover {
+      color: $highlight;
+    }
+  }
+}
+
+.marker,
+.cluster {
+  z-index: 100;
+  display: inline-block;
+  position: absolute;
+  font-size: 1.05em;
+  pointer-events: none;
+  user-select: none;
+
+  @include width(mobile) {
+    font-size: 1em;
+  }
+
+  .pin {
+    pointer-events: auto;
+    width: $unit * 3.5;
+    height: $unit * 3.5;
+    background-color: white;
+    mask-image: url('~assets/pin.svg');
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center center;
+    margin: 0 auto;
+    // transition: width .2s, height .2s, background-color .2s;
+  }
+
+  .text {
+    pointer-events: auto;
+    margin: 0 auto;
+    position: relative;
+    left: 50%;
+    max-width: $unit * 25;
+    line-height: 1.1;
+    top: $unit * -4.2;
+    text-align: center;
+    transform: translateX(-50%) translateY($unit * 3.5);
+    color: white;
+    $shadow: rgba($text, 0.5);
+    text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+      0 -2px 12px $shadow, -2px 0 12px $shadow;
+    font-weight: $maplabelfontweight;
+    font-size: $mapwordsfontsize;
+    letter-spacing: 0.8px;
+    // transition: color .2s;
+
+    @include width(mobile) {
+      top: $unit * -4;
+    }
+  }
+
+  &:hover {
+    cursor: pointer;
+    $shadow: rgba($text, 0.7);
+    text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow, 0 2px 16px $shadow,
+      0 -2px 16px $shadow, -2px 0 16px $shadow;
+  }
+
+  &.highlight,
+  &:hover {
+    z-index: 101;
+
+    .text {
+      color: $activelight;
+    }
+    .pin {
+      background-color: $activelight;
+      // width: $unit * 6.5;
+      // height: $unit * 6.5;
+    }
+  }
+
+  &.doublehighlight,
+  &.highlight:hover {
+    z-index: 102;
+
+    .text {
+      color: $highlight;
+    }
+
+    .pin {
+      background-color: $highlight;
+    }
+  }
+}
+
+.cluster {
+  position: relative;
+  top: $unit * -7;
+
+  .text {
+    display: none;
+  }
+  .pin {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1em;
+    font-family: $mapnumberfontstack;
+    font-weight: $maplabelfontweight;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: none;
+    transform: translateX(-50%) translateY(-28%);
+    width: 54px;
+    height: 54px;
+    mask-image: none;
+    background: rgba(white, 0.15);
+    border: solid white 1px;
+    border-radius: 50%;
+    // mask-image: url('~assets/cluster.svg');
+
+    span {
+      $shadow: rgba($text, 0.8);
+      text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+        0 -2px 12px $shadow, -2px 0 12px $shadow;
+    }
+  }
+
+  &.highlight,
+  &:hover {
+    .pin {
+      background: rgba($activelight, 0.15);
+      border: solid $activelight 2px;
+      color: $activelight;
+    }
+  }
+
+  &.doublehighlight,
+  &.highlight:hover {
+    .pin {
+      background: rgba($highlight, 0.15);
+      border: solid $highlight 3px;
+      color: $highlight;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 <template>
-  <PostListPage :postListTitle="city" :posts="posts"/>
+  <PostListPage :postListTitle="city" :posts="posts" />
 </template>
 
 <script>
@@ -39,9 +39,7 @@ export default {
           content:
             this.posts[0].image.substring(0, 4) === 'http'
               ? this.posts[0].image
-              : `https://www.travelingcircusofurbanism.com${
-                  this.posts[0].image
-                }`,
+              : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`,
         },
       ],
     }
@@ -62,9 +60,7 @@ export default {
   },
   data() {},
   computed: {},
-  methods: {
-    capitalize,
-  },
+  methods: { capitalize },
 }
 </script>
 

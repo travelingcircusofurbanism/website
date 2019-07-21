@@ -35,6 +35,9 @@ export default {
     isCluster() {
       return this.markerData.properties.cluster ? true : false
     },
+    isMobile() {
+      return this.$store.state.isMobile
+    },
 
     // highlights come in as an array of location names.
     highlight() {
@@ -114,11 +117,20 @@ export default {
       textBoxElement.className = 'text'
       const textElements = []
       if (this.isCluster) {
-        textElements.push(
-          document.createTextNode(
-            this.markerData.properties.point_count_abbreviated
-          )
-        )
+        const points = this.markerData.properties.point_count_abbreviated
+        const min = 2
+        const max = 10
+        const intensity = 3
+        const diameter =
+          ((((points - min) / (max - min) <= 1
+            ? (points - min) / (max - min)
+            : 1) +
+            intensity) /
+            (intensity + 1)) *
+          54
+        pinElement.style.cssText = `width: ${diameter}px; height: ${diameter}px;`
+        pinElement.innerHTML = `<span>${points}</span>`
+        textElements.push(document.createTextNode(points))
       } else {
         const lines = this.softSplitStringEveryXCharacters(
           this.markerData.properties.location,
@@ -168,26 +180,53 @@ export default {
     },
 
     zoomIntoCluster() {
-      const children = this.clusterer.getChildren(
+      let children = this.clusterer.getChildren(
         this.markerData.properties.cluster_id
       )
-      const centerPoint = children
+      while (children.length < 2) {
+        // weed out any single cluster responses
+        children = this.clusterer.getChildren(children[0].properties.cluster_id)
+      }
+      let top = -90,
+        right = -180,
+        bottom = 90,
+        left = 180
+      children
         .map(c => c.geometry.coordinates)
-        .reduce(
-          (acc, point) => {
-            return [
-              acc[0] + point[0] / children.length,
-              acc[1] + point[1] / children.length,
-            ]
-          },
-          [0, 0]
-        )
-      this.map.flyTo({
-        center: centerPoint,
-        zoom:
-          this.clusterer.getClusterExpansionZoom(
-            this.markerData.properties.cluster_id
-          ) + 0.8,
+        .forEach(c => {
+          if (c[1] > top) top = c[1] // max y
+          if (c[0] > right) right = c[0] // max x
+          if (c[1] < bottom) bottom = c[1] // min y
+          if (c[0] < left) left = c[0] // min x
+        })
+      const newBounds = [[left, bottom], [right, top]]
+      // const centerPoint = children
+      //   .map(c => c.geometry.coordinates)
+      //   .reduce(
+      //     (acc, point) => {
+      //       return [
+      //         acc[0] + point[0] / children.length,
+      //         acc[1] + point[1] / children.length,
+      //       ]
+      //     },
+      //     [0, 0]
+      // )
+      // centerPoint doesn't adjust to dodge the header!! this was cauting weird mobile stuff i bet
+      // this.map.flyTo({
+      //   center: centerPoint,
+      //   zoom:
+      //     this.clusterer.getClusterExpansionZoom(
+      //       this.markerData.properties.cluster_id
+      //     ) + (this.isMobile ? 0.8 : 1.2),
+      // })
+      const padding = {
+        top: this.isMobile ? 80 : 300,
+        left: this.isMobile ? 80 : 120,
+        right: this.isMobile ? 80 : 120,
+        bottom: this.isMobile ? 130 : 120,
+      }
+      this.map.fitBounds(newBounds, {
+        padding,
       })
     },
 

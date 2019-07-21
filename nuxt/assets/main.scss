@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import 'variables';
+@import 'map';
+@import 'markdown';
 
 html {
   height: 100%;
@@ -51,32 +53,26 @@ h1,
 h2,
 h3,
 h4 {
+  font-weight: 400;
   line-height: 1.4;
 }
 
 h1 {
-  font-size: 3.2rem;
-  line-height: 1;
-  text-transform: uppercase;
-  font-family: 'Unica One', 'Raleway', sans-serif;
+  margin-top: $unit * 12;
+  // font-size: 3.2rem;
+  font-size: 3.5rem;
+  line-height: 1.05;
+  // text-transform: uppercase;
+  // font-family: 'Unica One', 'Raleway', sans-serif;
   position: relative;
   color: $active;
+  font-weight: 400;
 
   @include width(mobile) {
-    font-size: 2.5rem;
-    margin-top: $unit * 3;
+    font-size: 2rem;
+    margin-top: $unit * 2;
+    line-height: 1.05;
   }
-
-  // &:before {
-  //   content: '';
-  //   position: absolute;
-  //   width: $content-padding * 0.1;
-  //   height: 95%;
-  //   top: 2.5%;
-  //   left: -0.6 * $content-padding;
-  //   z-index: 1;
-  //   background: $active;
-  // }
 
   &.ja {
     font-size: 2.4rem;
@@ -90,6 +86,7 @@ h1 {
 
 h2 {
   font-size: 1.6rem;
+  font-weight: 400;
 }
 
 h3 {
@@ -97,7 +94,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 
 .sub {
@@ -114,10 +111,6 @@ h4 {
   margin-right: $unit;
   position: relative;
   top: 2px;
-}
-
-.mapboxgl-canvas {
-  filter: brightness(0.85);
 }
 
 .content {
@@ -139,7 +132,7 @@ h4 {
   & > *:not(.content-top-full):not(.relatedposts):not(footer):not(.footer) {
     margin-left: auto;
     margin-right: auto;
-    max-width: $unit * 110;
+    max-width: $unit * 100;
   }
 
   .content-top-full {
@@ -175,67 +168,47 @@ h4 {
 }
 
 .sectionhead {
-  font-family: 'Unica One', 'Raleway', sans-serif;
-  font-size: 2rem;
+  // font-family: 'Unica One', 'Raleway', sans-serif;
+  font-size: 1.6rem;
   line-height: 1;
-  // letter-spacing: 1px;
   position: relative;
-  // padding-right: $unit * 3;
-  // padding-left: $content-padding;
-  // left: -1 * $content-padding;
-  // background: $active;
   display: table;
-  // width: 100%;
-  text-align: center;
+  // text-align: center;
   z-index: 2;
-  // text-align: left;
-  margin: 0 auto;
-  text-transform: uppercase;
-  font-weight: 600;
+  // margin: 0 auto;
+  // text-transform: uppercase;
+  font-weight: 400;
   margin-top: $unit * 7;
-  margin-bottom: $unit * 7;
-  // color: white;
+  margin-bottom: $unit * 4;
   color: $active;
-  // width: 100%;
-  // padding-bottom: $unit * 3;
-  max-width: 60%;
+  // max-width: 60%;
 
   &:not(.mini) {
-    // border: 2px solid rgba($active, 1);
-    padding: $unit $unit * 5;
+    // padding: $unit $unit * 5;
+    padding: $unit 0;
+    padding-right: $unit * 5;
 
-    // @include width(desktop) {
-    &:before {
-      content: '';
-      position: absolute;
-      width: $unit * 10;
-      height: 3px;
-      // // width: $content-padding * 0.5;
-      // // height: $content-padding * 0.6;
-      // width: 0;
-      // height: 0;
-      // border-top: $content-padding * 0.4 solid transparent;
-      // border-bottom: $content-padding * 0.4 solid transparent;
-      // border-left: $content-padding * 0.6 solid $active;
-      // top: 15%;
-      bottom: 48%;
-      left: 100%;
-      // // left: -1 * $content-padding;
-      // // transform: translateX(-50%) rotateZ(45deg);
-      z-index: 1;
-      background: $active;
-    }
+    // &:before {
+    //   content: '';
+    //   position: absolute;
+    //   width: $unit * 10;
+    //   height: 3px;
+    //   bottom: 48%;
+    //   left: 100%;
+    //   z-index: 1;
+    //   background: $active;
+    // }
     &:after {
       content: '';
       position: absolute;
-      width: $unit * 10;
-      height: 3px;
+      width: $unit * 500;
+      height: 1px;
       bottom: 48%;
-      right: 100%;
+      left: 100%;
       z-index: 1;
       background: $active;
+      opacity: 0.6;
     }
-    // }
   }
 
   &.mini {
@@ -259,140 +232,10 @@ h4 {
   }
 
   @include width(mobile) {
-    font-size: 1.6rem;
-    // max-width: 80%;
+    font-size: 1.5rem;
     margin-top: $unit * 2;
     margin-bottom: $unit * 3;
     padding-bottom: 0;
-    // border-bottom: none;
-  }
-}
-
-.markdown {
-  position: relative;
-  margin-bottom: $unit * 10;
-
-  h1 {
-    margin-top: $unit * 12;
-    position: relative;
-    line-height: 1.4;
-    font-size: 1.6rem;
-    text-transform: none;
-    font-family: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-      Roboto, 'Helvetica Neue', Arial, sans-serif;
-  }
-
-  img {
-    max-width: 100%;
-    margin: $unit * 4 auto;
-    display: block;
-    cursor: zoom-in;
-    transition: filter 0.3s;
-
-    @include width(mobile) {
-      width: 100vw;
-      min-width: 100vw;
-      margin: $unit * 2 $content-padding-mobile * -1;
-    }
-  }
-
-  img[lazy='loading'] {
-    width: 100%;
-    max-height: 500px;
-    object-fit: contain;
-    position: relative;
-    z-index: 1;
-    filter: blur(2px);
-
-    @include width(mobile) {
-      max-height: auto;
-      width: 100vw;
-    }
-  }
-
-  img + em,
-  img + br + em {
-    display: block;
-    text-align: center;
-    position: relative;
-    top: $unit * -2;
-    font-size: 0.85em;
-    opacity: 0.65;
-    line-height: 1.35;
-    padding: 0 5%;
-
-    @include width(mobile) {
-      top: $unit * -0.5;
-      padding: 0 0 $unit * 2 0;
-    }
-  }
-  img + br {
-    display: none;
-  }
-
-  h1 + p img:first-of-type {
-    padding-top: 0;
-  }
-
-  em {
-    strong {
-      display: block;
-      text-align: left;
-    }
-  }
-
-  ol,
-  ul {
-    @include width(mobile) {
-      padding-left: $content-padding-mobile;
-    }
-  }
-
-  hr {
-    border: 1.5px dashed $offwhite;
-    box-shadow: none;
-    transform: scale(3, 1);
-    height: 0;
-    // background: $offwhite;
-    margin: $unit * 12 auto;
-    width: 6%;
-  }
-
-  blockquote {
-    font-style: italic;
-    padding: $unit * 2 $unit * 4;
-    // background: rgba($offwhite, 0.3);
-    position: relative;
-
-    &:before {
-      content: '"';
-      position: absolute;
-      top: $unit * -12;
-      left: $unit * -10;
-      color: $active;
-      opacity: 0.2;
-      font-size: 13em;
-      font-weight: 700;
-      font-family: 'Unica One', 'Raleway', sans-serif;
-    }
-  }
-
-  a.external {
-    background: url('~assets/icons/external.svg') center right no-repeat;
-    background-size: 9px;
-    padding-right: 12px;
-    margin-right: 2px;
-  }
-
-  *.highlight {
-    padding: $unit * 0.5;
-    background: rgba($active, 0.12);
-    transition: all 0.1s;
-
-    &:hover {
-      color: white !important;
-      background: $highlight;
-    }
   }
 }
 
@@ -442,23 +285,26 @@ h4 {
     display: block;
     width: 100%;
   }
-
-  &:hover {
-    color: white;
-    background: $active !important;
-  }
-  &.blue:hover {
-    color: white;
-    background: $text !important;
+  @include width(desktop) {
+    &:hover {
+      color: white;
+      background: $active !important;
+    }
+    &.blue:hover {
+      color: white;
+      background: $text !important;
+    }
   }
 
   &.invert {
     background: transparent;
     box-shadow: 0 0 0 2px rgba(white, 0.6);
 
-    &:hover {
-      background: $text !important;
-      box-shadow: none;
+    @include width(desktop) {
+      &:hover {
+        background: $text !important;
+        box-shadow: none;
+      }
     }
   }
 
@@ -479,181 +325,6 @@ h4 {
     left: 0;
     width: 100%;
     height: 100%;
-  }
-}
-
-.mapboxgl-missing-css,
-.mapbox-improve-map,
-.mapboxgl-ctrl-attrib,
-.mapboxgl-control-container {
-  display: none;
-}
-
-.polygonlabel {
-  z-index: 100;
-  display: inline-block;
-  position: absolute;
-  user-select: none;
-  color: white;
-  $shadow: rgba($text, 0.15);
-  text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
-    0 -2px 12px $shadow, -2px 0 12px $shadow;
-  font-weight: 600;
-  letter-spacing: 0.8px;
-  transition: opacity 0.35s, color 0.1s;
-
-  &.off {
-    display: none;
-    opacity: 0;
-    pointer-events: none;
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &.highlight,
-  &:hover,
-  &.hover {
-    color: $activelight;
-  }
-
-  &.doublehighlight,
-  &.highlight:hover,
-  &.highlight.hover {
-    color: $highlight;
-  }
-}
-
-.marker,
-.cluster {
-  z-index: 100;
-  display: inline-block;
-  position: absolute;
-  font-size: 1.05em;
-  pointer-events: none;
-  user-select: none;
-
-  @include width(mobile) {
-    font-size: 1em;
-  }
-
-  .pin {
-    pointer-events: auto;
-    width: $unit * 6;
-    height: $unit * 6;
-    background-color: white;
-    mask-image: url('~assets/pin.svg');
-    mask-repeat: no-repeat;
-    mask-size: contain;
-    mask-position: center center;
-    margin: 0 auto;
-    // transition: width .2s, height .2s, background-color .2s;
-  }
-
-  .text {
-    pointer-events: auto;
-    margin: 0 auto;
-    position: relative;
-    left: 50%;
-    max-width: $unit * 25;
-    line-height: 1;
-    top: $unit * -4.2;
-    text-align: center;
-    transform: translateX(-50%) translateY($unit * 3.5);
-    color: white;
-    $shadow: rgba($text, 0.3);
-    text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
-      0 -2px 12px $shadow, -2px 0 12px $shadow;
-    font-weight: 600;
-    letter-spacing: 0.8px;
-    // transition: color .2s;
-
-    @include width(mobile) {
-      top: $unit * -4;
-    }
-  }
-
-  &:hover {
-    cursor: pointer;
-  }
-
-  &.highlight,
-  &:hover {
-    z-index: 101;
-
-    .text {
-      color: $activelight;
-    }
-    .pin {
-      background-color: $activelight;
-      // width: $unit * 6.5;
-      // height: $unit * 6.5;
-    }
-  }
-
-  &.doublehighlight,
-  &.highlight:hover {
-    z-index: 102;
-
-    .text {
-      color: $highlight;
-    }
-
-    .pin {
-      background-color: $highlight;
-    }
-  }
-}
-
-.cluster {
-  position: relative;
-  top: $unit * -7;
-
-  .text {
-    position: absolute;
-    transform: translateX(-50%) translateY(10%);
-    color: $text;
-    text-shadow: none;
-    z-index: 2;
-    // transition: all .1s;
-    top: 0;
-    left: 0;
-    width: auto;
-
-    @include width(mobile) {
-      font-size: 1.2em;
-    }
-  }
-  .pin {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: none;
-    transform: translateX(-50%) translateY(-28%);
-    width: $unit * 8;
-    height: $unit * 8;
-    mask-image: url('~assets/cluster.svg');
-  }
-
-  &.highlight,
-  &:hover {
-    .text {
-      color: white;
-    }
-    .pin {
-      width: $unit * 9;
-      height: $unit * 9;
-    }
-  }
-
-  &.doublehighlight,
-  &.highlight:hover,
-  &.doublehighlight:hover {
-    .text {
-      color: white;
-    }
   }
 }
 

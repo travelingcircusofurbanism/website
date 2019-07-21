@@ -3,9 +3,11 @@
     <Lightbox class="lightbox" />
     <MobileSearchSelectorOverlay class="mobilesearch" />
     <Header />
-    <Canvas />
     <DevOverlay class="devoverlay" />
-    <nuxt />
+    <div class="maingrid">
+      <Canvas />
+      <nuxt />
+    </div>
   </div>
 </template>
 
@@ -55,18 +57,10 @@ export default {
 @import '~/assets/variables.scss';
 
 .master {
-  display: flex;
   overflow: hidden;
   width: 100vw;
   height: 100vh;
-
-  & > *:not(.lightbox):not(.devoverlay):not(.mobilesearch) {
-    flex: 1;
-    max-width: 50%;
-    overflow: hidden;
-    overflow-y: auto;
-    height: 100vh;
-  }
+  position: relative;
 
   @include width(mobile) {
     display: block;
@@ -76,6 +70,21 @@ export default {
       max-width: 100%;
       overflow-y: visible;
       height: auto;
+    }
+  }
+
+  .maingrid {
+    @include width(desktop) {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% 50%;
+
+      & > * {
+        position: relative;
+        overflow: hidden;
+        overflow-y: auto;
+        height: 100vh;
+      }
     }
   }
 }
