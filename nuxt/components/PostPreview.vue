@@ -13,7 +13,12 @@
 
     <div>
       <nuxt-link :to="languageUrl" class="titlelink">
-        <h4>{{ languageTitle }}</h4>
+        <h4>
+          {{ languageTitle }}
+          <div class="microseo" v-if="seoTitle && seoUrl">
+            <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
+          </div>
+        </h4>
       </nuxt-link>
 
       <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
@@ -29,8 +34,10 @@
 
       <div class="description">
         {{ description }}
-        <div class="microseo" v-if="seoUrl!== languageUrl">
-          <a :href="seoUrl">Keep Reading →</a>
+        <div class="microseo" v-if="seoUrl">
+          <a
+            :href="seoUrl"
+          >{{userLanguage === 'en' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
         </div>
         <nuxt-link :to="languageUrl">Keep Reading →</nuxt-link>
       </div>
@@ -82,12 +89,16 @@ export default {
           /(\/?[^/]+\/)(.*)/g,
           (wholestring, firsthalf, secondhalf) => firsthalf + 'ja/' + secondhalf
         )
-      return this.url
+      else if (this.userLanguage === 'ja' && this.languages.en) return this.url
     },
     languageTitle() {
       return this.userLanguage === 'ja' && this.jaTitle
         ? this.jaTitle
         : this.title
+    },
+    seoTitle() {
+      if (this.userLanguage === 'ja' && this.title) return this.title
+      else if (this.userLanguage === 'en' && this.jaTitle) return this.jaTitle
     },
     loader() {
       return this.image.includes('/med/')
