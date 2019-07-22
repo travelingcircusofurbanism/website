@@ -29,6 +29,9 @@
 
       <div class="description">
         {{ description }}
+        <div class="microseo" v-if="seoUrl!== languageUrl">
+          <a :href="seoUrl">Keep Reading →</a>
+        </div>
         <nuxt-link :to="languageUrl">Keep Reading →</nuxt-link>
       </div>
     </div>
@@ -65,13 +68,21 @@ export default {
       return this.$store.state.language
     },
     languageUrl() {
-      return this.userLanguage === 'ja'
+      return this.userLanguage === 'ja' && this.languages.ja
         ? this.url.replace(
             /(\/?[^/]+\/)(.*)/g,
             (wholestring, firsthalf, secondhalf) =>
               firsthalf + 'ja/' + secondhalf
           )
         : this.url
+    },
+    seoUrl() {
+      if (this.userLanguage === 'en' && this.languages.ja)
+        return this.url.replace(
+          /(\/?[^/]+\/)(.*)/g,
+          (wholestring, firsthalf, secondhalf) => firsthalf + 'ja/' + secondhalf
+        )
+      return this.url
     },
     languageTitle() {
       return this.userLanguage === 'ja' && this.jaTitle
@@ -171,9 +182,19 @@ h4 {
   color: $text !important;
   margin-top: 0;
   margin-bottom: $unit * 2;
+  line-height: 1.3;
 }
 
 .description {
   word-break: break-word;
+}
+
+.microseo {
+  color: white !important;
+  width: 1px;
+  height: 1px;
+  display: inline-block;
+  overflow: hidden;
+  user-select: none;
 }
 </style>

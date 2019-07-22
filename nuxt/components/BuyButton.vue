@@ -114,8 +114,7 @@ button {
 .button {
   padding: 1em 3em;
   display: inline-block;
-  margin-right: 0;
-  margin-bottom: $unit;
+  margin-bottom: 0;
   flex-shrink: 0;
   flex-grow: 0;
   margin-right: $unit * 4;
@@ -165,7 +164,7 @@ button {
 }
 
 .price {
-  font-size: 0.88em;
+  font-size: 0.9em;
   font-weight: 200;
   color: $active;
   max-width: 400px;

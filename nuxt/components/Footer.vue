@@ -14,7 +14,7 @@
         <img src="~/assets/icons/rss.svg" width="20px" height="20px" />
       </a>
     </p>
-    <p>
+    <p class="footertext">
       All content copyright Mariko Sugita, except where noted.
       <br />
       <a href="mailto:travelingcircusofurbanism@gmail.com">Get in touch!</a>
@@ -54,6 +54,10 @@
         opacity: 1;
       }
     }
+  }
+
+  .footertext {
+    opacity: 0.8;
   }
 }
 </style>
