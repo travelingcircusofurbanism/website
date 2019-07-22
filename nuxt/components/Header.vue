@@ -152,7 +152,7 @@ a:active {
 .logo {
   display: inline-block;
   position: relative;
-  padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * 0.75;
+  padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * 0.5;
   font-weight: 600;
   background: $active;
 
@@ -208,7 +208,7 @@ h3 {
   font-weight: 400;
   pointer-events: none;
   background: $text;
-  padding-left: $content-padding / 2.5;
+  padding-left: $content-padding / 6;
 
   &.hasshadow {
     box-shadow: $over-map-shadow;

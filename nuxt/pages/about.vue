@@ -62,7 +62,7 @@
               research, marketing, and editing and writing in the field of
               architecture and urbanism.
               <a
-                href="www.linkedin.com/in/marikosugita"
+                href="http://www.linkedin.com/in/marikosugita"
                 target="_blank"
               >Full profile</a>
             </div>
