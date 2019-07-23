@@ -118,16 +118,17 @@ export default {
       const textElements = []
       if (this.isCluster) {
         const points = this.markerData.properties.point_count_abbreviated
-        const min = 2
-        const max = 10
-        const intensity = 3
+        const minPoints = 2
+        const maxPoints = 20
+        const maxDiameter = 60
+        const intensity = 2
         const diameter =
-          ((((points - min) / (max - min) <= 1
-            ? (points - min) / (max - min)
+          ((((points - minPoints) / (maxPoints - minPoints) <= 1
+            ? (points - minPoints) / (maxPoints - minPoints)
             : 1) +
             intensity) /
             (intensity + 1)) *
-          54
+          maxDiameter
         pinElement.style.cssText = `width: ${diameter}px; height: ${diameter}px;`
         pinElement.innerHTML = `<span>${points}</span>`
         textElements.push(document.createTextNode(points))
@@ -220,10 +221,10 @@ export default {
       //     ) + (this.isMobile ? 0.8 : 1.2),
       // })
       const padding = {
-        top: this.isMobile ? 110 : 300,
-        left: this.isMobile ? 80 : 120,
-        right: this.isMobile ? 80 : 120,
-        bottom: this.isMobile ? 80 : 120,
+        top: this.isMobile ? 120 : 320,
+        left: this.isMobile ? 80 : 140,
+        right: this.isMobile ? 80 : 140,
+        bottom: this.isMobile ? 80 : 180,
       }
       this.map.fitBounds(newBounds, {
         padding,

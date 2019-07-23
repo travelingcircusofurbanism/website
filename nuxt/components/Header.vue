@@ -152,7 +152,7 @@ a:active {
 .logo {
   display: inline-block;
   position: relative;
-  padding: $unit * 3.5 $unit * 4.5 $unit * 3 $content-padding * 0.5;
+  padding: $unit * 3 $unit * 4 $unit * 2.5 $unit * 4;
   font-weight: 600;
   background: $active;
 

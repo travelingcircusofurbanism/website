@@ -73,8 +73,8 @@ $mapwordsfontsize: 0.95em;
 
   .pin {
     pointer-events: auto;
-    width: $unit * 3.5;
-    height: $unit * 3.5;
+    width: $unit * 2.25;
+    height: $unit * 2.25;
     background-color: white;
     mask-image: url('~assets/pin.svg');
     mask-repeat: no-repeat;
@@ -91,11 +91,11 @@ $mapwordsfontsize: 0.95em;
     left: 50%;
     max-width: $unit * 25;
     line-height: 1.1;
-    top: $unit * -4.2;
+    top: $unit * -3.8;
     text-align: center;
     transform: translateX(-50%) translateY($unit * 3.5);
     color: white;
-    $shadow: rgba($text, 0.5);
+    $shadow: rgba($text, 0.7);
     text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
       0 -2px 12px $shadow, -2px 0 12px $shadow;
     font-weight: $maplabelfontweight;
@@ -174,8 +174,8 @@ $mapwordsfontsize: 0.95em;
 
     span {
       $shadow: rgba($text, 0.8);
-      text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
-        0 -2px 12px $shadow, -2px 0 12px $shadow;
+      text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow, 0 2px 16px $shadow,
+        0 -2px 16px $shadow, -2px 0 16px $shadow;
     }
   }
 

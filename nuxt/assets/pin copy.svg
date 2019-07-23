@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="153px" height="206px" viewBox="0 0 153 206" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>pin</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pin" transform="translate(-8.000000, 0.000000)" fill-rule="nonzero">
+            <path d="M84.5,205.210938 C84.5,205.210938 161,118.749783 161,76.5 C161,34.2502166 126.749783,0 84.5,0 C42.2502166,0 8,34.2502166 8,76.5 C8,118.749783 84.5,205.210938 84.5,205.210938 Z" id="Path" fill="#D8D8D8"></path>
+            <path d="M57.289643,171.701244 C23.9923533,176.365755 1.42108547e-14,189.511733 1.42108547e-14,205 C1.42108547e-14,224.391303 37.608081,240.111061 84,240.111061 C130.391919,240.111061 168,224.391303 168,205 C168,189.651966 144.440141,176.603999 111.612494,171.830025 C96.8426401,191.261148 84.5,205.210938 84.5,205.210938 C84.5,205.210938 72.1027992,191.199483 57.289643,171.701244 Z" id="Oval-2"></path>
+        </g>
+    </g>
+</svg>
