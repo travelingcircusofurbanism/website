@@ -28,6 +28,7 @@ export default {
     return {
       marker: null,
       markerElement: null,
+      canvasElement: null,
     }
   },
 
@@ -94,6 +95,7 @@ export default {
   },
 
   mounted() {
+    this.canvasElement = document.getElementById('canvas')
     this.spawnMarker()
     this.updateHighlight()
   },
@@ -220,11 +222,13 @@ export default {
       //       this.markerData.properties.cluster_id
       //     ) + (this.isMobile ? 0.8 : 1.2),
       // })
+      const mapWidth = this.canvasElement.offsetWidth
+      const mapHeight = this.canvasElement.offsetHeight
       const padding = {
-        top: this.isMobile ? 120 : 320,
-        left: this.isMobile ? 80 : 140,
-        right: this.isMobile ? 80 : 140,
-        bottom: this.isMobile ? 80 : 180,
+        top: mapHeight * 0.35, //this.isMobile ? 120 : 340,
+        left: mapWidth * 0.3, //this.isMobile ? 80 : 140,
+        right: mapWidth * 0.3, //this.isMobile ? 80 : 140,
+        bottom: mapHeight * 0.2, //this.isMobile ? 80 : 180,
       }
       this.map.fitBounds(newBounds, {
         padding,

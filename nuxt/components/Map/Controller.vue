@@ -20,6 +20,7 @@ export default {
     return {
       panTimer: null,
       panSpeed: 25,
+      canvasElement: null,
       defaultPosition: {
         bearing: 0,
         center: [-130, 30],
@@ -151,6 +152,7 @@ export default {
   },
 
   mounted() {
+    this.canvasElement = document.getElementById('canvas')
     this.map.on('mousedown', () => this.setPan(false))
     this.map.on('touchstart', () => this.setPan(false))
     this.map.on('wheel', () => this.setPan(false))
@@ -182,13 +184,16 @@ export default {
 
       // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
       if (this.mapZone) {
-        // console.log('fitting to', ...this.mapZone)
+        const mapWidth = this.canvasElement.offsetWidth
+        const mapHeight = this.canvasElement.offsetHeight
         const padding = {
-          top: this.isMobile ? 110 : 300,
-          left: this.isMobile ? 80 : 120,
-          right: this.isMobile ? 80 : 120,
-          bottom: this.isMobile ? 100 : 120,
+          top: mapHeight * 0.3, //this.isMobile ? 120 : 340,
+          left: mapWidth * 0.3, //this.isMobile ? 80 : 140,
+          right: mapWidth * 0.3, //this.isMobile ? 80 : 140,
+          bottom: mapHeight * 0.2, //this.isMobile ? 80 : 180,
         }
+        // console.log('fitting to', ...this.mapZone)
+
         this.map.fitBounds(this.mapZone, {
           padding,
         })

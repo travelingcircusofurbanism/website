@@ -104,7 +104,6 @@ export default {
         this.$el.offsetHeight -
         (document.documentElement.clientHeight || window.innerHeight) -
         contentBox.scrollTop
-      console.log(scrollDistanceLeft)
       if (scrollDistanceLeft < 500) this.showMore()
     },
   },

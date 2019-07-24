@@ -105,6 +105,16 @@ export default {
         ? this.image.replace('/med/', '/tiny/')
         : undefined
     },
+    noPositionToHighlight() {
+      return (
+        this.isMobile ||
+        ((!this.polygons || this.polygons.length === 0) &&
+          (!this.mapPosition ||
+            (Array.isArray(this.mapPosition) &&
+              (this.mapPosition.length === 0 ||
+                !this.mapPosition.find(p => p.location)))))
+      )
+    },
   },
   data() {
     return {
@@ -120,7 +130,7 @@ export default {
   methods: {
     capitalize,
     mouseOver() {
-      if (this.isMobile) return
+      if (this.isMobile || this.noPositionToHighlight) return
       this.$store.commit(
         'setHighlight',
         this.polygons
@@ -132,7 +142,7 @@ export default {
       this.isDoubleHighlighting = true
     },
     mouseOut() {
-      if (this.isMobile) return
+      if (this.isMobile || this.noPositionToHighlight) return
       this.$store.commit('setHighlight')
       this.isDoubleHighlighting = false
     },
