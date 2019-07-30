@@ -13,6 +13,12 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
+        hid: 'keywords',
+        name: 'keywords',
+        content:
+          'Urbanism, Architecture, Urban Studies, Urban Design, Travel, 都市, 建築, アーバニズム, まちづくり, 都市デザイン',
+      },
+      {
         hid: 'description',
         name: 'description',
         content: 'Urban narratives and practices, collected through travel',
