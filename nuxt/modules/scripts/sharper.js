@@ -1,6 +1,7 @@
 const sharp = require('sharp')
 const sharpOptions = {
   withoutEnlargement: true,
+  fit: sharp.fit.inside,
 }
 const fs = require('fs')
 const path = require('path')
@@ -210,7 +211,6 @@ async function resizeImage({
 
   return sharp(sourceImage)
     .resize(width, height, sharpOptions)
-    .max()
     .toFile(outputImageFullPath)
     .then(() => {
       return {
@@ -267,11 +267,13 @@ function getDataOfImageFilesInFolder(sourceDir) {
       //err
       return resolve(files)
 
-    files = files.filter(path => isImage(path)).map(fileName => ({
-      sourceImage: sourceDir + fileName,
-      fileName,
-      sourceDir,
-    }))
+    files = files
+      .filter(path => isImage(path))
+      .map(fileName => ({
+        sourceImage: sourceDir + fileName,
+        fileName,
+        sourceDir,
+      }))
 
     resolve(files)
   })
@@ -279,13 +281,12 @@ function getDataOfImageFilesInFolder(sourceDir) {
 
 function removeDuplicateFiles(toRemoveFrom, comparison) {
   return toRemoveFrom
-    .map(
-      fileData =>
-        comparison.find(
-          comparisonData => fileData.fileName === comparisonData.fileName
-        )
-          ? null
-          : fileData
+    .map(fileData =>
+      comparison.find(
+        comparisonData => fileData.fileName === comparisonData.fileName
+      )
+        ? null
+        : fileData
     )
     .filter(anyData => anyData)
 }
