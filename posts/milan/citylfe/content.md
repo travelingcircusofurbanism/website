@@ -1,27 +1,24 @@
-# Urbanist's guide to
+# CityLife Shopping District, the modern heart of Milan
 
-![]()
-_Photo by Yucel Moran on Unsplash_
+During our visit to Milan, we had a chance to explore [citylife milan](https://www.designboom.com/tag/citylife-milan/), one of the biggest urban developments in Europe.
 
-### Things to do, places to go
+![](CityLife1.jpg)
 
-- [Cittaslow](http://www.cittaslow.org/)
-  Slow food, Slow life
+The district is located in the northwestern part of the city, and the development covers an overall area of 366,000 square meters. At first, we weren't ready to embrace the completely modern face of Milan, whose old historical city center attracts thousands of people with its European classical outlook. Though, aside from its lack of identity and neoliberal commercialism that create the foundation of this project, we found CityLife almost uncomfortably enjoyable.
 
-- Reggio Emilia (Education)
-  まちの保育園のアイデアになった場所
-  クリエイティブリユーず：Remida, the creative recycling centre もある
+![](CityLife13.jpg)
+_The three commercial skyscrapers are designed by three big names; Zaha Hadid, Arata Isozaki and Daniel Libeskind._
+![](CityLife3.jpg)
 
-- [Gucci Reinvents a Former Aircraft Factory for Its New Milan Headquarters](https://www.dezeen.com/2018/02/23/piuarch-architecture-abandoned-aircraft-factory-gucci-milan-headquarters-italy/)
+The project involves the construction of three commercial skyscrapers, located at the center of the site, shopping & business facilities surrounded by residential buildings and public green spaces. Most of the buildings there were completed in the early 2000s, and when we were there, one of the skyscrapers were still under construction. It covers an area of 36.6 hectares (90 acres), and development is being carried out by a company controlled by Generali Group,
 
-### Read
+![](CityLife8.jpg)
+_The large green space is neatly taken care of. The complex is car-free and friendly for pedestrians._
 
-- [Urbanism and Empire in Roman Sicily](https://utpress.utexas.edu/books/pfuntner-urbanism-and-empire-in-roman-sicily)
+![](CityLife7.jpg)
+![](CityLife15.jpg)
+_citylife apartments by zaha hadid_
 
-- [City: A Story of Roman Planning and Construction](https://www.amazon.com/City-Story-Roman-Planning-Construction-ebook/dp/B001I460JC)
+As most of the recent urban development do, CityLife is also carefully managing the sustainability factor and smart mobility. We're not sure how this development evolves in the future, but if you are tired of old buildings and want to check out a new urban development of Italy, we recommend you to explore the CityLife neighborhood.
 
-- [Rome Tales](https://www.amazon.com/Rome-Tales-City-Helen-Constantine/dp/0199572461)
-
-### Organization, initiative
-
-- [Fosbury Architecture](https://www.facebook.com/fosburyarchitecture/?hc_location=group) / Milan
+![](CityLife11.jpg)
