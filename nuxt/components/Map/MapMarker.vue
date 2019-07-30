@@ -70,7 +70,7 @@ export default {
     // returns array of named locations in marker or cluster
     locationsInMarker() {
       const locations = []
-      if (this.isCluster) {
+      if (this.isCluster && this.map && this.mapboxgl) {
         const getLocationsRecursively = root => {
           if (root.properties.cluster_id)
             this.clusterer

@@ -13,12 +13,7 @@
 
     <div>
       <nuxt-link :to="languageUrl" class="titlelink">
-        <h4>
-          {{ languageTitle }}
-          <div class="microseo" v-if="seoTitle && seoUrl">
-            <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
-          </div>
-        </h4>
+        <h4>{{ languageTitle }}</h4>
       </nuxt-link>
 
       <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
@@ -32,9 +27,13 @@
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
-      <div class="description">
-        {{ description }}
-        <div class="microseo" v-if="seoUrl">
+      <div class="description" :class="{ja: languages.ja && seoDescription}">
+        {{ languageDescription }}
+        <h4 class="microseo" v-if="seoTitle && seoUrl">
+          <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
+        </h4>
+        <div class="microseo" v-if="seoTitle && seoUrl">
+          {{ seoDescription ? seoDescription : '' }}
           <a
             :href="seoUrl"
           >{{userLanguage === 'en' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
@@ -59,6 +58,7 @@ export default {
     'city',
     'date',
     'description',
+    'jaDescription',
     'mapPosition',
     'languages',
     'polygons',
@@ -99,6 +99,17 @@ export default {
     seoTitle() {
       if (this.userLanguage === 'ja' && this.title) return this.title
       else if (this.userLanguage === 'en' && this.jaTitle) return this.jaTitle
+    },
+    languageDescription() {
+      return this.userLanguage === 'ja' && this.jaDescription
+        ? this.jaDescription
+        : this.description
+    },
+    seoDescription() {
+      if (this.userLanguage === 'ja' && this.description)
+        return this.description
+      else if (this.userLanguage === 'en' && this.jaDescription)
+        return this.jaDescription
     },
     loader() {
       return this.image.includes('/med/')
@@ -208,11 +219,17 @@ h4 {
 
 .description {
   word-break: break-word;
+
+  &.ja {
+    line-height: 1.45;
+  }
 }
 
 .microseo {
   color: white !important;
   width: 1px;
+  padding: 0;
+  margin: 0;
   height: 1px;
   display: inline-block;
   overflow: hidden;

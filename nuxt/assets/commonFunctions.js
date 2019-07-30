@@ -28,6 +28,7 @@ export function capitalize(s) {
 }
 
 export function softTruncate(string, softLimit) {
+  if (!string) return
   if (string.length > softLimit) {
     const afterLimit = string.substring(softLimit)
     let min = 0

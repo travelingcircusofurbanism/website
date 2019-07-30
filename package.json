@@ -1,7 +1,7 @@
 {
   "name": "travelingcircusofurbanism",
   "version": "1.0.0",
-  "description": "Nuxt.js project",
+  "description": "Urban narratives and practices, collected through travel",
   "author": "Mariko Sugita & Jasper Stephenson",
   "private": true,
   "scripts": {
@@ -19,11 +19,11 @@
     "axios": "^0.18.0",
     "mapbox-gl": "^0.45.0",
     "markdown-it": "^8.4.2",
-    "node-sass": "^4.9.3",
+    "node-sass": "^4.12.0",
     "nuxt": "^2.2.0",
     "polylabel": "^1.0.2",
     "sass-loader": "^7.1.0",
-    "sharp": "^0.20.8",
+    "sharp": "^0.23.0",
     "supercluster": "^4.1.1",
     "vue-loader": "^14.2.3"
   },

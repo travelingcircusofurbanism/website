@@ -37,18 +37,16 @@ export default {
         {
           hid: `og:description`,
           property: 'og:description',
-          content: this.description,
+          content: this.jaDescription || this.description,
         },
         {
           property: 'description',
-          content: this.description,
+          content: this.jaDescription || this.description,
           hid: `description`,
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com${
-            this.publicPath
-          }`,
+          content: `https://www.travelingcircusofurbanism.com${this.publicPath}`,
         },
         {
           hid: `og:image`,

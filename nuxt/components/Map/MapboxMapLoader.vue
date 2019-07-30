@@ -31,17 +31,33 @@ export default {
 
   mounted() {
     if (!document) return
-    this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
-    this.mapboxgl.accessToken = this.apikey
-    this.map = new this.mapboxgl.Map({
-      container: 'map',
-      style: this.mapboxStyle,
-      ...this.defaultPosition,
-    })
+    if (window.requestIdleCallback)
+      window.requestIdleCallback(() => {
+        this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+        this.mapboxgl.accessToken = this.apikey
+        this.map = new this.mapboxgl.Map({
+          container: 'map',
+          style: this.mapboxStyle,
+          ...this.defaultPosition,
+        })
 
-    this.map.on('styledata', () =>
-      setTimeout(() => (this.styleReady = true), 300)
-    )
+        this.map.on('styledata', () =>
+          setTimeout(() => (this.styleReady = true), 300)
+        )
+      })
+    else {
+      this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+      this.mapboxgl.accessToken = this.apikey
+      this.map = new this.mapboxgl.Map({
+        container: 'map',
+        style: this.mapboxStyle,
+        ...this.defaultPosition,
+      })
+
+      this.map.on('styledata', () =>
+        setTimeout(() => (this.styleReady = true), 300)
+      )
+    }
   },
 
   methods: {},

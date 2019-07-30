@@ -125,6 +125,10 @@ function getDataForPost(postDir, city, slug) {
     let title = contentToUseForData.substring(
       contentToUseForData.indexOf('#') + 1
     )
+    title = title
+      .substring(0, title.indexOf('\n'))
+      .replace(/^\s*/g, '')
+      .replace(/\s*$/g, '')
 
     let jaTitle = null
     if (jaContent) {
@@ -132,11 +136,9 @@ function getDataForPost(postDir, city, slug) {
       jaTitle = jaTitle.substring(0, jaTitle.indexOf('\n'))
     }
 
-    // create nice truncated description
-    let description = postData.description
-    if (!description)
-      description = title
-        .substring(title.indexOf('\n')) // remove title
+    // create nice truncated descriptions
+    function fixDescriptions(desc) {
+      return desc
         .replace(/!\[[^\]]*\]\(.*\)[\n\r\s]*[*_].*[*_]/g, '') // remove images with captions
         .replace(/!\[[^\]]*\]\(.*\)/g, '') // remove all images
         .replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
@@ -149,13 +151,29 @@ function getDataForPost(postDir, city, slug) {
         .replace(/[\n\r]-\s/g, '\n• ') // remove bullet dashes
         .replace(/[\n\r]/g, ' ') // remove line breaks
         .replace(/^\s*/, '') // remove excess spaces at the start
-        .replace(/\s+/g, ' ') // remove multiple spaces in a row
+        .replace(/[\s\n]+/gim, ' ') // remove multiple spaces in a row
+    }
+
+    let description = postData.description
+    if (!description)
+      description = fixDescriptions(
+        contentToUseForData.substring(contentToUseForData.indexOf('\n')) // remove title
+      )
     description = softTruncate(description, enContent ? 200 : 70)
 
-    title = title
-      .substring(0, title.indexOf('\n'))
-      .replace(/^\s*/g, '')
-      .replace(/\s*$/g, '')
+    let jaDescription = null
+    if (languages.ja) {
+      jaDescription = postData.jaDescription
+      if (!jaDescription)
+        jaDescription = jaContent
+          ? fixDescriptions(
+              jaContent.substring(jaContent.indexOf('\n')) // remove title
+            )
+          : undefined
+      if (jaDescription) {
+        jaDescription = softTruncate(jaDescription, 120)
+      }
+    }
 
     // create nice usable image path
     let image = postData.image
@@ -183,6 +201,7 @@ function getDataForPost(postDir, city, slug) {
       public: postData.public,
     }
     if (jaTitle) data.jaTitle = jaTitle
+    if (jaDescription) data.jaDescription = jaDescription
     if (postData.polygons) data.polygons = postData.polygons
     return data
   } catch (e) {
