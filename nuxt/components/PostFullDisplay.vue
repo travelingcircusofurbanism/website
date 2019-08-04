@@ -1,7 +1,7 @@
 <template>
-  <section class="content" :class="{ ja: displayLanguage === 'ja' }">
+  <section class="content">
     <div
-      class="japanese-available content-top-full"
+      class="japanese-available content-top-full ja"
       v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
     >
       <template v-if="displayLanguage !== 'ja'">
@@ -36,6 +36,7 @@
         preLoad: 2, // screen heights away to start loading
       }"
       class="markdown"
+      :class="{ja: displayLanguage === 'ja' }"
       ref="postcontent"
       v-html="contentToDisplay"
     ></article>
@@ -47,7 +48,6 @@
 </template>
 
 <script>
-import axios from 'axios'
 import ContentFooter from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
@@ -296,6 +296,12 @@ h1 {
 
 .markdown {
   min-height: 50vh;
+
+  &.ja {
+    font-size: 0.9em;
+    line-height: 1.85;
+    letter-spacing: 0.03em;
+  }
 }
 
 .details {

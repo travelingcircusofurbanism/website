@@ -2,7 +2,7 @@
 $active: rgb(0, 173, 204);
 $activelight: lighten($active, 15%);
 $highlight: #fdb833;
-$text: hsl(255, 0, 10); //#222;
+$text: hsl(255, 0, 12); //#222;
 $offwhite: rgb(224, 223, 214);
 $shade: rgb(247, 246, 243);
 
@@ -17,6 +17,9 @@ $header-offset: $unit * 5;
 
 $font-stack: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
   'Helvetica Neue', Arial, sans-serif;
+
+$ja-font-stack: 'Noto Sans JP', 'Raleway', -apple-system, BlinkMacSystemFont,
+  'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
 
 // mixins
 @mixin width($size) {

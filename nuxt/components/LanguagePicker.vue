@@ -1,13 +1,13 @@
 <template>
   <div
-    class="japanese-available content-top-full"
+    class="japanese-available content-top-full ja"
     v-if="
       (!hideJapaneseDialog && (userLanguage !== 'en' || isDev)) ||
         onlyShowLanguage
     "
   >
     <template v-if="onlyShowLanguage === 'ja'">
-      <img src="~/assets/icons/japanFlag.svg" class="flag-icon">
+      <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
       <span>日本語での投稿のみ表示しています。</span>
       <div style="display: inline-block">
         <span class="button invert" @click="onlyShow()">全ての投稿を表示</span>
@@ -15,7 +15,7 @@
     </template>
     <template v-else>
       <div class="closebutton" @click="hideJapaneseDialogClicked">✕</div>
-      <img src="~/assets/icons/japanFlag.svg" class="flag-icon">
+      <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
       <span>日本語での投稿があります。</span>
       <div style="display: inline-block">
         <span class="button invert" @click="onlyShow('ja')">日本語のみ表示</span>

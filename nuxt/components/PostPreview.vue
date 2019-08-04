@@ -13,12 +13,12 @@
 
     <div>
       <nuxt-link :to="languageUrl" class="titlelink">
-        <h4>{{ languageTitle }}</h4>
+        <h4 :class="{ja: userLanguage === 'ja' && languages.ja}">{{ languageTitle }}</h4>
       </nuxt-link>
 
       <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
         <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
-        <span class="sub">
+        <span class="sub ja">
           {{
           languages.en ? '日本語版あり' : '日本語での記事'
           }}
@@ -27,7 +27,7 @@
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
-      <div class="description" :class="{ja: languages.ja && seoDescription}">
+      <div class="description" :class="{ja: languages.ja && seoDescription }">
         {{ languageDescription }}
         <h4 class="microseo" v-if="seoTitle && seoUrl">
           <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>

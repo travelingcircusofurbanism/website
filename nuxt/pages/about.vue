@@ -109,6 +109,18 @@ export default {
       meta: [
         { property: 'og:title', content: 'About Traveling Circus of Urbanism' },
         {
+          hid: 'description',
+          name: 'description',
+          content:
+            'This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world.',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            'This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world.',
+        },
+        {
           property: 'og:url',
           content: `https://www.travelingcircusofurbanism.com/about/`,
         },

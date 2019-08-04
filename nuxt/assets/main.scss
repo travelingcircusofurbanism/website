@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400');
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300');
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import 'variables';
 @import 'map';
@@ -27,6 +28,10 @@ body {
 
 * {
   box-sizing: border-box;
+}
+
+.ja {
+  font-family: $ja-font-stack;
 }
 
 a,
@@ -75,11 +80,11 @@ h1 {
   }
 
   &.ja {
-    font-size: 2.6rem;
+    font-size: 2.9rem;
     line-height: 1.2;
 
     @include width(mobile) {
-      font-size: 2rem;
+      font-size: 2.3rem;
     }
   }
 }
@@ -124,9 +129,6 @@ h4 {
   @include width(mobile) {
     padding: $content-padding-mobile;
     min-height: 0%;
-  }
-
-  &.ja {
   }
 
   & > *:not(.content-top-full):not(.relatedposts):not(footer):not(.footer) {
