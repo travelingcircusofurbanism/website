@@ -4,8 +4,8 @@
       <a href="mailto:travelingcircusofurbanism@gmail.com">
         <img src="~/assets/icons/email.svg" width="26px" height="26px" style="padding-top: 4px;" />
       </a>
-      <a href="https://twitter.com/tcurbanism" target="_blank">
-        <img src="~/assets/icons/twitter.svg" width="22px" height="22px" />
+      <a href="https://www.instagram.com/mariko_urbannomad/" target="_blank">
+        <img src="~/assets/icons/instagram.svg" width="22px" height="22px" />
       </a>
       <a href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
         <img src="~/assets/icons/facebook.svg" width="20px" height="20px" />

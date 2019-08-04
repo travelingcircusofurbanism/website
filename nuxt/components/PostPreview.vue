@@ -16,14 +16,14 @@
         <h4 :class="{ja: userLanguage === 'ja' && languages.ja}">{{ languageTitle }}</h4>
       </nuxt-link>
 
-      <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
+      <!-- <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
         <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
         <span class="sub ja">
           {{
           languages.en ? '日本語版あり' : '日本語での記事'
           }}
         </span>
-      </div>
+      </div>-->
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
@@ -38,7 +38,9 @@
             :href="seoUrl"
           >{{userLanguage === 'en' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
         </div>
-        <nuxt-link :to="languageUrl">Keep Reading →</nuxt-link>
+        <nuxt-link
+          :to="languageUrl"
+        >{{userLanguage === 'ja' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</nuxt-link>
       </div>
     </div>
   </div>
@@ -221,7 +223,7 @@ h4 {
   word-break: break-word;
 
   &.ja {
-    line-height: 1.45;
+    line-height: 1.6;
   }
 }
 

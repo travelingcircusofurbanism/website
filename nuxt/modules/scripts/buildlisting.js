@@ -141,7 +141,7 @@ function getDataForPost(postDir, city, slug) {
       return desc
         .replace(/!\[[^\]]*\]\(.*\)[\n\r\s]*[*_].*[*_]/g, '') // remove images with captions
         .replace(/!\[[^\]]*\]\(.*\)/g, '') // remove all images
-        .replace(/\[([^\]]*)\]\(.*\)/g, (a, b) => b) // remove markdown links
+        .replace(/\[([^\]]*)\]\([^\)\n\r]*\)/g, (a, b) => b) // remove markdown links
         .replace(/<.*>.*<\/.*>/g, '') // remove html tags
         .replace(/[\n\r]#+[^\n]*\n/g, '') // remove #, ##, ###, #### headers
         .replace('>', '') // remove > quotes
@@ -171,7 +171,7 @@ function getDataForPost(postDir, city, slug) {
             )
           : undefined
       if (jaDescription) {
-        jaDescription = softTruncate(jaDescription, 120)
+        jaDescription = softTruncate(jaDescription, 90)
       }
     }
 

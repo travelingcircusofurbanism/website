@@ -11,6 +11,12 @@
     margin-top: $unit * 3;
   }
 
+  &.ja {
+    font-size: 0.93em;
+    line-height: 1.85;
+    letter-spacing: 0.03em;
+  }
+
   h2 {
     margin-top: $unit * 10;
     margin-bottom: $unit * 2;

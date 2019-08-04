@@ -268,7 +268,7 @@ export default {
 
     addImageInteraction() {
       if (!this.$el) return
-      this.$el.querySelectorAll('img').forEach(e => {
+      this.$refs.postcontent.querySelectorAll('img').forEach(e => {
         e.addEventListener('click', () =>
           this.$store.commit('setLightboxSrc', e.getAttribute('src'))
         )
@@ -298,12 +298,6 @@ h1 {
 
 .markdown {
   min-height: 50vh;
-
-  &.ja {
-    font-size: 0.9em;
-    line-height: 1.85;
-    letter-spacing: 0.03em;
-  }
 }
 
 .details {

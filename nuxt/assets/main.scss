@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400');
-@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300');
+// @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:300');
 @import url('https://fonts.googleapis.com/css?family=Unica+One');
 @import 'variables';
 @import 'map';
@@ -82,6 +82,11 @@ h1 {
   &.ja {
     font-size: 2.9rem;
     line-height: 1.2;
+    font-weight: 600;
+    // text-shadow: -0.4px -0.4px 0 $active, 0.4px -0.4px 0 $active,
+    //   -0.4px 0.4px 0 $active, 0.4px 0.4px 0 $active;
+    letter-spacing: -0.03em;
+    // font-family: $font-stack;
 
     @include width(mobile) {
       font-size: 2.3rem;

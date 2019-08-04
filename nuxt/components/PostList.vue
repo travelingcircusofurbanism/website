@@ -93,7 +93,7 @@ export default {
     capitalize,
     showMore() {
       if (this.shownPostCount < this.showablePosts.length) {
-        this.shownPostCount += this.perPage
+        this.shownPostCount += 1
         if (this.shownPostCount > this.showablePosts.length)
           this.shownPostCount = this.showablePosts.length
       }
