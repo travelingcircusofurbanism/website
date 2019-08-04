@@ -96,11 +96,11 @@
   hr {
     border: 1.5px dashed $offwhite;
     box-shadow: none;
-    transform: scale(3, 1);
+    transform: scale(1, 1);
     height: 0;
     // background: $offwhite;
     margin: $unit * 12 auto;
-    width: 6%;
+    width: $unit * 6;
 
     @include width(mobile) {
       margin: $unit * 8 auto;

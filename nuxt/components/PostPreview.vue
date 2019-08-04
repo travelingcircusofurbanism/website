@@ -27,7 +27,7 @@
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
-      <div class="description" :class="{ja: languages.ja && seoDescription }">
+      <div class="description" :class="{ja: languages.ja && userLanguage === 'ja' }">
         {{ languageDescription }}
         <h4 class="microseo" v-if="seoTitle && seoUrl">
           <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
