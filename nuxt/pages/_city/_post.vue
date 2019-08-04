@@ -87,7 +87,7 @@ export default {
     }
 
     const content = {}
-    if (process.server) {
+    if (process.server && !process.client) {
       // can just get data with fs on server
       const fs = require('fs')
       try {

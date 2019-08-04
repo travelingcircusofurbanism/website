@@ -88,7 +88,7 @@ export default {
       return redirect(route.path.replace('/ja', ''))
 
     const content = {}
-    if (process.server) {
+    if (process.server && !process.client) {
       // console.log(route.path, slug, path)
       // can just get data with fs on server
       const fs = require('fs')
