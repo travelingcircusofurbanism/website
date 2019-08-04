@@ -25,6 +25,15 @@ export function capitalize(s) {
       )
     })
     .join(' ')
+    .split(/[“"]/gi)
+    .map((splitString, index) => {
+      if (index !== 0 && dontCapitalize.includes(splitString))
+        return splitString
+      return (
+        splitString.substring(0, 1).toUpperCase() + splitString.substring(1)
+      )
+    })
+    .join('"')
 }
 
 export function softTruncate(string, softLimit) {

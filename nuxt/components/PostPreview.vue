@@ -94,7 +94,7 @@ export default {
     languageTitle() {
       return this.userLanguage === 'ja' && this.jaTitle
         ? this.jaTitle
-        : this.title
+        : capitalize(this.title)
     },
     seoTitle() {
       if (this.userLanguage === 'ja' && this.title) return this.title

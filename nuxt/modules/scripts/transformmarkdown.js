@@ -22,8 +22,23 @@ export default function() {
       fs.readdirSync(masterPostDir + cityDir)
         .filter(postDir => postDir.indexOf('.') === -1)
         .forEach(postDir => {
+          // switch 'content' to 'en'
+          const oldPath =
+            masterPostDir + cityDir + '/' + postDir + '/content.md'
+          const newPath = masterPostDir + cityDir + '/' + postDir + '/en.md'
+          fs.access(oldPath, fs.F_OK, err => {
+            if (err) return // DNE
+            fs.rename(oldPath, newPath, err => {
+              if (err) return console.log(err)
+              console.log('Renamed content.md to en.md', postDir)
+            })
+            fs.unlink(oldPath, err => {
+              if (err) return console.log(err)
+            })
+          })
+
           const markdownPaths = [
-            masterPostDir + cityDir + '/' + postDir + '/content.md',
+            masterPostDir + cityDir + '/' + postDir + '/en.md',
             masterPostDir + cityDir + '/' + postDir + '/ja.md',
           ]
 
