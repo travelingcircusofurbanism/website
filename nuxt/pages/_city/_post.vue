@@ -90,8 +90,12 @@ export default {
     if (process.server) {
       // can just get data with fs on server
       const fs = require('fs')
-      content.en = fs.readFileSync('./nuxt/static' + path + 'en.html', 'utf8')
-      content.ja = fs.readFileSync('./nuxt/static' + path + 'ja.html', 'utf8')
+      try {
+        content.en = fs.readFileSync('./nuxt/static' + path + 'en.html', 'utf8')
+      } catch (e) {}
+      try {
+        content.ja = fs.readFileSync('./nuxt/static' + path + 'ja.html', 'utf8')
+      } catch (e) {}
     } else {
       // have to use axios on the browser. yes, asyncData runs between pages on the browser. idk why.
       const axiosConfig = {
