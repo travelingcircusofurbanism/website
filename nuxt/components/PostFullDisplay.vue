@@ -118,7 +118,9 @@ export default {
       return this.$store.state.allPosts
     },
     titleInLanguage() {
-      return this.displayLanguage === 'ja' ? this.jaTitle : this.title
+      return this.displayLanguage === 'ja'
+        ? this.jaTitle
+        : capitalize(this.title)
     },
     contentInRightLanguage() {
       return this.content[this.displayLanguage] || ''

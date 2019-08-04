@@ -86,8 +86,8 @@ function getDataForPost(postDir, city, slug) {
     postData = require(`${postDir}/${city}/${slug}/data.js`)
   } catch (e) {}
   try {
-    delete require.cache[`${postDir}/${city}/${slug}/content.md`]
-    enContent = require(`${postDir}/${city}/${slug}/content.md`)
+    delete require.cache[`${postDir}/${city}/${slug}/en.md`]
+    enContent = require(`${postDir}/${city}/${slug}/en.md`)
   } catch (e) {}
   try {
     delete require.cache[`${postDir}/${city}/${slug}/ja.md`]
