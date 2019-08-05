@@ -12,7 +12,6 @@
     :slug="slug"
     :description="description"
     :publicPath="publicPath"
-    :path="path"
     :image="image"
     :polygons="polygons"
     :public="public"

@@ -71,7 +71,6 @@ export default {
     'slug',
     'description',
     'publicPath',
-    'path',
     'image',
     'displayLanguage',
     'polygons',
