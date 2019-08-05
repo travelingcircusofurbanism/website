@@ -164,7 +164,16 @@ export default () => {
               p.languages['en'] === true ||
               state.viewingAsDev) &&
             // only show public posts
-            (state.viewingAsDev || p.public === true) &&
+            (state.viewingAsDev ||
+              p.public === true ||
+              (typeof p.public === 'object' &&
+                ((p.public.en === true && state.language === 'en') ||
+                  ((p.public.ja === true || p.public.en === true) &&
+                    state.language === 'ja' &&
+                    state.onlyShowLanguage !== 'ja') ||
+                  (p.public.ja === true &&
+                    state.language === 'ja' &&
+                    state.onlyShowLanguage === 'ja')))) &&
             // only show posts that are published in the past
             MDYToDate(p.date).getTime() < new Date().getTime()
         )

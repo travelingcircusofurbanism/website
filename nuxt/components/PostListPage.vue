@@ -70,8 +70,22 @@ export default {
       this.$store.commit('setHighlight')
       this.$store.commit('setViewPolygons')
       this.skippingToFirstPost = true
+      const firstPost = this.showablePosts[0]
+      let url =
+        this.userLanguage === 'ja' &&
+        firstPost.languages.ja &&
+        (firstPost.public ||
+          (typeof firstPost.public === 'object' && firstPost.public.ja))
+          ? firstPost.url
+              .replace('/ja/', '/')
+              .replace(
+                /(\/?[^/]+\/)(.*)/g,
+                (wholestring, firsthalf, secondhalf) =>
+                  firsthalf + 'ja/' + secondhalf
+              )
+          : firstPost.url
       return this.$router.replace({
-        path: this.showablePosts[0].url,
+        path: url,
       })
     }
   },

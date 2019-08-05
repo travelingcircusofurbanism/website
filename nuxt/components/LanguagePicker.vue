@@ -2,7 +2,7 @@
   <div
     class="japanese-available content-top-full ja"
     v-if="
-      (!hideJapaneseDialog && (userLanguage !== 'en' || isDev)) ||
+      (!hideJapaneseDialog && (userLanguage !== 'en')) ||
         onlyShowLanguage
     "
   >

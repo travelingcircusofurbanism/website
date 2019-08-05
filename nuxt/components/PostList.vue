@@ -3,16 +3,7 @@
     <h3 class="sectionhead" v-if="title">{{ capitalize(title) }}</h3>
     <div v-else class="spacer"></div>
     <transition-group name="fade">
-      <PostPreview
-        v-for="(post, key) in postsToShow"
-        :key="key"
-        v-bind="post"
-        :class="{
-          fade:
-            post.public !== true ||
-            MDYToDate(post.date).getTime() > new Date().getTime(),
-        }"
-      />
+      <PostPreview v-for="(post, key) in postsToShow" :key="key" v-bind="post" />
     </transition-group>
     <div
       class="button secondary full showall"
@@ -115,8 +106,5 @@ export default {
 
 .spacer {
   height: $unit * 10;
-}
-.fade {
-  opacity: 0.4;
 }
 </style>

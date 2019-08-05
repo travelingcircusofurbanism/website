@@ -2,21 +2,21 @@
   <section class="content">
     <div
       class="japanese-available content-top-full ja"
-      v-if="(userLanguage === 'ja' || isDev) && content.ja && content.en"
+      v-if="isDev && languages.ja && languages.en"
     >
       <template v-if="displayLanguage !== 'ja'">
         <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
-        <span>日本語版もあります。</span>
-        <span class="button invert" @click="setLanguage('ja')">切り替える</span>
+        <span>Showing the English version.</span>
+        <span class="button invert" @click="switchLanguage()">Switch</span>
       </template>
       <template v-else>
-        <span>日本語版を表示しています。</span>
-        <span class="button invert" @click="setLanguage('en')">英語に戻る</span>
+        <span>Showing the Japanese version.</span>
+        <span class="button invert" @click="switchLanguage()">Switch</span>
       </template>
     </div>
-    <Breadcrumb :title="titleInLanguage" />
+    <Breadcrumb :title="title" />
 
-    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ titleInLanguage }}</h1>
+    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title }}</h1>
 
     <PostDetails
       class="details"
@@ -73,12 +73,12 @@ export default {
     'publicPath',
     'path',
     'image',
-    'jaTitle',
-    'prioritizeLanguage',
+    'displayLanguage',
     'polygons',
     'public',
     'preview',
     'tags',
+    'languages',
   ],
 
   components: {
@@ -93,8 +93,7 @@ export default {
 
   data() {
     return {
-      displayLanguage:
-        this.prioritizeLanguage || this.$store.state.language || 'en',
+      switchingPostLanguage: false,
     }
   },
 
@@ -117,16 +116,8 @@ export default {
     allPosts() {
       return this.$store.state.allPosts
     },
-    titleInLanguage() {
-      return this.displayLanguage === 'ja'
-        ? this.jaTitle
-        : capitalize(this.title)
-    },
-    contentInRightLanguage() {
-      return this.content[this.displayLanguage] || ''
-    },
     contentToDisplay() {
-      if (!this.contentInRightLanguage.length) return ''
+      if (!this.content || this.content.length === 0) return ''
       const contentToDisplay = this.highlightLocationText()
       this.$nextTick(this.addImageInteraction)
       this.$nextTick(this.addMapMoveOnHighlightTextHover)
@@ -134,7 +125,30 @@ export default {
     },
   },
 
+  created() {
+    if (
+      this.onlyShowLanguage &&
+      this.onlyShowLanguage !== this.displayLanguage &&
+      this.languages[this.onlyShowLanguage]
+    )
+      this.switchLanguage()
+    else if (
+      this.userLanguage !== this.displayLanguage &&
+      this.languages[this.userLanguage] &&
+      !this.isDev
+    )
+      this.switchLanguage()
+    else if (
+      !this.content ||
+      this.content.length === 0 ||
+      (!this.isDev && !this.languages[this.displayLanguage])
+    )
+      this.switchLanguage()
+  },
+
   mounted() {
+    if (this.switchingPostLanguage) return
+
     this.resetView()
     this.$store.commit(
       'setHighlight',
@@ -145,9 +159,6 @@ export default {
         : this.mapPosition
     )
 
-    if (this.content[this.displayLanguage])
-      this.setLanguage(this.displayLanguage)
-
     this.$nextTick(() => {
       this.$el.scrollTop = 0
       this.$el.parentNode.scrollTop = 0
@@ -157,13 +168,29 @@ export default {
 
     // this is for live previews online
     this.$nextTick(() => {
-      if (!this.public && !this.isDev && this.preview)
+      if (
+        !(
+          this.public === true ||
+          (typeof this.public === 'object' &&
+            this.public[this.displayLanguage] === true)
+        ) &&
+        !this.isDev &&
+        this.preview
+      )
         this.$store.commit('setMapMarkers', this.allPosts)
     })
   },
 
   beforeDestroy() {
-    if (!this.public && !this.isDev && this.preview)
+    if (
+      !(
+        this.public === true ||
+        (typeof this.public === 'object' &&
+          this.public[this.displayLanguage] === true)
+      ) &&
+      !this.isDev &&
+      this.preview
+    )
       this.$store.commit('setMapMarkers', this.currentShowablePosts)
     this.$store.commit('setHighlight')
     this.$store.commit('setViewPolygons')
@@ -180,15 +207,13 @@ export default {
       this.$store.commit('setHighlight')
     },
 
-    setLanguage(language) {
-      const prevLanguage = this.displayLanguage
-      if (prevLanguage === language) return
-
-      this.displayLanguage = language
-      if (language === 'en') {
+    switchLanguage() {
+      this.switchingPostLanguage = true
+      const targetLanguage = this.displayLanguage === 'en' ? 'ja' : 'en'
+      if (targetLanguage === 'en' && this.languages.en) {
         this.$store.dispatch('setOnlyShowLanguage')
         this.$router.replace(this.publicPath.replace('/ja', ''))
-      } else if (language === 'ja')
+      } else if (targetLanguage === 'ja' && this.languages.ja)
         this.$router.replace(
           this.publicPath
             .replace('/ja/', '/')
@@ -214,8 +239,8 @@ export default {
         (this.mapPosition.length === 1 && !this.polygons) ||
         this.isMobile
       )
-        return this.contentInRightLanguage
-      let newContent = this.contentInRightLanguage.replace(/&amp;/g, '&')
+        return this.content
+      let newContent = this.content.replace(/&amp;/g, '&')
       const toCheck = this.polygons
         ? [...this.mapPosition, ...this.polygons]
         : this.mapPosition

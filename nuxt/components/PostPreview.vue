@@ -1,5 +1,10 @@
 <template>
-  <div class="post-preview" v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }">
+  <div
+    class="post-preview"
+    v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }"
+    :class="{
+          fade:shouldFade}"
+  >
     <nuxt-link :to="languageUrl">
       <div
         v-lazy:background-image="{
@@ -13,7 +18,9 @@
 
     <div>
       <nuxt-link :to="languageUrl" class="titlelink">
-        <h4 :class="{ja: userLanguage === 'ja' && languages.ja}">{{ languageTitle }}</h4>
+        <h4
+          :class="{ja: userLanguage === 'ja' && languages.ja && showableLanguages.ja}"
+        >{{ languageTitle }}</h4>
       </nuxt-link>
 
       <!-- <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
@@ -27,8 +34,14 @@
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
-      <div class="description" :class="{ja: languages.ja && userLanguage === 'ja' }">
+      <div
+        class="description"
+        :class="{ja: languages.ja && userLanguage === 'ja' && showableLanguages.ja }"
+      >
         {{ languageDescription }}
+        <nuxt-link
+          :to="languageUrl"
+        >{{userLanguage === 'ja' && languages.ja && showableLanguages.ja ? `読み続ける →` : `Keep Reading →`}}</nuxt-link>
         <h4 class="microseo" v-if="seoTitle && seoUrl">
           <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
         </h4>
@@ -36,18 +49,15 @@
           {{ seoDescription ? seoDescription : '' }}
           <a
             :href="seoUrl"
-          >{{userLanguage === 'en' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
+          >{{userLanguage === 'en' && languages.ja && showableLanguages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
         </div>
-        <nuxt-link
-          :to="languageUrl"
-        >{{userLanguage === 'ja' && languages.ja ? `読み続ける →` : `Keep Reading →`}}</nuxt-link>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-const { capitalize } = require('~/assets/commonFunctions.js')
+const { capitalize, MDYToDate } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
@@ -64,6 +74,8 @@ export default {
     'mapPosition',
     'languages',
     'polygons',
+    'public',
+    'slug',
   ],
   components: { PostDetails },
   computed: {
@@ -77,7 +89,9 @@ export default {
       return this.$store.state.language
     },
     languageUrl() {
-      return this.userLanguage === 'ja' && this.languages.ja
+      return this.userLanguage === 'ja' &&
+        this.languages.ja &&
+        (this.showableLanguages.ja || this.isDev)
         ? this.url.replace(
             /(\/?[^/]+\/)(.*)/g,
             (wholestring, firsthalf, secondhalf) =>
@@ -86,31 +100,56 @@ export default {
         : this.url
     },
     seoUrl() {
-      if (this.userLanguage === 'en' && this.languages.ja)
+      if (this.userLanguage === 'en' && this.showableLanguages.ja)
         return this.url.replace(
           /(\/?[^/]+\/)(.*)/g,
           (wholestring, firsthalf, secondhalf) => firsthalf + 'ja/' + secondhalf
         )
-      else if (this.userLanguage === 'ja' && this.languages.en) return this.url
+      else if (this.userLanguage === 'ja' && this.showableLanguages.en)
+        return this.url
     },
     languageTitle() {
-      return this.userLanguage === 'ja' && this.jaTitle
+      return this.userLanguage === 'ja' &&
+        this.jaTitle &&
+        (this.showableLanguages.ja || this.isDev)
         ? this.jaTitle
         : capitalize(this.title)
     },
     seoTitle() {
-      if (this.userLanguage === 'ja' && this.title) return this.title
-      else if (this.userLanguage === 'en' && this.jaTitle) return this.jaTitle
+      if (
+        this.userLanguage === 'ja' &&
+        this.title &&
+        this.showableLanguages.ja &&
+        this.showableLanguages.en
+      )
+        return this.title
+      else if (
+        this.userLanguage === 'en' &&
+        this.jaTitle &&
+        this.showableLanguages.ja &&
+        this.showableLanguages.en
+      )
+        return this.jaTitle
     },
     languageDescription() {
-      return this.userLanguage === 'ja' && this.jaDescription
+      return this.userLanguage === 'ja' &&
+        (this.showableLanguages.ja || this.isDev) &&
+        this.jaDescription
         ? this.jaDescription
         : this.description
     },
     seoDescription() {
-      if (this.userLanguage === 'ja' && this.description)
+      if (
+        this.userLanguage === 'ja' &&
+        this.description &&
+        this.showableLanguages.en
+      )
         return this.description
-      else if (this.userLanguage === 'en' && this.jaDescription)
+      else if (
+        this.userLanguage === 'en' &&
+        this.jaDescription &&
+        this.showableLanguages.ja
+      )
         return this.jaDescription
     },
     loader() {
@@ -126,6 +165,27 @@ export default {
             (Array.isArray(this.mapPosition) &&
               (this.mapPosition.length === 0 ||
                 !this.mapPosition.find(p => p.location)))))
+      )
+    },
+    showableLanguages() {
+      return {
+        en:
+          this.languages.en &&
+          this.$store.state.onlyShowLanguage !== 'ja' &&
+          (this.public === true ||
+            (typeof this.public === 'object' && this.public.en === true)),
+        ja:
+          this.languages.ja &&
+          (this.public === true ||
+            (typeof this.public === 'object' && this.public.ja === true)),
+      }
+    },
+    shouldFade() {
+      return (
+        (this.isDev &&
+          (this.showableLanguages[this.userLanguage] !== true &&
+            this.userLanguage)) ||
+        MDYToDate(this.date).getTime() > new Date().getTime()
       )
     },
   },
@@ -165,6 +225,10 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/variables.scss';
+
+.fade {
+  opacity: 0.4;
+}
 
 .post-preview {
   margin-bottom: $unit * 10;
@@ -224,6 +288,7 @@ h4 {
 
   &.ja {
     line-height: 1.6;
+    text-align: justify;
   }
 }
 

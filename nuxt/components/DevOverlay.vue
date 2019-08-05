@@ -39,11 +39,15 @@ export default {
   methods: {
     toggleDevView() {
       this.$store.commit('setViewingAsDev', !this.viewingAsDev)
-      this.$store.dispatch('updateShowablePosts')
+      // this.$store.dispatch('updateShowablePosts')
       if (this.viewingAsDev) {
         this.$store.dispatch('setLanguage', 'en')
-        this.$store.dispatch('setOnlyShowLanguage')
+        this.userLang = 'en'
+      } else {
+        this.$store.dispatch('setLanguage', 'ja')
+        this.userLang = 'ja'
       }
+      this.$store.dispatch('setOnlyShowLanguage')
     },
   },
 }

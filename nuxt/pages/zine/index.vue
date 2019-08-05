@@ -72,7 +72,7 @@
       <div class="p">
         In future volumes of our Traveling Circus of Urbanism zine, we hope to
         curate stories from a global network of writers who have unique points
-        of view about their region. If you're interested in piching a story
+        of view about their region. If you're interested in pitching a story
         about your city for the next zine, or in being a part of this project,
         <a
           href="mailto:travelingcircusofurbanism@gmail.com"

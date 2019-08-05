@@ -1,5 +1,5 @@
 module.exports = {
-  public: true,
+  public: { en: true, ja: false },
   date: '7/30/2019',
   category: 'intro',
   mapPosition: [

@@ -145,7 +145,10 @@ function getDataForPost(postDir, city, slug) {
     let jaTitle = null
     if (jaContent) {
       jaTitle = jaContent.substring(jaContent.indexOf('#') + 1)
-      jaTitle = jaTitle.substring(0, jaTitle.indexOf('\n'))
+      jaTitle = jaTitle
+        .substring(0, jaTitle.indexOf('\n'))
+        .replace(/^[\s\n]*/g, '')
+        .replace(/[\s\n]*$/g, '')
     }
 
     // create nice truncated descriptions
@@ -163,7 +166,7 @@ function getDataForPost(postDir, city, slug) {
         .replace(/[\n\r]-\s/g, '\n• ') // remove bullet dashes
         .replace(/[\n\r]/g, ' ') // remove line breaks
         .replace(/^\s*/, '') // remove excess spaces at the start
-        .replace(/[\s\n]+/gim, ' ') // remove multiple spaces in a row
+        .replace(/[\s\n]+/gi, ' ') // remove multiple spaces in a row
     }
 
     let description = postData.description

@@ -89,15 +89,25 @@ module.exports = {
       const cities = fs
         .readdirSync('./nuxt/static/posts')
         .filter(c => c.indexOf('.') !== 0)
-      const posts = require('./nuxt/static/generated/posts.json').filter(
-        post => post.public || post.preview
+      const posts = require('./nuxt/static/generated/posts.json')
+      const jaPosts = posts.filter(
+        post =>
+          post.languages.ja === true &&
+          (post.public === true ||
+            post.preview ||
+            (typeof post.public === 'object' && post.public.ja === true))
       )
-      const jaPosts = posts.filter(post => post.languages.ja === true)
-      const enPosts = posts.filter(post => post.languages.en === true)
+      const enPosts = posts.filter(
+        post =>
+          post.languages.en === true &&
+          (post.public === true ||
+            post.preview ||
+            (typeof post.public === 'object' && post.public.en === true))
+      )
       const locations = require('./nuxt/static/generated/locations.json')
       const tags = require('./nuxt/static/generated/tags.json')
       let categories = []
-      posts.map(p => {
+      let a = [...jaPosts, ...enPosts].forEach(p => {
         // find categories
         if (categories.indexOf(p.category.toLowerCase()) === -1)
           categories.push(p.category.toLowerCase())
@@ -137,6 +147,7 @@ module.exports = {
         posts.forEach(post => {
           if (
             !post.public ||
+            (typeof post.public === 'object' && post.public.en !== true) ||
             post.languages.en !== true ||
             new Date(post.date).getTime() > new Date().getTime()
           )
@@ -145,7 +156,6 @@ module.exports = {
             `./nuxt/static/posts/${post.url}/rssContent.html`,
             'utf-8'
           )
-          console.log(content)
           feed.addItem({
             title: post.title,
             id: encodeURI(post.url),

@@ -1,9 +1,9 @@
 <template>
   <PostFullDisplay
-    :prioritizeLanguage="'en'"
+    displayLanguage="en"
     :key="'en' + title"
     :title="title"
-    :content="content"
+    :content="content.en"
     :category="category"
     :mapPosition="mapPosition"
     :city="city"
@@ -14,11 +14,11 @@
     :publicPath="publicPath"
     :path="path"
     :image="image"
-    :jaTitle="jaTitle"
     :polygons="polygons"
     :public="public"
     :preview="preview"
     :tags="tags"
+    :languages="languages"
   />
 </template>
 
