@@ -24,7 +24,7 @@
       :class="{hasshadow: !canvasImage}"
       @click.native="resetView"
     >
-      <h1>Traveling Circus of Urbanism</h1>
+      <img src="/assets/logo.svg" alt="logo" />
       <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
     </nuxt-link>
     <br />
@@ -150,55 +150,40 @@ a:active {
 }
 
 .logo {
-  display: inline-block;
+  display: inline-flex !important;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   position: relative;
   padding: $unit * 3 $unit * 4 $unit * 2.5 $unit * 4;
-  font-weight: 600;
   background: $active;
+  height: $unit * 14;
 
   &.hasshadow {
     box-shadow: $over-map-shadow;
   }
 
   @include width(mobile) {
+    height: auto;
     box-shadow: none;
     width: 100%;
-    padding: $unit * 2.2 $unit $unit * 2.2 $unit * 8;
+    padding: $unit * 2.2 $unit * 3 $unit * 2.2 $unit * 8;
+  }
 
-    .tagline {
+  img {
+    width: 100%;
+  }
+
+  .tagline {
+    opacity: 0.8;
+    font-size: 1rem;
+    margin: 0;
+    // margin-top: $unit / 2;
+    font-weight: 400;
+
+    @include width(mobile) {
       display: none;
     }
-
-    &:hover {
-      background: $active;
-    }
-  }
-}
-
-h1 {
-  text-transform: uppercase;
-  font-family: 'Unica One', 'Raleway', sans-serif;
-  font-size: 2.2rem;
-  margin: 0;
-  color: white !important;
-  white-space: nowrap;
-  line-height: 1;
-  // letter-spacing: -0.5px;
-
-  @include width(mobile) {
-    font-size: 1.45rem;
-  }
-}
-
-h3 {
-  opacity: 0.8;
-  font-size: 1rem;
-  margin: 0;
-  // margin-top: $unit / 2;
-  font-weight: 400;
-
-  @include width(mobile) {
-    font-size: 1rem;
   }
 }
 

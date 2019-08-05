@@ -7,8 +7,7 @@
       <div class="megalist">
         <div class="listsectionlabel sitename">
           <nuxt-link to="/" @click.native="close" exact>
-            Traveling circus
-            <br />of urbanism
+            <img src="~/static/assets/logo vert blue.svg" alt="logo" />
           </nuxt-link>
         </div>
         <div class="listentry">
@@ -144,13 +143,10 @@ $overlaybg: rgba($text, 1);
       }
 
       &.sitename {
-        color: $active;
-        font-size: 1.4em;
-        font-weight: 600;
-        line-height: 1;
-        font-family: 'Unica One', 'Raleway', sans-serif;
-
+        margin-left: $content-padding-mobile;
+        padding: 0;
         a {
+          display: inline-block;
           text-decoration: none;
         }
       }
