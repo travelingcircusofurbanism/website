@@ -9,13 +9,13 @@
       v-if="mapPosition && ((!Array.isArray(mapPosition) && mapPosition.location) || (mapPosition.length === 1 && mapPosition[0].location))"
     >
       <nuxt-link
-        :to="'/at/' + (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location).toLowerCase()"
+        :to="'/at/' + (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location).toLowerCase().replace(/\//g, '%2F')"
         class="sublink"
       >{{ (Array.isArray(mapPosition) ? mapPosition[0].location : mapPosition.location) }}{{ cityIsLocation ? '' : ', ' }}</nuxt-link>
       {{ cityIsLocation ? ' ・ ' : '' }}
     </span>
     <span v-if="city && !cityIsLocation">
-      <nuxt-link :to="'/' + city" class="sublink">
+      <nuxt-link :to="'/' + city.replace(/\//g, '%2F')" class="sublink">
         {{
         capitalize(city)
         }}

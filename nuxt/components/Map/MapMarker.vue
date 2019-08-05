@@ -179,7 +179,7 @@ export default {
 
     routeTo(location) {
       if (allLocations.includes(location.toLowerCase()))
-        this.$router.push('/at/' + encodeURI(location).toLowerCase())
+        this.$router.push('/at/' + encodeURIComponent(location).toLowerCase())
     },
 
     zoomIntoCluster() {

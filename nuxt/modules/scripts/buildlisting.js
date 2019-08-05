@@ -35,7 +35,7 @@ export default function() {
               .map(post => getDataForPost(postDir, city, post))
               .filter(d => d)
               .sort((a, b) => new Date(a.date) < new Date(b.date))
-            fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
+            // fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
             return cityPostData
           })
           .reduce((accumulator, currentValue) => {
@@ -103,6 +103,18 @@ function getDataForPost(postDir, city, slug) {
       en: enContent ? true : false,
       ja: jaContent ? true : false,
     }
+
+    const mapPositionsWithoutExcessData = postData.mapPosition
+      ? Array.isArray(postData.mapPosition)
+        ? postData.mapPosition.map(p => ({
+            location: p.location,
+            center: p.center,
+          }))
+        : {
+            location: postData.mapPosition.location,
+            center: postData.mapPosition.center,
+          }
+      : undefined
 
     const locations = postData.mapPosition
       ? Array.isArray(postData.mapPosition)
@@ -200,6 +212,8 @@ function getDataForPost(postDir, city, slug) {
       languages,
       public: postData.public,
     }
+    if (mapPositionsWithoutExcessData)
+      data.mapPosition = mapPositionsWithoutExcessData
     if (jaTitle) data.jaTitle = jaTitle
     if (jaDescription) data.jaDescription = jaDescription
     if (postData.polygons) data.polygons = postData.polygons

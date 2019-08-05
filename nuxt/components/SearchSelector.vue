@@ -40,7 +40,7 @@
       </div>
       <div class="listsectionlabel" v-if="orderedCities.length">City</div>
       <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
-        <nuxt-link class="listlink" :to="`/${element.label}`">
+        <nuxt-link class="listlink" :to="`/${element.label.replace(/\//g, '%2F')}`">
           {{capitalize(element.label)}}
           <span class="sub">
             <span class="sub">{{element.count}}</span>
@@ -50,11 +50,17 @@
       <template v-if="searchTerm !== ''">
         <div class="listsectionlabel" v-if="tags.length">Tag</div>
         <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
-          <nuxt-link class="listlink" :to="`/tag/${element}`">{{capitalize(element)}}</nuxt-link>
+          <nuxt-link
+            class="listlink"
+            :to="`/tag/${element.replace(/\//g, '%2F')}`"
+          >{{capitalize(element)}}</nuxt-link>
         </div>
         <div class="listsectionlabel" v-if="locations.length">Place</div>
         <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
-          <nuxt-link class="listlink" :to="`/at/${element}`">{{capitalize(element)}}</nuxt-link>
+          <nuxt-link
+            class="listlink"
+            :to="`/at/${element.replace(/\//g, '%2F')}`"
+          >{{capitalize(element)}}</nuxt-link>
         </div>
       </template>
       <div
@@ -67,8 +73,6 @@
 
 <script>
 const { capitalize } = require('~/assets/commonFunctions.js')
-
-// TODO why doesn't kujoyu show up?
 
 export default {
   props: {},

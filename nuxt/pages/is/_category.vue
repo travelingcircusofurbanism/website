@@ -1,5 +1,5 @@
 <template>
-  <PostListPage :postListTitle="category" :posts="posts"/>
+  <PostListPage :postListTitle="category" :posts="posts" />
 </template>
 
 <script>
@@ -25,9 +25,7 @@ export default {
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/is/${
-            this.category
-          }`,
+          content: `https://www.travelingcircusofurbanism.com/is/${this.category}`,
         },
         {
           hid: `og:image`,
@@ -35,16 +33,15 @@ export default {
           content:
             this.posts[0].image.substring(0, 4) === 'http'
               ? this.posts[0].image
-              : `https://www.travelingcircusofurbanism.com${
-                  this.posts[0].image
-                }`,
+              : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`,
         },
       ],
     }
   },
   asyncData({ route, redirect, error, isStatic, store }) {
-    const category = decodeURI(route.path)
+    const category = decodeURIComponent(route.path)
       .replace('/is/', '')
+      .replace(/%2F/g, '/')
       .toLowerCase()
     let posts = store.state.allPosts
     if (!posts || posts.length === 0)

@@ -1,5 +1,5 @@
 <template>
-  <PostListPage :postListTitle="location" :posts="posts" :marker="marker"/>
+  <PostListPage :postListTitle="location" :posts="posts" :marker="marker" />
 </template>
 
 <script>
@@ -32,9 +32,7 @@ export default {
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/at/${
-            this.location
-          }`,
+          content: `https://www.travelingcircusofurbanism.com/at/${this.location}`,
         },
         {
           hid: `og:image`,
@@ -43,16 +41,14 @@ export default {
             this.posts[0] && this.posts[0].image
               ? this.posts[0].image.substring(0, 4) === 'http'
                 ? this.posts[0].image
-                : `https://www.travelingcircusofurbanism.com${
-                    this.posts[0].image
-                  }`
+                : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`
               : '',
         },
       ],
     }
   },
   asyncData({ route, redirect, error, isStatic, store }) {
-    const location = decodeURI(route.path)
+    const location = decodeURIComponent(route.path)
       .replace('/at/', '')
       .replace(/\/$/, '')
       .toLowerCase()

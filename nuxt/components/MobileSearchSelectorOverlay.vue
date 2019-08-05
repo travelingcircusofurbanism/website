@@ -27,7 +27,11 @@
         </div>
         <div class="listsectionlabel">Cities</div>
         <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
-          <nuxt-link class="listlink" :to="`/${element.label}`" @click.native="close">
+          <nuxt-link
+            class="listlink"
+            :to="`/${element.label.replace(/\//g, '%2F')}`"
+            @click.native="close"
+          >
             {{capitalize(element.label)}}
             <span class="sub">
               <span class="sub">{{element.count}}</span>

@@ -11,6 +11,11 @@ module.exports = {
     },
     meta: [
       { charset: 'utf-8' },
+      {
+        hid: `content-language`,
+        'http-equiv': 'content-language',
+        content: 'en-us',
+      },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'keywords',

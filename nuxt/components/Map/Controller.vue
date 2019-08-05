@@ -59,7 +59,7 @@ export default {
         return this.defaultPosition
       // multiple markers will default to mapZone anyway
       if (!this.currentView[0].location || this.currentView.length > 1)
-        return this.currentView[0]
+        return { zoom: 12, ...this.currentView[0] }
       // otherwise, we have to figure out just how far we need to zoom into not have it fall in a cluster.
       // ...it ain't easy to do that.
       let zoomLevel = 12,
@@ -97,7 +97,8 @@ export default {
         continue
       }
 
-      zoomLevel = Math.max(this.currentView[0].zoom, zoomLevel)
+      // since we don't keep that info anymore, commented
+      // zoomLevel = Math.max(this.currentView[0].zoom, zoomLevel)
 
       return {
         ...this.currentView[0],
@@ -178,9 +179,9 @@ export default {
     },
 
     updateMap() {
-      const dest = {}
+      const mapDestination = {}
       for (let key of Object.keys(this.defaultPosition))
-        dest[key] = this.mapPosition[key] || this.defaultPosition[key]
+        mapDestination[key] = this.mapPosition[key] || this.defaultPosition[key]
 
       // data can come in from mapZone as an array of 2 points to fit to, or from mapPosition as a mapPosition object.
       if (this.mapZone) {
@@ -198,7 +199,7 @@ export default {
           padding,
         })
       } else {
-        this.map.flyTo(dest)
+        this.map.flyTo(mapDestination)
         // console.log('flying to', dest)
       }
     },

@@ -30,37 +30,48 @@ const { capitalize } = require('~/assets/commonFunctions.js')
 export default {
   scrollToTop: true,
   head() {
+    const meta = [
+      { property: 'og:title', content: this.capitalize(this.title) },
+      { hid: `og:type`, property: 'og:type', content: 'article' },
+      {
+        hid: `og:description`,
+        property: 'og:description',
+        content: this.description,
+      },
+      {
+        property: 'description',
+        content: this.description,
+        hid: `description`,
+      },
+      {
+        property: 'og:url',
+        content: `https://www.travelingcircusofurbanism.com${this.publicPath}`,
+      },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: this.image // does it have an image?
+          ? this.image.substring(0, 4) === 'http' // is it external?
+            ? this.image // if so, use it
+            : `https://www.travelingcircusofurbanism.com${encodeURI(
+                this.image
+              )}` // otherwise, give it a prefix
+          : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg', // fallback to the site thumbnail.
+      },
+    ]
+    if (this.languages && this.languages.ja)
+      meta.push({
+        rel: 'alternate',
+        href: `https://www.travelingcircusofurbanism.com${this.publicPath.replace(
+          /(\/?[^/]+\/)(.*)/g,
+          (wholestring, firsthalf, secondhalf) => firsthalf + 'ja/' + secondhalf
+        )}`,
+        hreflang: 'ja',
+      })
+
     return {
       title: this.capitalize(this.title),
-      meta: [
-        { property: 'og:title', content: this.capitalize(this.title) },
-        { hid: `og:type`, property: 'og:type', content: 'article' },
-        {
-          hid: `og:description`,
-          property: 'og:description',
-          content: this.description,
-        },
-        {
-          property: 'description',
-          content: this.description,
-          hid: `description`,
-        },
-        {
-          property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com${this.publicPath}`,
-        },
-        {
-          hid: `og:image`,
-          property: 'og:image',
-          content: this.image // does it have an image?
-            ? this.image.substring(0, 4) === 'http' // is it external?
-              ? this.image // if so, use it
-              : `https://www.travelingcircusofurbanism.com${encodeURI(
-                  this.image
-                )}` // otherwise, give it a prefix
-            : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg', // fallback to the site thumbnail.
-        },
-      ],
+      meta,
     }
   },
 

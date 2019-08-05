@@ -45,9 +45,10 @@ export default {
     }
   },
   asyncData({ route, redirect, error, isStatic, store }) {
-    const city = decodeURI(route.path)
+    const city = decodeURIComponent(route.path)
       .replace(/\//g, '')
       .replace(/\/$/, '')
+      .replace(/%2F/g, '/')
       .toLowerCase()
     let posts = store.state.allPosts.filter(p => p.city.toLowerCase() === city)
     if (!posts || posts.length === 0)

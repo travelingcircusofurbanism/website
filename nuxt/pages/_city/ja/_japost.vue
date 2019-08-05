@@ -32,6 +32,19 @@ export default {
     return {
       title: this.capitalize(this.jaTitle),
       meta: [
+        {
+          hid: `content-language`,
+          'http-equiv': 'content-language',
+          content: 'ja-jp',
+        },
+        {
+          rel: 'alternate',
+          href: `https://www.travelingcircusofurbanism.com${this.publicPath.replace(
+            '/ja',
+            ''
+          )}`,
+          hreflang: 'en',
+        },
         { property: 'og:title', content: this.capitalize(this.jaTitle) },
         { hid: `og:type`, property: 'og:type', content: 'article' },
         {

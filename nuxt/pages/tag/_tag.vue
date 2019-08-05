@@ -1,5 +1,5 @@
 <template>
-  <PostListPage :postListTitle="`#${tag}`" :posts="posts"/>
+  <PostListPage :postListTitle="`#${tag}`" :posts="posts" />
 </template>
 
 <script>
@@ -31,16 +31,15 @@ export default {
           content:
             this.posts[0].image.substring(0, 4) === 'http'
               ? this.posts[0].image
-              : `https://www.travelingcircusofurbanism.com${
-                  this.posts[0].image
-                }`,
+              : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`,
         },
       ],
     }
   },
   asyncData({ route, redirect, error, isStatic, store }) {
-    const searchTag = decodeURI(route.path)
+    const searchTag = decodeURIComponent(route.path)
       .replace('/tag/', '')
+      .replace(/%2F/g, '/')
       .toLowerCase()
     let posts = store.state.allPosts
     if (!posts || posts.length === 0)
