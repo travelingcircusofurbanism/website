@@ -5,7 +5,7 @@
       v-if="isDev && languages.ja && languages.en"
     >
       <template v-if="displayLanguage !== 'ja'">
-        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
+        <!-- <img src="~/assets/icons/japanFlag.svg" class="flag-icon" /> -->
         <span>Showing the English version.</span>
         <span class="button invert" @click="switchLanguage()">Switch</span>
       </template>
