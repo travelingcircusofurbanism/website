@@ -26,15 +26,15 @@ export default function() {
         const allPostData = posts
           .filter(pathName => pathName.indexOf('.') === -1)
           .map(city => {
-            const formattedCityDir = decodeURI(encodeURI(city.toLowerCase()))
             const inputDir = postDir + '/' + city
-            const cityFile = generatedDir + '/' + formattedCityDir + '.json'
             const cityPostData = fs
               .readdirSync(inputDir)
               .filter(pathName => pathName.indexOf('.') === -1)
               .map(post => getDataForPost(postDir, city, post))
               .filter(d => d)
               .sort((a, b) => new Date(a.date) < new Date(b.date))
+            // const formattedCityDir = decodeURI(encodeURI(city.toLowerCase()))
+            // const cityFile = generatedDir + '/' + formattedCityDir + '.json'
             // fs.writeFileSync(cityFile, JSON.stringify(cityPostData), 'utf8')
             return cityPostData
           })
