@@ -1,39 +1,38 @@
-# E.U.R.: Mussolini's Dream of Awkward Roman Style and Cars. Lots of Cars.
+# EUR: The City of Mussolini's Dreams
 
-Rome's new city centre EUR
+I know I shouldn't dare to say, but after visiting an ocean of ancient ruins and historical monuments in Rome, I was getting a little bit burned out about old Roman stuff. An simple quiestion came to my mind - the significance of ancient Roman architecture and city planning needs no reiterrating, but what are Rome's contemporary practices of urban developments look like?
 
-After visiting an ocean of ancient ruins and historical builigs in Rome, an simple quiestion came to my mind - what are Rome's new urban developments look like? /////.
+As most of the twenty-first-century metropolis, Rome is also caught between two incompatible contending realities: the vigorousenergy of continuously expanding modern capital, and the inertia of ancient city centre that makes Rome one of the most poopular tourist destinations.
 
-That's why we visited EUR, a district located on the edge of Rome’s historical center. EUR stands for Esposizione Universale Roma; it was originally planned in the 1930s as the site for the 1942 world's fair which Benito Mussolini, to showcase twenty years of Fascism in Italy.
+We've heard from a local urbanist that there is an interesting district to visit, away from ancient city centre and a crowd of tourists, which might help us understand at least a part of thier contradicting realities.
 
 ![](EUR1.jpg)
 ![](EUR2.jpg)
 
-## History
+## EUR, a place developed to showcase twenty years of Fascism
 
-The world fair never happened though, due to the intervening of World War II. The site
+We visited [EUR](https://en.wikipedia.org/wiki/EUR,_Rome), a district located in the south-west part of the city. EUR stands for Esposizione Universale Roma; it was originally planned in the 1930s as the site for the 1942 world's fair to showcase twenty years of Fascism in Italy. Yes, it was initiated by Benito Mussolini.
 
-he uncompleted EUR development suffered severe damage
-However, the Roman authorities decided that EUR could be the basis of an out-of-town business district, which other capitals did not begin planning until decades later (for example, London Docklands and La Défense near Paris). Therefore, during the 1950s and 1960s the unfinished Fascist-era buildings were completed and other new buildings were built in contemporary styles for use as offices and government buildings, set in large gardens and parks.
+The world fair never happened and the distrist had left uncompleted though, due to the intervening of World War II. After the war, the site has been redeveloped as the basis of an out-of-town business district, and now, EUR functions as Rome's new city centre. The unfinished Fascist-era buildings were completed and other contemporary buildings were built during the 1950s and 1960s
 
 ![](EUR3.jpg)
 ![](EUR4.jpg)
 
-## Our impressions
+## Modern city centre: how it looks today?
 
-First thing we've noticed was the uncomfortable number of cars. We decided to take a metro from downtown and explor the district by foot, as some of the articles about EUR I found on Google boldly state that it's walkable. Let me tell you, it is NOT.
+The district is well-connected from the historical downtown by metro, so it wasn't so hard to reach there. The district has a perfectly symmetrical shape - at the very centre there is a big boulevard from which neighrbohoods spread out to opposite direction. We started our walk from Parco Centrale del Lago and continued on the inner neghruohoods to visit Palazzo della Civiltà Italiana and other landmarks.
 
-The distric streached out perfectly symettrical from a central road. ///. and it makes the park almost impporisble to reach or get out without being hit by a car.
+Although it doesn’t quite feel right to enjoy them, the district is full of Fascist-era architecture and urban design, which cleary take a reference from Romen classical and Renaissance style. The district has also been succesful to attract new housings, educational and government facilities to meet the need of ever-expanding modern capital.
 
-The design was inspired, according to the fascist ideology, by Roman Imperial town planning,[5] with modern elements which came from Italian rationalism, the result being a sort of simplified neoclassicism.
-, built mainly of limestone, tuff and marble, traditional materials associated with Roman Empire architecture.
-
-It doesn’t quite feel right to enjoy architecture and urban design that both departs from Rome’s classical and Renaissance icons and has its genesis in a totalitarian state. Like many examples of early 20th century design in Italy, one must separate the form from the ideology. However, there is solace in that many of the buildings were completed after WWII, that the site was home to 1960 Olympics events, and the district became a natural place to expand housing, educational and government facilities for the new democracy.
+We've noticed the uncomfortable number of cars, too. Some of the articles about EUR we found on Google boldly state that EUR is walkable. Let me tell you, it is NOT. Parco Centrale del Lago was hard to reach with all the car lanes without pedestrian traffic lights.
 
 ![](EUR5.jpg)
 ![](EUR6.jpg)
 
 ## Nazizm, new Italy and nostalgia
+
+The design was inspired, according to the fascist ideology, by Roman Imperial town planning,[5] with modern elements which came from Italian rationalism, the result being a sort of simplified neoclassicism.
+, built mainly of limestone, tuff and marble, traditional materials associated with Roman Empire architecture.
 
 Museo della Civiltà Romana
 the copies of Trajan’s Column bas relief panels which allow you to follow the story of the Roman Emperor’s Dacian Wars victories like a giant graphic novel (the original is located at Trajan’s Forum near Piazza Venezia), and an amazing 1:250 scale model of Imperial Rome,
