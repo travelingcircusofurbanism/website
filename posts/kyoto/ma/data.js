@@ -1,13 +1,13 @@
 module.exports = {
-  public: false,
-  date: '3/26/2019',
-  category: 'place',
-  image: 'kujoyu9.jpg',
+  public: true,
+  date: '6/06/2019',
+  category: 'essay',
+  image: 'MA_Kyoto4-720x480.jpg',
   mapPosition: [
     {
-      location: 'Kujoyu',
+      location: '◯間 -MA-',
       bearing: 0,
-      center: [135.762486, 34.978067],
+      center: [135.749305, 34.978657],
       zoom: 12.0,
       pitch: 0,
     },
