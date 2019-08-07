@@ -5,11 +5,8 @@ module.exports = {
   image: 'evergreen2.jpg',
   mapPosition: [
     {
-      location: 'Evergreen Gas Works',
-      bearing: 0,
+      location: 'Evergreen Brick Works',
       center: [-79.365353, 43.684885],
-      zoom: 12.0,
-      pitch: 0,
     },
   ],
 }

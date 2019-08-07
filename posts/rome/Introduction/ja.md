@@ -1,4 +1,4 @@
-# Urbanist's guide to Rome
+# Urbanist's Guide:ローマ編
 
 ![](carlos-ibanez-oI141-aIwnQ-unsplash.jpg)
 _Photo by Carlos Ibáñez on Unsplash_
@@ -11,13 +11,12 @@ _Photo by Carlos Ibáñez on Unsplash_
 
 - EUR：ダウンタウンからメトロで 30 分ほどの距離にある、新しい市街地。ヨーロッパには大聖堂を中心としたはっきりとした「歴史的中心」があるけれど、それとは少し離れた場所に、ハイパーモダンでビジネスを中心としたエリアがあることが多い。イメージとしては、ロンドンの Docklands やパリの La Défense。この EUR が面白いのは、元々この地区は 1930 年にムッソリーニによって構想された地区だということ。1942 年の万博に向け、20 年続いていたイタリアのファシズム政権を賞賛する目的で建設が始まった。もちろん第二次世界大戦の影響で建設は中止されるものの、戦後 1960 年代には、政府の支援で未完成の建築物が復活。それと同時にオフィスビルや公共施設などの近代建築も建てらた。ファシズム建築に興味があるひとは、ぜひ。
 
-- 今回滞在したピニェト[Pigneto](https://www.romeing.it/pigneto-neighbourhood-rome/)が、一番良かった。
+- 今回滞在したピニェト[Pigneto](https://www.romeing.it/pigneto-neighbourhood-rome/)は、最近人気がで始めたヒップなエリア。昔は労働者階級のための郊外として、市街地へのアクセスも最悪だったが、最近メトロの駅ができたこともあり、最近開発が進んでいる。市街地よりも移民が多く、世界中の料理を味わえるのが嬉しい。観光地とはまた違う、ローマの若者が週末にいくようなエリアを体験したい人におすすめ。
 
-Immidiately we fell for its charms, and now Pigneto is our absolute favorite more than any other neighborhoods in Rome. Once a working-class suburb, Pigneto has grown as one of the most popular hangout neighborhoods for young people. Lots of local cafes, restaurant, maker's space, gelato shops. The recently opened Metro C station connects the neighborhood to the rest of the city.
+- [Garbatella](https://www.blocal-travel.com/italy/central-italy/lazio-italy/rome-italy/southern-rome/rome-ostiense/garbatella-is-poetic-neighbourhood-html/) は、
+  当時イギリスで流行っていたエベネザー・ハワードのガーデン・シティ（田園都市）構想を倣ってに 1920 年に作られた地区。コンパクトなネイバーフッド内に、煉瓦造りの建築群と緑が集まっている様子は圧巻。
 
-- [Garbatella district](https://www.blocal-travel.com/italy/central-italy/lazio-italy/rome-italy/southern-rome/rome-ostiense/garbatella-is-poetic-neighbourhood-html/) was founded in the late 1920s as part of the English Garden city movement. It took us some time to find this specific district, but nostalgic style architectures and their beautiful semi-public courtyards are worth seeing. If you are looking for a non-touristic place to explore, this is the one.
-
-- We were positively surprised by the liveliness of waterfront around Tiber Island at night. [Lungo il Tevere](http://www.lungoiltevereroma.it/) is a night market from June and August, and the long series of white tents lining the Tiber River at night is truly mesmerizing. When we were there, we could spot some [outdoor cinemas](https://www.romeing.it/rome-outdoor-cinemas/) as well.
+- ウォーターフロント開発や水辺の活用に興味があるひとは、夏なら夜の Tiber Island がおすすめ。[Lungo il Tevere](http://www.lungoiltevereroma.it/)というナイトマーケットが、毎年 5 月から８月末まで開催されている。同時期に広場などのパブリックスペースで屋外映画祭も開催されており、「こんな水辺が欲しい！」と思わせてくれる賑わいがある。
 
 ### Read
 
