@@ -129,20 +129,21 @@ export default {
       this.onlyShowLanguage &&
       this.onlyShowLanguage !== this.displayLanguage &&
       this.languages[this.onlyShowLanguage]
-    )
+    ) {
       this.switchLanguage()
-    else if (
+    } else if (
       this.userLanguage !== this.displayLanguage &&
       this.languages[this.userLanguage] &&
       !this.isDev
-    )
+    ) {
       this.switchLanguage()
-    else if (
+    } else if (
       !this.content ||
       this.content.length === 0 ||
       (!this.isDev && !this.languages[this.displayLanguage])
-    )
+    ) {
       this.switchLanguage()
+    }
   },
 
   mounted() {
@@ -321,7 +322,7 @@ h1 {
 }
 
 .markdown {
-  min-height: 50vh;
+  min-height: 30vh;
 }
 
 .details {

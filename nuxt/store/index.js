@@ -159,7 +159,7 @@ export default () => {
             (!state.onlyShowLanguage ||
               p.languages[state.onlyShowLanguage] === true) &&
             // only show english posts to english readers, show all posts to others (still show all if onlyShow is set, and show devs ALL posts)
-            (!state.language === 'en' ||
+            (state.language !== 'en' ||
               p.languages[state.onlyShowLanguage] === true ||
               p.languages['en'] === true ||
               state.viewingAsDev) &&

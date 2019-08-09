@@ -1,7 +1,7 @@
 <template>
   <section class="content" :key="Date.now()">
     <LanguagePicker
-      v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en'])"
+      v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en']) || onlyShowLanguage"
     />
     <Breadcrumb />
     <SearchSelector />
