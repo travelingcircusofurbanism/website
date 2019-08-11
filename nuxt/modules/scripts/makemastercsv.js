@@ -2,7 +2,7 @@ const fs = require('fs')
 import { log } from '../../assets/commonFunctions'
 
 const allPostsFile = process.cwd() + '/nuxt/static/generated/posts.json'
-const csvPath = process.cwd() + `/allPosts.csv`
+const csvPath = process.cwd() + `/etc/allPosts.csv`
 
 export default function() {
   return new Promise(resolve => {
@@ -36,7 +36,9 @@ export default function() {
         })
         resolve()
         const csvString = csvData.map(row => row.join(',')).join('\n')
-        fs.writeFile(csvPath, csvString, console.error)
+        fs.writeFile(csvPath, csvString, err => {
+          if (err) console.error(err)
+        })
         log('green', 'Wrote post list csv.')
       })
     } catch (e) {
