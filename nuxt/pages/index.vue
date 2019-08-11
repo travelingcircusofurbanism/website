@@ -2,13 +2,13 @@
   <section class="content">
     <LanguagePicker />
     <SearchSelector />
-    <div class="intro" v-if="showIntro">
+    <!-- <div class="intro" v-if="showIntro">
       <strong>
         This is a blog by
         <nuxt-link to="/about" exact class="subtle">Mariko Sugita</nuxt-link>,
       </strong> city enthusiast and nomadic urban researcher. It's about urban culture, design, planning, history, spaces, and more –
       <strong>all about cities!</strong>
-    </div>
+    </div>-->
 
     <PostList :posts="showablePosts" title="Recent Posts" />
     <ContentFooter />
@@ -30,7 +30,11 @@ export default {
         { property: 'og:title', content: 'Traveling Circus of Urbanism' },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com`,
+          content: `https://www.travelingcircusofurbanism.com/`,
+        },
+        {
+          name: `google-site-verification`,
+          content: `-Bj3TQCPSg-RgBnJo1xQc7u3Zm6sHiu70lcvUpurJhU`,
         },
       ],
     }
@@ -90,19 +94,19 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-.intro {
-  margin: $content-padding * -1;
-  padding: $content-padding * 1.7 $content-padding * 1.5 $content-padding * 1
-    $content-padding * 1.5;
-  line-height: 1.4;
-  color: darken($offwhite, 60%);
-  text-align: center;
-  font-size: 1.15rem;
+// .intro {
+//   margin: $content-padding * -1;
+//   padding: $content-padding * 1.7 $content-padding * 1.5 $content-padding * 1
+//     $content-padding * 1.5;
+//   line-height: 1.4;
+//   color: darken($offwhite, 60%);
+//   text-align: center;
+//   font-size: 1.15rem;
 
-  @include width(mobile) {
-    margin: $content-padding-mobile * -1;
-    margin-bottom: $content-padding-mobile * 1;
-    padding: $content-padding-mobile * 1.5;
-  }
-}
+//   @include width(mobile) {
+//     margin: $content-padding-mobile * -1;
+//     margin-bottom: $content-padding-mobile * 1;
+//     padding: $content-padding-mobile * 1.5;
+//   }
+// }
 </style>

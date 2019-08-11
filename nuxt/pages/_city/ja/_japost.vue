@@ -52,6 +52,11 @@ export default {
         content: `https://www.travelingcircusofurbanism.com${this.publicPath}`,
       },
       {
+        hid: `og:locale`,
+        property: 'og:locale',
+        content: `ja-JP`,
+      },
+      {
         hid: `og:image`,
         property: 'og:image',
         content: this.image // does it have an image?

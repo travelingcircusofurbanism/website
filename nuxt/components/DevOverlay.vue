@@ -30,7 +30,10 @@ export default {
   watch: {
     userLang(newLang) {
       this.$store.dispatch('setLanguage', newLang)
-      this.$store.dispatch('setOnlyShowLanguage')
+      this.$store.dispatch(
+        'setOnlyShowLanguage',
+        newLang === 'ja' ? 'ja' : null
+      )
     },
   },
   mounted() {
@@ -45,6 +48,7 @@ export default {
         this.userLang = 'en'
       } else {
         this.$store.dispatch('setLanguage', 'ja')
+        this.$store.dispatch('setOnlyShowLanguage', 'ja')
         this.userLang = 'ja'
       }
       this.$store.dispatch('setOnlyShowLanguage')

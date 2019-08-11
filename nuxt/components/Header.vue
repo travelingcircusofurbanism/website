@@ -155,7 +155,7 @@ a:active {
   align-items: center;
   justify-content: space-between;
   position: relative;
-  padding: $unit * 3 $unit * 4 $unit * 2.5 $unit * 4;
+  padding: $unit * 3 $unit * 4 $unit * 2.2 $unit * 4;
   background: $active;
   height: $unit * 14;
 
@@ -175,7 +175,8 @@ a:active {
   }
 
   .tagline {
-    opacity: 0.8;
+    color: saturate(lighten($active, 53%), 20%);
+    // opacity: 0.8;
     font-size: 1rem;
     margin: 0;
     // margin-top: $unit / 2;
@@ -192,7 +193,7 @@ a:active {
   display: inline-flex;
   font-weight: 400;
   pointer-events: none;
-  background: $text;
+  background: darken($text, 2%);
   padding-left: $content-padding / 6;
 
   &.hasshadow {
@@ -205,7 +206,7 @@ a:active {
 
   & > a {
     padding: $unit * 1.5 $content-padding / 2.5;
-    background: $text;
+    background: darken($text, 2%);
     position: relative;
     display: inline-block;
 

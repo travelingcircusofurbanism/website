@@ -32,12 +32,12 @@ export default {
     },
   },
   mounted() {
-    this.$store.dispatch(
-      'setLanguage',
-      window
-        ? window.navigator.userLanguage || window.navigator.language
-        : 'en_US'
-    )
+    const language = window
+      ? window.navigator.userLanguage || window.navigator.language
+      : 'en'
+    this.$store.dispatch('setLanguage', language)
+    if (language.indexOf('ja') > -1)
+      this.$store.dispatch('setOnlyShowLanguage', 'ja')
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.$root._router.afterEach(this.resetScroll)
