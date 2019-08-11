@@ -2,6 +2,7 @@ import resizeImages from './scripts/resizeimages'
 import buildListing from './scripts/buildlisting'
 import listDrafts from './scripts/listdrafts'
 import makePaths from './scripts/makepaths'
+import makeMasterCsv from './scripts/makemastercsv'
 import transformMarkdown from './scripts/transformmarkdown'
 
 const timeBetweenUpkeeps = 3000
@@ -20,6 +21,7 @@ const upkeep = () => {
       transformMarkdown()
       listDrafts()
       resizeImages()
+      makeMasterCsv()
       resolve()
     })
   })

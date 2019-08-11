@@ -24,7 +24,18 @@ export default function() {
                 try {
                   postData = require(`${post}/data.js`)
                 } catch (e) {}
-                if (!postData || !postData.public) return post
+                if (
+                  !postData ||
+                  !postData.public ||
+                  (typeof postData.public === 'object' &&
+                    !postData.public.en &&
+                    !postData.public.ja)
+                )
+                  return post
+                if (typeof postData.public === 'object' && !postData.public.en)
+                  return post + ' (en)'
+                if (typeof postData.public === 'object' && !postData.public.ja)
+                  return post + ' (ja)'
               })
               .filter(d => d)
           })

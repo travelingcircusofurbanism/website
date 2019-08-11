@@ -112,7 +112,7 @@ export default {
       return this.userLanguage === 'ja' &&
         this.jaTitle &&
         (this.showableLanguages.ja || this.isDev)
-        ? this.jaTitle
+        ? this.jaTitle || capitalize(this.title)
         : capitalize(this.title)
     },
     seoTitle() {
@@ -135,7 +135,7 @@ export default {
       return this.userLanguage === 'ja' &&
         (this.showableLanguages.ja || this.isDev) &&
         this.jaDescription
-        ? this.jaDescription
+        ? this.jaDescription || this.description
         : this.description
     },
     seoDescription() {

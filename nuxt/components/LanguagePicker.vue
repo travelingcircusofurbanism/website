@@ -7,6 +7,7 @@
     "
   >
     <template v-if="onlyShowLanguage === 'ja'">
+      <div class="closebutton" @click="hideJapaneseDialogClicked">✕</div>
       <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
       <span>日本語での投稿のみ表示しています。</span>
       <div style="display: inline-block">

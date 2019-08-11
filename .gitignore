@@ -22,3 +22,5 @@ nuxt/static/feed.xml
 mapboxApiKey.json
 
 nuxt/dashboard
+
+allPosts.csv

@@ -204,6 +204,18 @@ function getDataForPost(postDir, city, slug) {
     if (image.length > 0 && image.substring(0, 4) !== 'http')
       image = `/posts/${city}/${slug}/med/${image.replace('/', '')}`
 
+    // get public settings
+    let publicObject = postData.public
+    if (
+      !postData.public ||
+      postData.public === true ||
+      typeof postData.public !== 'object'
+    )
+      publicObject = {
+        en: postData.public && languages.en,
+        ja: postData.public && languages.ja,
+      }
+
     const data = {
       slug,
       city,
@@ -213,8 +225,9 @@ function getDataForPost(postDir, city, slug) {
       ...postData,
       image,
       languages,
-      public: postData.public,
+      public: publicObject,
     }
+
     if (mapPositionsWithoutExcessData)
       data.mapPosition = mapPositionsWithoutExcessData
     if (jaTitle) data.jaTitle = jaTitle
