@@ -18,6 +18,7 @@ export default function() {
             'Ja Public',
             'Both Public',
             'Neither Public',
+            'Only English Public',
             'Date',
           ],
         ]
@@ -29,6 +30,7 @@ export default function() {
             p.public.ja,
             p.public.en && p.public.ja,
             !(p.public.en || p.public.ja),
+            p.public.en && !p.public.ja,
             p.date,
           ])
         })
