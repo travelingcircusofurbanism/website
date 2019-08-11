@@ -168,29 +168,13 @@ export default {
 
     // this is for live previews online
     this.$nextTick(() => {
-      if (
-        !(
-          this.public === true ||
-          (typeof this.public === 'object' &&
-            this.public[this.displayLanguage] === true)
-        ) &&
-        !this.isDev &&
-        this.preview
-      )
+      if (!this.public[this.displayLanguage] && !this.isDev && this.preview)
         this.$store.commit('setMapMarkers', this.allPosts)
     })
   },
 
   beforeDestroy() {
-    if (
-      !(
-        this.public === true ||
-        (typeof this.public === 'object' &&
-          this.public[this.displayLanguage] === true)
-      ) &&
-      !this.isDev &&
-      this.preview
-    )
+    if (!this.public[this.displayLanguage] && !this.isDev && this.preview)
       this.$store.commit('setMapMarkers', this.currentShowablePosts)
     this.$store.commit('setHighlight')
     this.$store.commit('setViewPolygons')

@@ -93,16 +93,12 @@ module.exports = {
       const jaPosts = posts.filter(
         post =>
           post.languages.ja === true &&
-          (post.public === true ||
-            post.preview ||
-            (typeof post.public === 'object' && post.public.ja === true))
+          (post.preview || post.public.ja === true)
       )
       const enPosts = posts.filter(
         post =>
           post.languages.en === true &&
-          (post.public === true ||
-            post.preview ||
-            (typeof post.public === 'object' && post.public.en === true))
+          (post.preview || post.public.en === true)
       )
       const locations = require('./nuxt/static/generated/locations.json')
       const tags = require('./nuxt/static/generated/tags.json')
@@ -146,8 +142,7 @@ module.exports = {
         const posts = require('./nuxt/static/generated/posts.json')
         posts.forEach(post => {
           if (
-            !post.public ||
-            (typeof post.public === 'object' && post.public.en !== true) ||
+            post.public.en !== true ||
             post.languages.en !== true ||
             new Date(post.date).getTime() > new Date().getTime()
           )

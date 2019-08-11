@@ -172,12 +172,8 @@ export default {
         en:
           this.languages.en &&
           this.$store.state.onlyShowLanguage !== 'ja' &&
-          (this.public === true ||
-            (typeof this.public === 'object' && this.public.en === true)),
-        ja:
-          this.languages.ja &&
-          (this.public === true ||
-            (typeof this.public === 'object' && this.public.ja === true)),
+          this.public.en === true,
+        ja: this.languages.ja && this.public.ja === true,
       }
     },
     shouldFade() {

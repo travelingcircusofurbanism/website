@@ -74,8 +74,7 @@ export default {
       let url =
         this.userLanguage === 'ja' &&
         firstPost.languages.ja &&
-        (firstPost.public ||
-          (typeof firstPost.public === 'object' && firstPost.public.ja))
+        firstPost.public.ja
           ? firstPost.url
               .replace('/ja/', '/')
               .replace(

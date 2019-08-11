@@ -16,7 +16,7 @@
         class="relatedpost"
       >
         <div class="relatedimage" v-lazy:background-image="post.image"></div>
-        <div>{{ userLanguage === 'ja' && post.jaTitle && (post.public || (typeof post.public == 'object' && post.public.ja === true)) ? post.jaTitle : post.title }}</div>
+        <div>{{ userLanguage === 'ja' && post.jaTitle && post.public.ja === true ? post.jaTitle || post.title : post.title }}</div>
       </nuxt-link>
     </div>
   </div>
@@ -61,9 +61,7 @@ export default {
     this.allCityPosts = this.posts.filter(
       p =>
         p.city === this.city.toLowerCase() &&
-        (p.public === true ||
-          (typeof p.public === 'object' &&
-            p.public[this.userLanguage] === true))
+        p.public[this.userLanguage] === true
     )
   },
   methods: {
@@ -110,7 +108,7 @@ h4 {
   }
 
   &:not(:last-of-type) {
-    margin-right: $unit * 3;
+    margin-right: $unit * 4;
   }
 
   @include width(mobile) {
