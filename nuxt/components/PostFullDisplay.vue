@@ -125,19 +125,20 @@ export default {
   },
 
   created() {
+    // if (
+    //   this.onlyShowLanguage &&
+    //   this.onlyShowLanguage !== this.displayLanguage &&
+    //   this.languages[this.onlyShowLanguage]
+    // ) {
+    //   this.switchLanguage()
+    // } else if (
+    //   this.userLanguage !== this.displayLanguage &&
+    //   this.languages[this.userLanguage] &&
+    //   !this.isDev
+    // ) {
+    //   this.switchLanguage()
+    // } else
     if (
-      this.onlyShowLanguage &&
-      this.onlyShowLanguage !== this.displayLanguage &&
-      this.languages[this.onlyShowLanguage]
-    ) {
-      this.switchLanguage()
-    } else if (
-      this.userLanguage !== this.displayLanguage &&
-      this.languages[this.userLanguage] &&
-      !this.isDev
-    ) {
-      this.switchLanguage()
-    } else if (
       !this.content ||
       this.content.length === 0 ||
       (!this.isDev && !this.languages[this.displayLanguage])
