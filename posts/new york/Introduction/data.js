@@ -1,5 +1,5 @@
 module.exports = {
-  public: true,
+  public: { en: true, ja: false },
   date: '12/29/2018',
   category: 'intro',
   image: 'newyork01.jpg',
@@ -85,6 +85,13 @@ module.exports = {
       location: 'The Lot Radio',
       bearing: 0,
       center: [-73.954074, 40.722794],
+      zoom: 12.0,
+      pitch: 0,
+    },
+    {
+      location: 'Do The Right Thing Way',
+      bearing: 0,
+      center: [-73.933315, 40.689342],
       zoom: 12.0,
       pitch: 0,
     },
