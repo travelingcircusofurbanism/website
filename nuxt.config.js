@@ -58,7 +58,18 @@ module.exports = {
         id: 'UA-120224641-1',
       },
     ],
+    '@nuxtjs/sitemap',
   ],
+
+  sitemap: {
+    hostname: `https://www.travelingcircusofurbanism.com`,
+    filter({ routes }) {
+      return routes.map(route => {
+        route.url = `${route.url.replace(/\/$/g, '')}/`
+        return route
+      })
+    },
+  },
 
   plugins: ['~/plugins/plugins'],
 
@@ -103,7 +114,7 @@ module.exports = {
       const locations = require('./nuxt/static/generated/locations.json')
       const tags = require('./nuxt/static/generated/tags.json')
       let categories = []
-      let a = [...jaPosts, ...enPosts].forEach(p => {
+      let itBreaksWithoutAVariableHere = [...jaPosts, ...enPosts].forEach(p => {
         // find categories
         if (categories.indexOf(p.category.toLowerCase()) === -1)
           categories.push(p.category.toLowerCase())
