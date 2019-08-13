@@ -52,11 +52,24 @@ export default {
     },
   },
   watch: {
-    locale() {
+    locale(newLocale) {
+      // console.log('Switching locale to', newLocale)
       this.$store.dispatch('updateShowablePosts')
     },
   },
+  created() {},
   mounted() {
+    let clientLanguage = window
+      ? window.navigator.userLanguage || window.navigator.language
+      : 'en'
+    if (clientLanguage.indexOf('ja') > -1) clientLanguage = 'ja'
+    const storedLanguage = this.getCookie('i18n_redirected')
+    // console.log(clientLanguage, storedLanguage, this.$i18n.locale)
+    if (storedLanguage && this.$i18n.locale !== storedLanguage)
+      return this.$router.replace(this.switchLocalePath(storedLanguage))
+    else if (!storedLanguage && clientLanguage !== this.$i18n.locale)
+      return this.$router.replace(this.switchLocalePath(clientLanguage))
+
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.$root._router.afterEach(this.resetScroll)
@@ -67,6 +80,18 @@ export default {
     },
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
+    },
+    getCookie(key) {
+      if (!document) return
+      const name = key + '='
+      const decodedCookie = decodeURIComponent(document.cookie)
+      const ca = decodedCookie.split(';')
+      for (let i = 0; i < ca.length; i++) {
+        let c = ca[i]
+        while (c.charAt(0) == ' ') c = c.substring(1)
+        if (c.indexOf(name) == 0) return c.substring(name.length, c.length)
+      }
+      return ''
     },
   },
 }

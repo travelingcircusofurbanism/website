@@ -75,6 +75,10 @@ export default {
   },
   mounted() {},
   methods: {
+    // switchLocaleTo(newLocale) {
+    //   // this.$i18n.setLocaleCookie(newLocale)
+    //   this.$router.replace(this.switchLocalePath(newLocale))
+    // },
     resetView() {
       this.$store.commit('setView', this.$store.state.currentShowablePosts)
       this.$store.commit('setPan', false)
