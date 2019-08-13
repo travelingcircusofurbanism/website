@@ -25,9 +25,6 @@ export default {
     toggleDevView() {
       this.$store.commit('setViewingAsDev', !this.viewingAsDev)
       this.$store.dispatch('updateShowablePosts')
-      if (!this.viewingAsDev) {
-        this.$store.dispatch('setLanguage', this.$i18n.locale)
-      }
     },
   },
 }

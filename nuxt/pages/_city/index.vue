@@ -44,7 +44,7 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, store }) {
+  asyncData({ route, redirect, error, store, app }) {
     const city = decodeURIComponent(decodeURIComponent(route.path)) // don't ask
       .replace('/ja/', '/')
       .replace(/\//g, '')
@@ -56,9 +56,9 @@ export default {
       return error({ statusCode: 404, message: 'Page not found.' })
     if (posts.length === 1)
       return redirect(
-        this.localePath({
+        app.localePath({
           name: 'city-post',
-          params: { city, post: posts[0].url },
+          params: { city, post: posts[0].slug },
         })
       )
     return {
