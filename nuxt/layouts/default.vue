@@ -53,7 +53,7 @@ export default {
   },
   watch: {
     locale() {
-      this.$store.dispatch('setLanguage')
+      this.$store.dispatch('updateShowablePosts')
     },
   },
   mounted() {

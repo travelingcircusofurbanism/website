@@ -137,13 +137,7 @@ export default () => {
       },
     },
     actions: {
-      setLanguage({ state, dispatch }, language) {
-        if (language === state.i18n.locale) return
-        dispatch('updateShowablePosts')
-      },
-
       nuxtServerInit({ commit, state, dispatch }, { app }) {
-        dispatch('setLanguage', app.i18n.locale)
         const posts = require('~/static/generated/posts.json')
         commit('setDev', !process.static)
         commit('setPosts', posts)

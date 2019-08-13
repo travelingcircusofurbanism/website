@@ -76,6 +76,12 @@ module.exports = {
     vuex: {
       syncLocale: true,
     },
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      alwaysRedirect: false,
+      fallbackLocale: null,
+    },
   },
 
   sitemap: {
