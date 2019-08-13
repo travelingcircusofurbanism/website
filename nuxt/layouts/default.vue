@@ -57,14 +57,13 @@ export default {
       this.$store.dispatch('updateShowablePosts')
     },
   },
-  created() {},
   mounted() {
     let clientLanguage = window
       ? window.navigator.userLanguage || window.navigator.language
       : 'en'
     if (clientLanguage.indexOf('ja') > -1) clientLanguage = 'ja'
     const storedLanguage = this.getCookie('i18n_redirected')
-    // console.log(clientLanguage, storedLanguage, this.$i18n.locale)
+    console.log(clientLanguage, storedLanguage, this.$i18n.locale)
     if (storedLanguage && this.$i18n.locale !== storedLanguage)
       return this.$router.replace(this.switchLocalePath(storedLanguage))
     else if (!storedLanguage && clientLanguage !== this.$i18n.locale)
