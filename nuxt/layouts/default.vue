@@ -61,6 +61,7 @@ export default {
     let clientLanguage = window
       ? window.navigator.userLanguage || window.navigator.language
       : 'en'
+    if (clientLanguage.indexOf('en') > -1) clientLanguage = 'en'
     if (clientLanguage.indexOf('ja') > -1) clientLanguage = 'ja'
     const storedLanguage = this.getCookie('i18n_redirected')
     console.log(clientLanguage, storedLanguage, this.$i18n.locale)
