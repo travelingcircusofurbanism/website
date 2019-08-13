@@ -25,7 +25,7 @@
         class="relatedpost"
       >
         <div class="relatedimage" v-lazy:background-image="post.image"></div>
-        <div>{{ userLanguage === 'ja' && post.jaTitle && post.public.ja === true ? post.jaTitle || post.title : post.title }}</div>
+        <div>{{ userLanguage === 'ja' && post.title.ja && post.public.ja === true ? post.title.ja || post.title.en : post.title.en || post.title.ja }}</div>
       </nuxt-link>
     </div>
   </div>
