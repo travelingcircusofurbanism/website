@@ -47,8 +47,9 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, isStatic, store }) {
-    const location = decodeURIComponent(route.path)
+  asyncData({ route, redirect, error, store }) {
+    const location = decodeURIComponent(decodeURIComponent(route.path)) // for some reason we have to do this twice
+      .replace('/ja/', '/')
       .replace('/at/', '')
       .replace(/\/$/, '')
       .toLowerCase()
@@ -73,12 +74,23 @@ export default {
         return found
       }
     })
-    // if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1) return redirect(posts[0].url)
     return {
       posts,
       location,
       marker,
     }
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'at: ' + this.location,
+        url: this.localePath({
+          name: 'at-location',
+          params: { location: this.location },
+        }),
+      },
+    ])
   },
   methods: {
     capitalize,

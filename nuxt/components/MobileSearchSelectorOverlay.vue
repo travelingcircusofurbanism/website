@@ -11,14 +11,46 @@
           </nuxt-link>
         </div>
         <div class="listentry">
-          <nuxt-link class="listlink" to="/about" @click.native="close">About</nuxt-link>
+          <nuxt-link class="listlink" :to="localePath('about')" @click.native="close">About</nuxt-link>
         </div>
         <div class="listentry">
-          <nuxt-link class="listlink" to="/getinvolved" @click.native="close">Get Involved</nuxt-link>
+          <nuxt-link
+            class="listlink"
+            :to="localePath('getinvolved')"
+            @click.native="close"
+          >Get Involved</nuxt-link>
         </div>
+        <div class="listentry">
+          <nuxt-link class="listlink" :to="localePath('zine')" @click.native="close">Zine</nuxt-link>
+        </div>
+
+        <div class="listentry">
+          <nuxt-link
+            class="listlink"
+            :to="switchLocalePath('en')"
+            v-if="$i18n.locale === 'ja'"
+            @click.native="close"
+          >English Site</nuxt-link>
+        </div>
+        <div class="listentry">
+          <nuxt-link
+            class="listlink"
+            :to="switchLocalePath('ja')"
+            v-if="$i18n.locale === 'en'"
+            @click.native="close"
+          >日本語サイト</nuxt-link>
+        </div>
+
         <div class="listsectionlabel">Categories</div>
         <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
-          <nuxt-link class="listlink" :to="`/is/${element.label}`" @click.native="close">
+          <nuxt-link
+            class="listlink"
+            :to="localePath({
+            name: 'is-category',
+            params: { category: element.label},
+          })"
+            @click.native="close"
+          >
             {{capitalize(element.label)}}
             <span class="sub">
               <span class="sub">{{element.count}}</span>
@@ -29,7 +61,10 @@
         <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
           <nuxt-link
             class="listlink"
-            :to="`/${element.label.replace(/\//g, '%2F')}`"
+            :to="localePath({
+            name: 'city',
+            params: { city: element.label.replace(/\//g, '%2F')},
+          })"
             @click.native="close"
           >
             {{capitalize(element.label)}}

@@ -6,17 +6,17 @@
     >
       <template v-if="displayLanguage !== 'ja'">
         <!-- <img src="~/assets/icons/japanFlag.svg" class="flag-icon" /> -->
-        <span>Showing the English version.</span>
-        <span class="button invert" @click="switchLanguage()">Switch</span>
+        <span>Hi Dev! Showing the English version.</span>
+        <nuxt-link :to="switchLocalePath('ja')" class="button">Switch to Japanese</nuxt-link>
       </template>
       <template v-else>
-        <span>Showing the Japanese version.</span>
-        <span class="button invert" @click="switchLanguage()">Switch</span>
+        <span>Hi Dev! Showing the Japanese version.</span>
+        <nuxt-link :to="switchLocalePath('en')" class="button">Switch to English</nuxt-link>
       </template>
     </div>
-    <Breadcrumb :title="title" />
+    <Breadcrumb :title="title[displayLanguage]" />
 
-    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title }}</h1>
+    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title[displayLanguage] }}</h1>
 
     <PostDetails
       class="details"
@@ -28,7 +28,7 @@
 
     <Tags :tags="tags" />
 
-    <LoaderIcon v-if="loading" :active="loading" :absolute="false" />
+    <!-- <LoaderIcon v-if="loading" :active="loading" :absolute="false" /> -->
 
     <article
       v-lazy-container="{
@@ -53,11 +53,10 @@ import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 import Breadcrumb from '~/components/Breadcrumb'
 import SearchSelector from '~/components/SearchSelector'
-import LoaderIcon from '~/components/LoaderIcon'
+// import LoaderIcon from '~/components/LoaderIcon'
 import Tags from '~/components/Tags'
-const { capitalize } = require('~/assets/commonFunctions.js')
 
-//TODO doesn't scroll to top on mobile
+//TODO doesn't scroll to top on mobile?
 
 export default {
   props: [
@@ -67,17 +66,16 @@ export default {
     'mapPosition',
     'city',
     'date',
-    'loading',
     'slug',
     'description',
     'publicPath',
     'image',
-    'displayLanguage',
     'polygons',
     'public',
     'preview',
     'tags',
     'languages',
+    'displayLanguage',
   ],
 
   components: {
@@ -86,14 +84,12 @@ export default {
     PostDetails,
     Breadcrumb,
     SearchSelector,
-    LoaderIcon,
+    // LoaderIcon,
     Tags,
   },
 
   data() {
-    return {
-      switchingPostLanguage: false,
-    }
+    return {}
   },
 
   computed: {
@@ -104,10 +100,7 @@ export default {
       return this.$store.state.isMobile
     },
     userLanguage() {
-      return this.$store.state.language
-    },
-    onlyShowLanguage() {
-      return this.$store.state.onlyShowLanguage
+      return this.$i18n.locale
     },
     currentShowablePosts() {
       return this.$store.state.currentShowablePosts
@@ -115,6 +108,7 @@ export default {
     allPosts() {
       return this.$store.state.allPosts
     },
+
     contentToDisplay() {
       if (!this.content || this.content.length === 0) return ''
       const contentToDisplay = this.highlightLocationText()
@@ -124,32 +118,7 @@ export default {
     },
   },
 
-  created() {
-    // if (
-    //   this.onlyShowLanguage &&
-    //   this.onlyShowLanguage !== this.displayLanguage &&
-    //   this.languages[this.onlyShowLanguage]
-    // ) {
-    //   this.switchLanguage()
-    // } else if (
-    //   this.userLanguage !== this.displayLanguage &&
-    //   this.languages[this.userLanguage] &&
-    //   !this.isDev
-    // ) {
-    //   this.switchLanguage()
-    // } else
-    if (
-      !this.content ||
-      this.content.length === 0 ||
-      (!this.isDev && !this.languages[this.displayLanguage])
-    ) {
-      this.switchLanguage()
-    }
-  },
-
   mounted() {
-    if (this.switchingPostLanguage) return
-
     this.resetView()
     this.$store.commit(
       'setHighlight',
@@ -182,8 +151,6 @@ export default {
   },
 
   methods: {
-    capitalize,
-
     doubleHighlight(location) {
       this.$store.commit('setHighlight', location)
     },
@@ -192,23 +159,23 @@ export default {
       this.$store.commit('setHighlight')
     },
 
-    switchLanguage() {
-      this.switchingPostLanguage = true
-      const targetLanguage = this.displayLanguage === 'en' ? 'ja' : 'en'
-      if (targetLanguage === 'en' && this.languages.en) {
-        this.$store.dispatch('setOnlyShowLanguage')
-        this.$router.replace(this.publicPath.replace('/ja', ''))
-      } else if (targetLanguage === 'ja' && this.languages.ja)
-        this.$router.replace(
-          this.publicPath
-            .replace('/ja/', '/')
-            .replace(
-              /(\/?[^/]+\/)(.*)/g,
-              (wholestring, firsthalf, secondhalf) =>
-                firsthalf + 'ja/' + secondhalf
-            )
-        )
-    },
+    // switchLanguage() {
+    //   this.switchingPostLanguage = true
+    //   const targetLanguage = this.displayLanguage === 'en' ? 'ja' : 'en'
+    //   if (targetLanguage === 'en' && this.languages.en) {
+    //     this.$store.dispatch('setOnlyShowLanguage')
+    //     this.$router.replace(this.publicPath.replace('/ja', ''))
+    //   } else if (targetLanguage === 'ja' && this.languages.ja)
+    //     this.$router.replace(
+    //       this.publicPath
+    //         .replace('/ja/', '/')
+    //         .replace(
+    //           /(\/?[^/]+\/)(.*)/g,
+    //           (wholestring, firsthalf, secondhalf) =>
+    //             firsthalf + 'ja/' + secondhalf
+    //         )
+    //     )
+    // },
 
     resetView() {
       this.$store.commit('setView', this.mapPosition)

@@ -11,11 +11,6 @@ module.exports = {
     },
     meta: [
       { charset: 'utf-8' },
-      {
-        hid: `content-language`,
-        'http-equiv': 'content-language',
-        content: 'en-us',
-      },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         hid: 'keywords',
@@ -51,6 +46,7 @@ module.exports = {
 
   modules: [
     '~/modules/postprep',
+    'nuxt-i18n',
     '@nuxtjs/feed',
     [
       '@nuxtjs/google-analytics',
@@ -60,6 +56,27 @@ module.exports = {
     ],
     '@nuxtjs/sitemap',
   ],
+
+  i18n: {
+    locales: [
+      {
+        code: 'en',
+        iso: 'en-US',
+        name: 'English',
+      },
+      {
+        code: 'ja',
+        iso: 'ja-JP',
+        name: '日本語',
+      },
+    ],
+    defaultLocale: 'en',
+    baseUrl: 'https://www.travelingcircusofurbanism.com',
+    seo: false,
+    vuex: {
+      syncLocale: true,
+    },
+  },
 
   sitemap: {
     hostname: `https://www.travelingcircusofurbanism.com`,
@@ -100,21 +117,15 @@ module.exports = {
       const cities = fs
         .readdirSync('./nuxt/static/posts')
         .filter(c => c.indexOf('.') !== 0)
-      const posts = require('./nuxt/static/generated/posts.json')
-      const jaPosts = posts.filter(
+      const posts = require('./nuxt/static/generated/posts.json').filter(
         post =>
-          post.languages.ja === true &&
-          (post.preview || post.public.ja === true)
+          post.preview || (post.public.ja === true || post.public.en === true)
       )
-      const enPosts = posts.filter(
-        post =>
-          post.languages.en === true &&
-          (post.preview || post.public.en === true)
-      )
+
       const locations = require('./nuxt/static/generated/locations.json')
       const tags = require('./nuxt/static/generated/tags.json')
       let categories = []
-      let itBreaksWithoutAVariableHere = [...jaPosts, ...enPosts].forEach(p => {
+      posts.forEach(p => {
         // find categories
         if (categories.indexOf(p.category.toLowerCase()) === -1)
           categories.push(p.category.toLowerCase())
@@ -122,11 +133,19 @@ module.exports = {
       return [
         '404',
         ...cities.map(c => `/${c}`),
-        ...enPosts.map(p => `/${p.city}/${p.slug}`),
-        ...jaPosts.map(p => `/${p.city}/ja/${p.slug}`),
+        ...cities.map(c => `/ja/${c}`),
+        ...posts
+          .filter(p => p.public.en || p.preview)
+          .map(p => `/${p.city}/${p.slug}`),
+        ...posts
+          .filter(p => p.public.ja || p.preview)
+          .map(p => `/ja/${p.city}/${p.slug}`),
         ...locations.map(l => `/at/${l}`),
+        ...locations.map(l => `/ja/at/${l}`),
         ...tags.map(t => `/tag/${t}`),
+        ...tags.map(t => `/ja/tag/${t}`),
         ...categories.map(c => `/is/${c}`),
+        ...categories.map(c => `/ja/is/${c}`),
       ]
     },
   },

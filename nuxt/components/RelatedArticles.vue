@@ -2,7 +2,13 @@
   <div class="relatedposts" v-if="postsToDisplay.length > 0">
     <div class="sectionhead">
       More posts from
-      <nuxt-link :to="`/${city}`" class="citylink">
+      <nuxt-link
+        :to="localePath({
+            name: 'city',
+            params: { city },
+          })"
+        class="citylink"
+      >
         {{
         capitalize(city)
         }}
@@ -12,7 +18,10 @@
       <nuxt-link
         v-for="(post, key) in postsToDisplay"
         :key="key"
-        :to="post.url"
+        :to="localePath({
+            name: 'city-post',
+            params: { city, post: post.slug },
+          })"
         class="relatedpost"
       >
         <div class="relatedimage" v-lazy:background-image="post.image"></div>
@@ -34,7 +43,7 @@ export default {
   },
   computed: {
     userLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
     posts() {
       return this.$store.state.currentShowablePosts
@@ -77,10 +86,10 @@ export default {
   margin-bottom: $unit * 10;
 }
 
-h4 {
-  // display: inline-block;
-  // text-align: center;
-}
+// h4 {
+//   // display: inline-block;
+//   // text-align: center;
+// }
 .citylink {
   text-decoration: none;
   &:hover {

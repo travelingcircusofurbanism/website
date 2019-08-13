@@ -179,7 +179,12 @@ export default {
 
     routeTo(location) {
       if (allLocations.includes(location.toLowerCase()))
-        this.$router.push('/at/' + encodeURIComponent(location).toLowerCase())
+        this.$router.push(
+          this.localePath({
+            name: 'at-location',
+            params: { location: encodeURIComponent(location).toLowerCase() },
+          })
+        )
     },
 
     zoomIntoCluster() {

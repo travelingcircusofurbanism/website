@@ -76,7 +76,7 @@ export default {
   },
   computed: {
     displayLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
   },
   mounted() {

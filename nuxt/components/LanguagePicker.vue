@@ -42,7 +42,7 @@ export default {
       return this.$store.state.onlyShowLanguage
     },
     userLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
   },
   mounted() {

@@ -31,7 +31,13 @@
     <div class="megalist" v-if="isOpen">
       <div class="listsectionlabel" v-if="orderedCategories.length">Category</div>
       <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
-        <nuxt-link class="listlink" :to="`/is/${element.label}`">
+        <nuxt-link
+          class="listlink"
+          :to="localePath({
+            name: 'is-category',
+            params: { category: element.label },
+          })"
+        >
           {{capitalize(element.label)}}
           <span class="sub">
             <span class="sub">{{element.count}}</span>
@@ -40,7 +46,13 @@
       </div>
       <div class="listsectionlabel" v-if="orderedCities.length">City</div>
       <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
-        <nuxt-link class="listlink" :to="`/${element.label.replace(/\//g, '%2F')}`">
+        <nuxt-link
+          class="listlink"
+          :to="localePath({
+            name: 'city',
+            params: { city: element.label.replace(/\//g, '%2F') },
+          })"
+        >
           {{capitalize(element.label)}}
           <span class="sub">
             <span class="sub">{{element.count}}</span>
@@ -52,14 +64,20 @@
         <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
           <nuxt-link
             class="listlink"
-            :to="`/tag/${element.replace(/\//g, '%2F')}`"
+            :to="localePath({
+            name: 'tag-tag',
+            params: { tag: element.replace(/\//g, '%2F')},
+          })"
           >{{capitalize(element)}}</nuxt-link>
         </div>
         <div class="listsectionlabel" v-if="locations.length">Place</div>
         <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
           <nuxt-link
             class="listlink"
-            :to="`/at/${element.replace(/\//g, '%2F')}`"
+            :to="localePath({
+            name: 'at-location',
+            params: { location: element.replace(/\//g, '%2F')},
+          })"
           >{{capitalize(element)}}</nuxt-link>
         </div>
       </template>

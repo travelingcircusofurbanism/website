@@ -10,6 +10,7 @@ const generatedDir = process.cwd() + '/nuxt/static/generated'
 
 const allLocations = new Set()
 const allTags = new Set()
+const allCategories = new Set()
 
 export default function() {
   return new Promise(resolve => {
@@ -61,6 +62,11 @@ export default function() {
           JSON.stringify(Array.from(allTags)),
           'utf8'
         )
+        fs.writeFileSync(
+          generatedDir + '/categories.json',
+          JSON.stringify(Array.from(allCategories)),
+          'utf8'
+        )
         log('green', ' Generated post data lists.')
         resolve()
       })
@@ -97,8 +103,6 @@ function getDataForPost(postDir, city, slug) {
   try {
     if (!postData || (!enContent && !jaContent)) return
 
-    const contentToUseForData = enContent || jaContent
-
     const languages = {
       en: enContent ? true : false,
       ja: jaContent ? true : false,
@@ -134,19 +138,20 @@ function getDataForPost(postDir, city, slug) {
     if (postData.tags && postData.tags.length > 0)
       postData.tags.forEach(t => allTags.add(t))
 
-    let title = contentToUseForData.substring(
-      contentToUseForData.indexOf('#') + 1
-    )
-    title = title
-      .substring(0, title.indexOf('\n'))
-      .replace(/^\s*/g, '')
-      .replace(/\s*$/g, '')
+    allCategories.add(postData.category)
 
-    let jaTitle = null
-    if (jaContent) {
-      jaTitle = jaContent.substring(jaContent.indexOf('#') + 1)
-      jaTitle = jaTitle
-        .substring(0, jaTitle.indexOf('\n'))
+    const title = {}
+    if (languages.en) {
+      title.en = enContent.substring(enContent.indexOf('#') + 1)
+      title.en = title.en
+        .substring(0, title.en.indexOf('\n'))
+        .replace(/^\s*/g, '')
+        .replace(/\s*$/g, '')
+    }
+    if (languages.ja) {
+      title.ja = jaContent.substring(jaContent.indexOf('#') + 1)
+      title.ja = title.ja
+        .substring(0, title.ja.indexOf('\n'))
         .replace(/^[\s\n]*/g, '')
         .replace(/[\s\n]*$/g, '')
     }
@@ -169,32 +174,28 @@ function getDataForPost(postDir, city, slug) {
         .replace(/[\s\n]+/gi, ' ') // remove multiple spaces in a row
     }
 
-    let description = postData.description
-    if (!description)
-      description = fixDescriptions(
-        contentToUseForData.substring(contentToUseForData.indexOf('\n')) // remove title
-      )
-    description = softTruncate(description, enContent ? 200 : 70)
+    const description = {}
+    if (languages.en) {
+      description.en =
+        postData.description ||
+        fixDescriptions(
+          enContent.substring(enContent.indexOf('\n')) // remove title
+        )
+      description.en = softTruncate(description.en, enContent ? 200 : 70)
+    }
 
-    let jaDescription = null
     if (languages.ja) {
-      jaDescription = postData.jaDescription
-      if (!jaDescription)
-        jaDescription = jaContent
-          ? fixDescriptions(
-              jaContent.substring(jaContent.indexOf('\n')) // remove title
-            )
-          : undefined
-      if (jaDescription) {
-        jaDescription = softTruncate(jaDescription, 90)
-      }
+      description.ja = fixDescriptions(
+        jaContent.substring(jaContent.indexOf('\n')) // remove title
+      )
+      description.ja = softTruncate(description.ja, 90)
     }
 
     // create nice usable image path
     let image = postData.image
     if (!image) {
       image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(
-        contentToUseForData
+        languages.en ? enContent : jaContent
       )
       if (!image) {
         // log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
@@ -205,7 +206,7 @@ function getDataForPost(postDir, city, slug) {
       image = `/posts/${city}/${slug}/med/${image.replace('/', '')}`
 
     // get public settings
-    let publicObject = postData.public
+    let publicObject
     if (
       !postData.public ||
       postData.public === true ||
@@ -214,6 +215,11 @@ function getDataForPost(postDir, city, slug) {
       publicObject = {
         en: postData.public && languages.en,
         ja: postData.public && languages.ja,
+      }
+    else
+      publicObject = {
+        en: postData.public.en && languages.en,
+        ja: postData.public.ja && languages.ja,
       }
 
     const data = {
@@ -230,8 +236,6 @@ function getDataForPost(postDir, city, slug) {
 
     if (mapPositionsWithoutExcessData)
       data.mapPosition = mapPositionsWithoutExcessData
-    if (jaTitle) data.jaTitle = jaTitle
-    if (jaDescription) data.jaDescription = jaDescription
     if (postData.polygons) data.polygons = postData.polygons
     return data
   } catch (e) {

@@ -1,8 +1,5 @@
 <template>
   <section class="content" :key="Date.now()">
-    <LanguagePicker
-      v-if="showablePosts.find(post => post.languages[userLanguage === 'en' ? 'ja' : 'en']) || onlyShowLanguage"
-    />
     <Breadcrumb />
     <SearchSelector />
     <PostList :posts="showablePosts" :title="postListTitle" />
@@ -15,8 +12,6 @@ import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 import Breadcrumb from '~/components/Breadcrumb'
 import SearchSelector from '~/components/SearchSelector'
-import LanguagePicker from '~/components/LanguagePicker'
-const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
@@ -24,7 +19,6 @@ export default {
     PostList,
     Breadcrumb,
     SearchSelector,
-    LanguagePicker,
   },
   props: {
     postListTitle: {
@@ -51,10 +45,7 @@ export default {
       return this.$store.state.viewingAsDev
     },
     userLanguage() {
-      return this.$store.state.language
-    },
-    onlyShowLanguage() {
-      return this.$store.state.onlyShowLanguage
+      return this.$i18n.locale
     },
     showablePosts() {
       return this.posts.filter(p =>
@@ -71,20 +62,12 @@ export default {
       this.$store.commit('setViewPolygons')
       this.skippingToFirstPost = true
       const firstPost = this.showablePosts[0]
-      let url =
-        this.userLanguage === 'ja' &&
-        firstPost.languages.ja &&
-        firstPost.public.ja
-          ? firstPost.url
-              .replace('/ja/', '/')
-              .replace(
-                /(\/?[^/]+\/)(.*)/g,
-                (wholestring, firsthalf, secondhalf) =>
-                  firsthalf + 'ja/' + secondhalf
-              )
-          : firstPost.url
+
       return this.$router.replace({
-        path: url,
+        path: this.localePath({
+          name: 'city-post',
+          params: { city: firstPost.city, post: firstPost.slug },
+        }),
       })
     }
   },
@@ -104,9 +87,7 @@ export default {
       this.$store.commit('setHighlight', this.showablePosts)
     }
   },
-  methods: {
-    capitalize,
-  },
+  methods: {},
 }
 </script>
 

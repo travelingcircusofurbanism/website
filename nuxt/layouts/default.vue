@@ -19,6 +19,23 @@ import MobileSearchSelectorOverlay from '~/components/MobileSearchSelectorOverla
 import DevOverlay from '~/components/DevOverlay'
 
 export default {
+  head() {
+    const i18nSeo = this.$nuxtI18nSeo()
+    return {
+      htmlAttrs: {
+        ...i18nSeo.htmlAttrs,
+      },
+      meta: [
+        {
+          hid: `content-language`,
+          'http-equiv': 'content-language',
+          content: this.locale === 'en' ? 'en-US' : 'ja-JP',
+        },
+        ...i18nSeo.meta,
+      ],
+      link: [...i18nSeo.link],
+    }
+  },
   components: {
     Canvas,
     Header,
@@ -30,14 +47,16 @@ export default {
     isMobile() {
       return this.$store.state.isMobile
     },
+    locale() {
+      return this.$i18n.locale
+    },
+  },
+  watch: {
+    locale() {
+      this.$store.dispatch('setLanguage')
+    },
   },
   mounted() {
-    const language = window
-      ? window.navigator.userLanguage || window.navigator.language
-      : 'en'
-    this.$store.dispatch('setLanguage', language)
-    if (language.indexOf('ja') > -1)
-      this.$store.dispatch('setOnlyShowLanguage', 'ja')
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.$root._router.afterEach(this.resetScroll)

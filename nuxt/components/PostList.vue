@@ -49,7 +49,7 @@ export default {
       return this.$store.state.isMobile
     },
     userLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
     showablePosts() {
       return this.posts.filter(p =>

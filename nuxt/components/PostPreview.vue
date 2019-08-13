@@ -5,7 +5,7 @@
     :class="{
           fade:shouldFade}"
   >
-    <nuxt-link :to="languageUrl">
+    <nuxt-link :to="localePath({name: 'city-post', params: {city, post: slug}})">
       <div
         v-lazy:background-image="{
           src: image,
@@ -17,31 +17,21 @@
     </nuxt-link>
 
     <div>
-      <nuxt-link :to="languageUrl" class="titlelink">
-        <h4
-          :class="{ja: userLanguage === 'ja' && languages.ja && showableLanguages.ja}"
-        >{{ languageTitle }}</h4>
+      <nuxt-link
+        :to="localePath({name: 'city-post', params: {city, post: slug}})"
+        class="titlelink"
+      >
+        <h4 :class="{ja: userLanguage === 'ja' && languages.ja && public.ja}">{{ languageTitle }}</h4>
       </nuxt-link>
-
-      <!-- <div class="japanese-available" v-if="(userLanguage === 'ja' || isDev) && languages.ja">
-        <img src="~/assets/icons/japanFlag.svg" class="flag-icon" />
-        <span class="sub ja">
-          {{
-          languages.en ? '日本語版あり' : '日本語での記事'
-          }}
-        </span>
-      </div>-->
 
       <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
 
-      <div
-        class="description"
-        :class="{ja: languages.ja && userLanguage === 'ja' && showableLanguages.ja }"
-      >
+      <div class="description" :class="{ja: languages.ja && userLanguage === 'ja' && public.ja }">
         {{ languageDescription }}
         <nuxt-link
-          :to="languageUrl"
-        >{{userLanguage === 'ja' && languages.ja && showableLanguages.ja ? `読み続ける →` : `Keep Reading →`}}</nuxt-link>
+          :to="localePath({name: 'city-post', params: {city, post: slug}})"
+          class="keepreading"
+        >{{userLanguage === 'ja' && languages.ja && public.ja ? `読み続ける →` : `Keep Reading →`}}</nuxt-link>
         <h4 class="microseo" v-if="seoTitle && seoUrl">
           <nuxt-link :to="seoUrl">{{ seoTitle }}</nuxt-link>
         </h4>
@@ -49,7 +39,7 @@
           {{ seoDescription ? seoDescription : '' }}
           <a
             :href="seoUrl"
-          >{{userLanguage === 'en' && languages.ja && showableLanguages.ja ? `読み続ける →` : `Keep Reading →`}}</a>
+          >{{userLanguage === 'en' && languages.ja && public.ja ? `読み続ける →` : `Keep Reading →`}}</a>
         </div>
       </div>
     </div>
@@ -65,12 +55,10 @@ export default {
     'url',
     'image',
     'title',
-    'jaTitle',
     'category',
     'city',
     'date',
     'description',
-    'jaDescription',
     'mapPosition',
     'languages',
     'polygons',
@@ -86,71 +74,51 @@ export default {
       return this.$store.state.isMobile
     },
     userLanguage() {
-      return this.$store.state.language
-    },
-    languageUrl() {
-      return this.userLanguage === 'ja' &&
-        this.languages.ja &&
-        (this.showableLanguages.ja || this.isDev)
-        ? this.url.replace(
-            /(\/?[^/]+\/)(.*)/g,
-            (wholestring, firsthalf, secondhalf) =>
-              firsthalf + 'ja/' + secondhalf
-          )
-        : this.url
+      return this.$i18n.locale
     },
     seoUrl() {
-      if (this.userLanguage === 'en' && this.showableLanguages.ja)
-        return this.url.replace(
-          /(\/?[^/]+\/)(.*)/g,
-          (wholestring, firsthalf, secondhalf) => firsthalf + 'ja/' + secondhalf
-        )
-      else if (this.userLanguage === 'ja' && this.showableLanguages.en)
-        return this.url
+      if (this.userLanguage === 'en' && this.public.ja) return `/ja` + this.url
+      else if (this.userLanguage === 'ja' && this.public.en) return this.url
     },
     languageTitle() {
       return this.userLanguage === 'ja' &&
-        this.jaTitle &&
-        (this.showableLanguages.ja || this.isDev)
-        ? this.jaTitle || capitalize(this.title)
-        : capitalize(this.title)
+        this.title.ja &&
+        (this.public.ja || this.isDev)
+        ? this.title.ja || capitalize(this.title.en)
+        : capitalize(this.title.en) || this.title.ja
     },
     seoTitle() {
       if (
         this.userLanguage === 'ja' &&
-        this.title &&
-        this.showableLanguages.ja &&
-        this.showableLanguages.en
+        this.title.en &&
+        this.public.ja &&
+        this.public.en
       )
-        return this.title
+        return this.title.en
       else if (
         this.userLanguage === 'en' &&
-        this.jaTitle &&
-        this.showableLanguages.ja &&
-        this.showableLanguages.en
+        this.title.ja &&
+        this.public.ja &&
+        this.public.en
       )
-        return this.jaTitle
+        return this.title.ja
     },
     languageDescription() {
       return this.userLanguage === 'ja' &&
-        (this.showableLanguages.ja || this.isDev) &&
-        this.jaDescription
-        ? this.jaDescription || this.description
-        : this.description
+        (this.public.ja || this.isDev) &&
+        this.description.ja
+        ? this.description.ja || this.description.en
+        : this.description.en || this.description.ja
     },
     seoDescription() {
-      if (
-        this.userLanguage === 'ja' &&
-        this.description &&
-        this.showableLanguages.en
-      )
-        return this.description
+      if (this.userLanguage === 'ja' && this.description.en && this.public.en)
+        return this.description.en
       else if (
         this.userLanguage === 'en' &&
-        this.jaDescription &&
-        this.showableLanguages.ja
+        this.description.ja &&
+        this.public.ja
       )
-        return this.jaDescription
+        return this.description.ja
     },
     loader() {
       return this.image.includes('/med/')
@@ -167,20 +135,11 @@ export default {
                 !this.mapPosition.find(p => p.location)))))
       )
     },
-    showableLanguages() {
-      return {
-        en:
-          this.languages.en &&
-          this.$store.state.onlyShowLanguage !== 'ja' &&
-          this.public.en === true,
-        ja: this.languages.ja && this.public.ja === true,
-      }
-    },
+
     shouldFade() {
       return (
         (this.isDev &&
-          (this.showableLanguages[this.userLanguage] !== true &&
-            this.userLanguage)) ||
+          (this.public[this.userLanguage] !== true && this.userLanguage)) ||
         MDYToDate(this.date).getTime() > new Date().getTime()
       )
     },
@@ -240,6 +199,7 @@ export default {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    overflow: hidden;
   }
 
   @include width(large) {
@@ -286,6 +246,10 @@ h4 {
     line-height: 1.6;
     text-align: justify;
   }
+}
+
+.keepreading {
+  white-space: nowrap;
 }
 
 .microseo {

@@ -44,8 +44,9 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, isStatic, store }) {
-    const city = decodeURIComponent(route.path)
+  asyncData({ route, redirect, error, store }) {
+    const city = decodeURIComponent(decodeURIComponent(route.path)) // don't ask
+      .replace('/ja/', '/')
       .replace(/\//g, '')
       .replace(/\/$/, '')
       .replace(/%2F/g, '/')
@@ -53,7 +54,13 @@ export default {
     let posts = store.state.allPosts.filter(p => p.city.toLowerCase() === city)
     if (!posts || posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
-    // if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1)
+      return redirect(
+        this.localePath({
+          name: 'city-post',
+          params: { city, post: posts[0].url },
+        })
+      )
     return {
       posts,
       city,
@@ -61,6 +68,17 @@ export default {
   },
   data() {},
   computed: {},
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: this.city,
+        url: this.localePath({
+          name: 'city',
+          params: { city: this.city },
+        }),
+      },
+    ])
+  },
   methods: { capitalize },
 }
 </script>

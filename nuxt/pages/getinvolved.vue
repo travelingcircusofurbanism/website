@@ -22,9 +22,7 @@
       <a
         href="mailto:travelingcircusofurbanism@gmail.com"
         class="nounderline button full"
-      >
-        Get in touch!
-      </a>
+      >Get in touch!</a>
     </template>
     <ContentFooter />
   </section>
@@ -51,8 +49,16 @@ export default {
   components: { ContentFooter },
   computed: {
     displayLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'Get Involved',
+        url: this.localePath('getinvolved'),
+      },
+    ])
   },
   mounted() {
     this.$nextTick(() => {
@@ -66,7 +72,9 @@ export default {
 @import '~/assets/variables.scss';
 
 img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .button {

@@ -11,15 +11,15 @@
         xmlns:xlink="http://www.w3.org/1999/xlink"
       >
         <g stroke="#979797" stroke-width="8">
-          <path d="M0,10 L107,10" id="Line-2" />
-          <path d="M0,35 L107,35" id="Line-2-Copy" />
-          <path d="M0,60 L107,60" id="Line-2-Copy-2" />
+          <path d="M0,10 L107,10" />
+          <path d="M0,35 L107,35" />
+          <path d="M0,60 L107,60" />
         </g>
       </svg>
     </div>
     <nuxt-link
       exact
-      to="/"
+      :to="localePath('index')"
       class="logo"
       :class="{hasshadow: !canvasImage}"
       @click.native="resetView"
@@ -29,22 +29,25 @@
     </nuxt-link>
     <br />
     <div class="sublinks" :class="{hasshadow: !canvasImage}" v-if="!isMobile">
-      <nuxt-link to="/about" :class="{ currentpage: path === '/about' }">About</nuxt-link>
-      <nuxt-link to="/getinvolved" :class="{ currentpage: path === '/getinvolved' }">Get Involved</nuxt-link>
-      <nuxt-link to="/zine" class="zinehighlight" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
+      <nuxt-link :to="localePath('about')" :class="{ currentpage: path === '/about' }">About</nuxt-link>
+      <nuxt-link
+        :to="localePath('getinvolved')"
+        :class="{ currentpage: path === '/getinvolved' }"
+      >Get Involved</nuxt-link>
+      <nuxt-link
+        :to="localePath('zine')"
+        class="zinehighlight"
+        :class="{ currentpage: path === '/zine' }"
+      >Zine</nuxt-link>
+
+      <nuxt-link :to="switchLocalePath('en')" v-if="$i18n.locale === 'ja'">English</nuxt-link>
+      <nuxt-link :to="switchLocalePath('ja')" v-if="$i18n.locale === 'en'">日本語</nuxt-link>
     </div>
-    <!-- <div>
-      <div class="citylabel" :class="{ active: currentCity }">
-        Current City:
-        <span>{{ capitalize(currentCity) }}</span>
-      </div>
-    </div>-->
   </div>
 </template>
 
 <script>
 import Selector from '~/components/Selector'
-const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
@@ -72,7 +75,6 @@ export default {
   },
   mounted() {},
   methods: {
-    capitalize,
     resetView() {
       this.$store.commit('setView', this.$store.state.currentShowablePosts)
       this.$store.commit('setPan', false)
@@ -172,6 +174,10 @@ a:active {
 
   img {
     width: 100%;
+
+    @include width(mobile) {
+      max-height: $unit * 4;
+    }
   }
 
   .tagline {
@@ -181,6 +187,7 @@ a:active {
     margin: 0;
     // margin-top: $unit / 2;
     font-weight: 400;
+    white-space: nowrap;
 
     @include width(mobile) {
       display: none;

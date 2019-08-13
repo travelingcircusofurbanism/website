@@ -38,8 +38,9 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, isStatic, store }) {
+  asyncData({ route, redirect, error, store }) {
     const category = decodeURIComponent(route.path)
+      .replace('/ja/', '/')
       .replace('/is/', '')
       .replace(/%2F/g, '/')
       .toLowerCase()
@@ -54,6 +55,17 @@ export default {
       posts,
       category,
     }
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'is: ' + this.category,
+        url: this.localePath({
+          name: 'is-category',
+          params: { category: this.category },
+        }),
+      },
+    ])
   },
   methods: {
     capitalize,

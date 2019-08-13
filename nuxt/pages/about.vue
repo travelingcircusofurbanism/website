@@ -130,8 +130,16 @@ export default {
   components: { ContentFooter },
   computed: {
     displayLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
     },
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'About',
+        url: this.localePath('about'),
+      },
+    ])
   },
   mounted() {
     this.$nextTick(() => {
@@ -145,7 +153,9 @@ export default {
 @import '~/assets/variables.scss';
 
 img {
-  width: 100%;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto;
 }
 
 .small {
@@ -158,11 +168,11 @@ img {
     margin-top: $unit * 6;
   }
 }
-.personlist {
-  // display: flex;
-  // flex-wrap: wrap;
-  // justify-content: center;
-}
+// .personlist {
+//   // display: flex;
+//   // flex-wrap: wrap;
+//   // justify-content: center;
+// }
 .person {
   $img-height: $unit * 18;
   display: inline-block;

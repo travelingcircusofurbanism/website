@@ -36,8 +36,9 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, isStatic, store }) {
-    const searchTag = decodeURIComponent(route.path)
+  asyncData({ route, redirect, error, store }) {
+    const searchTag = decodeURIComponent(decodeURIComponent(route.path))
+      .replace('/ja/', '/')
       .replace('/tag/', '')
       .replace(/%2F/g, '/')
       .toLowerCase()
@@ -52,6 +53,17 @@ export default {
       posts,
       tag: searchTag,
     }
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: '#' + this.tag,
+        url: this.localePath({
+          name: 'tag-tag',
+          params: { tag: this.tag },
+        }),
+      },
+    ])
   },
   methods: {
     capitalize,

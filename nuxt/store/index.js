@@ -1,4 +1,5 @@
 import Vuex from 'vuex'
+import Vue from 'vue'
 const { MDYToDate } = require('~/assets/commonFunctions.js')
 
 export default () => {
@@ -12,10 +13,9 @@ export default () => {
       mapPolygons: [],
       currentView: [],
       highlight: [],
-      doubleHighlight: '',
+      doubleHighlight: [],
+      breadcrumbs: [],
       isMobile: null,
-      language: 'en',
-      onlyShowLanguage: null,
       currentCity: null,
       canvasImage: null,
       isDev: false,
@@ -26,6 +26,10 @@ export default () => {
     },
 
     mutations: {
+      setBreadcrumbs(state, newCrumbs) {
+        state.breadcrumbs = newCrumbs
+      },
+
       setView(state, newView) {
         if (!newView) return (state.currentView = [])
         // first, grab the city
@@ -133,50 +137,32 @@ export default () => {
       },
     },
     actions: {
-      nuxtServerInit({ commit, state, dispatch }, { isStatic }) {
+      setLanguage({ state, dispatch }, language) {
+        if (language === state.i18n.locale) return
+        dispatch('updateShowablePosts')
+      },
+
+      nuxtServerInit({ commit, state, dispatch }, { app }) {
+        dispatch('setLanguage', app.i18n.locale)
         const posts = require('~/static/generated/posts.json')
-        commit('setDev', !isStatic)
+        commit('setDev', !process.static)
         commit('setPosts', posts)
-        dispatch('updateShowablePosts')
-      },
-
-      setLanguage({ dispatch, commit, state }, lang) {
-        const language = lang.toLowerCase().indexOf('ja') !== -1 ? 'ja' : 'en'
-        state.language = language
-        dispatch('updateShowablePosts')
-      },
-
-      setOnlyShowLanguage({ dispatch, state }, lang) {
-        state.onlyShowLanguage = lang
-        state.language = lang || state.language
         dispatch('updateShowablePosts')
       },
 
       updateShowablePosts({ commit, state }) {
         const showablePosts = state.allPosts.filter(
           p =>
-            // only show specific language posts if set
-            (!state.onlyShowLanguage ||
-              p.languages[state.onlyShowLanguage] === true) &&
-            // only show english posts to english readers, show all posts to others (still show all if onlyShow is set, and show devs ALL posts)
-            (state.language !== 'en' ||
-              p.languages[state.onlyShowLanguage] === true ||
-              p.languages['en'] === true ||
-              state.viewingAsDev) &&
+            // only show english posts to english readers, etc, and show devs ALL posts
+            (state.viewingAsDev || p.languages[state.i18n.locale] === true) &&
             // only show public posts
-            (state.viewingAsDev ||
-              ((p.public.en === true && state.language === 'en') ||
-                ((p.public.ja === true || p.public.en === true) &&
-                  state.language === 'ja' &&
-                  state.onlyShowLanguage !== 'ja') ||
-                (p.public.ja === true &&
-                  state.language === 'ja' &&
-                  state.onlyShowLanguage === 'ja'))) &&
+            (state.viewingAsDev || p.public[state.i18n.locale] === true) &&
             // only show posts that are published in the past
             MDYToDate(p.date).getTime() < new Date().getTime()
         )
         if (state.currentShowablePosts === showablePosts) return
         state.currentShowablePosts = showablePosts
+        // console.log(state.currentShowablePosts.length)
         commit('setMapMarkers', showablePosts)
         commit('setPolygons', showablePosts)
         commit('setTags', showablePosts)

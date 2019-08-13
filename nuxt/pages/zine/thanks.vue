@@ -59,12 +59,20 @@ export default {
   components: { ContentFooter },
   computed: {
     displayLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
       // return 'ja'
     },
   },
   beforeDestroy() {
     this.$store.commit('setCanvasImage')
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'Zine: Thanks!',
+        url: this.localePath('zine-thanks'),
+      },
+    ])
   },
   mounted() {
     // set canvas to zine picture

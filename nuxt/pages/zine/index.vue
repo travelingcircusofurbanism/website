@@ -151,12 +151,20 @@ export default {
   components: { ContentFooter, BuyButton },
   computed: {
     displayLanguage() {
-      return this.$store.state.language
+      return this.$i18n.locale
       // return 'ja'
     },
   },
   beforeDestroy() {
     this.$store.commit('setCanvasImage')
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [
+      {
+        label: 'Zine',
+        url: this.localePath('zine'),
+      },
+    ])
   },
   mounted() {
     // set canvas to zine picture

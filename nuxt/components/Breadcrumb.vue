@@ -1,5 +1,8 @@
 <template>
-  <div v-if="isMobile === false" class="breadcrumb content-top-full">
+  <div
+    v-if="isMobile === false && breadcrumbs && breadcrumbs.length > 0"
+    class="breadcrumb content-top-full"
+  >
     <nuxt-link
       v-for="(path, key) in pathEls"
       :key="key"
@@ -8,7 +11,7 @@
       class="crumb"
       :class="(key === pathEls.length - 1 ? 'last ' : '') + `gray${key}`"
     >
-      <span>{{ path.label }}</span>
+      <span>{{ capitalize(path.label) }}</span>
     </nuxt-link>
   </div>
 </template>
@@ -26,35 +29,19 @@ export default {
     isMobile() {
       return this.$store.state.isMobile
     },
-    // currentCity () { return this.$store.state.currentCity },
+
+    breadcrumbs() {
+      return this.$store.state.breadcrumbs
+    },
+
     pathEls() {
-      const path = this.$nuxt.$route.path.substring(1)
-      const pathEls = [
+      return [
         {
           label: 'Home',
-          url: '/',
+          url: this.localePath('index'),
         },
+        ...this.breadcrumbs,
       ]
-
-      let preSlash = path.substring(0, path.indexOf('/'))
-      let postSlash = path.substring(path.indexOf('/') + 1)
-      let pagePrefix = ''
-      if (preSlash === 'is' || preSlash === 'at') pagePrefix = preSlash + ': '
-      else if (preSlash === 'tag') pagePrefix = '#'
-      else if (preSlash !== '')
-        pathEls.push({
-          label: this.capitalize(decodeURI(preSlash)),
-          url: `/${preSlash}`,
-        })
-      pathEls.push({
-        label: this.title
-          ? this.capitalize(this.softTruncate(this.title, 70))
-          : `${pagePrefix ? pagePrefix : ''}${this.capitalize(
-              decodeURI(postSlash.replace(/\/$/, ''))
-            )}`,
-        url: `/${path}`,
-      })
-      return pathEls
     },
   },
   methods: { capitalize, softTruncate },
