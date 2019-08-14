@@ -122,14 +122,16 @@ module.exports = {
           post.preview || (post.public.ja === true || post.public.en === true)
       )
 
-      const locations = require('./nuxt/static/generated/locations.json')
-      const tags = require('./nuxt/static/generated/tags.json')
-      let categories = []
-      posts.forEach(p => {
-        // find categories
-        if (categories.indexOf(p.category.toLowerCase()) === -1)
-          categories.push(p.category.toLowerCase())
-      })
+      const locations = require('./nuxt/static/generated/locations.json').map(
+        l => encodeURIComponent(l)
+      )
+      const tags = require('./nuxt/static/generated/tags.json').map(t =>
+        encodeURIComponent(t)
+      )
+      const categories = require('./nuxt/static/generated/categories.json').map(
+        c => encodeURIComponent(c)
+      )
+
       return [
         '404',
         ...cities.map(c => `/${c}`),

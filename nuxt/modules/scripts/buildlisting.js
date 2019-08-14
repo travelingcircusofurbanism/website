@@ -11,6 +11,7 @@ const generatedDir = process.cwd() + '/nuxt/static/generated'
 const allLocations = new Set()
 const allTags = new Set()
 const allCategories = new Set()
+const allCities = new Set()
 
 export default function() {
   return new Promise(resolve => {
@@ -67,6 +68,11 @@ export default function() {
           JSON.stringify(Array.from(allCategories)),
           'utf8'
         )
+        fs.writeFileSync(
+          generatedDir + '/cities.json',
+          JSON.stringify(Array.from(allCities)),
+          'utf8'
+        )
         log('green', ' Generated post data lists.')
         resolve()
       })
@@ -108,37 +114,25 @@ function getDataForPost(postDir, city, slug) {
       ja: jaContent ? true : false,
     }
 
-    const mapPositionsWithoutExcessData = postData.mapPosition
-      ? Array.isArray(postData.mapPosition)
-        ? postData.mapPosition.map(p => ({
-            location: p.location,
-            center: p.center,
-          }))
-        : {
-            location: postData.mapPosition.location,
-            center: postData.mapPosition.center,
-          }
-      : undefined
+    // detemine whether each language is / can be public
 
-    const locations = postData.mapPosition
-      ? Array.isArray(postData.mapPosition)
-        ? postData.mapPosition.map(p => p.location.toLowerCase())
-        : [
-            postData.mapPosition.location
-              ? postData.mapPosition.location.toLowerCase()
-              : null,
-          ]
-      : []
-    if (postData.polygons)
-      postData.polygons.forEach(polygon =>
-        locations.push(polygon.location.toLowerCase())
-      )
-    if (locations.length > 0)
-      locations.filter(l => l).forEach(l => allLocations.add(l))
-    if (postData.tags && postData.tags.length > 0)
-      postData.tags.forEach(t => allTags.add(t))
+    let publicObject
+    if (
+      !postData.public ||
+      postData.public === true ||
+      typeof postData.public !== 'object'
+    )
+      publicObject = {
+        en: postData.public && languages.en,
+        ja: postData.public && languages.ja,
+      }
+    else
+      publicObject = {
+        en: postData.public.en && languages.en,
+        ja: postData.public.ja && languages.ja,
+      }
 
-    allCategories.add(postData.category)
+    // get titles
 
     const title = {}
     if (languages.en) {
@@ -157,6 +151,7 @@ function getDataForPost(postDir, city, slug) {
     }
 
     // create nice truncated descriptions
+
     function fixDescriptions(desc) {
       return desc
         .replace(/!\[[^\]]*\]\(.*\)[\n\r\s]*[*_].*[*_]/g, '') // remove images with captions
@@ -192,35 +187,61 @@ function getDataForPost(postDir, city, slug) {
     }
 
     // create nice usable image path
+
     let image = postData.image
     if (!image) {
       image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(
         languages.en ? enContent : jaContent
       )
       if (!image) {
-        // log('magenta', 'No image found for', city + '/' + slug + ', skipping...')
         image = ''
       } else image = image[1]
     }
     if (image.length > 0 && image.substring(0, 4) !== 'http')
       image = `/posts/${city}/${slug}/med/${image.replace('/', '')}`
 
-    // get public settings
-    let publicObject
-    if (
-      !postData.public ||
-      postData.public === true ||
-      typeof postData.public !== 'object'
-    )
-      publicObject = {
-        en: postData.public && languages.en,
-        ja: postData.public && languages.ja,
-      }
-    else
-      publicObject = {
-        en: postData.public.en && languages.en,
-        ja: postData.public.ja && languages.ja,
-      }
+    // get map positions
+
+    const mapPositionsWithoutExcessData = postData.mapPosition
+      ? Array.isArray(postData.mapPosition)
+        ? postData.mapPosition.map(p => ({
+            location: p.location,
+            center: p.center,
+          }))
+        : {
+            location: postData.mapPosition.location,
+            center: postData.mapPosition.center,
+          }
+      : undefined
+
+    // add to master sets of locations, tags, etc
+
+    const locations = postData.mapPosition
+      ? Array.isArray(postData.mapPosition)
+        ? postData.mapPosition.map(p => p.location.toLowerCase())
+        : [
+            postData.mapPosition.location
+              ? postData.mapPosition.location.toLowerCase()
+              : null,
+          ]
+      : []
+    if (postData.polygons)
+      postData.polygons.forEach(polygon =>
+        locations.push(polygon.location.toLowerCase())
+      )
+    if (locations.length > 0)
+      locations.filter(l => l).forEach(l => allLocations.add(l))
+
+    if (postData.tags && postData.tags.length > 0)
+      postData.tags.forEach(t => allTags.add(t.toLowerCase()))
+
+    allCategories.add(postData.category)
+
+    if (postData.city && Array.isArray(postData.city))
+      postData.city.forEach(city => allCities.add(city.toLowerCase()))
+    else allCities.add(postData.city || city)
+
+    // build post data object
 
     const data = {
       slug,
@@ -237,6 +258,7 @@ function getDataForPost(postDir, city, slug) {
     if (mapPositionsWithoutExcessData)
       data.mapPosition = mapPositionsWithoutExcessData
     if (postData.polygons) data.polygons = postData.polygons
+
     return data
   } catch (e) {
     log(
