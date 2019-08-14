@@ -3,30 +3,32 @@
 ![](priscilla-flores-659078-unsplash.jpg)
 **Photo by Priscilla Flores on Unsplash**
 
-## To visit, to do
+人口2200万人を数える、ラテンアメリカ最大の都市、メキシコシティ。英語での情報がまだまだ少なく、最初は街づくりや建築関連の事例も、表面的なものしか見つからなかった。現地の友人や、拙いスペイン語を駆使して見つけた、アーバニストのためのメキシコシティ情報まとめ。
 
-- It's a cliche, but architect Luis Barragán's former residence [Casa Estudio Luis Barragán](http://www.casaluisbarragan.org/) is a must visit for architecture lovers.
+## To visit, to do（おすすめスポット）
 
-- Founded by Mexican architect Fernando Romero, [Archivo dieno y architectrie](http://archivo.design/en/) is a creative space dedicated to exhibiting, researching and rethinking design and architecture. It is free, and I love their quiet courtyard that has a creative, hidden vibe.
+- 王道だけれど、建築好きはまず[Casa Estudio Luis Barragán](http://www.casaluisbarragan.org/)に行く人が多い。メキシコ人の建築家・都市計画家、ルイス・バラガンの自邸。
 
-- Located next to National Autonomous University of Mexico (UNAM), [Especio escultorico](http://www.fundacionunam.org.mx/donde-paso/conoce-el-espacio-escultorico-de-la-unam/) is a site for large-scale sculptural works. It was initiated by the sculptor [Federico Silva](<https://es.wikipedia.org/wiki/Federico_Silva_(escultor)>) in 1977, as part of the geometric sculptural movement at the time. It is a perfect site to enjoy the harmony of the natural landscape and human artistry.
+- Casa Estudio Luis Barragánのすぐ隣に、[Archivo dieno y architectrie](http://archivo.design/en/)という小さなクリエイティブスペースがある。デザインと建築に関する展示やワークショップなどのプログラムが定期的に開催されていて、無料で入れるので、一度足を運ぶ価値あり。ひっそりと隠れた場所にある中庭は、特におすすめ。
 
-- [Ruta de la aistad - torre de los vientos](http://www.mexico68.org/es/esculturas/06.html), meaning "The Route of Friendship", was created as a result of the Olympic in Mexico City 1968. It has several sculptural works by some of the most prominent artists from all over the world, and has been said to be the largest sculptural corridor in the world with 17 km in length. After the Olympic, due to the rapid unorganized urban growth, the route was in total abandonment for more than two decades - which raised some discussion about preservation of the artworks and alternative urban development.
+- メキシコ国立自治大学(UNAM)キャンパスの辺りに、[Especio escultorico](http://www.fundacionunam.org.mx/donde-paso/conoce-el-espacio-escultorico-de-la-unam/)という不思議なエリアがある。一見無法地帯的に草木が生い茂る広大なエリアに、大型の彫刻作品が数多く点在している。1977年に、彫刻家の [Federico Silva](<https://es.wikipedia.org/wiki/Federico_Silva_(escultor)>)によって、当時メキシコのアート界で興隆していた幾何学彫刻運動の一旦として作られたエリアだ。自然と幾何学的な大型彫刻のハーモニーが美しく、ランドスケープデザインの参考になる。
 
-- You can have a geometric adventure at [Biblioteca Vasconcelos](https://www.bibliotecavasconcelos.gob.mx/). Transparent glass walls, floating-looking bookshelves, mismatched floors that connect to numbers of balconies and paths between stacks - everything is perfectly designed.
+- 「友情のルート」を意味する[Ruta de la aistad-torre de los vientos](http://www.mexico68.org/es/esculturas/06.html)は、1968年のメキシコシティオリンピックの際に作られた。長さ17kmの世界最大の彫刻廊で、世界中の著名な彫刻家の作品が集まる。しかし、オリンピック後のずさんな都市開発により、20年以上もの間、この彫刻廊はほぼ放置されることとなった。現在、芸術作品の保存に関する動きが高まりつつある。
 
-- Cycling in Mexico City sounds scary, but I enjoyed a [free Sunday morning bike ride](https://www.featherandthewind.com/blog/mexico-city-sunday-bike-ride) down Paseo de la Reforma. The city shut down one of its biggest streets every Sunday, and let cyclists, joggers, kids and dogs take over space where the cars consistently dominate. The street looks so different and vibrant without the constant noise of traffic and aggressive drivers.
+- 現代建築好きなら、[Biblioteca Vasconcelos](https://www.bibliotecavasconcelos.gob.mx/)は必ず訪れたい。幾何学的な構造に、透明なガラスの壁と浮遊しているかのように見える本棚が並ぶデザインが、圧巻の図書館。
 
-## To read
+- 新しい街を訪れたら、まずは自転車に乗るように意識しているが、車の運転がかなり乱暴なメキシコシティでは、さすがに躊躇った。そこで知ったのが、日曜日の朝に定期的に開催される、[カーフリー＆バイクデー](https://www.featherandthewind.com/blog/mexico-city-sunday-bike-ride）。この日には、市の主導で主要な車道が閉鎖され、歩行者天国となる。自転車で走る人の他、ジョギングや犬とのウォーキングを楽しむ人、道路でダンスを踊る人などで大変盛り上がる。メキシコシティらしい交通渋滞だけでなく、車の騒音が消える、というだけでも、気持ちが良い。
 
-- If you know Spanish, [MXCity](https://mxcity.mx/) seem to be one of the best city-guide media to follow.
+## Read（読み物系）
 
-- Watch [Roma](https://www.netflix.com/mx-en/title/80240715)(2018) by Alfonso Cuarón, a film that won the Golden Lion. The story is set in 1970 - 1971 in Roma neighborhood in Mexico City, and the film depicts Roma as a prosperous middle-class neighborhood. While it's interesting to see what has happened to the neighborhood up until now (became a ghost of its form of self as a result of the 1985 earthquake, recent reborn and a wave of gentrification etc..), I was amazed to see [Nezahualcóyotl](https://local.mx/capital/cronica-ciudad/ciudad-nezahualcoyotl/) neighborhood in the film. Located in the west part of the city near the airport, it was developed on top of the swampy remains of Lake Texoco after World War II and has been a massive slum for a long time. Read [this arcticle](https://www.citylab.com/equity/2017/06/how-a-slum-became-a-city/529488/) to get to know more about how Nezahualcóyotl neighborhood turned itself from a mega-slum to a city.
+- スペイン語のみだけれど、市内のイベント情報などをチェックしたいなら、[MXCity]（https://mxcity.mx/）がおすすめ。Google翻訳でぜひ。
 
-## Organizations
+-ゴールデンライオンを獲得した映画、アルフォンソクアロンの[ローマ]（https://www.netflix.com/mx-en/title/80240715）（2018）をご覧ください。物語は1970年から1971年にメキシコシティのローマ地区で設定され、映画はローマを繁栄した中流階級の近所として描いています。これまでに近所で起こったことを見るのは面白いですが（1985年の地震、最近の生まれ変わり、ジェントリフィケーションの波などの結果、自己の形の幽霊になりました）、私は[Nezahualcóyotl ]（https://local.mx/capital/cronica-ciudad/ciudad-nezahualcoyotl/）映画の近所。空港の近くの都市の西部に位置し、第二次世界大戦後のテキソ湖の沼地の上に開発され、長い間巨大なスラム街でした。 [このアークティックル]（https://www.citylab.com/equity/2017/06/how-a-slum-became-a-city/529488/）を読んで、ネザワルコヨトル地区がどのように変化したかについて詳しく知る都市への巨大なスラム街。
 
-- [Ciclo](https://projectciclo.com/) is an organization that uses art and culture for urban intervention. Their activity in the pre-hispanic neighborhood Tapito is quite interesting and inspiring - check more about their project [here](https://projectciclo.com/ciclo-tepito)
+## Organization, initiative (組織や人物など)
 
-- Mexico City is in the midst of [water crisis](http://fortune.com/2018/09/27/mexico-city-sinking-water-crisis-claudia-sheinbaum/). [Isla urbana](http://islaurbana.org/) is a non-profit organization that seeks to detonate a large-scale adoption of rainwater harvesting systems in Mexican urban and rural households, schools, and health clinics.
+-[Ciclo]（https://projectciclo.com/）は、都市の介入に芸術と文化を使用する組織です。ヒスパニック以前の近所タピトでの彼らの活動は非常に興味深く、刺激的です-彼らのプロジェクトについてもっとチェックしてください[こちら]（https://projectciclo.com/ciclo-tepito）
 
-- [Lanoratorio para ciudad](https://labcd.mx/) was a six-year social experiment project with the purpose of reimagining Mexico City. Unfortunately it's not active anymore, but we can check the detailed archive of their experiments [here](https://g0v.news/laboratorio-para-la-ciudad-re-imagining-mexico-city-through-civic-tech-84272ce8619c), which involves a series of workshops, interventions, civic tech & data science projects, etc.
+-メキシコシティは[水危機]の真っin中にあります（http://fortune.com/2018/09/27/mexico-city-sinking-water-crisis-claudia-sheinbaum/）。 [Isla urbana]（http://islaurbana.org/）は、メキシコの都市部および農村部の家庭、学校、および診療所での雨水貯留システムの大規模な採用を爆発させることを目指している非営利組織です。
+
+-[Lanoratorio para ciudad]（https://labcd.mx/）は、メキシコシティを再考することを目的とした6年間の社会実験プロジェクトでした。残念ながら、もうアクティブではありませんが、彼らの実験の詳細なアーカイブを確認できます[こちら]（https://g0v.news/laboratorio-para-la-ciudad-re-imagining-mexico-city-through-civic-tech- 84272ce8619c）、一連のワークショップ、介入、市民技術およびデータサイエンスプロジェクトなどが含まれます。

@@ -1,5 +1,5 @@
 module.exports = {
-  public: { en: true, ja: faluse },
+  public: { en: true, ja: true },
   date: '2/10/2019',
   category: 'intro',
   image: '',
