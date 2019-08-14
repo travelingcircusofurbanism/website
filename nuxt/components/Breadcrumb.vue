@@ -1,20 +1,24 @@
 <template>
-  <div class="breadcrumb" :class="{collapse}">
-    <nuxt-link
-      v-for="(path, key) in pathEls"
-      :key="key"
-      :to="path.url"
-      exact
-      class="crumb"
-      :class="(key === pathEls.length - 1 ? 'last ' : '') + `gray${key}`"
-    >
-      <span>{{ capitalize(path.label) }}</span>
-    </nuxt-link>
-  </div>
+  <no-ssr>
+    <div class="breadcrumb" :class="{collapse}">
+      <nuxt-link
+        v-if="breadcrumbs && breadcrumbs.length > 0"
+        :to="localePath('index')"
+        exact
+        class="crumb"
+      >
+        <span>Home</span>
+      </nuxt-link>
+
+      <nuxt-link v-for="(path, key) in breadcrumbs" :key="key" :to="path.url" exact class="crumb">
+        <span>{{ capitalize(path.label) }}</span>
+      </nuxt-link>
+    </div>
+  </no-ssr>
 </template>
 
 <script>
-const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
+const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
@@ -30,18 +34,8 @@ export default {
     breadcrumbs() {
       return this.$store.state.breadcrumbs || []
     },
-
-    pathEls() {
-      return [
-        {
-          label: 'Home',
-          url: this.localePath('index'),
-        },
-        ...this.breadcrumbs,
-      ]
-    },
   },
-  methods: { capitalize, softTruncate },
+  methods: { capitalize },
 }
 </script>
 

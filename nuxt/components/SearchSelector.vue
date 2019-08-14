@@ -209,6 +209,10 @@ export default {
     &:hover {
       background: darken($shade, 3%);
       box-shadow: 0px 2px 10px darken($shade, 20%);
+
+      svg {
+        opacity: 0.7;
+      }
     }
 
     svg {

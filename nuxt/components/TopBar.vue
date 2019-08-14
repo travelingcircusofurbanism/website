@@ -40,9 +40,9 @@ export default {
 @import '~/assets/variables.scss';
 
 .topbar {
-  position: fixed;
+  position: absolute;
   top: 0;
-  left: 50vw;
+  left: 0;
   width: 50vw;
   display: flex;
   z-index: 3;
