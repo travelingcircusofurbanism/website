@@ -3,7 +3,7 @@
     <h3 class="sectionhead" v-if="title">{{ capitalize(title) }}</h3>
     <div v-else class="spacer"></div>
     <transition-group name="fade">
-      <PostPreview v-for="(post, key) in postsToShow" :key="key" v-bind="post" />
+      <PostPreview v-for="(post, key) in postsToShow" :key="post.city + post.slug" v-bind="post" />
     </transition-group>
     <div
       class="button secondary full showall"

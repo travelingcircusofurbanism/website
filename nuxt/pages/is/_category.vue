@@ -38,7 +38,7 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, store }) {
+  asyncData({ route, redirect, error, store, app }) {
     const category = decodeURIComponent(route.path)
       .replace('/ja/', '/')
       .replace('/is/', '')
@@ -50,7 +50,13 @@ export default {
     posts = posts.filter(p => {
       return p.category && p.category.toLowerCase() === category
     })
-    if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1)
+      return redirect(
+        app.localePath({
+          name: 'city-post',
+          params: { city: posts[0].city, post: posts[0].slug },
+        })
+      )
     return {
       posts,
       category,

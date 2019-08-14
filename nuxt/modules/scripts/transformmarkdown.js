@@ -1,5 +1,4 @@
 const fs = require('fs')
-const path = require('path')
 import { log } from '../../assets/commonFunctions'
 const md = require('markdown-it')({
   html: true,

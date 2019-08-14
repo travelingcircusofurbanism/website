@@ -121,7 +121,8 @@ export default {
     const content = {}
     if (process.server && !process.client) {
       // can just get data with fs on server
-      const fs = require('fs')
+      let fs
+      if (process.server) fs = require('fs')
       try {
         content.en = fs.readFileSync('./nuxt/static' + path + 'en.html', 'utf8')
       } catch (e) {}

@@ -72,7 +72,9 @@ export default {
 
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
-    this.$root._router.afterEach(this.resetScroll)
+    this.$root._router.afterEach((to, from) => {
+      this.resetScroll()
+    })
   },
   methods: {
     checkWidth() {

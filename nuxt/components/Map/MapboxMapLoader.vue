@@ -21,7 +21,7 @@ export default {
     return {
       mapboxgl: null,
       map: null,
-      clusterer: supercluster({
+      clusterer: new supercluster({
         radius: 60,
         maxZoom: 15,
       }),

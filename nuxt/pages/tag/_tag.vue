@@ -36,7 +36,7 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, store }) {
+  asyncData({ route, redirect, error, store, app }) {
     const searchTag = decodeURIComponent(decodeURIComponent(route.path))
       .replace('/ja/', '/')
       .replace('/tag/', '')
@@ -48,7 +48,13 @@ export default {
     posts = posts.filter(p => {
       return p.tags && p.tags.find(t => t.toLowerCase() === searchTag)
     })
-    if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1)
+      return redirect(
+        app.localePath({
+          name: 'city-post',
+          params: { city: posts[0].city, post: posts[0].slug },
+        })
+      )
     return {
       posts,
       tag: searchTag,

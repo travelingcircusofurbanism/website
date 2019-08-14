@@ -91,6 +91,8 @@ module.exports = {
   plugins: ['~/plugins/plugins'],
 
   build: {
+    // analyze: true,
+
     watch: [
       'posts',
       'nuxt/components',
@@ -100,28 +102,31 @@ module.exports = {
       'nuxt/modules',
       'nuxt.config.js',
     ],
-    styleResources: {
-      scss: 'assets/variables.scss',
-    },
+
     extend(config) {
       if (!config.module.noParse) config.module.noParse = []
       else if (!Array.isArray(config.module.noParse))
         config.module.noParse = [config.module.noParse]
       config.module.noParse.push(/(mapbox-gl)\.js$/)
     },
+
+    optimization: {
+      splitChunks: {
+        name: true,
+      },
+    },
   },
 
   generate: {
     dir: './docs',
     routes: () => {
-      const cities = fs
-        .readdirSync('./nuxt/static/posts')
-        .filter(c => c.indexOf('.') !== 0)
       const posts = require('./nuxt/static/generated/posts.json').filter(
         post =>
           post.preview || (post.public.ja === true || post.public.en === true)
       )
-
+      const cities = require('./nuxt/static/generated/cities.json').map(c =>
+        encodeURIComponent(c)
+      )
       const locations = require('./nuxt/static/generated/locations.json').map(
         l => encodeURIComponent(l)
       )

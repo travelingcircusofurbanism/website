@@ -47,7 +47,7 @@ export default {
       ],
     }
   },
-  asyncData({ route, redirect, error, store }) {
+  asyncData({ route, redirect, error, store, app }) {
     const location = decodeURIComponent(decodeURIComponent(route.path)) // for some reason we have to do this twice
       .replace('/ja/', '/')
       .replace('/at/', '')
@@ -74,7 +74,13 @@ export default {
         return found
       }
     })
-    if (posts.length === 1) return redirect(posts[0].url)
+    if (posts.length === 1)
+      return redirect(
+        app.localePath({
+          name: 'city-post',
+          params: { city: posts[0].city, post: posts[0].slug },
+        })
+      )
     return {
       posts,
       location,
