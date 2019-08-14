@@ -124,9 +124,7 @@ module.exports = {
         post =>
           post.preview || (post.public.ja === true || post.public.en === true)
       )
-      const cities = require('./nuxt/static/generated/cities.json').map(c =>
-        encodeURIComponent(c)
-      )
+      const cities = require('./nuxt/static/generated/cities.json')
       const locations = require('./nuxt/static/generated/locations.json').map(
         l => encodeURIComponent(l)
       )
