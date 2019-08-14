@@ -140,10 +140,10 @@ module.exports = {
         ...cities.map(c => `/${c}`),
         ...cities.map(c => `/ja/${c}`),
         ...posts
-          .filter(p => p.public.en || p.preview)
+          .filter(p => p.public.ja || p.public.en || p.preview)
           .map(p => `/${p.city}/${p.slug}`),
         ...posts
-          .filter(p => p.public.ja || p.preview)
+          .filter(p => p.public.ja || p.public.en || p.preview)
           .map(p => `/ja/${p.city}/${p.slug}`),
         ...locations.map(l => `/at/${l}`),
         ...locations.map(l => `/ja/at/${l}`),
