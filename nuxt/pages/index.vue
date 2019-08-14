@@ -1,7 +1,5 @@
 <template>
   <section class="content">
-    <SearchSelector />
-
     <PostList :posts="showablePosts" title="Recent Posts" />
     <ContentFooter />
   </section>
@@ -10,7 +8,6 @@
 <script>
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
-import SearchSelector from '~/components/SearchSelector'
 
 export default {
   head() {
@@ -32,7 +29,6 @@ export default {
   components: {
     ContentFooter,
     PostList,
-    SearchSelector,
   },
   asyncData({ store }) {
     let posts = store.state.allPosts
@@ -60,6 +56,9 @@ export default {
         this.$store.state.currentShowablePosts.includes(p)
       )
     },
+  },
+  created() {
+    this.$store.commit('setBreadcrumbs', [])
   },
   mounted() {
     this.$store.commit('setPan', true)

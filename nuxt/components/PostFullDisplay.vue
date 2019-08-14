@@ -14,7 +14,6 @@
         <nuxt-link :to="switchLocalePath('en')" class="button">Switch to English</nuxt-link>
       </template>
     </div>
-    <Breadcrumb :title="title[displayLanguage]" />
 
     <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title[displayLanguage] }}</h1>
 
@@ -51,8 +50,6 @@
 import ContentFooter from '~/components/Footer'
 import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
-import Breadcrumb from '~/components/Breadcrumb'
-import SearchSelector from '~/components/SearchSelector'
 // import LoaderIcon from '~/components/LoaderIcon'
 import Tags from '~/components/Tags'
 
@@ -82,8 +79,6 @@ export default {
     ContentFooter,
     RelatedArticles,
     PostDetails,
-    Breadcrumb,
-    SearchSelector,
     // LoaderIcon,
     Tags,
   },

@@ -18,6 +18,8 @@
 import EmbeddedPostPreview from '~/components/EmbeddedPostPreview'
 import axios from 'axios'
 
+// todo put top bar in here
+
 export default {
   props: ['error'],
   data() {

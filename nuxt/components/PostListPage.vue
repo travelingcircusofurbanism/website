@@ -1,7 +1,5 @@
 <template>
   <section class="content" :key="Date.now()">
-    <Breadcrumb />
-    <SearchSelector />
     <PostList :posts="showablePosts" :title="postListTitle" />
     <ContentFooter />
   </section>
@@ -10,15 +8,11 @@
 <script>
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
-import Breadcrumb from '~/components/Breadcrumb'
-import SearchSelector from '~/components/SearchSelector'
 
 export default {
   components: {
     ContentFooter,
     PostList,
-    Breadcrumb,
-    SearchSelector,
   },
   props: {
     postListTitle: {

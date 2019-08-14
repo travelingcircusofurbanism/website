@@ -1,5 +1,5 @@
 <template>
-  <div class="searchholder content-top-full" :class="{open: isOpen}" v-if="!isMobile">
+  <div class="searchholder" :class="{open: isOpen, collapse}" v-if="!isMobile">
     <svg
       width="135px"
       height="135px"
@@ -28,64 +28,71 @@
     <div class="closebutton" v-if="isOpen" @click="close">
       <div>✕</div>
     </div>
-    <div class="megalist" v-if="isOpen">
-      <div class="listsectionlabel" v-if="orderedCategories.length">Category</div>
-      <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
-        <nuxt-link
-          class="listlink"
-          :to="localePath({
+
+    <transition name="fade">
+      <div class="megalist" v-if="isOpen">
+        <div class="listsectionlabel" v-if="orderedCategories.length">Category</div>
+        <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
+          <nuxt-link
+            class="listlink"
+            @click.native="close"
+            :to="localePath({
             name: 'is-category',
             params: { category: element.label },
           })"
-        >
-          {{capitalize(element.label)}}
-          <span class="sub">
-            <span class="sub">{{element.count}}</span>
-          </span>
-        </nuxt-link>
-      </div>
-      <div class="listsectionlabel" v-if="orderedCities.length">City</div>
-      <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
-        <nuxt-link
-          class="listlink"
-          :to="localePath({
+          >
+            {{capitalize(element.label)}}
+            <span class="sub">
+              <span class="sub">{{element.count}}</span>
+            </span>
+          </nuxt-link>
+        </div>
+        <div class="listsectionlabel" v-if="orderedCities.length">City</div>
+        <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
+          <nuxt-link
+            class="listlink"
+            @click.native="close"
+            :to="localePath({
             name: 'city',
             params: { city: element.label.replace(/\//g, '%2F') },
           })"
-        >
-          {{capitalize(element.label)}}
-          <span class="sub">
-            <span class="sub">{{element.count}}</span>
-          </span>
-        </nuxt-link>
-      </div>
-      <template v-if="searchTerm !== ''">
-        <div class="listsectionlabel" v-if="tags.length">Tag</div>
-        <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
-          <nuxt-link
-            class="listlink"
-            :to="localePath({
+          >
+            {{capitalize(element.label)}}
+            <span class="sub">
+              <span class="sub">{{element.count}}</span>
+            </span>
+          </nuxt-link>
+        </div>
+        <template v-if="searchTerm !== ''">
+          <div class="listsectionlabel" v-if="tags.length">Tag</div>
+          <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
+            <nuxt-link
+              class="listlink"
+              @click.native="close"
+              :to="localePath({
             name: 'tag-tag',
             params: { tag: element.replace(/\//g, '%2F')},
           })"
-          >{{capitalize(element)}}</nuxt-link>
-        </div>
-        <div class="listsectionlabel" v-if="locations.length">Place</div>
-        <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
-          <nuxt-link
-            class="listlink"
-            :to="localePath({
+            >{{capitalize(element)}}</nuxt-link>
+          </div>
+          <div class="listsectionlabel" v-if="locations.length">Place</div>
+          <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
+            <nuxt-link
+              class="listlink"
+              @click.native="close"
+              :to="localePath({
             name: 'at-location',
             params: { location: element.replace(/\//g, '%2F')},
           })"
-          >{{capitalize(element)}}</nuxt-link>
-        </div>
-      </template>
-      <div
-        class="listsectionlabel"
-        v-if="!locations.length && !orderedCities.length && !orderedCategories.length"
-      >No results found.</div>
-    </div>
+            >{{capitalize(element)}}</nuxt-link>
+          </div>
+        </template>
+        <div
+          class="listsectionlabel"
+          v-if="!locations.length && !orderedCities.length && !orderedCategories.length"
+        >No results found.</div>
+      </div>
+    </transition>
   </div>
 </template>
 
@@ -93,7 +100,7 @@
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
-  props: {},
+  props: { collapse: { default: true } },
   data() {
     return {
       isOpen: false,
@@ -153,17 +160,21 @@ export default {
     capitalize,
     open() {
       this.isOpen = true
+      this.$emit('open')
       window.addEventListener('mousedown', this.checkForClose)
     },
     checkForClose(event) {
       if (
-        !(event.path || (event.composedPath && event.composedPath())).includes(
-          this.$el
-        )
+        !(
+          event.path ||
+          (event.composedPath && event.composedPath()) ||
+          []
+        ).includes(this.$el)
       )
         this.close()
     },
     close() {
+      this.$emit('close')
       this.searchTerm = ''
       window.removeEventListener('mousedown', this.checkForClose)
       this.isOpen = false
@@ -175,18 +186,35 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-$searchcolor: lighten($shade, 1.5%);
-
 .searchholder {
+  background: $shade;
+  border-bottom: 1px solid rgba($offwhite, 0.5);
+  width: 100%;
   position: relative;
+  right: 0;
   z-index: 4;
-  background: $searchcolor;
   padding-top: 0;
   padding-bottom: 0;
   height: $unit * 8;
   color: $text;
-  transition: all 0.2s;
-  border-bottom: 1px solid rgba($offwhite, 0.3);
+  transition: height 0.2s, width 0.2s, background 0.5s;
+
+  &.collapse {
+    width: $unit * 12;
+    flex-grow: 0;
+    flex-shrink: 0;
+    border-left: 1px solid rgba($offwhite, 0.5);
+    transition: all 0.2s;
+
+    &:hover {
+      background: darken($shade, 3%);
+      box-shadow: 0px 2px 10px darken($shade, 20%);
+    }
+
+    svg {
+      left: $unit * 4.5;
+    }
+  }
 
   &:after {
     content: '';
@@ -206,7 +234,7 @@ $searchcolor: lighten($shade, 1.5%);
   &:hover,
   &.open {
     top: 0;
-    background: darken($searchcolor, 3%);
+    background: darken($shade, 3%);
     border-bottom: 1px solid transparent;
 
     &:after {
@@ -215,24 +243,12 @@ $searchcolor: lighten($shade, 1.5%);
     }
   }
 
-  svg {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.3;
-    width: $unit * 3;
-    height: $unit * 3;
-
-    g {
-      stroke: $text;
-    }
-  }
-
   &.open {
     background: rgba(lighten($text, 0%), 0.97);
     color: rgba(white, 1);
     height: $unit * 16;
     border-bottom: none;
+    flex: 1;
 
     &:after {
       background: rgba(white, 0.3) !important;
@@ -267,10 +283,25 @@ $searchcolor: lighten($shade, 1.5%);
     }
   }
 
+  svg {
+    position: absolute;
+    left: $content-padding;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.3;
+    width: $unit * 3;
+    height: $unit * 3;
+    // padding-left: $content-padding;
+
+    g {
+      stroke: $text;
+    }
+  }
+
   .searchinput {
     position: absolute;
-    width: 100%;
     height: 100%;
+    width: 100%;
     top: 0;
     left: 0;
     outline: none;
@@ -284,11 +315,8 @@ $searchcolor: lighten($shade, 1.5%);
     cursor: pointer;
     background: transparent;
 
-    &::placeholder {
-      // opacity: 0.7;
-    }
-
     &.open {
+      width: 100%;
       color: rgba(white, 1);
       font-size: 1.5rem;
       line-height: 1;
@@ -330,9 +358,5 @@ $searchcolor: lighten($shade, 1.5%);
       }
     }
   }
-}
-
-.content-top-full:first-of-type {
-  height: $unit * 12;
 }
 </style>

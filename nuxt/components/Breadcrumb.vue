@@ -1,8 +1,5 @@
 <template>
-  <div
-    v-if="isMobile === false && breadcrumbs && breadcrumbs.length > 0"
-    class="breadcrumb content-top-full"
-  >
+  <div class="breadcrumb" :class="{collapse}">
     <nuxt-link
       v-for="(path, key) in pathEls"
       :key="key"
@@ -21,8 +18,8 @@ const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
-    title: {
-      required: false,
+    collapse: {
+      default: false,
     },
   },
   computed: {
@@ -31,7 +28,7 @@ export default {
     },
 
     breadcrumbs() {
-      return this.$store.state.breadcrumbs
+      return this.$store.state.breadcrumbs || []
     },
 
     pathEls() {
@@ -51,27 +48,32 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-$bgcolor: $shade;
-
 .breadcrumb {
-  background: $bgcolor;
+  background: $shade;
+  border-bottom: 1px solid rgba($offwhite, 0.5);
   // margin-bottom: $unit * 3;
   padding: 0;
-  width: 50vw;
+  width: 100%;
   white-space: nowrap;
   position: relative;
-  border-bottom: 1px solid rgba($offwhite, 0.5);
-  font-size: 0.9em;
   position: relative;
   z-index: 3;
   overflow: hidden;
+  flex-grow: 1;
+  flex-shrink: 1;
+  transition: all 0.2s;
+
+  &.collapse {
+    width: 0;
+    flex-grow: 0;
+  }
 
   & > * {
     z-index: 1;
   }
 
   &:after {
-    @include fade-to-color(right, $bgcolor);
+    @include fade-to-color(right, $shade);
     z-index: 2;
   }
 }
@@ -130,7 +132,7 @@ $bgcolor: $shade;
   }
 
   &:hover::before {
-    background: darken($bgcolor, 3%) !important;
+    background: darken($shade, 3%) !important;
     // height: 108%;
     // top: -4%;
     z-index: 4;

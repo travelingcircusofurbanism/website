@@ -6,7 +6,10 @@
     <DevOverlay class="devoverlay" />
     <div class="maingrid">
       <Canvas />
-      <nuxt />
+      <div class="rightside">
+        <TopBar v-if="!isMobile" />
+        <nuxt />
+      </div>
     </div>
   </div>
 </template>
@@ -16,6 +19,7 @@ import Canvas from '~/components/Canvas'
 import Header from '~/components/Header'
 import Lightbox from '~/components/Lightbox'
 import MobileSearchSelectorOverlay from '~/components/MobileSearchSelectorOverlay'
+import TopBar from '~/components/TopBar'
 import DevOverlay from '~/components/DevOverlay'
 
 export default {
@@ -41,6 +45,7 @@ export default {
     Header,
     Lightbox,
     MobileSearchSelectorOverlay,
+    TopBar,
     DevOverlay,
   },
   computed: {
