@@ -66,14 +66,12 @@ export default {
   watch: {
     isMobile(isMobile) {
       this.scrollElement.removeEventListener('scroll', this.scroll)
-      this.scrollElement = isMobile
-        ? document.querySelector('body')
-        : this.$el.parentNode
+      this.scrollElement = isMobile ? window : this.$el.parentNode.parentNode
       this.scrollElement.addEventListener('scroll', this.scroll)
     },
   },
   mounted() {
-    this.scrollElement = this.isMobile ? window : this.$el.parentNode
+    this.scrollElement = this.isMobile ? window : this.$el.parentNode.parentNode
     this.scrollElement.addEventListener('scroll', this.scroll)
   },
   beforeDestroy() {
@@ -94,7 +92,7 @@ export default {
       const scrollDistanceLeft =
         this.$el.offsetHeight -
         (document.documentElement.clientHeight || window.innerHeight) -
-        contentBox.scrollTop
+        (contentBox.scrollY || contentBox.scrollTop)
       if (scrollDistanceLeft < 500) this.showMore()
     },
   },

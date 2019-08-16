@@ -41,31 +41,12 @@ export default function() {
             masterPostDir + cityDir + '/' + postDir + '/ja.md',
           ]
 
-          // grab english content for RSS
-          fs.readFile(markdownPaths[0], 'utf8', (err, markdown) => {
-            if (err) return
-            const generatedRSSHTML = formatMarkdownToRSSHTML(
-              markdown,
-              formattedCityDir,
-              postDir
-            )
-            if (!generatedRSSHTML) return
-            const rssFileName = '/rssContent.html'
-            fs.writeFile(
-              pathToStaticPosts +
-                formattedCityDir +
-                '/' +
-                postDir +
-                rssFileName,
-              generatedRSSHTML,
-              err => {}
-            )
-          })
-
+          // generate real post html
           markdownPaths.forEach(markdownPath => {
             fs.readFile(markdownPath, 'utf8', (err, markdown) => {
               if (err) return
 
+              // post html
               const generatedHTML = formatMarkdownToSiteHTML(
                 markdown,
                 formattedCityDir,
@@ -80,6 +61,28 @@ export default function() {
               fs.writeFile(
                 pathToStaticPosts + formattedCityDir + '/' + postDir + fileName,
                 generatedHTML,
+                err => {}
+              )
+
+              // rss html
+              const generatedRSSHTML = formatMarkdownToRSSHTML(
+                markdown,
+                formattedCityDir,
+                postDir
+              )
+              if (!generatedRSSHTML) return
+              const rssFileName =
+                markdownPath.substring(
+                  markdownPath.lastIndexOf('/'),
+                  markdownPath.lastIndexOf('.')
+                ) + 'RssContent.html'
+              fs.writeFile(
+                pathToStaticPosts +
+                  formattedCityDir +
+                  '/' +
+                  postDir +
+                  rssFileName,
+                generatedRSSHTML,
                 err => {}
               )
             })

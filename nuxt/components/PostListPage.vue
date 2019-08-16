@@ -67,6 +67,7 @@ export default {
   },
   mounted() {
     if (this.skippingToFirstPost) return
+    this.$el.parentElement.scrollTop = 0
     this.$store.commit('setPan', false)
     if (this.marker) {
       this.$store.commit('setView', this.marker)

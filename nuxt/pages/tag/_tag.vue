@@ -12,28 +12,35 @@ export default {
   },
   scrollToTop: true,
   head() {
+    const meta = [
+      {
+        property: 'og:title',
+        content: `${this.capitalize(this.tag)} | Traveling Circus of Urbanism`,
+      },
+      {
+        property: 'og:url',
+        content: `https://www.travelingcircusofurbanism.com/tag/${this.tag}`,
+      },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: this.posts[0]
+          ? this.posts[0].image.substring(0, 4) === 'http'
+            ? this.posts[0].image
+            : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`
+          : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
+      },
+    ]
+    if (!this.posts || this.posts.length === 0)
+      meta.push({
+        rel: 'canonical',
+        href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
+          this.$i18n.locale === 'ja' ? 'en' : 'ja'
+        )}`,
+      })
     return {
       title: this.capitalize(this.tag),
-      meta: [
-        {
-          property: 'og:title',
-          content: `${this.capitalize(
-            this.tag
-          )} | Traveling Circus of Urbanism`,
-        },
-        {
-          property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/tag/${this.tag}`,
-        },
-        {
-          hid: `og:image`,
-          property: 'og:image',
-          content:
-            this.posts[0].image.substring(0, 4) === 'http'
-              ? this.posts[0].image
-              : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`,
-        },
-      ],
+      meta,
     }
   },
   asyncData({ route, redirect, error, store, app }) {
@@ -42,9 +49,11 @@ export default {
       .replace('/tag/', '')
       .replace(/%2F/g, '/')
       .toLowerCase()
-    let posts = store.state.allPosts
-    if (!posts || posts.length === 0)
-      return error({ statusCode: 404, message: 'Page not found.' })
+    let posts = store.viewingAsDev
+      ? store.state.allPosts
+      : store.state.currentShowablePosts
+    // if (!posts || posts.length === 0)
+    //   return error({ statusCode: 404, message: 'Page not found.' })
     posts = posts.filter(p => {
       return p.tags && p.tags.find(t => t.toLowerCase() === searchTag)
     })

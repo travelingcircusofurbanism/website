@@ -10,7 +10,18 @@
       <a href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
         <img src="~/assets/icons/facebook.svg" width="20px" height="20px" />
       </a>
-      <a href="https://www.travelingcircusofurbanism.com/feed.xml" target="_blank">
+      <a
+        v-if="$i18n.locale === 'en'"
+        href="https://www.travelingcircusofurbanism.com/feed.xml"
+        target="_blank"
+      >
+        <img src="~/assets/icons/rss.svg" width="20px" height="20px" />
+      </a>
+      <a
+        v-if="$i18n.locale === 'ja'"
+        href="https://www.travelingcircusofurbanism.com/jafeed.xml"
+        target="_blank"
+      >
         <img src="~/assets/icons/rss.svg" width="20px" height="20px" />
       </a>
     </p>

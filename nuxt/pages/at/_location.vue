@@ -15,36 +15,44 @@ export default {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
       this.location
     )} on the Traveling Circus of Urbanism.`
+    const meta = [
+      {
+        property: 'og:title',
+        content: `${this.capitalize(
+          this.location
+        )} | Traveling Circus of Urbanism`,
+      },
+      { hid: 'description', name: 'description', content: description },
+      {
+        hid: 'og:description',
+        property: 'og:description',
+        content: description,
+      },
+      {
+        hid: `og:url`,
+        property: 'og:url',
+        content: `https://www.travelingcircusofurbanism.com/at/${this.location}`,
+      },
+      {
+        hid: `og:image`,
+        property: 'og:image',
+        content: this.posts[0]
+          ? this.posts[0].image.substring(0, 4) === 'http'
+            ? this.posts[0].image
+            : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`
+          : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
+      },
+    ]
+    if (!this.posts || this.posts.length === 0)
+      meta.push({
+        rel: 'canonical',
+        href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
+          this.$i18n.locale === 'ja' ? 'en' : 'ja'
+        )}`,
+      })
     return {
       title: this.capitalize(this.location),
-      meta: [
-        {
-          property: 'og:title',
-          content: `${this.capitalize(
-            this.location
-          )} | Traveling Circus of Urbanism`,
-        },
-        { hid: 'description', name: 'description', content: description },
-        {
-          hid: 'og:description',
-          property: 'og:description',
-          content: description,
-        },
-        {
-          property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/at/${this.location}`,
-        },
-        {
-          hid: `og:image`,
-          property: 'og:image',
-          content:
-            this.posts[0] && this.posts[0].image
-              ? this.posts[0].image.substring(0, 4) === 'http'
-                ? this.posts[0].image
-                : `https://www.travelingcircusofurbanism.com${this.posts[0].image}`
-              : '',
-        },
-      ],
+      meta,
     }
   },
   asyncData({ route, redirect, error, store, app }) {
@@ -53,9 +61,11 @@ export default {
       .replace('/at/', '')
       .replace(/\/$/, '')
       .toLowerCase()
-    let posts = store.state.allPosts
-    if (!posts || posts.length === 0)
-      return error({ statusCode: 404, message: 'Page not found.' })
+    let posts = store.viewingAsDev
+      ? store.state.allPosts
+      : store.state.currentShowablePosts
+    // if (!posts || posts.length === 0)
+    //   return error({ statusCode: 404, message: 'Page not found.' })
     let marker = {}
     posts = posts.filter(p => {
       const toCheck = (Array.isArray(p.mapPosition)

@@ -139,7 +139,7 @@ h4 {
     box-sizing: content-box;
     margin: -1 * $header-offset -1 * $content-padding;
     margin-bottom: 0;
-    padding: $header-offset $content-padding;
+    padding: $unit * 2 $content-padding;
 
     &.mini {
       padding-bottom: $unit * 2;
@@ -177,20 +177,14 @@ h4 {
   margin-bottom: $unit * 5;
   color: $active;
 
+  &:first-child {
+    margin-top: $unit * 3;
+  }
+
   &:not(.mini) {
     padding: $unit 0;
     padding-right: $unit * 5;
 
-    // &:before {
-    //   content: '';
-    //   position: absolute;
-    //   width: $unit * 10;
-    //   height: 3px;
-    //   bottom: 48%;
-    //   left: 100%;
-    //   z-index: 1;
-    //   background: $active;
-    // }
     &:after {
       content: '';
       position: absolute;

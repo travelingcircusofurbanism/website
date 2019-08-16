@@ -1,17 +1,48 @@
 <template>
   <section class="content">
     <div
-      class="japanese-available content-top-full ja"
+      class="otherlanguageavailable content-top-full"
       v-if="isDev && languages.ja && languages.en"
     >
       <template v-if="displayLanguage !== 'ja'">
         <!-- <img src="~/assets/icons/japanFlag.svg" class="flag-icon" /> -->
         <span>Hi Dev! Showing the English version.</span>
-        <nuxt-link :to="switchLocalePath('ja')" class="button">Switch to Japanese</nuxt-link>
+        <nuxt-link :to="switchLocalePath('ja')">Switch to Japanese</nuxt-link>
       </template>
       <template v-else>
         <span>Hi Dev! Showing the Japanese version.</span>
-        <nuxt-link :to="switchLocalePath('en')" class="button">Switch to English</nuxt-link>
+        <nuxt-link :to="switchLocalePath('en')">Switch to English</nuxt-link>
+      </template>
+    </div>
+    <div
+      v-if="!isDev && displayLanguage !== $i18n.locale"
+      class="otherlanguageavailable content-top-full"
+      :class="{ja: $i18n.locale === 'ja'}"
+    >
+      <template v-if="$i18n.locale === 'ja'">
+        この記事は英語版しかありません。
+        <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link>と日本語での記事があります！
+      </template>
+      <template v-else>
+        This post is only in Japanese!
+        <nuxt-link :to="localePath('index')" exact>Check out our home page</nuxt-link>
+        <span>to find posts in English.</span>
+      </template>
+    </div>
+
+    <div
+      v-else-if="!isDev && userSystemLanguage !== $i18n.locale"
+      class="otherlanguageavailable content-top-full"
+      :class="{ja: $i18n.locale === 'ja'}"
+    >
+      <template v-if="$i18n.locale === 'en'">
+        日本語での記事もあります！
+        <nuxt-link :to="localePath('index','ja')" exact>日本版のホーム</nuxt-link>でご覧ください。
+      </template>
+      <template v-else>
+        We have English posts, too!
+        <nuxt-link :to="localePath('index','en')" exact>Head to our English home page</nuxt-link>
+        <span>to see them.</span>
       </template>
     </div>
 
@@ -84,7 +115,9 @@ export default {
   },
 
   data() {
-    return {}
+    return {
+      userSystemLanguage: this.$i18n.locale,
+    }
   },
 
   computed: {
@@ -114,6 +147,10 @@ export default {
   },
 
   mounted() {
+    this.userSystemLanguage = (window
+      ? window.navigator.userLanguage || window.navigator.language
+      : 'en'
+    ).substring(0, 2)
     this.resetView()
     this.$store.commit(
       'setHighlight',
@@ -257,14 +294,33 @@ h1 {
   margin-bottom: $unit * 2;
 }
 
-.japanese-available {
+.otherlanguageavailable {
   background: $active;
   color: white;
   // margin-bottom: $unit * 5;
   text-align: center;
+  line-height: 1.7;
 
   @include width(mobile) {
     margin-bottom: $content-padding-mobile;
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:visited {
+    color: white;
+    color: inherit;
+    text-decoration: none;
+    display: inline-block;
+    padding: $unit $unit * 2;
+    border: 1px solid rgba(white, 0.3);
+    margin: 0 $unit/2;
+    background: rgba(white, 0.1);
+    transition: all 0.2s;
+  }
+  a:hover {
+    background: rgba(white, 0.2);
   }
 }
 

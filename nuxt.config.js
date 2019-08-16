@@ -157,7 +157,7 @@ module.exports = {
 
   feed: [
     {
-      path: '/feed.xml', // The route to your feed.
+      path: '/feed.xml', // The route to the English feed.
       async create(feed) {
         feed.options = {
           title: 'Traveling Circus of Urbanism',
@@ -170,7 +170,7 @@ module.exports = {
           author: {
             name: 'Mariko Sugita',
             email: 'travelingcircusofurbanism@gmail.com',
-            link: 'https://www.travelingcircusofurbanism.com/author',
+            link: 'https://www.travelingcircusofurbanism.com/about',
           },
         }
 
@@ -178,16 +178,15 @@ module.exports = {
         posts.forEach(post => {
           if (
             post.public.en !== true ||
-            post.languages.en !== true ||
             new Date(post.date).getTime() > new Date().getTime()
           )
             return
           const content = fs.readFileSync(
-            `./nuxt/static/posts/${post.url}/rssContent.html`,
+            `./nuxt/static/posts/${post.url}/enRssContent.html`,
             'utf-8'
           )
           feed.addItem({
-            title: post.title,
+            title: post.title.en,
             id: encodeURI(post.url),
             link: encodeURI(
               `https://www.travelingcircusofurbanism.com${post.url}`
@@ -212,7 +211,71 @@ module.exports = {
         })
       },
       cacheTime: 1000 * 60, // How long should the feed be cached, in ms
-      type: 'rss2', // Can be: rss2, atom1, json1
+      type: 'rss2',
+    },
+    {
+      path: '/jafeed.xml', // The route to the Japanese feed
+      async create(feed) {
+        feed.options = {
+          title: 'アーバニズムの旅するサーカス',
+          link: 'https://www.travelingcircusofurbanism.com/jafeed.xml',
+          description:
+            'Urban narratives and practices, collected through travel.', // todo fix
+          image:
+            'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
+          favicon: 'https://www.travelingcircusofurbanism.com/favicon.ico',
+          author: {
+            name: '杉田真理子',
+            email: 'travelingcircusofurbanism@gmail.com',
+            link: 'https://www.travelingcircusofurbanism.com/ja/about',
+          },
+        }
+
+        const posts = require('./nuxt/static/generated/posts.json')
+        posts.forEach(post => {
+          if (
+            post.public.ja !== true ||
+            new Date(post.date).getTime() > new Date().getTime()
+          )
+            return
+          const content = fs.readFileSync(
+            `./nuxt/static/posts/${post.url}/jaRssContent.html`,
+            'utf-8'
+          )
+          feed.addItem({
+            title: post.title.ja,
+            id: encodeURI(post.url),
+            link: encodeURI(
+              `https://www.travelingcircusofurbanism.com/ja${post.url}`
+            ),
+            description: content,
+            date: new Date(post.date),
+            image: encodeURI(
+              `https://www.travelingcircusofurbanism.com${post.image}`
+            ),
+          })
+        })
+
+        feed.addCategory('Urbanism')
+        feed.addCategory('Cities')
+        feed.addCategory('Design')
+        feed.addCategory('Travel')
+        feed.addCategory('アーバニズム')
+        feed.addCategory('都市デザイン')
+        feed.addCategory('都市')
+        feed.addCategory('まちづくり')
+        feed.addCategory('建築')
+        feed.addCategory('旅行')
+        feed.addCategory('旅')
+
+        feed.addContributor({
+          name: '杉田真理子',
+          email: 'travelingcircusofurbanism@gmail.com',
+          link: 'https://www.travelingcircusofurbanism.com/ja/',
+        })
+      },
+      cacheTime: 1000 * 60, // How long should the feed be cached, in ms
+      type: 'rss2',
     },
   ],
 }

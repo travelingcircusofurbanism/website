@@ -47,12 +47,8 @@
 </template>
 
 <script>
-import Selector from '~/components/Selector'
-
 export default {
-  components: {
-    Selector,
-  },
+  components: {},
   data() {
     return {
       prevScrollTop: 0,

@@ -113,6 +113,7 @@ export default {
         Object.keys(this.uniqueViewLocations).length <= 1
       )
         return
+
       let top = -90,
         right = -180,
         bottom = 90,
@@ -125,7 +126,7 @@ export default {
         if (c[0] < left) left = c[0] // min x
       }
 
-      // check for very zoomed out view (homepage), and focus on fitting y values instead.
+      // check for very zoomed out view (i.e. homepage), and focus on fitting y values instead.
       // this is to stop the map from zooming out so far that it shows antarctica, etc.
       const xDifference = Math.abs(right - left)
       if (xDifference > 100) {
