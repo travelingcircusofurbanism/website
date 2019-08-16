@@ -4,6 +4,8 @@
 ![](losangeles02.jpg)
 *Photo by Jack Finnigan on Unsplash*
 
+_It is a series profiling interesting urban projects, reading lists, initiatives, and places for urbanists to get the gist of what is happening in a city at a glance. [Email me](mailto:travelingcircusofurbanism@gmail.com) if you, or someone you know, wants to introduce about your city!_
+
 ### Things to do, places/project to check out
 
 1. Downtown Los Angeles's [Art Walk](http://downtownartwalk.org/)
