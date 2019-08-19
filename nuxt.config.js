@@ -119,7 +119,7 @@ module.exports = {
 
   generate: {
     dir: './docs',
-    fallback: '404.html',
+    // fallback: '404.html',
     workers: 4,
     workerConcurrency: 20,
     concurrency: 20,
@@ -144,7 +144,7 @@ module.exports = {
       )
 
       return [
-        // '404',
+        '404',
         ...cities.map(c => `/${c}`),
         ...cities.map(c => `/ja/${c}`),
         ...posts

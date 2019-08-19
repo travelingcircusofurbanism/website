@@ -10,6 +10,7 @@ import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
 
 export default {
+  scrollToTop: true,
   head() {
     return {
       title: 'Home',

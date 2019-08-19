@@ -66,6 +66,7 @@ export default {
     ).filter(p => p.city.toLowerCase() === city)
 
     if (city == '404')
+      //(posts.length === 0)
       return error({ statusCode: 404, message: 'Page not found.' })
 
     if (posts.length === 1)
