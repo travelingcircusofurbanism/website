@@ -1,12 +1,16 @@
 <template>
-  <div class="bluebanner content-top-full">
-    <div class="innerpadding">
-      <div class="ja" v-if="$slots.ja">
-        <slot name="ja" v-if="$i18n.locale === 'ja'"></slot>
+  <no-ssr>
+    <div class="bluebanner content-top-full">
+      <div class="innerpadding">
+        <div class="ja" v-if="$slots.ja && $i18n.locale === 'ja'">
+          <slot name="ja"></slot>
+        </div>
+        <div v-else>
+          <slot></slot>
+        </div>
       </div>
-      <slot v-else></slot>
     </div>
-  </div>
+  </no-ssr>
 </template>
 
 <script>
@@ -59,10 +63,10 @@ export default {
   color: white;
   text-align: center;
   line-height: 1.7;
-  font-size: 1em;
+  font-size: 0.9em;
 
   @include width(mobile) {
-    font-size: 0.9em;
+    font-size: 0.85em;
   }
 
   a,

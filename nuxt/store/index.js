@@ -137,9 +137,16 @@ export const mutations = {
 }
 
 export const actions = {
-  nuxtServerInit({ commit, state, dispatch }, { app }) {
+  nuxtServerInit({ commit, state, dispatch }) {
     const posts = require('~/static/generated/posts.json')
     commit('setDev', !process.static)
+    commit('setPosts', posts)
+    dispatch('updateShowablePosts')
+  },
+
+  resetPosts({ commit, state, dispatch }) {
+    if (state.allPosts && state.allPosts.length) return
+    const posts = require('~/static/generated/posts.json')
     commit('setPosts', posts)
     dispatch('updateShowablePosts')
   },
@@ -160,7 +167,6 @@ export const actions = {
     commit('setMapMarkers', showablePosts)
     commit('setPolygons', showablePosts)
     commit('setTags', showablePosts)
-    // commit('setView', showablePosts)
   },
 }
 

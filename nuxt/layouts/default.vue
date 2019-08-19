@@ -81,6 +81,9 @@ export default {
     locale() {
       return this.$i18n.locale
     },
+    posts() {
+      return this.$store.state.allPosts
+    },
     clientLanguage() {
       return process.browser
         ? window
@@ -93,24 +96,16 @@ export default {
   },
   watch: {
     locale(newLocale) {
-      // console.log('Switching locale to', newLocale)
       this.$store.dispatch('updateShowablePosts')
     },
   },
   mounted() {
     const storedLanguage = this.getCookie('i18n_redirected')
-    // todo find a way to do this that doesn't break google scraping
-    // console.log(this.clientLanguage, storedLanguage, this.$i18n.locale)
-    // if (storedLanguage && this.$i18n.locale !== storedLanguage)
-    //   return this.$router.replace(this.switchLocalePath(storedLanguage))
-
-    // else if (!storedLanguage && this.clientLanguage !== this.$i18n.locale)
-    //   return this.$router.replace(this.switchLocalePath(this.clientLanguage))
-
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.$root._router.afterEach((to, from) => {
       this.resetScroll()
+      if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
     })
   },
   methods: {
@@ -119,8 +114,6 @@ export default {
     },
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
-      // document.querySelector('.master').scrollTo(0, 0)
-      // document.querySelector('.maingrid').scrollTo(0, 0)
       document.querySelector('.rightside').scrollTo(0, 0)
     },
     getCookie(key) {

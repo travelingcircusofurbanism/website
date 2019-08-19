@@ -11,6 +11,7 @@ import PostList from '~/components/PostList'
 
 export default {
   scrollToTop: true,
+  name: 'index',
   head() {
     return {
       title: 'Home',
