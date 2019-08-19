@@ -1,7 +1,7 @@
 <template>
   <div class="error-center">
     <h1>We haven't traveled there yet!</h1>
-    <a class="subtle button blue" href="/">Back to home</a>
+    <nuxt-link class="subtle button blue" :to="localePath('index')">Back to home</nuxt-link>
     <br />
     <div class="centered">
       <div>Or, you can check out some of our all-time favorite posts!</div>
@@ -18,10 +18,9 @@
 import EmbeddedPostPreview from '~/components/EmbeddedPostPreview'
 import axios from 'axios'
 
-// todo put top bar in here
-
 export default {
   props: ['error'],
+  layout: 'blank',
   data() {
     return {
       calloutPosts: [
@@ -188,9 +187,5 @@ a.subtle.button {
   @include width(mobile) {
     padding: $unit * 2;
   }
-}
-
-.leftalign {
-  text-align: left;
 }
 </style>

@@ -27,6 +27,7 @@ const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   scrollToTop: true,
+  layout: 'default',
   head() {
     const meta = [
       {

@@ -32,6 +32,7 @@
 <script>
 import ContentFooter from '~/components/Footer'
 export default {
+  layout: 'default',
   head() {
     return {
       title: 'Zine Confirmation',

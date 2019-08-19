@@ -97,6 +97,7 @@ import BuyButton from '~/components/BuyButton'
 import SectionHeader from '~/components/SectionHeader'
 export default {
   scrollToTop: true,
+  layout: 'default',
   head() {
     return {
       title: 'Zine',

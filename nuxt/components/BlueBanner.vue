@@ -63,10 +63,10 @@ export default {
   color: white;
   text-align: center;
   line-height: 1.7;
-  font-size: 0.9em;
+  font-size: 0.95em;
 
   @include width(mobile) {
-    font-size: 0.85em;
+    font-size: 0.9em;
   }
 
   a,
@@ -78,7 +78,7 @@ export default {
     text-decoration: none;
     // display: inline-block;
     white-space: nowrap;
-    padding: $unit * 0.5 $unit * 1.5;
+    padding: $unit * 0.8 $unit * 1.5;
     margin: $unit $unit * 0.2;
     border: 1px solid rgba(white, 0.3);
     background: rgba(white, 0.1);

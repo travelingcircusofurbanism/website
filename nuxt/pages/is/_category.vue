@@ -14,6 +14,7 @@ export default {
     PostListPage,
   },
   scrollToTop: true,
+  layout: 'default',
   head() {
     const meta = [
       {

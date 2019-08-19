@@ -17,7 +17,7 @@
         <no-ssr>
           <BlueBanner v-if="!isDev && clientLanguage !== locale">
             <span class="ja">
-              ここはこのウェブサイトの英語版です！
+              ここは英語版です！
               <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
             </span>
             <template #ja>

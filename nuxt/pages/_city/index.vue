@@ -12,6 +12,7 @@ export default {
     PostListPage,
   },
   scrollToTop: true,
+  layout: 'default',
   head() {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
       this.city
