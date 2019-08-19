@@ -2,7 +2,7 @@
   <section class="content">
     <main v-if="displayLanguage === 'ja'">
       <h1 class="title">Our Zines</h1>
-      <h3 class="sectionhead">Vol. 0: Thesis</h3>
+      <SectionHeader>Vol. 0: Thesis</SectionHeader>
       <BuyButton />
       <img src="/assets/zine/1.jpg" />
       <div class="p">Traveling Circus of Urbanismが、zineになりました。</div>
@@ -40,7 +40,7 @@
     </main>
     <main v-else>
       <h1 class="title">Our Zines</h1>
-      <h3 class="sectionhead">Volume 0: Thesis</h3>
+      <SectionHeader>Volume 0: Thesis</SectionHeader>
       <BuyButton />
       <img src="/assets/zine/1.jpg" />
       <div class="p">
@@ -94,7 +94,9 @@
 <script>
 import ContentFooter from '~/components/Footer'
 import BuyButton from '~/components/BuyButton'
+import SectionHeader from '~/components/SectionHeader'
 export default {
+  scrollToTop: true,
   head() {
     return {
       title: 'Zine',
@@ -148,7 +150,7 @@ export default {
   data() {
     return {}
   },
-  components: { ContentFooter, BuyButton },
+  components: { ContentFooter, BuyButton, SectionHeader },
   computed: {
     displayLanguage() {
       return this.$i18n.locale
@@ -179,18 +181,6 @@ export default {
 h1 {
   width: 100%;
   // text-align: center;
-}
-
-h3,
-.sectionhead {
-  margin-top: $unit * 6;
-  margin-bottom: $unit * 5;
-  color: $text;
-
-  &:before,
-  &:after {
-    background: $text;
-  }
 }
 
 img {

@@ -116,7 +116,6 @@
   blockquote {
     font-style: italic;
     padding: $unit * 2 $unit * 4;
-    // background: rgba($offwhite, 0.3);
     position: relative;
 
     &:before {
@@ -129,6 +128,12 @@
       font-size: 13em;
       font-weight: 500;
       font-family: 'Raleway', sans-serif;
+      width: 50%;
+      pointer-events: none;
+    }
+
+    @include width(mobile) {
+      padding: $unit * 2 $unit;
     }
   }
 

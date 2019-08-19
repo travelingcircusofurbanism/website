@@ -1,5 +1,14 @@
 <template>
   <section class="content" :key="Date.now()">
+    <BlueBanner v-if="showablePosts.length === 0 && clientLanguage === $i18n.locale">
+      There are no English posts here yet!
+      <nuxt-link :to="localePath('index')" exact>Check out our home page</nuxt-link>
+      <span>to find articles in English.</span>
+      <template #ja>
+        ここの日本語の記事はまだありません。
+        <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link>と日本語での記事があります！
+      </template>
+    </BlueBanner>
     <PostList :posts="showablePosts" :title="postListTitle" />
     <ContentFooter />
   </section>
@@ -8,11 +17,13 @@
 <script>
 import ContentFooter from '~/components/Footer'
 import PostList from '~/components/PostList'
+import BlueBanner from '~/components/BlueBanner'
 
 export default {
   components: {
     ContentFooter,
     PostList,
+    BlueBanner,
   },
   props: {
     postListTitle: {
@@ -29,6 +40,7 @@ export default {
   data() {
     return {
       skippingToFirstPost: false,
+      clientLanguage: this.$i18n.locale,
     }
   },
   computed: {
@@ -67,6 +79,10 @@ export default {
   },
   mounted() {
     if (this.skippingToFirstPost) return
+    this.clientLanguage = (window
+      ? window.navigator.userLanguage || window.navigator.language
+      : 'en'
+    ).substring(0, 2)
     this.$el.parentElement.scrollTop = 0
     this.$store.commit('setPan', false)
     if (this.marker) {

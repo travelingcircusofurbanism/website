@@ -26,10 +26,10 @@ export default {
   },
   methods: {
     close() {
-      this.closed = true
+      // this.closed = true
     },
     open() {
-      this.closed = false
+      // this.closed = false
     },
   },
 }

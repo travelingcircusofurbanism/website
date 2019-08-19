@@ -1,80 +1,56 @@
 <template>
-  <section class="content">
-    <div
-      class="otherlanguageavailable content-top-full"
-      v-if="isDev && languages.ja && languages.en"
-    >
-      <template v-if="displayLanguage !== 'ja'">
-        <!-- <img src="~/assets/icons/japanFlag.svg" class="flag-icon" /> -->
-        <span>Hi Dev! Showing the English version.</span>
-        <nuxt-link :to="switchLocalePath('ja')">Switch to Japanese</nuxt-link>
-      </template>
-      <template v-else>
-        <span>Hi Dev! Showing the Japanese version.</span>
+  <div>
+    <BlueBanner v-if="isDev && languages.ja && languages.en">
+      Hi Dev! Showing the English version.
+      <nuxt-link :to="switchLocalePath('ja')">Switch to Japanese</nuxt-link>
+      <template #ja>
+        Hi Dev! Showing the Japanese version.
         <nuxt-link :to="switchLocalePath('en')">Switch to English</nuxt-link>
       </template>
-    </div>
-    <div
-      v-if="!isDev && displayLanguage !== $i18n.locale"
-      class="otherlanguageavailable content-top-full"
-      :class="{ja: $i18n.locale === 'ja'}"
+    </BlueBanner>
+
+    <BlueBanner
+      v-if="!isDev && displayLanguage !== $i18n.locale && clientLanguage === $i18n.locale"
     >
-      <template v-if="$i18n.locale === 'ja'">
+      <template #ja>
         この記事は英語版しかありません。
         <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link>と日本語での記事があります！
       </template>
-      <template v-else>
-        This post is only in Japanese!
-        <nuxt-link :to="localePath('index')" exact>Check out our home page</nuxt-link>
-        <span>to find posts in English.</span>
-      </template>
-    </div>
+      This article is only in Japanese.
+      <nuxt-link :to="localePath('index')" exact>Check out our home page instead!</nuxt-link>
+    </BlueBanner>
 
-    <div
-      v-else-if="!isDev && userSystemLanguage !== $i18n.locale"
-      class="otherlanguageavailable content-top-full"
-      :class="{ja: $i18n.locale === 'ja'}"
-    >
-      <template v-if="$i18n.locale === 'en'">
-        日本語での記事もあります！
-        <nuxt-link :to="localePath('index','ja')" exact>日本版のホーム</nuxt-link>でご覧ください。
-      </template>
-      <template v-else>
-        We have English posts, too!
-        <nuxt-link :to="localePath('index','en')" exact>Head to our English home page</nuxt-link>
-        <span>to see them.</span>
-      </template>
-    </div>
+    <section class="content">
+      <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title[displayLanguage] }}</h1>
 
-    <h1 :class="{ ja: displayLanguage === 'ja' }" @click="resetView">{{ title[displayLanguage] }}</h1>
+      <PostDetails
+        class="details"
+        :category="category"
+        :mapPosition="mapPosition"
+        :city="city"
+        :date="date"
+      />
 
-    <PostDetails
-      class="details"
-      :category="category"
-      :mapPosition="mapPosition"
-      :city="city"
-      :date="date"
-    />
+      <Tags :tags="tags" />
 
-    <Tags :tags="tags" />
+      <!-- <LoaderIcon v-if="loading" :active="loading" :absolute="false" /> -->
 
-    <!-- <LoaderIcon v-if="loading" :active="loading" :absolute="false" /> -->
-
-    <article
-      v-lazy-container="{
+      <article
+        v-lazy-container="{
         selector: 'img[data-src]',
         preLoad: 2, // screen heights away to start loading
       }"
-      class="markdown"
-      :class="{ja: displayLanguage === 'ja' }"
-      ref="postcontent"
-      v-html="contentToDisplay"
-    ></article>
+        class="markdown"
+        :class="{ja: displayLanguage === 'ja' }"
+        ref="postcontent"
+        v-html="contentToDisplay"
+      ></article>
 
-    <RelatedArticles :city="city" :current="slug" />
+      <RelatedArticles :city="city" :current="slug" />
 
-    <ContentFooter />
-  </section>
+      <ContentFooter />
+    </section>
+  </div>
 </template>
 
 <script>
@@ -83,8 +59,11 @@ import PostDetails from '~/components/PostDetails'
 import RelatedArticles from '~/components/RelatedArticles'
 // import LoaderIcon from '~/components/LoaderIcon'
 import Tags from '~/components/Tags'
+import BlueBanner from '~/components/BlueBanner'
 
 //TODO doesn't scroll to top on mobile?
+
+// todo let them swap instead of go home if there's a page to swap to
 
 export default {
   props: [
@@ -112,12 +91,11 @@ export default {
     PostDetails,
     // LoaderIcon,
     Tags,
+    BlueBanner,
   },
 
   data() {
-    return {
-      userSystemLanguage: this.$i18n.locale,
-    }
+    return {}
   },
 
   computed: {
@@ -136,6 +114,13 @@ export default {
     allPosts() {
       return this.$store.state.allPosts
     },
+    clientLanguage() {
+      return window
+        ? (
+            window.navigator.userLanguage || window.navigator.language
+          ).substring(0, 2)
+        : 'en'
+    },
 
     contentToDisplay() {
       if (!this.content || this.content.length === 0) return ''
@@ -147,10 +132,6 @@ export default {
   },
 
   mounted() {
-    this.userSystemLanguage = (window
-      ? window.navigator.userLanguage || window.navigator.language
-      : 'en'
-    ).substring(0, 2)
     this.resetView()
     this.$store.commit(
       'setHighlight',
@@ -292,36 +273,6 @@ export default {
 
 h1 {
   margin-bottom: $unit * 2;
-}
-
-.otherlanguageavailable {
-  background: $active;
-  color: white;
-  // margin-bottom: $unit * 5;
-  text-align: center;
-  line-height: 1.7;
-
-  @include width(mobile) {
-    margin-bottom: $content-padding-mobile;
-  }
-
-  a,
-  a:hover,
-  a:active,
-  a:visited {
-    color: white;
-    color: inherit;
-    text-decoration: none;
-    display: inline-block;
-    padding: $unit $unit * 2;
-    border: 1px solid rgba(white, 0.3);
-    margin: 0 $unit/2;
-    background: rgba(white, 0.1);
-    transition: all 0.2s;
-  }
-  a:hover {
-    background: rgba(white, 0.2);
-  }
 }
 
 .markdown {

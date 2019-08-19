@@ -1,57 +1,55 @@
 <template>
-  <div>
-    <no-ssr>
-      <MapboxMapLoader
-        :apikey="ak"
-        :defaultPosition="defaultPosition"
-        mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
-      >
-        <template slot-scope="{ mapboxgl, map, clusterer }">
-          <!--v-slot instead of slot-scope in vue 2.6+, everything else should be
-          fine-->
-          <MarkerManager
-            :mapboxgl="mapboxgl"
-            :map="map"
-            :clusterer="clusterer"
-            @updateMarkers="updateMarkers"
-          />
+  <no-ssr>
+    <MapboxMapLoader
+      :apikey="ak"
+      :defaultPosition="defaultPosition"
+      mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
+    >
+      <template slot-scope="{ mapboxgl, map, clusterer }">
+        <!--v-slot instead of slot-scope in vue 2.6+, everything else should be
+        fine-->
+        <MarkerManager
+          :mapboxgl="mapboxgl"
+          :map="map"
+          :clusterer="clusterer"
+          @updateMarkers="updateMarkers"
+        />
 
-          <Controller
-            v-if="clusterer.hasLoaded"
-            :mapboxgl="mapboxgl"
-            :map="map"
-            :clusterer="clusterer"
-          />
+        <Controller
+          v-if="clusterer.hasLoaded"
+          :mapboxgl="mapboxgl"
+          :map="map"
+          :clusterer="clusterer"
+        />
 
-          <MapMarker
-            v-if="markers"
-            v-for="(marker, key) in markers"
-            :key="key + '_' + updatePrefix"
-            :mapboxgl="mapboxgl"
-            :map="map"
-            :clusterer="clusterer"
-            :markerData="marker"
-          />
+        <MapMarker
+          v-if="markers"
+          v-for="(marker, key) in markers"
+          :key="key + '_' + updatePrefix"
+          :mapboxgl="mapboxgl"
+          :map="map"
+          :clusterer="clusterer"
+          :markerData="marker"
+        />
 
-          <MapPolygon
-            :map="map"
-            :mapboxgl="mapboxgl"
-            v-for="(polygon, key) in mapPolygons"
-            :key="'polygon' + (key + 1)"
-            :polygonData="polygon"
-          />
+        <MapPolygon
+          :map="map"
+          :mapboxgl="mapboxgl"
+          v-for="(polygon, key) in mapPolygons"
+          :key="'polygon' + (key + 1)"
+          :polygonData="polygon"
+        />
 
-          <!--
+        <!--
             <DebugMarker
               :mapboxgl="mapboxgl"
               :map="map"
               :coordinates="[139.7029729, 35.5720944]"
             />
-          -->
-        </template>
-      </MapboxMapLoader>
-    </no-ssr>
-  </div>
+        -->
+      </template>
+    </MapboxMapLoader>
+  </no-ssr>
 </template>
 
 <script>
@@ -112,4 +110,5 @@ export default {
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+</style>

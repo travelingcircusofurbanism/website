@@ -31,6 +31,9 @@ body {
 .ja {
   font-family: $ja-font-stack;
 }
+.en {
+  font-family: $font-stack;
+}
 
 a,
 a:active,
@@ -163,66 +166,6 @@ h4 {
         padding: $content-padding-mobile / 2 $content-padding-mobile;
       }
     }
-  }
-}
-
-.sectionhead {
-  font-size: 1.6rem;
-  line-height: 1;
-  position: relative;
-  display: table;
-  z-index: 2;
-  font-weight: 400;
-  margin-top: $unit * 7;
-  margin-bottom: $unit * 5;
-  color: $active;
-
-  &:first-child {
-    margin-top: $unit * 3;
-  }
-
-  &:not(.mini) {
-    padding: $unit 0;
-    padding-right: $unit * 5;
-
-    &:after {
-      content: '';
-      position: absolute;
-      width: $unit * 500;
-      height: 1px;
-      bottom: 48%;
-      left: 100%;
-      z-index: 1;
-      background: $active;
-      opacity: 0.6;
-    }
-  }
-
-  &.mini {
-    padding-right: 0;
-    background: transparent;
-    color: $text;
-    margin-top: $unit * 2;
-    padding-bottom: $unit * 2;
-    margin-bottom: 0;
-    border-bottom: 0;
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-
-    @include width(mobile) {
-      font-size: 1.1rem;
-      padding-bottom: $unit;
-      margin-top: 0;
-      padding-top: $unit;
-      margin-bottom: 0;
-    }
-  }
-
-  @include width(mobile) {
-    font-size: 1.5rem;
-    margin-top: $unit * 2;
-    margin-bottom: $unit * 3;
-    padding-bottom: 0;
   }
 }
 

@@ -1,13 +1,33 @@
 <template>
   <div class="master" ref="master" :class="{ mobile: isMobile }">
     <Lightbox class="lightbox" />
+
     <MobileSearchSelectorOverlay class="mobilesearch" />
+
     <Header />
+
     <DevOverlay class="devoverlay" />
+
     <div class="maingrid">
       <Canvas />
+
       <div class="rightside">
         <TopBar v-if="!isMobile" />
+
+        <BlueBanner v-if="!isDev && clientLanguage !== locale">
+          <span class="ja">
+            日本語でのコンテンツもあります！
+            <nuxt-link :to="localePath('index','ja')" exact>日本版のホームでご覧ください。</nuxt-link>
+          </span>
+          <template #ja>
+            <span class="en">
+              We have English content, too!
+              To see it,
+              <nuxt-link :to="localePath('index','en')" exact>head to our English home page.</nuxt-link>
+            </span>
+          </template>
+        </BlueBanner>
+
         <nuxt />
       </div>
     </div>
@@ -21,6 +41,7 @@ import Lightbox from '~/components/Lightbox'
 import MobileSearchSelectorOverlay from '~/components/MobileSearchSelectorOverlay'
 import TopBar from '~/components/TopBar'
 import DevOverlay from '~/components/DevOverlay'
+import BlueBanner from '~/components/BlueBanner'
 
 export default {
   head() {
@@ -47,13 +68,24 @@ export default {
     MobileSearchSelectorOverlay,
     TopBar,
     DevOverlay,
+    BlueBanner,
   },
   computed: {
     isMobile() {
       return this.$store.state.isMobile
     },
+    isDev() {
+      return this.$store.state.viewingAsDev
+    },
     locale() {
       return this.$i18n.locale
+    },
+    clientLanguage() {
+      return window
+        ? (
+            window.navigator.userLanguage || window.navigator.language
+          ).substring(0, 2)
+        : 'en'
     },
   },
   watch: {
@@ -63,19 +95,14 @@ export default {
     },
   },
   mounted() {
-    let clientLanguage = window
-      ? window.navigator.userLanguage || window.navigator.language
-      : 'en'
-    if (clientLanguage.indexOf('en') > -1) clientLanguage = 'en'
-    if (clientLanguage.indexOf('ja') > -1) clientLanguage = 'ja'
     const storedLanguage = this.getCookie('i18n_redirected')
     // todo find a way to do this that doesn't break google scraping
-    // console.log(clientLanguage, storedLanguage, this.$i18n.locale)
+    // console.log(this.clientLanguage, storedLanguage, this.$i18n.locale)
     // if (storedLanguage && this.$i18n.locale !== storedLanguage)
     //   return this.$router.replace(this.switchLocalePath(storedLanguage))
 
-    // else if (!storedLanguage && clientLanguage !== this.$i18n.locale)
-    //   return this.$router.replace(this.switchLocalePath(clientLanguage))
+    // else if (!storedLanguage && this.clientLanguage !== this.$i18n.locale)
+    //   return this.$router.replace(this.switchLocalePath(this.clientLanguage))
 
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()

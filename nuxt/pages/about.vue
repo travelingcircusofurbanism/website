@@ -50,7 +50,7 @@
         urban sustainability and more.
       </p>
 
-      <div class="sectionhead">Core Team</div>
+      <SectionHeader>Core Team</SectionHeader>
       <div class="personlist">
         <div class="person">
           <img src="~/assets/staff/marikocolor.jpg" />
@@ -99,6 +99,7 @@
 
 <script>
 import ContentFooter from '~/components/Footer'
+import SectionHeader from '~/components/SectionHeader'
 
 //TODO vue warning on this page
 
@@ -127,7 +128,7 @@ export default {
       ],
     }
   },
-  components: { ContentFooter },
+  components: { ContentFooter, SectionHeader },
   computed: {
     displayLanguage() {
       return this.$i18n.locale
@@ -160,13 +161,6 @@ img {
 
 .small {
   font-size: 0.6em;
-}
-.sectionhead {
-  margin-left: 0 !important;
-
-  @include width(mobile) {
-    margin-top: $unit * 6;
-  }
 }
 // .personlist {
 //   // display: flex;

@@ -1,7 +1,6 @@
 <template>
   <div class="post-list">
-    <h3 class="sectionhead" v-if="title">{{ capitalize(title) }}</h3>
-    <div v-else class="spacer"></div>
+    <SectionHeader v-if="title">{{ capitalize(title) }}</SectionHeader>
     <transition-group name="fade">
       <PostPreview v-for="(post, key) in postsToShow" :key="post.city + post.slug" v-bind="post" />
     </transition-group>
@@ -15,7 +14,7 @@
 
 <script>
 import PostPreview from '~/components/PostPreview'
-const { MDYToDate } = require('~/assets/commonFunctions.js')
+import SectionHeader from '~/components/SectionHeader'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
@@ -34,7 +33,7 @@ export default {
       required: false,
     },
   },
-  components: { PostPreview },
+  components: { PostPreview, SectionHeader },
   data() {
     return {
       shownPostCount: this.perPage,
@@ -78,7 +77,6 @@ export default {
     this.scrollElement.removeEventListener('scroll', this.scroll)
   },
   methods: {
-    MDYToDate,
     capitalize,
     showMore() {
       if (this.shownPostCount < this.showablePosts.length) {
@@ -101,8 +99,4 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/variables.scss';
-
-.spacer {
-  height: $unit * 10;
-}
 </style>

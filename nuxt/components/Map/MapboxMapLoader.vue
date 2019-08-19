@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="mapholder">
     <LoaderIcon :active="!styleReady" />
     <div id="map" :class="{ ready: styleReady }"></div>
     <template v-if="styleReady">
@@ -66,6 +66,11 @@ export default {
 
 <style lang="scss" >
 @import '~/assets/variables.scss';
+
+.mapholder {
+  height: 100%;
+  width: 100%;
+}
 
 #map {
   height: 100vh;

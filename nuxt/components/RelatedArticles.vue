@@ -1,6 +1,6 @@
 <template>
   <div class="relatedposts" v-if="postsToDisplay.length > 0">
-    <div class="sectionhead">
+    <SectionHeader>
       More posts from
       <nuxt-link
         :to="localePath({
@@ -13,7 +13,7 @@
         capitalize(city)
         }}
       </nuxt-link>
-    </div>
+    </SectionHeader>
     <div class="postgrid">
       <nuxt-link
         v-for="(post, key) in postsToDisplay"
@@ -32,10 +32,12 @@
 </template>
 
 <script>
+import SectionHeader from '~/components/SectionHeader'
 import { capitalize } from '~/assets/commonFunctions.js'
 
 export default {
   props: ['city', 'current'],
+  components: { SectionHeader },
   data() {
     return {
       allCityPosts: [],
