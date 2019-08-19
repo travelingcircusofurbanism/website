@@ -79,10 +79,11 @@ export default {
   },
   mounted() {
     if (this.skippingToFirstPost) return
-    this.clientLanguage = (window
-      ? window.navigator.userLanguage || window.navigator.language
-      : 'en'
-    ).substring(0, 2)
+    if (process.browser)
+      this.clientLanguage = (window
+        ? window.navigator.userLanguage || window.navigator.language
+        : 'en'
+      ).substring(0, 2)
     this.$el.parentElement.scrollTop = 0
     this.$store.commit('setPan', false)
     if (this.marker) {

@@ -115,11 +115,13 @@ export default {
       return this.$store.state.allPosts
     },
     clientLanguage() {
-      return window
-        ? (
-            window.navigator.userLanguage || window.navigator.language
-          ).substring(0, 2)
-        : 'en'
+      return process.browser
+        ? window
+          ? (
+              window.navigator.userLanguage || window.navigator.language
+            ).substring(0, 2)
+          : 'en'
+        : this.$i18n.locale
     },
 
     contentToDisplay() {
