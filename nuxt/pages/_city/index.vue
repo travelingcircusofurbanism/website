@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import PostListPage from '~/components/PostListPage'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
@@ -53,7 +54,7 @@ export default {
       meta,
     }
   },
-  asyncData({ route, redirect, error, store, app }) {
+  async asyncData({ route, redirect, error, store, app }) {
     const city = decodeURIComponent(decodeURIComponent(route.path)) // don't ask
       .replace('/ja/', '/')
       .replace(/\//g, '')
@@ -65,8 +66,35 @@ export default {
       : store.state.currentShowablePosts
     ).filter(p => p.city.toLowerCase() === city)
 
-    if (city == '404')
-      //(posts.length === 0)
+    let cities = []
+    if (process.server && !process.client) {
+      // can just get data with fs on server
+      let fs
+      if (process.server) fs = require('fs')
+      try {
+        cities = JSON.parse(
+          fs.readFileSync('./nuxt/static/generated/cities.json', 'utf8')
+        )
+      } catch (e) {
+        console.log(e)
+      }
+    } else {
+      // have to use axios on the browser. yes, asyncData runs between pages on the browser. idk why.
+      try {
+        const axiosConfig = {
+          validateStatus: status => true,
+        }
+        await axios
+          .get('/generated/cities.json', axiosConfig)
+          .then(response => (cities = response.data))
+          .catch(e => console.log(e))
+      } catch (e) {
+        console.log(e)
+        return error({ statusCode: 404, message: 'Page not found.' })
+      }
+    }
+
+    if (!cities.includes(city))
       return error({ statusCode: 404, message: 'Page not found.' })
 
     if (posts.length === 1)

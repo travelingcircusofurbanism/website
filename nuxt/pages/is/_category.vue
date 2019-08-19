@@ -3,6 +3,7 @@
 </template>
 
 <script>
+import axios from 'axios'
 import PostListPage from '~/components/PostListPage'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
@@ -47,12 +48,44 @@ export default {
       meta,
     }
   },
-  asyncData({ route, redirect, error, store, app }) {
+  async asyncData({ route, redirect, error, store, app }) {
     const category = decodeURIComponent(route.path)
       .replace('/ja/', '/')
       .replace('/is/', '')
       .replace(/%2F/g, '/')
       .toLowerCase()
+
+    let categories = []
+    if (process.server && !process.client) {
+      // can just get data with fs on server
+      let fs
+      if (process.server) fs = require('fs')
+      try {
+        categories = JSON.parse(
+          fs.readFileSync('./nuxt/static/generated/categories.json', 'utf8')
+        )
+      } catch (e) {
+        console.log(e)
+      }
+    } else {
+      // have to use axios on the browser. yes, asyncData runs between pages on the browser. idk why.
+      try {
+        const axiosConfig = {
+          validateStatus: status => true,
+        }
+        await axios
+          .get('/generated/categories.json', axiosConfig)
+          .then(response => (categories = response.data))
+          .catch(e => console.log(e))
+      } catch (e) {
+        console.log(e)
+        return error({ statusCode: 404, message: 'Page not found.' })
+      }
+    }
+
+    if (!categories.includes(category))
+      return error({ statusCode: 404, message: 'Page not found.' })
+
     let posts = store.viewingAsDev
       ? store.state.allPosts
       : store.state.currentShowablePosts

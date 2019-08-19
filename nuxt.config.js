@@ -119,13 +119,13 @@ module.exports = {
 
   generate: {
     dir: './docs',
-    // fallback: '404.html',
+    fallback: '404.html',
     workers: 4,
     workerConcurrency: 20,
     concurrency: 20,
-    done({ duration, errors }) {
-      if (errors.length) console.log(errors)
-    },
+    // done({ duration, errors }) {
+    //   if (errors.length) console.log(errors)
+    // },
 
     routes: () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(
@@ -144,7 +144,7 @@ module.exports = {
       )
 
       return [
-        '404',
+        // '404',
         ...cities.map(c => `/${c}`),
         ...cities.map(c => `/ja/${c}`),
         ...posts
