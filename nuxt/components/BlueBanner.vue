@@ -1,9 +1,11 @@
 <template>
   <div class="bluebanner content-top-full">
-    <div class="ja" v-if="$slots.ja">
-      <slot name="ja" v-if="$i18n.locale === 'ja'"></slot>
+    <div class="innerpadding">
+      <div class="ja" v-if="$slots.ja">
+        <slot name="ja" v-if="$i18n.locale === 'ja'"></slot>
+      </div>
+      <slot v-else></slot>
     </div>
-    <slot v-else></slot>
   </div>
 </template>
 
@@ -80,6 +82,14 @@ export default {
   }
   a:hover {
     background: rgba(white, 0.2);
+  }
+}
+
+.innerpadding {
+  padding: 0 $content-padding;
+
+  @include width(mobile) {
+    padding: 0 $content-padding-mobile;
   }
 }
 </style>

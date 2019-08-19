@@ -17,14 +17,13 @@
         <no-ssr>
           <BlueBanner v-if="!isDev && clientLanguage !== locale">
             <span class="ja">
-              日本語でのコンテンツもあります！
-              <nuxt-link :to="localePath('index','ja')" exact>日本版のホームでご覧ください。</nuxt-link>
+              ここはこのウェブサイトの英語版です！
+              <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
             </span>
             <template #ja>
               <span class="en">
-                We have English content, too!
-                To see it,
-                <nuxt-link :to="localePath('index','en')" exact>head to our English home page.</nuxt-link>
+                You're on our Japanese site!
+                <nuxt-link :to="localePath('index','en')" exact>Go to the English homepage</nuxt-link>
               </span>
             </template>
           </BlueBanner>
@@ -120,6 +119,9 @@ export default {
     },
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
+      // document.querySelector('.master').scrollTo(0, 0)
+      // document.querySelector('.maingrid').scrollTo(0, 0)
+      document.querySelector('.rightside').scrollTo(0, 0)
     },
     getCookie(key) {
       if (!document) return
