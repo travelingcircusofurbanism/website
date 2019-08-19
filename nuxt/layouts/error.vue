@@ -1,7 +1,7 @@
 <template>
   <div class="error-center">
     <h1>We haven't traveled there yet!</h1>
-    <nuxt-link class="subtle button blue" :to="localePath('index')">Back to home</nuxt-link>
+    <a class="subtle button blue" href="/">Back to home</a>
     <br />
     <div class="centered">
       <div>Or, you can check out some of our all-time favorite posts!</div>

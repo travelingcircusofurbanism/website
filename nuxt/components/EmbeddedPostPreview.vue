@@ -1,22 +1,15 @@
 <template>
-  <no-ssr>
-    <nuxt-link
-      :to="localePath({
-            name: 'city-post',
-            params: { city, post: slug },
-          })"
-    >
-      <div class="post-preview" v-on="{mouseenter: mouseOver, mouseleave: mouseOut}">
-        <div v-lazy:background-image="image" class="previewimage"></div>
+  <a :href="url">
+    <div class="post-preview" v-on="{mouseenter: mouseOver, mouseleave: mouseOut}">
+      <div v-lazy:background-image="image" class="previewimage"></div>
 
-        <div class="rightside">
-          <h4>{{ title }}</h4>
+      <div class="rightside">
+        <h4>{{ title }}</h4>
 
-          <PostDetails :category="category" :city="city" />
-        </div>
+        <PostDetails :category="category" :city="city" />
       </div>
-    </nuxt-link>
-  </no-ssr>
+    </div>
+  </a>
 </template>
 
 
@@ -25,7 +18,7 @@ const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
-  props: ['slug', 'image', 'title', 'category', 'city', 'date', 'mapPosition'],
+  props: ['url', 'image', 'title', 'category', 'city', 'date', 'mapPosition'],
   components: { PostDetails },
   computed: {
     isMobile() {
