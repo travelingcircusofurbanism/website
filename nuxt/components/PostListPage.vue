@@ -1,5 +1,5 @@
 <template>
-  <section class="content" :key="Date.now()">
+  <div>
     <BlueBanner v-if="showablePosts.length === 0 && clientLanguage === $i18n.locale">
       There are no English posts here yet!
       <nuxt-link :to="localePath('index')" exact>Check out our home page</nuxt-link>
@@ -9,9 +9,11 @@
         <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link>と日本語での記事があります！
       </template>
     </BlueBanner>
-    <PostList :posts="showablePosts" :title="postListTitle" />
-    <ContentFooter />
-  </section>
+    <section class="content" :key="Date.now()">
+      <PostList :posts="showablePosts" :title="postListTitle" />
+      <ContentFooter />
+    </section>
+  </div>
 </template>
 
 <script>

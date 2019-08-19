@@ -64,8 +64,10 @@ export default {
       ? store.state.allPosts
       : store.state.currentShowablePosts
     ).filter(p => p.city.toLowerCase() === city)
-    // if (!posts || posts.length === 0)
-    //   return error({ statusCode: 404, message: 'Page not found.' })
+
+    if (city == '404')
+      return error({ statusCode: 404, message: 'Page not found.' })
+
     if (posts.length === 1)
       return redirect(
         app.localePath({
