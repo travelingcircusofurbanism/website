@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <main v-if="displayLanguage === 'ja'">
+    <main v-if="displayLanguage === 'ja'" class="ja">
       <h1 class="title">
         <span class="small">ご注文ありがとうございました！</span>
       </h1>

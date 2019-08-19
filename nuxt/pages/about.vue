@@ -1,7 +1,7 @@
 <template>
   <section class="content">
     <img src="~assets/about.jpg" alt="About the traveling circus of urbanism" />
-    <template v-if="displayLanguage === 'ja'">
+    <div v-if="displayLanguage === 'ja'" class="ja">
       <h1 class="title">
         <span class="small">このサイトについて</span>
       </h1>
@@ -22,7 +22,7 @@
         Traveling Circus of
         Urbanismは、都市デザイン、インクルーシブ・デザイン、コミュニティディベロップメント、都市のアートや文化、政治、都市のサステイナビリティについてなど、旅をしながら目に触れた都市に関わるトピックを幅広く紹介していきます。
       </p>
-    </template>
+    </div>
     <template v-else>
       <h1 class="title">What is the traveling circus of urbanism?</h1>
       <p>

@@ -5,8 +5,8 @@
       <SectionHeader>Vol. 0: Thesis</SectionHeader>
       <BuyButton />
       <img src="/assets/zine/1.jpg" />
-      <div class="p">Traveling Circus of Urbanismが、zineになりました。</div>
-      <div class="p">
+      <div class="p ja">Traveling Circus of Urbanismが、zineになりました。</div>
+      <div class="p ja">
         旅と越境、移動のなかで、「都市」というよく分からないも
         のへの興味から始まった「Traveling Circus of
         Urbanism(アーバニズムの旅するサー カス)」。2018年から2019年の
@@ -15,7 +15,7 @@
       <div class="p">
         <img src="/assets/zine/2.jpg" />
       </div>
-      <div class="p">
+      <div class="p ja">
         第１冊目のテーマは「Volume0:
         Thesis」。あえてひとつのテーマに絞らず、「Traveling Circus of
         Urbanism」の活動を紹介するための最初のプロトタイプとして作成しました。紹介されているキーワードは、アーバン・ジャーナリズム、ヒップホップ・アーキテクチャー、主観的地図、建築とエコロジーの融合であるアーコロジーなど。B5版、40ページとコンパクトなボリュームで、日英バイリンガルで作られています。
@@ -23,7 +23,7 @@
       <div class="p">
         <img src="/assets/zine/4.jpg" />
       </div>
-      <div class="p">
+      <div class="p ja">
         ２冊目以降は、今回よりもぐっとボリュームを増やし、冊子のマガジンを定期的に出版することを予定しています。記事を書いてみたいという方、出版協力に興味がある方は、
         <a
           href="mailto:travelingcircusofurbanism@gmail.com"
