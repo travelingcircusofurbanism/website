@@ -103,9 +103,12 @@ export default {
     const storedLanguage = this.getCookie('i18n_redirected')
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
+    this.checkForNoPosts()
+    this.$root._router.beforeEach((to, from) => {
+      this.checkForNoPosts()
+    })
     this.$root._router.afterEach((to, from) => {
       this.resetScroll()
-      if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
     })
   },
   methods: {
@@ -115,6 +118,10 @@ export default {
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
       document.querySelector('.rightside').scrollTo(0, 0)
+    },
+    checkForNoPosts() {
+      // had an issue with 404 not having any posts.
+      if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
     },
     getCookie(key) {
       if (!document) return

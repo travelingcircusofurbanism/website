@@ -145,6 +145,7 @@ export const actions = {
   },
 
   resetPosts({ commit, state, dispatch }) {
+    console.log('resetting posts...', state.allPosts)
     if (state.allPosts && state.allPosts.length) return
     const posts = require('~/static/generated/posts.json')
     commit('setPosts', posts)
