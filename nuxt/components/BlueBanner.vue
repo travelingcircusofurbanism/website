@@ -1,6 +1,8 @@
 <template>
   <div class="bluebanner content-top-full">
-    <slot name="ja" v-if="$i18n.locale === 'ja'" class="ja"></slot>
+    <div class="ja" v-if="$slots.ja">
+      <slot name="ja" v-if="$i18n.locale === 'ja'"></slot>
+    </div>
     <slot v-else></slot>
   </div>
 </template>
@@ -46,7 +48,6 @@ export default {
 
   @include width(mobile) {
     margin: 0 -1 * $content-padding-mobile;
-    padding: $content-padding-mobile;
     padding: $unit $content-padding-mobile;
   }
 }
@@ -69,7 +70,8 @@ export default {
     color: white;
     color: inherit;
     text-decoration: none;
-    display: inline-block;
+    // display: inline-block;
+    white-space: nowrap;
     padding: $unit * 0.5 $unit * 1.5;
     margin: $unit $unit * 0.2;
     border: 1px solid rgba(white, 0.3);
