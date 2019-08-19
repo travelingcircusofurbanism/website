@@ -14,19 +14,21 @@
       <div class="rightside">
         <TopBar v-if="!isMobile" />
 
-        <BlueBanner v-if="!isDev && clientLanguage !== locale">
-          <span class="ja">
-            日本語でのコンテンツもあります！
-            <nuxt-link :to="localePath('index','ja')" exact>日本版のホームでご覧ください。</nuxt-link>
-          </span>
-          <template #ja>
-            <span class="en">
-              We have English content, too!
-              To see it,
-              <nuxt-link :to="localePath('index','en')" exact>head to our English home page.</nuxt-link>
+        <no-ssr>
+          <BlueBanner v-if="!isDev && clientLanguage !== locale">
+            <span class="ja">
+              日本語でのコンテンツもあります！
+              <nuxt-link :to="localePath('index','ja')" exact>日本版のホームでご覧ください。</nuxt-link>
             </span>
-          </template>
-        </BlueBanner>
+            <template #ja>
+              <span class="en">
+                We have English content, too!
+                To see it,
+                <nuxt-link :to="localePath('index','en')" exact>head to our English home page.</nuxt-link>
+              </span>
+            </template>
+          </BlueBanner>
+        </no-ssr>
 
         <nuxt />
       </div>
