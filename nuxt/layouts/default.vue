@@ -104,9 +104,6 @@ export default {
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.checkForNoPosts()
-    this.$root._router.beforeEach((to, from) => {
-      this.checkForNoPosts()
-    })
     this.$root._router.afterEach((to, from) => {
       this.resetScroll()
     })
@@ -120,7 +117,7 @@ export default {
       document.querySelector('.rightside').scrollTo(0, 0)
     },
     checkForNoPosts() {
-      // had an issue with 404 not having any posts.
+      // had an issue with 404 not having any posts. this may not have fixed it.
       if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
     },
     getCookie(key) {
