@@ -4,6 +4,7 @@ module.exports = {
   srcDir: 'nuxt/',
 
   head: {
+    __dangerouslyDisableSanitizers: ['script'],
     titleTemplate(titleChunk) {
       return (
         (titleChunk ? titleChunk + ' | ' : '') + `Traveling Circus of Urbanism`
