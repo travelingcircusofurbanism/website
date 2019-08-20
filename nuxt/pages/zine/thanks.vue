@@ -51,6 +51,10 @@ export default {
           content:
             'https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg',
         },
+        {
+          name: 'robots',
+          content: 'noindex',
+        },
       ],
     }
   },

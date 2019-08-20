@@ -74,12 +74,19 @@ export default {
         content: image,
       },
     ]
+
     if (this.displayLanguage !== this.$i18n.locale)
       meta.push({
         rel: 'canonical',
         href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
           this.displayLanguage
         )}`,
+      })
+
+    if (!this.public[this.displayLanguage] && this.preview)
+      meta.push({
+        name: 'robots',
+        content: 'noindex',
       })
 
     const structuredJSON = {
@@ -89,15 +96,20 @@ export default {
       image: image,
       author: 'Mariko Sugita',
       genre: 'urbanism',
-      keywords: 'urban design architecture cities travel',
-      wordcount: `${this.content[this.displayLanguage].split(' ').length}`,
+      keywords:
+        this.displayLanguage === 'ja'
+          ? '都市, 建築, アーバニズム, まちづくり, 都市デザイン'
+          : 'Urbanism, Architecture, Urban Studies, Urban Design, Travel',
+      wordcount: `${
+        (this.content[this.displayLanguage] || '').split(' ').length
+      }`,
       publisher: {
         '@type': 'Organization',
         name: 'Traveling Circus of Urbanism',
         logo: {
           '@type': 'ImageObject',
           url:
-            'https://www.travelingcircusofurbanism.com/assets/logo%20vert%20blue.svg',
+            'https://www.travelingcircusofurbanism.com/assets/logovertblue.png',
         },
       },
       url: url,
@@ -107,8 +119,9 @@ export default {
       },
       datePublished: dateYMDKebab,
       dateCreated: dateYMDKebab,
+      dateModified: dateYMDKebab,
       description: description,
-      articleBody: `${this.content[this.displayLanguage]
+      articleBody: `${(this.content[this.displayLanguage] || '')
         .replace(/<[^>]*>/gi, '')
         .replace(/(\n|\r)+/g, ' ')
         .replace(/(\\n)+/gi, ' ')}`,
@@ -119,6 +132,7 @@ export default {
         this.title[this.displayLanguage] || this.title.en || this.title.ja
       ),
       meta,
+      __dangerouslyDisableSanitizers: ['script'],
       script: [
         {
           innerHTML: JSON.stringify(structuredJSON),
@@ -233,6 +247,8 @@ export default {
         return 'en'
       else if (this.content.ja && (this.public.ja === true || this.isDev))
         return 'ja'
+      else if (this.content[this.$i18n.locale] && this.preview === true)
+        return this.$i18n.locale
       return null
     },
   },
