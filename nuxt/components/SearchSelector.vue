@@ -216,7 +216,7 @@ export default {
     }
 
     svg {
-      left: $unit * 4.5;
+      left: $unit * 4;
     }
   }
 

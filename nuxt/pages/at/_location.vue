@@ -12,6 +12,7 @@ export default {
     PostListPage,
   },
   scrollToTop: true,
+  layout: 'default',
   head() {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
       this.location
@@ -44,13 +45,19 @@ export default {
           : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
       },
     ]
-    if (!this.posts || this.posts.length === 0)
+    if (!this.posts || this.posts.length === 0) {
       meta.push({
         rel: 'canonical',
         href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
           this.$i18n.locale === 'ja' ? 'en' : 'ja'
         )}`,
       })
+      meta.push({
+        name: 'robots',
+        content: 'noindex',
+      })
+    }
+
     return {
       title: this.capitalize(this.location),
       meta,

@@ -32,6 +32,7 @@
 <script>
 import ContentFooter from "~/components/Footer";
 export default {
+  layout: 'default',
   head() {
     return {
       title: "Zine Confirmation",
@@ -48,10 +49,14 @@ export default {
           hid: `og:image`,
           property: "og:image",
           content:
-            "https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg"
-        }
-      ]
-    };
+            'https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg',
+        },
+        {
+          name: 'robots',
+          content: 'noindex',
+        },
+      ],
+    }
   },
   data() {
     return {};

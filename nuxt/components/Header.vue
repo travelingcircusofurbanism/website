@@ -25,7 +25,11 @@
       @click.native="resetView"
     >
       <img src="/assets/logo.svg" alt="logo" />
-      <h3 class="tagline">Urban narratives and practices, collected through traveling</h3>
+      <h3
+        class="tagline"
+        v-if="$i18n.locale === 'en'"
+      >Urban narratives and practices, collected through traveling</h3>
+      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の物語</h3>
     </nuxt-link>
     <br />
     <div class="sublinks" :class="{hasshadow: !canvasImage}" v-if="!isMobile">
@@ -154,7 +158,7 @@ a:active {
 .logo {
   display: inline-flex !important;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   position: relative;
   padding: $unit * 3 $unit * 4 $unit * 2.2 $unit * 4;
@@ -174,20 +178,23 @@ a:active {
 
   img {
     width: 100%;
+    height: $unit * 5;
+    display: block;
 
     @include width(mobile) {
-      max-height: $unit * 4;
+      max-height: $unit * 3.8;
     }
   }
 
   .tagline {
     color: saturate(lighten($active, 53%), 20%);
-    // opacity: 0.8;
     font-size: 1rem;
     margin: 0;
-    // margin-top: $unit / 2;
     font-weight: 400;
     white-space: nowrap;
+    width: 100%;
+    text-align-last: justify;
+    text-align: justify;
 
     @include width(mobile) {
       display: none;

@@ -27,50 +27,54 @@ const { capitalize } = require('~/assets/commonFunctions.js')
 
 export default {
   scrollToTop: true,
+  layout: 'default',
   head() {
+    const title = this.capitalize(
+      this.title[this.displayLanguage] || this.title.en || this.title.ja
+    )
+    const image = this.image // does it have an image?
+      ? this.image.substring(0, 4) === 'http' // is it external?
+        ? this.image // if so, use it
+        : `https://www.travelingcircusofurbanism.com${encodeURI(this.image)}` // otherwise, give it a prefix
+      : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg' // fallback to the site thumbnail.
+    const description =
+      this.description[this.displayLanguage] ||
+      this.description.en ||
+      this.description.ja
+    const url = `https://www.travelingcircusofurbanism.com${this.localePath({
+      name: 'city-post',
+      params: { city: this.city, post: this.slug },
+    })}`
+    let dateYMDKebab = this.date.replace(/\s/g, '').split('/')
+    dateYMDKebab = [dateYMDKebab[2], dateYMDKebab[0], dateYMDKebab[1]].join('-')
+
     const meta = [
       {
         property: 'og:title',
-        content: this.capitalize(
-          this.title[this.displayLanguage] || this.title.en || this.title.ja
-        ),
+        content: title,
       },
       { hid: `og:type`, property: 'og:type', content: 'article' },
       {
         hid: `og:description`,
         property: 'og:description',
-        content:
-          this.description[this.displayLanguage] ||
-          this.description.en ||
-          this.description.ja,
+        content: description,
       },
       {
         property: 'description',
-        content:
-          this.description[this.displayLanguage] ||
-          this.description.en ||
-          this.description.ja,
+        content: description,
         hid: `description`,
       },
       {
         property: 'og:url',
-        content: `https://www.travelingcircusofurbanism.com${this.localePath({
-          name: 'city-post',
-          params: { city: this.city, post: this.slug },
-        })}`,
+        content: url,
       },
       {
         hid: `og:image`,
         property: 'og:image',
-        content: this.image // does it have an image?
-          ? this.image.substring(0, 4) === 'http' // is it external?
-            ? this.image // if so, use it
-            : `https://www.travelingcircusofurbanism.com${encodeURI(
-                this.image
-              )}` // otherwise, give it a prefix
-          : 'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg', // fallback to the site thumbnail.
+        content: image,
       },
     ]
+
     if (this.displayLanguage !== this.$i18n.locale)
       meta.push({
         rel: 'canonical',
@@ -79,11 +83,62 @@ export default {
         )}`,
       })
 
+    if (!this.public[this.displayLanguage] && this.preview)
+      meta.push({
+        name: 'robots',
+        content: 'noindex',
+      })
+
+    const structuredJSON = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: title,
+      image: image,
+      author: 'Mariko Sugita',
+      genre: 'urbanism',
+      keywords:
+        this.displayLanguage === 'ja'
+          ? '都市, 建築, アーバニズム, まちづくり, 都市デザイン'
+          : 'Urbanism, Architecture, Urban Studies, Urban Design, Travel',
+      wordcount: `${
+        (this.content[this.displayLanguage] || '').split(' ').length
+      }`,
+      publisher: {
+        '@type': 'Organization',
+        name: 'Traveling Circus of Urbanism',
+        logo: {
+          '@type': 'ImageObject',
+          url:
+            'https://www.travelingcircusofurbanism.com/assets/logovertblue.png',
+        },
+      },
+      url: url,
+      mainEntityOfPage: {
+        '@type': 'WebPage',
+        '@id': 'https://www.travelingcircusofurbanism.com/',
+      },
+      datePublished: dateYMDKebab,
+      dateCreated: dateYMDKebab,
+      dateModified: dateYMDKebab,
+      description: description,
+      articleBody: `${(this.content[this.displayLanguage] || '')
+        .replace(/<[^>]*>/gi, '')
+        .replace(/(\n|\r)+/g, ' ')
+        .replace(/(\\n)+/gi, ' ')}`,
+    }
+
     return {
       title: this.capitalize(
         this.title[this.displayLanguage] || this.title.en || this.title.ja
       ),
       meta,
+      __dangerouslyDisableSanitizers: ['script'],
+      script: [
+        {
+          innerHTML: JSON.stringify(structuredJSON),
+          type: 'application/ld+json',
+        },
+      ],
     }
   },
 
@@ -192,6 +247,8 @@ export default {
         return 'en'
       else if (this.content.ja && (this.public.ja === true || this.isDev))
         return 'ja'
+      else if (this.content[this.$i18n.locale] && this.preview === true)
+        return this.$i18n.locale
       return null
     },
   },

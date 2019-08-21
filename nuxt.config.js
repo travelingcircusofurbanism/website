@@ -1,7 +1,14 @@
 const fs = require('fs')
+const os = require('os')
+let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
 
 module.exports = {
   srcDir: 'nuxt/',
+  loading: false,
+  hooks: {
+    ready: _nuxt => (nuxtInstance = _nuxt), // need this for generate:done hook for nuxt-generate-cluster
+  },
+  css: ['./assets/main.scss'],
 
   head: {
     titleTemplate(titleChunk) {
@@ -12,22 +19,6 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'keywords',
-        name: 'keywords',
-        content:
-          'Urbanism, Architecture, Urban Studies, Urban Design, Travel, 都市, 建築, アーバニズム, まちづくり, 都市デザイン',
-      },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Urban narratives and practices, collected through travel',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'Urban narratives and practices, collected through travel',
-      },
       { hid: `og:type`, property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       {
@@ -37,12 +28,7 @@ module.exports = {
       },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    script: [],
   },
-
-  css: ['./assets/main.scss'],
-
-  loading: false,
 
   modules: [
     '~/modules/postprep',
@@ -120,12 +106,12 @@ module.exports = {
   generate: {
     dir: './docs',
     fallback: '404.html',
-    workers: 4,
+    workers: os.cpus().length,
     workerConcurrency: 20,
     concurrency: 20,
-    // done({ duration, errors }) {
-    //   if (errors.length) console.log(errors)
-    // },
+    async done({ duration, errors, workerInfo }) {
+      await nuxtInstance.callHook('generate:done')
+    },
 
     routes: () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(
@@ -148,10 +134,14 @@ module.exports = {
         ...cities.map(c => `/${c}`),
         ...cities.map(c => `/ja/${c}`),
         ...posts
-          .filter(p => p.public.ja || p.public.en || p.preview)
+          .filter(
+            p => p.public.ja || p.public.en || (p.preview && p.languages.en)
+          )
           .map(p => `/${p.city}/${p.slug}`),
         ...posts
-          .filter(p => p.public.ja || p.public.en || p.preview)
+          .filter(
+            p => p.public.ja || p.public.en || (p.preview && p.languages.ja)
+          )
           .map(p => `/ja/${p.city}/${p.slug}`),
         ...locations.map(l => `/at/${l}`),
         ...locations.map(l => `/ja/at/${l}`),
@@ -227,8 +217,7 @@ module.exports = {
         feed.options = {
           title: 'アーバニズムの旅するサーカス',
           link: 'https://www.travelingcircusofurbanism.com/jafeed.xml',
-          description:
-            'Urban narratives and practices, collected through travel.', // todo fix
+          description: '旅先から集めた、世界の都市の物語。',
           image:
             'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
           favicon: 'https://www.travelingcircusofurbanism.com/favicon.ico',

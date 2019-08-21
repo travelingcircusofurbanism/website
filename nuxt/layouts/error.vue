@@ -18,10 +18,9 @@
 import EmbeddedPostPreview from '~/components/EmbeddedPostPreview'
 import axios from 'axios'
 
-// todo put top bar in here
-
 export default {
   props: ['error'],
+  layout: 'blank',
   data() {
     return {
       calloutPosts: [
@@ -188,9 +187,5 @@ a.subtle.button {
   @include width(mobile) {
     padding: $unit * 2;
   }
-}
-
-.leftalign {
-  text-align: left;
 }
 </style>

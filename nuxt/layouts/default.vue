@@ -16,8 +16,9 @@
 
         <no-ssr>
           <BlueBanner v-if="!isDev && clientLanguage !== locale">
+            <!-- // todo let them swap instead of go home if there's a page to swap to -->
             <span class="ja">
-              ここはこのウェブサイトの英語版です！
+              ここは英語版です！
               <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
             </span>
             <template #ja>
@@ -57,6 +58,30 @@ export default {
           'http-equiv': 'content-language',
           content: this.locale === 'en' ? 'en-US' : 'ja-JP',
         },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            this.locale === 'ja'
+              ? '都市、建築、アーバニズム、まちづくり、都市デザイン、都市、場づくり、旅、トラベル、まち'
+              : 'urbanism, architecture, urban studies, urban design, travel, city blog, city',
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            this.locale === 'ja'
+              ? '旅先から集めた、世界の都市の物語'
+              : 'Urban narratives and practices, collected through travel',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            this.locale === 'ja'
+              ? '旅先から集めた、世界の都市の物語'
+              : 'Urban narratives and practices, collected through travel',
+        },
         ...i18nSeo.meta,
       ],
       link: [...i18nSeo.link],
@@ -81,6 +106,9 @@ export default {
     locale() {
       return this.$i18n.locale
     },
+    posts() {
+      return this.$store.state.allPosts
+    },
     clientLanguage() {
       return process.browser
         ? window
@@ -93,22 +121,14 @@ export default {
   },
   watch: {
     locale(newLocale) {
-      // console.log('Switching locale to', newLocale)
       this.$store.dispatch('updateShowablePosts')
     },
   },
   mounted() {
     const storedLanguage = this.getCookie('i18n_redirected')
-    // todo find a way to do this that doesn't break google scraping
-    // console.log(this.clientLanguage, storedLanguage, this.$i18n.locale)
-    // if (storedLanguage && this.$i18n.locale !== storedLanguage)
-    //   return this.$router.replace(this.switchLocalePath(storedLanguage))
-
-    // else if (!storedLanguage && this.clientLanguage !== this.$i18n.locale)
-    //   return this.$router.replace(this.switchLocalePath(this.clientLanguage))
-
     if (window) window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
+    this.checkForNoPosts()
     this.$root._router.afterEach((to, from) => {
       this.resetScroll()
     })
@@ -119,9 +139,11 @@ export default {
     },
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
-      // document.querySelector('.master').scrollTo(0, 0)
-      // document.querySelector('.maingrid').scrollTo(0, 0)
       document.querySelector('.rightside').scrollTo(0, 0)
+    },
+    checkForNoPosts() {
+      // had an issue with 404 not having any posts. this may not have fixed it.
+      if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
     },
     getCookie(key) {
       if (!document) return

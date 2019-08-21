@@ -1,23 +1,12 @@
 <template>
   <a :href="url">
-    <div
-      class="post-preview"
-      v-on="{mouseenter: mouseOver, mouseleave: mouseOut}"
-    >
-
-      <div
-        v-lazy:background-image="image"
-        class="previewimage"
-      ></div>
+    <div class="post-preview" v-on="{mouseenter: mouseOver, mouseleave: mouseOut}">
+      <div v-lazy:background-image="image" class="previewimage"></div>
 
       <div class="rightside">
         <h4>{{ title }}</h4>
 
-        <PostDetails
-          :category="category"
-          :city="city"
-        />
-
+        <PostDetails :category="category" :city="city" />
       </div>
     </div>
   </a>
@@ -25,21 +14,23 @@
 
 
 <script>
-const  { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
+const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
-  props: [ 'url', 'image', 'title', 'category', 'city', 'date', 'mapPosition', ],
-  components: { PostDetails, },
+  props: ['url', 'image', 'title', 'category', 'city', 'date', 'mapPosition'],
+  components: { PostDetails },
   computed: {
-    isMobile () { return this.$store.state.isMobile },
+    isMobile() {
+      return this.$store.state.isMobile
+    },
   },
-  data () {
+  data() {
     return {
       isDoubleHighlighting: false,
     }
   },
-  beforeDestroy () {
+  beforeDestroy() {
     if (this.isDoubleHighlighting || this.isMobile) {
       this.$store.commit('setHighlight')
       this.$store.commit('setHighlight')
@@ -48,26 +39,29 @@ export default {
   methods: {
     capitalize,
     softTruncate,
-    mouseOver () {
+    mouseOver() {
       if (this.isMobile) return
       this.$store.commit('setHighlight', this.mapPosition)
       this.isDoubleHighlighting = true
     },
-    mouseOut () {
+    mouseOut() {
       if (this.isMobile) return
       this.$store.commit('setHighlight')
       this.isDoubleHighlighting = false
-    }
-  }
+    },
+  },
 }
-
 </script>
 
 <style lang="scss" scoped>
 @import '~/assets/variables.scss';
 
-a, a:hover, a:visited, a:active {
+a,
+a:hover,
+a:visited,
+a:active {
   text-decoration: none !important;
+  display: block;
   color: $text;
   width: 100%;
   max-width: $unit * 80;
@@ -82,7 +76,7 @@ a, a:hover, a:visited, a:active {
   min-height: $unit * 15;
   text-align: left;
   border: 1px solid $offwhite;
-  transition: all .2s;
+  transition: all 0.2s;
 
   &:hover {
     background: darken($shade, 3%);
@@ -97,14 +91,13 @@ a, a:hover, a:visited, a:active {
     background-position: center center;
   }
 
-  @include width (large) {
-
+  @include width(large) {
   }
 
-  @include width (midorsmaller) {
+  @include width(midorsmaller) {
   }
 
-  @include width (mobile) {
+  @include width(mobile) {
     min-height: auto;
     grid-gap: $unit * 3;
   }
@@ -117,7 +110,7 @@ a, a:hover, a:visited, a:active {
     padding-left: 0;
 
     h4 {
-      font-size: 1.0rem;
+      font-size: 1rem;
       margin: 0;
     }
 
@@ -132,5 +125,4 @@ h4 {
   margin-top: 0;
   margin-bottom: $unit * 2;
 }
-
 </style>

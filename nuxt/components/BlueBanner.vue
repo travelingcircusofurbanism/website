@@ -1,12 +1,16 @@
 <template>
-  <div class="bluebanner content-top-full">
-    <div class="innerpadding">
-      <div class="ja" v-if="$slots.ja">
-        <slot name="ja" v-if="$i18n.locale === 'ja'"></slot>
+  <no-ssr>
+    <div class="bluebanner content-top-full">
+      <div class="innerpadding">
+        <div class="ja" v-if="$slots.ja && $i18n.locale === 'ja'">
+          <slot name="ja"></slot>
+        </div>
+        <div v-else>
+          <slot></slot>
+        </div>
       </div>
-      <slot v-else></slot>
     </div>
-  </div>
+  </no-ssr>
 </template>
 
 <script>
@@ -59,7 +63,7 @@ export default {
   color: white;
   text-align: center;
   line-height: 1.7;
-  font-size: 1em;
+  font-size: 0.95em;
 
   @include width(mobile) {
     font-size: 0.9em;
@@ -74,7 +78,7 @@ export default {
     text-decoration: none;
     // display: inline-block;
     white-space: nowrap;
-    padding: $unit * 0.5 $unit * 1.5;
+    padding: $unit * 0.8 $unit * 1.5;
     margin: $unit $unit * 0.2;
     border: 1px solid rgba(white, 0.3);
     background: rgba(white, 0.1);
