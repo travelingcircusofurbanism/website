@@ -4,9 +4,11 @@ let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
 
 module.exports = {
   srcDir: 'nuxt/',
+  loading: false,
   hooks: {
     ready: _nuxt => (nuxtInstance = _nuxt), // need this for generate:done hook for nuxt-generate-cluster
   },
+  css: ['./assets/main.scss'],
 
   head: {
     titleTemplate(titleChunk) {
@@ -17,16 +19,6 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: 'Urban narratives and practices, collected through travel',
-      },
-      {
-        hid: 'og:description',
-        property: 'og:description',
-        content: 'Urban narratives and practices, collected through travel',
-      },
       { hid: `og:type`, property: 'og:type', content: 'website' },
       { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
       {
@@ -37,10 +29,6 @@ module.exports = {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-
-  css: ['./assets/main.scss'],
-
-  loading: false,
 
   modules: [
     '~/modules/postprep',
@@ -121,8 +109,8 @@ module.exports = {
     workers: os.cpus().length,
     workerConcurrency: 20,
     concurrency: 20,
-    done({ duration, errors, workerInfo }) {
-      nuxtInstance.callHook('generate:done')
+    async done({ duration, errors, workerInfo }) {
+      await nuxtInstance.callHook('generate:done')
     },
 
     routes: () => {
@@ -229,8 +217,7 @@ module.exports = {
         feed.options = {
           title: 'アーバニズムの旅するサーカス',
           link: 'https://www.travelingcircusofurbanism.com/jafeed.xml',
-          description:
-            'Urban narratives and practices, collected through travel.', // todo fix
+          description: '旅先から集めた、世界の都市の物語。',
           image:
             'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
           favicon: 'https://www.travelingcircusofurbanism.com/favicon.ico',

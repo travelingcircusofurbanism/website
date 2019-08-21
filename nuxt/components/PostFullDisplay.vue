@@ -61,10 +61,6 @@ import RelatedArticles from '~/components/RelatedArticles'
 import Tags from '~/components/Tags'
 import BlueBanner from '~/components/BlueBanner'
 
-//TODO doesn't scroll to top on mobile?
-
-// todo let them swap instead of go home if there's a page to swap to
-
 export default {
   props: [
     'title',

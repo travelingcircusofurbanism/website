@@ -16,6 +16,7 @@
 
         <no-ssr>
           <BlueBanner v-if="!isDev && clientLanguage !== locale">
+            <!-- // todo let them swap instead of go home if there's a page to swap to -->
             <span class="ja">
               ここは英語版です！
               <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
@@ -64,6 +65,22 @@ export default {
             this.locale === 'ja'
               ? '都市、建築、アーバニズム、まちづくり、都市デザイン、都市、場づくり、旅、トラベル、まち'
               : 'urbanism, architecture, urban studies, urban design, travel, city blog, city',
+        },
+        {
+          hid: 'description',
+          name: 'description',
+          content:
+            this.locale === 'ja'
+              ? '旅先から集めた、世界の都市の物語'
+              : 'Urban narratives and practices, collected through travel',
+        },
+        {
+          hid: 'og:description',
+          property: 'og:description',
+          content:
+            this.locale === 'ja'
+              ? '旅先から集めた、世界の都市の物語'
+              : 'Urban narratives and practices, collected through travel',
         },
         ...i18nSeo.meta,
       ],
