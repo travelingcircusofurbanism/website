@@ -178,6 +178,12 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
+.ja{
+  font-size: 0.93em;
+    line-height: 1.85;
+    letter-spacing: 0.03em;
+}
+
 h1 {
   width: 100%;
   // text-align: center;

@@ -30,59 +30,65 @@
 </template>
 
 <script>
-import ContentFooter from '~/components/Footer'
+import ContentFooter from "~/components/Footer";
 export default {
   head() {
     return {
-      title: 'Zine Confirmation',
+      title: "Zine Confirmation",
       meta: [
         {
-          property: 'og:title',
-          content: 'Zine Cinformation | Traveling Circus of Urbanism',
+          property: "og:title",
+          content: "Zine Cinformation | Traveling Circus of Urbanism"
         },
         {
-          property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/zine/confirmation`,
+          property: "og:url",
+          content: `https://www.travelingcircusofurbanism.com/zine/confirmation`
         },
         {
           hid: `og:image`,
-          property: 'og:image',
+          property: "og:image",
           content:
-            'https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg',
-        },
-      ],
-    }
+            "https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg"
+        }
+      ]
+    };
   },
   data() {
-    return {}
+    return {};
   },
   components: { ContentFooter },
   computed: {
     displayLanguage() {
-      return this.$i18n.locale
+      return this.$i18n.locale;
       // return 'ja'
-    },
+    }
   },
   beforeDestroy() {
-    this.$store.commit('setCanvasImage')
+    this.$store.commit("setCanvasImage");
   },
   created() {
-    this.$store.commit('setBreadcrumbs', [
+    this.$store.commit("setBreadcrumbs", [
       {
-        label: 'Zine: Thanks!',
-        url: this.localePath('zine-thanks'),
-      },
-    ])
+        label: "Zine: Thanks!",
+        url: this.localePath("zine-thanks")
+      }
+    ]);
   },
   mounted() {
     // set canvas to zine picture
-    this.$store.commit('setCanvasImage', '/assets/zine/hero.jpg')
-  },
-}
+    this.$store.commit("setCanvasImage", "/assets/zine/hero.jpg");
+  }
+};
 </script>
 
 <style scoped lang="scss">
-@import '~/assets/variables.scss';
+@import "~/assets/variables.scss";
+
+.ja {
+  font-size: 0.93em;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
+}
 
 h1 {
   width: 100%;
