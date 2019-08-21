@@ -57,6 +57,14 @@ export default {
           'http-equiv': 'content-language',
           content: this.locale === 'en' ? 'en-US' : 'ja-JP',
         },
+        {
+          hid: 'keywords',
+          name: 'keywords',
+          content:
+            this.locale === 'ja'
+              ? '都市、建築、アーバニズム、まちづくり、都市デザイン、都市、場づくり、旅、トラベル、まち'
+              : 'urbanism, architecture, urban studies, urban design, travel, city blog, city',
+        },
         ...i18nSeo.meta,
       ],
       link: [...i18nSeo.link],
