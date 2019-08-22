@@ -8,4 +8,9 @@ export default {}
 
 <style lang="scss">
 @import '~/assets/variables.scss';
+
+html,
+body {
+  background: $shade;
+}
 </style>

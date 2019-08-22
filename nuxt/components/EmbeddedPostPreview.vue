@@ -68,18 +68,20 @@ a:active {
 }
 
 .post-preview {
-  background: $shade;
+  background: white;
   margin-top: $unit * 3;
   display: grid;
   grid-template-columns: $unit * 20 1fr;
   grid-gap: $unit * 3;
   min-height: $unit * 15;
   text-align: left;
-  border: 1px solid $offwhite;
-  transition: all 0.2s;
+  // border: 1px solid $offwhite;
+  transition: all 0.4s;
+  box-shadow: 0 $unit / 2 $unit / 2 darken($shade, 7%),
+    0 $unit * 2 $unit * 2 darken($shade, 2%);
 
   &:hover {
-    background: darken($shade, 3%);
+    box-shadow: 0 $unit $unit darken($shade, 11%);
   }
 
   .previewimage {

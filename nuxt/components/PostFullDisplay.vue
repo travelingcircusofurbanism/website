@@ -210,9 +210,9 @@ export default {
       toCheck
         .map(positionObject => positionObject.location)
         .forEach(location => {
-          if (location.length < 4) return
-          location = location.replace('’', "'")
-          const locationRegex = new RegExp(`[\s\n >]${location}`, 'gi')
+          if (location.length < 3) return
+          location = location.replace('’', "'") // had one rando fancy quote in the mix
+          const locationRegex = new RegExp(`[\s\n\b >]${location}`, 'gi')
           newContent = newContent.replace(locationRegex, match => {
             return match.replace(
               new RegExp(`${location}`, 'gi'),

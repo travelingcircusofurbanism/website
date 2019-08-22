@@ -1,12 +1,17 @@
 <template>
   <div>
-    <BlueBanner v-if="showablePosts.length === 0 && clientLanguage === $i18n.locale">
+    <BlueBanner
+      v-if="showablePosts.length === 0 && clientLanguage === $i18n.locale"
+    >
       There are no English posts here yet!
-      <nuxt-link :to="localePath('index')" exact>Check out our home page</nuxt-link>
+      <nuxt-link :to="localePath('index')" exact
+        >Check out our home page</nuxt-link
+      >
       <span>to find articles in English.</span>
       <template #ja>
         ここの日本語の記事はまだありません。
-        <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link>と日本語での記事があります！
+        <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link
+        >と日本語での記事があります！
       </template>
     </BlueBanner>
     <section class="content" :key="Date.now()">
@@ -88,6 +93,9 @@ export default {
       ).substring(0, 2)
     this.$el.parentElement.scrollTop = 0
     this.$store.commit('setPan', false)
+    // clear out highlight and doubleHighlight
+    this.$store.commit('setHighlight')
+    this.$store.commit('setHighlight')
     if (this.marker) {
       this.$store.commit('setView', this.marker)
       this.$store.commit('setHighlight', this.marker)

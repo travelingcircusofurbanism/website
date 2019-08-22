@@ -56,7 +56,6 @@ export const mutations = {
       if (state.doubleHighlight.length > 0) state.doubleHighlight = []
       else state.highlight = []
     }
-    // console.log(state.highlight, state.doubleHighlight)
   },
 
   setCity(state, city) {
@@ -176,10 +175,13 @@ function parseLocationNames(source) {
   if (!source) source = []
   if (!Array.isArray(source)) source = [source]
   // if it's post objects, flatten it down to just mapPositions
-  if (source[0] && source[0].mapPosition)
+  if (source[0] && (source[0].mapPosition || source[0].polygons))
     source = [].concat.apply(
       [],
-      source.map(post => post.mapPosition).filter(position => position)
+      [
+        ...source.map(post => post.mapPosition).filter(position => position),
+        ...source.map(post => post.polygons).filter(position => position),
+      ]
     )
   // then grab just the names
   source = source
@@ -205,8 +207,6 @@ function parseMapPositionObjectsFromAnything(source) {
   //    posts can have a mapPosition object
   //    or an array of mapPosition objects
 
-  if (!source || source.length === 0 || Object.keys(source).length === 0)
-    return []
   let parsedMapPositions =
     source.center || source[0].center
       ? // we can directly use a mapPosition object or an array of mapPosition objects

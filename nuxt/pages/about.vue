@@ -5,17 +5,14 @@
       <h1 class="title">
         <span class="small">このサイトについて</span>
       </h1>
-      <p>
-        Traveling Circus of Urbanismは、世界中の都市から様々な街づくりの情報を紹介するサイトです。参考になる街づくりのプロジェクトは日本に限らず海外に沢山あるものの、街づくりの情報サイトは、どうしても１つの地域や都市に限定してしまいがち。そこで、都市、街づくり、建築などのトピックを、グローバルに紹介していくことで、街好きのアーバニスト達が世界中の都市で起こっていることをチェックし、お互いに参考にしあうことが出来るはず。Traveling Circus of Urbanismは、そんな想いで活動しています。
-        <br />
-        <br />まちづくり、都市デザイン、建築、コミュニティディベロップメント、都市のアートや文化、政治、都市のサステイナビリティについてなど、旅をしながら目に触れた都市に関わるトピックを幅広く紹介していきます。
-      </p>
+      <p>Traveling Circus of Urbanismは、世界中の都市から様々な街づくりの情報を紹介するサイトです。参考になる街づくりのプロジェクトは日本に限らず海外に沢山あるものの、街づくりの情報サイトは、どうしても１つの地域や都市に限定してしまいがち。そこで、都市、街づくり、建築などのトピックを、グローバルに紹介していくことで、街好きのアーバニスト達が世界中の都市で起こっていることをチェックし、お互いに参考にしあうことが出来るはず。Traveling Circus of Urbanismは、そんな想いで活動しています。</p>
+      <p>まちづくり、都市デザイン、建築、コミュニティディベロップメント、都市のアートや文化、政治、都市のサステイナビリティについてなど、旅をしながら目に触れた都市に関わるトピックを幅広く紹介していきます。</p>
 
       <SectionHeader>Core Team</SectionHeader>
       <div class="personlist">
         <div class="person">
           <img src="~/assets/staff/marikocolor.jpg" />
-          <span>
+          <div>
             <span class="name">杉田真理子 Mariko Sugita</span>
             <span class="title">Founder, Editor in Chief</span>
             <div>
@@ -28,11 +25,11 @@
               <a href="https://www.instagram.com/mariko_urbannomad/" target="_blank">Instagram</a>,
               <a href="https://www.wantedly.com/users/18183183" target="_blank">Wantedly</a>
             </div>
-          </span>
+          </div>
         </div>
         <div class="person">
           <img src="~/assets/staff/jaspercolor.jpg" />
-          <span>
+          <div>
             <span class="name">ジャスパー・スティーベンソン Jasper Stephenson</span>
             <span class="title">Designer, Developer</span>
             <div>
@@ -42,7 +39,7 @@
                 target="_blank"
               >Website</a>
             </div>
-          </span>
+          </div>
         </div>
       </div>
     </div>
@@ -78,7 +75,7 @@
       <div class="personlist">
         <div class="person">
           <img src="~/assets/staff/marikocolor.jpg" />
-          <span>
+          <div>
             <span class="name">Mariko Sugita</span>
             <span class="title">Founder, Editor in Chief</span>
             <div>
@@ -90,11 +87,11 @@
                 target="_blank"
               >Full profile</a>
             </div>
-          </span>
+          </div>
         </div>
         <div class="person">
           <img src="~/assets/staff/jaspercolor.jpg" />
-          <span>
+          <div>
             <span class="name">Jasper Stephenson</span>
             <span class="title">Designer, Developer</span>
             <div>
@@ -106,15 +103,14 @@
                 target="_blank"
               >Website</a>
             </div>
-          </span>
+          </div>
         </div>
       </div>
-      <p>
-        <center>
-          Also, thanks to Ramon Bauer and
-          <a href="https://www.4cities.eu/" target="_blank">4CITIES</a> for the name inspiration!
-        </center>
-      </p>
+      <br />
+      <center>
+        Also, thanks to Ramon Bauer and
+        <a href="https://www.4cities.eu/" target="_blank">4CITIES</a> for the name inspiration!
+      </center>
     </template>
 
     <ContentFooter />
@@ -122,60 +118,58 @@
 </template>
 
 <script>
-import ContentFooter from "~/components/Footer";
-import SectionHeader from "~/components/SectionHeader";
-
-//TODO vue warning on this page
+import ContentFooter from '~/components/Footer'
+import SectionHeader from '~/components/SectionHeader'
 
 export default {
   head() {
     return {
-      title: "About",
+      title: 'About',
       meta: [
-        { property: "og:title", content: "About Traveling Circus of Urbanism" },
+        { property: 'og:title', content: 'About Traveling Circus of Urbanism' },
         {
-          hid: "description",
-          name: "description",
+          hid: 'description',
+          name: 'description',
           content:
-            "This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world."
+            'This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world.',
         },
         {
-          hid: "og:description",
-          property: "og:description",
+          hid: 'og:description',
+          property: 'og:description',
           content:
-            "This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world."
+            'This is an exploration of urban practices with a global perspective, to challenge the focus on localism in the world.',
         },
         {
-          property: "og:url",
-          content: `https://www.travelingcircusofurbanism.com/about/`
-        }
-      ]
-    };
+          property: 'og:url',
+          content: `https://www.travelingcircusofurbanism.com/about/`,
+        },
+      ],
+    }
   },
   components: { ContentFooter, SectionHeader },
   computed: {
     displayLanguage() {
-      return this.$i18n.locale;
-    }
+      return this.$i18n.locale
+    },
   },
   created() {
-    this.$store.commit("setBreadcrumbs", [
+    this.$store.commit('setBreadcrumbs', [
       {
-        label: "About",
-        url: this.localePath("about")
-      }
-    ]);
+        label: 'About',
+        url: this.localePath('about'),
+      },
+    ])
   },
   mounted() {
     this.$nextTick(() => {
-      this.$store.commit("setHighlight");
-    });
-  }
-};
+      this.$store.commit('setHighlight')
+    })
+  },
+}
 </script>
 
 <style scoped lang="scss">
-@import "~/assets/variables.scss";
+@import '~/assets/variables.scss';
 
 .ja {
   font-size: 0.93em;
