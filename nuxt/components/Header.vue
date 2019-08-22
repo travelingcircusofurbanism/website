@@ -29,7 +29,7 @@
         class="tagline"
         v-if="$i18n.locale === 'en'"
       >Urban narratives and practices, collected through traveling</h3>
-      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の物語</h3>
+      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の事例と物語</h3>
     </nuxt-link>
     <br />
     <div class="sublinks" :class="{hasshadow: !canvasImage}" v-if="!isMobile">
@@ -193,8 +193,8 @@ a:active {
     font-weight: 400;
     white-space: nowrap;
     width: 100%;
-    text-align-last: justify;
-    text-align: justify;
+    // text-align-last: justify;
+    // text-align: justify;
 
     @include width(mobile) {
       display: none;
