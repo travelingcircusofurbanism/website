@@ -75,13 +75,14 @@ a:active {
   grid-gap: $unit * 3;
   min-height: $unit * 15;
   text-align: left;
-  // border: 1px solid $offwhite;
+  border: 1px solid $shade;
   transition: all 0.4s;
   box-shadow: 0 $unit / 2 $unit / 2 darken($shade, 7%),
     0 $unit * 2 $unit * 2 darken($shade, 2%);
 
   &:hover {
     box-shadow: 0 $unit $unit darken($shade, 11%);
+    background: $shade;
   }
 
   .previewimage {
