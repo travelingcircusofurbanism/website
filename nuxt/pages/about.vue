@@ -218,10 +218,10 @@ img {
     flex-direction: column;
     justify-content: center;
 
-    .name {
+    &.name {
       font-weight: 600;
     }
-    .title {
+    &.title {
       font-weight: 600;
       opacity: 0.3;
       margin-bottom: $unit;

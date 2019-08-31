@@ -7,8 +7,6 @@ import axios from 'axios'
 import PostListPage from '~/components/PostListPage'
 const { capitalize } = require('~/assets/commonFunctions.js')
 
-//TODO double highlights some stuff when navigating around between /is/ pages
-
 export default {
   components: {
     PostListPage,

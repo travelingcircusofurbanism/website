@@ -190,7 +190,7 @@ export default {
   display: grid;
   grid-template-columns: 40% 1fr;
   grid-gap: $unit * 4;
-  min-height: $unit * 45;
+  min-height: $unit * 40;
 
   .previewimage {
     background: $shade;
