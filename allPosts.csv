@@ -1,0 +1,109 @@
+City,Slug,En Public,Ja Public,Both Public,Neither Public,Only English Public,Date
+rome,Introduction,true,true,true,false,false,7/30/2019
+rome,garbatella,false,false,false,true,false,7/28/2019
+rome,EUR,true,false,false,false,true,7/25/2019
+milan,citylfe,true,false,false,false,true,7/10/2019
+okinawa,americanvillage,false,false,false,true,false,6/20/2019
+kyoto,urbanresearch,false,true,false,false,false,6/13/2019
+kyoto,ma,false,true,false,false,false,6/06/2019
+kyoto,honmachiescola,true,false,false,false,true,6/3/2019
+kyoto,cleaning,false,true,false,false,false,5/22/2019
+kyoto,basementkyoto,true,false,false,false,true,5/7/2019
+kyoto,addspice,true,false,false,false,true,5/3/2019
+kyoto,kyotographie,false,false,false,true,false,5/01/2019
+kyoto,magasinnkyoto,true,false,false,false,true,4/25/2019
+kyoto,kujoyu,true,false,false,false,true,4/15/2019
+kyoto,Umekojipark,false,false,false,true,false,3/26/2019
+kyoto,formerjunpuelementaryschool,false,false,false,true,false,3/26/2019
+bogota,Introduction,true,false,false,false,true,3/20/2019
+mexico city,ciclo,true,false,false,false,true,3/19/2019
+bogota,Lafamiliaayara,true,true,true,false,false,3/02/2019
+mexico city,tlatelolco_plazaofthreecultures,true,false,false,false,true,3/01/2019
+mexico city,paisjesocial,false,true,false,false,false,2/28/2019
+mexico city,audiorama_chapultepec,true,true,true,false,false,2/10/2019
+new york,longislandcity,false,true,false,false,false,2/08/2019
+mexico city,littlelosangeles,true,false,false,false,true,2/03/2019
+mexico city,subjectivemapworkshop,false,false,false,true,false,1/31/2019
+havana,aathedraloficecream,true,false,false,false,true,1/10/2019
+havana,callejondehamel,true,false,false,false,true,1/08/2019
+mexico city,labiciruta,false,false,false,true,false,1/04/2019
+new york,Introduction,true,false,false,false,true,12/29/2018
+new york,industrycity,true,false,false,false,true,12/26/2018
+new york,jacksonheights,true,false,false,false,true,12/25/2018
+las vegas,downtownproject,false,true,false,false,false,12/05/2018
+chicago,Introduction,true,false,false,false,true,12/04/2018
+yogyakarta,communityarchitecture,true,false,false,false,true,11/10/2018
+montreal,habitat67,true,false,false,false,true,11/05/2018
+toronto,evergreen,true,true,true,false,false,10/28/2018
+montreal,lechampdespossibles,false,false,false,true,false,10/23/2018
+montreal,batiment7,true,false,false,false,true,10/23/2018
+toronto,oldtoronto,true,false,false,false,true,10/20/2018
+toronto,sidewalktoronto,true,false,false,false,true,10/15/2018
+toronto,janeandfinch,true,false,false,false,true,10/15/2018
+toronto,janejacobs,false,false,false,true,false,10/15/2018
+toronto,thebentway,true,false,false,false,true,10/15/2018
+toronto,401richmond,true,true,true,false,false,10/12/2018
+toronto,Introduction,true,false,false,false,true,9/23/2018
+vancouver,zoning,true,false,false,false,true,9/19/2018
+yogyakarta,Introduction,true,false,false,false,true,9/14/2018
+vancouver,komagatamaruincident,true,false,false,false,true,9/10/2018
+vancouver,strathcona,true,false,false,false,true,9/4/2018
+vancouver,waterfront,true,false,false,false,true,8/23/2018
+vancouver,granvilleisland,true,false,false,false,true,8/20/2018
+elsewhere,roadtrip,false,false,false,true,false,8/18/2018
+new delhi,Introduction,false,false,false,true,false,8/14/2018
+portland,immigrantstory,true,false,false,false,true,8/14/2018
+vancouver,Introduction,true,false,false,false,true,8/13/2018
+seattle,affordablehousing,true,false,false,false,true,8/10/2018
+seattle,freewaypark,true,false,false,false,true,8/9/2018
+elsewhere,toiletstudy,false,false,false,true,false,8/08/2018
+elsewhere,migration,false,false,false,true,false,8/08/2018
+seattle,waterfrontdevelopment,true,false,false,false,true,8/8/2018
+seattle,Introduction,true,false,false,false,true,8/5/2018
+seattle,gasworkspark,true,true,true,false,false,8/4/2018
+portland,Introduction,true,false,false,false,true,7/26/2018
+portland,KennedySchool,true,true,true,false,false,7/26/2018
+portland,Sundayparkways,true,false,false,false,true,7/22/2018
+san francisco,theurbanistSF,true,true,true,false,false,7/19/2018
+san francisco,trees,false,false,false,true,false,7/11/2018
+los angeles,BlackBeverlyHills,true,false,false,false,true,7/09/2018
+san francisco,Introduction,true,false,false,false,true,7/03/2018
+los angeles,hiphoparchitecture,true,false,false,false,true,7/01/2018
+havana,internetspace,false,false,false,true,false,6/27/2018
+arcosanti,arcosanti,true,true,true,false,false,6/27/2018
+havana,fabricadeartecubano,false,false,false,true,false,6/27/2018
+los angeles,Introduction,true,false,false,false,true,6/26/2018
+okinawa,Introduction,false,false,false,true,false,6/26/2018
+okinawa,henoko,false,false,false,true,false,6/26/2018
+okinawa,market,false,false,false,true,false,6/26/2018
+milan,Introduction,false,false,false,true,false,6/26/2018
+okinawa,shinkaichi,false,false,false,true,false,6/26/2018
+osaka,Introduction,false,false,false,true,false,6/26/2018
+milan,boscoverticale,false,false,false,true,false,6/26/2018
+los angeles,littletokyo,false,false,false,true,false,6/26/2018
+kyoto,introduction,false,false,false,true,false,6/26/2018
+seattle,microsofttreehouse,false,false,false,true,false,6/26/2018
+new york,brooklynchinatown,false,false,false,true,false,6/26/2018
+portland,Albertastreet,false,false,false,true,false,6/26/2018
+portland,laddsaddition,false,false,false,true,false,6/26/2018
+portland,pearldistrict,false,false,false,true,false,6/26/2018
+new york,chinatown,false,false,false,true,false,6/26/2018
+elsewhere,Games,true,false,false,false,true,6/26/2018
+amsterdam,Introduction,false,false,false,true,false,6/26/2018
+tokyo,Introduction,true,false,false,false,true,6/01/2018
+austin,Seaholm_EcoDistrict,true,false,false,false,true,5/31/2018
+austin,CreativeReuse,true,false,false,false,true,5/28/2018
+austin,Introduction,true,false,false,false,true,5/28/2018
+austin,Mueller,true,false,false,false,true,5/28/2018
+elsewhere,Books,true,false,false,false,true,5/25/2018
+tokyo,renovationschooltokyo,true,false,false,false,true,5/14/2018
+tokyo,HackMyCity,true,false,false,false,true,3/13/2018
+kuala lumpur,alternativespot,true,false,false,false,true,2/16/2018
+kuala lumpur,thinkcity,false,false,false,true,false,2/16/2018
+tokyo,urbanistmeetuptokyo,true,false,false,false,true,12/12/2017
+tokyo,subjectivemapworkshop,true,false,false,false,true,12/9/2017
+copenhagen,Interview_Illutron,true,false,false,false,true,9/26/2017
+tokyo,globalgoalsjam17,true,false,false,false,true,9/17/2017
+tokyo,Interview ChristianDimmer,true,false,false,false,true,11/24/2016
+new delhi,paritoshgoel,false,false,false,true,false,4/13/2015
+vienna,Introduction,true,false,false,false,true,4/13/2015

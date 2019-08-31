@@ -15,9 +15,7 @@ _Photo by Patrick Hendry on Unsplash_
 
 - [Domino Park](https://www.dominopark.com/) is a 6-acre public park built on the site of the former Domino Sugar Refinery, and it's a great place to hang out. 1856年に建設され2004年に閉鎖された砂糖の精製所、ドミノシュガー精製所(Domino Sugar Refinery)の跡地に作られた公園。デザインは、ハイラインも担当したJames Corner Field Operations。
 
-- 第二次世界大戦中に建設された軍基地の跡地、[Brooklyn Army Terminal](https://www.bklynarmyterminal.com/) 。1981年にニューヨーク市に売却されてから、
-
-is not open to the public, but it's worth paying attention to. The Brooklyn Army Terminal was built during World War II, and it used to be the largest military supply base in the country. Now, it's a large renovated warehouse complex in Sunset Park.
+- 第二次世界大戦中に建設された軍基地の跡地、[Brooklyn Army Terminal](https://www.bklynarmyterminal.com/) 。1981年にニューヨーク市に売却されてから、 民間事業支援とイノベーションの中心地として再開発された。
 
 - [Brooklyn Waterfront Artists](http://bwac.org/) is Brooklyn's largest, artist-run organization, and they have an exhibition space you can visit.
 
