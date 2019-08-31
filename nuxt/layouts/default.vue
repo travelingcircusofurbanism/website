@@ -16,7 +16,6 @@
 
         <no-ssr>
           <BlueBanner v-if="!isDev && clientLanguage !== locale">
-            <!-- // todo let them swap instead of go home if there's a page to swap to -->
             <span class="ja">
               ここは英語版です！
               <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
