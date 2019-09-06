@@ -15,7 +15,7 @@ The thing is, zoning explains a lot about how our cities work and how urban plan
 *One of the abandoned lots*
 ![Vancouver's worst zoning02](zoning1.jpg)
 
-We gathered at West Point Grey neighborhood, where the members of Abundant Housing Vancouver claim as one of the places of "Vancouver's worst zoning". This area is zoned RS-1, One-Family Dwelling, which itself is not uncommon. However, according to them, the city requires a minimum lot area to be 12,000 to 18,000 square feet, which is more than 4 times larger than the medium lot size for a house in Vancouver.
+We gathered at West Point Grey neighborhood, where the members of Abundant Housing Vancouver claim as one of the places of "Vancouver's worst zoning". This area is zoned RS-1, One-Family Dwelling, which itself is not uncommon. However, according to them, the city requires a minimum lot area to be 12,000 to 18,000 square feet in this area, which is more than 4 times larger than the medium lot size for a house in Vancouver.
 
 ## Housing crisis is real in Vancouver.
 
@@ -39,7 +39,7 @@ Moreover, they told us about this interactive [map](https://mountainmath.ca/map/
 
 ## How can we deal with re-zoning better?
 
-Rezoning changes how urban properties can be used or developed. Property owners and the City of Vancouver can [apply](https://rezoning.vancouver.ca/applications/) for rezoning, and they have the power to support development objectives. Of course, upzoning and building more and more apartments do not simply solve the deep‐rooted housing crisis of the city, and there are many concerns by current residents that upzoning might destroy a character and charm of a neighborhood.
+Rezoning changes how urban properties can be used or developed. Property owners can [apply](https://rezoning.vancouver.ca/applications/) for rezoning, and they have the power to support development objectives. Of course, upzoning and building more and more apartments do not simply solve the deep‐rooted housing crisis of the city, and there are many concerns by current residents that upzoning might destroy a character and charm of a neighborhood.
 
 That's why we can't jump to a simple, short-term solution. However, as the walking tour by Abundant Housing Vancouver taught us, there are many lessons to be learned by understanding zoning, and how problematic it can be when a city is not doing anything to make it better.
 
