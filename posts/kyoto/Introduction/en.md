@@ -3,7 +3,7 @@
 ![](urbanist_kyoto.jpg)
 _Photo by Su San Lee on Unsplash_
 
-*It is a series profiling interesting urban projects, reading lists, initiatives, and places for urbanists to get the gist of what is happening in a city at a glance. [Email me](mailto:travelingcircusofurbanism@gmail.com) if you, or someone you know, want to introduce about your city!*
+*This is a series profiling interesting urban projects, reading lists, initiatives, and places for urbanists to get the gist of what is happening in a city at a glance. [Email me](mailto:travelingcircusofurbanism@gmail.com) if you, or someone you know, want to introduce about your city!*
 
 The content of this post was curated and written by [ourselves](https://www.travelingcircusofurbanism.com/about), who are based in Kyoto at the moment. This is not a tourist guide - rather, these are the off-the-beaten-path spots that make us wanna stay in this city. 
 
