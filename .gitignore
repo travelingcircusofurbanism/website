@@ -17,6 +17,8 @@ npm-debug.log
 nuxt/static/generated
 nuxt/static/posts
 nuxt/static/feed.xml
+nuxt/static/jafeed.xml
+etc/allPosts.csv
 
 # api keys
 mapboxApiKey.json
