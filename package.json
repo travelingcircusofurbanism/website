@@ -10,7 +10,8 @@
     "dev": "nuxt",
     "g": "npm run generate",
     "generate": "nuxt-generate -b && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "golive": "git pull && npm run generate && npm run autopush"
+    "golive": "git pull && npm run generate && npm run autopush",
+    "deploy": "push-dir --dir=docs --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
@@ -34,6 +35,7 @@
   },
   "devDependencies": {
     "@nuxtjs/sitemap": "^1.2.0",
+    "push-dir": "^0.4.1",
     "vue-lazyload": "^1.3.2"
   }
 }

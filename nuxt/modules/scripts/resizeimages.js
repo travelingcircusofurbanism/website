@@ -1,5 +1,4 @@
 const fs = require('fs')
-const path = require('path')
 const sharper = require('./sharper')
 import { log } from '../../assets/commonFunctions'
 
@@ -22,15 +21,15 @@ export default function() {
       .filter(cityDir => cityDir.indexOf('.') === -1)
       .forEach(cityDir => {
         cityDir += '/'
-        const formattedCityDir = decodeURI(encodeURI(cityDir.toLowerCase()))
+        const formattedCityDir = decodeURI(encodeURI(cityDir.toLowerCase())) // todo does it break if i remove this?
         // read all individual post directories in each city directory
         fs.readdirSync(masterPostDir + cityDir)
           .filter(postDir => postDir.indexOf('.') === -1)
           .forEach(async postDir => {
             postDir += '/'
-            // full size images are in /full, resized images are in /generated/resized
+            // 3 sizes
             const inputPath = masterPostDir + cityDir + postDir + inputDir
-            const resizedPath =
+            const medPath =
               pathToStaticPosts + formattedCityDir + postDir + medDir
             const tinyPath =
               pathToStaticPosts + formattedCityDir + postDir + tinyDir
@@ -40,7 +39,7 @@ export default function() {
             const result = await sharper([
               {
                 source: inputPath,
-                outputFolder: resizedPath,
+                outputFolder: medPath,
                 width: medDimensions[0],
                 height: medDimensions[1],
                 overwrite: false,
@@ -76,6 +75,7 @@ export default function() {
             }
           })
       })
+    if (first) log('green', ' No images needed resizing.')
     resolve()
   })
 }
