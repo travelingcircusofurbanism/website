@@ -33,7 +33,8 @@ export default {
     if (!document) return
     if (window.requestIdleCallback)
       window.requestIdleCallback(() => {
-        this.mapboxgl = require('mapbox-gl/dist/mapbox-gl.js')
+        this.mapboxgl =
+          process.env.MAPBOX || require('mapbox-gl/dist/mapbox-gl.js')
         this.mapboxgl.accessToken = this.apikey
         this.map = new this.mapboxgl.Map({
           container: 'map',
