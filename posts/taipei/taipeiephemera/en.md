@@ -1,13 +1,8 @@
-
 # Taipei Ephemera: In search of what makes Taipei Taipei
 
 As an (almost) full-time traveler who loves to understand the uniqueness of each city I visit, I often create a mental image of the city based on what I think makes it unique. I also know that everyone, whether locals or outsiders, has their own particular way of identifying a city to somehow make sense of it. 
 
-<<<<<<< HEAD
-What makes Taipei Taipei? was the question when Paritosh Goel, one of the most talented and passionate architects / urbanists I know, and I had in mind when we met in the capital of Taiwan. I met Paritosh two years ago in Kuala Lumper, during the 9th edition of World Urban Forum.
-=======
-"What makes Taipei Taipei?" is the question that Paritosh Goel — one of the most talented and passionate architects I know — and I had in mind when we met up this Fall in the capital of Taiwan.
->>>>>>> 9933fadf7c92a183a736c57675a2d235f739b1e5
+"What makes Taipei Taipei?" is the question that Paritosh Goel — one of the most talented and passionate architects and urbanists I know — and I had in mind when we met up this Fall in the capital of Taiwan.
 
 I first met Paritosh two years ago in Kuala Lumpur during the 9th edition of World Urban Forum. We bonded over our shared passion for cities and urban exploration, and we've kept in touch ever since. When we decided to reunite in Taipei, we wanted to take action together - and that was the beginning of the idea of _Taipei Ephemera_. 
 
@@ -26,11 +21,7 @@ Each person has a unique mental map based on their own perception of the city, a
 
 # Dialogue through Collective Mapping 
 
-<<<<<<< HEAD
 The map we made was 2.5 meters by 2.4 meters. we used eight A0 papers and taped together. Around 20 participants including artists, designers and some random locals who were walking by and decided to join us when we called them in. 
-=======
-The map we made was /// by ///. we used 8 big pieces of paper and taped together. It was made by around 20 participants — including artists, designers, and random locals who were walking by and decided to join us when we invited them in. 
->>>>>>> 9933fadf7c92a183a736c57675a2d235f739b1e5
 
 We asked them two questions: "What makes Taipei Taipei?" and "Where (or what element) makes you feel at home in Taipei?" We prepared worksheets to help participants answer these questions. 
 
@@ -51,15 +42,10 @@ We are planning to document the map in the form of a book, so that anyone can re
 ![](taipeiephemera6.jpg)
 ![](taipeiephemera14.jpg)
 
-<<<<<<< HEAD
-*Photo Courtesy of Paritosh Goel
-
 ---
 
 Co-organizer of the workshop: 
 
 _Paritosh Goel_
 _Graduated as an Architect and completed his post-graduation as an Urban Regional Planner from the School of Planning and Architecture in India. Having traveled extensively in his own country and around the world, his keen interest is in determining the urban issues of cities and in the exploration of innovative ideas on city planning. These led him to his National award Shortlisted thesis “Reincarnation of Left-over Spaces of the City” for his capstone project in Graduation. Currently, He is working with Central, State and local/City Governments in India on projects related to Urban Planning, Smart Cities and Sustainable Urbanism._
-=======
 *(Photos Courtesy of Paritosh Goel)*
->>>>>>> 9933fadf7c92a183a736c57675a2d235f739b1e5
