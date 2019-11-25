@@ -1,27 +1,59 @@
 
-# Seattle's Gas Works Park: Since when did 'trash' become pretty?
+# Things I learned in Taipei
 
-![](gasworkspark3.jpg)
+One can learn a lot from visiting a new city, not as a tourist but as a ... 
+In this Novermber, I've spent a month living in Taipei, observing its urban scene and trend. During the process I've met some amazing urbanists who showed me 
+phenomenon of the city
 
-Gas Works Park in Seattle is one of the most influential public parks in the United States. Located on the shores of Lake Union, opposite side of downtown Seattle, this park opened to the public in 1975 on the location of a former coal gasification plant.
+## Urban Co-living
+- 9floor
+During my stay in Taipei, I decided to stay in [玖樓 9floor](https://www.9floorspace.com/), an initiative that works towards co-living for tomorrow. 
 
-When you visit this 19-acre wide park, the first thing you notice is the giant remnants of the sole remaining coal gasification plant - which operated from 1906 to 1956. Now, nature took over the iconic ruin and it creates somehow mysterious and dynamic landscape that tells the history of the city.
+- 微住
 
-### Landscape architect Richard Haag's controversial idea
-![](gasworkspark12.jpg)
-![](gasworkspark4.jpg)
-![](gasworkspark8.jpg)
-![](gasworkspark9.jpg)
-![](gasworkspark10.jpg)
+## Old and New: Taipei's renovation boom and reality
+- [Taipei West town](http://www.taipeiwesttown.com/archives/category/sight)
+One of the reason why I got attracted to the idea of visitin Taipei was thier renovation movemnet. 
+The founder [Lee] took me to the wonder of ...
+    - Japanese neighbohood 
+    - North part of Taipei
+    - Four Four South Village
+    - 文萌樓; https://ameblo.jp/xiaotanya/entry-12314855775.html
 
-The park was designed by Seattle landscape architect Richard Haag, who proposed to the city to keep some of the remains of the gasification plant. According to his interview on the documentary [10 Parks that Changed America](https://www.pbs.org/video/geoffrey-baer-tours-10-changed-america-parks-9-gas-works-park-seattle/) (by the way this documentary series is awesome. You can learn more about architecture and urbanism in the United States.), people found the idea crazy - and some still do. However, instead of ignoring/erasing the past, he pursued his idea of respecting the city's history and its iconic value.
+Taipei West Town is an online Magazine for Taiwanese aiming at delivering the local spirits and irregularly reporting in-depth trip routes and selections that embedded the cultural characteristics. The content comprises authentic local tastes, places, cultural memory, and regional consciousness that hidden in Taipei.
 
-![](gasworkspark0.jpg)
-![](gasworkspark2.jpg)
+This is a team with online photographers and writers who are low-keyed, fastidious and persistent. We do not want to take everything happened in daily life for granted. Therefore, we seize the moments that glitter in the intervals of time before they are gone as a way to show our gratitude for the land. Literature and photography are the approaches we use to interpret what we see in daily life. Thus, experiences are individual-oriented and rather subjective. Taipei West Town expects itself as short take. We record and interpret the struggles and perseverance of the old town with a great patience to see the chemical reaction in this experiment. Through the outsider’s perspective, the lonely individuals in city can have the chance to review their uniqueness and lead a good life.
 
-The soil and groundwater of the site were contaminated during operation as a gasification plant, but after cleaning through bio-phytoremediation and other measures, this park is now the safe and joyful place to be in. Now you can get the breathtaking view over downtown Seattle from this park, as well as learning the history of its place through the ruins of the gas plant.
+“Why West Town?” asked by many people.
 
-![](gasworkspark7.jpg)
-![](gasworkspark5.jpg)
+The development of Taipei started from the West Town. Up till now, this area still embraces people with various beliefs in all works of life. There are aerial roots of the trees swing and the sunshine dances through the leaves in front of the temple. At night, one might accidentally come across the historical site in the red brick alley. We use West Town as our name, Taipei as starting point, and the story we share is the story about Taiwanese. Taipei West Town will keep recording ordinary stories that happen in this humid city. We sincerely invite the lost-in-city readers to walk into the daily life of Taipei like an insider, be amazed by the city’s prosperity, and might also express in wonder unconsciously, “Umm, now I realized that there is also some ways to live in Taipei.”
 
-This park is a great reminder for the importance of public park in the heart of the city, where people can gather and connect without being worried about the safety or pollution. I highly recommend the visit to this park and praise the city's decision to convert one of the most neglected, contaminated land to the vibrant gathering space for citizens.
+Friendly guidebook contains numerous spots in the old town, we only recommend because we are moved by these places.
+
+Online private tour guide in three languages (Chinese/ English/ Japanese), sending messages to the world
+Connect you to the right person and local organization that are perfect for you.
+
+- Shintomicho Cultural Market
+
+## Beauty of walking and observing 
+- City observation club
+- Taipei West Town too?
+
+## Citizen Participation 
+- Way to Community 
+
+## Circular Economy 
+- Open Pen
+- REnato
+- Fermnet the City and Taiwan Contemporary Culture Lab (C-LAB)
+
+
+Last but no least - Morgane Le Guilloux & Clément Tricot
+[Urban Tai-ouan](https://urbantaiouan.com/?s=ta)
+Urban Journalism fellows who 
+
+
+-----
+un-cotegorized: 
+- indonecia neigouhood 
+

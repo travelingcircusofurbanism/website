@@ -3,7 +3,7 @@
 
 As an (almost) full-time traveler who loves to understand the uniqueness of each city I visit, I often create a mental image of the city, based on what I think makes the place unique as a city. I also know that everyone, either locals or outsiders, has their own certain way to identify a city to somehow make sense of it. 
 
-What makes Taipei Taipei? was the question when Paritosh Goel, one of the most talented and passionate architects I know, and I had in mind when we met in the capital of Taiwan. I met Paritosh two years ago in Kuala Lumper, during the 9th edition of World Urban Forum.
+What makes Taipei Taipei? was the question when Paritosh Goel, one of the most talented and passionate architects / urbanists I know, and I had in mind when we met in the capital of Taiwan. I met Paritosh two years ago in Kuala Lumper, during the 9th edition of World Urban Forum.
 
 Our passions for cities and urban exploration made us friends so we kept in touch ever since - now, when we decided to reunite in Taipei this autumn, we wanted to do something together - that was the beginning of the idea of _Taipei Ephemera_. 
 
@@ -22,7 +22,7 @@ each person has a unique mental map based on their own perception of the city, a
 
 # Dialogue through Collective Mapping 
 
-The map we made was /// by ///. we used 8 big pieces of paper and taped together. Around 20 participants including artists, designers and some random locals who were walking by and decided to join us when we called them in. 
+The map we made was 2.5 meters by 2.4 meters. we used eight A0 papers and taped together. Around 20 participants including artists, designers and some random locals who were walking by and decided to join us when we called them in. 
 
 We asked them two questions - what makes Taipei Taipei? Where (or what element) fo you feel at home in Taipei? They took worksheets and answer these questions. 
 
@@ -46,3 +46,10 @@ We are planning to document the map in the form of a book - "_Taipei Ephemera_" 
 ![](taipeiephemera14.jpg)
 
 *Photo Courtesy of Paritosh Goel
+
+---
+
+Co-organizer of the workshop: 
+
+_Paritosh Goel_
+_Graduated as an Architect and completed his post-graduation as an Urban Regional Planner from the School of Planning and Architecture in India. Having traveled extensively in his own country and around the world, his keen interest is in determining the urban issues of cities and in the exploration of innovative ideas on city planning. These led him to his National award Shortlisted thesis “Reincarnation of Left-over Spaces of the City” for his capstone project in Graduation. Currently, He is working with Central, State and local/City Governments in India on projects related to Urban Planning, Smart Cities and Sustainable Urbanism._
