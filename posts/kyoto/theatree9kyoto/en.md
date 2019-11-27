@@ -1,45 +1,45 @@
 # Theatre E9 Kyoto: questioning the meaning of art spaces in a changing neighborhood 
 
-From 2015 to 2017, 5 independent theatres in Kyoto had closed in succession, after years of art practices and dedication to the local communities. Generational change and deterioration of buildings are discussed to be the reason for this sequence of events, but the closure of these theatres gave a sense of crisis to people who remember the golden age of performing arts in Kyoto.
+From 2015 to 2017, 5 independent theatres in Kyoto closed in rapid succession, after years of dedication to their local communities, promoting local art. Generational change and building deterioration have been proposed as the reasons for this sequence of events, but the closure of these theatres gave a sense of crisis to the people who remember the golden age of performing arts in Kyoto.
 
-The idea of [Theatre E9 Kyoto](https://askyoto.or.jp/e9) was born in 2016 in response to the event, in order to revitalize a performing art scene in Kyoto. 
+The idea of [Theatre E9 Kyoto](https://askyoto.or.jp/e9) was born in 2016 in response to this loss, aiming to revitalize the performing art scene in Kyoto. 
 
 ![](theatree9Kyoto.jpg)
 *Image from thier [website](https://askyoto.or.jp/e9/about)*
 
-"We need more accessible, reasonable spaces in Kyoto for the next generation to practice performing arts. Many believe that Kyoto is a city of art and culture, but the truth is, the creative environment for performing arts is now under threat" says Satoshi Ago, a chief director of Theatre E9 Kyoto, who is an artist himself. 
+"We need more accessible, reasonable spaces in Kyoto for the next generation to practice performing arts. Many believe that Kyoto is a city of art and culture, but the truth is, the creative environment for performing arts is now under threat" says Satoshi Ago, a chief director of Theatre E9 Kyoto and an artist himself. 
 
-Satoshi and other team members decided to renovate a storehouse in the Higashi Kujo area, an area right next to the Kyoto Station, to create a new small theatre space. Luckily in the following year in 2017, the city of Kyoto launched the Kyoto Station South-East Area Activation Policy, to revitalize this area through art projects and inviting younger generations. So the policy followed the action. 
+Satoshi and other team members decided to renovate a storehouse in the Higashi Kujo area, an area right next to the Kyoto Station, to create a new small theatre space. Luckily, in the following year (2017), the city of Kyoto launched the Kyoto Station South-East Area Activation Policy to revitalize this area through art projects and inviting in people of younger generations. In this case, the policy followed the action. 
 
-Prior to the official opening of the theater, they spent a lot of time to meet locals and discuss their vision with them. ”We want this place to be connected to the neighborhood - We want a theater that is fostered by citizens." says Satoshi. 
+Prior to the official opening of the theater, they spent a lot of time going out to meet locals and discuss their vision with them. ”We want this place to be connected to the neighborhood - we want a theater that is fostered by citizens." says Satoshi. 
 
 ### Redevelopment of the Higashi-Kujo area
 
-The Higashi Kujo area has been famous for the biggest Korean community in Kyoto. There is a history of harsh discrimination and neglection, but the community always have helped each other and celebrated its diversity. [The Madang Center](http://www.h-madang.com/), a community & cultural center of the neighborhood, represents the strong bound and resilience of the community. 
+The Higashi Kujo area has been famous for housing the biggest Korean community in Kyoto. There is a history of harsh discrimination and neglect, but the community members have always helped each other and celebrated their diversity. [The Madang Center](http://www.h-madang.com/), a community & cultural center of the neighborhood, represents the strong bond and resilience of the community. 
 
-Though, the population is aging and the area has been left out from the recent redevelopments - some statistics say 20,000 square meters of the land are still left empty or else neglected. The city of Kyoto recently has recognized the potential of this area and has been working towards regeneration. The strategy is simple - through arts and culture. 
+However, the population is aging, and the area has been left out from all of the recent redevelopments - some statistics say 20,000 square meters of the neighborhood's land are still left empty or otherwise neglected. The city of Kyoto recently has recognized the potential of this area and has been working towards regeneration. The strategy is simple - through arts and culture. 
 
 ![](20191007-IMG_7241.jpg)
 
-I've heard about the city's [Activation Policy](https://www.city.kyoto.lg.jp/sogo/cmsfiles/contents/0000217/217013/houshin.pdf), and has been curious to know what locals (especially Korean communities) think about it, and where the theater E9 stands for on this matter - since E9 is the first recent pioneer of an art space that joined this neighborhood from outside. 
+I've heard about the city's [Activation Policy](https://www.city.kyoto.lg.jp/sogo/cmsfiles/contents/0000217/217013/houshin.pdf), and I've been curious to know what locals (especially Korean communities) think about it. I'm also interested in where Theatre E9 stands on this matter since E9 is the first pioneer — an art space that joined this neighborhood from outside. 
 
-Theater E9 public statement expresses their concern about the possibility of rapid redevelopment and upcoming rent inflation. In fact, rental inflation is already at the highest of any neighborhood in Kyoto.
+Theatre E9's public statement expresses their concern about the possibility of rapid redevelopment and upcoming rent inflation. In fact, rent inflation is already at the highest of any neighborhood in Kyoto.
 
-"We generally agree with the idea of bringing more people and activities to this neighborhood under the new policy. The vision itself is great. yet, we need to be careful about how it's done." says Satoshi. "This area already has a rich, multicultural culture - we should never disturb the exciting charm." 
+"We generally agree with the idea of bringing more people and activities to this neighborhood under the new policy. The vision itself is great. yet, we need to be careful about how it's done." says Satoshi. "This area already has a rich, multicultural culture - we should never disturb the existing charm." 
 
-On 7th October, they invited artists, community representatives, lawyers, and public workers to host a symposium to discuss the issue with the public. 
+On the 7th of October, 2019, they invited artists, community representatives, lawyers, and public workers to host a symposium to discuss the issue with the public. 
 
-"The area has been protected by the current zoning law. It has been strictly residential and was almost impossible to build a mix-use art space like here when we started this project" explains Satoshi. "Now, under the new policy, if a project concerns art and culture even for a little bit, the city gives permission for higher floor area ratio for the project. If new businesses start to come in rapidly under the name of "culture", the risk is there that the area could become one of the "business-first" neighborhood - and that's something we need to avoid." 
+"The area has been protected by the current zoning law. It has been strictly residential and it was almost impossible to build a mixed-use art space like this one when we started this project" explains Satoshi. "Now, under the new policy, if a project concerns art and culture even a little bit, the city gives permission for higher floor/area ratio for the project. If new businesses start to come in rapidly under the name of "culture", there is a risk that the area could become another 'business-first' neighborhood - and that's something we need to avoid." 
 
-### Meaning of art spaces in a community
+### The meaning of art spaces in a community
 
-How can we preserve existing culture, and what art spaces like E9 can do to help? 
+How can we preserve existing culture, and what can art spaces like E9 can do to help? 
 
-"Theaters are reflections of a city, of a neighborhood. We'd like to create a theater that is not only about making performances but also fostering/being fostered by a city" Satoshi says. 
+"Theaters are reflections of a city, of a neighborhood. We'd like to create a theater that is not only about performances but also about fostering and being fostered by a city" Satoshi says. 
 
-Private theaters are not considered as a public infrastructure in Japan - there are various limitations on art education of a society, which leads to a lack of infrastructure in the area of performing arts. 
+Private theaters are not considered part of the public infrastructure in Japan - there are various societal limitations on art education, which leads to a lack of infrastructure in the area of performing arts. 
 
-Through managing an art theater, he emphasizes their task to intervene in a city and everyday life of citizens.
+Through managing an art theater, Satoshi embodies and underlines the necessity of art to engage and change a city and the everyday lives of its citizens.
 
 ------
 
