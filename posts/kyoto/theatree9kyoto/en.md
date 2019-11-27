@@ -37,6 +37,14 @@ How can we preserve existing culture, and what art spaces like E9 can do to help
 
 "Theaters are reflections of a city, of a neighborhood. We'd like to create a theater that is not only about making performances but also fostering/being fostered by a city" Satoshi says. 
 
-Theaters are not considered as a public infrastructure in Japan - there are various limitations on art education of a society, which leads to a lack of infrastructure in the area of performing arts. 
+Private theaters are not considered as a public infrastructure in Japan - there are various limitations on art education of a society, which leads to a lack of infrastructure in the area of performing arts. 
 
 Through managing an art theater, he emphasizes their task to intervene in a city and everyday life of citizens.
+
+------
+
+[Satoshi Ago](http://www.agosatoshi.com/)
+
+Playwright, Director, THEATRE E9 KYOTO Artistic Director
+ARTS SEED KYOTO Representative Director
+With replication and pure language as his central themes, Ago produces theatrical works that may or may not feature a human presence on stage. Besides producing work himself, he has also been active in establishing the new Theatre E9 Kyoto. Ago has also worked on a number of collaborations with contemporary artists such as Yasumasa Morimura and Miwa Yanagi.
