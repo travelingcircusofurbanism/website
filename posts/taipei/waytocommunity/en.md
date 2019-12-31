@@ -1,15 +1,14 @@
 
 # Way to Community: 
 
-One of the most powerful persons I've met during our stay in Taipei was Pei Pei - a director of the govermental social project called "Way to Community". 
-
+One of the most powerful persons I've met during our stay in Taipei was a woman called Pei Pei - a director of the govermental social project called "Way to Community". way to community is ////. 
 
 ## "Dating with community" - the Taiwanese case
 https://gapfiller.org.nz/project/way-to-community-daqiaotou-taipei/
 
 
 background, problem statement
-    - way to community
+    - 
     - in chinese, community + dating = interesting combination 
     - initiative started in Shibaura house / Masaru Ito
         - Tokyo community space exhibition 2013

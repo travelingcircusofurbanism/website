@@ -1,5 +1,5 @@
 
-# Things I learned in Taipei
+# 台北の街づくりの現場から学んだこと
 
 One can learn a lot from visiting a new city. In this Novermber, we've spent a month in Taipei, in order to observe its urban scene and also organise my own workshop there, hoping to meet some fellow city lovers. During the process, I've met some amazing urbanists who showed me not only the beautity of Taipei and its challenges. This post is my memorandum for the things I've learned in the mesmerizing capital of Taiwan.
 

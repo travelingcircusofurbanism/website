@@ -1,11 +1,11 @@
 module.exports = {
   public: false,
-  date: '8/4/2018',
+  date: '12/16/2019',
   category: 'place',
   mapPosition: {
-    location: 'Gas Works Park',
+    location: 'Old little white house',
     bearing: 0,
-    center: [-122.33435320000001, 47.6456308],
+    center: [121.529923, 25.022509],
     zoom: 12.0,
     pitch: 0,
   },
