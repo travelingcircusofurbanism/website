@@ -38,14 +38,11 @@
         :to="localePath('getinvolved')"
         :class="{ currentpage: path === '/getinvolved' }"
       >Get Involved</nuxt-link>
+      <nuxt-link :to="localePath('zine')" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
       <nuxt-link
-        :to="localePath('zine')"
-        class="zinehighlight"
-        :class="{ currentpage: path === '/zine' }"
-      >Zine</nuxt-link>
-
-      <nuxt-link :to="switchLocalePath('en')" v-if="$i18n.locale === 'ja'">English</nuxt-link>
-      <nuxt-link :to="switchLocalePath('ja')" v-if="$i18n.locale === 'en'">日本語</nuxt-link>
+        :to="localePath('bridgeto')"
+        :class="{ currentpage: path === '/bridgeto' }"
+      >Residency</nuxt-link>
     </div>
   </div>
 </template>
@@ -223,6 +220,7 @@ a:active {
     background: darken($text, 2%);
     position: relative;
     display: inline-block;
+    white-space: nowrap;
 
     &:after {
       $underlineheight: 1px;
@@ -251,7 +249,7 @@ a:active {
       }
     }
 
-    &.zinehighlight {
+    &.highlight {
       color: lighten($active, 10%);
     }
 

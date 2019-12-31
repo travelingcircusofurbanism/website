@@ -1,9 +1,7 @@
 <template>
   <section class="content">
     <main v-if="displayLanguage === 'ja'">
-      <h1 class="title">Our Zines</h1>
-      <SectionHeader>Vol. 0: Thesis</SectionHeader>
-      <BuyButton />
+      <h1 class="title">Bridge To Kyoto</h1>
       <img src="/assets/bridgeto/bridgeto9.jpg" />
       <div class="p ja">京都をベースに、「アーバニスト・イン・レジデンス」プログラムのための場づくりを開始します。</div>
       <div
@@ -40,22 +38,22 @@
       </div>
       <BuyButton />
     </main>
+
     <main v-else>
-      <h1 class="title">Our Zines</h1>
-      <SectionHeader>Volume 0: Thesis</SectionHeader>
-      <BuyButton />
+      <h1 class="title">Bridge To Kyoto</h1>
       <img src="/assets/bridgeto/bridgeto9.jpg" />
 
       <div
         class="p"
-      >A year has passed since we launched the Traveling Circus of Urbanism. During our journey, we've met so many inspiring practitioners from around the world, who are generous enough to share their passion, knowledge, and ambition with us. It's encouraging to see how many like-minded urbanists across the globe are working towards better city life, but some questions arose.</div>
+      >A year has already passed since we launched the Traveling Circus of Urbanism! During our journey, we've met so many inspiring practitioners from around the world who have been generous enough to share their passion, knowledge, and ambition with us. It's encouraging to see how many like-minded urbanists across the globe are working towards a better city life, but some questions have arisen.</div>
+
       <div
         class="p"
-      >How can we go beyond the national interests and narrow-minded localism on urban practices? How can we develop cultural diplomacy of urban affairs and create an international sense of cities? How can we find & develop effective tools and models that could be documented, shared, and applied even in a different part of the world?</div>
+      >How can we go beyond national interests and narrow-minded localism on urban practices? How can we develop cultural diplomacy of urban affairs and create an international sense of cities? How can we find &amp; develop effective tools and models that can be documented, shared, and applied even in different parts of the world?</div>
 
       <div class="p">
         This is why we opened
-        <a href="https://www.brdg.to/ja" target="_blank">Bridge to Kyoto</a>, a creative residency for urbanists to live, work and share your practices in Japan.
+        <a href="https://www.brdg.to" target="_blank">Bridge to Kyoto</a>, a creative residency for urbanists to live, work and share their practices in Japan.
       </div>
 
       <div
@@ -64,15 +62,15 @@
 
       <div
         class="p"
-      >We rented an old Japanese-style house in the north of Kyoto, Japan. It's small but full of charms, and we are renovating the building by ourselves. It'll be one of our home-bases which we plan to eventually expand to a different part of the world. We're thinking about launching a similar urbanist in residence program also in Tokyo sometimes in 2021, and it would be great if there will be Bridge to Taipei, Bridge to New Mexico, Bridge to Lisbon...etc. in the future to build a global hub for urbanists.</div>
+      >We rented an old Japanese-style house in Kyoto, Japan. It's small but full of charm, and we are renovating the building by ourselves. It's the first of many urbanist in residence home-bases which we plan to open in different parts of the world. Our next target is Tokyo sometime in 2021, and we're looking forward to opening Bridge to Taipei, Bridge to Mexico City, Bridge to Lisbon, and so on in the future to build a global network for urbanists.</div>
 
       <div
         class="p"
-      >We can’t just copy and paste the best practices from other parts of the world to our city, but that doesn’t mean that we can't learn from each other. We believe that more urbanists coming from different backgrounds & sharing their work helps change the discourse and practice of urbanism across the globe. By inviting urbanists from around the world, we’d like to encourage local-scale international collaboration within a global frame of mind.</div>
+      >We can’t just copy and paste the best practices from other parts of the world to our city, but that doesn’t mean that we can't learn from each other. We believe that more urbanists coming from different backgrounds &amp; sharing their work helps change the discourse and practice of urbanism across the globe. By inviting urbanists from around the world, we’d like to encourage local-scale international collaboration within a global frame of mind.</div>
 
       <div class="p">
-        you can find a detail
-        <a href="https://www.brdg.to/">here!</a>
+        You can find more details
+        <a href="https://www.brdg.to/" target="_blank">here!</a>
       </div>
 
       <div class="p">
@@ -84,99 +82,77 @@
       <div class="p">
         <img src="/assets/bridgeto/bridgeto7.jpg" />
       </div>
-      <BuyButton buttonText="Get your copy of Volume 0!" />
     </main>
     <ContentFooter />
   </section>
 </template>
 
 <script>
-import ContentFooter from "~/components/Footer";
-import BuyButton from "~/components/BuyButton";
-import SectionHeader from "~/components/SectionHeader";
+import ContentFooter from '~/components/Footer'
+import SectionHeader from '~/components/SectionHeader'
 export default {
   scrollToTop: true,
-  layout: "default",
+  layout: 'default',
   head() {
     return {
-      title: "Zine",
+      title: 'Zine',
       meta: [
         {
-          property: "og:title",
-          content: "Zine | Traveling Circus of Urbanism"
+          property: 'og:title',
+          content: 'Bridge To Kyoto | Traveling Circus of Urbanism',
         },
         {
-          property: "og:url",
-          content: `https://www.travelingcircusofurbanism.com/zine/`
+          property: 'og:url',
+          content: `https://www.travelingcircusofurbanism.com/bridgeto/`,
         },
         {
           hid: `og:image`,
-          property: "og:image",
+          property: 'og:image',
           content:
-            "https://www.travelingcircusofurbanism.com/assets/zine/hero.jpg"
+            'https://www.travelingcircusofurbanism.com/assets/bridgeto/bridgeto9.jpg',
         },
         {
-          property: "description",
-          content: `We've made our first zine! Check it out here.`,
-          hid: `description`
+          property: 'description',
+          content: `We've started an urbanist-in-residence program! Check it out here.`,
+          hid: `description`,
         },
         {
           hid: `og:description`,
-          property: "og:description",
-          content: `We've made our first zine! Check it out here.`
-        }
-      ]
-      // script: [
-      //   {
-      //     src:
-      //       'https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js',
-      //   },
-      //   {
-      //     src: 'https://cdn.snipcart.com/scripts/2.0/snipcart.js',
-      //     id: 'snipcart',
-      //     'data-api-key':
-      //       'OWNjMjAwM2ItMWVkMy00YTA0LTk1MWYtNDAyYmIzN2UyNjA4NjM2OTgxMDA1NjMzMzM3Mzg1',
-      //   },
-      // ],
-      // link: [
-      //   {
-      //     href: 'https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css',
-      //     type: 'text/css',
-      //     rel: 'stylesheet',
-      //   },
-      // ],
-    };
-  },
-  data() {
-    return {};
-  },
-  components: { ContentFooter, BuyButton, SectionHeader },
-  computed: {
-    displayLanguage() {
-      return this.$i18n.locale;
-      // return 'ja'
+          property: 'og:description',
+          content: `We've started an urbanist-in-residence program! Check it out here.`,
+        },
+      ],
     }
   },
+  data() {
+    return {}
+  },
+  components: { ContentFooter, SectionHeader },
+  computed: {
+    displayLanguage() {
+      return this.$i18n.locale
+      // return 'ja'
+    },
+  },
   beforeDestroy() {
-    this.$store.commit("setCanvasImage");
+    this.$store.commit('setCanvasImage')
   },
   created() {
-    this.$store.commit("setBreadcrumbs", [
+    this.$store.commit('setBreadcrumbs', [
       {
-        label: "Zine",
-        url: this.localePath("zine")
-      }
-    ]);
+        label: 'Bridge To Kyoto',
+        url: this.localePath('bridgeto'),
+      },
+    ])
   },
   mounted() {
-    // set canvas to zine picture
-    this.$store.commit("setCanvasImage", "/assets/bridgeto/bridgeto.png");
-  }
-};
+    this.$store.commit('setCanvasImage', '/assets/bridgeto/house.svg')
+  },
+}
 </script>
 
 <style scoped lang="scss">
-@import "~/assets/variables.scss";
+@import '~/assets/variables.scss';
 
 .ja {
   font-size: 0.93em;

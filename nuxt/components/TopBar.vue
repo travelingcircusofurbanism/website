@@ -2,11 +2,17 @@
   <div>
     <div v-if="!isMobile" class="topbar content-top-full" :class="{searchopen: searchOpen}">
       <Breadcrumb :collapse="searchOpen || !breadcrumbs || breadcrumbs.length < 1" />
+
       <SearchSelector
         :collapse="!searchOpen && breadcrumbs && breadcrumbs.length > 0"
         @open="searchOpen = true"
         @close="searchOpen = false"
       />
+
+      <div class="langpicker" :class="{collapse: searchOpen}">
+        <nuxt-link :to="switchLocalePath('en')" v-if="$i18n.locale === 'ja'">English</nuxt-link>
+        <nuxt-link :to="switchLocalePath('ja')" v-if="$i18n.locale === 'en'">日本語</nuxt-link>
+      </div>
     </div>
     <div class="spacer"></div>
   </div>
@@ -63,5 +69,38 @@ export default {
   height: $unit * 8;
   width: 100%;
   background: $shade;
+}
+
+.langpicker {
+  background: $shade;
+  border-bottom: 1px solid rgba($offwhite, 0.5);
+  border-left: 1px solid rgba($offwhite, 0.5);
+  padding-right: $unit * 2;
+  transition: all 0.2s;
+  position: relative;
+  z-index: 3;
+
+  &:hover {
+    background: darken($shade, 3%);
+    box-shadow: 0px 2px 10px darken($shade, 20%);
+    z-index: 5;
+  }
+
+  &.collapse {
+    display: none;
+  }
+
+  & > a {
+    color: lighten($text, 25%) !important;
+    height: 100%;
+    padding: 0 $unit * 2;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+
+    &:hover {
+      color: $text !important;
+    }
+  }
 }
 </style>

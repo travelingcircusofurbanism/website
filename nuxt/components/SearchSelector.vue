@@ -200,18 +200,22 @@ export default {
   transition: height 0.2s, width 0.2s, background 0.5s;
 
   &.collapse {
-    width: $unit * 12;
+    width: $unit * 11;
     flex-grow: 0;
     flex-shrink: 0;
     border-left: 1px solid rgba($offwhite, 0.5);
     transition: all 0.2s;
+
+    svg {
+      opacity: 0.7;
+    }
 
     &:hover {
       background: darken($shade, 3%);
       box-shadow: 0px 2px 10px darken($shade, 20%);
 
       svg {
-        opacity: 0.7;
+        opacity: 1;
       }
     }
 
