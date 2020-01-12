@@ -1,12 +1,12 @@
 module.exports = {
   public: false,
-  date: '8/4/2018',
-  category: 'place',
+  date: '1/10/2020',
+  category: 'interview',
   mapPosition: {
-    location: 'Gas Works Park',
+    location: 'Way to Community',
     bearing: 0,
-    center: [-122.33435320000001, 47.6456308],
-    zoom: 12.0,
+    center: [121.519643, 25.042894],
+    zoom: 14.0,
     pitch: 0,
   },
 }
