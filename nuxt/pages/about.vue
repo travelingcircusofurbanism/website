@@ -178,7 +178,7 @@ export default {
 }
 
 img {
-  max-width: 100%;
+  max-width: 100% !important;
   display: block;
   margin: 0 auto;
 }
