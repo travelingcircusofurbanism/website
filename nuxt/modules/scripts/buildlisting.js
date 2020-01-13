@@ -141,6 +141,7 @@ function getDataForPost(postDir, city, slug) {
         .substring(0, title.en.indexOf('\n'))
         .replace(/^\s*/g, '')
         .replace(/\s*$/g, '')
+        .replace(/ - /gim, ' — ')
     }
     if (languages.ja) {
       title.ja = jaContent.substring(jaContent.indexOf('#') + 1)
@@ -148,6 +149,7 @@ function getDataForPost(postDir, city, slug) {
         .substring(0, title.ja.indexOf('\n'))
         .replace(/^[\s\n]*/g, '')
         .replace(/[\s\n]*$/g, '')
+        .replace(/ - /gim, ' — ')
     }
 
     // create nice truncated descriptions
