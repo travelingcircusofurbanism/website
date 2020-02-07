@@ -1,7 +1,8 @@
 module.exports = {
   public: false,
   preview: true,
-  date: '1/10/2020',
+  image: 'waytocommunity11.jpg',
+  date: '2/7/2020',
   category: 'interview',
   mapPosition: {
     location: 'Way to Community',
