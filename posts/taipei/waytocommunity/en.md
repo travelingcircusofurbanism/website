@@ -6,6 +6,7 @@ One of the most powerful people I met during my stay in Taipei was a woman commo
 On top of being gracious enough to connect me with many urban practitioners in Taipei, she invited me to her office to tell me what Way to Community is really about. 
 
 ![](waytocommunity6.jpg)
+_Photo credit: Collaborative O_
 
 "In Chinese, 社區交往 (the Chinese name for Way to Community) means 'dating with the community,' which uses the double meaning to highlight people’s interrelations," said Pei Pei, when we sat down at her office in the Yonghe District in Taipei. 
 
@@ -14,16 +15,20 @@ Way to Community started as an initiative to cherish and encourage community rel
 What she describes as part of the problem in Taipei sounds oddly familiar to me. "Usually, the government used to spend money to invite international urban experts to give an one-day, one-way kind lecture, and they leave soon after, without really knowing the context of the city and the community's needs," Pei Pei says. "That's why we started to invite some urbanists or practitioners to stay in Taipei and develop community events and workshops together in a Taiwanese context, with local practitioners and citizens — it's important for us to do things locally with a global frame of mind." 
 
 ![](waytocommunity8.jpg)
-![](waytocommunity9.jpg)
-![](waytocommunity10.jpg)
-![](waytocommunity11.jpg)
 _Photo credit: C.C Wu_
+![](waytocommunity9.jpg)
+_Photo credit: Collaborative O_
+![](waytocommunity10.jpg)
+_Photo credit: Collaborative O_
+![](waytocommunity11.jpg)
+_Photo credit: Collaborative O_
 
 To continue international conversations, they organized six international workshops to promote localized place-making with international practitioners of community empowerment from Japan, Indonesia, Thailand, The Netherlands, America, and New Zealand. All were about exploring urban issues, sharing action methods, and learning about successful private-public cooperation. Community relationship and engagements became the foundation for networking, and subsequently built a way (path) into community. When entering into communities, they also develop a way (method). 
 
 According to key issues in different communities, Way to Community reviewed community planning topics in Taipei. Six different community engagement experiences explored possibilities to cocreate a new place. These processes offered methods unattainable through typical urban planning, and these conversations also provided better participation mechanisms.
 
 ![](waytocommunity7.jpg)
+_Photo credit: Collaborative O_
 
 "We're still behind in terms of urban practices — the government and developers still have short term goals with a top-down planning approach. What we need is to have more trans-disciplinary collaboration and to keep things consistently local, field-based, and participatory." 
 
