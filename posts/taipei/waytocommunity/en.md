@@ -26,7 +26,7 @@ _Amsterdam-based city maker [Floor Ziegler](https://floorziegler.nl/) created a 
 ![](waytocommunity11.jpg)
 _Floor shared her experience and working methods with local placemaking practitioners, by opening up a “POPUP SHOP’ in the Datong District, Taipei. Photo credit: Collaborative O_
 
-To continue the international conversations, they organized six workshops to promote localized place-making with community empowerment practitioners from Japan, Indonesia, Thailand, the Netherlands, America, and New Zealand. All were about exploring urban issues, sharing action methods, and learning about successful private-public cooperation. Community relationship and engagements became the foundation for networking, and subsequently built a pathway into the community. 
+To continue the international conversations, they organized six workshops to promote localized place-making with community empowerment practitioners from Japan, Indonesia, Thailand, the Netherlands, America, and New Zealand, with the collaboration of Taipei City Urban Regeneration Office. All were about exploring urban issues, sharing action methods, and learning about successful private-public cooperation. Community relationship and engagements became the foundation for networking, and subsequently built a pathway into the community. 
 
 Informed by the key issues in the global community, Way to Community reviewed local planning topics in Taipei. They designed and carried out six different community engagement experiences exploring the possibilities of cocreating a new place. Their approach revealed the value of methods unattainable through typical urban planning.
 
