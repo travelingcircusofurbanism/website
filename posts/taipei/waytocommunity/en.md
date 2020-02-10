@@ -6,7 +6,7 @@ One of the most powerful people I met during my stay in Taipei was a woman commo
 On top of being gracious enough to connect me with many urban practitioners in Taipei, she invited me to her office to tell me what Way to Community is all about. 
 
 ![](waytocommunity6.jpg)
-_Photo credit: Collaborative O_
+_Sake Days was held in 2017 in Taipei, as a part of “An Eye for Community” that aimed to bridge Taipei and Tokyo. “An Eye for Community” was organized by SHIBAURA HOUSE. Photo credit: Collaborative O_
 
 "In Chinese, 社區交往 (the Chinese name for Way to Community) means "dating with the community," which uses a double meaning to highlight people’s interrelations," said Pei Pei, when we sat down at her office in the Yonghe District in Taipei. 
 
@@ -15,20 +15,23 @@ Way to Community started as an initiative to cherish and encourage community rel
 What she describes as part of the problem in Taipei sounds oddly familiar to me. "Usually, the government used to spend money to invite international urban experts to give a one-day, one-way kind of lecture, and they leave soon after, without really knowing the context of the city and the community's needs," Pei Pei says. "That's why we started to invite some urbanists or practitioners to stay in Taipei and develop community events and workshops together in a Taiwanese context, with local practitioners and citizens — it's important for us to do things locally with a global frame of mind." 
 
 ![](waytocommunity8.jpg)
-_Photo credit: C.C Wu_
+_“An Eye for Community” brought sake culture from Japan in Taipei's community space to make friends and form communities. Photo credit: C.C Wu_
+
 ![](waytocommunity9.jpg)
-_Photo credit: Collaborative O_
+_Ryan Reynolds from Gap Filler used a street in Daqiaotou to gather people to express thier ideas. Photo credit: Collaborative O_
+
 ![](waytocommunity10.jpg)
-_Photo credit: Collaborative O_
+_Amsterdam-based city maker [Floor Ziegler](https://floorziegler.nl/) created a space to share information and hold activities with the locals. This photo shows how they used a designed-bench in a street to interview citizens’ needs. Photo credit: Collaborative O_
+
 ![](waytocommunity11.jpg)
-_Photo credit: Collaborative O_
+_Floor shared her experience and working methods with local placemaking practitioners, by opening up a “POPUP SHOP’ in the Datong District, Taipei. Photo credit: Collaborative O_
 
 To continue the international conversations, they organized six workshops to promote localized place-making with community empowerment practitioners from Japan, Indonesia, Thailand, the Netherlands, America, and New Zealand. All were about exploring urban issues, sharing action methods, and learning about successful private-public cooperation. Community relationship and engagements became the foundation for networking, and subsequently built a pathway into the community. 
 
 Informed by the key issues in the global community, Way to Community reviewed local planning topics in Taipei. They designed and carried out six different community engagement experiences exploring the possibilities of cocreating a new place. Their approach revealed the value of methods unattainable through typical urban planning.
 
 ![](waytocommunity7.jpg)
-_Photo credit: Collaborative O_
+_Alex Gilliam from Public Workshop collaborated with 30 students from a junior high school and local community. His aim is to unpack young generations’ potential in the neighborhoods. Photo credit: Collaborative O_
 
 "We're still behind in terms of urban practices — the government and developers still have short term goals with a top-down planning approach. What we need is to have more trans-disciplinary collaboration and to keep things consistently local, field-based, and participatory." 
 
