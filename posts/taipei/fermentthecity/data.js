@@ -1,11 +1,12 @@
 module.exports = {
   public: false,
-  date: '8/4/2018',
-  category: 'place',
+  preview: true,
+  date: '3/7/2020',
+  category: 'essay',
   mapPosition: {
-    location: 'Gas Works Park',
+    location: 'Taiwan Contemporary Culture Lab (C-LAB)',
     bearing: 0,
-    center: [-122.33435320000001, 47.6456308],
+    center: [121.538098, 25.040122],
     zoom: 12.0,
     pitch: 0,
   },
