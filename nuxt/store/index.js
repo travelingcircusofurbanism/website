@@ -71,7 +71,8 @@ export const mutations = {
     state.isDev = isDev
     state.viewingAsDev = isDev
   },
-  setViewingAsDev: (state, viewingAsDev) => (state.viewingAsDev = viewingAsDev),
+  setViewingAsDev: (state, viewingAsDev) =>
+    (state.viewingAsDev = viewingAsDev),
 
   setLightboxSrc(state, src) {
     state.lightboxSrc = src
@@ -115,7 +116,9 @@ export const mutations = {
   setPolygons(state, postObjects) {
     const polygons = postObjects.reduce(
       (allPolygons, post) =>
-        post.polygons ? allPolygons.concat(post.polygons) : allPolygons,
+        post.polygons
+          ? allPolygons.concat(post.polygons)
+          : allPolygons,
       []
     )
     state.mapPolygons = polygons || []
@@ -123,7 +126,9 @@ export const mutations = {
 
   setViewPolygons(state, polygons) {
     if (polygons)
-      state.currentView = state.currentView.concat(polygonsBounds(polygons))
+      state.currentView = state.currentView.concat(
+        polygonsBounds(polygons)
+      )
   },
 
   setPosts(state, posts) {
@@ -154,12 +159,14 @@ export const actions = {
   updateShowablePosts({ commit, state }) {
     const showablePosts = state.allPosts.filter(
       p =>
-        // only show english posts to english readers, etc, and show devs ALL posts
-        (state.viewingAsDev || p.languages[state.i18n.locale] === true) &&
-        // only show public posts
-        (state.viewingAsDev || p.public[state.i18n.locale] === true) &&
-        // only show posts that are published in the past
-        MDYToDate(p.date).getTime() < new Date().getTime()
+        // devs see all.
+        state.viewingAsDev ||
+        // only show english posts to english readers, etc
+        (p.languages[state.i18n.locale] === true &&
+          // only show public posts
+          p.public[state.i18n.locale] === true &&
+          // only show posts that are published in the past
+          MDYToDate(p.date).getTime() < new Date().getTime())
     )
     if (state.currentShowablePosts === showablePosts) return
     commit('setCurrentShowablePosts', showablePosts)
@@ -179,8 +186,12 @@ function parseLocationNames(source) {
     source = [].concat.apply(
       [],
       [
-        ...source.map(post => post.mapPosition).filter(position => position),
-        ...source.map(post => post.polygons).filter(position => position),
+        ...source
+          .map(post => post.mapPosition)
+          .filter(position => position),
+        ...source
+          .map(post => post.polygons)
+          .filter(position => position),
       ]
     )
   // then grab just the names
@@ -256,14 +267,18 @@ function polygonsBounds(polygons) {
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+              flattened.concat(
+                polygon.coordinates.map(coord => coord[0])
+              ),
             []
           )
         ),
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+              flattened.concat(
+                polygon.coordinates.map(coord => coord[1])
+              ),
             []
           )
         ),
@@ -275,14 +290,18 @@ function polygonsBounds(polygons) {
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+              flattened.concat(
+                polygon.coordinates.map(coord => coord[0])
+              ),
             []
           )
         ),
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+              flattened.concat(
+                polygon.coordinates.map(coord => coord[1])
+              ),
             []
           )
         ),
