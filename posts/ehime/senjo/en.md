@@ -1,5 +1,9 @@
 # Senjo: the cost of losing Japanese marginal villages
 
+_This essay was written by Leo Porte, who researches the revitalisation of marginal villages in Japan. He has generously shared some of his research findings, which elucidate the importance of understanding rural areas just as much as cities._
+
+---
+
 Abandoned houses slowly collapsing as conquered by vegetation, bamboo groves taking over the man-shaped woods, wild boars devastating the very last paddy fields, and hordes of monkeys constantly raiding the precious tomato greenhouse of M. Ito, the sixty-eight-year-old youngest inhabitant of the area. At first, the village of Senjo might look like any Japanese [marginal village](https://en.wikipedia.org/wiki/Genkai_sh%C5%ABraku) of the 19th century.  
 
 Located in the mountainous area of Saijo in Ehime Prefecture on the island of Shikoku, the village presents rare singularities and a unique history. Established by descendants of the [Heike clan](https://www.japantimes.co.jp/community/2019/08/25/our-lives/island-festival-steeped-history/#.XkfzsCM9jIU) seeking refuge after their defeat at the battle of Dan-no-ura in the 12th century, the village was originally composed of 2,500 stonewall terrace paddy fields erected five hundred years ago. Spreading over one thousand hectares, from which the name of the village 千町 ("thousand city") originates, this manmade landscape might be the largest example of its kind in Japan. **Regardless of its uniqueness, the village remains largely unknown even to the very inhabitants of Saijo city located no more than 10 kilometers away, as if the descendants of the exiled Heikei warriors are still in hiding.**
@@ -58,8 +62,14 @@ The standard structures against floods [have shown their limits](http://www.asah
 
 But despite the extraordinary vigor of Japan's elderly population living in the countryside, with **91.62% of the country population living in cities - [70% of it being concentrated on only 3% of the land](https://www.stat.go.jp/english/data/handbook/c0117.html) - it's unrealistic to think that the situation will change until urban residents become aware of their dependence on the condition of rural areas** and decide to support these isolated communities. This support must be based on social, agricultural and environmental approaches, and be materialized by acts beyond the usual legislative body, which seems unable to prevent the upcoming tragedies of losing marginal villages, the furies of climate change, and the issues of food security — all of which, in one way or another, have an increasing impact on urban areas and are triggered by the abandonment of rural ones.
 
-![](senjo11.JPG)
+![](senjo0.png)
 ![](senjo24.jpg)
 ![](senjo29.jpg)
 _Abandoned graves, car, and household goods, illustrating the end of a multigenerational territorial anchorage and a future challenge for waste management and soil contamination._
  
+ ----
+
+![](LeoPorte.jpg)
+ _Leo Porte_
+
+ _Leo is a student of the graduate school of Global Environmental Student of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two community projects in Kyoto city._
