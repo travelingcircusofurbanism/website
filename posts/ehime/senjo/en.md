@@ -65,11 +65,11 @@ But despite the extraordinary vigor of Japan's elderly population living in the 
 ![](senjo0.png)
 ![](senjo24.jpg)
 ![](senjo29.jpg)
-_Abandoned graves, car, and household goods, illustrating the end of a multigenerational territorial anchorage and a future challenge for waste management and soil contamination._
+_Abandoned graves, car, and household goods, illustrating the end of a multigenerational territorial anchorage and a future challenge for waste and contaminated soil management._
  
  ----
 
-![](LeoPorte.jpg)
+![](IMG20191212132341.jpg)
  _Leo Porte_
 
- _Leo is a student of the graduate school of Global Environmental Student of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two community projects in Kyoto city._
+ _Leo is a student of the graduate school of Global Environmental Studies of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two community projects in Kyoto city._
