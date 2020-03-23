@@ -1,6 +1,7 @@
 module.exports = {
   public: true,
   preview: true,
+  image: 'fermentthecity19.jpg',
   date: '3/23/2020',
   category: 'essay',
   mapPosition: {
