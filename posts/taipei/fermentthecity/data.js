@@ -1,7 +1,8 @@
 module.exports = {
-  public: false,
+  public: true,
   preview: true,
-  date: '3/7/2020',
+  image: 'fermentthecity20.jpg',
+  date: '3/23/2020',
   category: 'essay',
   mapPosition: {
     location: 'Taiwan Contemporary Culture Lab (C-LAB)',
