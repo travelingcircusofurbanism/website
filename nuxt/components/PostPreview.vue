@@ -5,7 +5,7 @@
     :class="{
           fade:shouldFade}"
   >
-    <nuxt-link :to="localePath({name: 'city-post', params: {city, post: slug}})">
+    <nuxt-link :to="localePath({name: 'city-post', params: {city, post: slug}})" class="imglink">
       <div
         v-lazy:background-image="{
           src: image,
@@ -24,8 +24,14 @@
         <h4 :class="{ja: userLanguage === 'ja' && languages.ja && public.ja}">{{ languageTitle }}</h4>
       </nuxt-link>
 
-      <PostDetails :category="category" :mapPosition="mapPosition" :city="city" :date="date" />
-
+      <PostDetails
+        :category="category"
+        :mapPosition="mapPosition"
+        :city="city"
+        :date="date"
+        :twoLine="true"
+      />
+      <!-- 
       <div class="description" :class="{ja: languages.ja && userLanguage === 'ja' && public.ja }">
         {{ languageDescription }}
         <nuxt-link
@@ -41,7 +47,7 @@
             :href="seoUrl"
           >{{userLanguage === 'en' && languages.ja && public.ja ? `読み続ける →` : `Keep Reading →`}}</a>
         </div>
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -139,7 +145,8 @@ export default {
     shouldFade() {
       return (
         (this.isDev &&
-          (this.public[this.userLanguage] !== true && this.userLanguage)) ||
+          this.public[this.userLanguage] !== true &&
+          this.userLanguage) ||
         MDYToDate(this.date).getTime() > new Date().getTime()
       )
     },
@@ -186,15 +193,24 @@ export default {
 }
 
 .post-preview {
-  margin-bottom: $unit * 10;
-  display: grid;
-  grid-template-columns: 40% 1fr;
-  grid-gap: $unit * 4;
-  min-height: $unit * 40;
+  // margin-bottom: $unit * 10;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: stretch;
+  // grid-template-columns: 1fr;
+  // grid-gap: $unit * 2;
+  // min-height: $unit * 40;
 
+  .imglink {
+    flex: 1;
+    margin-bottom: $unit * 2;
+  }
   .previewimage {
     background: $shade;
     height: 100%;
+    min-height: $unit * 35;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -203,14 +219,14 @@ export default {
   }
 
   @include width(large) {
-    grid-template-columns: 45% 1fr;
+    grid-template-columns: 1fr;
   }
 
   @include width(midorsmaller) {
-    grid-template-columns: 100%;
+    grid-template-columns: 1fr;
 
     .previewimage {
-      height: $unit * 50;
+      // height: $unit * 50;
     }
   }
 
@@ -219,7 +235,7 @@ export default {
     grid-gap: $unit * 3;
 
     .previewimage {
-      height: $unit * 30;
+      // height: $unit * 30;
     }
   }
 
@@ -235,7 +251,7 @@ export default {
 h4 {
   color: $text !important;
   margin-top: 0;
-  margin-bottom: $unit * 2;
+  margin-bottom: $unit * 1;
   line-height: 1.3;
 }
 

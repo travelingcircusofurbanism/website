@@ -1,10 +1,14 @@
 // colors
-$active: rgb(0, 173, 204);
+$active: #00b1d1;
 $activelight: lighten($active, 15%);
 $highlight: #fdb833;
 $text: hsl(255, 0, 12); //#222;
 $offwhite: rgb(224, 223, 214);
 $shade: rgb(247, 246, 243);
+
+$c1: #cda84d;
+$c2: #59adc5;
+$c3: #cc6248;
 
 $over-map-shadow: 0 10px 20px rgba(#333, 0.7);
 
@@ -15,12 +19,12 @@ $content-padding: $unit * 8;
 $content-padding-mobile: $unit * 3;
 $header-offset: $unit * 5;
 
-$font-stack: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
-  'Helvetica Neue', Arial, sans-serif;
+$font-stack: 'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+  Roboto, 'Helvetica Neue', Arial, sans-serif;
 
-$ja-font-stack: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'Raleway',
-  -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,
-  sans-serif;
+$ja-font-stack: '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic',
+  'Raleway', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  'Helvetica Neue', Arial, sans-serif;
 
 // mixins
 @mixin width($size) {

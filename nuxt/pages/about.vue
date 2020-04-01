@@ -1,6 +1,6 @@
 <template>
   <section class="content">
-    <img src="~assets/about.jpg" alt="About the traveling circus of urbanism" />
+    <div class="header content-top-full"></div>
     <div v-if="displayLanguage === 'ja'" class="ja">
       <h1 class="title">
         <span class="small">このサイトについて</span>
@@ -45,30 +45,30 @@
     </div>
 
     <template v-else>
-      <h1 class="title">What is the traveling circus of urbanism?</h1>
+      <h1 class="title">What is Traveling Circus of Urbanism?</h1>
+      <p>Traveling Circus of Urbanism is a platform for urban narratives that are collected from the world through traveling and dialogues with the citizens of the world.</p>
+
+      <p>As an urbanist and city enthusiast, I’ve visited cities around the world. The more places I went, the more it became clear: I needed a way to share and archive my overwhelming collection of experiences and urban realities — after all, communicating the knowledge gained through research is as important as the knowledge itself.</p>
+
+      <p>During the graduation ceremony of my trans-Europe master program, a professor jokingly described our cohort as “a traveling circus of urbanism” because of our peculiar brand of roaming urban study. That phrase stuck in my head, and a few years later, Traveling Circus of Urbanism was born. Travel, both physically and mentally, is a way to unravel the essence of places, seeing them from different perspectives and revealing how they are globally connected. A circus moves from a city to another, telling stories that are collected from its journey. Urbanism is about how people live in cities and interact with our urban environments.</p>
+
       <p>
-        The Traveling Circus of Urbanism is a platform for other urban
-        narratives that are collected from the world through traveling. This is
-        an exploration of various urban practices with a global perspective, in
-        a way to challenge the focus on localism and ignorance of urbanists for
-        what is happening in the world.
+        It started humbly as a website, a platform to collect urban narratives through my journalistic travel across the cities in the world. Soon, fellow urbanists from all over the world began offering contributions to share incredible stories about their cities. We’ve grown from there, from magazines to even an “urbanist in residency” program called
+        <a
+          href="https://www.brdg.to/"
+          target="_blank"
+        >Bridge To</a>.
       </p>
+
+      <p>Traveling Circus of Urbanism puts forward a simple but contentious concept — namely, the need for more global perspectives in investigations of cities, and for urban storytelling to side with the underrepresented.</p>
+
       <p>
-        <strong>Travel</strong> is a way to unravel the essence of places,
-        seeing them from different perspectives and revealing how they are globally connected.
+        I hope Traveling Circus of Urbanism can help to bring the urbanists of the world together, beyond professions, disciplines, and nationalities. If you have a story from your city, you can
+        <nuxt-link to="/contribute">contribute it</nuxt-link>!
       </p>
+
       <p>
-        <strong>A circus</strong> moves from a city to another, telling stories
-        that are collected from its journey.
-      </p>
-      <p>
-        <strong>Urbanism</strong> is about how people live in cities and
-        interact with our urban environments.
-      </p>
-      <p>
-        It covers a wide range of topics such as urban design, inclusive
-        urbanism, community development, urban art and culture, politics and
-        urban sustainability and more.
+        <i>–Mariko Sugita</i>
       </p>
 
       <SectionHeader>Core Team</SectionHeader>
@@ -77,7 +77,7 @@
           <img src="~/assets/staff/marikocolor.jpg" />
           <div>
             <span class="name">Mariko Sugita</span>
-            <span class="title">Founder, Editor in Chief</span>
+            <span class="job">Founder, Editor in Chief</span>
             <div>
               Mariko is an urbanist and city lover. Her professional fields are
               research, marketing, and editing and writing in the field of
@@ -93,7 +93,7 @@
           <img src="~/assets/staff/jaspercolor.jpg" />
           <div>
             <span class="name">Jasper Stephenson</span>
-            <span class="title">Designer, Developer</span>
+            <span class="job">Designer, Developer</span>
             <div>
               Jasper is a traveler and creative polymath. He spends his free
               time learning languages and designing and developing his latest
@@ -171,6 +171,13 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
+.header {
+  background-image: url('~assets/about.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
+
 .ja {
   font-size: 0.93em;
   line-height: 1.85;
@@ -217,15 +224,14 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
-    &.name {
-      font-weight: 600;
-    }
-    &.title {
-      font-weight: 600;
-      opacity: 0.3;
-      margin-bottom: $unit;
-    }
   }
+}
+.name {
+  font-weight: 700;
+}
+.job {
+  font-weight: 500;
+  opacity: 0.3;
+  margin-bottom: $unit;
 }
 </style>

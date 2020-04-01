@@ -1,9 +1,9 @@
 <template>
   <section class="content">
-    <img src="~assets/getinvolved2.jpg" alt="Get involved!" />
+    <div class="content-top-full header"></div>
     <div v-if="displayLanguage === 'ja'" class="ja">
       <h1 class="title">
-        <span class="small">Get Involved!</span>
+        <span class="small">Contribute</span>
       </h1>
       <p>
         Traveling Circus of Urbanismでは、世界中の実践者からの寄稿を、随時受け付けています。自身の街の実践について、日英バイリンガルで国内外に発信したい方、取材をしてもらいたい、インタビューして欲しいなど、なんでもお気軽にご相談ください。
@@ -15,30 +15,45 @@
     </div>
 
     <template v-else>
-      <h1 class="title">Get Involved!</h1>
+      <h1 class="title">Contribute</h1>
       <p>
-        Do you want to tell stories about your city as part of Traveling Circus
-        of Urbanism?
-      </p>
-      <p>Do you want us to come and visit your city?</p>
-      <p>
-        Are you interested in cross-cultural collaboration and sharing ideas
-        with different cities in the world?
-      </p>
-      <p>
-        Traveling Circus of Urbanism is always looking to collaborate with city
-        enthusiasts across the world. If you are an urbanist who's passionate
-        about cities and you're interested in collaborating or contributing, check out our
+        Traveling Circus of Urbanism is always looking to collaborate with city enthusiasts across the world, to collect stories, knowledge, and insights for a better understanding of cities. If you are an urbanist who's passionate about cities and you're interested in collaborating, please submit your contribution by sending us an
         <a
+          href="mailto:travelingcircusofurbanism@gmail.com"
+        >email</a>.
+      </p>
+
+      <p>We are interested in any stories that deal with the theme of ‘the city’. They could be personal, observational, or documentations of reality. We’re interested in the projects and research you’ve been involved with, the things that represent your life in the city, the things you love or are resentful of in your city, and any other topics that are helpful to get a glimpse of your city.</p>
+
+      <p>
+        The contribution guideline is [here], and if you have any questions, whether about the writing style, topics, etc, please don’t hesitate to
+        <a
+          href="mailto:travelingcircusofurbanism@gmail.com"
+        >drop us a line</a>! We usually reply within a week.
+      </p>
+
+      <p>
+        <b>
+          Email:
+          <a
+            href="mailto:travelingcircusofurbanism@gmail.com"
+          >travelingcircusofurbanism@gmail.com</a>
+        </b>
+      </p>
+      <p>
+        <b>
+          Facebook:
+          <a
+            href="https://www.facebook.com/travelingcircusofurbanism/"
+            target="_blank"
+          >https://www.facebook.com/travelingcircusofurbanism/</a>
+        </b>
+      </p>
+
+      <!-- <a
           href="/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf"
           target="_blank"
-        >contribution guide</a>, and don’t hesitate to drop us a line!
-      </p>
-      <br />
-      <a
-        href="mailto:travelingcircusofurbanism@gmail.com"
-        class="nounderline button full"
-      >Get in touch!</a>
+      >contribution guide</a>-->
     </template>
     <ContentFooter />
   </section>
@@ -49,15 +64,15 @@ import ContentFooter from '~/components/Footer'
 export default {
   head() {
     return {
-      title: 'Get Involved',
+      title: 'Contribute',
       meta: [
         {
           property: 'og:title',
-          content: 'Get Involved | Traveling Circus of Urbanism',
+          content: 'Contribute | Traveling Circus of Urbanism',
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/getinvolved/`,
+          content: `https://www.travelingcircusofurbanism.com/contribute/`,
         },
       ],
     }
@@ -71,8 +86,8 @@ export default {
   created() {
     this.$store.commit('setBreadcrumbs', [
       {
-        label: 'Get Involved',
-        url: this.localePath('getinvolved'),
+        label: 'contribute',
+        url: this.localePath('contribute'),
       },
     ])
   },
@@ -86,6 +101,13 @@ export default {
 
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
+
+.header {
+  background-image: url('~assets/getinvolved2.jpg');
+  background-size: cover;
+  background-position: center center;
+  height: 30vh;
+}
 
 .ja {
   font-size: 0.93em;

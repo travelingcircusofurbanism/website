@@ -195,4 +195,10 @@ export default {
     }
   }
 }
+
+.rightside {
+  scroll-behavior: smooth;
+  z-index: 3;
+  box-shadow: -40px 0 40px rgba($text, 0.06), -5px 0 5px rgba($text, 0.04);
+}
 </style>

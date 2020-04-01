@@ -1,10 +1,6 @@
 <template>
   <no-ssr>
-    <MapboxMapLoader
-      :apikey="ak"
-      :defaultPosition="defaultPosition"
-      mapboxStyle="mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true"
-    >
+    <MapboxMapLoader :apikey="ak" :defaultPosition="defaultPosition" :mapboxStyle="mapboxStyle">
       <template slot-scope="{ mapboxgl, map, clusterer }">
         <!--v-slot instead of slot-scope in vue 2.6+, everything else should be
         fine-->
@@ -71,6 +67,7 @@ export default {
   },
   data() {
     return {
+      mapboxStyle: `mapbox://styles/mariko9012/cjh4gkzlw31mc2sqsm3l0g4rk?optimize=true`, //mapbox://styles/midblue/ck8f9y05z0uhu1io8t14vd6ex?optimize=true
       defaultPosition: {
         bearing: 0,
         center: [-130, 30],
@@ -78,7 +75,7 @@ export default {
         pitch: 0,
         speed: 2,
       },
-      ak: require('../../mapboxApiKey.json').key,
+      ak: require('../../mapboxApiKey.json').mariko,
       markers: [],
       updatePrefix: 0,
     }

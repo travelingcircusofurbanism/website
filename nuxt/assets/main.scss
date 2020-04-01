@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
-@import "variables";
-@import "map";
-@import "markdown";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,600,700');
+@import 'variables';
+@import 'map';
+@import 'markdown';
 
 html {
   height: 100%;
@@ -99,7 +99,7 @@ h3 {
 }
 
 h4 {
-  font-size: 1.4rem;
+  font-size: 1.35rem;
 }
 
 .sub {
@@ -109,6 +109,16 @@ h4 {
   a {
     color: $text !important;
   }
+}
+
+.c1 {
+  color: $c1;
+}
+.c2 {
+  color: $c2;
+}
+.c3 {
+  color: $c3;
 }
 
 .flag-icon {
@@ -131,7 +141,8 @@ h4 {
     min-height: 0%;
   }
 
-  & > *:not(.content-top-full):not(.relatedposts):not(footer):not(.footer) {
+  &
+    > *:not(.content-top-full):not(.relatedposts):not(footer):not(.footer) {
     margin-left: auto;
     margin-right: auto;
     max-width: $unit * 100;
@@ -241,6 +252,11 @@ h4 {
   &.showall {
     background: rgba($offwhite, 0.25);
   }
+
+  &.whitehover:hover {
+    background: white !important;
+    color: $text !important;
+  }
 }
 
 .video-wrapper {
@@ -258,7 +274,7 @@ h4 {
   }
 }
 
-img[lazy="loaded"] {
+img[lazy='loaded'] {
   // animation-duration: .5s;
   // animation-fill-mode: both;
   // animation-name: fadeIn;

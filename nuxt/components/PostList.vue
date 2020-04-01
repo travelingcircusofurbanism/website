@@ -1,7 +1,7 @@
 <template>
   <div class="post-list">
     <SectionHeader v-if="title">{{ capitalize(title) }}</SectionHeader>
-    <transition-group name="fade">
+    <transition-group name="fade" class="posts">
       <PostPreview v-for="(post, key) in postsToShow" :key="post.city + post.slug" v-bind="post" />
     </transition-group>
     <div
@@ -99,4 +99,11 @@ export default {
 
 <style lang="scss" scoped>
 @import '~/assets/variables.scss';
+
+.posts {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: $unit * 6 $unit * 3;
+}
 </style>

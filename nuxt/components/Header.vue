@@ -25,24 +25,30 @@
       @click.native="resetView"
     >
       <img src="/assets/logo.svg" alt="logo" />
-      <h3
+      <!-- <h3
         class="tagline"
         v-if="$i18n.locale === 'en'"
       >Urban narratives and practices, collected through traveling</h3>
-      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の事例と物語</h3>
+      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の事例と物語</h3>-->
     </nuxt-link>
     <br />
-    <div class="sublinks" :class="{hasshadow: !canvasImage}" v-if="!isMobile">
+    <div class="sublinks" :class="{hasshadow: false && !canvasImage}" v-if="!isMobile">
       <nuxt-link :to="localePath('about')" :class="{ currentpage: path === '/about' }">About</nuxt-link>
       <nuxt-link
-        :to="localePath('getinvolved')"
-        :class="{ currentpage: path === '/getinvolved' }"
-      >Get Involved</nuxt-link>
+        :to="localePath('contribute')"
+        :class="{ currentpage: path === '/contribute' }"
+      >Contribute</nuxt-link>
       <nuxt-link :to="localePath('zine')" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
       <nuxt-link
         :to="localePath('bridgeto')"
         :class="{ currentpage: path === '/bridgeto' }"
       >Residency</nuxt-link>
+      <a class="thumb" href="/" target="_blank">
+        <img src="~/assets/icons/instagramblack.svg" alt="Instagram" />
+      </a>
+      <a class="thumb" href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
+        <img class="facebook" src="~/assets/icons/facebookblack.svg" alt="Facebook" />
+      </a>
     </div>
   </div>
 </template>
@@ -103,6 +109,7 @@ a:active {
 }
 
 #header {
+  line-height: 1;
   position: fixed;
   display: inline-block;
   top: $header-offset;
@@ -113,6 +120,7 @@ a:active {
   padding-right: $unit * 4;
 
   @include width(mobile) {
+    line-height: 1.6;
     display: block;
     width: 100%;
     height: auto;
@@ -158,9 +166,11 @@ a:active {
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
-  padding: $unit * 3 $unit * 4 $unit * 2.2 $unit * 4;
+  padding: $unit * 2.5 $unit * 3.8 $unit * 0.5 $unit * 4;
   background: $active;
-  height: $unit * 14;
+  background: linear-gradient(to right, $active, lighten($active, 3%));
+  height: $unit * 8;
+  width: 100%;
 
   &.hasshadow {
     box-shadow: $over-map-shadow;
@@ -204,8 +214,11 @@ a:active {
   display: inline-flex;
   font-weight: 400;
   pointer-events: none;
-  background: darken($text, 2%);
-  padding-left: $content-padding / 6;
+  // background: darken($text, 2%);
+  background: $active;
+  background: linear-gradient(to right, $active, lighten($active, 3%));
+  width: 100%;
+  padding: 0 $content-padding / 3.3 0 $content-padding / 5;
 
   &.hasshadow {
     box-shadow: $over-map-shadow;
@@ -216,34 +229,40 @@ a:active {
   }
 
   & > a {
-    padding: $unit * 1.5 $content-padding / 2.5;
-    background: darken($text, 2%);
+    text-align: center;
+    padding: $unit * 1.8 $content-padding / 2.7;
     position: relative;
     display: inline-block;
     white-space: nowrap;
+    color: $text;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    font-size: 0.93em;
+    transition: color 0.2s;
 
-    &:after {
-      $underlineheight: 1px;
-      content: '';
-      position: absolute;
-      bottom: 0; //($unit * 2) - $underlineheight;
-      left: 50%;
-      transform: translateX(-50%);
-      // border-radius: $underlineheight / 2;
-      width: 0;
-      background: $active;
-      height: $underlineheight;
-      transition: all 0.2s;
-    }
+    // &:after {
+    //   $underlineheight: 1px;
+    //   content: '';
+    //   position: absolute;
+    //   bottom: 0; //($unit * 2) - $underlineheight;
+    //   left: 50%;
+    //   transform: translateX(-50%);
+    //   // border-radius: $underlineheight / 2;
+    //   width: 0;
+    //   background: $active;
+    //   height: $underlineheight;
+    //   transition: all 0.2s;
+    // }
 
     &:hover {
       &:after {
         width: 100%;
       }
-      background: rgba($active, 0.25);
+      background: rgba(white, 0.1);
     }
 
     &.currentpage {
+      color: rgba(white, 0.7);
       &:after {
         width: 100%;
       }
@@ -262,27 +281,41 @@ a:active {
         display: none;
       }
     }
+
+    &.thumb {
+      padding: $unit * 1.8 $content-padding / 5;
+    }
+    img {
+      height: 1.15em;
+      position: relative;
+      top: -0.08em;
+
+      &.facebook {
+        height: 1.05em;
+        top: -0.03em;
+      }
+    }
   }
 }
 
-.citylabel {
-  position: absolute;
-  bottom: $content-padding;
-  display: inline-block;
-  margin-top: $unit * 3;
-  color: rgba(white, 0.8);
-  background: rgba($text, 0.75);
-  padding: $unit * 1 $unit * 4;
-  padding-left: $content-padding;
-  transition: all 0.4s;
-  transform: translateX(-100%);
+// .citylabel {
+//   position: absolute;
+//   bottom: $content-padding;
+//   display: inline-block;
+//   margin-top: $unit * 3;
+//   color: rgba(white, 0.8);
+//   background: rgba($text, 0.75);
+//   padding: $unit * 1 $unit * 4;
+//   padding-left: $content-padding;
+//   transition: all 0.4s;
+//   transform: translateX(-100%);
 
-  &.active {
-    transform: translateX(0%);
-  }
+//   &.active {
+//     transform: translateX(0%);
+//   }
 
-  @include width(mobile) {
-    display: none;
-  }
-}
+//   @include width(mobile) {
+//     display: none;
+//   }
+// }
 </style>
