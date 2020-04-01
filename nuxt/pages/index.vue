@@ -1,11 +1,20 @@
 <template>
   <section class="content">
-    <div class="intro content-top-full" :class="{explore: exploreOpen}">
+    <div
+      class="intro content-top-full"
+      :class="{ explore: exploreOpen }"
+    >
       <div class="frame1 invisible">
         <div class="introcontent">
           <template v-if="$i18n.locale === 'en'">
-            <h1>Urban narratives and practices, collected from everywhere.</h1>
-            <p>Learn about the design, function, and experience of cities, and share stories from yours.</p>
+            <h1>
+              Urban narratives and practices, collected from
+              everywhere.
+            </h1>
+            <p>
+              Learn about the design, function, and experience of
+              cities, and share stories from yours.
+            </p>
             <p class="buttons">
               <span class="button whitehover">Explore</span>
               <span class="button whitehover">Contribute</span>
@@ -14,11 +23,16 @@
           </template>
           <template v-else>
             <h1 class="ja">旅先から集めた、世界の都市の物語。</h1>
-            <p>Traveling Circus of Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。</p>
+            <p>
+              Traveling Circus of
+              Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。
+            </p>
             <p class="buttons">
               <span class="button whitehover">記事を読む</span>
               <span class="button whitehover">記事を書く</span>
-              <span class="button whitehover">このサイトについて</span>
+              <span class="button whitehover"
+                >このサイトについて</span
+              >
             </p>
           </template>
         </div>
@@ -27,12 +41,28 @@
       <div class="frame1">
         <div class="introcontent">
           <template v-if="$i18n.locale === 'en'">
-            <h1>Urban narratives and practices, collected from everywhere.</h1>
-            <p>Learn about the design, function, and experience of cities, and share stories from yours.</p>
+            <h1>
+              Urban narratives and practices, collected from
+              everywhere.
+            </h1>
+            <p>
+              Learn about the design, function, and experience of
+              cities, and share stories from yours.
+            </p>
             <p class="buttons">
-              <span class="button whitehover" @click="exploreToggle">Explore</span>
-              <nuxt-link class="button whitehover" to="/contribute">Contribute</nuxt-link>
-              <nuxt-link class="button whitehover" to="/about">About</nuxt-link>
+              <span class="button whitehover" @click="exploreToggle"
+                >Explore</span
+              >
+              <nuxt-link
+                class="button whitehover"
+                :to="localePath('contribute')"
+                >Contribute</nuxt-link
+              >
+              <nuxt-link
+                class="button whitehover"
+                :to="localePath('about')"
+                >About</nuxt-link
+              >
             </p>
           </template>
           <template v-else>
@@ -40,11 +70,24 @@
               旅先から集めた、
               <br v-if="!isMobile" />世界の都市の物語。
             </h1>
-            <p>Traveling Circus of Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。</p>
+            <p>
+              Traveling Circus of
+              Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。
+            </p>
             <p class="buttons">
-              <span class="button whitehover" @click="exploreToggle">記事を読む</span>
-              <nuxt-link class="button whitehover" to="/contribute">記事を書く</nuxt-link>
-              <nuxt-link class="button whitehover" to="/about">このサイトについて</nuxt-link>
+              <span class="button whitehover" @click="exploreToggle"
+                >記事を読む</span
+              >
+              <nuxt-link
+                class="button whitehover"
+                :to="localePath('contribute')"
+                >記事を書く</nuxt-link
+              >
+              <nuxt-link
+                class="button whitehover"
+                :to="localePath('about')"
+                >このサイトについて</nuxt-link
+              >
             </p>
           </template>
         </div>
@@ -56,36 +99,68 @@
             class="arrows"
             src="~/assets/introarrows.png"
             v-if="!isMobile"
-            :class="{ja: $i18n.locale === 'ja'}"
+            :class="{ ja: $i18n.locale === 'ja' }"
           />
           <div>
             <template v-if="$i18n.locale === 'en'">
               <h1>There are three ways to browse!</h1>
               <p class="c1">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow1.svg" />
-                <span>{{ isMobile ? `Search for a city or category from the menu above` : `Search for a city, place, or category above` }}</span>
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow1.svg"
+                />
+                <span>{{
+                  isMobile
+                    ? `Search for a city or category from the menu above`
+                    : `Search for a city, place, or category above`
+                }}</span>
               </p>
               <p class="c2">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow2.svg" />
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow2.svg"
+                />
                 <span>
-                  Zoom and pan around the map, then {{ isMobile ? `tap` : `click` }} on
-                  <br v-if="!isMobile" />a marker to see articles about that location
+                  Zoom and pan around the map, then
+                  {{ isMobile ? `tap` : `click` }} on
+                  <br v-if="!isMobile" />a marker to see articles
+                  about that location
                 </span>
               </p>
               <p class="c3">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow3.svg" />
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow3.svg"
+                />
                 <span>Browse the most recent articles below</span>
               </p>
             </template>
 
             <template v-else>
-              <h1 class="ja small">記事を探すには、3つの方法があります！</h1>
+              <h1 class="ja small">
+                記事を探すには、3つの方法があります！
+              </h1>
               <p class="c1 ja">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow1.svg" />
-                <span>{{ isMobile ? `メニューから都市名、土地名、カテゴリーで検索` : `都市名、土地名、カテゴリーで検索` }}</span>
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow1.svg"
+                />
+                <span>{{
+                  isMobile
+                    ? `メニューから都市名、土地名、カテゴリーで検索`
+                    : `都市名、土地名、カテゴリーで検索`
+                }}</span>
               </p>
               <p class="c2 ja">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow2.svg" />
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow2.svg"
+                />
                 <span>
                   地図上で気になる場所を探し、
                   <br v-if="!isMobile" />
@@ -93,7 +168,11 @@
                 </span>
               </p>
               <p class="c3 ja">
-                <img class="inlinearrow" v-if="isMobile" src="~/assets/introarrow3.svg" />
+                <img
+                  class="inlinearrow"
+                  v-if="isMobile"
+                  src="~/assets/introarrow3.svg"
+                />
                 <span>下記の最新記事から読む</span>
               </p>
             </template>
@@ -104,7 +183,11 @@
         </div>
       </div>
     </div>
-    <PostList :posts="showablePosts" title="Recent Articles" id="posts" />
+    <PostList
+      :posts="showablePosts"
+      title="Recent Articles"
+      id="posts"
+    />
     <ContentFooter />
   </section>
 </template>
@@ -121,7 +204,10 @@ export default {
     return {
       title: 'Home',
       meta: [
-        { property: 'og:title', content: 'Traveling Circus of Urbanism' },
+        {
+          property: 'og:title',
+          content: 'Traveling Circus of Urbanism',
+        },
         {
           property: 'og:url',
           content: `https://www.travelingcircusofurbanism.com/`,
