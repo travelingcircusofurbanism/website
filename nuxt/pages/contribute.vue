@@ -26,7 +26,11 @@
       <p>We are interested in any stories that deal with the theme of ‘the city’. They could be personal, observational, or documentations of reality. We’re interested in the projects and research you’ve been involved with, the things that represent your life in the city, the things you love or are resentful of in your city, and any other topics that are helpful to get a glimpse of your city.</p>
 
       <p>
-        The contribution guideline is [here], and if you have any questions, whether about the writing style, topics, etc, please don’t hesitate to
+        The contribution guideline is
+        <a
+          href="/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf"
+          target="_blank"
+        >here</a>, and if you have any questions, whether about the writing style, topics, etc, please don’t hesitate to
         <a
           href="mailto:travelingcircusofurbanism@gmail.com"
         >drop us a line</a>! We usually reply within a week.
@@ -49,11 +53,6 @@
           >https://www.facebook.com/travelingcircusofurbanism/</a>
         </b>
       </p>
-
-      <!-- <a
-          href="/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf"
-          target="_blank"
-      >contribution guide</a>-->
     </template>
     <ContentFooter />
   </section>
