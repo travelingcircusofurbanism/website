@@ -72,4 +72,4 @@ _Abandoned graves, car, and household goods, illustrating the end of a multigene
 ![](IMG20191212132341.jpg)
  _Leo Porte_
 
- _Leo is a student of the graduate school of Global Environmental Studies of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two community projects in Kyoto city._
+ _Leo is a student of the graduate school of Global Environmental Studies of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two [community projects in Kyoto city](https://www.travelingcircusofurbanism.com/kyoto/honmachiescola)._

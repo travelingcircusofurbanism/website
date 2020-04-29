@@ -40,7 +40,7 @@ They are aiming to create a strong community along with sustainable buildings an
 _The first thing that greeted me at the entrance was this sign which was used at a workshop they organized a few weeks ago. I'd love to live in a community where such an interesting workshop as this would be held._
 ![](honmachiescola6.jpg)
 ![](honmachiescola8.jpg)
-_Leo, who studies ecology, explains how they grow vegetables and herbs in their garden.They get ready-to-use natural manure (elephant, giraffe, and zebra) from the Kyoto City Zoo, where Leo studied for a year, and use it as fertilizer as well as for improving their homemade compost._
+_[Leo, who studies ecology](https://www.travelingcircusofurbanism.com/ehime/senjo), explains how they grow vegetables and herbs in their garden.They get ready-to-use natural manure (elephant, giraffe, and zebra) from the Kyoto City Zoo, where Leo studied for a year, and use it as fertilizer as well as for improving their homemade compost._
 
 ## What's next?
 
