@@ -2,8 +2,9 @@
   <section class="content">
     <main v-if="displayLanguage === 'ja'">
       <h1 class="title">Our Zines</h1>
-      <SectionHeader>Vol. 0: Thesis</SectionHeader>
-      <BuyButton />
+      <SectionHeader>Vol. 0: Thesis (完売)</SectionHeader>
+      <!-- <ZineEmailCapture /> -->
+      <BuyButton paypalBuyIdJa="MM4R7DRB7AF8Q" paypalBuyId="GEQXLFP5ER8GA" />
       <img src="/assets/zine/1.jpg" />
       <div class="p ja">Traveling Circus of Urbanismが、zineになりました。</div>
       <div class="p ja">
@@ -25,10 +26,9 @@
       </div>
       <div class="p ja">
         ２冊目以降は、今回よりもぐっとボリュームを増やし、冊子のマガジンを定期的に出版することを予定しています。記事を書いてみたいという方、出版協力に興味がある方は、
-        <a
-          href="mailto:travelingcircusofurbanism@gmail.com"
-          target="_blank"
-        >こちら</a>からお気軽にご連絡ください。
+        <a href="mailto:travelingcircusofurbanism@gmail.com" target="_blank"
+          >こちら</a
+        >からお気軽にご連絡ください。
       </div>
       <div class="p">
         <img src="/assets/zine/5.jpg" />
@@ -36,12 +36,12 @@
       <div class="p">
         <img src="/assets/zine/3.jpg" />
       </div>
-      <BuyButton />
+      <BuyButton paypalBuyIdJa="MM4R7DRB7AF8Q" paypalBuyId="GEQXLFP5ER8GA" />
     </main>
     <main v-else>
       <h1 class="title">Our Zines</h1>
-      <SectionHeader>Volume 0: Thesis</SectionHeader>
-      <BuyButton />
+      <SectionHeader>Volume 0: Thesis (Sold Out)</SectionHeader>
+      <BuyButton paypalBuyIdJa="MM4R7DRB7AF8Q" paypalBuyId="GEQXLFP5ER8GA" />
       <img src="/assets/zine/1.jpg" />
       <div class="p">
         It's finally here! Compiled and edited over more than a year of motion
@@ -50,7 +50,11 @@
         gain from transnational lifestyles and perspectives. If you are an
         urbanist, an architect, or simply love cities and the ways people engage
         with them, this is the zine for you. And at
-        <BuyButton :isButton="false">
+        <BuyButton
+          paypalBuyIdJa="MM4R7DRB7AF8Q"
+          paypalBuyId="GEQXLFP5ER8GA"
+          :isButton="false"
+        >
           <button type="submit">$8, it's too good to miss.</button>
         </BuyButton>
       </div>
@@ -74,10 +78,9 @@
         curate stories from a global network of writers who have unique points
         of view about their region. If you're interested in pitching a story
         about your city for the next zine, or in being a part of this project,
-        <a
-          href="mailto:travelingcircusofurbanism@gmail.com"
-          target="_blank"
-        >drop us a line!</a>
+        <a href="mailto:travelingcircusofurbanism@gmail.com" target="_blank"
+          >drop us a line!</a
+        >
       </div>
       <div class="p">
         <img src="/assets/zine/5.jpg" />
@@ -85,7 +88,11 @@
       <div class="p">
         <img src="/assets/zine/3.jpg" />
       </div>
-      <BuyButton buttonText="Get your copy of Volume 0!" />
+      <BuyButton
+        buttonText="Get your copy of Volume 0!"
+        paypalBuyIdJa="MM4R7DRB7AF8Q"
+        paypalBuyId="GEQXLFP5ER8GA"
+      />
     </main>
     <ContentFooter />
   </section>
@@ -94,7 +101,9 @@
 <script>
 import ContentFooter from '~/components/Footer'
 import BuyButton from '~/components/BuyButton'
+// import ZineEmailCapture from '~/components/ZineEmailCapture'
 import SectionHeader from '~/components/SectionHeader'
+
 export default {
   scrollToTop: true,
   layout: 'default',
@@ -179,10 +188,10 @@ export default {
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
 
-.ja{
+.ja {
   font-size: 0.93em;
-    line-height: 1.85;
-    letter-spacing: 0.03em;
+  line-height: 1.85;
+  letter-spacing: 0.03em;
 }
 
 h1 {

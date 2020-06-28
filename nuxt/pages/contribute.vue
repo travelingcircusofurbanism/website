@@ -6,42 +6,61 @@
         <span class="small">Contribute</span>
       </h1>
       <p>
-        Traveling Circus of Urbanismでは、世界中の実践者からの寄稿を、随時受け付けています。自身の街の実践について、日英バイリンガルで国内外に発信したい方、取材をしてもらいたい、インタビューして欲しいなど、なんでもお気軽にご相談ください。
+        Traveling Circus of
+        Urbanismでは、世界中の実践者からの寄稿を、随時受け付けています。自身の街の実践について、日英バイリンガルで国内外に発信したい方、取材をしてもらいたい、インタビューして欲しいなど、なんでもお気軽にご相談ください。
         <!-- <a href="~static/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf" target="_blank">コントリビューションガイド</a>は用意してるので参考にしてください。 -->
         コラボレーションのアイデアもお待ちしています！
       </p>
-      <br />
-      <a href="mailto:travelingcircusofurbanism@gmail.com" class="nounderline button full">メールを送る</a>
+
+      <EmailCapture />
+
+      <a
+        href="mailto:travelingcircusofurbanism@gmail.com"
+        class="nounderline button full"
+        >メールを送る</a
+      >
     </div>
 
     <template v-else>
       <h1 class="title">Contribute</h1>
       <p>
-        Traveling Circus of Urbanism is always looking to collaborate with city enthusiasts across the world, to collect stories, knowledge, and insights for a better understanding of cities. If you are an urbanist who's passionate about cities and you're interested in collaborating, please submit your contribution by sending us an
-        <a
-          href="mailto:travelingcircusofurbanism@gmail.com"
-        >email</a>.
+        Traveling Circus of Urbanism is always looking to collaborate with city
+        enthusiasts across the world, to collect stories, knowledge, and
+        insights for a better understanding of cities. If you are an urbanist
+        who's passionate about cities and you're interested in collaborating,
+        please send us an
+        <a href="mailto:travelingcircusofurbanism@gmail.com">email</a>.
       </p>
 
-      <p>We are interested in any stories that deal with the theme of ‘the city’. They could be personal, observational, or documentations of reality. We’re interested in the projects and research you’ve been involved with, the things that represent your life in the city, the things you love or are resentful of in your city, and any other topics that are helpful to get a glimpse of your city.</p>
+      <p>
+        We are interested in any stories that deal with the theme of ‘the city’.
+        They could be personal, observational, or documentations of reality.
+        We’re interested in the projects and research you’ve been involved with,
+        the things that represent your life in the city, the things you love or
+        are resentful of in your city, and any other topics that are helpful to
+        get a glimpse of your city.
+      </p>
 
       <p>
         The contribution guideline is
         <a
           href="/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf"
           target="_blank"
-        >here</a>, and if you have any questions, whether about the writing style, topics, etc, please don’t hesitate to
-        <a
-          href="mailto:travelingcircusofurbanism@gmail.com"
-        >drop us a line</a>! We usually reply within a week.
+          >here</a
+        >, and if you have any questions, whether about the writing style,
+        topics, etc, please don’t hesitate to
+        <a href="mailto:travelingcircusofurbanism@gmail.com">drop us a line</a>!
+        We usually reply within a week.
       </p>
+
+      <EmailCapture />
 
       <p>
         <b>
           Email:
-          <a
-            href="mailto:travelingcircusofurbanism@gmail.com"
-          >travelingcircusofurbanism@gmail.com</a>
+          <a href="mailto:travelingcircusofurbanism@gmail.com"
+            >travelingcircusofurbanism@gmail.com</a
+          >
         </b>
       </p>
       <p>
@@ -50,7 +69,8 @@
           <a
             href="https://www.facebook.com/travelingcircusofurbanism/"
             target="_blank"
-          >https://www.facebook.com/travelingcircusofurbanism/</a>
+            >https://www.facebook.com/travelingcircusofurbanism/</a
+          >
         </b>
       </p>
     </template>
@@ -59,6 +79,7 @@
 </template>
 
 <script>
+import EmailCapture from '~/components/EmailCapture'
 import ContentFooter from '~/components/Footer'
 export default {
   head() {
@@ -76,7 +97,7 @@ export default {
       ],
     }
   },
-  components: { ContentFooter },
+  components: { ContentFooter, EmailCapture },
   computed: {
     displayLanguage() {
       return this.$i18n.locale

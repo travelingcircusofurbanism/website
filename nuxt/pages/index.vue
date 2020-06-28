@@ -27,6 +27,10 @@
               Traveling Circus of
               Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。
             </p>
+            <p class="sub">
+              Traveling Circus of
+              Urbanismは、英語が中心のメディアです。日本語にはないコンテンツも沢山あるので、興味がある方は、ぜひ英語版も覗いてみてください。
+            </p>
             <p class="buttons">
               <span class="button whitehover">記事を読む</span>
               <span class="button whitehover">記事を書く</span>
@@ -73,6 +77,10 @@
             <p>
               Traveling Circus of
               Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。
+            </p>
+            <p class="sub">
+              Traveling Circus of
+              Urbanismは、英語が中心のメディアです。日本語にはないコンテンツも沢山あるので、興味がある方は、ぜひ英語版も覗いてみてください。
             </p>
             <p class="buttons">
               <span class="button whitehover" @click="exploreToggle"
@@ -338,6 +346,12 @@ export default {
       padding: 0 $content-padding-mobile;
       max-width: $unit * 100 + $content-padding-mobile * 2;
     }
+  }
+
+  .introcontent .sub {
+    opacity: 0.9;
+    font-weight: 500;
+    font-size: 0.85em;
   }
 
   .explorecontent {

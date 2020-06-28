@@ -1,64 +1,51 @@
 <template>
-  <!-- JPY -->
-  <form
-    action="https://www.paypal.com/cgi-bin/webscr"
-    method="post"
-    target="_blank"
-    :class="{fullwidth: isButton}"
-  >
-    <input type="hidden" name="cmd" value="_s-xclick" />
-    <input
-      type="hidden"
-      name="hosted_button_id"
-      :value="displayLanguage === 'ja' ? 'MM4R7DRB7AF8Q' : 'GEQXLFP5ER8GA'"
-    />
-    <div class="visiblebuycontent" :class="{inline: !isButton, fakeLink: !isButton }">
-      <slot>
-        <button class="button blue" type="submit">
-          <span
-            class="cta"
-          >{{ buttonText || (displayLanguage === 'ja' ? '今すぐ購入' : 'Get your copy!')}}</span>
-        </button>
-        <div
-          class="price"
-        >{{displayLanguage === 'ja' ? '￥800 送料込 (Paypalで支払う)' : '$8 USD, worldwide shipping included. (Payment through Paypal)'}}</div>
-      </slot>
+  <div class="buybutton">
+    <div v-if="!paypalBuyId && !paypalBuyIdJa">
+      Sorry, this is sold out for now! Check back later.
     </div>
-    <!-- <input
-      type="image"
-      src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif"
-      border="0"
-      name="submit"
-      alt="PayPal - The safer, easier way to pay online!"
-    />-->
-    <img
-      alt
-      border="0"
-      src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
-      width="1"
-      height="1"
-    />
-  </form>
-
-  <!--<div
-    :class="{inline: !isButton, fakeLink: !isButton, center: isButton }"
-    class="snipcart-add-item"
-    data-item-id="1"
-    data-item-name="Zine Vol 0"
-    :data-item-price="prices"
-    data-item-url="https://www.travelingcircusofurbanism.com/zine"
-    data-item-description="TCU Zine Volume 0: Thesis"
-    data-item-image="/assets/zine/hero.jpg"
-  >
-    <slot>
-      <div class="button blue">
-        <span class="cta">{{ buttonText || (displayLanguage === 'ja' ? '今すぐ購入' : 'Get your copy!')}}</span>
-      </div>
+    <form
+      v-else
+      action="https://www.paypal.com/cgi-bin/webscr"
+      method="post"
+      target="_blank"
+      :class="{ fullwidth: isButton }"
+    >
+      <input type="hidden" name="cmd" value="_s-xclick" />
+      <input
+        type="hidden"
+        name="hosted_button_id"
+        :value="displayLanguage === 'ja' ? paypalBuyIdJa : paypalBuyId"
+      />
       <div
-        class="price"
-      >{{displayLanguage === 'ja' ? '￥800（送料込）' : '$8 USD (Worldwide shipping included)'}}</div>
-    </slot>
-  </div>-->
+        class="visiblebuycontent"
+        :class="{ inline: !isButton, fakeLink: !isButton }"
+      >
+        <slot>
+          <button class="button blue" type="submit">
+            <span class="cta">{{
+              buttonText ||
+              (displayLanguage === 'ja' ? '今すぐ購入' : 'Get your copy!')
+            }}</span>
+          </button>
+          <div class="price">
+            {{
+              displayLanguage === 'ja'
+                ? '￥800 送料込 (Paypalで支払う)'
+                : '$8 USD, worldwide shipping included. (Payment through Paypal)'
+            }}
+          </div>
+        </slot>
+      </div>
+
+      <img
+        alt
+        border="0"
+        src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif"
+        width="1"
+        height="1"
+      />
+    </form>
+  </div>
 </template>
 
 <script>
@@ -68,27 +55,29 @@ export default {
       default: true,
     },
     buttonText: {},
+    paypalBuyId: {},
+    paypalBuyIdJa: {},
   },
   data() {
-    return {
-      // prices: `{"usd": 8, "jpy":800}`,
-    }
+    return {}
   },
   computed: {
     displayLanguage() {
       return this.$i18n.locale
     },
   },
-  mounted() {
-    // if (this.displayLanguage === 'ja') Snipcart.api.cart.currency('jpy')
-    // else Snipcart.api.cart.currency('usd')
-  },
+  mounted() {},
   methods: {},
 }
 </script>
 
 <style scoped lang="scss">
 @import '~/assets/variables.scss';
+
+.buybutton {
+  display: inline-block;
+  margin: 0 auto;
+}
 
 form {
   display: inline-block;
