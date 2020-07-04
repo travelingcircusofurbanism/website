@@ -10,18 +10,31 @@
             <img src="~/static/assets/logo vert blue.svg" alt="logo" />
           </nuxt-link>
         </div>
+
         <div class="listentry">
-          <nuxt-link class="listlink" :to="localePath('about')" @click.native="close">About</nuxt-link>
+          <nuxt-link
+            class="listlink"
+            :to="localePath('about')"
+            @click.native="close"
+            >About</nuxt-link
+          >
         </div>
         <div class="listentry">
           <nuxt-link
             class="listlink"
             :to="localePath('getinvolved')"
             @click.native="close"
-          >Get Involved</nuxt-link>
+            >Get Involved</nuxt-link
+          >
         </div>
         <div class="listentry">
-          <nuxt-link class="listlink" :to="localePath('zine')" @click.native="close">Zine</nuxt-link>
+          <a
+            href="https://travelingurbanism.stores.jp/"
+            class="listlink"
+            target="_blank"
+            @click.native="close"
+            >Zines</a
+          >
         </div>
 
         <div class="listentry">
@@ -30,7 +43,8 @@
             :to="switchLocalePath('en')"
             v-if="$i18n.locale === 'ja'"
             @click.native="close"
-          >English Site</nuxt-link>
+            >English Site</nuxt-link
+          >
         </div>
         <div class="listentry">
           <nuxt-link
@@ -38,38 +52,73 @@
             :to="switchLocalePath('ja')"
             v-if="$i18n.locale === 'en'"
             @click.native="close"
-          >日本語サイト</nuxt-link>
+            >日本語サイト</nuxt-link
+          >
+        </div>
+        <div class="listentry">
+          <div class="listlink">
+            <a
+              class="thumb"
+              href="https://www.instagram.com/mariko_urbannomad/"
+              target="_blank"
+            >
+              <img src="~/assets/icons/instagram.svg" alt="Instagram" />
+            </a>
+            <a
+              class="thumb"
+              href="https://www.facebook.com/travelingcircusofurbanism/"
+              target="_blank"
+            >
+              <img
+                class="facebook"
+                src="~/assets/icons/facebook.svg"
+                alt="Facebook"
+              />
+            </a>
+          </div>
         </div>
 
         <div class="listsectionlabel">Categories</div>
-        <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
+        <div
+          class="listentry"
+          v-for="(element, key) in orderedCategories"
+          :key="'cat' + key"
+        >
           <nuxt-link
             class="listlink"
-            :to="localePath({
-            name: 'is-category',
-            params: { category: element.label},
-          })"
+            :to="
+              localePath({
+                name: 'is-category',
+                params: { category: element.label },
+              })
+            "
             @click.native="close"
           >
-            {{capitalize(element.label)}}
+            {{ capitalize(element.label) }}
             <span class="sub">
-              <span class="sub">{{element.count}}</span>
+              <span class="sub">{{ element.count }}</span>
             </span>
           </nuxt-link>
         </div>
         <div class="listsectionlabel">Cities</div>
-        <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
+        <div
+          class="listentry"
+          v-for="(element, key) in orderedCities"
+          :key="'cit' + key"
+        >
           <nuxt-link
             class="listlink"
-            :to="localePath({
-            name: 'city',
-            params: { city: element.label.replace(/\//g, '%2F')},
-          })"
+            :to="
+              localePath({
+                name: 'city',
+                params: { city: element.label.replace(/\//g, '%2F') },
+              })
+            "
             @click.native="close"
           >
-            {{capitalize(element.label)}}
+            {{ capitalize(element.label) }}
             <span class="sub">
-              <span class="sub">{{element.count}}</span>
+              <span class="sub">{{ element.count }}</span>
             </span>
           </nuxt-link>
         </div>
@@ -201,6 +250,22 @@ $overlaybg: rgba($text, 1);
       @include width(mobile) {
         padding: $unit $unit * 4 $unit $unit * 10;
       }
+    }
+  }
+}
+
+.thumb {
+  padding: $unit * 1.8 $content-padding-mobile / 5;
+  margin-right: $unit * 2;
+
+  img {
+    height: 1.15em;
+    position: relative;
+    top: 0.3em;
+
+    &.facebook {
+      height: 1.02em;
+      top: 0.25em;
     }
   }
 }

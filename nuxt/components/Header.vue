@@ -21,33 +21,50 @@
       exact
       :to="localePath('index')"
       class="logo"
-      :class="{hasshadow: !canvasImage}"
+      :class="{ hasshadow: !canvasImage }"
       @click.native="resetView"
     >
       <img src="/assets/logo.svg" alt="logo" />
-      <!-- <h3
-        class="tagline"
-        v-if="$i18n.locale === 'en'"
-      >Urban narratives and practices, collected through traveling</h3>
-      <h3 class="tagline ja" v-else>旅先から集めた、世界の都市の事例と物語</h3>-->
     </nuxt-link>
     <br />
-    <div class="sublinks" :class="{hasshadow: false && !canvasImage}" v-if="!isMobile">
-      <nuxt-link :to="localePath('about')" :class="{ currentpage: path === '/about' }">About</nuxt-link>
+    <div
+      class="sublinks"
+      :class="{ hasshadow: false && !canvasImage }"
+      v-if="!isMobile"
+    >
+      <nuxt-link
+        :to="localePath('about')"
+        :class="{ currentpage: path === '/about' }"
+        >About</nuxt-link
+      >
       <nuxt-link
         :to="localePath('contribute')"
         :class="{ currentpage: path === '/contribute' }"
-      >Contribute</nuxt-link>
-      <nuxt-link :to="localePath('zine')" :class="{ currentpage: path === '/zine' }">Zine</nuxt-link>
+        >Contribute</nuxt-link
+      >
+      <a href="https://travelingurbanism.stores.jp/" target="_blank">Zines</a>
       <nuxt-link
         :to="localePath('bridgeto')"
         :class="{ currentpage: path === '/bridgeto' }"
-      >Residency</nuxt-link>
-      <a class="thumb" href="/" target="_blank">
+        >Residency</nuxt-link
+      >
+      <a
+        class="thumb"
+        href="https://www.instagram.com/mariko_urbannomad/"
+        target="_blank"
+      >
         <img src="~/assets/icons/instagramblack.svg" alt="Instagram" />
       </a>
-      <a class="thumb" href="https://www.facebook.com/travelingcircusofurbanism/" target="_blank">
-        <img class="facebook" src="~/assets/icons/facebookblack.svg" alt="Facebook" />
+      <a
+        class="thumb"
+        href="https://www.facebook.com/travelingcircusofurbanism/"
+        target="_blank"
+      >
+        <img
+          class="facebook"
+          src="~/assets/icons/facebookblack.svg"
+          alt="Facebook"
+        />
       </a>
     </div>
   </div>
@@ -291,8 +308,8 @@ a:active {
       top: -0.08em;
 
       &.facebook {
-        height: 1.05em;
-        top: -0.03em;
+        // height: 1.05em;
+        // top: -0.03em;
       }
     }
   }
