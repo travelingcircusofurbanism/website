@@ -23,7 +23,7 @@
     "figures": "^3.0.0",
     "mapbox-gl": "^1.2.1",
     "markdown-it": "^9.1.0",
-    "node-sass": "^4.12.0",
+    "node-sass": "^4.13.1",
     "nuxt": "^2.8.1",
     "nuxt-generate-cluster": "^2.6.0",
     "nuxt-i18n": "^6.0.1",
