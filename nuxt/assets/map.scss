@@ -8,9 +8,6 @@ $basemarkercolor: white; //hsl(255, 0, 45);
 $mapshadowcolor: $text;
 $singlehighlightcolor: $activelight;
 
-#map {
-}
-
 .mapboxgl-canvas {
   filter: brightness(0.6); //saturate(2);
 }
@@ -29,8 +26,8 @@ $singlehighlightcolor: $activelight;
   user-select: none;
   color: white;
   $shadow: rgba($mapshadowcolor, 0.15);
-  text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow,
-    0 2px 12px $shadow, 0 -2px 12px $shadow, -2px 0 12px $shadow;
+  text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+    0 -2px 12px $shadow, -2px 0 12px $shadow;
   font-weight: $maplabelfontweight;
   font-size: $mapwordsfontsize;
   letter-spacing: 0.8px;
@@ -66,6 +63,8 @@ $singlehighlightcolor: $activelight;
   z-index: 100;
   display: inline-block;
   position: absolute;
+  top: 0;
+  left: 0;
   font-size: 1.05em;
   pointer-events: none;
   user-select: none;
@@ -99,8 +98,8 @@ $singlehighlightcolor: $activelight;
     transform: translateX(-50%) translateY($unit * 3.5);
     color: $basemarkercolor;
     $shadow: rgba($mapshadowcolor, 0.7);
-    text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow,
-      0 2px 12px $shadow, 0 -2px 12px $shadow, -2px 0 12px $shadow;
+    text-shadow: 0 0 12px $shadow, 2px 0 12px $shadow, 0 2px 12px $shadow,
+      0 -2px 12px $shadow, -2px 0 12px $shadow;
     font-weight: $maplabelfontweight;
     font-size: $mapwordsfontsize;
     letter-spacing: 0.8px;
@@ -114,8 +113,8 @@ $singlehighlightcolor: $activelight;
   &:hover {
     cursor: pointer;
     $shadow: rgba($mapshadowcolor, 0.7);
-    text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow,
-      0 2px 16px $shadow, 0 -2px 16px $shadow, -2px 0 16px $shadow;
+    text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow, 0 2px 16px $shadow,
+      0 -2px 16px $shadow, -2px 0 16px $shadow;
   }
 
   &.highlight,
@@ -146,8 +145,35 @@ $singlehighlightcolor: $activelight;
   }
 }
 
+.maplink {
+  .text {
+    & > * {
+      display: inline-block;
+    }
+
+    &:after {
+      display: inline-block;
+      content: '';
+      background-image: url('data:image/svg+xml;charset=UTF-8,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H14V8L12 7V3.92L6.4 9.51L4.99 8.1L11.08 2H7L6 0ZM9 12V9L11 7V14H0V3H8L6 5H2V12H9Z" fill="white"/></svg>');
+      position: relative;
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 14px;
+      height: 14px;
+    }
+  }
+
+  &:hover .text {
+    &:after {
+      mask-image: url('data:image/svg+xml;charset=UTF-8,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 0H14V8L12 7V3.92L6.4 9.51L4.99 8.1L11.08 2H7L6 0ZM9 12V9L11 7V14H0V3H8L6 5H2V12H9Z" fill="white"/></svg>');
+      background: $active;
+    }
+  }
+}
+
 .cluster {
-  position: relative;
+  position: absolute;
   top: $unit * -7;
 
   .text {
@@ -177,8 +203,8 @@ $singlehighlightcolor: $activelight;
 
     span {
       $shadow: rgba($mapshadowcolor, 0.8);
-      text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow,
-        0 2px 16px $shadow, 0 -2px 16px $shadow, -2px 0 16px $shadow;
+      text-shadow: 0 0 16px $shadow, 2px 0 16px $shadow, 0 2px 16px $shadow,
+        0 -2px 16px $shadow, -2px 0 16px $shadow;
     }
   }
 

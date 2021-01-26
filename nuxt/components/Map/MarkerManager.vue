@@ -26,7 +26,10 @@ export default {
     // generates GeoJSON point data from unique locations
     uniqueMarkerLocationsAsGeoJSONObjects() {
       return this.markerLocationsToGeoJSONObjects(
-        this.getUniqueLocations(this.$store.state.mapMarkers)
+        this.getUniqueLocations([
+          ...this.$store.state.mapMarkers,
+          ...(this.$store.state.links || []),
+        ]),
       )
     },
   },
@@ -93,7 +96,7 @@ export default {
       ]
       const clusters = this.clusterer.getClusters(
         bounds,
-        Math.round(this.map.getZoom())
+        Math.round(this.map.getZoom()),
       )
       const clustersWithExtraData = clusters.map(marker => ({
         ...marker,
@@ -131,6 +134,7 @@ export default {
           },
           properties: {
             location: marker[0].location,
+            url: marker[0].url,
           },
         })
       }

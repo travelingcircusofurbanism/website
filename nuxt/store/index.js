@@ -3,6 +3,7 @@ const { MDYToDate } = require('~/assets/commonFunctions.js')
 export const state = () => ({
   allPosts: [],
   currentShowablePosts: [],
+  links: [],
   locations: [],
   tags: [],
   mapMarkers: [],
@@ -71,11 +72,14 @@ export const mutations = {
     state.isDev = isDev
     state.viewingAsDev = isDev
   },
-  setViewingAsDev: (state, viewingAsDev) =>
-    (state.viewingAsDev = viewingAsDev),
+  setViewingAsDev: (state, viewingAsDev) => (state.viewingAsDev = viewingAsDev),
 
   setLightboxSrc(state, src) {
     state.lightboxSrc = src
+  },
+
+  setLinks(state, arr) {
+    state.links = arr
   },
 
   setMobileSearchSelectorIsOpen(state, isOpen) {
@@ -97,9 +101,9 @@ export const mutations = {
           .reduce(
             (allTags, post) =>
               post.tags ? allTags.concat(post.tags) : allTags,
-            []
+            [],
           )
-          .map(t => t.toLowerCase())
+          .map(t => t.toLowerCase()),
       ),
     ]
   },
@@ -108,7 +112,7 @@ export const mutations = {
     state.mapMarkers = parseMapPositionObjectsFromAnything(postData)
     state.locations = [
       ...new Set(
-        state.mapMarkers.map(marker => marker.location).filter(m => m)
+        state.mapMarkers.map(marker => marker.location).filter(m => m),
       ),
     ]
   },
@@ -116,19 +120,15 @@ export const mutations = {
   setPolygons(state, postObjects) {
     const polygons = postObjects.reduce(
       (allPolygons, post) =>
-        post.polygons
-          ? allPolygons.concat(post.polygons)
-          : allPolygons,
-      []
+        post.polygons ? allPolygons.concat(post.polygons) : allPolygons,
+      [],
     )
     state.mapPolygons = polygons || []
   },
 
   setViewPolygons(state, polygons) {
     if (polygons)
-      state.currentView = state.currentView.concat(
-        polygonsBounds(polygons)
-      )
+      state.currentView = state.currentView.concat(polygonsBounds(polygons))
   },
 
   setPosts(state, posts) {
@@ -146,6 +146,9 @@ export const actions = {
     commit('setDev', !process.static)
     commit('setPosts', posts)
     dispatch('updateShowablePosts')
+
+    const links = require('~/../links/links.js')
+    commit('setLinks', links)
   },
 
   resetPosts({ commit, state, dispatch }) {
@@ -166,7 +169,7 @@ export const actions = {
           // only show public posts
           p.public[state.i18n.locale] === true &&
           // only show posts that are published in the past
-          MDYToDate(p.date).getTime() < new Date().getTime())
+          MDYToDate(p.date).getTime() < new Date().getTime()),
     )
     if (state.currentShowablePosts === showablePosts) return
     commit('setCurrentShowablePosts', showablePosts)
@@ -186,13 +189,9 @@ function parseLocationNames(source) {
     source = [].concat.apply(
       [],
       [
-        ...source
-          .map(post => post.mapPosition)
-          .filter(position => position),
-        ...source
-          .map(post => post.polygons)
-          .filter(position => position),
-      ]
+        ...source.map(post => post.mapPosition).filter(position => position),
+        ...source.map(post => post.polygons).filter(position => position),
+      ],
     )
   // then grab just the names
   source = source
@@ -202,7 +201,7 @@ function parseLocationNames(source) {
         (positionOrLocation instanceof String ||
         typeof positionOrLocation === 'string'
           ? positionOrLocation
-          : null)
+          : null),
     )
     .filter(locationName => locationName)
   // then return only unique names
@@ -267,20 +266,16 @@ function polygonsBounds(polygons) {
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(
-                polygon.coordinates.map(coord => coord[0])
-              ),
-            []
-          )
+              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+            [],
+          ),
         ),
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(
-                polygon.coordinates.map(coord => coord[1])
-              ),
-            []
-          )
+              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+            [],
+          ),
         ),
       ],
     },
@@ -290,20 +285,16 @@ function polygonsBounds(polygons) {
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(
-                polygon.coordinates.map(coord => coord[0])
-              ),
-            []
-          )
+              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+            [],
+          ),
         ),
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(
-                polygon.coordinates.map(coord => coord[1])
-              ),
-            []
-          )
+              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+            [],
+          ),
         ),
       ],
     },

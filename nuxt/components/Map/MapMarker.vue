@@ -34,6 +34,9 @@ export default {
     isCluster() {
       return this.markerData.properties.cluster ? true : false
     },
+    isLink() {
+      return this.markerData.properties.url ? true : false
+    },
     isMobile() {
       return this.$store.state.isMobile
     },
@@ -45,7 +48,7 @@ export default {
         for (let n of newHighlight) {
           if (
             this.locationsInMarker.find(
-              l => l.toLowerCase() === n.toLowerCase()
+              l => l.toLowerCase() === n.toLowerCase(),
             )
           )
             return 'highlight'
@@ -108,6 +111,7 @@ export default {
       this.markerElement.className =
         (this.isCluster ? 'cluster' : 'marker') +
         ' ' +
+        (this.isLink ? 'maplink ' : '') +
         this.highlight +
         ' ' +
         this.doubleHighlight
@@ -130,15 +134,16 @@ export default {
             (intensity + 1)) *
           maxDiameter
         pinElement.style.cssText = `width: ${diameter}px; height: ${diameter}px;`
-        pinElement.innerHTML = `<span>${points}</span>`
+        pinElement.innerHTML = `<div>${points}</div>`
         textElements.push(document.createTextNode(points))
       } else {
         const lines = this.softSplitStringEveryXCharacters(
           this.markerData.properties.location,
-          8
+          8,
         )
         lines.forEach(string => {
           const newDiv = document.createElement('div')
+          newDiv.style.cssText = `margin-right: 0.3em; display: inline-block;`
           newDiv.appendChild(document.createTextNode(string))
           textElements.push(newDiv)
         })
@@ -149,6 +154,7 @@ export default {
       this.markerElement.addEventListener('click', e => {
         this.$store.commit('setPan', false)
         if (this.isCluster) this.zoomIntoCluster()
+        else if (this.isLink) this.goToLink()
         else this.routeTo(this.markerData.properties.location)
       })
     },
@@ -181,13 +187,20 @@ export default {
           this.localePath({
             name: 'at-location',
             params: { location: encodeURIComponent(location).toLowerCase() },
-          })
+          }),
         )
+    },
+
+    goToLink() {
+      Object.assign(document.createElement('a'), {
+        target: '_blank',
+        href: this.markerData.properties.url,
+      }).click()
     },
 
     zoomIntoCluster() {
       let children = this.clusterer.getChildren(
-        this.markerData.properties.cluster_id
+        this.markerData.properties.cluster_id,
       )
       while (children.length < 2) {
         // weed out any single cluster responses
@@ -205,7 +218,10 @@ export default {
           if (c[1] < bottom) bottom = c[1] // min y
           if (c[0] < left) left = c[0] // min x
         })
-      const newBounds = [[left, bottom], [right, top]]
+      const newBounds = [
+        [left, bottom],
+        [right, top],
+      ]
       // const centerPoint = children
       //   .map(c => c.geometry.coordinates)
       //   .reduce(
