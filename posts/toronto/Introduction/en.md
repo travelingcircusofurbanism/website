@@ -1,5 +1,5 @@
 
-# The urbanist's guide to Toronto
+# Urbanist's guide to Toronto
 
 ![](toronto01.jpg)
 *Photo by Ali Tawfiq on Unsplash*

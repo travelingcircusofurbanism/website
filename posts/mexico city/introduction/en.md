@@ -1,4 +1,4 @@
-# Urbanist guide to Mexico City
+# Urbanist's guide to Mexico City
 
 ![](priscilla-flores-659078-unsplash.jpg)
 **Photo by Priscilla Flores on Unsplash**
