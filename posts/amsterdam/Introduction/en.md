@@ -36,13 +36,13 @@ I've moved to Amsterdam from Kyoto last year, in midst of the pandemic. It's bee
 
 - I visited a beautiful community garden run by [I can change the world with my two hands](https://www.icanchangetheworldwithmytwohands.nl/) in the western part of Amsterdam. I even became a member, and I bring my organic waste once in a while to their compost station, There are many urban gardening initiative out there in Amsterdam, but I believe this is one of the most open, participatory projects run by a strong, highky motivated community. 
 
-- [Waag](https://waag.org/en/home) and [Citizen Science Lab]()
+- [Waag](https://waag.org/en/home) operates at the intersection of science, technology and the arts, and one of their initiative [Smart Citizens Lab](https://waag.org/en/lab/smart-citizens-lab) works with citizens, scientists and designers to tackle environmental issues. 
 
-- [Placemakers](https://placemakers.nl/en/)
+- [Placemakers](https://placemakers.nl/en/) is an interdisciplinary and creative team for urban activation.
 
-- [What Design Can Do](https://www.whatdesigncando.com/)
+- [What Design Can Do](https://www.whatdesigncando.com/) is an international platform that uses design as a tool for ecological and social change. 
 
-- [Pop Up City](https://popupcity.net/)
+- [Pop Up City](https://popupcity.net/) is an agency for urban transformation based in Amsterdam. They are good at branding, content creation, and concept development.
 
 - I live in a boathouse in the Amsterdam West, so I observe the canal water everyday - and it makes me feel deeply sad to see that there are often a lot of plastic trash floating. This is how I discovered [Plastic Whale](https://plasticwhale.com/), the first plastic fishing company in the world. They collect plastic from the canal with boats, and recycle them to make the products with them. They offer various packages for companies to organise a plastic finishing, and 450 different companies have already gone plastic fishing with then. 
 
