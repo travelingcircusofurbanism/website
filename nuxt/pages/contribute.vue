@@ -7,10 +7,25 @@
       </h1>
       <p>
         Traveling Circus of
-        Urbanismでは、世界中の実践者からの寄稿を、随時受け付けています。自身の街の実践について、日英バイリンガルで国内外に発信したい方、取材をしてもらいたい、インタビューして欲しいなど、なんでもお気軽にご相談ください。
-        <!-- <a href="~static/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf" target="_blank">コントリビューションガイド</a>は用意してるので参考にしてください。 -->
-        コラボレーションのアイデアもお待ちしています！
+        Urbanismでは、世界中の実践者からの寄稿を、随時受け付けています。自身の街の実践について、日英バイリンガルで国内外に発信したい方、取材をしてもらいたい、インタビューして欲しいなど、なんでもお気軽にご連絡ください。
+
+        コラボレーションのアイデアもお待ちしています！メールは<a href="mailto:travelingcircusofurbanism@gmail.com">こちら</a>まで。
       </p>
+
+      <h3>
+  エッセイを寄稿する
+</h3>
+<p>
+
+都市・建築・まちづくりに関するさまざまな記事の寄稿を受け付けています。学術的な内容でも、主観を織り交ぜたエッセイでも、あなたの街のおすすめスポットの紹介など、形式は問いません。英語・日本語どちらの言語でも受け付けています。コントリビューションガイドは<a href="~static/assets/Traveling-Circus-of-Urbanism-Contribution-Guideline.pdf" target="_blank">こちら（英語）</a>。
+</p>
+
+<h3>
+  リンクを投稿する
+</h3>
+<p>
+  Traveling Circus of Urbanismでは、都市に関する世界中のプロジェクトやニュースが地図上で閲覧できるようになっています。記事を書くのは難しいければど、地図上でプロジェクトの紹介をしたいという場合は、HPのリンクを<a href="mailto:travelingcircusofurbanism@gmail.com">メール</a>にてご送付ください。HPへ移行するロケーションピンをTraveling Circus of Urbanismの地図上に追加します。
+</p>
 
       <EmailCapture />
 
@@ -32,13 +47,16 @@
         <a href="mailto:travelingcircusofurbanism@gmail.com">email</a>.
       </p>
 
+<h3>
+  Send us your essays
+</h3>
       <p>
         We are interested in any stories that deal with the theme of ‘the city’.
         They could be personal, observational, or documentations of reality.
         We’re interested in the projects and research you’ve been involved with,
         the things that represent your life in the city, the things you love or
         are resentful of in your city, and any other topics that are helpful to
-        get a glimpse of your city.
+        get a glimpse of your city. If you want to promote an article that has been already published somewhere, simply send us a link.
       </p>
 
       <p>
@@ -52,6 +70,14 @@
         <a href="mailto:travelingcircusofurbanism@gmail.com">drop us a line</a>!
         We usually reply within a week.
       </p>
+
+<h3>
+  Send us links to your projects 
+</h3>
+
+<p>
+Traveling Circus of Urbanism provides a world map of stories, initiatives, and happeningd around the theme of urbanism. If you want your project to be included in the map but don't have the time to write a whole article, please
+        <a href="mailto:travelingcircusofurbanism@gmail.com">email us a link</a> to your website explaining the project. We'll create a location pin on the map that goes to your website. </p>
 
       <EmailCapture />
 
