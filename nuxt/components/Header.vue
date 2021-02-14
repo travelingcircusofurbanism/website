@@ -48,6 +48,11 @@
         :class="{ currentpage: path === '/bridgeto' }"
         >Residency</nuxt-link
       >
+      <nuxt-link
+        :to="localePath('work')"
+        :class="{ currentpage: path === '/work' }"
+        >Work</nuxt-link
+      >
       <a
         class="thumb"
         href="https://www.instagram.com/mariko_urbannomad/"
@@ -247,7 +252,7 @@ a:active {
 
   & > a {
     text-align: center;
-    padding: $unit * 1.8 $content-padding / 2.7;
+    padding: $unit * 1.8 $content-padding / 3.5;
     position: relative;
     display: inline-block;
     white-space: nowrap;

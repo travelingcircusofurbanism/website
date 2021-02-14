@@ -13,7 +13,7 @@
 
         <div class="listentry">
           <nuxt-link
-            class="listlink"
+            class="listlink noleftpad"
             :to="localePath('about')"
             @click.native="close"
             >About</nuxt-link
@@ -21,25 +21,41 @@
         </div>
         <div class="listentry">
           <nuxt-link
-            class="listlink"
-            :to="localePath('getinvolved')"
+            class="listlink noleftpad"
+            :to="localePath('contribute')"
             @click.native="close"
-            >Get Involved</nuxt-link
+            >Contribute</nuxt-link
           >
         </div>
         <div class="listentry">
           <a
             href="https://travelingurbanism.stores.jp/"
-            class="listlink"
+            class="listlink noleftpad"
             target="_blank"
-            @click.native="close"
+            @click="close"
             >Zines</a
+          >
+        </div>
+        <div class="listentry">
+          <nuxt-link
+            class="listlink noleftpad"
+            :to="localePath('bridgeto')"
+            @click.native="close"
+            >Residency</nuxt-link
+          >
+        </div>
+        <div class="listentry">
+          <nuxt-link
+            class="listlink noleftpad"
+            :to="localePath('work')"
+            @click.native="close"
+            >Work</nuxt-link
           >
         </div>
 
         <div class="listentry">
           <nuxt-link
-            class="listlink"
+            class="listlink  noleftpad"
             :to="switchLocalePath('en')"
             v-if="$i18n.locale === 'ja'"
             @click.native="close"
@@ -48,7 +64,7 @@
         </div>
         <div class="listentry">
           <nuxt-link
-            class="listlink"
+            class="listlink  noleftpad"
             :to="switchLocalePath('ja')"
             v-if="$i18n.locale === 'en'"
             @click.native="close"
@@ -56,7 +72,7 @@
           >
         </div>
         <div class="listentry">
-          <div class="listlink">
+          <div class="listlink  noleftpad">
             <a
               class="thumb"
               href="https://www.instagram.com/mariko_urbannomad/"
@@ -249,6 +265,10 @@ $overlaybg: rgba($text, 1);
 
       @include width(mobile) {
         padding: $unit $unit * 4 $unit $unit * 10;
+      }
+
+      &.noleftpad {
+        padding-left: $unit * 3;
       }
     }
   }
