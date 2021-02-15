@@ -7,7 +7,7 @@
   "scripts": {
     "analyze": "nuxt build -a",
     "cleanup": "rm -rf docs",
-    "deploysite": "push-dir --dir=docs --branch=gh-pages --cleanup --force --verbose",
+    "deploysite": "git subtree push --prefix docs origin gh-pages",
     "dev": "nuxt",
     "g": "npm run generate",
     "generate": "nuxt-generate -b && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",

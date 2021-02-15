@@ -3,6 +3,7 @@ const os = require('os')
 let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
 
 module.exports = {
+  telemetry: false,
   srcDir: 'nuxt/',
   loading: false,
   hooks: {
@@ -116,17 +117,17 @@ module.exports = {
     routes: () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(
         post =>
-          post.preview || (post.public.ja === true || post.public.en === true)
+          post.preview || post.public.ja === true || post.public.en === true,
       )
       const cities = require('./nuxt/static/generated/cities.json')
       const locations = require('./nuxt/static/generated/locations.json').map(
-        l => encodeURIComponent(l)
+        l => encodeURIComponent(l),
       )
       const tags = require('./nuxt/static/generated/tags.json').map(t =>
-        encodeURIComponent(t)
+        encodeURIComponent(t),
       )
       const categories = require('./nuxt/static/generated/categories.json').map(
-        c => encodeURIComponent(c)
+        c => encodeURIComponent(c),
       )
 
       return [
@@ -135,12 +136,12 @@ module.exports = {
         ...cities.map(c => `/ja/${c}`),
         ...posts
           .filter(
-            p => p.public.ja || p.public.en || (p.preview && p.languages.en)
+            p => p.public.ja || p.public.en || (p.preview && p.languages.en),
           )
           .map(p => `/${p.city}/${p.slug}`),
         ...posts
           .filter(
-            p => p.public.ja || p.public.en || (p.preview && p.languages.ja)
+            p => p.public.ja || p.public.en || (p.preview && p.languages.ja),
           )
           .map(p => `/ja/${p.city}/${p.slug}`),
         ...locations.map(l => `/at/${l}`),
@@ -181,18 +182,18 @@ module.exports = {
             return
           const content = fs.readFileSync(
             `./nuxt/static/posts/${post.url}/enRssContent.html`,
-            'utf-8'
+            'utf-8',
           )
           feed.addItem({
             title: post.title.en,
             id: encodeURI(post.url),
             link: encodeURI(
-              `https://www.travelingcircusofurbanism.com${post.url}`
+              `https://www.travelingcircusofurbanism.com${post.url}`,
             ),
             description: content,
             date: new Date(post.date),
             image: encodeURI(
-              `https://www.travelingcircusofurbanism.com${post.image}`
+              `https://www.travelingcircusofurbanism.com${post.image}`,
             ),
           })
         })
@@ -237,18 +238,18 @@ module.exports = {
             return
           const content = fs.readFileSync(
             `./nuxt/static/posts/${post.url}/jaRssContent.html`,
-            'utf-8'
+            'utf-8',
           )
           feed.addItem({
             title: post.title.ja,
             id: encodeURI(post.url),
             link: encodeURI(
-              `https://www.travelingcircusofurbanism.com/ja${post.url}`
+              `https://www.travelingcircusofurbanism.com/ja${post.url}`,
             ),
             description: content,
             date: new Date(post.date),
             image: encodeURI(
-              `https://www.travelingcircusofurbanism.com${post.image}`
+              `https://www.travelingcircusofurbanism.com${post.image}`,
             ),
           })
         })

@@ -174,9 +174,12 @@ import SectionHeader from '~/components/SectionHeader'
 export default {
   head() {
     return {
-      title: 'About',
+      title: 'Work',
       meta: [
-        { property: 'og:title', content: 'About Traveling Circus of Urbanism' },
+        {
+          property: 'og:title',
+          content: 'Work | Traveling Circus of Urbanism',
+        },
         {
           hid: 'description',
           name: 'description',
@@ -191,7 +194,7 @@ export default {
         },
         {
           property: 'og:url',
-          content: `https://www.travelingcircusofurbanism.com/about/`,
+          content: `https://www.travelingcircusofurbanism.com/work/`,
         },
       ],
     }
@@ -205,8 +208,8 @@ export default {
   created() {
     this.$store.commit('setBreadcrumbs', [
       {
-        label: 'About',
-        url: this.localePath('about'),
+        label: 'Work',
+        url: this.localePath('work'),
       },
     ])
   },
