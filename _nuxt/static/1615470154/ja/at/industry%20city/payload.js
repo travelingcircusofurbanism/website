@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/industry%20city", {data:[{posts:[],location:"industry city",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: industry city",url:"\u002Fja\u002Fat\u002Findustry%20city"}]]]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/bridgeto", {data:[{}],fetch:[],mutations:[["setBreadcrumbs",[{label:"Bridge To Kyoto",url:"\u002Fbridgeto"}]]]});

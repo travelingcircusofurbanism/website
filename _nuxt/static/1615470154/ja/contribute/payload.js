@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/contribute", {data:[{}],fetch:[],mutations:[["setBreadcrumbs",[{label:"contribute",url:"\u002Fja\u002Fcontribute"}]]]});
