@@ -9,13 +9,12 @@ const timeBetweenUpkeeps = 3000
 let timer
 
 module.exports = function() {
-  this.nuxt.hook('build:templates', upkeep)
-}
-
-const upkeep = () => {
   if (timer) return
-  timer = setTimeout(() => (timer = null), timeBetweenUpkeeps)
-  return new Promise(resolve => {
+  timer = setTimeout(
+    () => (timer = null),
+    timeBetweenUpkeeps,
+  )
+  return new Promise((resolve) => {
     buildListing().then(() => {
       makePaths()
       transformMarkdown()

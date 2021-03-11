@@ -7,32 +7,49 @@ module.exports = {
   srcDir: 'nuxt/',
   loading: false,
   hooks: {
-    ready: _nuxt => (nuxtInstance = _nuxt), // need this for generate:done hook for nuxt-generate-cluster
+    ready: (_nuxt) => (nuxtInstance = _nuxt), // need this for generate:done hook for nuxt-generate-cluster
   },
   css: ['./assets/main.scss'],
 
   head: {
     titleTemplate(titleChunk) {
       return (
-        (titleChunk ? titleChunk + ' | ' : '') + `Traveling Circus of Urbanism`
+        (titleChunk ? titleChunk + ' | ' : '') +
+        `Traveling Circus of Urbanism`
       )
     },
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: `og:type`, property: 'og:type', content: 'website' },
-      { property: 'og:site_name', content: 'Traveling Circus of Urbanism' },
+      {
+        name: 'viewport',
+        content: 'width=device-width, initial-scale=1',
+      },
+      {
+        hid: `og:type`,
+        property: 'og:type',
+        content: 'website',
+      },
+      {
+        property: 'og:site_name',
+        content: 'Traveling Circus of Urbanism',
+      },
       {
         hid: `og:image`,
         property: 'og:image',
         content: `https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg`,
       },
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
+    link: [
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: '/favicon.ico',
+      },
+    ],
   },
 
   modules: [
-    '~/modules/postprep',
+    '~/modules/postprep-hook',
     'nuxt-i18n',
     '@nuxtjs/feed',
     [
@@ -68,7 +85,7 @@ module.exports = {
   sitemap: {
     hostname: `https://www.travelingcircusofurbanism.com`,
     filter({ routes }) {
-      return routes.map(route => {
+      return routes.map((route) => {
         route.url = `${route.url.replace(/\/$/g, '')}/`
         return route
       })
@@ -114,42 +131,51 @@ module.exports = {
       await nuxtInstance.callHook('generate:done')
     },
 
-    routes: () => {
+    routes: async () => {
+      await require('./nuxt/modules/postprep')()
       const posts = require('./nuxt/static/generated/posts.json').filter(
-        post =>
-          post.preview || post.public.ja === true || post.public.en === true,
+        (post) =>
+          post.preview ||
+          post.public.ja === true ||
+          post.public.en === true,
       )
       const cities = require('./nuxt/static/generated/cities.json')
       const locations = require('./nuxt/static/generated/locations.json').map(
-        l => encodeURIComponent(l),
+        (l) => encodeURIComponent(l),
       )
-      const tags = require('./nuxt/static/generated/tags.json').map(t =>
-        encodeURIComponent(t),
+      const tags = require('./nuxt/static/generated/tags.json').map(
+        (t) => encodeURIComponent(t),
       )
       const categories = require('./nuxt/static/generated/categories.json').map(
-        c => encodeURIComponent(c),
+        (c) => encodeURIComponent(c),
       )
 
       return [
         // '404',
-        ...cities.map(c => `/${c}`),
-        ...cities.map(c => `/ja/${c}`),
+        ...cities.map((c) => `/${c}`),
+        ...cities.map((c) => `/ja/${c}`),
         ...posts
           .filter(
-            p => p.public.ja || p.public.en || (p.preview && p.languages.en),
+            (p) =>
+              p.public.ja ||
+              p.public.en ||
+              (p.preview && p.languages.en),
           )
-          .map(p => `/${p.city}/${p.slug}`),
+          .map((p) => `/${p.city}/${p.slug}`),
         ...posts
           .filter(
-            p => p.public.ja || p.public.en || (p.preview && p.languages.ja),
+            (p) =>
+              p.public.ja ||
+              p.public.en ||
+              (p.preview && p.languages.ja),
           )
-          .map(p => `/ja/${p.city}/${p.slug}`),
-        ...locations.map(l => `/at/${l}`),
-        ...locations.map(l => `/ja/at/${l}`),
-        ...tags.map(t => `/tag/${t}`),
-        ...tags.map(t => `/ja/tag/${t}`),
-        ...categories.map(c => `/is/${c}`),
-        ...categories.map(c => `/ja/is/${c}`),
+          .map((p) => `/ja/${p.city}/${p.slug}`),
+        ...locations.map((l) => `/at/${l}`),
+        ...locations.map((l) => `/ja/at/${l}`),
+        ...tags.map((t) => `/tag/${t}`),
+        ...tags.map((t) => `/ja/tag/${t}`),
+        ...categories.map((c) => `/is/${c}`),
+        ...categories.map((c) => `/ja/is/${c}`),
       ]
     },
   },
@@ -160,24 +186,28 @@ module.exports = {
       async create(feed) {
         feed.options = {
           title: 'Traveling Circus of Urbanism',
-          link: 'https://www.travelingcircusofurbanism.com/feed.xml',
+          link:
+            'https://www.travelingcircusofurbanism.com/feed.xml',
           description:
             'Urban narratives and practices, collected through travel.',
           image:
             'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
-          favicon: 'https://www.travelingcircusofurbanism.com/favicon.ico',
+          favicon:
+            'https://www.travelingcircusofurbanism.com/favicon.ico',
           author: {
             name: 'Mariko Sugita',
             email: 'travelingcircusofurbanism@gmail.com',
-            link: 'https://www.travelingcircusofurbanism.com/about',
+            link:
+              'https://www.travelingcircusofurbanism.com/about',
           },
         }
 
         const posts = require('./nuxt/static/generated/posts.json')
-        posts.forEach(post => {
+        posts.forEach((post) => {
           if (
             post.public.en !== true ||
-            new Date(post.date).getTime() > new Date().getTime()
+            new Date(post.date).getTime() >
+              new Date().getTime()
           )
             return
           const content = fs.readFileSync(
@@ -217,23 +247,27 @@ module.exports = {
       async create(feed) {
         feed.options = {
           title: 'アーバニズムの旅するサーカス',
-          link: 'https://www.travelingcircusofurbanism.com/jafeed.xml',
+          link:
+            'https://www.travelingcircusofurbanism.com/jafeed.xml',
           description: '旅先から集めた、世界の都市の物語。',
           image:
             'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
-          favicon: 'https://www.travelingcircusofurbanism.com/favicon.ico',
+          favicon:
+            'https://www.travelingcircusofurbanism.com/favicon.ico',
           author: {
             name: '杉田真理子',
             email: 'travelingcircusofurbanism@gmail.com',
-            link: 'https://www.travelingcircusofurbanism.com/ja/about',
+            link:
+              'https://www.travelingcircusofurbanism.com/ja/about',
           },
         }
 
         const posts = require('./nuxt/static/generated/posts.json')
-        posts.forEach(post => {
+        posts.forEach((post) => {
           if (
             post.public.ja !== true ||
-            new Date(post.date).getTime() > new Date().getTime()
+            new Date(post.date).getTime() >
+              new Date().getTime()
           )
             return
           const content = fs.readFileSync(
@@ -269,7 +303,8 @@ module.exports = {
         feed.addContributor({
           name: '杉田真理子',
           email: 'travelingcircusofurbanism@gmail.com',
-          link: 'https://www.travelingcircusofurbanism.com/ja/',
+          link:
+            'https://www.travelingcircusofurbanism.com/ja/',
         })
       },
       cacheTime: 1000 * 60, // How long should the feed be cached, in ms
