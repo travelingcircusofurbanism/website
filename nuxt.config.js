@@ -1,6 +1,10 @@
 const fs = require('fs')
 require('dotenv').config()
 
+// "deploysite": "git subtree push --prefix docs origin gh-pages",
+//  "golive": "git pull && npm run pushlocalchanges && npm run generate && npm run deploysite && npm run cleanup",
+//  "pushlocalchanges": "npm run cleanup && git add . && git diff-index --quiet HEAD || git commit -m \"Auto-pushing files\" && git push"
+
 module.exports = {
   telemetry: false,
   target: 'static',
@@ -121,8 +125,6 @@ module.exports = {
   generate: {
     dir: './docs',
     fallback: '404.html',
-
-    devtools: true,
 
     routes: async () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(

@@ -30,7 +30,7 @@
         :to="
           localePath({
             name: 'city-post',
-            params: { city, post: slug },
+            params: { city, post: slug.toLowerCase() },
           })
         "
         class="titlelink"
