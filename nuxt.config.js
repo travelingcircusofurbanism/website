@@ -1,16 +1,11 @@
 const fs = require('fs')
-const os = require('os')
-import postPrep from './nuxt/modules/postprep'
-let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
+require('dotenv').config()
 
 module.exports = {
   telemetry: false,
   target: 'static',
   srcDir: 'nuxt/',
   loading: false,
-  hooks: {
-    ready: (_nuxt) => (nuxtInstance = _nuxt), // need this for generate:done hook for nuxt-generate-cluster
-  },
   css: ['./assets/main.scss'],
 
   head: {
@@ -126,12 +121,6 @@ module.exports = {
   generate: {
     dir: './docs',
     fallback: '404.html',
-    workers: os.cpus().length,
-    workerConcurrency: 20,
-    concurrency: 20,
-    async done({ duration, errors, workerInfo }) {
-      await nuxtInstance.callHook('generate:done')
-    },
 
     routes: async () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(

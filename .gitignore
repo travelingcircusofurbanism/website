@@ -1,6 +1,8 @@
 .DS_Store
 *.DS_Store
 
+.env
+
 # dependencies
 node_modules
 
@@ -19,8 +21,5 @@ nuxt/static/posts
 nuxt/static/feed.xml
 nuxt/static/jafeed.xml
 etc/allPosts.csv
-
-# api keys
-mapboxApiKey.json
 
 nuxt/dashboard

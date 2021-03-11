@@ -79,9 +79,7 @@ export default {
         pitch: 0,
         speed: 2,
       },
-      ak:
-        process.env.MAPBOX_API_KEY ||
-        require('../../mapboxApiKey.json').mariko,
+      ak: process.env.MAPBOX_API_KEY,
       markers: [],
       updatePrefix: 0,
     }
