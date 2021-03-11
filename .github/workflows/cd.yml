@@ -26,7 +26,7 @@ jobs:
       - name: Generate
         env:
           MAPBOX_API_KEY: ${{ secrets.MAPBOX_API_KEY }}
-        run: npm run generate
+        run: echo ${{ secrets.MAPBOX_API_KEY }} && npm run generate
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3

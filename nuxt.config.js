@@ -5,6 +5,7 @@ let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
 
 module.exports = {
   telemetry: false,
+  target: 'static',
   srcDir: 'nuxt/',
   loading: false,
   hooks: {
@@ -133,50 +134,18 @@ module.exports = {
     },
 
     routes: async () => {
-      await postPrep()
       const posts = require('./nuxt/static/generated/posts.json').filter(
-        (post) =>
-          post.preview ||
-          post.public.ja === true ||
-          post.public.en === true,
-      )
-      const cities = require('./nuxt/static/generated/cities.json')
-      const locations = require('./nuxt/static/generated/locations.json').map(
-        (l) => encodeURIComponent(l),
-      )
-      const tags = require('./nuxt/static/generated/tags.json').map(
-        (t) => encodeURIComponent(t),
-      )
-      const categories = require('./nuxt/static/generated/categories.json').map(
-        (c) => encodeURIComponent(c),
+        (post) => post.preview,
       )
 
       return [
         // '404',
-        ...cities.map((c) => `/${c}`),
-        ...cities.map((c) => `/ja/${c}`),
         ...posts
-          .filter(
-            (p) =>
-              p.public.ja ||
-              p.public.en ||
-              (p.preview && p.languages.en),
-          )
+          .filter((p) => p.languages.en)
           .map((p) => `/${p.city}/${p.slug}`),
         ...posts
-          .filter(
-            (p) =>
-              p.public.ja ||
-              p.public.en ||
-              (p.preview && p.languages.ja),
-          )
+          .filter((p) => p.languages.ja)
           .map((p) => `/ja/${p.city}/${p.slug}`),
-        ...locations.map((l) => `/at/${l}`),
-        ...locations.map((l) => `/ja/at/${l}`),
-        ...tags.map((t) => `/tag/${t}`),
-        ...tags.map((t) => `/ja/tag/${t}`),
-        ...categories.map((c) => `/is/${c}`),
-        ...categories.map((c) => `/ja/is/${c}`),
       ]
     },
   },
