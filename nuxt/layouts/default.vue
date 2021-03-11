@@ -1,5 +1,9 @@
 <template>
-  <div class="master" ref="master" :class="{ mobile: isMobile }">
+  <div
+    class="master"
+    ref="master"
+    :class="{ mobile: isMobile }"
+  >
     <Lightbox class="lightbox" />
 
     <MobileSearchSelectorOverlay class="mobilesearch" />
@@ -14,20 +18,30 @@
       <div class="rightside">
         <TopBar v-if="!isMobile" />
 
-        <no-ssr>
-          <BlueBanner v-if="!isDev && clientLanguage !== locale">
+        <client-only>
+          <BlueBanner
+            v-if="!isDev && clientLanguage !== locale"
+          >
             <span class="ja">
               ここは英語版です！
-              <nuxt-link :to="localePath('index','ja')" exact>日本版のホームに行く</nuxt-link>
+              <nuxt-link
+                :to="localePath('index', 'ja')"
+                exact
+                >日本版のホームに行く</nuxt-link
+              >
             </span>
             <template #ja>
               <span class="en">
                 You're on our Japanese site!
-                <nuxt-link :to="localePath('index','en')" exact>Go to the English homepage</nuxt-link>
+                <nuxt-link
+                  :to="localePath('index', 'en')"
+                  exact
+                  >Go to the English homepage</nuxt-link
+                >
               </span>
             </template>
           </BlueBanner>
-        </no-ssr>
+        </client-only>
 
         <nuxt />
       </div>
@@ -112,7 +126,8 @@ export default {
       return process.browser
         ? window
           ? (
-              window.navigator.userLanguage || window.navigator.language
+              window.navigator.userLanguage ||
+              window.navigator.language
             ).substring(0, 2)
           : 'en'
         : this.$i18n.locale
@@ -125,7 +140,8 @@ export default {
   },
   mounted() {
     const storedLanguage = this.getCookie('i18n_redirected')
-    if (window) window.addEventListener('resize', this.checkWidth)
+    if (window)
+      window.addEventListener('resize', this.checkWidth)
     this.checkWidth()
     this.checkForNoPosts()
     this.$root._router.afterEach((to, from) => {
@@ -134,7 +150,10 @@ export default {
   },
   methods: {
     checkWidth() {
-      this.$store.commit('setMobile', window ? window.innerWidth : 1000)
+      this.$store.commit(
+        'setMobile',
+        window ? window.innerWidth : 1000,
+      )
     },
     resetScroll() {
       document.querySelector('body').scrollTo(0, 0)
@@ -142,17 +161,21 @@ export default {
     },
     checkForNoPosts() {
       // had an issue with 404 not having any posts. this may not have fixed it.
-      if (!this.posts || !this.posts.length) this.$store.dispatch('resetPosts')
+      if (!this.posts || !this.posts.length)
+        this.$store.dispatch('resetPosts')
     },
     getCookie(key) {
       if (!document) return
       const name = key + '='
-      const decodedCookie = decodeURIComponent(document.cookie)
+      const decodedCookie = decodeURIComponent(
+        document.cookie,
+      )
       const ca = decodedCookie.split(';')
       for (let i = 0; i < ca.length; i++) {
         let c = ca[i]
         while (c.charAt(0) == ' ') c = c.substring(1)
-        if (c.indexOf(name) == 0) return c.substring(name.length, c.length)
+        if (c.indexOf(name) == 0)
+          return c.substring(name.length, c.length)
       }
       return ''
     },
@@ -173,7 +196,8 @@ export default {
     display: block;
     height: auto;
 
-    & > *:not(.lightbox):not(.devoverlay):not(.mobilesearch) {
+    &
+      > *:not(.lightbox):not(.devoverlay):not(.mobilesearch) {
       max-width: 100%;
       overflow-y: visible;
       height: auto;
@@ -199,6 +223,7 @@ export default {
 .rightside {
   scroll-behavior: smooth;
   z-index: 3;
-  box-shadow: -40px 0 40px rgba($text, 0.06), -5px 0 5px rgba($text, 0.04);
+  box-shadow: -40px 0 40px rgba($text, 0.06),
+    -5px 0 5px rgba($text, 0.04);
 }
 </style>

@@ -5,7 +5,9 @@
 <script>
 import axios from 'axios'
 import PostListPage from '~/components/PostListPage'
-const { capitalize } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+} = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
@@ -18,7 +20,7 @@ export default {
       {
         property: 'og:title',
         content: `${this.capitalize(
-          this.category
+          this.category,
         )} | Traveling Circus of Urbanism`,
       },
       {
@@ -39,7 +41,7 @@ export default {
       meta.push({
         rel: 'canonical',
         href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
-          this.$i18n.locale === 'ja' ? 'en' : 'ja'
+          this.$i18n.locale === 'ja' ? 'en' : 'ja',
         )}`,
       })
       meta.push({
@@ -67,7 +69,10 @@ export default {
       if (process.server) fs = require('fs')
       try {
         categories = JSON.parse(
-          fs.readFileSync('./nuxt/static/generated/categories.json', 'utf8')
+          fs.readFileSync(
+            './nuxt/static/generated/categories.json',
+            'utf8',
+          ),
         )
       } catch (e) {
         console.log(e)
@@ -76,35 +81,51 @@ export default {
       // have to use axios on the browser. yes, asyncData runs between pages on the browser. idk why.
       try {
         const axiosConfig = {
-          validateStatus: status => true,
+          validateStatus: (status) => true,
         }
         await axios
           .get('/generated/categories.json', axiosConfig)
-          .then(response => (categories = response.data))
-          .catch(e => console.log(e))
+          .then((response) => (categories = response.data))
+          .catch((e) => console.log(e))
       } catch (e) {
         console.log(e)
-        return error({ statusCode: 404, message: 'Page not found.' })
+        return error({
+          statusCode: 404,
+          message: 'Page not found.',
+        })
       }
     }
 
     if (!categories.includes(category))
-      return error({ statusCode: 404, message: 'Page not found.' })
+      return error({
+        statusCode: 404,
+        message: 'Page not found.',
+      })
 
     let posts = store.viewingAsDev
       ? store.state.allPosts
       : store.state.currentShowablePosts
     // if (!posts || posts.length === 0)
     //   return error({ statusCode: 404, message: 'Page not found.' })
-    posts = posts.filter(p => {
-      return p.category && p.category.toLowerCase() === category
+    posts = posts.filter((p) => {
+      return (
+        p.category && p.category.toLowerCase() === category
+      )
     })
+    console.log(
+      '2312341224314213',
+      posts,
+      store.state.currentShowablePosts,
+    )
     if (posts.length === 1)
       return redirect(
         app.localePath({
           name: 'city-post',
-          params: { city: posts[0].city, post: posts[0].slug },
-        })
+          params: {
+            city: posts[0].city,
+            post: posts[0].slug,
+          },
+        }),
       )
     return {
       posts,

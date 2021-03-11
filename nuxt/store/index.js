@@ -37,24 +37,31 @@ export const mutations = {
           : Array.isArray(newView)
           ? newView.reduce((acc, curr) => {
               if (acc === null) return null
-              if (acc !== 'none' && acc !== curr.city) return null
+              if (acc !== 'none' && acc !== curr.city)
+                return null
               else return curr.city
             }, 'none')
           : newView.city
     } catch (e) {}
 
-    state.currentView = parseMapPositionObjectsFromAnything(newView)
+    state.currentView = parseMapPositionObjectsFromAnything(
+      newView,
+    )
   },
 
   setHighlight(state, mapPositions) {
     const parsedLocations = parseLocationNames(mapPositions)
     if (parsedLocations.length > 0) {
-      if (!state.highlight || state.highlight.length === 0) {
+      if (
+        !state.highlight ||
+        state.highlight.length === 0
+      ) {
         state.doubleHighlight = []
         state.highlight = parsedLocations
       } else state.doubleHighlight = parsedLocations
     } else {
-      if (state.doubleHighlight.length > 0) state.doubleHighlight = []
+      if (state.doubleHighlight.length > 0)
+        state.doubleHighlight = []
       else state.highlight = []
     }
   },
@@ -72,7 +79,8 @@ export const mutations = {
     state.isDev = isDev
     state.viewingAsDev = isDev
   },
-  setViewingAsDev: (state, viewingAsDev) => (state.viewingAsDev = viewingAsDev),
+  setViewingAsDev: (state, viewingAsDev) =>
+    (state.viewingAsDev = viewingAsDev),
 
   setLightboxSrc(state, src) {
     state.lightboxSrc = src
@@ -100,19 +108,25 @@ export const mutations = {
         posts
           .reduce(
             (allTags, post) =>
-              post.tags ? allTags.concat(post.tags) : allTags,
+              post.tags
+                ? allTags.concat(post.tags)
+                : allTags,
             [],
           )
-          .map(t => t.toLowerCase()),
+          .map((t) => t.toLowerCase()),
       ),
     ]
   },
 
   setMapMarkers(state, postData) {
-    state.mapMarkers = parseMapPositionObjectsFromAnything(postData)
+    state.mapMarkers = parseMapPositionObjectsFromAnything(
+      postData,
+    )
     state.locations = [
       ...new Set(
-        state.mapMarkers.map(marker => marker.location).filter(m => m),
+        state.mapMarkers
+          .map((marker) => marker.location)
+          .filter((m) => m),
       ),
     ]
   },
@@ -120,7 +134,9 @@ export const mutations = {
   setPolygons(state, postObjects) {
     const polygons = postObjects.reduce(
       (allPolygons, post) =>
-        post.polygons ? allPolygons.concat(post.polygons) : allPolygons,
+        post.polygons
+          ? allPolygons.concat(post.polygons)
+          : allPolygons,
       [],
     )
     state.mapPolygons = polygons || []
@@ -128,7 +144,9 @@ export const mutations = {
 
   setViewPolygons(state, polygons) {
     if (polygons)
-      state.currentView = state.currentView.concat(polygonsBounds(polygons))
+      state.currentView = state.currentView.concat(
+        polygonsBounds(polygons),
+      )
   },
 
   setPosts(state, posts) {
@@ -161,7 +179,7 @@ export const actions = {
 
   updateShowablePosts({ commit, state }) {
     const showablePosts = state.allPosts.filter(
-      p =>
+      (p) =>
         // devs see all.
         state.viewingAsDev ||
         // only show english posts to english readers, etc
@@ -169,7 +187,8 @@ export const actions = {
           // only show public posts
           p.public[state.i18n.locale] === true &&
           // only show posts that are published in the past
-          MDYToDate(p.date).getTime() < new Date().getTime()),
+          MDYToDate(p.date).getTime() <
+            new Date().getTime()),
     )
     if (state.currentShowablePosts === showablePosts) return
     commit('setCurrentShowablePosts', showablePosts)
@@ -185,25 +204,32 @@ function parseLocationNames(source) {
   if (!source) source = []
   if (!Array.isArray(source)) source = [source]
   // if it's post objects, flatten it down to just mapPositions
-  if (source[0] && (source[0].mapPosition || source[0].polygons))
+  if (
+    source[0] &&
+    (source[0].mapPosition || source[0].polygons)
+  )
     source = [].concat.apply(
       [],
       [
-        ...source.map(post => post.mapPosition).filter(position => position),
-        ...source.map(post => post.polygons).filter(position => position),
+        ...source
+          .map((post) => post.mapPosition)
+          .filter((position) => position),
+        ...source
+          .map((post) => post.polygons)
+          .filter((position) => position),
       ],
     )
   // then grab just the names
   source = source
     .map(
-      positionOrLocation =>
+      (positionOrLocation) =>
         positionOrLocation.location ||
         (positionOrLocation instanceof String ||
         typeof positionOrLocation === 'string'
           ? positionOrLocation
           : null),
     )
-    .filter(locationName => locationName)
+    .filter((locationName) => locationName)
   // then return only unique names
   return Array.from(new Set(source))
 }
@@ -217,6 +243,8 @@ function parseMapPositionObjectsFromAnything(source) {
   //    posts can have a mapPosition object
   //    or an array of mapPosition objects
 
+  if (!source) return []
+
   let parsedMapPositions =
     source.center || source[0].center
       ? // we can directly use a mapPosition object or an array of mapPosition objects
@@ -225,9 +253,11 @@ function parseMapPositionObjectsFromAnything(source) {
       Array.isArray(source)
       ? // if we have multiple posts, for each...
         source
-          .map(post => {
-            const arrayOfPositions = Array.isArray(post.mapPosition)
-              ? post.mapPosition.map(p => {
+          .map((post) => {
+            const arrayOfPositions = Array.isArray(
+              post.mapPosition,
+            )
+              ? post.mapPosition.map((p) => {
                   const city = post.city
                   return {
                     ...p,
@@ -253,7 +283,7 @@ function parseMapPositionObjectsFromAnything(source) {
 
   if (!Array.isArray(parsedMapPositions))
     parsedMapPositions = [parsedMapPositions]
-  parsedMapPositions = parsedMapPositions.filter(m => m)
+  parsedMapPositions = parsedMapPositions.filter((m) => m)
   return parsedMapPositions
 }
 
@@ -266,14 +296,22 @@ function polygonsBounds(polygons) {
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+              flattened.concat(
+                polygon.coordinates.map(
+                  (coord) => coord[0],
+                ),
+              ),
             [],
           ),
         ),
         Math.min(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+              flattened.concat(
+                polygon.coordinates.map(
+                  (coord) => coord[1],
+                ),
+              ),
             [],
           ),
         ),
@@ -285,14 +323,22 @@ function polygonsBounds(polygons) {
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[0])),
+              flattened.concat(
+                polygon.coordinates.map(
+                  (coord) => coord[0],
+                ),
+              ),
             [],
           ),
         ),
         Math.max(
           ...polygons.reduce(
             (flattened, polygon) =>
-              flattened.concat(polygon.coordinates.map(coord => coord[1])),
+              flattened.concat(
+                polygon.coordinates.map(
+                  (coord) => coord[1],
+                ),
+              ),
             [],
           ),
         ),

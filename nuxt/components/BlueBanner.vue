@@ -1,8 +1,11 @@
 <template>
-  <no-ssr>
+  <client-only>
     <div class="bluebanner content-top-full">
       <div class="innerpadding">
-        <div class="ja" v-if="$slots.ja && $i18n.locale === 'ja'">
+        <div
+          class="ja"
+          v-if="$slots.ja && $i18n.locale === 'ja'"
+        >
           <slot name="ja"></slot>
         </div>
         <div v-else>
@@ -10,7 +13,7 @@
         </div>
       </div>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

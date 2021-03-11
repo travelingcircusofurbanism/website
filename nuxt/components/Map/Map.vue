@@ -1,5 +1,5 @@
 <template>
-  <no-ssr>
+  <client-only>
     <MapboxMapLoader
       :apikey="ak"
       :defaultPosition="defaultPosition"
@@ -49,7 +49,7 @@
         -->
       </template>
     </MapboxMapLoader>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>
@@ -79,7 +79,8 @@ export default {
         pitch: 0,
         speed: 2,
       },
-      ak: process.env.MAPBOX_API_KEY,
+      ak:
+        'pk.eyJ1IjoibWFyaWtvOTAxMiIsImEiOiJjaWt0cnk4MnMwMDB2eDFtMDh1bmozZ2gwIn0.zXoiIU4RmB7jKIgBrs0Vwg',
       markers: [],
       updatePrefix: 0,
     }

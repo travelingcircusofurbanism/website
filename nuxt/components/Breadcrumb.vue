@@ -1,6 +1,6 @@
 <template>
-  <no-ssr>
-    <div class="breadcrumb" :class="{collapse}">
+  <client-only>
+    <div class="breadcrumb" :class="{ collapse }">
       <nuxt-link
         v-if="breadcrumbs && breadcrumbs.length > 0"
         :to="localePath('index')"
@@ -10,15 +10,23 @@
         <span>Home</span>
       </nuxt-link>
 
-      <nuxt-link v-for="(path, key) in breadcrumbs" :key="key" :to="path.url" exact class="crumb">
+      <nuxt-link
+        v-for="(path, key) in breadcrumbs"
+        :key="key"
+        :to="path.url"
+        exact
+        class="crumb"
+      >
         <span>{{ capitalize(path.label) }}</span>
       </nuxt-link>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>
-const { capitalize } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+} = require('~/assets/commonFunctions.js')
 
 export default {
   props: {
