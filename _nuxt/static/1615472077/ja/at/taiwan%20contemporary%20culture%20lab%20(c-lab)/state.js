@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1615472077",layout:"default",error:a,state:a,serverRendered:false,routePath:"\u002Fja\u002Fat\u002Ftaiwan%20contemporary%20culture%20lab%20(c-lab)",config:{}}}(null));
