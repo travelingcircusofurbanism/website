@@ -122,6 +122,8 @@ module.exports = {
     dir: './docs',
     fallback: '404.html',
 
+    devtools: true,
+
     routes: async () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(
         (post) => post.preview,

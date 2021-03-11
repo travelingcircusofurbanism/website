@@ -3,6 +3,8 @@ const { MDYToDate } = require('~/assets/commonFunctions.js')
 export const state = () => ({
   allPosts: [],
   currentShowablePosts: [],
+  categories: [],
+  cities: [],
   links: [],
   locations: [],
   tags: [],
@@ -102,6 +104,12 @@ export const mutations = {
     state.panMap = shouldPan
   },
 
+  setCities(state, cities) {
+    state.cities = cities
+  },
+  setCategories(state, categories) {
+    state.categories = categories
+  },
   setTags(state, posts) {
     state.tags = [
       ...new Set(
@@ -164,6 +172,12 @@ export const actions = {
     commit('setDev', !process.static)
     commit('setPosts', posts)
     dispatch('updateShowablePosts')
+
+    const cities = require('~/static/generated/cities.json')
+    commit('setCities', cities)
+
+    const categories = require('~/static/generated/categories.json')
+    commit('setCategories', categories)
 
     const links = require('~/../links/links.js')
     commit('setLinks', links)
@@ -243,7 +257,8 @@ function parseMapPositionObjectsFromAnything(source) {
   //    posts can have a mapPosition object
   //    or an array of mapPosition objects
 
-  if (!source) return []
+  if (!source || (Array.isArray(source) && !source[0]))
+    return []
 
   let parsedMapPositions =
     source.center || source[0].center

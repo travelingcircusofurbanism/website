@@ -12,17 +12,22 @@
               everywhere.
             </h1>
             <p>
-              Learn about the design, function, and experience of
-              cities, and share stories from yours.
+              Learn about the design, function, and
+              experience of cities, and share stories from
+              yours.
             </p>
             <p class="buttons">
               <span class="button whitehover">Explore</span>
-              <span class="button whitehover">Contribute</span>
+              <span class="button whitehover"
+                >Contribute</span
+              >
               <span class="button whitehover">About</span>
             </p>
           </template>
           <template v-else>
-            <h1 class="ja">旅先から集めた、世界の都市の物語。</h1>
+            <h1 class="ja">
+              旅先から集めた、世界の都市の物語。
+            </h1>
             <p>
               Traveling Circus of
               Urbanismは、世界中の都市から、都市、街づくり、建築などのトピックを紹介するバイリンガルサイトです。
@@ -32,8 +37,12 @@
               Urbanismは、英語が中心のメディアです。日本語にはないコンテンツも沢山あるので、興味がある方は、ぜひ英語版も覗いてみてください。
             </p>
             <p class="buttons">
-              <span class="button whitehover">記事を読む</span>
-              <span class="button whitehover">記事を書く</span>
+              <span class="button whitehover"
+                >記事を読む</span
+              >
+              <span class="button whitehover"
+                >記事を書く</span
+              >
               <span class="button whitehover"
                 >このサイトについて</span
               >
@@ -50,11 +59,14 @@
               everywhere.
             </h1>
             <p>
-              Learn about the design, function, and experience of
-              cities, and share stories from yours.
+              Learn about the design, function, and
+              experience of cities, and share stories from
+              yours.
             </p>
             <p class="buttons">
-              <span class="button whitehover" @click="exploreToggle"
+              <span
+                class="button whitehover"
+                @click="exploreToggle"
                 >Explore</span
               >
               <nuxt-link
@@ -83,7 +95,9 @@
               Urbanismは、英語が中心のメディアです。日本語にはないコンテンツも沢山あるので、興味がある方は、ぜひ英語版も覗いてみてください。
             </p>
             <p class="buttons">
-              <span class="button whitehover" @click="exploreToggle"
+              <span
+                class="button whitehover"
+                @click="exploreToggle"
                 >記事を読む</span
               >
               <nuxt-link
@@ -133,8 +147,8 @@
                 <span>
                   Zoom and pan around the map, then
                   {{ isMobile ? `tap` : `click` }} on
-                  <br v-if="!isMobile" />a marker to see articles
-                  about that location
+                  <br v-if="!isMobile" />a marker to see
+                  articles about that location
                 </span>
               </p>
               <p class="c3">
@@ -143,7 +157,10 @@
                   v-if="isMobile"
                   src="~/assets/introarrow3.svg"
                 />
-                <span>Browse the most recent articles below</span>
+                <span
+                  >Browse the most recent articles
+                  below</span
+                >
               </p>
             </template>
 
@@ -172,7 +189,9 @@
                 <span>
                   地図上で気になる場所を探し、
                   <br v-if="!isMobile" />
-                  マークを{{ isMobile ? `タップ` : `クリック` }}
+                  マークを{{
+                    isMobile ? `タップ` : `クリック`
+                  }}
                 </span>
               </p>
               <p class="c3 ja">
@@ -253,8 +272,10 @@ export default {
       return this.$i18n.locale
     },
     showablePosts() {
-      return this.posts.filter(p =>
-        this.$store.state.currentShowablePosts.includes(p)
+      return this.posts.filter((p) =>
+        this.$store.state.currentShowablePosts.find(
+          (c) => c.city === p.city && c.slug === p.slug,
+        ),
       )
     },
   },
@@ -289,7 +310,8 @@ export default {
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
-  transition: background-color 0.7s, background-position 0.5s;
+  transition: background-color 0.7s,
+    background-position 0.5s;
   background-position: left;
   overflow: hidden;
   position: relative;

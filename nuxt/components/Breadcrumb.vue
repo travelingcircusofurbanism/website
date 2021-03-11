@@ -122,16 +122,16 @@ export default {
     border-right: none;
   }
 
-  &.gray0:not(:last-of-type)::before {
-    // background: darken($shade, 8%);
-  }
-  &.gray1:not(:last-of-type)::before {
-    // background: darken($shade, 4%);
-  }
+  // &.gray0:not(:last-of-type)::before {
+  //   // background: darken($shade, 8%);
+  // }
+  // &.gray1:not(:last-of-type)::before {
+  //   // background: darken($shade, 4%);
+  // }
 
-  &:not(:last-of-type)::before {
-    // box-shadow: 4px 0 4px darken($shade, 5%);
-  }
+  // &:not(:last-of-type)::before {
+  //   // box-shadow: 4px 0 4px darken($shade, 5%);
+  // }
 
   &:hover::before {
     background: darken($shade, 3%) !important;

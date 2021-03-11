@@ -112,11 +112,6 @@ export default {
         p.category && p.category.toLowerCase() === category
       )
     })
-    console.log(
-      '2312341224314213',
-      posts,
-      store.state.currentShowablePosts,
-    )
     if (posts.length === 1)
       return redirect(
         app.localePath({

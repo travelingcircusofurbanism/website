@@ -1,7 +1,10 @@
 <template>
   <div>
     <BlueBanner
-      v-if="showablePosts.length === 0 && clientLanguage === $i18n.locale"
+      v-if="
+        showablePosts.length === 0 &&
+          clientLanguage === $i18n.locale
+      "
     >
       There are no English posts here yet!
       <nuxt-link :to="localePath('index')" exact
@@ -10,12 +13,16 @@
       <span>to find articles in English.</span>
       <template #ja>
         ここの日本語の記事はまだありません。
-        <nuxt-link :to="localePath('index')" exact>ホームに戻る</nuxt-link
+        <nuxt-link :to="localePath('index')" exact
+          >ホームに戻る</nuxt-link
         >と日本語での記事があります！
       </template>
     </BlueBanner>
     <section class="content" :key="Date.now()">
-      <PostList :posts="showablePosts" :title="postListTitle" />
+      <PostList
+        :posts="showablePosts"
+        :title="postListTitle"
+      />
       <ContentFooter />
     </section>
   </div>
@@ -61,8 +68,10 @@ export default {
       return this.$i18n.locale
     },
     showablePosts() {
-      return this.posts.filter(p =>
-        this.$store.state.currentShowablePosts.includes(p)
+      return this.posts.filter((p) =>
+        this.$store.state.currentShowablePosts.find(
+          (c) => c.city === p.city && c.slug === p.slug,
+        ),
       )
     },
   },
@@ -79,7 +88,10 @@ export default {
       return this.$router.replace({
         path: this.localePath({
           name: 'city-post',
-          params: { city: firstPost.city, post: firstPost.slug },
+          params: {
+            city: firstPost.city,
+            post: firstPost.slug,
+          },
         }),
       })
     }
@@ -88,7 +100,8 @@ export default {
     if (this.skippingToFirstPost) return
     if (process.browser)
       this.clientLanguage = (window
-        ? window.navigator.userLanguage || window.navigator.language
+        ? window.navigator.userLanguage ||
+          window.navigator.language
         : 'en'
       ).substring(0, 2)
     this.$el.parentElement.scrollTop = 0
@@ -102,10 +115,11 @@ export default {
     } else {
       this.$store.commit('setView', this.showablePosts)
       const polygons = this.showablePosts
-        .map(p => p.polygons)
-        .filter(p => p)
+        .map((p) => p.polygons)
+        .filter((p) => p)
         .reduce((flatArray, p) => flatArray.concat(p), [])
-      if (polygons.length > 0) this.$store.commit('setViewPolygons', polygons)
+      if (polygons.length > 0)
+        this.$store.commit('setViewPolygons', polygons)
       this.$store.commit('setHighlight', this.showablePosts)
     }
   },

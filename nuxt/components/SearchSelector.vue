@@ -1,5 +1,9 @@
 <template>
-  <div class="searchholder" :class="{open: isOpen, collapse}" v-if="!isMobile">
+  <div
+    class="searchholder"
+    :class="{ open: isOpen, collapse }"
+    v-if="!isMobile"
+  >
     <svg
       width="135px"
       height="135px"
@@ -15,14 +19,18 @@
         stroke-width="14"
       >
         <circle id="Oval" cx="42" cy="42" r="42" />
-        <path d="M73.5761719,73.5761719 L107.720703,107.720703" id="Line" stroke-linecap="square" />
+        <path
+          d="M73.5761719,73.5761719 L107.720703,107.720703"
+          id="Line"
+          stroke-linecap="square"
+        />
       </g>
     </svg>
     <input
       placeholder="Search for a City, Place, or Category..."
       v-model="searchTerm"
       class="searchinput"
-      :class="{open: isOpen}"
+      :class="{ open: isOpen }"
       @focus="open"
     />
     <div class="closebutton" v-if="isOpen" @click="close">
@@ -31,40 +39,64 @@
 
     <transition name="fade">
       <div class="megalist" v-if="isOpen">
-        <div class="listsectionlabel" v-if="orderedCategories.length">Category</div>
-        <div class="listentry" v-for="element, key in orderedCategories" :key="'cat' + key">
+        <div
+          class="listsectionlabel"
+          v-if="orderedCategories.length"
+        >
+          Category
+        </div>
+        <div
+          class="listentry"
+          v-for="(element, key) in orderedCategories"
+          :key="'cat' + key"
+        >
           <nuxt-link
             class="listlink"
             @click.native="close"
-            :to="localePath({
-            name: 'is-category',
-            params: { category: element.label },
-          })"
+            :to="
+              localePath({
+                name: 'is-category',
+                params: { category: element.label },
+              })
+            "
           >
-            {{capitalize(element.label)}}
+            {{ capitalize(element.label) }}
             <span class="sub">
-              <span class="sub">{{element.count}}</span>
+              <span class="sub">{{ element.count }}</span>
             </span>
           </nuxt-link>
         </div>
-        <div class="listsectionlabel" v-if="orderedCities.length">City</div>
-        <div class="listentry" v-for="element, key in orderedCities" :key="'cit' + key">
+        <div
+          class="listsectionlabel"
+          v-if="orderedCities.length"
+        >
+          City
+        </div>
+        <div
+          class="listentry"
+          v-for="(element, key) in orderedCities"
+          :key="'cit' + key"
+        >
           <nuxt-link
             class="listlink"
             @click.native="close"
-            :to="localePath({
-            name: 'city',
-            params: { city: element.label.replace(/\//g, '%2F') },
-          })"
+            :to="
+              localePath({
+                name: 'city',
+                params: {
+                  city: element.label.replace(/\//g, '%2F'),
+                },
+              })
+            "
           >
-            {{capitalize(element.label)}}
+            {{ capitalize(element.label) }}
             <span class="sub">
-              <span class="sub">{{element.count}}</span>
+              <span class="sub">{{ element.count }}</span>
             </span>
           </nuxt-link>
         </div>
         <template v-if="searchTerm !== ''">
-          <div class="listsectionlabel" v-if="tags.length">Tag</div>
+          <!-- <div class="listsectionlabel" v-if="tags.length">Tag</div>
           <div class="listentry" v-for="element, key in tags" :key="'tag' + key">
             <nuxt-link
               class="listlink"
@@ -74,30 +106,52 @@
             params: { tag: element.replace(/\//g, '%2F')},
           })"
             >{{capitalize(element)}}</nuxt-link>
+          </div> -->
+          <div
+            class="listsectionlabel"
+            v-if="locations.length"
+          >
+            Place
           </div>
-          <div class="listsectionlabel" v-if="locations.length">Place</div>
-          <div class="listentry" v-for="element, key in locations" :key="'loc' + key">
+          <div
+            class="listentry"
+            v-for="(element, key) in locations"
+            :key="'loc' + key"
+          >
             <nuxt-link
               class="listlink"
               @click.native="close"
-              :to="localePath({
-            name: 'at-location',
-            params: { location: element.replace(/\//g, '%2F')},
-          })"
-            >{{capitalize(element)}}</nuxt-link>
+              :to="
+                localePath({
+                  name: 'at-location',
+                  params: {
+                    location: element.replace(/\//g, '%2F'),
+                  },
+                })
+              "
+              >{{ capitalize(element) }}</nuxt-link
+            >
           </div>
         </template>
         <div
           class="listsectionlabel"
-          v-if="!locations.length && !orderedCities.length && !orderedCategories.length"
-        >No results found.</div>
+          v-if="
+            !locations.length &&
+              !orderedCities.length &&
+              !orderedCategories.length
+          "
+        >
+          No results found.
+        </div>
       </div>
     </transition>
   </div>
 </template>
 
 <script>
-const { capitalize } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+} = require('~/assets/commonFunctions.js')
 
 export default {
   props: { collapse: { default: true } },
@@ -119,41 +173,62 @@ export default {
     },
     locations() {
       return this.$store.state.locations
-        .map(l => l.toLowerCase())
-        .filter(text => text.indexOf(this.searchTerm.toLowerCase()) !== -1)
+        .map((l) => l.toLowerCase())
+        .filter(
+          (text) =>
+            text.indexOf(this.searchTerm.toLowerCase()) !==
+            -1,
+        )
         .sort((a, b) => (a > b ? 1 : -1))
     },
-    tags() {
-      return this.$store.state.tags
-        .filter(text => text.indexOf(this.searchTerm.toLowerCase()) !== -1)
-        .sort((a, b) => (a > b ? 1 : -1))
-    },
+    // tags() {
+    //   return this.$store.state.tags
+    //     .filter(text => text.indexOf(this.searchTerm.toLowerCase()) !== -1)
+    //     .sort((a, b) => (a > b ? 1 : -1))
+    // },
     orderedCities() {
       const cityFrequency = {}
-      this.currentShowablePosts.forEach(p => {
+      this.currentShowablePosts.forEach((p) => {
         const cityName = p.city.toLowerCase()
-        cityFrequency[cityName] = (cityFrequency[cityName] || 0) + 1
+        cityFrequency[cityName] =
+          (cityFrequency[cityName] || 0) + 1
       })
       return Object.keys(cityFrequency)
-        .map(key => ({ label: key, count: cityFrequency[key] }))
+        .map((key) => ({
+          label: key,
+          count: cityFrequency[key],
+        }))
         .filter(
-          element => element.label.indexOf(this.searchTerm.toLowerCase()) !== -1
+          (element) =>
+            element.label.indexOf(
+              this.searchTerm.toLowerCase(),
+            ) !== -1,
         )
         .sort((a, b) => (a.label > b.label ? 1 : -1))
     },
 
     orderedCategories() {
       const typeFrequency = {}
-      this.currentShowablePosts.forEach(p => {
+      this.currentShowablePosts.forEach((p) => {
         const typeName = p.category.toLowerCase()
-        typeFrequency[typeName] = (typeFrequency[typeName] || 0) + 1
+        typeFrequency[typeName] =
+          (typeFrequency[typeName] || 0) + 1
       })
       return Object.keys(typeFrequency)
-        .map(key => ({ label: key, count: typeFrequency[key] }))
+        .map((key) => ({
+          label: key,
+          count: typeFrequency[key],
+        }))
         .filter(
-          element => element.label.indexOf(this.searchTerm.toLowerCase()) !== -1
+          (element) =>
+            element.label.indexOf(
+              this.searchTerm.toLowerCase(),
+            ) !== -1,
         )
-        .sort((a, b) => typeFrequency[b.label] - typeFrequency[a.label])
+        .sort(
+          (a, b) =>
+            typeFrequency[b.label] - typeFrequency[a.label],
+        )
     },
   },
   methods: {
@@ -161,7 +236,10 @@ export default {
     open() {
       this.isOpen = true
       this.$emit('open')
-      window.addEventListener('mousedown', this.checkForClose)
+      window.addEventListener(
+        'mousedown',
+        this.checkForClose,
+      )
     },
     checkForClose(event) {
       if (
@@ -176,7 +254,10 @@ export default {
     close() {
       this.$emit('close')
       this.searchTerm = ''
-      window.removeEventListener('mousedown', this.checkForClose)
+      window.removeEventListener(
+        'mousedown',
+        this.checkForClose,
+      )
       this.isOpen = false
     },
   },

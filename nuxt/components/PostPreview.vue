@@ -3,9 +3,18 @@
     class="post-preview"
     v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }"
     :class="{
-          fade:shouldFade}"
+      fade: shouldFade,
+    }"
   >
-    <nuxt-link :to="localePath({name: 'city-post', params: {city, post: slug}})" class="imglink">
+    <nuxt-link
+      :to="
+        localePath({
+          name: 'city-post',
+          params: { city, post: slug },
+        })
+      "
+      class="imglink"
+    >
       <div
         v-lazy:background-image="{
           src: image,
@@ -16,12 +25,26 @@
       ></div>
     </nuxt-link>
 
-    <div>
+    <div class="textsection">
       <nuxt-link
-        :to="localePath({name: 'city-post', params: {city, post: slug}})"
+        :to="
+          localePath({
+            name: 'city-post',
+            params: { city, post: slug },
+          })
+        "
         class="titlelink"
       >
-        <h4 :class="{ja: userLanguage === 'ja' && languages.ja && public.ja}">{{ languageTitle }}</h4>
+        <h4
+          :class="{
+            ja:
+              userLanguage === 'ja' &&
+              languages.ja &&
+              public.ja,
+          }"
+        >
+          {{ languageTitle }}
+        </h4>
       </nuxt-link>
 
       <PostDetails
@@ -53,7 +76,10 @@
 </template>
 
 <script>
-const { capitalize, MDYToDate } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+  MDYToDate,
+} = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
@@ -83,8 +109,10 @@ export default {
       return this.$i18n.locale
     },
     seoUrl() {
-      if (this.userLanguage === 'en' && this.public.ja) return `/ja` + this.url
-      else if (this.userLanguage === 'ja' && this.public.en) return this.url
+      if (this.userLanguage === 'en' && this.public.ja)
+        return `/ja` + this.url
+      else if (this.userLanguage === 'ja' && this.public.en)
+        return this.url
     },
     languageTitle() {
       return this.userLanguage === 'ja' &&
@@ -117,7 +145,11 @@ export default {
         : this.description.en || this.description.ja
     },
     seoDescription() {
-      if (this.userLanguage === 'ja' && this.description.en && this.public.en)
+      if (
+        this.userLanguage === 'ja' &&
+        this.description.en &&
+        this.public.en
+      )
         return this.description.en
       else if (
         this.userLanguage === 'en' &&
@@ -138,7 +170,9 @@ export default {
           (!this.mapPosition ||
             (Array.isArray(this.mapPosition) &&
               (this.mapPosition.length === 0 ||
-                !this.mapPosition.find(p => p.location)))))
+                !this.mapPosition.find(
+                  (p) => p.location,
+                )))))
       )
     },
 
@@ -147,7 +181,8 @@ export default {
         (this.isDev &&
           this.public[this.userLanguage] !== true &&
           this.userLanguage) ||
-        MDYToDate(this.date).getTime() > new Date().getTime()
+        MDYToDate(this.date).getTime() >
+          new Date().getTime()
       )
     },
   },
@@ -165,19 +200,21 @@ export default {
   methods: {
     capitalize,
     mouseOver() {
-      if (this.isMobile || this.noPositionToHighlight) return
+      if (this.isMobile || this.noPositionToHighlight)
+        return
       this.$store.commit(
         'setHighlight',
         this.polygons
           ? Array.isArray(this.mapPosition)
             ? [...this.mapPosition, ...this.polygons]
             : [this.mapPosition, ...this.polygons]
-          : this.mapPosition
+          : this.mapPosition,
       )
       this.isDoubleHighlighting = true
     },
     mouseOut() {
-      if (this.isMobile || this.noPositionToHighlight) return
+      if (this.isMobile || this.noPositionToHighlight)
+        return
       this.$store.commit('setHighlight')
       this.isDoubleHighlighting = false
     },
@@ -199,17 +236,17 @@ export default {
   flex-direction: column;
   align-items: stretch;
   justify-content: stretch;
+
+  @include width(mobile) {
+    display: block;
+  }
   // grid-template-columns: 1fr;
   // grid-gap: $unit * 2;
   // min-height: $unit * 40;
 
-  .imglink {
-    flex: 1;
-    margin-bottom: $unit * 2;
-  }
   .previewimage {
     background: $shade;
-    height: 100%;
+    height: $unit * 5;
     min-height: $unit * 35;
     width: 100%;
     background-size: cover;
@@ -226,6 +263,7 @@ export default {
     grid-template-columns: 1fr;
 
     .previewimage {
+      height: auto;
       // height: $unit * 50;
     }
   }
@@ -235,11 +273,14 @@ export default {
     grid-gap: $unit * 3;
 
     .previewimage {
+      height: auto;
       // height: $unit * 30;
     }
   }
 
   .titlelink {
+    margin-top: $unit * 2;
+    display: inline-block;
     text-decoration: none;
   }
 }
