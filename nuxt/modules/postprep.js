@@ -8,7 +8,7 @@ import transformMarkdown from './scripts/transformmarkdown'
 const timeBetweenUpkeeps = 3000
 let timer
 
-module.exports = function() {
+export default function() {
   if (timer) return
   timer = setTimeout(
     () => (timer = null),

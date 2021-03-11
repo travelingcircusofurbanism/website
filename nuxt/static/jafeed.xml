@@ -1,11 +1,925 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title></title>
-        <link></link>
-        <description></description>
-        <lastBuildDate>Sun, 14 Feb 2021 13:43:47 GMT</lastBuildDate>
+        <title>アーバニズムの旅するサーカス</title>
+        <link>https://www.travelingcircusofurbanism.com/jafeed.xml</link>
+        <description>旅先から集めた、世界の都市の物語。</description>
+        <lastBuildDate>Thu, 11 Mar 2021 12:33:53 GMT</lastBuildDate>
         <docs>http://blogs.law.harvard.edu/tech/rss</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
+        <image>
+            <title>アーバニズムの旅するサーカス</title>
+            <url>https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg</url>
+            <link>https://www.travelingcircusofurbanism.com/jafeed.xml</link>
+        </image>
+        <category>Urbanism</category>
+        <category>Cities</category>
+        <category>Design</category>
+        <category>Travel</category>
+        <category>アーバニズム</category>
+        <category>都市デザイン</category>
+        <category>都市</category>
+        <category>まちづくり</category>
+        <category>建築</category>
+        <category>旅行</category>
+        <category>旅</category>
+        <item>
+            <title><![CDATA[“都市を発酵”せよ。キムチや納豆だけではない、人間が媒体となる社会的な発酵とは？]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/taipei/fermentthecity</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/taipei/fermentthecity</guid>
+            <pubDate>Sun, 22 Mar 2020 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><em>「発酵」というテーマと都市を繋げる活動が台北で始まっている。根本にあるのは、“社会を発酵”させることで都市は変わるという考え方だ。細菌でも酵素でもなく、人間が媒体となる都市の発酵とは？</em></p>
+<h2>“発酵”を通して都市との関係を見直せるか？</h2>
+<p>2019年の初め、友人の影響で発酵に興味を持ち、片っ端から関連書籍を読んでいた。そんな折、偶然手に取ったのが”発酵デザイナー”・小倉ヒラクの『発酵文化人類学』だった。彼は発酵文化を通して人間社会と自然の関係性を紐解く。</p>
+<p><em>「発酵とは、微生物が人間に役立つ働きをしてくれること。そして微生物のちからを使いこなすことで、人類は社会をつくってきた」</em></p>
+<p>それまで「食の発酵」にまつわるレシピ本ばかり読んでいた私は、発酵を学ぶことはキムチを作ることだけでなく、広く人間社会を紐解くヒントにもなるという事実に衝撃をうけた。それからというもの「発酵を介した人間社会と自然の関係性」というテーマが、私に付きまとっていた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity24.JPG"></p>
+<p>数ヶ月後に訪れた、<a href="https://unleashmag.com/2019/09/02/milan_triennale_broken_nature/">「壊れた自然と、人類の生き残りをかけたデザイン」をテーマとしたミラノ・トリエンナーレ</a>では、ドミニク・チェン氏が開発したぬか床ロボット、『NukaBot』に出会った。塩分量や温度などのぬか床の状態を、音声で“教えてくれる”ロボットだ。</p>
+<p>「なんだ、教えてくれるだけ？自動でかき混ぜてくれないの？」という文句が聞こえてきそうだが、ドミニク氏は「人間の手でかき混ぜることが肝心なのだ」と言う。ある<a href="https://www.marukome.co.jp/marukome_omiso/hakkoubishoku/20190725/11461/">インタビュー</a>で次のように説明している。</p>
+<p><em>「客観的にみると、人はぬか床の中をコントロールしているかに見えるかもしれませんが、主観的な体験としては、まるでペットに餌をあげるかのように、菌の言いなりとも言える状態です。香りや手触りを通じて菌から発せられるメッセージを感じ取り、『ちょっと待ってね』と手を入れる。これは生き物同士の関係性だと思うのです」</em></p>
+<p>ぬか床をかき混ぜることは生き物、ひいては自然と対話することなのかもしれない。そのプロセスが、人間と自然の関係を紡いできたのだろう。</p>
+<p>私の専門は、都市だ。発酵文化人類学ならぬ、発酵都市論なるものはないかと気になっていたら、面白いプロジェクトを台湾で見つけてしまった。その名も「<a href="http://www.collectivegreen.de/fermentation/">Ferment the City（都市を発酵せよ）</a>」。社会的な発酵をテーマに多くの人々を巻き込み、ゴミをリソースに変換つまり”発酵させる”活動を展開する有志団体だ。アップサイクルや発酵食品について学ぶワークショップや展示会などを企画しながら、廃棄物を出す、エネルギーを使用するだけの現代都市に疑問を投げかけている。</p>
+<p>なんともミステリアスで美味しそうなネーミングではないか。さっそく話を聞きにいくことにした。</p>
+<h2>気候変動の時代に必要なアップサイクル</h2>
+<p>プロジェクトを統括するのは、ドイツ出身の活動家、ステファン・シモン。環境問題やサステイナビリティに関する活動を展開する団体、<a href="http://www.collectivegreen.de/">COLLECTIVE GREEN</a>の責任者で、台北に住んでいる。</p>
+<p>彼は出会うなり、キムチやジンジャービール 、コンブチャなど発酵食品の魅力について熱心に語りながら、プロジェクトの事務所がある<a href="https://clab.org.tw/en/">C-Lab（Taiwan Contemporary Culture Lab）</a>に案内してくれた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity1.JPG"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity2.JPG"></p>
+<p>台北・大安区に位置するC-Labは、旧空軍司令部の基地をリノベーションした文化センター。台湾リビングアーツ基金（Taiwan Living Arts Foundation）と文化省により企画運営されている。ソーシャルイノベーションに関わるプロジェクトを積極的に支援しており、「Frement the City」プロジェクトもC-Labのインキュベーションプログラムに参加している。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity19.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity29.JPG"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity30.JPG"></p>
+<p>ステファンが連れてきてくれたのは、「Ferment the City」のドーム型のブース。木材を組み立てた取り外し可能なドーム型構造に、使い捨てのビニール袋を加工してつくったプラスチックのシートが埋め込まれていた。スーパーやコンビニでもらうビニール袋を加工し、建築資材などとして使用するためのワークショップを開催し、つくったものだという。</p>
+<p><em>「発酵というと、野菜や果物などの有機物を、普通は連想しますよね。けれど、金属やプラスチックなどの素材に『発酵』というキーワードを持ち込み、アップサイクルやゼロウェイストの考え方に繋げられないか、と思いついたんです。」</em></p>
+<p>プラスチックなどの素材を単純に再利用するのではなく、素材の性質そのものを変化させ、より価値の高いものを生み出すアップサイクルのプロセスは、たしかに発酵のそれと似ている。</p>
+<p>彼がインスピレーションを受けたのは、プラスチックをアップサイクルする<a href="https://preciousplastic.com/">Precious Plastic</a>というプロジェクトだ。プラスチックを“発酵”させてその性質を変化させ、単なる素材の再利用ではなく、より価値の高いものを生み出そうという試みだ。不用品として処分されるものを、食品や動物の飼料、建築素材など新しい資源に作り変えるワークショップを積極的に開催している。</p>
+<h2>発酵は集合的かつ社会的なプロセス</h2>
+<p>Ferment the Cityは、ゴミをリソースに変換するプロセスに「発酵」という概念を持ち込んでいるだけではない。そもそも発酵とは、酵母・細菌などのもつ酵素によって、物質が変化すること。この概念を、人間のコミュニティというテーマにまで拡大させて考えている。「発酵のプロセスとコミュニティの発展は似ている」とステファンは説明する。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity9.JPG"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity11.JPG"></p>
+<p><em>「発酵は、ひとつの微生物ではなく、微生物の集合体が影響し合って初めて起こる現象です。人と人のつながり、つまりコミュニティで起きる社会的なプロセスだと言えます。</em></p>
+<p><em>また、発酵は手がかかる。ぬか床ロボットも人間の手でかき混ぜる必要があるように、発酵には、時間と労力が必要です。だからこそ、助け合いや集合的なアクションが大切になってくる。</em></p>
+<p><em>ここから「社会的な発酵」というコンセプトを掲げることにしました。」</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity.jpg"><br>
+<em>「Ferment the City」の活動領域を示す図。「リサーチ」や「社会啓蒙」に加え「社会的な発酵ネットワーキング、コミュニティビルティング」が挙げられている</em></p>
+<p>ぬか床ロボットも人間の手でかき混ぜる必要があるように、発酵には、時間と労力が必ずかかる。だからこそ、助け合いや集合的なアクションが大切になってくる。ステファンは、「社会的な発酵」は私たちの生きるコミュニティ、ひいては社会をよりよくするために不可欠だと強調する。</p>
+<p><em>「人間が酵母・細菌だとしたら、細菌が野菜を変化させるように、私たちは集合的に社会を”発酵”させ、変化をもたらしえるのではないのでしょうか。現在、環境問題に対する施策が不可欠になるなかで、草の根的なコミュニティベースの戦略と活動が求められています。だからこそ『社会的な発酵』というアナロジーは、現代において有効なのではないかと考えました。」</em></p>
+<h2>都市を発酵させるとは、どういうことか</h2>
+<p>ゴミをリソースに変換し、アップサイクルする「素材の発酵」と、人と人が影響し合い、より良い変化に向かっていく「社会的な発酵」。その舞台として、なぜ「Ferment the City」は都市という言葉を使ったのだろうか。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity20.jpg"></p>
+<p>そういえば、建築家・隈研吾も、『<a href="https://diamond.jp/articles/-/14113?page=4">「沸騰する都市」から「発酵するムラ」へ</a>』という記事で、発酵というアナロジーを使用していた。</p>
+<p><em>ムラおこしはたいてい、情熱を持った「シティーボーイ」が「村」に都会の風を持ち込んでくることから始まります。北京や上海、シンガポールが即効性のあるマネーの力で都市を沸騰させているとするならば、ムラおこしで起きている現象は「発酵」に近いものじゃないか、という気がします。村にもともとあった遺伝子が外部からやってきた触媒に触れることで、ある種の化学反応を引き起こし、新しい「ムラ」が形づくられていく。人と人との有機的なつながりができた結果、リーダーがいちいち旗を振らなくても次々と連鎖反応が起こっていくのが、ぼくにはおもしろい。</em><br>
+　<br>
+ここでは都市は種菌であり、ムラはその種菌を受け取り、発酵が行われるための舞台だ。しかし、発酵が必要なのはムラだけではなく、都市そのものなのではないか。</p>
+<p>人間の消費活動が集中する都市では、大量の廃棄物が生み出され、エネルギーが消費されている。例えば、東京はその格好の例で、年間のゴミ生産量は<a href="https://www.theguardian.com/cities/2016/oct/27/which-is-the-worlds-most-wasteful-city">世界の都市で3位</a>、かつエネルギーや食料などの生産活動は地方や国外にどっぷり依存した、完全なる非自立都市だ（東京の<a href="https://www.nikkei.com/article/DGXNASFK08032_Y1A600C1000000/">食料自給率は1%</a>）。</p>
+<p>ここで、トップダウンの政策による解決を目指すのではなく、コミュニティによる集合的な活動を通してこそ、国連の推奨する「<a href="https://www.scp-centre.org/wp-content/uploads/2019/03/Circular_Cities_Publication.pdf">循環型都市（Circular Cities）</a>」が実現するのではないか。</p>
+<p>人間が細菌となり、都市にもともとあった遺伝子と化学反応を起こして、新しい循環型都市へとアップデートしていく。「Ferment the City」のメッセージは、「発酵」というアナロジーを通して、都市と自然、人間との対話を促すことだ。</p>
+<p>例えば東京を発酵させたら、どんな景色が広がるのだろうか。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity21.jpg"></p>
+<hr>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity_stefan.png"><br>
+<em>ステファン・シモン（Stefan Simon）</em></p>
+<p><em>環境科学専門。<a href="https://www.collectivegreen.de/">COLLECTIVE GREEN</a>創始者。気候変動、サステイナビリティ、循環経済など環境に関わる幅広いトピックでプロジェクトを行なっている。目標は、環境に関する実践者のグローバルなネットワークを作り、多くの人にサステイナブルな生き方を伝えること。</em></p>
+<p>編集協力：向晴香さん<br>
+写真提供：COLLECTIVE GREEN</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/fermentthecity/med/fermentthecity19.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[エンジニアリング×デザインで循環型社会を目指す台湾のスタートアップ、台湾の「REnato lab」]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/taipei/renato</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/taipei/renato</guid>
+            <pubDate>Wed, 04 Mar 2020 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>都市を考えるとき、循環型経済やサステイナビリティというテーマを、最近特に意識するようにしている。</p>
+<p>2019年秋、台北に1ヶ月滞在していた時に、「REnato lab」というスタートアップに出会った。日本でサーキュラーエコノミーが話題に上るとき、欧米の事例が挙げられる機会が多いように思うが、実は隣国台湾も、日本よりずっとサステイナビリティの取り組みで進んでいる気がする。</p>
+<p>「Relive Everything（すべてを生き返らせる）」を掲げ、廃棄物リサイクルのコンサルティングとサーキュラーエコノミーを推進するストーリーテリングを行う「REnato lab」について、<a href="https://unleashmag.com/">Unleash</a>で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2020/02/19/circular_economy_renato/">https://unleashmag.com/2020/02/19/circular_economy_renato/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/renato/med/renato.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[”A Huge Small Place”: 「東京に暮らすということ」]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/tokyo/interview</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/tokyo/interview</guid>
+            <pubDate>Mon, 02 Sep 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>東京の仕事文化をドキュメントする新しいプロジェクト、<a href="http://everybodyworks.jp/">Everybody Works</a>さんに、「東京」をテーマにインタビューしてもらいました。都市を観察する方法や、東京をどう”居場所（ホーム）”にするか、などについて話しています。</p>
+<p>インタビュー場所に選んだのは、クリエイティブレジデンスの<a href="https://www.almostperfect.jp/">Almost Perfect</a>。</p>
+<p>英語だけですが、ぜひ読んでみてください。</p>
+<p>▼ A Huge Small Place: an Urbanist’s Guide to Tokyo<br>
+<a href="http://everybodyworks.jp/urbanists-guide-to-tokyo/">http://everybodyworks.jp/urbanists-guide-to-tokyo/</a></p>
+<p>インタビュー、編集: David Willoughby</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/interview/med/almost-perfect-4-868x579.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[街好きのための旅ガイド:ローマ編]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/rome/Introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/rome/Introduction</guid>
+            <pubDate>Mon, 29 Jul 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/Introduction/med/carlos-ibanez-oI141-aIwnQ-unsplash.jpg"><br>
+<em>Photo by Carlos Ibáñez on Unsplash</em></p>
+<p>どこを歩いてもローマの古代遺跡がごろごろと転がっているローマ。考古学好きの人には夢のような街である一方で、現代建築や現在進行中の街づくりの実践などに興味がある人には、ちょっと物足りないかもしれない。</p>
+<p>ローマの考古学的な側面というよりも、拡大を続ける「21 世紀のメトロポリス」としての現在のローマを、街づくりの観点から歩きたいという人のために、おすすめポイントまとめ。</p>
+<h3>Things to do, places to go（おすすめスポット）</h3>
+<ul>
+<li>
+<p>EUR：ダウンタウンからメトロで 30 分ほどの距離にある、新しい市街地。ヨーロッパの都市には大聖堂を中心としたはっきりとした「歴史的中心」があるけれど、それとは少し離れた場所に、ハイパーモダンでビジネスを中心としたエリアがあることが多い。イメージとしては、ロンドンの Docklands やパリの La Défense。この EUR が面白いのは、元々ここは、1930年にムッソリーニによって構想された地区だということ。1942 年の万博に向け、20 年続いていたイタリアのファシズム政権を賞賛する目的で建設が始まった。もちろん第二次世界大戦の影響で建設は中止されるものの、戦後 1960 年代には、政府の支援で未完成の建築物が復活。それと同時にオフィスビルや公共施設などの近代建築も建てらた。ファシズム建築に興味がある人は、ぜひ。</p>
+</li>
+<li>
+<p>今回滞在したピニェト<a href="https://www.romeing.it/pigneto-neighbourhood-rome/">Pigneto</a>は、最近人気がで始めたヒップなエリア。昔は労働者階級のための郊外として、市街地へのアクセスも最悪だったが、最近メトロの駅ができたこともあり、最近開発が進んでいる。観光地とはまた違う、ローマの若者が週末にいくような地元のエリアを体験したい人におすすめ。</p>
+</li>
+<li>
+<p><a href="https://www.blocal-travel.com/italy/central-italy/lazio-italy/rome-italy/southern-rome/rome-ostiense/garbatella-is-poetic-neighbourhood-html/">Garbatella</a> は、当時イギリスで流行っていたエベネザー・ハワードのガーデン・シティ（田園都市）構想を倣って1920年に作られた地区。コンパクトなネイバーフッド内に、煉瓦造りの建築群と緑溢れるコミュニティスペースが集まっていて、歩くと楽しいエリア。</p>
+</li>
+<li>
+<p>ウォーターフロント開発や水辺の活用に興味があるひとは、夏なら夜の Tiber Island がおすすめ。<a href="http://www.lungoiltevereroma.it/">Lungo il Tevere</a>というナイトマーケットが、毎年 5 月から８月末まで開催されている。同時期に広場などのパブリックスペースで屋外映画祭も開催されており、「こんな水辺が欲しい！」と思わせてくれる賑わいがある。</p>
+</li>
+</ul>
+<h3>Read（読み物系）</h3>
+<ul>
+<li>
+<p>イベント情報やおすすめスポットを紹介している現地メディアでは、<a href="https://www.romeing.it/">Romeing</a>（英語のみ）がおすすめ。</p>
+</li>
+<li>
+<p>City Talesシリーズの<a href="https://www.amazon.com/Rome-Tales-City-Helen-Constantine/dp/0199572461">Rome Tales</a>は本当におすすめ。英語だけれど、ローマを舞台にした短編小説が12つ編まれている。フィクションであれノンフィクションであれ、その街が舞台になった「物語」を読むことが好きな人に。</p>
+</li>
+<li>
+<p>ローマの街は、正直とても汚い。ローマ帝国時代の遺跡や噴水などは綺麗に掃除されている一方で、市のゴミ回収システムはむちゃくちゃ。結果として、異臭を放つゴミ箱が、街のあちこちに転がっている。<a href="http://www.romafaschifo.com/2019/07/allucinante-san-paolo-la-stazione-della.html">Roma Fa Schifo</a>（&quot;ローマのくそったれ&quot;、という意味）という地元のwebサイトは、ゴミ問題など街のあちこちで市民が感じる日常のイライラを、写真をとって共有できるプラットフォーム。集まったデータは政策提言に使われる。</p>
+</li>
+</ul>
+<h3>Organization, initiative (組織や人物など)</h3>
+<ul>
+<li>アメリカ人の建築家、 <a href="http://tomrankinarchitect.com/">Tom Rankin</a>は長年ローマで仕事をしており、ローマに関する彼の<a href="https://tomrankinarchitect.com/blog/">ブログ</a>は参考になる。日本語訳はないが、<a href="https://www.amazon.it/Rome-Works-Architect-Explores-Resilient/dp/0692559418/ref=sr_1_fkmr0_1?__mk_it_IT=%C3%85M%C3%85%C5%BD%C3%95%C3%91&amp;keywords=Rome+Works%3A+An+Architect+Explores+the+World%27s+Most+Resilient+City&amp;qid=1563653490&amp;s=dmusic&amp;sr=8-1-fkmr0">Rome Works: An Architect Explores the World's Most Resilient City</a>という本も執筆している。</li>
+</ul>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/Introduction/med/carlos-ibanez-oI141-aIwnQ-unsplash.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[EUR：ムッソリーニが描いた理想の街]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/rome/EUR</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/rome/EUR</guid>
+            <pubDate>Wed, 24 Jul 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>ローマに滞在していた時のこと。猛暑のなか、街中に散らばる古代遺跡を訪ね歩き、最終的に、「古代もの」に若干うんざりしてしまった。古代ローマ帝国時代の建築と都市計画を全面的に売りにするのは良いとして、現代都市としてのローマの新しい機能や実践については、ベールに包まれたままな気がしたのだ。</p>
+<p>そんな折、政治地理学を専門とする地元の友人に、市内に興味深い地区があることを聞いた。歴史的遺産が集まるローマの中心地から、電車で南西部へ30分ほどの距離にある、<a href="https://en.wikipedia.org/wiki/EUR,_Rome">EUR</a>（日本語では、エウルと発音するらしい）。ローマ近郊に1930年代から建設された新都心で、ある意味「ローマで最も悪名高い」地区だという。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR2.jpg"></p>
+<p>EUR (Esposizione Universale Roma)は、1942年に開催予定であったローマ万国博覧会のために、1935年に建設が始まった。指揮をとったのは、ファシスト党の党首であった、かの有名なベニート・ムッソリーニだ。</p>
+<p>万国博覧会では、イタリアの20年間にわたるファシズム政権を讃え、その権力を誇示する予定であったが、第二次世界対戦のため中止となる。EUR地区も、未完成のまま放置されることになった。</p>
+<p>再びこの地区の開発が始まったのは、戦後のこと。中心街からは少し離れた、新しい行政とビジネスの基盤として再開発され、1950年代から1960年代の間に、未完成のまま残されていたファシスト時代の建物が完成。近代的なオフィスビルやマンションなども、追って建設された。「悪名高い」と言われているのは、今でもこのエリアが、ファシズム建築の面影を色濃く残しているからである。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR3.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR4.jpg"></p>
+<p>市内から電車でEURに向かった私たちは、旧市街とは比べものにならない車道の広さと車の量に圧倒された（因みにローマ中心部も、車の交通量が多いことで批判を受けている）。イタリアの都市の多くは、旧市街地での車の使用が規制されていることが多く、コンパクトで中世的な街並みが魅力的だ。EURは、まさにその真逆。高層ビルも建ち並び、街全体のスケールが、横にも縦にも何倍にも大きいといった印象だ。スケールが大きいうえに信号や歩道が少なく、歩行者向けにデザインされた街ではないなと感じた。</p>
+<p>EUR地区は、中央を走る大通りを軸に、完璧に左右対象に設計されている。官公庁やオフィスの他、博物館や公園、スポーツ施設や集合住宅、商業施設など、現代都市に必要なインフラは、あらかた揃っているという印象だ。</p>
+<p>広大な中央公園から歩き始め、Palazzo della Civiltà Italianaなど、いくつか有名なファシズム建築を訪ねた。1928年から1938年にかけてエンリコ＝デル＝デッビオ、ルイジ＝モレッティの設計で建造された、複合スポーツ施設のフォロ・イタリコ（建造当初はフォロムッソリーニと呼ばれていた）ほか、「現代のパンテオン」とも呼ばれるイタリア合理主義建築のリーベラの会議場など。これらのファシズム建築は、新古典主義とイタリア合理主義を掛け合わせたスタイルで作られている。大理石など、古典建築に典型的な素材が用いられ、ローマ帝国を彷彿とさせる建築物が多い。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR5.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR6.jpg"></p>
+<p>そもそもファシズム建築を楽しむのは何だか気がひけるが、それ以上に、①「新都心」と言う割に、新古典主義とイタリア合理主義の折衷的な街並みが、ローマ帝国の栄光へのノスタルジーと模倣から、やはり越え出ていないこと、②戦後の車中心的な再開発が、「現代都市としてのローマ」として物足りなく、少し残念だった。</p>
+<p>人間のサイズを超えた、独特でシュールな地区、EUR。</p>
+<p>街歩きが好きで、建築や都市計画に興味がある人がローマを訪れた際は、ぜひ。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR6.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[「知っている」よりも「知ろうとする」が都市を面白くする ── 今、私たちに必要な街への態度]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/kyoto/urbanresearch</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/kyoto/urbanresearch</guid>
+            <pubDate>Wed, 12 Jun 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>まだ足を踏み入れたことのない場所を訪れたとき、どうやってそのまちをリサーチするのか？そもそもまちを「知る」ということはどういうことか？</p>
+<p>都市を訪問して気づくこと、現地での情報収集の仕方、事前の下調べについて、空間や企画、リサーチについて仕事をするスピーカーが会話し、視点を共有するシンポジウム。「都市をどう”知る”のか？」という問いについて、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/06/13/how_to_know_a_city/">https://unleashmag.com/2019/06/13/how_to_know_a_city/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/urbanresearch/med/urbanresearch.jpeg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[現代にフィットするお茶の楽しみ方とは？京都の「間-MA」は“茶人文化”をアップデートする実験空間]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/kyoto/ma</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/kyoto/ma</guid>
+            <pubDate>Wed, 05 Jun 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>2019年3月30日、京都九条に「◯間　-MA-（呼称:マ）」という複合施設がオープンした。築約100年の京町家をリノベーションして作られた空間で、テーマは日本の「お茶文化」。</p>
+<p>茶人文化を伝統のまま楽しむのではなく、現代の文脈で解釈をし、実験を重ねる「◯ 間」-MA-」について、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/06/06/kyoto_ma/">https://unleashmag.com/2019/06/06/kyoto_ma/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/ma/med/MA_Kyoto4-720x480.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[本町エスコーラ：都市とDIY主義]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/kyoto/honmachiescola</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/kyoto/honmachiescola</guid>
+            <pubDate>Sun, 02 Jun 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>最近はリノベーションブームなどというけれど、出来上がったものを 見てみると、ヴィンテージな風を吹かせただけの、ほぼ新築ばりに高予算で他人任せなプロジェクトも多い。それに比べて、「自分たちで 作ろう」というセルフビルドのプロジェクトは、クライアント、建築家、 大工や使い手の境目が曖昧で、皆で一緒に汗をかく。そんな感じで 出来上がった空間に集まる人々は自然と、自分たちの手でものを生み出す力のある、地に足がついた人が多い気がする。</p>
+<p>京都、本町。三十三観音で有名なこのエリアに、空き家となっていた長屋群を活用した、セルフビルドの面白い空間があると聞きつけた。細長い路地から敷地内らしき通路に入ると、「マッシュルームワークショップ」と書かれた看板が出迎えてくれた。この時点で、既になんだか面白い。この場所の責任者の一人である山口さんが、敷地の中心部に位置するこじんまりとしたリビングダイニングに案内してくれた。 壁に貼られた住民による掃除当番表、本棚、テーブルの横には、マーケットイベントを開催したときに作ったという、手作りの燻製機。リビ ングダイニングに繋がる形で、これまたみんなで作ったという風体の テラスがあり、そこから庭が広がっている。「アイデアさえあれば、なんでも手作りできちゃうんですよ」と、住民の一人であるレオが興奮気味に話してくれた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola5.jpg"></p>
+<p>路地内の350m²ほどの長屋群を改修した<a href="http://www.escola-kyoto.com/escola-index.html">本町エスコーラ</a>。住居、スタジオ、オフィスが併設された複合施設として使用されている。京都でアーティスト支援を行うHAPSと、空き家活用を後援する京都市の助成で、2014年にプロジェクトがスタートした。発起人の佐々木氏は、もともとブラジル音楽のミュージシャン。名前は、ポルトガル語で学校を意味する「エスコーラ」とした。その名の通り、目指したのは、みんなで集まり、学びあえる場作りだ。</p>
+<p>「ここでは、住んでいる人自身がデザインする、ということを大切にしています。完璧につくりこまれたものだと、後から何も変更を加えら れません。与えられたもの・固定されたものを与えられるだけでは、人間としての学びが少ないと思うんです」と、山口さんは語る。建築の自立を掲げて、専門家には基礎の部分だけお願いし、あとはワークショップなどを通して、コミュニティメンバーで空間を作り上げた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola3.jpg"></p>
+<p>案内してもらい、庭に出た。<a href="https://www.travelingcircusofurbanism.com/ehime/senjo">エコロジーを専門に勉強するレオ</a>が、京都動物園でもらってきた動物の排泄物から作った堆肥を使って、野菜やハーブを育てている。「今後、蜂や鶏を買うのも面白そうだなと思っています」とレオ。住民がみんなで作ったというミニ茶室や、コンポストトイレもある。今後、水道や発電システムなどを見直し、内部で エネルギーの循環が完結するような仕組みづくりを実験する予定なのだそうだ。日々の運営は、コミュニティメンバーで自立的に回す。リノベーションやものづくりの専門家、研究者や編集者など、バックグランドがさまざまなメンバーが集まった。「知り合いのアーティストが数ヶ月滞在して、作品を残していく、なんてこともたまにあります。常に新しい活動が行われるのが、この場所の魅力です」と山口さん。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola6.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola12.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola13.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola25.jpg"></p>
+<p>地域や近隣住民との繋がりも、忘れてはいない。本町は、昔ながらの長屋が密集する古い地域だ。近年高齢化も進み、空き家率も増えつ つあるなかで、最近は、新しい開発の動きもある。「私の出身であるパリはジェントリフィケーションですっかり姿を変えてしまいました。同じことが、ここでも起こらないか心配に思っています。この場所ならではのローカルなお店やマーケット、銭湯などを紹介するローカルマップなどを作って、近所のゲストハウスに配るなどの活動もできたら良いなと思っています」とレオ。この地域の良さを最大限に残すための一助になれば、と語った。</p>
+<p>目指すは、ものをつくり、交換し、シェアして繋がるライフスタイルの 在り方だ。 資本主義経済から離れたギフトエコノミー。資本の力に頼って、建てては壊すを繰り返す都市の現状に、小さく控えめに、それでも情熱を持ってカウンターを唱える、「自分たちでつくる」DIY主義。そんな空気が充満する本町エスコーラに、勇気をもらった。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola15.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola8.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[「掃除」をデザインから考えるーー欧州のデザイナーが見る日本独特の文化]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/kyoto/cleaning</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/kyoto/cleaning</guid>
+            <pubDate>Tue, 21 May 2019 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>ゲーテ・ インスティトゥート・ ヴィラ鴨川レジデンスプログラムにて京都に滞在した欧州のデザイナー、ビルギット・ゼヴェリン＆ギヨーム・ノイ＝リナウドが、今年春に日本の掃除文化について研究を行なった。なぜ日本の「掃除」文化は海外から注目を集めるのか。</p>
+<p><a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/05/22/japanese_cleaning_culture/">https://unleashmag.com/2019/05/22/japanese_cleaning_culture/</a></p>
+<p>編集協力：向晴香さん、モリジュンヤさん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/cleaning/med/Broom-3-720x480.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ヒップホップ・アーキテクチャーとは何か]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/bogota/Lafamiliaayara</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/bogota/Lafamiliaayara</guid>
+            <pubDate>Fri, 01 Mar 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara11.jpg"></p>
+<p>ロサンゼルスで、今まで聞いたことのない建築理論に出会った。「ヒッ プホップ・アーキテクチャー」という言葉だ。ヒップホップ・カルチャー の視点から、従来の建築や都市プランニング、クリエイティブな場づ くりのあり方を捉え直すための思想のことを指すらしい。アクション を伴うから、理論というよりも運動と言った方が良いかもしれない。 ヒップホップという音楽のジャンルが、支配的な既存の音楽界への カウンターとして生まれてきたとすれば、その姿勢を応用する「ヒッ プホップ・アーキテクチャー」は、これまでの建築や都市のあり方にオ ルタナティブを提案する試みだ。</p>
+<p>建築運動家の Sekou Cooke は、黒人の建築家が未だに少ないこと を指摘し、今まで建築や都市プランニングの現場から取り残されて きた人々を、きちんとそのプロセスに含めるべきだと主張する。ヒップホップを通して、恵まれない子供達に建築や都市プランニングの教 育を行なう取り組みも行なっているという。その時は、へえ、こんな取 り組みもあるんだ、程度にしか思っていなかったのだが、数ヶ月後に 訪れたボゴタで、ああこういうことか、と、実践を持って理論を理解するというか、腑に落ちる経験があった。</p>
+<h2>バリオの声を聞く</h2>
+<p>コロンビアの首都、ボゴタ。かつては南米でもっとも危険な都市と称 されていたボゴタだが、近年では治安も劇的に回復し、今も現代進 行形で変化を続ける興味深い都市だ。ここボゴタで、アーティストで あり活動家でもある、Don Popo という人物に会う機会があった。 彼が始めた<a href="https://ayara.com.co/">La Familia Ayara</a>という団体は、ヒップホップ・カルチ ャーを通して、暴力的環境に暮らす子供達や女性をエンパワメント する活動を行なっている。まだ咀嚼しきれていない「ヒップホップ・ア ーキテクチャー」を理解するためのヒントがあるような気がして、La Familia Ayara のオフィスを訪ねてみた。</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Fp33RbmHjCk?list=PLONG5h-BghjHdTs-MMY7kwxyEkg7xUgLw" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>彼らが活動の対象にするのは、社会的に排除され、貧困を抱えるバ リオ(barrios:スペイン語で居住区を指す)や、少年院、薬物中毒者 更生施設などの施設だ。こうした貧しい地域では、日常的に暴力や 喧騒、性的暴力が絶えず、必然的に子供や女性などの社会的弱者 が、安心して自身を表現できる場がない。La Familia Ayara は、首 都ボゴタを中心に、コロンビア各地のバリオで、ラップやブレイクダン ス、フォトグラフィーなど、ヒップホップに関わるワークショップやイ ベントを無料で提供している。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara2.jpg"></p>
+<p>急なアポイントでオフィスに訪れた私たちを、スタッフやディレクター の他、各クラスの講師陣が大勢迎えてくれた。「私たちの目的は、単に ヒップホップの文化やテクニックを教えることではありません。そう ではなく、子供達がここでの活動を通して、自分自身を表現し、自信 をつけて、より良い方向に自発的に進んでいくことが大切だと思って います。」と Don Popo。なぜヒップホップなのか?という質問に、イン タビューに応じてくれたメンバーの一人がこう言った。「ヒップホップ は、変化を起こすための装置なんです。恵まれない状況におかれてい る若者や女性の未来の可能性を切り開き、市民参加を促進させるた めに、ヒップホップという文化に可能性があると思いました」確かに、 ボゴタのストリートでは、ヒップホップが人気だ。グラフィティ・アート も非常に盛んで、街を歩くと、あちこちにカラフルで、そして非常に政 治的でもあるグラフィティが目に入る。</p>
+<p>中心となるプログラムのひとつに、「ラップ・ディベート」がある。即興 ラップ対決をディベートに応用させたもで、バリオを舞台に繰り広げ られる。普段自分の意見をあまり表現したことのない若者が、人前に 立ち、議論をすることを学ぶ。ドラッグや暴力など、普段は繊細であ まり議論されることのないテーマでも、ラップという形だと議論しや すい。「ラップを通して、コミュニティ、都市、自らを取り巻く環境との 関係性を、彼らは解釈できるようになります。ラップバトルでは、家庭 で、ストリートで、地域で、何が起こっているのか、彼らから聞くことが できるのです」と Don Popo。ここで浮かびあがる、暴力、貧困、社会 的排除やレイシズムという諸問題は、どれも非常に重く、悲しい。だ からこそ、みんなラップという形で、音楽に乗りながら議論する。</p>
+<p>その日、ちょうど予定されていたラップ教室も、ついでに見学させ てもらった。大きなスピーカーをいくつか置いたコンパクトな空間 に、15 名ほどの若者たち。女の子の姿もちらほら見えて、なんだか嬉 しくなった。そういえば、ここはディレクターも先生も、女性と男性の 割合が同じくらいだ。ヒップホップ・カルチャーに悲しいことにありが ちな男尊女卑は、ここでは無縁のようだ。</p>
+<h2>「限界のない都市」</h2>
+<p>ボゴタを離れた翌月の 2019 年 4 月、Don Popo がボゴタの市議会 員に立候補したことがわかった。「限界のない都市」をキャッチフレ ーズに、セキュリティやモビリティ、経済発展などの課題に取り組む。</p>
+<p>「政治、社会、文化は全て繋がっています。社会文化的な活動にヒッ プホップを使ってきた私ですが、それを政治に汎用させることは、い わば必然的な結果でした」と彼は語る。「ボゴタには、抜本的な変化 が必要です。クリエイティブな創造性を、都市サービスに組み込む時 です。都市のさらなる発展とイノベーションを今まで拒んできた限界 を、ボゴタは打ち破る必要があります」と語る彼の目は、ボゴタへの 真摯な愛を語っていた。それを見て、ヒップホップ・アーキテクチャー ならぬヒップホップ・アーバニズムとは、つまりこういうことなのだろ う、と思った。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara3.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara7.jpg"></p>
+<p>ヒップホップスタイルのデザインがあしらわれた建築とか、ヒップホ ップアーティストのための街を作ろう、という単純なことでは、ない。 そうではなく、権威的で支配的、白人中心的で男性中心的な既存の 建築界や都市政治へのカウンターとして、今まで周縁化されていた 人々の声を届けるオルタナティブを提示すること。音楽は政治的で あり、建築も都市も政治的である、そんな当たり前のことを、改めて Don Popo に教えてもらった。辺見庸の言う「ビニールハウス風の無 菌・無風空間」的な、いかにも優等生風の正当な街並みにはそろそろ さよならをして、ボゴタが控えめに提案する”ヒップホップな街”を、も っと真剣に考えてみる必要があるのでは、と思った。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara8.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara1.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[都市空間とアートを行き来する、メキシコシティ PAISAJE SOCIAL の挑戦]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/mexico%20city/paisjesocial</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/mexico%20city/paisjesocial</guid>
+            <pubDate>Wed, 27 Feb 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho3.jpg"><br>
+<em>ソーシャルランドスケープ・ラボラトリー / 講演者:イングリッド・スカエル、馬場菜津美 / 協力: メキシコ国立自治大学現代美術館、ラボラトリオ・アルテ・アラメダ、アルムノス 47 / © Paisaje Social 2018</em></p>
+<p>1996 年にメキシコ国立自治大学院芸術学部絵画学科に入学して以来、メキシコを中心に世界的に活躍するアーティスト、<a href="https://haginomiho.weebly.com/fundacioacuten-paisaje-social">はぎのみほ</a>氏。芸術を用いて社会とパブリックスペースに介入することによって、より良い人間社会の構築を目指す<a href="https://www.paisajesocial.org/">非営利団体ソーシャルランドスケープ基金（Fundación Paisaje Social A.C.）</a>を運営しています。都市におけるを社会的弱者、貧困層の若者や老人のシェルターで定期的に活動を続け、対象者の内部からポジティブな変化を即すための活動を行なうはぎのさんに、お話を聞きました。</p>
+<h2>日本から、メキシコへ。</h2>
+<p><strong><em>そもそも、なぜ活動の拠点を日本からメキシコに移したのでしょうか？</em></strong></p>
+<p><strong>はぎのみほ：</strong> 私はもともと、札幌で育ちました。当時は非常に保守的な環境の中で生活していたと思います。それからカナダやアメリカでも生活をし、美術学校を目指していた時期に、ふと縁がありメキシコに行く機会がありました。価値観も言語もわからず、どこを歩いてもよくわからない感覚が、今までと違ってドキドキしたのを覚えています。</p>
+<p>その時の感覚が忘れられず、思い切ってメキシコに移り住み、スペイン語が全くわからないながらも現地の美術学校に通ったりしました。美術もスペイン語も初心者だったので、苦労しましたね。</p>
+<p>卒業後、日本や北米でも少し活動をしました。ロサンジェルスで日系アーティストのアシスタントをしていたことがあったのですが、その時に、欧米のアートの世界が非常に白人男性中心的であることに気づいたんです。それに比べてメキシコは、女性や外国人、先住民であろうと関係なくアーティストに機会がある印象があって。欧米のアートの潮流とは違うところで活動できるところと、アートが社会において日常的であることに魅力を感じ、拠点をメキシコに落ち着けることにしました。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho7.jpg"><br>
+<em>コルニャ青少年社会保護自立支援センター / Taller JARDINCITO (ワークショップ小庭)メキシコ市社会保護自立支援省 / 参加アーティスト：フアンパブロ・アベンダニョ（ペケニョス・ミステリオス）/ © Paisaje Social 2018</em></p>
+<p><strong><em>「疎外されている個人」へのまなざし、が活動の核になっているとお聞きしましたが、活動の核、フィロソフィーは何ですか？</em></strong></p>
+<p><strong>はぎのみほ：</strong>「良心」ですね。これが一番です。北海道やニューヨークで暮らしていたときに、何か問題があった時に誰かが助けてくれない、という状況を何度か経験しました。こういう状況にならざるを得ない社会というのは、何が原因なのか、ということを調べ始めたら、経済社会システムや、政府や法律の成り立ちの中で、支配階級が搾取する社会構造が見えてきたのです。個人の関係性もここで断ち切られてしまう。人間の活動自体が、お金や利益で定義づけられていることに気づいたのです。</p>
+<p>メキシコは家族の関係が強く、こうしたコミュニティを感じられる場所の魅力に気づきました。コミュニティの中にいれば、人間としての知恵のようなものを、自然と学ぶことができますよね。個人が断ち切られていて、困ってても誰にも聞けない、という世界は、私たち人間が不幸になる原因です。伝えたいことは、これが一番ですね。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho2.jpg"><br>
+<em>Entrega Comixcal / コミスカル(伝統陶器窯)支援 / 寄付・協力:日墨会館、SAA &quot;FEEL LIKE JOURNEY&quot; / © Paisaje Social 2018</em></p>
+<p><strong><em>PAISAJE SOCIAL（ソーシャルランドスケープ）は、都市における問題をアートの力で解決することを目指した活動だとお聞きしました。活動の趣旨を簡単に教えて頂けますか？</em></strong></p>
+<p><strong>はぎのみほ：</strong> 非営利団体の PAISAJE SOCIAL は、芸術の力で人と人のつながりを強くする、というのがスローガンです。2009 年の立ち上げから現在まで 200 人以上のアーティスト達とコラボレーションをして、社会的に阻害されている人々や地域の関係性が良くなるように活動しています。</p>
+<p>例えば、メキシコ市政府が運営するメキシコシティの青少年保護施設や老人シェルターがあります。親から暴力を受けて保護された中高年の子供達が集まるような場所で、ここにアーティストを招き、定期的に参加型の Taller JARDINCITO（ワークショップ小庭）というアートのワークショップを開催したり、シェルターに入っている高齢者の方々が現代美術館にてより快適に楽しんでもらえるように工夫してアテンドするなどという活動をしてきました。</p>
+<p>毎週ワークショップをすることで、最初のうちはある意味強引に共同作業をしてもらう、ということを意識しています。毎週通い続けると、内部の人々の関係が良好化し、施設への人の出入りが多くなり、自分達が作った作品なども壁に張り出し始め、施設内もより綺麗になっていきます。どのホームも、4 年ほどは関わって、もう我々がいなくても大丈夫だという頃に、彼ら自身にその後の運営を託す、というサイクルで行っています。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho4.jpg"><br>
+<em>はぎの氏はメキシコ南部に住んでいるサポテカ先住民族のトランスジェンダーコミュニティ内の人間関係の繋がりの強さに興味を持ち、2015 年から写真撮影を始めた。フチタンのムシェ / “Las Autenticas Intrépidas buscadoras del peligro” / グループ名「真の勇敢な危険の探求者たち」/ © はぎのみほ　 2017</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho5.jpg"><br>
+<em>フチタンのムシェ『フェリナ・サンティアゴ』 / © はぎのみほ　 2015</em></p>
+<p>メキシコシティ以外での活動ももちろんあります。メキシコ南部のフチタンでは MUXE（ムシェ）と呼ばれるサポテカ先住民のトランスジェンダーコミュニティの人々の写真を撮影する活動を、個人的に 2015 年から行なってきました。その後、2017 年にメキシコシティとフチタンでも大きな地震があり、近隣の多くの街が半壊しました。そのとき、ソーシャルランドスケープ基金は被災者を対象としたワークショップの企画を行いました。コミュニティ内のつながりが強く、外部からの援助が非常に届きにくい地域でも、信頼関係がありますので、現在でも様々な方法で援助活動を行なっています。</p>
+<p>近年はこれらの経験を若手に伝えるために、ソーシャルアートの本の執筆をしている美術批評家、Ingrid Suckaer イングリッド・スカエルらとともに Laboratorio Paisaje Social （ソーシャルランドスケープラボラトリー）というアーティストや美術館の教育活動関係者を対象にしたトレーニングも行っています。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho1.jpg"><br>
+<em>崩落した家屋、フチタン / © はぎのみほ 2017</em></p>
+<p><strong>タロウ・ソリジャ（建築家・非営利団体ソーシャルランドスケープ基金副代表）：</strong> 施設内や現場の写真を撮って、それを SNS にあげる、という活動もしています。写真を公開することによって、外部へ内部の状況を発信できるうえ、ビジュアルでのレポートなどを行うことによって、人々が自然とその場所を掃除しだしたりして、その空間が綺麗になる、というサイクルもあります。</p>
+<h2>自分たちの空間に気を配り、大切にすること</h2>
+<p><strong><em>都市空間とコミュニティの関係性、コミュニティにとっての場の力がどのように作用するのか、何かコメントを頂けますか？</em></strong></p>
+<p><strong>はぎのみほ：</strong> 経済的に作られた空間は、価値観が歪んでコミュニティの存在がないがしろになってしまうことが多いと感じています。そのため、自然発生的に作られた場所はそのままの形で残すことが大切だと思います。</p>
+<p>コミュニティと場の力、という文脈でいうと、PAISAJE SOCIAL では彼らの空間を使った展覧会なども多く行っています。シェルターに住んでいる人、コミュニティ内部の人々が実際に自分たちの空間に手を入れることで、自然とその空間に気を配りはじめ、長期的に大切にするということに、私たちは気づきました。</p>
+<p><strong>タロウ・ソリジャ：</strong> 建築的な空間、というとお金も時間もかかりますし、許可なんかをとっていると、肝心のコミュニティがおざなりになってしまうことも少なくありません。そこに住む人、使う人が長期的に自分たちで大切にする、というサイクルが、一番持続性があります。なので、「この部屋をみんなでコンバージョンできるのでは？」という発想で、ワークショップで作ったものを展示するために壁を綺麗にするなど手を加えることで、長期的に彼らがその空間に気を配るきっかけづくりをしています。</p>
+<p><a href="http://xn--pequeosmisterios-bub.com/">PEQUEÑOS MISTERIOS</a>のアーティスト、Juanpablo Avendaño（ファンパブロ・アべンダニョ）との共同活動で図書館を作る、というプロジェクトもありました。アーティストが様々な素材を使って好き勝手な空間を子供と作ることで、子供自身も大切にする空間が出来上がります。</p>
+<h2>コミュニティの姿が見える都市デザインを</h2>
+<p><strong>はぎのみほ：</strong> 失敗したプロジェクトもあります。都市デザインの目からみたら上手く行ったかもしれないけれども、コミュニティへ反映できなかったプロジェクトです。メキシコシティ南部に Anillo Periférico という環状線があり、そこに「<a href="https://es.wikipedia.org/wiki/Ruta_de_la_Amistad">Ruta de la Amistad</a>」友情の道という大きな彫刻群が並ぶエリアがあります。68 年のオリンピックの際に建設され、各国のアーティストがそこに作品を残しています。日本人彫刻家の<a href="http://jptca.org/takahashi_kiyoshi/">高橋清</a>の作品もあります。</p>
+<p>この「Ruta de la Amistad」ですが、近年の都市開発の影響で、彫刻作品のいくつかを移動させる必要があり、私たちにも声がかかりました。当時ブームになっていたサイクリストのコミュニティと一緒にキャンペーンを行い、彫刻を動かした後にその周りに公園をつくり、それを自転車道路でつなぐ、というプロジェクトを提案し、コラボレーションしました。多くの補助金やスポンサーが集まったのですが、彫刻を動かすだけで、その後に自転車道路を作る案の予算はメインコーディネートによって削られてしまいました、コミュニティに還元することができなかったプロジェクトです。</p>
+<p><strong>タロウ・ソリジャ：</strong> 都市の中に巨大な彫刻を作る、というのはそれなりの責任が伴います。当時の関係者の自己満足だけで出来たプロジェクトはもう古い。未来へのビジョンとして、経済面だけではなく、そこに住むコミュニティが本当に必要なものを作る、彼らをプロセスに組み込む、というセンシティビティと翻訳作業が、プロフェッショナルには必要だと思います。次の世代を考える時間軸への繊細さと良心は、空間づくりに関わるプロフェッショナルに大切なエッセンスです。</p>
+<p><strong><em>コミュニティのセンシティブな現状に耳を傾け、それを汲み取り、それを他のセクターの人々に伝える、流れを良くする、という点で、翻訳という言葉が、お二人の活動にぴったりだと思います。今後の活動予定はありますか？</em></strong></p>
+<p><strong>はぎのみほ：</strong> 今年は、地震でまちが崩れてしまった地域で文化活動を行い、一軒の家を建てるプロジェクトを行う予定です。復興に際して、建築に関するレクチャーを行ったり、演劇の衣装デザイナー、Sandra Garibaldi（サンドラ・ガリバルディ）とのプロジェクト、XUNCA PARA TECAS（フチタン女性のための可愛い小物）という民族衣装を現代風に仕立てた服の展示会の開催や、各家庭にミシンや Comixcal（コミスカル：伝統料理を作るための陶器窯）を届けるなどの活動をしています。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho6.jpg"><br>
+<em>XUNCA para TECAS / シュンカ・パラ・テカス(フチタン女性のための小さな小物) / 寄付・協力:菅原まりもとメキシコの音楽家達 / © Paisaje Social / サンドラ・ガリバルディ / © はぎのみほ　 2018</em></p>
+<p>私たちが活動してるその地域は、メキシコで一番風が強い地域でもあり、雨季は毎年浸水しますし、地震帯の真上なので地震のも起きやすい地域です。女性がコミュニティ経済を支えている特殊な場所でもあります。ミシンやコミスカルを届けたのは女性が働くことによってミクロ経済を回し、その家族収入を家の再建に使う、というサイクルを生み出そうとしているからです。ただ単にお金を渡すのではなく、調査を行なったうえで、持続的な持続経済を作るためのサイクルをうみ出すのを大切にしていますね。</p>
+<p>ここで作る家は、地元で取れる土を使って建てる予定です。外から資材を取り入れて運搬費にお金を使うのではなく、バナキュラーに現地の素材と人材を用いてつくります。</p>
+<p>アートは主観的なものです。しかし、PAISAJE SOCIAL は、相手がいてからこそ、成り立つ創作活動です。主観と客観のバランスを取りながらでないと、エゴイスティックなアートになってします。だからこそ、対話や人間関係を大切にした活動を今後も行っていきたいです。</p>
+<p><strong><em>今回はありがとうございました！</em></strong></p>
+<hr>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/paisjesocial1.jpg"><br>
+はぎのみほ</p>
+<p>1970 年北海道生まれ。1996 年よりメキシコシティに在住。北海学園大学法学部卒、メキシコ自治国立大学院視覚芸術学部絵画学科、大阪 IMI インターメディウム大学院講座修了。地理的、歴史的、身体的、アイデンティティやジェンダーまたは社会環境により隔離された個人に傾注、人間の本質そして大衆の中の個人についての探求をしながら、インスタレーション、写真、ビデオ、コンサート企画など様々な方法での作品の制作を行っている。主な個展は「ムシェ、開かれた心」バル・ハルディン、メキシコオアハカ州フチタン(2018 年)、「きおくのなかのくに」天神山アートスタジオ（タロウ・ソリジャとの共作、2018 年）国際セルバンティノ祭（メキシコ、グアナファト 2014 年）、メキシコシティ国際空港（2010 年）、「BLUE PIANO」シケイロス現代美術センター（高橋アキとのコラボレーション、2005 年）など。2018 年よりはぎのがディレクターを務める非営利団体パイサヘ・ソシアル基金は、芸術を用いて社会とパブリックスペースに介入することにより、対象者がより良い生活環境を自力で得ることを目的として活動している団体である。この活動に関連して、日本やメキシコにて個々人の関係を再構築するためのワークショップを行う。また、近年はメキシコ在住のの日本人、日系人芸術家たちの広報と、日墨の制作指針の違いと特徴を明確にする展覧会の企画、キュレーションも行なっている。主な展覧会は『トランスパシフィック・ボーダーランド：リマ、ロサンゼルス、メキシコシティー、サンパウロにおける日系ディアスポラのアート』日米国立博物館、ロサンジェルス（2017 年、メキシコを担当）、「Jardín de Selenita / 水晶の庭」グアナファト州立歴史芸術博物館(2018 年)、フランツメイヤー博物館(2017 年)、『Selva de Cristal / クリスタルジャングル、メキシコの日本人芸術家の周辺的な影響』展（メキシコ国立自治大学チョポ現代美術館にて 2011 年、及びグラン・ガレリア、アカプルコにて 2013 年）など。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/paisjesocial/med/haginomiho3.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[屋外で音楽が楽しめる！ メキシコシティの公園は「音」もデザイン]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/mexico%20city/audiorama_chapultepec</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/mexico%20city/audiorama_chapultepec</guid>
+            <pubDate>Sat, 09 Feb 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium9.jpg"></p>
+<p>広場、駅、空港、商店街、デパート、スーパーマーケット、テ一マパーク、病院、学校など、私たちが普段接しているパブリックスペースには、さまざまな音や音楽が存在します。人々の話し声や雑踏、車や電車の音の他に、インフォメーションや空間を演出するための BGM など、その種類は多岐にわたります。</p>
+<p>「音」という要素は、空間の見た目や機能に比べると見落とされがちです。しかし、音は無意識のうちに人々の気分や行動に影響を及ぼすという意味で、空間のデザインにとって大切な要素の 1 つです。</p>
+<p>この記事では、メキシコシティの公園チャプルテペック内にある音楽空間「Audiorama（アウディオラマ）」を事例に、パブリックスペースと音のデザインについて考察します。</p>
+<h2>ぶらりと立ち寄り音楽でくつろぐ隠れ家スペース</h2>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium3.jpg"><br>
+<em>木々に囲まれた秘密基地のような空間に、カラフルなベンチが並べられている</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium6.jpg"><br>
+<em>「Audiorama」では、曜日によって違った音楽が気軽に楽しめる。チケットも予約もいらず、単にふらりと足を運ぶだけで良い。</em></p>
+<p>ラテンアメリカ最大級の公園であるチャプルテペック。その面積は 686ha にも及び、週末は地元民でにぎわいます。「森」と言われるだけあって、湖や多くの木々が生い茂る自然豊かな森林型公園となっていますが、美術館や歴史的モニュメント、国内唯一のお城まで、全てが詰め込まれたメキシコシティのランドマーク的存在です。</p>
+<p>このチャプルテペックに、屋外にいながら本格的な音楽を楽しめる「Audiorama」という小さな空間が存在します。</p>
+<p>広大なチャプルテペックの一角に、隠れ家のようにひっそりと佇むこの空間は、市民誰もがリラックスできる場所となることを目的に、当時のメキシコ政府によって 1972 年に建設されました。Audiorama 内に「Cavern of Cincalco」という洞窟があり、ここがスペインのメキシコ侵略以前から原住民によって神聖な場所とされていたことが、パブリックスペースをつくるきっかけとなったようです。現在はチャプルテペックの公園の一角として、メキシコ市が運営しています。</p>
+<p>木々に囲われたコンパクトな空間は、まさに公園の中の公園。カラフルなベンチがいくつか置かれ、それを囲うように屋外用スピーカーが何台か設置されています。このスピーカーから、丁寧にキュレーションされた音楽が常に流されており、良い音響で市民が気軽に音楽を楽しめるスペースになっています。</p>
+<p>午前 9 時から午後 4 時までの間であれば誰でも自由に出入りができるうえ、Audiorama 内部なら自由に借りて読める本まで完備されています。音楽の種類は曜日によって決まっており、ジャズやクラシック、メキシカンミュージックまで様々なジャンルを楽しめます。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium8.jpg"><br>
+<em>無料で本の貸し出しも。</em></p>
+<p>ベンチに腰を下ろすと、音楽と合わせて Audiorama を囲む木々のせせらぎが聞こえます。広大なチャプルテペック公園ですが、周囲は大きな高速道路に囲まれており、車の騒音が耳につく場所もあります。しかし Audiorama の中では木々で囲まれた秘密基地のような構造とスピーカーから流れてくる音楽のせいか、そんな車の音も全く気になりません。加えて内部ではおしゃべり禁止。立ち寄る人々が音楽に集中し、読書や瞑想を楽しめる仕掛けになっています。</p>
+<p>都市の中心にいながらもまるで山奥に来たかのように静かな環境で音楽を楽しむことができ、車の騒音を遮る形で自然の音にも耳を澄ませられるよう工夫されています。また、様々なジャンルの厳選された音楽が流されていることで、自身の好みに合わせて通い、新しい音楽を発見することもできます。</p>
+<h2>空間デザインに必要なサウンドスケープという考え方</h2>
+<p>空間の設計に「音をデザインする」という考えが芽生え始めたのは、1960 年代後半に現代音楽作曲家であるマリー・シェファーが提唱した「サウンドスケープ」という考え方が最初と言われています。サウンドスケープは「音」という要素を生活や社会、風景との関連において捉える考え方で、「音風景」、「音景」などと訳されます。空間設計において、機能面や視覚的要素だけではなく、その場所がどう聞こえるか？というサウンドスケープデザインも考慮することが大切です。</p>
+<p>一方、日本のパブリックスペースは雑多な音で満ちあふれています。車の騒音に始まり、考えのない BGM の使用や公共アナウンス、周囲の店舗から流れてくる音楽など、常に様々な音で溢れかえっています。例えばヨーロッパの都市を旅行したことがある方は、日本と比べて都心の雑音が少ないことに気づいたことがあるかもしれません。公共空間における音環境デザインは、日本ではまだ未開拓の分野とも言われています。</p>
+<p>サウンドスケープのデザイン手法の一つとして、「音のゾーニング」という考え方があります。公共空間における利用者の導線を考慮し、商業空間、駅のプラットフォームなどでの、移動や滞留といった人々の行動に合わせて、「音」のあり方を工夫する考え方です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium7.jpg"><br>
+<em>音楽と木々のせせらぎに集中できる「Audiorama」は、最高の瞑想空間。写真に写っている黒いスピーカーが、空間をぐるりと囲うように何台も立っている。</em></p>
+<p>前述のマリー・シェーファーは、一つひとつの音がクリアに聞こえる「ハイファイなサウンドスケープ」と、車や工事の騒音や店舗から流れる BGM など、ある特定の音が支配的になり他の音が聞こえない状態を指す「ローファイなサウンドスケープ」の 2 種類の音環境のあり方を提唱しています。Audiorama は、オープンスペースに最適な「ハイファイなサウンドスケープ」を提供することで音を上手くゾーニングし、リラックスしてくつろげる空間づくりを実現しています。</p>
+<p>雑然とした音が非常に多い日本の都市空間で、人々の使い方や気分を左右するサウンドスケープを上手くデザインすることは、見た目のデザインや機能性だけでは達成できない「心地よさ」や「居心地のよさ」に貢献するのではないでしょうか。そんなことを考えさせられた Audiorama でした。「ソト」好きの人、メキシコシティを訪れる際は、ぜひお立ち寄りください！</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium4.jpg"><br>
+<em>岩や木々など、自然で出来た洞穴のような構造も、音楽を楽しむのにぴったりな音環境をつくるのに貢献している。</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium5.jpg"><br>
+<em>「ソト」好きな人は必ず訪れたいメキシコシティのパブリックスペース。</em></p>
+<hr>
+<p><em><a href="http://sotonoba.place/audiorama-mexicocity">ソトノバ</a>から転載</em></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium9.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[街好きのための旅ガイド:メキシコシティ編]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/mexico%20city/introduction</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/mexico%20city/introduction</guid>
+            <pubDate>Sat, 09 Feb 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/introduction/med/priscilla-flores-659078-unsplash.jpg"><br>
+<strong>Photo by Priscilla Flores on Unsplash</strong></p>
+<p>人口2200万人を数える、ラテンアメリカ最大の都市、メキシコシティ。英語での情報がまだまだ少なく、最初は街づくりや建築関連の事例も、表面的なものしか見つからなかった。現地の友人や、拙いスペイン語を駆使して見つけた、アーバニストのためのメキシコシティ情報まとめ。</p>
+<h2>To visit, to do（おすすめスポット）</h2>
+<ul>
+<li>
+<p>王道だけれど、建築好きはまず<a href="http://www.casaluisbarragan.org/">Casa Estudio Luis Barragán</a>に行く人が多い。メキシコ人の建築家・都市計画家、ルイス・バラガンの自邸。</p>
+</li>
+<li>
+<p>Casa Estudio Luis Barragánのすぐ隣に、<a href="http://archivo.design/en/">Archivo dieno y architectrie</a>という小さなクリエイティブスペースがある。デザインと建築に関する展示やワークショップなどのプログラムが定期的に開催されていて、無料で入れるので、一度足を運ぶ価値あり。ひっそりと隠れた場所にある中庭は、特におすすめ。</p>
+</li>
+<li>
+<p>メキシコ国立自治大学(UNAM)キャンパスの辺りに、<a href="http://www.fundacionunam.org.mx/donde-paso/conoce-el-espacio-escultorico-de-la-unam/">Especio escultorico</a>という不思議なエリアがある。一見無法地帯的に草木が生い茂る広大なエリアに、大型の彫刻作品が数多く点在している。1977年に、彫刻家の <a href="https://es.wikipedia.org/wiki/Federico_Silva_(escultor)">Federico Silva</a>によって、当時メキシコのアート界で興隆していた幾何学彫刻運動の一旦として作られたエリアだ。自然と幾何学的な大型彫刻のハーモニーが美しく、ランドスケープデザインの参考になる。</p>
+</li>
+<li>
+<p>「友情のルート」を意味する<a href="http://www.mexico68.org/es/esculturas/06.html">Ruta de la aistad-torre de los vientos</a>は、1968年のメキシコシティオリンピックの際に作られた。長さ17kmの世界最大の彫刻廊で、世界中の著名な彫刻家の作品が集まる。しかし、オリンピック後のずさんな都市開発により、20年以上もの間、この彫刻廊はほぼ放置されることとなった。現在、芸術作品の保存に関する動きが高まりつつある。</p>
+</li>
+<li>
+<p>現代建築好きなら、<a href="https://www.bibliotecavasconcelos.gob.mx/">Biblioteca Vasconcelos</a>は必ず訪れたい。幾何学的な構造に、透明なガラスの壁と浮遊しているかのように見える本棚が並ぶデザインが、圧巻の図書館。</p>
+</li>
+<li>
+<p>新しい街を訪れたら、まずは自転車に乗るように意識しているが、車の運転がかなり乱暴なメキシコシティでは、さすがに躊躇った。そこで知ったのが、日曜日の朝に定期的に開催される、[カーフリー＆バイクデー](<a href="https://www.featherandthewind.com/blog/mexico-city-sunday-bike-ride%EF%BC%89%E3%80%82%E3%81%93%E3%81%AE%E6%97%A5%E3%81%AB%E3%81%AF%E3%80%81%E5%B8%82%E3%81%AE%E4%B8%BB%E5%B0%8E%E3%81%A7%E4%B8%BB%E8%A6%81%E3%81%AA%E8%BB%8A%E9%81%93%E3%81%8C%E9%96%89%E9%8E%96%E3%81%95%E3%82%8C%E3%80%81%E6%AD%A9%E8%A1%8C%E8%80%85%E5%A4%A9%E5%9B%BD%E3%81%A8%E3%81%AA%E3%82%8B%E3%80%82%E8%87%AA%E8%BB%A2%E8%BB%8A%E3%81%A7%E8%B5%B0%E3%82%8B%E4%BA%BA%E3%81%AE%E4%BB%96%E3%80%81%E3%82%B8%E3%83%A7%E3%82%AE%E3%83%B3%E3%82%B0%E3%82%84%E7%8A%AC%E3%81%A8%E3%81%AE%E3%82%A6%E3%82%A9%E3%83%BC%E3%82%AD%E3%83%B3%E3%82%B0%E3%82%92%E6%A5%BD%E3%81%97%E3%82%80%E4%BA%BA%E3%80%81%E9%81%93%E8%B7%AF%E3%81%A7%E3%83%80%E3%83%B3%E3%82%B9%E3%82%92%E8%B8%8A%E3%82%8B%E4%BA%BA%E3%81%AA%E3%81%A9%E3%81%A7%E5%A4%A7%E5%A4%89%E7%9B%9B%E3%82%8A%E4%B8%8A%E3%81%8C%E3%82%8B%E3%80%82%E3%83%A1%E3%82%AD%E3%82%B7%E3%82%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%82%89%E3%81%97%E3%81%84%E4%BA%A4%E9%80%9A%E6%B8%8B%E6%BB%9E%E3%81%A0%E3%81%91%E3%81%A7%E3%81%AA%E3%81%8F%E3%80%81%E8%BB%8A%E3%81%AE%E9%A8%92%E9%9F%B3%E3%81%8C%E6%B6%88%E3%81%88%E3%82%8B%E3%80%81%E3%81%A8%E3%81%84%E3%81%86%E3%81%A0%E3%81%91%E3%81%A7%E3%82%82%E3%80%81%E6%B0%97%E6%8C%81%E3%81%A1%E3%81%8C%E8%89%AF%E3%81%84%E3%80%82">https://www.featherandthewind.com/blog/mexico-city-sunday-bike-ride）。この日には、市の主導で主要な車道が閉鎖され、歩行者天国となる。自転車で走る人の他、ジョギングや犬とのウォーキングを楽しむ人、道路でダンスを踊る人などで大変盛り上がる。メキシコシティらしい交通渋滞だけでなく、車の騒音が消える、というだけでも、気持ちが良い。</a></p>
+</li>
+</ul>
+<h2>Read（読み物系）</h2>
+<ul>
+<li>スペイン語のみだけれど、市内のイベント情報などをチェックしたいなら、[MXCity]（<a href="https://mxcity.mx/%EF%BC%89%E3%81%8C%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%82Google%E7%BF%BB%E8%A8%B3%E3%81%A7%E3%81%9C%E3%81%B2%E3%80%82">https://mxcity.mx/）がおすすめ。Google翻訳でぜひ。</a></li>
+</ul>
+<p>-ゴールデンライオンを獲得した映画、アルフォンソクアロンの[ローマ]（<a href="https://www.netflix.com/mx-en/title/80240715%EF%BC%89%EF%BC%882018%EF%BC%89%E3%82%92%E3%81%94%E8%A6%A7%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%E3%80%82%E7%89%A9%E8%AA%9E%E3%81%AF1970%E5%B9%B4%E3%81%8B%E3%82%891971%E5%B9%B4%E3%81%AB%E3%83%A1%E3%82%AD%E3%82%B7%E3%82%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%81%AE%E3%83%AD%E3%83%BC%E3%83%9E%E5%9C%B0%E5%8C%BA%E3%81%A7%E8%A8%AD%E5%AE%9A%E3%81%95%E3%82%8C%E3%80%81%E6%98%A0%E7%94%BB%E3%81%AF%E3%83%AD%E3%83%BC%E3%83%9E%E3%82%92%E7%B9%81%E6%A0%84%E3%81%97%E3%81%9F%E4%B8%AD%E6%B5%81%E9%9A%8E%E7%B4%9A%E3%81%AE%E8%BF%91%E6%89%80%E3%81%A8%E3%81%97%E3%81%A6%E6%8F%8F%E3%81%84%E3%81%A6%E3%81%84%E3%81%BE%E3%81%99%E3%80%82%E3%81%93%E3%82%8C%E3%81%BE%E3%81%A7%E3%81%AB%E8%BF%91%E6%89%80%E3%81%A7%E8%B5%B7%E3%81%93%E3%81%A3%E3%81%9F%E3%81%93%E3%81%A8%E3%82%92%E8%A6%8B%E3%82%8B%E3%81%AE%E3%81%AF%E9%9D%A2%E7%99%BD%E3%81%84%E3%81%A7%E3%81%99%E3%81%8C%EF%BC%881985%E5%B9%B4%E3%81%AE%E5%9C%B0%E9%9C%87%E3%80%81%E6%9C%80%E8%BF%91%E3%81%AE%E7%94%9F%E3%81%BE%E3%82%8C%E5%A4%89%E3%82%8F%E3%82%8A%E3%80%81%E3%82%B8%E3%82%A7%E3%83%B3%E3%83%88%E3%83%AA%E3%83%95%E3%82%A3%E3%82%B1%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%AE%E6%B3%A2%E3%81%AA%E3%81%A9%E3%81%AE%E7%B5%90%E6%9E%9C%E3%80%81%E8%87%AA%E5%B7%B1%E3%81%AE%E5%BD%A2%E3%81%AE%E5%B9%BD%E9%9C%8A%E3%81%AB%E3%81%AA%E3%82%8A%E3%81%BE%E3%81%97%E3%81%9F%EF%BC%89%E3%80%81%E7%A7%81%E3%81%AF">https://www.netflix.com/mx-en/title/80240715）（2018）をご覧ください。物語は1970年から1971年にメキシコシティのローマ地区で設定され、映画はローマを繁栄した中流階級の近所として描いています。これまでに近所で起こったことを見るのは面白いですが（1985年の地震、最近の生まれ変わり、ジェントリフィケーションの波などの結果、自己の形の幽霊になりました）、私は</a>[Nezahualcóyotl ]（<a href="https://local.mx/capital/cronica-ciudad/ciudad-nezahualcoyotl/%EF%BC%89%E6%98%A0%E7%94%BB%E3%81%AE%E8%BF%91%E6%89%80%E3%80%82%E7%A9%BA%E6%B8%AF%E3%81%AE%E8%BF%91%E3%81%8F%E3%81%AE%E9%83%BD%E5%B8%82%E3%81%AE%E8%A5%BF%E9%83%A8%E3%81%AB%E4%BD%8D%E7%BD%AE%E3%81%97%E3%80%81%E7%AC%AC%E4%BA%8C%E6%AC%A1%E4%B8%96%E7%95%8C%E5%A4%A7%E6%88%A6%E5%BE%8C%E3%81%AE%E3%83%86%E3%82%AD%E3%82%BD%E6%B9%96%E3%81%AE%E6%B2%BC%E5%9C%B0%E3%81%AE%E4%B8%8A%E3%81%AB%E9%96%8B%E7%99%BA%E3%81%95%E3%82%8C%E3%80%81%E9%95%B7%E3%81%84%E9%96%93%E5%B7%A8%E5%A4%A7%E3%81%AA%E3%82%B9%E3%83%A9%E3%83%A0%E8%A1%97%E3%81%A7%E3%81%97%E3%81%9F%E3%80%82">https://local.mx/capital/cronica-ciudad/ciudad-nezahualcoyotl/）映画の近所。空港の近くの都市の西部に位置し、第二次世界大戦後のテキソ湖の沼地の上に開発され、長い間巨大なスラム街でした。</a> [このアークティックル]（<a href="https://www.citylab.com/equity/2017/06/how-a-slum-became-a-city/529488/%EF%BC%89%E3%82%92%E8%AA%AD%E3%82%93%E3%81%A7%E3%80%81%E3%83%8D%E3%82%B6%E3%83%AF%E3%83%AB%E3%82%B3%E3%83%A8%E3%83%88%E3%83%AB%E5%9C%B0%E5%8C%BA%E3%81%8C%E3%81%A9%E3%81%AE%E3%82%88%E3%81%86%E3%81%AB%E5%A4%89%E5%8C%96%E3%81%97%E3%81%9F%E3%81%8B%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E8%A9%B3%E3%81%97%E3%81%8F%E7%9F%A5%E3%82%8B%E9%83%BD%E5%B8%82%E3%81%B8%E3%81%AE%E5%B7%A8%E5%A4%A7%E3%81%AA%E3%82%B9%E3%83%A9%E3%83%A0%E8%A1%97%E3%80%82">https://www.citylab.com/equity/2017/06/how-a-slum-became-a-city/529488/）を読んで、ネザワルコヨトル地区がどのように変化したかについて詳しく知る都市への巨大なスラム街。</a></p>
+<h2>Organization, initiative (組織や人物など)</h2>
+<p>-[Ciclo]（<a href="https://projectciclo.com/%EF%BC%89%E3%81%AF%E3%80%81%E9%83%BD%E5%B8%82%E3%81%AE%E4%BB%8B%E5%85%A5%E3%81%AB%E8%8A%B8%E8%A1%93%E3%81%A8%E6%96%87%E5%8C%96%E3%82%92%E4%BD%BF%E7%94%A8%E3%81%99%E3%82%8B%E7%B5%84%E7%B9%94%E3%81%A7%E3%81%99%E3%80%82%E3%83%92%E3%82%B9%E3%83%91%E3%83%8B%E3%83%83%E3%82%AF%E4%BB%A5%E5%89%8D%E3%81%AE%E8%BF%91%E6%89%80%E3%82%BF%E3%83%94%E3%83%88%E3%81%A7%E3%81%AE%E5%BD%BC%E3%82%89%E3%81%AE%E6%B4%BB%E5%8B%95%E3%81%AF%E9%9D%9E%E5%B8%B8%E3%81%AB%E8%88%88%E5%91%B3%E6%B7%B1%E3%81%8F%E3%80%81%E5%88%BA%E6%BF%80%E7%9A%84%E3%81%A7%E3%81%99-%E5%BD%BC%E3%82%89%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6%E3%82%82%E3%81%A3%E3%81%A8%E3%83%81%E3%82%A7%E3%83%83%E3%82%AF%E3%81%97%E3%81%A6%E3%81%8F%E3%81%A0%E3%81%95%E3%81%84%5B%E3%81%93%E3%81%A1%E3%82%89%5D%EF%BC%88https://projectciclo.com/ciclo-tepito%EF%BC%89">https://projectciclo.com/）は、都市の介入に芸術と文化を使用する組織です。ヒスパニック以前の近所タピトでの彼らの活動は非常に興味深く、刺激的です-彼らのプロジェクトについてもっとチェックしてください[こちら]（https://projectciclo.com/ciclo-tepito）</a></p>
+<p>-メキシコシティは[水危機]の真っin中にあります（<a href="http://fortune.com/2018/09/27/mexico-city-sinking-water-crisis-claudia-sheinbaum/%EF%BC%89%E3%80%82">http://fortune.com/2018/09/27/mexico-city-sinking-water-crisis-claudia-sheinbaum/）。</a> [Isla urbana]（<a href="http://islaurbana.org/%EF%BC%89%E3%81%AF%E3%80%81%E3%83%A1%E3%82%AD%E3%82%B7%E3%82%B3%E3%81%AE%E9%83%BD%E5%B8%82%E9%83%A8%E3%81%8A%E3%82%88%E3%81%B3%E8%BE%B2%E6%9D%91%E9%83%A8%E3%81%AE%E5%AE%B6%E5%BA%AD%E3%80%81%E5%AD%A6%E6%A0%A1%E3%80%81%E3%81%8A%E3%82%88%E3%81%B3%E8%A8%BA%E7%99%82%E6%89%80%E3%81%A7%E3%81%AE%E9%9B%A8%E6%B0%B4%E8%B2%AF%E7%95%99%E3%82%B7%E3%82%B9%E3%83%86%E3%83%A0%E3%81%AE%E5%A4%A7%E8%A6%8F%E6%A8%A1%E3%81%AA%E6%8E%A1%E7%94%A8%E3%82%92%E7%88%86%E7%99%BA%E3%81%95%E3%81%9B%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E7%9B%AE%E6%8C%87%E3%81%97%E3%81%A6%E3%81%84%E3%82%8B%E9%9D%9E%E5%96%B6%E5%88%A9%E7%B5%84%E7%B9%94%E3%81%A7%E3%81%99%E3%80%82">http://islaurbana.org/）は、メキシコの都市部および農村部の家庭、学校、および診療所での雨水貯留システムの大規模な採用を爆発させることを目指している非営利組織です。</a></p>
+<p>-[Lanoratorio para ciudad]（<a href="https://labcd.mx/%EF%BC%89%E3%81%AF%E3%80%81%E3%83%A1%E3%82%AD%E3%82%B7%E3%82%B3%E3%82%B7%E3%83%86%E3%82%A3%E3%82%92%E5%86%8D%E8%80%83%E3%81%99%E3%82%8B%E3%81%93%E3%81%A8%E3%82%92%E7%9B%AE%E7%9A%84%E3%81%A8%E3%81%97%E3%81%9F6%E5%B9%B4%E9%96%93%E3%81%AE%E7%A4%BE%E4%BC%9A%E5%AE%9F%E9%A8%93%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%83%88%E3%81%A7%E3%81%97%E3%81%9F%E3%80%82%E6%AE%8B%E5%BF%B5%E3%81%AA%E3%81%8C%E3%82%89%E3%80%81%E3%82%82%E3%81%86%E3%82%A2%E3%82%AF%E3%83%86%E3%82%A3%E3%83%96%E3%81%A7%E3%81%AF%E3%81%82%E3%82%8A%E3%81%BE%E3%81%9B%E3%82%93%E3%81%8C%E3%80%81%E5%BD%BC%E3%82%89%E3%81%AE%E5%AE%9F%E9%A8%93%E3%81%AE%E8%A9%B3%E7%B4%B0%E3%81%AA%E3%82%A2%E3%83%BC%E3%82%AB%E3%82%A4%E3%83%96%E3%82%92%E7%A2%BA%E8%AA%8D%E3%81%A7%E3%81%8D%E3%81%BE%E3%81%99%5B%E3%81%93%E3%81%A1%E3%82%89%5D%EF%BC%88https://g0v.news/laboratorio-para-la-ciudad-re-imagining-mexico-city-through-civic-tech-">https://labcd.mx/）は、メキシコシティを再考することを目的とした6年間の社会実験プロジェクトでした。残念ながら、もうアクティブではありませんが、彼らの実験の詳細なアーカイブを確認できます[こちら]（https://g0v.news/laboratorio-para-la-ciudad-re-imagining-mexico-city-through-civic-tech-</a> 84272ce8619c）、一連のワークショップ、介入、市民技術およびデータサイエンスプロジェクトなどが含まれます。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/introduction/med/priscilla-flores-659078-unsplash.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[「私たちのネイバーフッドは完売した」――Amazon 第 2 本社建設が進む街で低所得者層が声を上げる]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/new%20york/longislandcity</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/new%20york/longislandcity</guid>
+            <pubDate>Thu, 07 Feb 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>「私たちのネイバーフットは完売してしまった」</p>
+<p>そう、参加者の一人が呼びかけると、会場からは同意の拍手が寄せられた。これは「Amazon アマゾンに抵抗せよ！（Resist Amazon — Long Island City Community Forum）」と銘打たれた抗議集会の一幕だ。</p>
+<p>テックジャイアンによって変化を余儀なくされた街で起きている住民と行政の衝突は、世界の人々にとって他人事ではない。</p>
+<p>Amazon が第 2 本社の候補地として決定し、その後中止となったことで話題となった、ニューヨークのロングアイランドシティ。住民による反対運動などについて、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/02/08/amazon_hq2/">https://unleashmag.com/2019/02/08/amazon_hq2/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/longislandcity/med/longislandcity7.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[”帰還”移民が集まる、メキシコシティの「リトル・ロサンジェルス」]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/mexico%20city/littlelosangeles</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/mexico%20city/littlelosangeles</guid>
+            <pubDate>Sat, 02 Feb 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>欧米の大都市を訪れると、「リトル〇〇」と呼ばれるエリアがいくつかあることに、気づく人も多いだろう。ロサンジェルスにあるリトル・トーキョーのほか、リトル・イタリー、リトル・イスタンブールなど、これらのエリアは、特定の地域からの移民を歴史的に多く受け入れてきた。現在も、一定の文化的・民族的背景を共有する移民が集住していることが多く、チャイナタウンもそうしたエリアの一例であるといえる。不慣れな異国の地で、言葉や文化の壁もあるなか、お互いに仕事や住居などの機会を提供し、生活を支え合うネットワークが、こうしたエリアにはある。</p>
+<p>メキシコシティでの滞在中、「リトル・ロサンジェルス（Little Los Angeles）」というニックネームがついたエリアがあることを噂に聞いた。例えばリトル・イギリスやリトル・アメリカなど、移民を受け入れる側の国名がついたエリアを、欧米圏以外の都市ではあまり見たことがなかったので、驚いた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo2.jpg"></p>
+<p>革命記念塔（Monumento a la Revolución）で有名なタバカレラ地区。早速足を運んでみると、近代的なビルとヤシの木が並び、確かにロサンジェルスにも見えなくはない。行き交う人々は若者が中心で、他のエリアよりも英語が聞こえてくる割合が高い気がした。ハンバーガー、ホットドッグ、ブリトーなど、アメリカらしいジャンクフードを売る売店も多い。</p>
+<p>昨今、トランプ政権の影響下で、米国から強制出国される移民が増えた。過去にメキシコからアメリカに渡った移民、そしてその子孫で、強制的・自主的にメキシコに逆戻りするパターンが、最近非常に増えているという。</p>
+<p>数年前、タバカレラ地区に大規模なバイリンガルコールセンターがオープンし、流暢な英語を話す帰還移民がスタッフとして積極的に採用されるようになった。アメリカ育ちのメキシコ系帰還移民が、徐々に噂を聞きつけて集まりはじめ、次第に「リトル・ロサンジェルス」と呼ばれるようになったという。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo3.jpg"></p>
+<p>文化的背景やライフスタイルが似ている人と一緒にいたいのが、人間の性だ。メキシコ系移民の２世〜３世は、アメリカ生まれ、アメリカ育ちが多い。話し方、ファッションや料理の好みなど、メキシコ系といえど、本場メキシコ人とは異なる部分は多い。スペイン語を堪能に操れない帰還移民も多く、メキシコ現地で公立学校に入るのが難しいケースも相次いでいるという。メキシコにはもう親戚がいない、というケースも多い。</p>
+<p>２つの文化の間に生きる人々にとって、新しい環境での生活に適応することは、簡単ではない。米国でメキシコ移民として差別され、強制出国された人々は、彼らのルーツがある国に「帰った」として、そこが安心して暮らせるホームであるとは限らない。文化の違いから、またここでも差別される可能性もある。</p>
+<p>リトル・ロサンジェルスでは、最近メキシコにやってきた帰還移民が、メキシコでまた生活を立て直すためのヘルプラインが整っている。気軽に英語で相談できる市民センター<a href="http://remezcla.com/features/culture/mexico-city-pocho-house-deportees-returnees/">Poch@ House</a>での援助や、新しい地で就職の難しい帰還移民を積極的に雇用する<a href="http://time.com/5189699/dreamers-deported-mexico-city-new-comienzas/">スタートアップ</a>もできた。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo5.jpg"></p>
+<p>ディアスポリック・アーバニズム、という概念がある。グローバルに人々が移動し、「ホーム」という概念が多様化する現代において、都市のサービスやインフラも、それに合わせて柔軟にアップデートされるべきだ。文化の多様性、移住・移民・越境というテーマに、デザインや都市計画、建築の分野はまだまだ遅れをとっているように思う。</p>
+<p>アメリカからメキシコへの帰還移民は、現在も増加を続けているという。彼らの存在が、リトル・ロサンジェルスと呼ばれるタバカレラ地区はもちろん、メキシコシティをどう変化させてゆくのか。今後の展開が楽しみだ。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo1.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[スローフード運動はスローであり続けられるのか？「オーガニック」の裏に潜む資本主義]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/bologna/foodpark</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/bologna/foodpark</guid>
+            <pubDate>Mon, 07 Jan 2019 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>先日仕事の関係でイタリア・ボローニャを訪れた際、世界最大の”フード”パークが謳い文句の「FICO World Eataly」を訪れる機会があった。地産地消、オーガニックフードの先進国イタリアの「食」をとことん学び、体験できる場所だ。</p>
+<p>近年流行となっているオーガニックやスローフードといった新しいフードムーブメントのなかで、背後にある資本主義の姿について考える良い機会となったので、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/09/26/organicfood_capitalism/">https://unleashmag.com/2019/09/26/organicfood_capitalism/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bologna/foodpark/med/FICO%20World%20Eataly.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[「世界でもっとも多様性のある地域」と言われる、ジャクソンハイツ地区]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/new%20york/jacksonheights</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/new%20york/jacksonheights</guid>
+            <pubDate>Mon, 24 Dec 2018 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights2.jpg"></p>
+<p>様々な文化的背景を持つ人々が共存し、「人種のるつぼ」とも言われるニューヨーク。なかでも、クイーンズの北西部にある地区、ジャクソンハイツは、167もの言語が飛び交い「米国で最も文化的に多様な地域」として知られている。</p>
+<p>最近、渋谷の都市開発などで「Diversity（多様性）」と言う概念をよく耳にするようになった。リチャード・フロリダのクリエイティブ都市論などでキーワードとされるこの概念は、実際何を意味するのか。ニューヨークに滞在中、気になってジャクソンハイツに足を運んでみた。</p>
+<p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights3.jpg"><br>
+<img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights4.jpg"></p>
+<p>予習として、アメリカを代表するドキュメンタリーの巨匠、フレデリック・ワイズマンの『<a href="http://child-film.com/jackson/">ニューヨーク、ジャクソンハイツへようこそ (2015)</a>』を観た。イスラム教学校、ユダヤ人の文化センター、LGBTコミュニティ、市議会の事務所など、ジャクソンハイツの日常が細やかに描かれる。移民や労働者階級のコミュニティをエンパワメントする組織、<a href="https://maketheroadny.org/">Make the Road New York</a>のジャクソンハイツでの活動も垣間見え、興味深い。</p>
+<p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights5.jpg"><br>
+<em>ジャクソンハイツ、Roosevelt Avenueでは、世界中のあらゆる料理を発見できる。</em></p>
+<p>ジャクソンハイツはもともと、1916年代にマンハッタンの中高所得労働者が家族を育てる場所として開発された。大恐慌後は地価が下がり、ブロードウェイで働くエンターテイメント業界から、LGBTコミュニティがこの地域に移動し始めた。1960年代には、まず黒人系のコミュニティが住むようになり、1980年代からは、コロンビア人、メキシコ人、インド人、パキスタン人、チベット人、ネパール人など、他の移民グループが移住。<a href="https://ja.wikipedia.org/wiki/%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%83%BB%E3%83%95%E3%83%A9%E3%82%A4%E3%83%88">ホワイト・フライト</a>により元住民の白人中高所得労働者の多くは転出し、当初は白人だけが住むエリアだったジャクソンハイツは、さまざまな移民グループが集まる、ニューヨークで最も移民の比率が高いエリアになった。</p>
+<p>さまざまな言語が飛び交い、異なる地域の食材店やレストランが立ち並ぶジャクソンハイツを歩くと、その活気と熱気に圧倒される。道端で商品を売るストリートベンダーや路上マーケットも、マンハッタンやブルックリンに比べ、圧倒的に多い。</p>
+<p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights6.jpg"><br>
+<img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights7.jpg"></p>
+<p>訪れてみると分かるが、ジャクソンハイツは、マンハッタンからのアクセスは決して悪くない。家賃高騰に悩まされるニューヨークにおいて、他のエリアと比べると住宅価格も安価だ。また、”都市のクリエイティビティ”を追い求める開発資本は、「多様性」が大好きときている。そのため、ジャクソンハイツもジェントリフィケーションとは、もちろん無縁ではない。ドキュメンタリー『ニューヨーク、ジャクソンハイツへようこそ』では、新しい開発の波に怯える住民の姿が映し出されている。</p>
+<p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights1.jpg"></p>
+<p>そうなると、移民やLGBTコミュニティは、次はどこに行けば良いのだろうか。「多様性」は、楽しいだけの楽園ではない。グローバリズム、移民、マイノリティなど、アメリカが抱える問題の数々が、ジャクソンハイツには凝縮されている。とにかく、日本で「多様性」云々を語る前に、ニューヨークで（ということは、世界で、と言っても良いかもしれない）最も多様性のある地域を、まずは歩いて、体験してみると良いかもしれない。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights4.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[スタートアップによるリーンな都市開発への挑戦と失敗。ザッポスはラスベガスのダウンタウンを変えられるのか？]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/las%20vegas/downtownproject</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/las%20vegas/downtownproject</guid>
+            <pubDate>Tue, 04 Dec 2018 23:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>北米を中心に、スタートアップが街づくりに参入する事例が増えている。彼らは、文化や人種、働き方など、都市が持つ多様性のなかに、イノベーションを起こす手がかりを見出そうとしているのだ。</p>
+<p>アメリカ最大の靴 EC サイト「ZAPPOS（ザッポス）」が、ラスベガスのダウンタウンで行なっているダウンタウン・プロジェクト（DTP）について、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2018/12/05/tony-hsiehs-downtown-project/">https://unleashmag.com/2018/12/05/tony-hsiehs-downtown-project/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/las%20vegas/downtownproject/med/juliana-malta-cuqsqaEh0SQ-unsplash.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[都市と自然の関係性を再考する。古い煉瓦工場をリノベーションした、トロントの「Evergreen Brick Works」]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/toronto/evergreen</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/toronto/evergreen</guid>
+            <pubDate>Sat, 27 Oct 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen12.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen5.jpg"></p>
+<p>カナダ最大の都市、トロント。トロントには、<a href="https://www.travelingcircusofurbanism.com/toronto/401richmond">401 Richmond</a>や the <a href="https://www.travelingcircusofurbanism.com/toronto/oldtoronto">Distillery District</a>など、古い産業建築をうまくリノベーションした事例が多く存在します。その中でも特に地元民に愛されているのが、ダウンタウン北東のドン川沿いの公園にある<a href="https://www.evergreen.ca/">Evergreen Brick Works</a>という施設です。</p>
+<p>都会に住んでいると、ついつい田舎や自然の存在を忘れてしまいがち。しかし、私たちの都市は、生物多様性と自然との共生のなかで成り立つ必要がある。そんなことを改めて考えさせられる場所です。</p>
+<h2>カナダの自然の恵みを体験できる、「Evergreen Brick Works」</h2>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen18.jpg"><br>
+<em>トロントのスカイラインを彩る歴史的建造物の多くが、この煉瓦工場で作られた煉瓦を使って建てられた。</em></p>
+<p>「Evergreen Brick Works（エバーグリーン・ブリック・ワークス）」は、カナダ全土で活動する環境保護団体「エバーグリーン」が、1980 年代に閉鎖されたレンガ工場とその材料採掘跡地周辺をリノベーションして始まったプロジェクトです。しばらく廃屋工場と化していたこのエリアは、自然環境にちなんだ展示や催し物を開催できる多目的スペースとして、2010 年に新たなスタートを切りました。カナダの自然の恵みと、都市と自然の関係性について、学んで、見て、食べて体験できるスポットです。</p>
+<p>煉瓦工場がオープンしたのは、1889 年。1980 年代の閉鎖まで、約 100 年に渡って煉瓦をつくり続けました。「マッセイ・ホール(Massy Hall)」や「カサロマ(Casa Roma)」といったトロントでお馴染みの歴史建造物の多くが、ここで作られた煉瓦を使って建てられています。歴史的な重要性を考慮し、工場跡の雰囲気はそのままに残しつつ、ドン川沿いの材料採掘跡地は、工場が出来る前の元の自然を取り戻した公園として解放されています。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen10.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen4.jpg"></p>
+<h2>エコに興味がなくても、「自然と都市との共存」を楽しみながら学べる</h2>
+<p>「Evergreen Brick Works」では、自然環境に関わる様々な展示やイベント、ワークショップが定期的に行われる他、毎週土曜日にはファーマーズ・マーケットが開催され、地元の農場で作られたオーガニック野菜や食材を買い求めることが出来ます。地元の新鮮＆旬の素材を使った料理、スイーツ、スナックなどもあり、まさに「地産地消」を体験できる場所です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg"><br>
+<em>子供のための庭。遊びながら自然環境について学べる仕掛けとなっている。</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen6.jpg"><br>
+<em>Evergreen Brick Works では、広い敷地内を自由に歩き回り、展示や体験を行い峡谷がいかにトロントという街に大切かを学ぶことができる。敷地内全体がまるでミュージアムのようだ。</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen7.jpg"><br>
+<em>施設内では、イベントやワークショップ、マーケットなどが定期的に開催される。</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen9.jpg"></p>
+<p>施設内には、オーガニック食材などをふんだんに使用したカフェや、子供のための遊び場なども。元々エコに興味がなかったとしても、マーケットを楽しみながら施設内を歩き回り、自然と都市との共存について学べる仕掛けになっています。</p>
+<h2>トロントを定義するのは、渓谷</h2>
+<p>そもそも、トロントの地理と都市の発展を語るのに、峡谷システムの存在は欠かせません。トロント地方（GTA=Greater Toronto Area）には、渓流・渓谷という自然遺産が数多く存在します。街を囲むように位置する渓流・渓谷エリアは、20 世紀初頭にゴミ捨て場や産業利用のために使用され、環境汚染が進み、打ち捨てられたエリアでした。現在では、エコロジカルサービスとリクリエーションスペースの提供場所として、この渓谷エリアの利用促進に注目が集まっています。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen14.jpg"><br>
+<em>施設から歩いてわずか 20 分ほどで、この絶景が見渡せる。建物を囲む公園は、自由に散策しトロントからほど近い自然のエコシステムを学ぶことができる。地図は<a href="https://donrivervalleypark.ca/park-map/">こちら</a></em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen17.jpg"></p>
+<p>峡谷沿いにある「Evergreen Brick Works」は、まさにこうした渓流・渓谷エリアの再利用と自然遺産の保護を率先して行っている事例。かつては煉瓦の材料採掘跡地として汚染されてしまった渓流・渓谷エリアの自然を復活させた公園で、ウォーキングツアーや、ヨガクラス、スケートなどを楽しめます。都市部から決して遠くはない渓谷・渓流エリアの活性化を通して、市内から小一時間ほどで、山奥まで来たかのような自然をいつでも満喫することができるのです。</p>
+<p>グーグルの姉妹企業、「Sidewalk Lab」が手がける沿岸部の再開発事業などが注目を集めるトロント。テクノロジーを使った最新のウォーターフロント開発も魅力的ですが、自然と都市の共存、といった一見地味なプロジェクトを通して、都市における人々の生活の向上を図る、というトロント市の動向からは、私たちも学べることが多くありそうです。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[トロントのリノベーションプロジェクト、「401 Richmond」]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/toronto/401richmond</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/toronto/401richmond</guid>
+            <pubDate>Thu, 11 Oct 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<h2>ジェイン・ジェイコブズがいなかったら、トロントも、きっとずっと退屈だった</h2>
+<p>今年の春に日本で公開されたドキュメンタリー、『<a href="http://janejacobs-movie.com/">ジェイン・ジェイコブス；ニューヨーク都市革命</a>ーもしジェイコブズがいなかったら、世界一エキサイティングな大都市・ニューヨークは、きっとずっと退屈だった。』。記憶に新しい人も多いのではないでしょうか。実はニューヨークだけでなく、もしジェイコブズがいなかったら、トロントもきっとずっと退屈だった、という事実をご存知でしょうか？</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond4.jpg"><br>
+<img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond5.jpg"></p>
+<p>『アメリカ大都市の死と生』の著者であるアメリカ出身のジャーナリスト・運動家ジェーン・ジェイコブス。郊外都市開発や高速道路の急速な建設への反対運動を行い、人間中心の街づくりを説いた彼女の思想は、今でも多くの建築家や都市専門家に支持されています。</p>
+<p>ニューヨークのイメージが強いジェイコブスですが、晩年にはカナダのトロントに移り住んでおり、トロントでも、高速道路への反対運動などに多大なる貢献を残しました。今回紹介する「<a href="http://www.401richmond.com/">401 Richimond</a>」にも、ジェイコブズの思想が隅々まで浸透しており、彼女の存在があってこその今の姿だと言って良いでしょう。</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond10.jpg"></p>
+<h2>ジェイコブスの思想が細部まで潜むクリエイティブスポット、「401 Richmond」</h2>
+<p>Googleの親会社であるアルファベットが始めたSidewalk Labによるウォーターフロント開発が発表されてから、都市におけるイノベーションやスマートシティ構想などで、世界中からますます注目を集めているトロント。ここトロントは、1970年代にジェイコブズが引っ越してきた、ラッキーな街でもあります。</p>
+<p>ダウンタウンのファッション・ディストリクトに隠れるように佇む「401 Richmond」は、4階建ての元工場をリノベーションし、厳密にキュレーションされたアート＆クリエイティブ関連のオフィスやスタジオをみっしりと集めたクリエイティブスポット。地元アーティストのギャラリーや、社会的に意義のある活動を行うスタートアップ、出版会社やデザインスタジオなど、ワクワクするラインナップで、誰でも足を踏み入れることが出来ます。</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond0.jpg"><br>
+<img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond2.jpg"></p>
+<h2>放置されていた歴史的な工場をリノベーション</h2>
+<p>もともとこの建物は、カナダで初めてスズ製の缶の製造をはじめたMacdonald社によって、工場として使用されていました。1884年の創業から1967年の閉鎖まで、ほぼ100年に渡って多くの缶がこの工場で製造されます。しかしその後、脱工業化が進み近隣エリアの過疎化が進むにつれて、この工場も廃業となり、しばらく放置されることになりました。</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond6.jpg"><br>
+<em>ルーフトップ空間も絶妙にデザインされた「401 Richimond」。レンガ造りの建物全体に蔦が生い茂り、まさに都会のオアシス。</em><br>
+<img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond7.jpg"><br>
+<em>この字型の建物をつなぐ渡り廊下</em><br>
+<img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond8.jpg"><br>
+<em>中庭にはなんと、保育施設も。</em></p>
+<p>放棄されていたこの建物に新たに息を吹き込んだのは、建築家・Margie Zeidler。トロント大学で建築を勉強していた彼女は、当時から影響力のあったジェイン・ジェイコブスの思想に共感を受けます。彼女は学生時代、大学近くのこの廃棄工場を通り過ぎるたび、「どのように使えば面白いだろう？」と想像を膨らませていました。</p>
+<p>そんな思いを捨てきれず、卒業後、家族や友人のサポートを得て建物の購入に踏み切ったZeidler。彼女がいなければ、建物は解体されていたことでしょう。</p>
+<p>建物の購入後、リノベーションをするにあたって、当時のトロント市のゾーニングと法規制が障壁となったと言われています。産業エリアとして栄えたこの地区のゾーニングは、脱産業化に伴い多くの工場が拠点を移してからも変わらず「産業用」とされたままで、オフィスなどの多目的スペースとして建物をリノベーションするのは、難しい状態でした。</p>
+<p>そのため、ゾーニングの緩和を求めることからプロジェクトが始まり、1996年にようやく、地区全体のゾーニング緩和が実現。その後、無事リノベーションされ生まれ変わった「401 Richmond」は、オフィスやアトリエ、カフェや多目的スペースなど、様々なコンテンツが集まる今の姿となりました。</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond9.jpg"></p>
+<h2>「What would Jane Jacobs do?（ジェイコブスなら、どうすると思う？）」</h2>
+<p>「401 Richmond」に入居しているのは、アート、文化、ソーシャルイノベーション、その他クリエイティブに関わる団体やスタートアップ。誰でも良いわけではなく、バランスよくキュレーションすることで、多様性と活気のある雰囲気を保っているとのことです。</p>
+<p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond1.jpg"><br>
+<em>廊下や踊り場には様々なアート作品や展示が行われている。特に印象的なのは、大きなジェイン・ジェイコブスの肖像画。高速道路建設の反対運動を行っていたジェイコブスのアイコンともいえる、メガホンが手に持たれている。キャプションには、「What would Jacobs do?（ジェイコブスなら、どうすると思う？）」の文字が。</em><br>
+<img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond11.jpg"><br>
+<em>都市空間の公共性などについての展示が、建物のあちこちに散りばめられている。</em></p>
+<p>コミュニティの「多様性」と、「人間のための」都市を主張したジェイコブス。実際に彼女の思想に影響を受けた建築家によって、この建物は解体を免れ、活気のある今の姿になっています。「What would Jane Jacobs do?（ジェイコブスなら、どうすると思う？）」という問いかけは、彼女の死後もなお、そして世界中のどこでも（日本でも！）重要です。ジェイコブス好きは、トロントを訪れる際はぜひ「401 Richimond」を訪問してみてください。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond3.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[バンクーバーのゾーニングを考える]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/vancouver/zoning</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/vancouver/zoning</guid>
+            <pubDate>Tue, 18 Sep 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning.jpg"><br>
+<em>Photo by Thor Alvis on Unsplash</em></p>
+<p>先日、とてもユニークなタイトルに魅かれ、あるウォーキングツアーに参加した。その名も、「バンクーバーの最悪なゾーニング」。バンクーバーの住宅不足問題に取り組む、<a href="http://www.abundanthousingvancouver.com">Abundant Housing Vancouver</a>という地元のグループによって実施されている。</p>
+<p>私が住んでいたのは、Kitsilanoという閑静な住宅地だ。ビーチや公園、ブリティッシュコロンビア大学、さらにはダウンタウンにもアクセスが良いという素晴らしいロケーション。この <a href="https://vancouver.ca/files/cov/Zoning-Map-Vancouver.pdf">地域分布マップ</a>によると、私が住んでいるこの地域は、主に一世帯〜二世帯住宅地区として区分されている。マンションやアパートではなく、敷地の広い一軒家が立ち並ぶのどかなKitsilanoは、このゾーニングによって守られている。</p>
+<p>しかし、つい最近、私が下宿をしている家の家主とルームメイトが、バンクーバーの再区画計画について熱心に話し込んでいるのを小耳に挟んだ。この平和なKitsilanoの将来に関わる重大事だという。なぜそんなにもゾーニングが大切なのか気になり、丁度開催されていたウォーキングツアーイベントに参加することにした。</p>
+<hr>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning1.jpg"></p>
+<p>ウォーキングツアーで私たちが集まったのは、Abundant Housing Vancouverが「バンクーバーでもっともひどいゾーニング」の1つだと主張するウェストポイントグレー地区だ。</p>
+<p>この地区は、RS-1という一世帯住宅地区に指定されている。RS-1自体は、珍しくはない。しかし、このエリアの一軒あたりの最小ロット面積は12,000～18,000平方フィート。これは、バンクーバー市内の標準的住宅面積のなんと約4倍にあたるという。</p>
+<p>これが単に”不平等”で済まされないのは、バンクーバーが現在まさに、住宅危機に陥っているからだ。</p>
+<h2>バンクーバーの住宅危機</h2>
+<p>ある<a href="https://globalnews.ca/news/4366644/foreign-buyers-population-growth-carry-the-most-blame-for-metro-vancouver-housing-crisis-survey/">調査</a>によると、バンクーバー市民の9割が、バンクーバーは住宅危機の只中にあると答えた。実際にバンクーバーは、カナダ国内で最も不動産が高騰しており、安価な住宅が圧倒的に不足している。その分給料があがるわけでもないので、低所得者層や学生は、住む場所が見つからず困窮しているのが現状だ。</p>
+<p>一方、「バンクーバーの住宅地の76％で、現状のゾーニングでは集合住宅が建てられない」という事実をツアーで知らされ、大変驚いた。Abundant Housing Vancouverは、より多くの人々に安価な住宅を提供し、住宅危機を乗り越えることを目標に活動している。そのためには、バンクーバーにより多くの住宅を高密度に建設する必要があるが、既存のゾーニングでは、これが難しいことになる。ウエストポイントグレー地域周辺など、富裕層のみが住む低密度の住宅地のゾーニングが強固に守られているのも、問題を加速させていると彼らは痛烈に批判する。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning2.jpg"><br>
+<em>ウェストポイントグレー地区における、現在進行中の一戸建て住宅の建設</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning3.jpg"></p>
+<h2>統計と都市区分をチェックすると、いろんなものが見えてくる</h2>
+<p>2016年の調査によると、ウェストポイントグレー地区の人口はたったの402人。一人当たりの面積は16,362平方フィートにあたる。それに対し、例えばバンクーバーの西部の人口密度は、一人当たりたったの465平方フィート。この差にはちょっとギョッとする。</p>
+<p>さらにツアーでは、バンクーバーのさまざまなデータや空間分析を紹介する<a href="https://mountainmath.ca/">MountainMath Maps</a>が提供する、興味深い<a href="https://mountainmath.ca/map/assessment">地図</a>を教えてくれた。バンクーバーの住宅データが視覚化されており、大変分かり易い。</p>
+<p>この地図で、「税密度」をキーワードに検索をかけると、更に興味深い事実が見えてきた。富裕層が悠々と暮らすウェストポイントグレー地区は、土地の平方メートルあたりの税収が、市内の他のエリアに比べ、なんと非常に少ないのだ。市民が腹をたてるのも、分かる気がする。</p>
+<p>不動産価格が高騰を続けるバンクーバーでは、各エリアでゾーニング改正の動きが始まっている。不動産所有者は、土地区分改正の<a href="https://rezoning.vancouver.ca/applications/">申請</a>を市に対して行うことができ、現在の土地の活用方法や容積率を変更することができる。もちろん、容積率を単純に引き上げてより多くのアパートを建設することが、バンクーバーの深刻な住宅不足を簡単に解決してくれる訳ではない。容積率を急に引き上げてしまうことで、例えばKitsilanoのような閑静な住宅街に急に高層マンションが建つなど、地域の魅力を損ねてしまう可能性だってある。</p>
+<p>ただ、私が今回のウォーキングツアーから学んだように、その土地の都市区分を理解することで、多くの教訓を得ることができる。都市区分の現状を眺めるだけで、デモグラフィー、密度、規制や税収などへの理解が深まるし、我々が普段何気なく過ごしている都市環境の一定の形態が、（都市区分など）特定の方法で形成されている、という事実も実感する。</p>
+<p>バンクーバーの、ひどいゾーニング。もっと都市区分というものに、注意を払う必要があると思った。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[使われなくなった産業用地を再利用：バンクーバーの成功モデル、グランビルアイランド]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/vancouver/granvilleisland</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/vancouver/granvilleisland</guid>
+            <pubDate>Sun, 19 Aug 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland0.jpg"><br>
+<a href="https://granvilleisland.com/">グランビルアイランド</a> は、バンクーバーで最も人気のある観光地の1つであり、市民のための賑やかな公共スペースだ。そしてここは、バンクーバ―の都市デザインの歴史に、<a href="https://www.cbc.ca/news/canada/british-columbia/1970s-granville-island-redevelopment-1.4021855">大きな影響を与えた場所</a>でもある。グランビルアイランドを訪れる機会があれば、観光地として有名な市場やアートギャラリーだけでなく、この場所のデザインや開発プロセスに込められた意味や歴史にも、ぜひ注目してみて欲しい。</p>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/-YFavdWspTQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<h2>産業遺産と人々の居場所</h2>
+<p>バンクーバーの入り江である、フォルスクリークの上にかかるグランビルストリートブリッジ。その橋の下に位置するグランビルアイランドは、1979年代後半まで単なる産業跡の荒地だった。</p>
+<p>フォルスクリークから採れた土砂などを材料として、埋立地であるグランビルアイランドが完成したのは、1916年のこと。165,921m<sup>2</sup>もの土地は産業用地として使用され、バンクーバーの街が発展を遂げるこの時期に、40年以上にわたってさまざまな工場が運用された。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland11.jpg"><br>
+<em>建物の窓に印象的に飾られている、産業用地時代のグランビルアイランドの写真</em></p>
+<p>しかし、1960年代には、脱工業化による市場の変化により、多くの産業が去ることになる。グランビルアイランドは荒地のまま放置され、長年に渡る産業利用で汚染された土地も、処理されることなく残された。過去の様子は、今でも<a href="https://granvilleisland.com/history-and-architecture">公式HP</a>で写真を確認することができる。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland2.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland3.jpg"></p>
+<p>1973年、カナダ政府は、グランビルアイランドの管理と再開発を、カナダ住宅ローン公社(CMHC)に託した。ここから、現在のグランビルアイランドを原型を形づくる都市開発が始まった。</p>
+<p>まず、カナダ政府とCMHCの間で、グランビルアイランドを誰もが簡単にアクセスできる「人々の居場所」とすることが合意された。それと同時に、既存の建物を可能な限り再利用し、産業地としてバンクーバーの発展に貢献した歴史を、再開発にもきちんと反映させるべきだとした。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland6.jpg"><br>
+<em>1979年にオープンした公共市場</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland7.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland4.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland5.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland9.jpg"></p>
+<h2>ユニークでオーガニックな開発</h2>
+<p>グランビルアイランドは連邦政府の土地である。そのため、地区指定とゾーニングが、独自かつ、ややゆるい。再開発中には、多くの特例や例外が認められ、一般的な公共施設の多くが従うべきルールをなんども逸脱した。そのおかげで、美しくも乱雑な(!?)現在のグランビルアイランドが生まれたと言っても過言ではない。</p>
+<blockquote>
+<p>連邦政府の管理のもと、グランビルアイランドの再開発がもたらしたのは、市内の他の場所にはない、車と歩行者の奇妙な混在だ。市民や観光客が訪れる活発な市場の横に、現在も稼働中の釘工場がある。こんな光景は、商業、工業、オフィスなど用途が混在したミックスユースなゾーニングだからこそ生まれたものだ。ーー<a href="https://www.cbc.ca/news/canada/british-columbia/1970s-granville-island-redevelopment-1.4021855">Matt Meuse from CBC</a></p>
+</blockquote>
+<p>バンクーバーへ行った際は、土地用途が混在し、さまざまなアクティビティが同居する不思議で楽しいグランビルアイランドを、ぜひ訪れてみて欲しい。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland13.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland14.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland15.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland0.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[まるでジブリの世界？ガスタンクの廃墟がそのまま残るガスワークス公園]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/seattle/gasworkspark</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/seattle/gasworkspark</guid>
+            <pubDate>Fri, 03 Aug 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark3.jpg"></p>
+<p>アメリカの公園といえば、ニューヨークのセントラルパークがすぐに思い浮かぶと思いますが、他にもアメリカには多くの素晴らしい公園があるのをご存知でしょうか？歴史的・政治的背景や、デザインの意図を紐解いていくと、日本でも参考になるような面白い公園の事例が、アメリカにはゴロゴロ転がっています。</p>
+<p>シアトルのダウンタウン対岸、ユニオン湖のほとりに位置するガスワークス公園は、国の歴史遺産にも登録されている非常に有名な公園です。1975年に一般向けにオープンし、77,000m<sup>2</sup>の広々とした緑の美しい都市型公園ですが、何がそれほどまで特別なのでしょうか？</p>
+<p>以下、「公園のリノベーション」というテーマで、ガスワークス公園の魅力を紹介していきます。</p>
+<h3>シアトルの街を支えた、石炭ガス化工場</h3>
+<p>ガスワークス公園に足を踏み入れてまず目に入るのは、公園の真ん中に佇む、なんとも存在感のある産業工場跡。錆びついた骨格に、年月と共に植物が絡みついて、まるでジブリに出てくるお城のような存在感です。 この公園の歴史を知らずに訪れた人には、なぜここに古い工場跡があるのか、驚くことでしょう。</p>
+<p>実はこの土地、ダウンタウンに近接する一等地でありながら、50年もの間、石炭ガス化工場用地として使われていきました。ここでつくられた電気は、当時シアトルの街灯と住宅の電灯として、人々の生活を支えましたが、一方で、周囲の空気も水も、このガス化工場のせいで汚染されてしまったのも事実です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark12.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark8.jpg"></p>
+<p>1906年から1956年まで稼働していたこの石炭ガス化工場は、閉鎖後、産業廃棄物や工場の建物がそのまま廃棄され、目も当てられない状態だったといいます。また、50年にもわたる産業利用のため、この場所の土地は非常に汚染されていました。緑の芝生が圧巻の現在の姿を見ると驚きの歴史です。</p>
+<p>シアトル市が公園を作るためにこの土地を購入したのは、1962年のことです。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark9.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark10.jpg"></p>
+<h3>産業廃棄物と工場跡をそのまま残す？！大きな論争をよんだリチャード・ハーグの挑戦</h3>
+<p>公園のデザインに任命されたのは、シアトルのランドスケープアーキテクト、リチャード・ハーグ。このリチャード・ハーグが「産業工場跡をそのまま残さないか？」と提案したことで、大きな論争が巻き起こりました。当時は、産業用工場跡地の痕跡を少しでも残して公園を作る前例はありませんでした。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark0.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark2.jpg"></p>
+<blockquote>
+<p>「多くの人が、このアイデアは気が狂っていると反対したよ」。</p>
+</blockquote>
+<p>ドキュメンタリー「<a href="https://www.youtube.com/watch?v=aUSCO5Dlvzw">アメリカを変えた10つの公園</a>」のなかで、リチャード・ハーグは当時の様子をこう語っています。今でも、産業廃棄物がむき出しのまま残った公園に反対している人はいるともいいます。しかし、リチャード・ハーグの意図は、歴史を無視し、その痕跡を消し去るのではなく、シアトルの重要な過去と向き合い、その遺産に新しい価値を付与することでした。いくら汚染の歴史とはいえ、産業革命は確かに起こり、そのエネルギーが都市における人々の生活を支えていたわけですから。</p>
+<blockquote>
+<p>「ゴミを愛でるなんて出来ない」と反対する人々を押し切って、リチャード・ハーグは工場跡の最もアイコニックな建物をいくつか保存することに成功しました。土地も水も汚染されていた、目も当てられない汚い工場跡は、バイオレメディエーションなどいくつかの処置によって、現在の安全で美しい公園になっています。</p>
+</blockquote>
+<h3>過去の遺産を引き継ぎつつ、都市に眠る「公共」の可能性を掘り出す</h3>
+<p>誰もが「ゴミ」として無視し続けていた都市の一角を、市民が休日に訪れる華やかな公共空間として生まれ変わらせたリチャード・ハーグ。保存された工場跡をさして「絶滅した種族が、ここには残っている」と語る彼にとって、人々がこの公園に足を運び、楽しみつつ、シアトルの過去に思いを馳せる現在の風景は、まさに望んでいたものでしょう。</p>
+<p>シアトルに訪れる際は、ぜひガスワークス公園の緑の芝生に腰をおろし、目の前の湖でボートを楽しんでいる人々を眺めたり、丘を登ってダウンタウンの景色を楽しんでみましょう。廃墟が好きな人には、工場跡の建物はたまらなく魅力的でもあります。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark7.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark5.jpg"></p>
+<p>安全や汚染を気にすることなく人々が集うことのできる、都市の中心にある公共の公園。どの街にも、忘れ去られ、打ち捨てられているけれども可能性のある土地は多くあるはずです。そうした土地をハックして、公園として市民に解放してみたら？そんな想像が広がる、ガスワークス公園のリノベーション事例でした。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark3.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[ポートランドの小学校の廃校活用プロジェクト、ケネディスクール]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/portland/KennedySchool</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/portland/KennedySchool</guid>
+            <pubDate>Wed, 25 Jul 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>今回は、、「適応型再利用（Adaptive reuse）」というキーワードのもとに、ポートランドの廃校活用プロジェクト「ケネディ・スクール」を紹介します。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg"></p>
+<h3>そもそも「適応型再利用（Adaptive reuse）」とは</h3>
+<p>「適応型再利用（Adaptive reuse）」という言葉をご存知でしょうか？<br>
+廃棄物になるかもしれない建物や、使われていない土地に手を加え、元々の用途とは違う目的で使用し付加価値の高いものへと作り変えること、またはその手法をさします。ただ単に再利用するだけでなく、素材として使用したり、原型の特徴をできるだけ生かしたまま、より良いものへ作り変えるという意味で、アップサイクルの手法に似ています。</p>
+<p>単なるリノベーションではなく、文化財などの歴史的価値のある建築物を、移築、あるいは用途変更をすることで、保護と活用（商用使用）を両立することが出来るという意味で、非常に画期的でもあります。例えば、昔は工場として使われていた建物をリノベーションし、用途変更をしたうえでホテルやコミュニティセンターとして使用している事例は、「適応型再利用（Adaptive reuse）」といえるでしょう。以下、実際に訪れることが出来るポートランドの「適応型再利用（Adaptive reuse）」の事例を紹介します。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool12.jpg"></p>
+<h3>適応型再利用のパイオニア、マックメナメンズ</h3>
+<p>ポートランドに詳しい人であれば、<a href="https://www.mcmenamins.com/">マックメナメンズ（McMenamins）</a>という会社の名前を聞いたことがあるかもしれません。1974年にマックメナメンズ兄弟によって創業されたマックメナメンズ社は、オレゴン州ベースの地元民にも大人気の会社です。経営を中心はホテルやパブの運用ですが、創業当初から、使われなくなった学校、教会、シアターや住宅などの古い建物を再利用して店舗を作ってきたことで有名です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool0.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool2.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool3.jpg"></p>
+<p>もちろん、ただ単に古い建物をリノベーションをするだけではありません。歴史的に価値はあるのに上手く使用されていなかったり、解体の危機にある建物を選定したうえで、既存の良い部分を極力残しながら、独特で不思議な世界観を練り上げるのが非常にうまいのです。</p>
+<p>環境的な配慮も理由のひとつ。マックメナメンズ（McMenamins）は、工事の際には、出来る限り廃材を再利用することを大切にしていることことです。ここから、使用されていない建物にポートランドならではのローカルな価値を見出し、未来につなげていくことが出来ます。</p>
+<p>マックメナメンズ（McMenamins）の店舗はポートランドの街中にありますが、その中でも探検欲を満たしてくれるのが、ケネディスクールです。</p>
+<h3>日本の廃校活用にも参考にしたい！複合施設ケネディ・スクール</h3>
+<p>ポートランド北東部に位置するケネディスクールは、元々1915年に開校しました。その後閉校し、小学校としての機能を失ってからしばらく放置されていたのを、マックメナメンズが買い取ります。２階建ての校舎全体がリノベーションされ、かつては教室や職員室などであった場所が、現在はホテル、レストラン、バー、映画館、スイミングプールや醸造所として使われています。まさに、盛り沢山の複合施設です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool5.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool6.jpg"></p>
+<p>いかにも学校らしい、広々と長い廊下には、小学校として使われていた当時のサインや装飾がそのまま残っていたりします。これに加えて、マックメナメンズ独特の新しい装飾や仕掛けが付け加えられており、遊び心満載の世界観を細部まで楽しむとことができるのです。全く統一感のない奇妙奇天烈な世界観は、マックメナメンズ特有でしょう。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool7.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool9.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool10.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool11.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool13.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool14.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool16.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool15.jpg"></p>
+<p>コミュニティに解放された中庭のプール<br>
+宿泊客でなくとも、無料で自由に立ち寄れるのがケネディスクールの魅力。<br>
+特に、かつてのボイラー室を使用したバー、体育館であった映画館はおすすめです。</p>
+<p>ビールを飲みにふらりと立ち寄るもよし、安い映画を見るのもよし。プールは地域住民に解放されているので、誰でも自由に立ち寄ることができるんだとか。過去の匂いをかぎながら、現代風にエッジを効かせた楽しみ方を提案するマックメナメンズの事例からは、遊休不動産の活用や、コミュニティビルド、DIYなど、多くの学びがありそうです。</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[サンフランシスコを10倍楽しむためのアーバニストキット！"The Urbanist SF" ツアー体験談]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/san%20francisco/theurbanistSF</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/san%20francisco/theurbanistSF</guid>
+            <pubDate>Wed, 18 Jul 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>先日、以前から気になっていたサンフランシスコのツアー、<a href="http://www.theurbanistsf.com/">The Urbanist SF</a>に参加してきました。サンフランシスコほどの大都市になると街歩きツアーは数えきれないほどありますが、このツアーが特徴的なのは、サンフランシスコを楽しむ遊歩者のための「<a href="https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote">アーバニストキット</a>」が用意されていること。「アーバニストキット」の中には、イラストマップや現地の地図で作られた財布、サンフランシスコの美味しい水道水を楽しむためのマイボトル、ローカルマーケットだけでゲット出来るアーモンドなど、小さな工夫が凝らされたものばかり。ローカルな魅力がぎっしり詰まったキットを開けて、それぞれのアイテムの背景や作り手のストーリーを聞きながら、どことない街の日常を眺めながら街を歩く。The Urbanist SFは、そんな街好きにはたまらないツアーです。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF01.jpg"><br>
+<em>&quot;The Urbanist SF&quot;創始者のNate Mahoney氏。ミッション地区の屋外壁画をバックグランドに。</em></p>
+<p>このツアーの創始者であり「アーバニストキット」のキュレーションを勤めたNate Mahoney氏が注目しているのは、人間中心設計のリサーチと都市における人々の経験。普段はUXリサーチャーとして働きつつ、彼自身のパーソナルな経験から、独自にサイドプロジェクトとしてこのツアーを開始しました。</p>
+<p>アメリカ郊外の車社会に生まれ育ったNate Mahoney氏は、サンフランシスコに引っ越してきてからとにかく街を歩き回ったと言います。目的もなく、ふらふらと街を歩き回り、地元の人と話をするなかで出会ったのは、19世紀パリで生まれた、ボードレールによるフラヌールという概念でした。この概念に影響を受けたMahoney氏は、21世紀のサンフランシスコで、このフラヌールをひたすら実践 — 目的もなく歩き回ることで、都市を経験し、学ぶことを繰り返してきました。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF03.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF04.jpg"></p>
+<p>そんななか、地元の人々の生活や物語に目を向けはじめ、彼らと話はじめた結果、このプロジェクトのアイディアの原型が生まれます。サンフランシスコの街をよりローカルに楽しむための「アーバニストキット」のアイテム１つ１つは、地元のデザイナーやブランドとコラボレーションしたもの。それぞれを手に取りながら街を歩くことで、地元のローカルなストーリーに耳を傾けることができます。</p>
+<h3>「アーバニストキット」を手に歩く、ミッション地区</h3>
+<p>１時間のツアーでハイライトされたのは、歴史的にヒスパニック系住民が多く住むミッション地区。サンフランシスコは、1776年にスペイン人のフランシスコ会修道士によって創立されましたが、このミッション地区がその始まり。サンフランシスコ市内で最も古い地区です。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF05.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF06.jpg"></p>
+<p>アーティストの多いエリアでもあり、屋外壁画などが有名でもあります。北部のダウンタウンに比べて比較的物価は安いものの、昨今は人気上昇のため、住民やショップの入れ替わりなど大きく変化している地区です。</p>
+<p>サンフランシスコのほぼ全ての地区を歩き回ったMahoney氏は、最終的にミッション地区を選んだ理由を「この地区には面白いことが自然と多いから」と説明します。街歩きをしているなかで、面白いと思ったお店に飛び込んだり、地元の人にインタビューをすることで、じわじわとコラボレーターを見つけ、キットに入れるアイテムを１つ１つ検討していきました。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF07.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF13.jpg"></p>
+<p>以下、ツアーで訪れたミッション地区の面白いスポットをいくつか紹介します。</p>
+<ul>
+<li>
+<p><a href="https://en.m.wikipedia.org/wiki/Philz_Coffee">Philz coffee</a><br>
+2002年にオープンしたPhilz coffeeは、ベイエリアのサードウェーブ・コーヒーブームに大きく貢献した重要なローカルカフェ。古いマーケットを改修し、定期的にコミュニティイベントなどを開催することで、地元コミュニティと非常に強い関係を築いてきたと言います。現在はサンフランシスコ中に店舗を拡大したものの、元祖であるミッション地区のPhilz coffeeは、今でも重要な意味を持っているとのことです。</p>
+</li>
+<li>
+<p><a href="http://www.sftravel.com/article/guide-san-francisco%E2%80%99s-mission-district-murals">屋外壁画</a><br>
+Balmy Alley、Clarion Alley他、後に紹介するWomen’s buildingでもアーティストの巨大な屋外壁画を楽しむことができます。<br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF08.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF09.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF10.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF11.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF12.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF21.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF22.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF23.jpg"></p>
+</li>
+<li>
+<p><a href="https://www.colpapress.com/pages/about">Colpa press</a><br>
+ミッション地区に位置する、インディペントのマガジンやブックを出版する小さなプリントショップ。地元のアーティストを支援するプラットフォームとして、ギャラリーやワークショップの開催なども行なっています。Mahoney氏がこのプリントショップで行なったインタビューは、<a href="https://youtu.be/wR3PSISQy5o">Youtube</a>で確認することができます。<br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF14.jpg"><br>
+ここのプリントショップでは、「アーバニストキット」に入っているイラストレーションマップが印刷されました。デザインは、地元のアーティスト<a href="https://www.carissapotter.com/">Carissa Potter</a>さん。彼女のプロジェクトの１つである<a href="https://www.peopleiveloved.com/">People I’ve loved</a>のイラストレーションは必見です。</p>
+</li>
+<li>
+<p><a href="https://en.m.wikipedia.org/wiki/Timbuk2">Timbuk2</a><br>
+1989年に創立のバックの地元ブランド、Timbuk2はMahoney氏のお気に入り。訪れた店舗兼工房は必見です。<br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF15.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF16.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF17.jpg"></p>
+</li>
+<li>
+<p><a href="https://womensbuilding.org/the-mural/">The Women’s building</a><br>
+1971年に創立したThe Women’s buildingは、サンフランシスコで初めて女性によって運営されたコミュニティ・センター。建物の外観は、全てアーティストの屋外壁画に覆われています。<br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF28.jpg"></p>
+</li>
+<li>
+<p><a href="https://en.m.wikipedia.org/wiki/Mission_Dolores_Park">Dolores Park</a><br>
+ツアーの締めくくりはサンフランシスコの定番、ミッション・ドロレス公園。ミッション地区とノイバレー地区に挟まれた小高い丘にある公園で、サンフランシスコの街並みを一望することができます。公園の芝生に寝そべって、ピクニックをしたりダンスをしたり、それぞれの時間を楽しむ人々。日本でも見てみたい風景です。<br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF30.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF31.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF32.jpg"></p>
+</li>
+</ul>
+<h3>都市の人間中心デザインに向けて</h3>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF19.jpg"></p>
+<p>サンフランシスコを10倍楽しむためのアイテムが詰まった「アーバニストキット」＆ツアー。今後は、ロサンゼルスやニューヨークなど、アメリカの他の大都市への展開も考えているそう。それでも一番大切なのは、とにかく街を歩くこと。その場所の物語に耳を傾けて、魅力を発見し、自分の足でコラボレーターを見つけること。「だからとても時間と労力がかかるんだよね」と笑いながら話すMahoney氏が大切にしているのは、私たち一人ひとりの都市における経験と住みやすさ、つまり都市の人間中心デザインです。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF02.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF01.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[アメリカで建設が進む、 未完成の実験都市、アーコサンティ]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/arcosanti/arcosanti</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/arcosanti/arcosanti</guid>
+            <pubDate>Tue, 26 Jun 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>アメリカ南西部、アリゾナ州。州都であるフェニックスから110キロほど北に、現在も建設が進む未来都市構想の実験 地があるという。砂漠のような殺風景な風景を横目にハイウェイを走ること数時間。舗装もされていない脇道を抜ける と、何もないように見えるアリゾナの大地に突然、都市実験区(Urban laboratory)の肩書きをもつ、アーコサンティの看板が見えてくる。</p>
+<p>約10ヘクタールの敷地に、アーチ型の屋根が特徴的なコンクリートの建築群が並ぶ。砂漠地帯の風景に上手く溶け込む赤茶色のシルトで出来たパネルや装飾がユニークで、その佇まいはサイエンスフィクションの世界のようだと言えなくもない。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti01.jpg"><br>
+モダニズムの巨匠、フランク・ロイド・ライトにも師事したとい うイタリア系アメリカ人建築家パオロ・ソレリ（1919–2013）が、建築（architecture）と生態学（ecology）の融合であるアーコロジー（arcology）をテーマにアーコサンティ（<a href="https://arcosanti.org/">Arcosanti</a>）の建設をはじめたのは、約50年前のこと。アメリカの車社会に 基づいた平面的な都市のスプロール化に嫌気がさしたパオロ・ソレリは、自然の生態系を壊すことなく都市機能を拡張させ、生産と消費が内部で自己完結するサステイナブルな都市システムの構築を唱えた。職住近接を実現させ、ウォ ーカアビリティを向上さて車の必要のないライフスタイルを提唱。現代都市の抱える問題を解決する理想郷として、アーコサンティ開発がスタートした。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti02.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti03.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti05.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti06.jpg"></p>
+<p>しかし、パオロ・ソレリの失職と死去により建設は一旦停止。50年経った現在でも、全体のプランの5%しか実現していない。しかし、現在もソレリのビジョンを受け継いだ建築家や都市計画家、アーティ ストが住み着き、独立したコミュニティとしてこの実験的な「都市」を完成させようとしているという。私たちがここを訪れた2018年夏の時点では、世界中から80名ほどがこの「都市」に移り住み、少しづつ手作業で完成を目指している。住居やコミュニティスペース、メインホールや食堂など合計25エーカー分の建築群を、実際に訪れ、住民の生活の様子や、自治的なコミュニティのあり方を、目にすることができた。 完成したあかつきには、約5000人を収容できる理想の都市になると言われている。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti08.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti09.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti11.jpg"><br>
+<em>パオロ・ソレリのビジョンと、アーコサンティでの生活について語る住民の男性。</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti14.jpg"><br>
+<em>可能な限り自然エネルギーを使用しているアーコサンティ。冷房を使用していないにも関わらず、風の循環が良いため非常に涼しく感じる（因みに外は40度以上の砂漠）。</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti31.jpg"><br>
+<em>アーコサンティの全体像。Photo by Cory Doctorow, <a href="https://www.flickr.com/photos/doctorow/16488755554/in/photostream/">flickr</a></em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti18.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti21.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti26.jpg"></p>
+<p>2017年には、#metoo運動の関わりのなかで、パオロ・ソレリの実娘が、生前性的虐待を受けていたことを告白している。そんな経緯もあり、なかなか手放しでアーコサンティを賞賛することは私には出来ないけれど、建築と生態学の合いの子である「アーコロジー」というテーマが、50年経った今でも非常に重要な意味を持っているのは、確かだ。そして、砂漠のなかに一からひとつの都市を作って、このビジョンを実験してみよう、という壮大な試みと、今でもそれが細々ながら支持されて続けているという寛容さが、いかにもアメリカらしい。21世紀の私たちの都市に必要なのは、このような柔軟な発想と、執拗なプロトタイプづくりなのかもしれない。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti27.jpg"></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti00.jpg">
+            </enclosure>
+        </item>
+        <item>
+            <title><![CDATA[街好きのためのビデオゲームガイド]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/elsewhere/Games</link>
+            <guid>https://www.travelingcircusofurbanism.com/ja/elsewhere/Games</guid>
+            <pubDate>Mon, 25 Jun 2018 22:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>数か月前、友人がとても興味深いWebサイトを見せてくれた。ノーベル経済学賞を受賞したゲーム理論学者のトーマス・シェリング氏が提唱した、<a href="https://ncase.me/polygons/">Parable of Polygons（人種隔離シュミレーション）</a>だ。</p>
+<p>どきりとするテーマだが、Webサイト自体は、三角形と四角形の可愛らしいマスコットを使用した、ゲーム形式となっている。白人と黒人が『隣同士で暮らすのに抵抗はない』と考えていても、いつの間にか白人は白人、黒人は黒人で暮らす居住地区ができあがってしまう....という人種による居住区の住み分けが生まれてしまう理由を、インタラクティブにシュミレーションで学ぶことができる。</p>
+<p>理論としては頭でわかっていても、能動的にインタラクティブな視覚的シュミレーションを介することで、より理解が深まるのだ。</p>
+<p>作者のトーマス・シェリングは、ビデオゲームが人の理解能力に与える影響について書いた、Ian Bogostの著書<a href="http://bogost.com/books/persuasive_games/">Persuasive Games: The Expressive Power of Videogames</a> に影響を受けたという。今回のように、都市や都市における人々の暮らしを理解するのに、役立つこともあるかもしれない。さっそく読んでみることにした。</p>
+<h2>ビデオゲームは、そこまで悪者ではないかもしれない</h2>
+<p>この本は、ビデオゲームがプレーヤーにどのように影響するか、彼らの世界に対する基本的な態度や信念さえも分析します。</p>
+<p>もちろん、ビデオゲームは否定的な社会的含意に悩まされており、しばしば真剣に受け止められていません。</p>
+<blockquote>
+<p>商業的成功にもかかわらず、ビデオゲームは依然として文化的形態としての受け入れに苦労しています。彼らは、せいぜい気晴らし、最悪の場合は道徳的基盤を保存する文化的または社会的機能を果たさないと考えられています。 （Bogost、2010、p15）</p>
+</blockquote>
+<p>ただし、この本によると、ビデオゲームは、プレイヤーに大きな影響を与える素晴らしいストーリーテリングメディアになる可能性があります（もちろん、うまく使用されている場合）。</p>
+<blockquote>
+<p>これは成熟したストーリーテリングメディアであり、私たちの文化の中で議論を形作る大きな力があると言っています。 （…）この本は、ビデオゲームが説得の新しい領域を開くことを示唆しています。その中核的な表現モードのおかげで、手続き的に。（…）私はこの新しい形式を手続きレトリックと呼び、ルールベースの表現と相互作用による説得の芸術ではなく話し言葉、文章、画像、または動画。 （Bogost、2010、p21）</p>
+</blockquote>
+<p>それを念頭に置いて、私は都市のデザインや建築の分野と密接な関係を持つゲームを掘り始めました。それらのいくつかは、都市シミュレーションや教育、さらには市民参加のための素晴らしいツールです。</p>
+<p>ここに、私がこれまでプレイして愛してきた3つのビデオゲームを示します。</p>
+<p>##都市愛好家に最適なビデオゲーム</p>
+<h3>1.Block’hood</h3>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*eFwmbDY3I9wIF63Z.jpg" alt="Photo from the official website: https://www.plethora-project.com/blockhood/"><em>Photo from the official website: <a href="https://www.plethora-project.com/blockhood/">https://www.plethora-project.com/blockhood/</a></em></p>
+<p>最近見つけた、[Block’hood]（<a href="https://www.plethora-project.com/blockhood/%EF%BC%89%E3%80%82%E6%9C%89%E5%90%8D%E3%81%AASimCity%E3%81%AA%E3%81%A9%E3%81%AF%E6%B0%B4%E5%B9%B3%E3%81%AB%E8%A1%97%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%81%8F%E3%81%8C%E3%80%81Block%E2%80%99hood%E3%81%AE%E4%B8%96%E7%95%8C%E3%81%A7%E3%81%AF%E3%80%81%E5%9E%82%E7%9B%B4%E3%81%AB%E9%83%BD%E5%B8%82%E3%82%92%E6%A7%8B%E7%AF%89%E3%81%97%E3%81%A6%E3%81%84%E3%81%8F%E3%80%82%E9%83%BD%E5%B8%82%E8%A8%88%E7%94%BB%E3%81%AE%E5%9F%BA%E6%9C%AC%E5%8E%9F%E5%89%87%EF%BC%88%E3%82%A8%E3%83%8D%E3%83%AB%E3%82%AE%E3%83%BC%E3%80%81%E9%83%BD%E5%B8%82%E3%81%AB%E5%BF%85%E8%A6%81%E3%81%AA%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9%E3%80%81%E4%BA%A4%E9%80%9A%E3%81%AA%E3%81%A9%EF%BC%89%E3%81%AB%E6%B2%BF%E3%81%A3%E3%81%A6%E3%82%B2%E3%83%BC%E3%83%A0%E3%81%8C%E9%80%B2%E3%82%80%E3%81%AE%E3%81%A7%E3%80%81%E6%95%99%E8%82%B2%E7%9B%AE%E7%9A%84%E3%81%AA%E3%81%A9%E3%81%AB%E6%9C%80%E9%81%A9%E3%81%A0%E3%81%A8%E6%80%9D%E3%81%86%E3%80%82%E3%81%8A%E3%81%99%E3%81%99%E3%82%81%E3%80%82">https://www.plethora-project.com/blockhood/）。有名なSimCityなどは水平に街を作っていくが、Block’hoodの世界では、垂直に都市を構築していく。都市計画の基本原則（エネルギー、都市に必要なインフラ、交通など）に沿ってゲームが進むので、教育目的などに最適だと思う。おすすめ。</a></p>
+<h3>2.Cities: Skylines</h3>
+<p>TEDトークでも紹介された<a href="https://www.paradoxplaza.com/cities-skylines/CSCS00GSK-MASTER.html">Cities: Skylines</a>。「ビデオゲームが、都市をより良いものにする」という意外な組み合わせが印象的な題名が面白い。</p>
+<iframe src = "https://embed.ted.com/talks/lang/en/karoliina_korppoo_how_a_video_game_might_help_us_build_better_cities" width = "854" height = "480" style = "position：absolute; left：0; top：0; width： 100％; height：100％ "frameborder =" 0 "scrolling =" no "allowfullscreen> </iframe>
+<p>例えば、さまざまなシナリオで架空の都市をつくり、その街がどう機能するかをテストする。・・・。<br>
+他のユーザーが作った様々な事例を覗くことができるのが、良い。<br>
+渋谷のスクランブル交差点など、現存の街の一部をゲーム上で再構築している人もいる。何気なく見ている風景を、分解し、再構築してみるというのは、面白いかも。</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game01.jpg"><em>Photo from Steam</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game02.jpg"><em>Photo from <a href="https://www.youtube.com/watch?v=9xj4ciP0Riw">Cities:Skylines Review</a></em></p>
+<h3>3.Block by Block (Minecraft)</h3>
+<p>Minecraftは古い有名なビデオゲームですが、強調したいのはMinecraft自体ではなく、[Block by Block]（<a href="https://blockbyblock.org/%EF%BC%89%E3%81%A8%E5%91%BC%E3%81%B0%E3%82%8C%E3%82%8B%E3%82%A4%E3%83%8B%E3%82%B7%E3%82%A2%E3%83%81%E3%83%96%E3%81%A7%E3%81%99%E3%80%82">https://blockbyblock.org/）と呼ばれるイニシアチブです。</a> Block by Blockは、Minecraftを使用して、さまざまなワークショップを通じて問題のあるコミュニティと交流し、公共スペースの実装のための資金を調達します。</p>
+<p>つまり、これは非常に簡単で楽しいゲームであり、手で何でも作成できます。Minecraftを使用して市民の参加を促し、非専門家を含むすべての人が私たちに参加できるか、すべきであるという認識を高めることは素晴らしい考えです都市および公共スペース。</p>
+<p><img src="https://cdn-images-1.medium.com/max/2000/0*0tpzhR-cNmhy-bau.jpg" alt="Photo from the official website: Block by Block"><em>Photo from the official website: <a href="https://blockbyblock.org/">Block by Block</a></em></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game03.jpg">
+            </enclosure>
+        </item>
     </channel>
 </rss>

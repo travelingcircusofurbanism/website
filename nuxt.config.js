@@ -1,5 +1,6 @@
 const fs = require('fs')
 const os = require('os')
+import postPrep from './nuxt/modules/postprep'
 let nuxtInstance // need this for generate:done hook for nuxt-generate-cluster
 
 module.exports = {
@@ -132,7 +133,7 @@ module.exports = {
     },
 
     routes: async () => {
-      await require('./nuxt/modules/postprep')()
+      await postPrep()
       const posts = require('./nuxt/static/generated/posts.json').filter(
         (post) =>
           post.preview ||
