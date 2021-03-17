@@ -1,10 +1,6 @@
 const fs = require('fs')
 require('dotenv').config()
 
-// "deploysite": "git subtree push --prefix docs origin gh-pages",
-//  "golive": "git pull && npm run pushlocalchanges && npm run generate && npm run deploysite && npm run cleanup",
-//  "pushlocalchanges": "npm run cleanup && git add . && git diff-index --quiet HEAD || git commit -m \"Auto-pushing files\" && git push"
-
 module.exports = {
   telemetry: false,
   target: 'static',

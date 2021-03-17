@@ -169,7 +169,7 @@ export const mutations = {
 export const actions = {
   nuxtServerInit({ commit, state, dispatch }) {
     const posts = require('~/static/generated/posts.json')
-    commit('setDev', !process.static)
+    commit('setDev', process.env.DEV)
     commit('setPosts', posts)
     dispatch('updateShowablePosts')
 
