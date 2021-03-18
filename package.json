@@ -11,7 +11,7 @@
     "g": "npm run generate",
     "preview": "nuxt generate && serve ./docs",
     "generate": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
-    "golive": "npm run cleanup && git pull && git add . && git commit \"Auto-pushing to live\""
+    "golive": "npm run cleanup && git pull && git add . && git commit -m \"Auto-pushing to live\""
   },
   "dependencies": {
     "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
