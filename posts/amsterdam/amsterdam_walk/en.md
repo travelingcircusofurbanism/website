@@ -5,7 +5,7 @@ _This is a post by a talented urban designer and architect [Prisca Arosio](https
 
 ![](AmsterdamWalk_ADAFFLaurels.jpg)
 
-In July 2020 CITYMAKERS China – Europe had an open call for short videos called Virtual Walks Project. The call asks to “investigate fundamental themes of life in cities and on the countryside that are as relevant for people living in China as for those living in Berlin or any other European city.”
+In July 2020 [CITYMAKERS China – Europe](https://c-makers.de/entry/citymakers-virtual-walks-project-2020/) had an open call for short videos called Virtual Walks Project. The call asks to “investigate fundamental themes of life in cities and on the countryside that are as relevant for people living in China as for those living in Berlin or any other European city.”
 
 CITYMAKERS team was asking for short-walking movie ideas with an analytical aspect of a city or the countryside. They write “Outdoor urban walking is an opportunity not only to ask what the immediate impact of the coronavirus pandemic on urban and social space is, but also more substantially: What dysfunctions, blind spots, and paradoxes do it bring to the surface?”
 
@@ -18,7 +18,7 @@ The narrative of the movie is composed of a combination of videos and interviews
 Concept and production: MELITA STUDIO / PRISCA AROSIO
 Director and editing: BORNAGRAPHIQUE / BOBBY BORN
 Location: AMSTERDAM, THE NETHERLANDS
-Organizer: CITYMAKERS CHINA - EUROPE
+Organizer: [CITYMAKERS CHINA - EUROPE](https://c-makers.de/entry/citymakers-virtual-walks-project-2020/)
 
 <iframe width="652" height="367" src="https://www.youtube.com/embed/7hZRzFo6Nw4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -37,7 +37,7 @@ Here below you can find short speakers' bios:
 
 ----
 
-![MELITA STUDIO](LOGO_MELITASTUDIO_black.png)
+![MELITA STUDIO](logo.png)
 
 _MELITA STUDIO_
 
