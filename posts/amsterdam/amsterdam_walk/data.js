@@ -1,6 +1,6 @@
 module.exports = {
   public: true,
-  date: '11/3/2021',
+  date: '3/11/2021',
   category: 'essay',
   image: 'AmsterdamWalk_ADAFFLaurels.jpg',
   mapPosition: [
@@ -11,7 +11,5 @@ module.exports = {
       zoom: 12.0,
       pitch: 0,
     },
-    
-  ], 
+  ],
 }
-
