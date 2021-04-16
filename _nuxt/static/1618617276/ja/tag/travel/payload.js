@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/tag/travel", {data:[{posts:[],tag:"travel"}],fetch:[],mutations:[["setBreadcrumbs",[{label:"#travel",url:"\u002Fja\u002Ftag\u002Ftravel"}]]]});
