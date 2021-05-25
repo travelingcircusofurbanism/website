@@ -124,10 +124,10 @@ module.exports = {
 
     routes: async () => {
       const posts = require('./nuxt/static/generated/posts.json').filter(
-        (post) => post.preview,
+        (post) => post.public || post.preview,
       )
 
-      return [
+      const routes = [
         // '404',
         ...posts
           .filter((p) => p.languages.en)
@@ -136,6 +136,8 @@ module.exports = {
           .filter((p) => p.languages.ja)
           .map((p) => `/ja/${p.city}/${p.slug}`),
       ]
+
+      return routes
     },
   },
 
