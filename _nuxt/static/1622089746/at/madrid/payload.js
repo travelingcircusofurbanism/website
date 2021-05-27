@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/at/madrid", {data:[{posts:[],location:"madrid",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: madrid",url:"\u002Fat\u002Fmadrid"}]]]});
