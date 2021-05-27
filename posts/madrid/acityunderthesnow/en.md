@@ -46,6 +46,9 @@ _Tree fallen across the street due to the storm_
 
 ---
 
+![](NaylaSaniour.jpg)
+_Nayla Saniour_
+
 _Nayla grew up in Beirut, where she graduated in architecture with high distinction from the American University of Beirut. She currently works in Madrid as an urban consultant on public spaces strategies in cities across the world. Nayla is also co-editor of the “Stories of Young Urbanists” interview series at All Things Urban, which explores the journeys of young professionals in urbanism. In her blog Urraca Urbana, she writes about her experiences in Madrid, focusing on the extraordinary ordinary things, the little stuff of everyday life._
 
 Nayla's blog: [Urraca Urbana](https://urracaurbana.com/)
