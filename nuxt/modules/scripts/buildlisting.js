@@ -192,7 +192,7 @@ function getDataForPost(postDir, city, slug) {
 
     let image = postData.image
     if (!image) {
-      image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/g.exec(
+      image = /!\[.*\]\((.*\.(?:jpe?g|png|gif|webm|tiff))\)/gi.exec(
         languages.en ? enContent : jaContent
       )
       if (!image) {
