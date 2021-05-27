@@ -1,5 +1,9 @@
 # Last Stand for Kamagasaki: the Agony of Japan’s Poorest Urban District (Part 1/2)
 
+_This essay was written by Leo Porte, who researches the revitalisation of marginal areas in Japan. He volunteers and investigate citizen based initiatives in Kamagasaki, which has the largest concentration of poverty, homelessness, and welfare recipients in all of Japan. You can also read another article [here](https://www.travelingcircusofurbanism.com/ehime/senjo) by him._
+
+---
+
 On March 31st, 2019, Osaka City closed the Airin Labour Welfare Center — displacing, separating, and diminishing the provision of housing, employment, and socio-medical support in Kamagasaki. For half a century, the Center has tended to some of the 30,000 day-labourers of the district which is notorious for having the largest concentration of poverty, homelessness, and welfare recipients in all of Japan. While the decision claimed to be triggered by the facility's dilapidated condition facing important seismic risks, local dwellers and citizens seeing in this venture another step towards the gentrification of the historical blue collar “ghetto”, decided to occupy the Center.
 
 ![](kamagasaki1.JPG)
