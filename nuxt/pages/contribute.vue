@@ -218,6 +218,7 @@ img {
   }
 }
 .kofi {
+  display: block;
   margin-top: 2em;
   border: 1px solid #ddd;
   width: 100%;
