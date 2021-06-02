@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/art%20center%20ongoing", {data:[{posts:[],location:"art center ongoing",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: art center ongoing",url:"\u002Fja\u002Fat\u002Fart%20center%20ongoing"}]]]});

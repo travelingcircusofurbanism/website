@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/plaza%20de%20las%20tres%20culturas", {data:[{posts:[],location:"plaza de las tres culturas",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: plaza de las tres culturas",url:"\u002Fja\u002Fat\u002Fplaza%20de%20las%20tres%20culturas"}]]]});

@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/new%20delhi", (function(a){return {data:[{posts:[],city:a}],fetch:[],mutations:[["setBreadcrumbs",[{label:a,url:"\u002Fnew%20delhi"}]]]}}("new delhi")));

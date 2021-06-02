@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/about", {data:[{}],fetch:[],mutations:[["setBreadcrumbs",[{label:"About",url:"\u002Fja\u002Fabout"}]]]});

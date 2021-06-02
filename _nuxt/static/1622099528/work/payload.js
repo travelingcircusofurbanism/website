@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/work", {data:[{}],fetch:[],mutations:[["setBreadcrumbs",[{label:"Work",url:"\u002Fwork"}]]]});

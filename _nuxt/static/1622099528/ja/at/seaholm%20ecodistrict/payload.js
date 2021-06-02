@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/seaholm%20ecodistrict", {data:[{posts:[],location:"seaholm ecodistrict",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: seaholm ecodistrict",url:"\u002Fja\u002Fat\u002Fseaholm%20ecodistrict"}]]]});

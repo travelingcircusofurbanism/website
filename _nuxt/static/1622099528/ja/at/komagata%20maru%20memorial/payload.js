@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/komagata%20maru%20memorial", {data:[{posts:[],location:"komagata maru memorial",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: komagata maru memorial",url:"\u002Fja\u002Fat\u002Fkomagata%20maru%20memorial"}]]]});

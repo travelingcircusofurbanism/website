@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/old%20little%20white%20house", {data:[{posts:[],location:"old little white house",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: old little white house",url:"\u002Fja\u002Fat\u002Fold%20little%20white%20house"}]]]});

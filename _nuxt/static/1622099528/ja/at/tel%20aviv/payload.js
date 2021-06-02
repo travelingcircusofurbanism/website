@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/tel%20aviv", {data:[{posts:[],location:"tel aviv",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: tel aviv",url:"\u002Fja\u002Fat\u002Ftel%20aviv"}]]]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/b%C3%A2timent%207", {data:[{posts:[],location:"bâtiment 7",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: bâtiment 7",url:"\u002Fja\u002Fat\u002Fb%C3%A2timent%207"}]]]});

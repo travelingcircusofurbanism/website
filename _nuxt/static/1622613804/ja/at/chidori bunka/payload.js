@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/chidori%20bunka", {data:[{posts:[],location:"chidori bunka",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: chidori bunka",url:"\u002Fja\u002Fat\u002Fchidori%20bunka"}]]]});

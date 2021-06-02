@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/freeway%20park", {data:[{posts:[],location:"freeway park",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: freeway park",url:"\u002Fja\u002Fat\u002Ffreeway%20park"}]]]});

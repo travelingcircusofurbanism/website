@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/green%20loop%20(downtown%20&%20inner%20se)", {data:[{posts:[],location:"green loop (downtown & inner se)",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: green loop (downtown & inner se)",url:"\u002Fja\u002Fat\u002Fgreen%20loop%20(downtown%20&%20inner%20se)"}]]]});

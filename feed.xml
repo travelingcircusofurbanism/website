@@ -4,8 +4,8 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Thu, 27 May 2021 07:12:08 GMT</lastBuildDate>
-        <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+        <lastBuildDate>Wed, 02 Jun 2021 06:03:41 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
             <title>Traveling Circus of Urbanism</title>
@@ -19,7 +19,7 @@
         <item>
             <title><![CDATA[A City under the Snow]]></title>
             <link>https://www.travelingcircusofurbanism.com/madrid/acityunderthesnow</link>
-            <guid>https://www.travelingcircusofurbanism.com/madrid/acityunderthesnow</guid>
+            <guid>/madrid/acityunderthesnow</guid>
             <pubDate>Thu, 27 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>Thid essay was originally written by Nayla Saniour on January 31, 2021 on her blog <a href="https://urracaurbana.com/">Urraca Urbana</a>. You can read the original blog post <a href="https://urracaurbana.com/a-city-under-the-snow/">here</a>. Nayla grew up in Beirut and she currently works in Madrid as an urban consultant on public spaces strategies in cities across the world.</em></p>
@@ -58,13 +58,12 @@
 <p>Nayla's blog: <a href="https://urracaurbana.com/">Urraca Urbana</a><br>
 LinkedIn: <a href="https://www.linkedin.com/in/naylasaniour/">https://www.linkedin.com/in/naylasaniour/</a></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/madrid/acityunderthesnow/med/cityunderthesnow1.JPG">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/madrid/acityunderthesnow/med/cityunderthesnow1.JPG" length="0" type="image/JPG"/>
         </item>
         <item>
             <title><![CDATA[Last Stand for Kamagasaki: the Agony of Japan’s Poorest Urban District (Part 1/2)]]></title>
             <link>https://www.travelingcircusofurbanism.com/osaka/kamagasaki</link>
-            <guid>https://www.travelingcircusofurbanism.com/osaka/kamagasaki</guid>
+            <guid>/osaka/kamagasaki</guid>
             <pubDate>Fri, 21 May 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>This essay was written by Leo Porte, who researches the revitalisation of marginal areas in Japan. He volunteers and investigate citizen based initiatives in Kamagasaki, which has the largest concentration of poverty, homelessness, and welfare recipients in all of Japan. You can also read another article <a href="https://www.travelingcircusofurbanism.com/ehime/senjo">here</a> by him.</em></p>
@@ -114,13 +113,12 @@ Although none are naive about the coming trial's final outcome, any additional t
 <em>Leo Porte</em></p>
 <p><em>Leo is a student of the graduate school of Global Environmental Studies of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two <a href="https://www.travelingcircusofurbanism.com/kyoto/honmachiescola">community projects in Kyoto city</a>.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/osaka/kamagasaki/med/kamagasaki1.JPG">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/osaka/kamagasaki/med/kamagasaki1.JPG" length="0" type="image/JPG"/>
         </item>
         <item>
             <title><![CDATA[A conscious walk in Amsterdam during the pandemic]]></title>
             <link>https://www.travelingcircusofurbanism.com/amsterdam/amsterdam_walk</link>
-            <guid>https://www.travelingcircusofurbanism.com/amsterdam/amsterdam_walk</guid>
+            <guid>/amsterdam/amsterdam_walk</guid>
             <pubDate>Thu, 11 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>This is a post by a talented urban designer and architect <a href="https://www.linkedin.com/in/prisca-arosio-8027693a/">Prisca Arosio</a> from <a href="https://melita-studio.com/">MELITA STUDIO</a>.</em></p>
@@ -149,13 +147,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <p><em>Melita studio is an open office that works in the field of architecture, urban design and architecture. It is distinguished for a research-driven process.</em></p>
 <p><em>Melita studio is founded by Prisca Arosio and she collaborates with numerous people and entities. Prisca Arosio is an urban designer, researcher and Dutch registered architect. Her interest in urban strategy focuses on public spaces and their social interaction. Prisca holds a MSc in Architecture, Building and Planning from the Technical University of Eindhoven and a BSc in Architecture from Politecnico di Milano. She worked in diverse Amsterdam-based offices. She got experienced in landscape architecture and architecture projects at Kettinghuls office and urban design approach at Basta urbanism. In addition, she participated in the organization of the AA visiting school, the house of politics 2018 and she was part of the jury panel ‘Tamayouz award’ (architecture competition) in 2018/2019/2020.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/amsterdam/amsterdam_walk/med/AmsterdamWalk_ADAFFLaurels.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/amsterdam/amsterdam_walk/med/AmsterdamWalk_ADAFFLaurels.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[When a Bench Becomes a Monument: Preservation and Heritage of Street Furniture and the Urban Space]]></title>
             <link>https://www.travelingcircusofurbanism.com/tel%20aviv/streetfurniture</link>
-            <guid>https://www.travelingcircusofurbanism.com/tel%20aviv/streetfurniture</guid>
+            <guid>/tel%20aviv/streetfurniture</guid>
             <pubDate>Sun, 07 Feb 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>This essay was written by architect and journalist Amnon Direktor, who is originally from Israel and now based in Brussels, Belgium. Follow his work on <a href="https://www.linkedin.com/in/amnon-direktor-39562b1ba/">LinkedIn</a> and <a href="https://www.instagram.com/amnondi/?hl=en">Instagram</a>.</em></p>
@@ -196,13 +193,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <p><img alt="Amnon Direktor" src="https://www.travelingcircusofurbanism.com/posts/tel%20aviv/streetfurniture/med/AmnonDirektor.jpeg"><br>
 <em>Amnon Direktor is an architect and journalist originally from Tel Aviv, Israel. He graduated in architecture from the Bezalel Academy of Art and Design in Jerusalem. These days he is starting a master's degree in urban studies at the Free University of Brussels in Belgium. In recent years he has worked at Bar-Orian architecture office and Moria-Sekely landscape office. In addition, Amnon has been writing regularly in a number of magazines and journals on topics about architecture, urbanism, and city life.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tel%20aviv/streetfurniture/med/AmnonDirektor5.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tel%20aviv/streetfurniture/med/AmnonDirektor5.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's Guide to Amsterdam]]></title>
             <link>https://www.travelingcircusofurbanism.com/amsterdam/introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/amsterdam/introduction</guid>
+            <guid>/amsterdam/introduction</guid>
             <pubDate>Tue, 02 Feb 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/amsterdam/introduction/med/amsterdam01.jpg"><br>
@@ -273,13 +269,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <li><a href="https://www.schoolforthecity.nl/">Independent School for the City</a> is a Rotterdam based one-year educational program for post-graduate students from all over the world, and offers a range of classes, lectures, and programs all about cities and urbanism.</li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/amsterdam/introduction/med/amsterdam01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/amsterdam/introduction/med/amsterdam01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[SHIKIAMI CONCON, A Mix Of Container Architecture And Japanese Traditional Townhouse]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/shikiamiconcon</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/shikiamiconcon</guid>
+            <guid>/kyoto/shikiamiconcon</guid>
             <pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I wrote an article on <a href="http://worldarchitecture.org/">World Architecture Community</a> about <a href="https://www.concon.kyoto/">SHIKIAMI CONCON</a>, a building complex consisting of a combination of three traditional Japanese terrace houses and 19 shipping containers. I used to think that there's nothing unexplored in the genre of container architecture, but a combination of a Machiya (traditional Japanese wooden houses) and containers was totally a surprise.</p>
@@ -289,13 +284,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <a href="http://worldarchitecture.org/">http://worldarchitecture.org/</a></p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/shikiamiconcon/med/shikiamicocon.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/shikiamiconcon/med/shikiamicocon.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/shikiamiconcon/med/shikiamicocon.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[UNKNOWN KYOTO, A New Multi-Purpose Building In Kyoto, Japan]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/unknownkyoto</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/unknownkyoto</guid>
+            <guid>/kyoto/unknownkyoto</guid>
             <pubDate>Tue, 28 Apr 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I wrote an article on <a href="http://worldarchitecture.org/">World Architecture Community</a> about UNKNOWN KYOTO, a newly renovated multi-purpose building including a guesthouse, restaurant, coworking-space standing on a former red-light district of Kyoto. The existing Yūkaku-architecture was beautifully renovated by <a href="http://expomade.com/">expo</a> — I recommend all the architecture lovers to give a visit!</p>
@@ -305,13 +299,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <a href="http://worldarchitecture.org/">http://worldarchitecture.org/</a></p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/unknownkyoto/med/unknownkyoto.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/unknownkyoto/med/unknownkyoto.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/unknownkyoto/med/unknownkyoto.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[‘I feel trapped’: students’ experiences in response to COVID-19 in Japan.]]></title>
             <link>https://www.travelingcircusofurbanism.com/kanagawa/urbanmobilities</link>
-            <guid>https://www.travelingcircusofurbanism.com/kanagawa/urbanmobilities</guid>
+            <guid>/kanagawa/urbanmobilities</guid>
             <pubDate>Sat, 28 Mar 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>This essay was written by Dr John Guy Perrem, who is an urban geographer and educator. Follow his work on <a href="http://www.urbanspaceinitiative.com/">Urban Space Initiative</a>, <a href="https://twitter.com/UrbanSpaceInit">Twitter</a>, and his personal <a href="https://spacesofcontemplation.com/">photography website</a>.</em></p>
@@ -344,13 +337,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <hr>
 <p><em>Dr John Guy Perrem is an urban geographer and educator. He attained his PhD from the Dept. of Social and Economic Geography at Uppsala University in 2016. Prior to that he obtained an MPhil from the Dept. of Geography at Univeristy College Cork and a Postgraduate Diploma in Education from University College Dublin. He is currently an affiliate member of the Education, Migration and Segregation (EMS) interdisciplinary research network led by Dr Håkan Forsberg of the Dept. of Education at Uppsala University. Outside of the academy he has worked in a planning and architectural firm and as an educator. Additionally, he established the Urban Space Initiative in a voluntary capacity to undertake diverse small scale research and activism for championing urban public space. He is a Fellow of the Royal Geographic Society (RGS) with the Institute of British Geographers.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kanagawa/urbanmobilities/med/urbanmobilities3.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kanagawa/urbanmobilities/med/urbanmobilities3.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Senjo: the cost of losing Japanese marginal villages]]></title>
             <link>https://www.travelingcircusofurbanism.com/ehime/senjo</link>
-            <guid>https://www.travelingcircusofurbanism.com/ehime/senjo</guid>
+            <guid>/ehime/senjo</guid>
             <pubDate>Tue, 10 Mar 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><em>This essay was written by Leo Porte, who researches the revitalisation of marginal villages in Japan. He has generously shared some of his research findings, which elucidate the importance of understanding rural areas just as much as cities.</em></p>
@@ -397,13 +389,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <em>Leo Porte</em></p>
 <p><em>Leo is a student of the graduate school of Global Environmental Studies of Kyoto university. Focusing his research on the revitalisation of a marginal village in the mountainous areas of Shikoku he is also involved in two <a href="https://www.travelingcircusofurbanism.com/kyoto/honmachiescola">community projects in Kyoto city</a>.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/ehime/senjo/med/senjo46.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/ehime/senjo/med/senjo46.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA["Dating with the Community" — the Taiwanese Case]]></title>
             <link>https://www.travelingcircusofurbanism.com/taipei/waytocommunity</link>
-            <guid>https://www.travelingcircusofurbanism.com/taipei/waytocommunity</guid>
+            <guid>/taipei/waytocommunity</guid>
             <pubDate>Fri, 07 Feb 2020 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>One of the most powerful people I met during my stay in Taipei was a woman commonly known as &quot;Pei Pei&quot; who is the founder of a public-private collaborated social project called &quot;Way to Community.&quot; For me, she is exactly what I picture as a <em>community designer</em> — someone who connects the government, professionals, and citizens together for alternative, communal urban systems and spaces.</p>
@@ -433,13 +424,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/taipei/waytocommunity/med/waytocommunity.jpg"><br>
 <em>Pei-Yin Shih has master degree of the institute of Building and Planning at Taiwan University, and has been developing community design works for 10 years. She has participated in and led public-private partnership policy projects, including Open Green: Projects of Placemaking (2018 Good Design Award), Space Share, Taipei, Wenshan Oasis, Way to Community, etc. She specializes in community design and urban strategic planning, and is chief editor of the book “Way to Community: Placemaking and Collaboration (2019)”, and currently holds the position of Vice Executive Officer of Collaborative O. Company.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/waytocommunity/med/waytocommunity6.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/waytocommunity/med/waytocommunity6.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Taipei Ephemera: In search of what makes Taipei Taipei]]></title>
             <link>https://www.travelingcircusofurbanism.com/taipei/taipeiephemera</link>
-            <guid>https://www.travelingcircusofurbanism.com/taipei/taipeiephemera</guid>
+            <guid>/taipei/taipeiephemera</guid>
             <pubDate>Sat, 16 Nov 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>As an (almost) full-time traveler who loves to understand the uniqueness of each city I visit, I often create a mental image of the city based on what I think makes it unique. I also know that everyone, whether locals or outsiders, has their own particular way of identifying a city to somehow make sense of it.</p>
@@ -471,13 +461,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <em>Graduated as an Architect and completed his post-graduation as an Urban Regional Planner from the School of Planning and Architecture in India. Having traveled extensively in his own country and around the world, his keen interest is in determining the urban issues of cities and in the exploration of innovative ideas on city planning. These led him to his National award Shortlisted thesis “Reincarnation of Left-over Spaces of the City” for his capstone project in Graduation. Currently, He is working with Central, State and local/City Governments in India on projects related to Urban Planning, Smart Cities and Sustainable Urbanism.</em><br>
 <em>(Photos Courtesy of Paritosh Goel)</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/taipeiephemera/med/taipeiephemera12.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/taipei/taipeiephemera/med/taipeiephemera12.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[A Huge Small Place: An interview by Everybody Works]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/interview</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/interview</guid>
+            <guid>/tokyo/interview</guid>
             <pubDate>Tue, 03 Sep 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I recently had the honor to be interviewed by the amazing Editor David Willoughby on his new project <a href="http://everybodyworks.jp/">Everybody Works</a>. Everybody Works is a document of working culture in Tokyo, and the interview was all about this mesmerizing city and how it is like to live there. The interview was conducted in one of my most favoriteplaces in Tokyo — <a href="https://www.almostperfect.jp/">Almost Perfect</a>.</p>
@@ -486,13 +475,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <a href="http://everybodyworks.jp/urbanists-guide-to-tokyo/">http://everybodyworks.jp/urbanists-guide-to-tokyo/</a></p>
 <p>Interviewer, Editor: David Willoughby</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/interview/med/almost-perfect-4-868x579.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/interview/med/almost-perfect-4-868x579.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to Rome]]></title>
             <link>https://www.travelingcircusofurbanism.com/rome/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/rome/Introduction</guid>
+            <guid>/rome/Introduction</guid>
             <pubDate>Tue, 30 Jul 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/rome/Introduction/med/carlos-ibanez-oI141-aIwnQ-unsplash.jpg"><br>
@@ -542,13 +530,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/Introduction/med/carlos-ibanez-oI141-aIwnQ-unsplash.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/Introduction/med/carlos-ibanez-oI141-aIwnQ-unsplash.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[EUR: The City of Mussolini's Dreams]]></title>
             <link>https://www.travelingcircusofurbanism.com/rome/EUR</link>
-            <guid>https://www.travelingcircusofurbanism.com/rome/EUR</guid>
+            <guid>/rome/EUR</guid>
             <pubDate>Thu, 25 Jul 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>As most of the twenty-first-century metropolis, Rome is also caught between two incompatible contending realities: the vigorous energy of continuously expanding modern capital, and the inertia of ancient city center that makes Rome one of the most popular tourist destinations.</p>
@@ -575,13 +562,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <p>We've noticed the uncomfortable number of cars, too. Some of the articles about EUR we found on Google boldly state that EUR is walkable. Let me tell you, it is NOT. It felt like Parco Centrale del Lago was surrendered by expressways and multitude of cars. Most of the landmarks we've visited managed to spoil themselves by having large parking lots in front of them.</p>
 <p>Though, it is surely compelling and educational to see how this district stands on the complex layers of history and ideologies that travel over time. A visit to EUR would surely make your trip to Rome a little more special and unique.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR6.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/rome/EUR/med/EUR6.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[CityLife Shopping District, the modern heart of Milan]]></title>
             <link>https://www.travelingcircusofurbanism.com/milan/citylfe</link>
-            <guid>https://www.travelingcircusofurbanism.com/milan/citylfe</guid>
+            <guid>/milan/citylfe</guid>
             <pubDate>Wed, 10 Jul 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>During our visit to Milan, we had a chance to explore <a href="https://www.designboom.com/tag/citylife-milan/">citylife milan</a>, one of the biggest urban developments in Europe.</p>
@@ -599,13 +585,12 @@ Mar 2021: Architecture design art film festival (Adaff 2021), Palm Springs, Cali
 <p>As most of the recent urban development do, CityLife is also carefully managing the sustainability factor and smart mobility. We're not sure how this development evolves in the future, but if you are tired of old buildings and want to check out a new urban development of Italy, we recommend you to explore the CityLife neighborhood.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/milan/citylfe/med/CityLife11.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/milan/citylfe/med/CityLife5.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/milan/citylfe/med/CityLife5.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Mihama American Village: A story on the land formerly occupied by the U.S. military]]></title>
             <link>https://www.travelingcircusofurbanism.com/okinawa/americanvillage</link>
-            <guid>https://www.travelingcircusofurbanism.com/okinawa/americanvillage</guid>
+            <guid>/okinawa/americanvillage</guid>
             <pubDate>Thu, 20 Jun 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>We recently visited Mihama American Village, a large entertainment complex located in the central part of Okinawa main island, Japan. The motivation of our visit wasn't the entertainment per se — rather, we were curious about the urban development on the land formerly occupied by the U.S. military.</p>
@@ -637,13 +622,12 @@ the unique mix of Japanese and American culture that is specific to this place, 
 <p>Japan and the US have agreed to advance the reorganization and scaling down of 11 US military bases in Okinawa, which include the relocation of the Futenma Air Base in Ginowan City to a coastal area of Henoko. The new location is situated right next to a residential area, and they seem to feel no compunction about destroying the beautiful natural environment there.</p>
 <p>If you ever visit Okinawa, aside from all the beautiful beaches and breathtaking nature, please also pay attention to the continuous battle of Okinawan people against U.S. military bases, and how it affects the urban structure and their everyday lives.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/okinawa/americanvillage/med/americanvillage4.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/okinawa/americanvillage/med/americanvillage4.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Honmachi Escola: In Praise of Do It Yourselfism]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/honmachiescola</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/honmachiescola</guid>
+            <guid>/kyoto/honmachiescola</guid>
             <pubDate>Mon, 03 Jun 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>One thing that we've encountered and continuously been impressed by in Kyoto is the thriving culture of &quot;make it your own.&quot; We've seen a number of sustainable self-build projects that are lodging an eloquent protest against the homogenization of our cities and the runaway train of consumerism now rolling across the globe.</p>
@@ -684,13 +668,12 @@ the unique mix of Japanese and American culture that is specific to this place, 
 <em>Jun Yamaguchi, Leo, Keisuke Sumida</em></p>
 <p>Recently, interest has surged in the idea of small-scale, incremental, do-it-yourself urban improvement. A self-building project that is resident-generated, low budget, and substantially bottom-up like Honmachi Escola has the potential to encourage people to try out alternative urban ways of living.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola8.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/honmachiescola/med/honmachiescola8.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Basement Kyoto, providing spaces for Kyoto's burgeoning art community]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/basementkyoto</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/basementkyoto</guid>
+            <guid>/kyoto/basementkyoto</guid>
             <pubDate>Tue, 07 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/basementkyoto/med/basementkyoto6.jpg"><br>
@@ -720,13 +703,12 @@ the unique mix of Japanese and American culture that is specific to this place, 
 <p>Kyoto has seen the development of great artists over its history of more than 1,200 years. They will keep expanding their network and build more locations in the different parts of Kyoto, contributing both the future development of the artist community and urban metabolism of Kyoto.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/basementkyoto/med/basementkyoto5.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/basementkyoto/med/basementkyoto6.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/basementkyoto/med/basementkyoto6.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Updating the real estate landscape of Kyoto: Interview with Chika Kishimoto]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/addspice</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/addspice</guid>
+            <guid>/kyoto/addspice</guid>
             <pubDate>Fri, 03 May 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/addspice/med/addspice1.jpg"><br>
@@ -748,13 +730,12 @@ We've recently moved to Kyoto, more specifically to a creative sharehouse called
 Thus, she is not keen on just following a trend, and trying to propose long term value for a community.</p>
 <p>Kishimoto also organizes a program and <a href="https://kyoto-iju.com/">a website</a> called &quot;Kyoto Iju Keikaku (means ’Let's move to Kyoto program’)&quot;. The program encourages people to move into this former capital of Japan, helping them find new jobs and immerse themselves in a new lifestyle in Kyoto. She has just published a <a href="https://www.amazon.co.jp/%E4%B8%8D%E5%8B%95%E7%94%A3%E3%83%97%E3%83%A9%E3%83%B3%E3%83%8A%E3%83%BC%E6%B5%81%E5%BB%BA%E7%AF%89%E3%83%AA%E3%83%8E%E3%83%99%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3-%E5%B2%B8%E6%9C%AC-%E5%8D%83%E4%BD%B3/dp/4761527056/ref=sr_1_1?qid=1555860788&amp;refinements=p_27%3A%E5%B2%B8%E6%9C%AC%E5%8D%83%E4%BD%B3&amp;s=books&amp;sr=1-1">book</a> too, about her career as a real estate planner. I can't wait to see what's more to come in Kyoto!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/addspice/med/addspice1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/addspice/med/addspice1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Magasinn Kyoto: a "magazine" you can visit and stay]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/magasinnkyoto</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/magasinnkyoto</guid>
+            <guid>/kyoto/magasinnkyoto</guid>
             <pubDate>Thu, 25 Apr 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/magasinnkyoto/med/magasinn5.jpg"></p>
@@ -789,13 +770,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p><em>Profile / Tatsuya Iwasaki</em></p>
 <p><em>Tatsuya Iwasaki was born in Japan in 1985 and currently live in Kyoto. He is working as a lecturer at the department of Service MBA at Kyoto University, as well as at the Kyoto Seika University. He had worked in Recruit Communications and Rakuten as a director in Tokyo until he moved to Kyoto in 2014 and started working in Loftwork.inc. He became independent and started Magasinn Kyoto in 2016, and founded EDIIT Inc. in the following year.</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/magasinnkyoto/med/magasinn5.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/magasinnkyoto/med/magasinn5.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Kujo-yu: a Japanese public bath newly renovated as a cultural hub]]></title>
             <link>https://www.travelingcircusofurbanism.com/kyoto/kujoyu</link>
-            <guid>https://www.travelingcircusofurbanism.com/kyoto/kujoyu</guid>
+            <guid>/kyoto/kujoyu</guid>
             <pubDate>Mon, 15 Apr 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/kujoyu/med/kujoyu8.jpg"></p>
@@ -812,13 +792,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/kyoto/kujoyu/med/kujoyu7.jpg"></p>
 <p>It simply breaks my heart that <em>sento</em> is a disappearing species, but it is also true that there are a considerable amount of projects all over Japan to develop and update the tradition by adding new values while preserving the original structure. I also like <a href="https://sentozukai.jp/">this book</a> that has countless illustrations of different <em>sento</em> to capture the magical charm of this Japanese tradition.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/kujoyu/med/kujoyu9.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/kyoto/kujoyu/med/kujoyu9.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urban Typography: A Glimpse Into A World Of Local Typefaces In Japanese Cities, And Their Survival]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/noramoji</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/noramoji</guid>
+            <guid>/tokyo/noramoji</guid>
             <pubDate>Tue, 09 Apr 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I wrote an article on <a href="http://worldarchitecture.org/">World Architecture Community</a> about Japan-based <a href="https://worldarchitecture.org/community/links/?waurl=http://noramoji.jp">NORAMOJI Project</a>, who takes typographyseriously in our urban space.</p>
@@ -828,13 +807,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <a href="http://worldarchitecture.org/">http://worldarchitecture.org/</a></p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/tokyo/noramoji/med/noramoji_01.jpeg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/noramoji/med/noramoji_01.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/noramoji/med/noramoji_01.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to Bogota]]></title>
             <link>https://www.travelingcircusofurbanism.com/bogota/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/bogota/Introduction</guid>
+            <guid>/bogota/Introduction</guid>
             <pubDate>Wed, 20 Mar 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Introduction/med/bogota01.jpg"><br>
@@ -881,13 +859,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bogota/Introduction/med/bogota01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bogota/Introduction/med/bogota01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[CICLO: Using art and culture for reappropriating our cities]]></title>
             <link>https://www.travelingcircusofurbanism.com/mexico%20city/ciclo</link>
-            <guid>https://www.travelingcircusofurbanism.com/mexico%20city/ciclo</guid>
+            <guid>/mexico%20city/ciclo</guid>
             <pubDate>Tue, 19 Mar 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><strong><em>&quot;I am interested in urbanism in the way that it reflects our society. How we live in our cities is how we live in our society,”</em></strong> said Laura Reséndiz, an art director of CICLO.</p>
@@ -932,13 +909,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <strong><em>Laura Reséndiz</em></strong></p>
 <p><em>Born and raised in Mexico City, Laura Resendiz received her BA in Art History at Universidad Iberoamericana, and studied abroad at University of Salamanca, Spain. Laura Reséndiz is intersted in the processes of artistic production that create dialogue not only through gallery or museum exhibitions, but in greater societal environments as well. She firmly believes that Art as an educational and well driven tool can create positive urban-emotional transformations. With the organization she founded, CICLO, Reséndiz generates alternative platforms and opportunities for artists and other creative professionals to collaborate with people from diverse communities that integrate and include local history and interests in public spaces. Her multidisciplinary nature includes the founding of Anonymous Gallery in Mexico city which she co-directed until 2016; and her work with Omninbus, a cultural television program, as producer and interviewer, Rim Magazine as editor, and ARCO DATA España as writer, among others. As a teacher she has taught at Casa del lago, Royal Academy of San Carlos, UNAM National University (CdMx) and UDLA University (Pue).</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/ciclo/med/ciclo10.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/ciclo/med/ciclo10.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Voices of the barrios: Bogota, Colombia]]></title>
             <link>https://www.travelingcircusofurbanism.com/bogota/Lafamiliaayara</link>
-            <guid>https://www.travelingcircusofurbanism.com/bogota/Lafamiliaayara</guid>
+            <guid>/bogota/Lafamiliaayara</guid>
             <pubDate>Sat, 02 Mar 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara11.jpg"><br>
@@ -974,13 +950,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <em>La Familia Ayara's crew</em></p>
 <p>La Familia Ayara's methodologies could be applied in other cities and contexts as well, which opens up the potential of international collaboration. They are constantly learning through participating children too, and letting themselves grow even more. Meanwhile, I can not wait to see the radical future transformation of Bogota with his innovative vision that combines city, culture and people together.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/bogota/Lafamiliaayara/med/Lafamiliaayara1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[The tragedies of Mexico City’s Tlatelolco housing complex]]></title>
             <link>https://www.travelingcircusofurbanism.com/mexico%20city/tlatelolco_plazaofthreecultures</link>
-            <guid>https://www.travelingcircusofurbanism.com/mexico%20city/tlatelolco_plazaofthreecultures</guid>
+            <guid>/mexico%20city/tlatelolco_plazaofthreecultures</guid>
             <pubDate>Fri, 01 Mar 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I've recently watched a 2004 Mexican film <a href="https://en.wikipedia.org/wiki/Temporada_de_patos">Temporada de patos</a> directed by Fernando Eimbcke. The movie depicts two fourteen years old kids and their &quot;ordinary&quot; yet adventurous Sunday in Mexico City.</p>
@@ -1014,13 +989,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <li><a href="https://www.yucatan.com.mx/mexico/tlatelolco-despues-del-2-octubre-1968">Tlatelolco, antes y después del 2 de octubre de 1968</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/tlatelolco_plazaofthreecultures/med/squareofthreecultures4.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/tlatelolco_plazaofthreecultures/med/squareofthreecultures4.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[What should a public space sound like? Audiorama, a hidden gem in Bosque de Chapultepec]]></title>
             <link>https://www.travelingcircusofurbanism.com/mexico%20city/audiorama_chapultepec</link>
-            <guid>https://www.travelingcircusofurbanism.com/mexico%20city/audiorama_chapultepec</guid>
+            <guid>/mexico%20city/audiorama_chapultepec</guid>
             <pubDate>Sun, 10 Feb 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium9.jpg"></p>
@@ -1039,13 +1013,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium5.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium6.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium9.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/audiorama_chapultepec/med/auditorium9.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to Mexico City]]></title>
             <link>https://www.travelingcircusofurbanism.com/mexico%20city/introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/mexico%20city/introduction</guid>
+            <guid>/mexico%20city/introduction</guid>
             <pubDate>Sun, 10 Feb 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/mexico%20city/introduction/med/priscilla-flores-659078-unsplash.jpg"><br>
@@ -1093,13 +1066,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/introduction/med/priscilla-flores-659078-unsplash.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/introduction/med/priscilla-flores-659078-unsplash.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Little L.A. — returnee migrants' hub to start a new life in Mexico City]]></title>
             <link>https://www.travelingcircusofurbanism.com/mexico%20city/littlelosangeles</link>
-            <guid>https://www.travelingcircusofurbanism.com/mexico%20city/littlelosangeles</guid>
+            <guid>/mexico%20city/littlelosangeles</guid>
             <pubDate>Sun, 03 Feb 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>It has become familiar with most of the western cities to have neighborhoods called &quot;Little -&quot;. Little Italy, Little Tokyo, Little Greece just to name a few. These neighborhoods have historically functioned as a hub to accommodate immigrants and provided them social networks and opportunities for them to establish their lives in an unfamiliar country. In this context, &quot;Little Los Angeles&quot; didn't sound familiar to me at first.</p>
@@ -1118,13 +1090,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p>I recently encountered a notion of Diasporic Urbanism, which shed light on the urban communities of people who are caught in transition — those who are displaced and cannot simply ”go back”. While social science and related fields have provided rich contributions to the subject of increasing urban diversity and migration, their intersection with the disciplines of design, urban planning, and architecture remains to be fully cultivated.</p>
 <p>What services and spaces are/should be designed in cities to better accommodate those who are stuck in between? What factors exacerbate stratification, prevent migrants from participating fully in the life of the city, or provoke isolation and displacement? Little L.A. might give us a hint for those urgent questions.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Parque Coppelia, the world’s largest ice cream parlour in Havana, Cuba]]></title>
             <link>https://www.travelingcircusofurbanism.com/havana/aathedraloficecream</link>
-            <guid>https://www.travelingcircusofurbanism.com/havana/aathedraloficecream</guid>
+            <guid>/havana/aathedraloficecream</guid>
             <pubDate>Thu, 10 Jan 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/havana/aathedraloficecream/med/havana01.jpg"></p>
@@ -1143,13 +1114,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p>The Cuban architecture might be unsung, but it's interesting to see how architecture is mirrored to its society. The exhibition <a href="https://cubanartnews.org/2016/10/25/preview-cuban-architects-at-home-and-in-exile-the-modernist-generation/">Cuban Architects at Home and in Exile</a> might be interesting if you want to know more about Cuban architecture.</p>
 <p>The impact of global tourism (tourists are now the missing &quot;upper-class&quot; in Cuba) and the effects of aging are gradually but surely testing Cuba's architecture and its identity. That's why we need to hurry up and take a deep look at what they have.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/havana/aathedraloficecream/med/icecream1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/havana/aathedraloficecream/med/icecream1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Callejon de Hamel, a site for Afro-Cuban Pop Art]]></title>
             <link>https://www.travelingcircusofurbanism.com/havana/callejondehamel</link>
-            <guid>https://www.travelingcircusofurbanism.com/havana/callejondehamel</guid>
+            <guid>/havana/callejondehamel</guid>
             <pubDate>Tue, 08 Jan 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/havana/callejondehamel/med/callejondehamel1.jpg"><br>
@@ -1165,13 +1135,12 @@ Thus, she is not keen on just following a trend, and trying to propose long term
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/havana/callejondehamel/med/callejondehamel7.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/havana/callejondehamel/med/callejondehamel8.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/havana/callejondehamel/med/callejondehamel1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/havana/callejondehamel/med/callejondehamel1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to New York]]></title>
             <link>https://www.travelingcircusofurbanism.com/new%20york/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/new%20york/Introduction</guid>
+            <guid>/new%20york/Introduction</guid>
             <pubDate>Sat, 29 Dec 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="new york urbanist" src="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg"><br>
@@ -1268,13 +1237,12 @@ An independent online radio station live streaming 24/7 from a reclaimed shippin
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/Introduction/med/newyork01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Industry City, the "SoHo" of Sunset Park and fear of gentrification]]></title>
             <link>https://www.travelingcircusofurbanism.com/new%20york/industrycity</link>
-            <guid>https://www.travelingcircusofurbanism.com/new%20york/industrycity</guid>
+            <guid>/new%20york/industrycity</guid>
             <pubDate>Wed, 26 Dec 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Industry City" src="https://www.travelingcircusofurbanism.com/posts/new%20york/industrycity/med/industrycity1.jpg"></p>
@@ -1305,13 +1273,12 @@ An independent online radio station live streaming 24/7 from a reclaimed shippin
 <li>Reference: <a href="https://ny.curbed.com/2018/11/8/18075198/industry-city-sunset-park-brooklyn-gentrification-photo-essay">As Industry City gears up for rezoning, locals question who will benefit</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/industrycity/med/industrycity1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/industrycity/med/industrycity1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Jackson Heights, the World’s "Most Diverse Neighborhood"]]></title>
             <link>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</link>
-            <guid>https://www.travelingcircusofurbanism.com/new%20york/jacksonheights</guid>
+            <guid>/new%20york/jacksonheights</guid>
             <pubDate>Tue, 25 Dec 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Jackson Heights" src="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights2.jpg"></p>
@@ -1332,13 +1299,12 @@ An independent online radio station live streaming 24/7 from a reclaimed shippin
 <p>The documentary <a href="https://www.imdb.com/title/tt4936064/">In Jackson Heights</a> also captures dynamic local politics, where a new wave of investments and newcomers gradually started to take over the neighborhood, &quot;amid creeping gentrification.&quot;</p>
 <p>Jackson Heights enjoys its great location — reasonable access to Manhattan — and the rich diverse culture and affordable housing price offer great potential for new development in the future. It's worth paying attention to who is moving in and who suffer from displacement during the new wave of gentrification. I recommend you to visit there to experience the chaotic, yet beautiful mix of cultures, ethnicities, languages, and people's everyday lives.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights4.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/new%20york/jacksonheights/med/jacksonheights4.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[This Japanese Architecture Studio Is Planning The Urban Mobility Revolution Of Housings]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/sampo</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/sampo</guid>
+            <guid>/tokyo/sampo</guid>
             <pubDate>Wed, 05 Dec 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I wrote an article on <a href="http://worldarchitecture.org/">World Architecture Community</a> about the Japanese architectural studio <a href="https://worldarchitecture.org/community/links/?waurl=https://sampo.mobi/">SAMPO</a>, who proposes a new architectural system that successfully connects people, houses, communities and cities together that suits the age of high mobility.</p>
@@ -1348,13 +1314,12 @@ An independent online radio station live streaming 24/7 from a reclaimed shippin
 <a href="http://worldarchitecture.org/">http://worldarchitecture.org/</a></p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/tokyo/sampo/med/sampo.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/sampo/med/sampo.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/sampo/med/sampo.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to Chicago]]></title>
             <link>https://www.travelingcircusofurbanism.com/chicago/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/chicago/Introduction</guid>
+            <guid>/chicago/Introduction</guid>
             <pubDate>Tue, 04 Dec 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Chicago urbanist" src="https://www.travelingcircusofurbanism.com/posts/chicago/Introduction/med/chicago.jpg"></p>
@@ -1386,13 +1351,12 @@ _[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by
 <iframe width="640" height="360" src="https://www.youtube.com/embed/S7-UAcRTW58" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <p><em><a href="https://www.youtube.com/watch?v=S7-UAcRTW58">Chicago and St. Louis</a> Compared by Mr. Beat</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/chicago/Introduction/med/chicago.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/chicago/Introduction/med/chicago.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Chidori-Bunka, A New Community Space By Dot Architects]]></title>
             <link>https://www.travelingcircusofurbanism.com/osaka/chidori_bunka</link>
-            <guid>https://www.travelingcircusofurbanism.com/osaka/chidori_bunka</guid>
+            <guid>/osaka/chidori_bunka</guid>
             <pubDate>Sat, 24 Nov 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I wrote an article on <a href="http://worldarchitecture.org/">World Architecture Community</a> about Chidori-Bunka — a community centre, art space, a shop and bar, located at the edge of the second biggest city in Japan, Osaka. Renovated by <a href="https://worldarchitecture.org/community/links/?waurl=http://dotarchitects.jp">dot architects</a>, this places is full of love and respect toward ordinary buildings and amateur carpentry.</p>
@@ -1402,13 +1366,12 @@ _[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by
 <a href="http://worldarchitecture.org/">http://worldarchitecture.org/</a></p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/osaka/chidori_bunka/med/Chidori-Bunka.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/osaka/chidori_bunka/med/Chidori-Bunka.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/osaka/chidori_bunka/med/Chidori-Bunka.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Architects' role for post-disaster reconstruction: Aftermath of earthquake on Lombok — interview with a community architect]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</link>
-            <guid>https://www.travelingcircusofurbanism.com/yogyakarta/communityarchitecture</guid>
+            <guid>/yogyakarta/communityarchitecture</guid>
             <pubDate>Sat, 10 Nov 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="community architecture" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture3.jpg"></p>
@@ -1445,13 +1408,12 @@ _[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by
 <p><img alt="Puspitaningtyas Sulistyowati" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/IMG_3833_1600x1067.JPG"><br>
 <em>Puspitaningtyas Sulistyowati is a community architect based in Indonesia. She is also passionate about urban sketch. You can check her illustrations <a href="https://sketchmemories.wordpress.com/">here</a> and <a href="https://www.instagram.com/f_tyas/">instagram</a></em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture3.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yogyakarta/communityarchitecture/med/communityarchitecture3.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Habitat 67 and Habitat 2.0?? Iconic Canadian housing complex and its comeback]]></title>
             <link>https://www.travelingcircusofurbanism.com/montreal/habitat67</link>
-            <guid>https://www.travelingcircusofurbanism.com/montreal/habitat67</guid>
+            <guid>/montreal/habitat67</guid>
             <pubDate>Mon, 05 Nov 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/montreal/habitat67/med/habitat673.jpg"></p>
@@ -1475,13 +1437,12 @@ _[Chicago's Geography Advantage](https://www.youtube.com/watch?v=JyuZi9fHC4Y) by
 <li><a href="https://www.curbed.com/2017/8/30/16216154/iconic-habitat-67-montreal-moshe-safdie-bjarke-ingels">Habitat 2.0: Moshe Safdie’s iconic Canadian complex makes a comeback</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montreal/habitat67/med/habitat673.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montreal/habitat67/med/habitat673.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Evergreen Brick Works: Ravines define Toronto, and it's time to talk about nature in cities]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/evergreen</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/evergreen</guid>
+            <guid>/toronto/evergreen</guid>
             <pubDate>Sun, 28 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen12.jpg"><br>
@@ -1509,13 +1470,12 @@ After the closure of the factory, the site has been converted into a community a
 <p>Just Imagine Toronto coexisting with a great diversity of wildlife species. Cities are getting bigger worldwide, but it doesn't mean that we can stop thinking about the nature — in fact, it is very crucial, and obviously Toronto seems to know that. If you're an urbanist who is curious about ecological sustainability and biodiversity in/with cities, I'd recommend to check out Evergreen Brick Works immediately.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen17.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/evergreen/med/evergreen2.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Batiment 7, a self-managed community space acquired by the citizens]]></title>
             <link>https://www.travelingcircusofurbanism.com/montreal/batiment7</link>
-            <guid>https://www.travelingcircusofurbanism.com/montreal/batiment7</guid>
+            <guid>/montreal/batiment7</guid>
             <pubDate>Tue, 23 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><a href="http://www.batiment7.org/en/home/">Bâtiment 7</a> is a historic industrial building that has been converted into a hub for alternative project spaces and for people to gather. It's located in a neighborhood called Pointe-Saint-Charles and is a bit difficult to reach from downtown, but it's worth visiting for their occasional events and workshops or even just to have drinks at their bar.</p>
@@ -1533,13 +1493,12 @@ After the closure of the factory, the site has been converted into a community a
 <p>Their goal is to address the absence of some very basic services in the neighborhood. In Bâtiment 7, there are offices, project spaces, workshops and event spaces that are open to the community — all of them to encourage social interaction and collaboration. I especially liked a not-for-profit neighborhood grocery store <a href="https://epicerieledetour.org/en/accueil-2/">Le Détour</a> in the building, which is run by volunteers to provide affordable food in a neighborhood often called &quot;food desert&quot;.</p>
 <p>If you ever visit Montreal and are curious about self-managed community space in the city, don't hesitate to spend some time to give them a visit!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montreal/batiment7/med/batiment72.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/montreal/batiment7/med/batiment72.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[The Distillery District: Conserving & updating heritage buildings]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/oldtoronto</guid>
+            <guid>/toronto/oldtoronto</guid>
             <pubDate>Sat, 20 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="Old Toronto" src="https://www.travelingcircusofurbanism.com/posts/toronto/oldtoronto/med/oldtoronto0.jpg"></p>
@@ -1562,13 +1521,12 @@ After the closure of the factory, the site has been converted into a community a
 <p>Any revitalization development on an industrial site raises a question about how to balance heritage preservation with our 21 century needs — density, mixed-use, etc. It is obviously always a never-ending question and there is no absolute solution for it. But at least we can visit these sites and good examples to feel, experience, and keep questioning to ourselves how we want past and present to coexist.</p>
 <p><img alt="Old Toronto" src="https://www.travelingcircusofurbanism.com/posts/toronto/oldtoronto/med/oldtoronto9.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/oldtoronto/med/oldtoronto0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/oldtoronto/med/oldtoronto0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Jane and Finch, Canada's most diverse neighborhood]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/janeandfinch</guid>
+            <guid>/toronto/janeandfinch</guid>
             <pubDate>Mon, 15 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <blockquote>
@@ -1583,13 +1541,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 <p>Moreover, if you are serious about knowing more about this kind of diverse, multicultural communities and its challenges, I'd recommend watching a <a href="https://www.nfb.ca/film/home_feeling_struggle_for_a_community/">documentary</a> about <strong>Jane and Finch: Home Feeling: Struggle for a Community by Jennifer Hodge &amp; Roger McTair</strong>.</p>
 <p>It is an urgent planning concern, too — In Toronto, there are some similar neighborhoods such as <a href="https://www.ryerson.ca/content/dam/graduate/programs/ensciman/forms/RemoAgostino_RegentParkRevitalization_EnSciMan2013.pdf">Regent Park</a>, which went through massive revitalization recently. What do these communities want and how can planners tackle the issue of spatial discrimination and stigmatization, without applying a top-down revitalization approach? Prof. Mohammed Abdul Qadeer from Queen University wrote <a href="https://www.amazon.ca/Multicultural-Cities-Toronto-York-Angeles/dp/1442630140">a book</a> about Multicultural Planning. We can start visiting these neighborhoods instead of talking about them, and see the everyday life of local inhabitant.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/janeandfinch/med/janeandfinch0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/janeandfinch/med/janeandfinch0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Inside Sidewalk Labs 307： Toronto's famous Urban laboratory]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/sidewalktoronto</guid>
+            <guid>/toronto/sidewalktoronto</guid>
             <pubDate>Mon, 15 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="SidewalkLab Toronto" src="https://www.travelingcircusofurbanism.com/posts/toronto/sidewalktoronto/med/sidewalklab9.jpg"></p>
@@ -1614,13 +1571,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 <p>Toronto's Waterfront is changing dynamically, as many of the major cities in the world are. There have been various development plans that include a lot of condominiums and business infrastructure, such as <a href="https://www.torontocondo4u.ca/wp-content/uploads/2018/05/Sugar-Wharf-Investor-Brochure.pdf">Sugar Wharf Condos</a> that aims to attract tech/creative start-ups and incubators to the city. What is always challenging and often neglected in these developments is an ability to listen to local citizens, and carefully tackle local challenges in collaboration with various organizations from different sectors. I'm very excited to see how the future of Waterfront Toronto would look like, and what role Sidewalk Lab would play.</p>
 <p>Sidewalk Toronto has various public lectures, open programs, and workshops that you can take part in. I would highly recommend to visit 307 on those occasions, or simply drop by to see what is up during opening hours.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/sidewalktoronto/med/sidewalklab9.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/sidewalktoronto/med/sidewalklab9.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[The Bentway: the vibrant public space under the Expressway]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/thebentway</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/thebentway</guid>
+            <guid>/toronto/thebentway</guid>
             <pubDate>Mon, 15 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/thebentway/med/thebentway2.jpg"><br>
@@ -1641,13 +1597,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 <p>The Bentway successfully integrates this historic site to the rest of the city, inviting people to walk through and giving them space to organize multiple activities. Usually, these large scale projects are highly complex and deal with different stakeholders, different sources of funding, and a variety of interests. Yet, seems like they've done a successful job for the Bentway and I can't wait to see how the future involves for this site.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/thebentway/med/thebentway25.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/thebentway/med/thebentway2.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/thebentway/med/thebentway2.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[A hidden spot for creatives: 401 Richmond]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/401richmond</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/401richmond</guid>
+            <guid>/toronto/401richmond</guid>
             <pubDate>Fri, 12 Oct 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <blockquote>
@@ -1677,13 +1632,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 <p><img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond1.jpg"><br>
 <img alt="401 Richmond Building" src="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond11.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond3.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/401richmond/med/richmond3.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's guide to Toronto]]></title>
             <link>https://www.travelingcircusofurbanism.com/toronto/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/toronto/Introduction</guid>
+            <guid>/toronto/Introduction</guid>
             <pubDate>Sun, 23 Sep 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/toronto/Introduction/med/toronto01.jpg"><br>
@@ -1734,13 +1688,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/Introduction/med/toronto01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/toronto/Introduction/med/toronto01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things we can learn from zoning]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/zoning</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/zoning</guid>
+            <guid>/vancouver/zoning</guid>
             <pubDate>Wed, 19 Sep 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning.jpg"><br>
@@ -1778,13 +1731,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/zoning/med/zoning.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanism-Related Things to do and read @Yogyakarta]]></title>
             <link>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/yogyakarta/Introduction</guid>
+            <guid>/yogyakarta/Introduction</guid>
             <pubDate>Fri, 14 Sep 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yogyakarta/Introduction/med/yogyakarta01.jpg"><br>
@@ -1847,13 +1799,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yogyakarta/Introduction/med/yogyakarta01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yogyakarta/Introduction/med/yogyakarta01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Confronting the history of discrimination and exclusion: Komagata Maru Memorial]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/komagatamaruincident</guid>
+            <guid>/vancouver/komagatamaruincident</guid>
             <pubDate>Mon, 10 Sep 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>The other day, I finally visited a monument that I've been wanting to visit for many years. <a href="http://www.vancouversun.com/life/komagata+maru+passengers+remembered+with+vancouver+monument/6978053/story.html">Komagata Maru Memorial</a> is located along the seawall near Convention Centre West in Vancouver — silent, but very powerful place to learn about the hidden history of Canada's discriminatory act. I decided to write about this place here, because collective/historical memories are/should be related to space and place.</p>
@@ -1872,13 +1823,12 @@ A few months ago Minister Michael Tibollo visited the neighborhood and made comm
 <p>Today, the vessel is still afloat alongside moored on the Fraser River across from Fisheries &amp; Oceans Canada in BC. History does come along in a very harsh way, that's why it matters that we remember.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/komagatamaruincident/med/komagatamaru0.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/komagatamaruincident/med/komagatamaru4.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/komagatamaruincident/med/komagatamaru4.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Walk Strathcona, and check out Vancouver's registered heritage buildings]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/strathcona</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/strathcona</guid>
+            <guid>/vancouver/strathcona</guid>
             <pubDate>Tue, 04 Sep 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Strathcona is not a tourist destination by any means, but it is one of Vancouver's earliest neighborhoods and has a lot to offer to gratify urbanist's curiosity.</p>
@@ -1923,13 +1873,12 @@ In the 1950s, City planners earmarked Strathcona for demolition as part of a mas
 <li><a href="https://vancouver.ca/news-calendar/strathcona.aspx">City of Vancouver</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/strathcona/med/Strathcona0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/strathcona/med/Strathcona0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[City Conversations about Vancouver Waterfront]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/waterfront</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/waterfront</guid>
+            <guid>/vancouver/waterfront</guid>
             <pubDate>Thu, 23 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/waterfront/med/waterfront04.jpg"><br>
@@ -1956,13 +1905,12 @@ The report is a great piece of work, and, in my opinion, worth reading.</p>
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/waterfront/med/waterfront04.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/waterfront/med/waterfront04.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Vancouver's successful model for brownfield redevelopment: Granville Island]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/granvilleisland</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/granvilleisland</guid>
+            <guid>/vancouver/granvilleisland</guid>
             <pubDate>Mon, 20 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland0.jpg"><br>
@@ -2002,13 +1950,12 @@ The report is a great piece of work, and, in my opinion, worth reading.</p>
 <li><a href="https://www.cbc.ca/news/canada/british-columbia/1970s-granville-island-redevelopment-1.4021855">How Granville Island changed the course of Vancouver urban design history</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/granvilleisland/med/granvilleisland0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[City and migration: Interview with Sankar Raman from The Immigrant Story]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/immigrantstory</link>
-            <guid>https://www.travelingcircusofurbanism.com/portland/immigrantstory</guid>
+            <guid>/portland/immigrantstory</guid>
             <pubDate>Tue, 14 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>During my stay in Portland, I encountered a very inspiring project called <a href="(https://theimmigrantstory.org/)">The Immigrant Story</a>, which collects stories and photographs of immigrants in order to document/archive their voices.</p>
@@ -2068,13 +2015,12 @@ These are all different people who came from different continents, and we should
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/immigrantstory/med/immigrantstory01.jpg"><br>
 <em>Photo by Wellington Rodrigues on Unsplash</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/immigrantstory/med/immigrantstory01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/immigrantstory/med/immigrantstory01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @Vancouver]]></title>
             <link>https://www.travelingcircusofurbanism.com/vancouver/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/vancouver/Introduction</guid>
+            <guid>/vancouver/Introduction</guid>
             <pubDate>Mon, 13 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vancouver/Introduction/med/vancouver01.jpg"><br>
@@ -2123,13 +2069,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/Introduction/med/vancouver01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vancouver/Introduction/med/vancouver01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[2 truly inspiring Affordable Housing Projects in Seattle]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/affordablehousing</link>
-            <guid>https://www.travelingcircusofurbanism.com/seattle/affordablehousing</guid>
+            <guid>/seattle/affordablehousing</guid>
             <pubDate>Fri, 10 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>The other day I participated an event by <a href="https://www.theurbanist.org/">the Urbanist</a> about <a href="https://www.theurbanist.org/2018/08/07/building-community-in-southeast-seattle-tour-this-saturday/">Housing Community in South Seattle</a>(they organize a lot of great events and meetups for all city lovers — <a href="https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment">this post</a> is also based on their walking tour).</p>
@@ -2158,13 +2103,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 <p>Perhaps the crucial factor of success is not only focusing on the housing itself but people's actual lives around it — we need not only housings but also decent access to other social services. Along with affordable rental and ownership housing, other facilities are needed such as cultural/community centers, educational institutions such as schools, low-income medical clinics, childcare, offices/commercial space to support local economic growth.</p>
 <p>In that way, we can learn a lot from these projects in Seattle who focus on their 'communities' and their real lives there.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/affordablehousing/med/affordablehousing03.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/affordablehousing/med/affordablehousing03.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Freeway Park, an urban oasis that bridges over a highway]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/freewaypark</link>
-            <guid>https://www.travelingcircusofurbanism.com/seattle/freewaypark</guid>
+            <guid>/seattle/freewaypark</guid>
             <pubDate>Thu, 09 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/freewaypark/med/freewaypark1.jpg"><br>
@@ -2194,13 +2138,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/freewaypark/med/freewaypark21.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/freewaypark/med/freewaypark2.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/freewaypark/med/freewaypark1.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/freewaypark/med/freewaypark1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[The future of Waterfront Seattle]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</link>
-            <guid>https://www.travelingcircusofurbanism.com/seattle/waterfrontdevelopment</guid>
+            <guid>/seattle/waterfrontdevelopment</guid>
             <pubDate>Wed, 08 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/waterfrontdevelopment/med/waterfront0.jpg"></p>
@@ -2234,13 +2177,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 <iframe width="640" height="360" src="https://www.youtube.com/embed/4La-8egv1bk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 <p><em>This video is also very helpful to understand the Alaskan Way Viaduct &quot;The Alaskan Way Viaduct: How Seattle chose the Bertha tunnel alternative&quot; — by <a href="https://www.youtube.com/channel/UCGc8ZVCsrR3dAuhvUbkbToQ">City Beautiful</a></a></em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/waterfrontdevelopment/med/waterfront0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/waterfrontdevelopment/med/waterfront0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @Seattle]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/seattle/Introduction</guid>
+            <guid>/seattle/Introduction</guid>
             <pubDate>Sun, 05 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/Introduction/med/seattleinteroduction.jpg"><br>
@@ -2279,13 +2221,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/Introduction/med/seattleinteroduction.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/Introduction/med/seattleinteroduction.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Seattle's Gas Works Park: Since when did 'trash' become pretty?]]></title>
             <link>https://www.travelingcircusofurbanism.com/seattle/gasworkspark</link>
-            <guid>https://www.travelingcircusofurbanism.com/seattle/gasworkspark</guid>
+            <guid>/seattle/gasworkspark</guid>
             <pubDate>Sat, 04 Aug 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark3.jpg"></p>
@@ -2305,13 +2246,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark5.jpg"></p>
 <p>This park is a great reminder for the importance of public park in the heart of the city, where people can gather and connect without being worried about the safety or pollution. I highly recommend the visit to this park and praise the city's decision to convert one of the most neglected, contaminated land to the vibrant gathering space for citizens.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark3.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/seattle/gasworkspark/med/gasworkspark3.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @Portland]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/portland/Introduction</guid>
+            <guid>/portland/Introduction</guid>
             <pubDate>Thu, 26 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/Introduction/med/portland01.jpg"><br>
@@ -2361,13 +2301,12 @@ Read: <a href="https://www.huffingtonpost.ca/2014/07/11/co-op-housing-vancouver_
 <li>I can't stop admiring this initiative: <a href="https://theimmigrantstory.org/immigrant-story/">Immigrant Story</a>. They are based in Portland, collecting stories from immigrants who live in the city.</li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/Introduction/med/portland01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/Introduction/med/portland01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Adaptive reuse project: a renovated historic elementary school Kennedy School by McMenamins]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/KennedySchool</link>
-            <guid>https://www.travelingcircusofurbanism.com/portland/KennedySchool</guid>
+            <guid>/portland/KennedySchool</guid>
             <pubDate>Thu, 26 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <h3>McMenamins, a pioneer in the adaptive reuse field</h3>
@@ -2404,13 +2343,12 @@ It is open for public and you can enter the building for free — it is very int
 <li><a href="https://www.ankrommoisan.com/blog/2016/04/05/mcmenamins-renovations-modernizing-future-while-honoring-past">McMenamins Renovations: Modernizing for the Future while Honoring the Past</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/KennedySchool/med/kennedyschool17.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Sunday for all the bike lovers — Sunday Parkways and Portland's exciting Green Loop Vision]]></title>
             <link>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</link>
-            <guid>https://www.travelingcircusofurbanism.com/portland/Sundayparkways</guid>
+            <guid>/portland/Sundayparkways</guid>
             <pubDate>Sun, 22 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/Sundayparkways/med/sundayparkways0.jpg"></p>
@@ -2430,13 +2368,12 @@ It is open for public and you can enter the building for free — it is very int
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/portland/Sundayparkways/med/sundayparkways9.jpg"></p>
 <p>I am not a bicycle expert, but I love being independent by using bikes and other forms of public transportation in Portland, <a href="https://www.cnn.com/travel/article/america-most-bike-friendly-cities/index.html">the most bike friendly city in the United States</a> and I can't wait to come back here after 2035, when the Green Loop Plan will be (hopefully) realized.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/Sundayparkways/med/sundayparkways0.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/portland/Sundayparkways/med/sundayparkways0.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Walk, listen, and learn — an insight from The Urbanist San Francisco tour]]></title>
             <link>https://www.travelingcircusofurbanism.com/san%20francisco/theurbanistSF</link>
-            <guid>https://www.travelingcircusofurbanism.com/san%20francisco/theurbanistSF</guid>
+            <guid>/san%20francisco/theurbanistSF</guid>
             <pubDate>Thu, 19 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>A few weeks ago I finally had the great opportunity to join a tour that I've been following online for a long time — <a href="http://www.theurbanistsf.com/">The Urbanist SF</a>. Of course, there are countless tours out there you can choose in a big city like San Francisco, but I'm telling you — this tour is not like the other tours, and you will see the city in a completely different way afterward. First of all, <a href="http://www.theurbanistsf.com/">The Urbanist SF</a> has a super exciting <a href="https://squareup.com/market/urbanist-sf/pedestrian-essentials-tote">Welcome to San Francisco Kit</a>, which contains some essential items for all the city lovers and urban explorers who want to discover the essence of the place.</p>
@@ -2510,13 +2447,12 @@ The final spot of the tour was Dolores Park — everyone's favorite! From this s
 <p>In the future, he is planning to spread this project to the other big cities in the U.S. such as Los Angeles and New York. I highly recommend The Urbanist SF to all city lovers.</p>
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF02.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/theurbanistSF/med/theurbanistSF01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[This is not about race, but it is — thinking about white gentrification in "Black Beverly Hills"]]></title>
             <link>https://www.travelingcircusofurbanism.com/los%20angeles/BlackBeverlyHills</link>
-            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/BlackBeverlyHills</guid>
+            <guid>/los%20angeles/BlackBeverlyHills</guid>
             <pubDate>Mon, 09 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Recently I got to know a little bit about a neighborhood in LA called View Park, which later I discovered is called &quot;Black Beverly Hills&quot; — as opposed to its dominantly white counterpart.</p>
@@ -2548,13 +2484,12 @@ The final spot of the tour was Dolores Park — everyone's favorite! From this s
 <li><a href="https://www.bisnow.com/los-angeles/news/neighborhood/view-park-the-black-beverly-hills-of-los-angeles-85295?utm_source=CopyShare&amp;utm_medium=Browser%5D(https://www.bisnow.com/los-angeles/news/neighborhood/view-park-the-black-beverly-hills-of-los-angeles-85295)">Residents Grapple With Change Coming To View Park, LA's 'Black Beverly Hills'</a></li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/BlackBeverlyHills/med/viewpark01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/BlackBeverlyHills/med/viewpark01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @San Francisco]]></title>
             <link>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/san%20francisco/Introduction</guid>
+            <guid>/san%20francisco/Introduction</guid>
             <pubDate>Tue, 03 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/san%20francisco/Introduction/med/sanfrancisco01.jpg"><br>
@@ -2615,13 +2550,12 @@ My Favorite:</p>
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/Introduction/med/sanfrancisco01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/san%20francisco/Introduction/med/sanfrancisco01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Hip-Hop architecture]]></title>
             <link>https://www.travelingcircusofurbanism.com/los%20angeles/hiphoparchitecture</link>
-            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/hiphoparchitecture</guid>
+            <guid>/los%20angeles/hiphoparchitecture</guid>
             <pubDate>Sun, 01 Jul 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Several days ago I got to know a brand new theory (at least for me) that is called &quot;Hip-Hop Architecture&quot; by participating an event hosted by <a href="https://www.moca.org/">MOCA</a> — The Museum of Contemporary Art, Los Angeles.</p>
@@ -2643,13 +2577,12 @@ My Favorite:</p>
 <p>I believe this is an extremely helpful approach to invite not only kids but anyone who has been excluded from the traditional sphere of architecture and urban design and their privileged professionalism.</p>
 <p>In this way, hip-hop architecture and urbanism help us to ask what kind of architecture/city and physical environment at large can be realized from the bottom up, outside of traditional strategies and approaches.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/hiphoparchitecture/med/hiphop01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/hiphoparchitecture/med/hiphop01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Arcosanti, an experimental urban laboratory and desert “utopia”]]></title>
             <link>https://www.travelingcircusofurbanism.com/arcosanti/arcosanti</link>
-            <guid>https://www.travelingcircusofurbanism.com/arcosanti/arcosanti</guid>
+            <guid>/arcosanti/arcosanti</guid>
             <pubDate>Wed, 27 Jun 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>A few weeks ago I had a great opportunity to visit <a href="https://arcosanti.org/">Arcosanti</a> in central Arizona, 110 km north of Phoenix. It is known as an experimental town originally proposed by the Italian-American architect, Paolo Soleri (1919–2013).</p>
@@ -2697,13 +2630,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti28.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti29.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti00.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/arcosanti/arcosanti/med/arcosanti00.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[The urbanist’s guide to video games!]]></title>
             <link>https://www.travelingcircusofurbanism.com/elsewhere/Games</link>
-            <guid>https://www.travelingcircusofurbanism.com/elsewhere/Games</guid>
+            <guid>/elsewhere/Games</guid>
             <pubDate>Tue, 26 Jun 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Few months ago a friend of mine showed me <a href="https://ncase.me/polygons/">a very interesting website</a> that blew my mind — Parable of Polygons: an playable post on the shape of society. It shows a simulation of segregation that is playfully designed to make it easier for readers to understand. This website is based off the work of Nobel Prize-winning game theorist Thomas Schelling and his 1971 paper on dynamic models of segregation.</p>
@@ -2737,13 +2669,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 <p><img src="https://cdn-images-1.medium.com/max/2000/0*0tpzhR-cNmhy-bau.jpg" alt="Photo from the official website: Block by Block"><em>Photo from the official website: <a href="https://blockbyblock.org/">Block by Block</a></em></p>
 <p>Thanks for reading and please contact me if you have any recommendations!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game03.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Games/med/game03.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @Los Angeles]]></title>
             <link>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/los%20angeles/Introduction</guid>
+            <guid>/los%20angeles/Introduction</guid>
             <pubDate>Tue, 26 Jun 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg"><br>
@@ -2820,13 +2751,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/los%20angeles/Introduction/med/losangeles02.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Things to do and read for urbanists @Tokyo]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/Introduction</guid>
+            <guid>/tokyo/Introduction</guid>
             <pubDate>Fri, 01 Jun 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/tokyo/Introduction/med/tokyo01.jpg"><br>
@@ -2871,13 +2801,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/Introduction/med/tokyo01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/Introduction/med/tokyo01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Seaholm EcoDistrict — Austin's sustainable urban renewal]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/Seaholm_EcoDistrict</link>
-            <guid>https://www.travelingcircusofurbanism.com/austin/Seaholm_EcoDistrict</guid>
+            <guid>/austin/Seaholm_EcoDistrict</guid>
             <pubDate>Thu, 31 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Seaholm EcoDistrict is an 85-acre urban development on the edge of downtown — it once used to be the city-owned power plant and a water treatment facility. After the power plant was decommissioned in 1989, a new public-private partnership was formed to renew this part of downtown by using green, sustainable design.</p>
@@ -2891,13 +2820,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Seaholm_EcoDistrict/med/Seaholm05.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Seaholm_EcoDistrict/med/Seaholm06.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Seaholm_EcoDistrict/med/Seaholm01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Seaholm_EcoDistrict/med/Seaholm01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Austin Creative Reuse]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/CreativeReuse</link>
-            <guid>https://www.travelingcircusofurbanism.com/austin/CreativeReuse</guid>
+            <guid>/austin/CreativeReuse</guid>
             <pubDate>Mon, 28 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bnr5nmwKq-Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -2914,13 +2842,12 @@ It felt almost surreal to visit this experimental town in the middle of nowhere 
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/CreativeReuse/med/CreativeReuse07.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/CreativeReuse/med/CreativeReuse08.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/CreativeReuse/med/CreativeReuse01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/CreativeReuse/med/CreativeReuse01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanism-Related Things to do and read @Austin]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/austin/Introduction</guid>
+            <guid>/austin/Introduction</guid>
             <pubDate>Mon, 28 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Introduction/med/Austin01.jpeg"></p>
@@ -2983,13 +2910,12 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Introduction/med/Austin01.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Introduction/med/Austin01.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Mueller — a former industrial zone to a sustainable enclave]]></title>
             <link>https://www.travelingcircusofurbanism.com/austin/Mueller</link>
-            <guid>https://www.travelingcircusofurbanism.com/austin/Mueller</guid>
+            <guid>/austin/Mueller</guid>
             <pubDate>Mon, 28 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <h2>Mueller doesn't look like anywhere else in Austin</h2>
@@ -3017,13 +2943,12 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09689.jpg"><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/DSC09692.jpg"></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/austin/Mueller/med/Meuller01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[9 beautiful books on urban analysis and research]]></title>
             <link>https://www.travelingcircusofurbanism.com/elsewhere/Books</link>
-            <guid>https://www.travelingcircusofurbanism.com/elsewhere/Books</guid>
+            <guid>/elsewhere/Books</guid>
             <pubDate>Fri, 25 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>There are many great books out there on urban planning and design, but I realized not many of them quite sum up the full scope of roles of urban analysis and research. I believe that analytical process to make sense of our cities itself is a creative act, which has a power to give us the different ways of perceiving our urban surroundings.</p>
@@ -3065,13 +2990,12 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
 </blockquote>
 <p>Let me know your recommendation as well!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Books/med/Book01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/Books/med/Book01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[What I learned at “Renovation School” in Tokyo]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/renovationschooltokyo</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/renovationschooltokyo</guid>
+            <guid>/tokyo/renovationschooltokyo</guid>
             <pubDate>Mon, 14 May 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/tokyo/renovationschooltokyo/med/Renovationschool01.jpg"></p>
@@ -3115,13 +3039,12 @@ Read: <a href="https://www.nationalgeographic.com/environment/urban-expeditions/
 <p>So…after those intense 3 days, I still ask myself — what is my role in making cities more livable and sustainable? What will happen to Japanese cities in the future? Even though the rate of vacant houses are still rising, most of the big developers in Japan, including Tokyu-Corporation (the organizer of the renovation school for this time), keep constructing new fancy buildings for urban redevelopment. I see an irony here. After spending 3 days of very intense design sprint, I couldn’t stop but hope to see more of those collective actions in Japan, especially NOW when urban development is booming before the Tokyo Olympic Games in 2020.</p>
 <p>Let’s just hope that these new urban movements, such as the Renovation School, could shift the direction of Japanese urban development a little bit towards a better tommorow.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/renovationschooltokyo/med/Renovationschool01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/tokyo/renovationschooltokyo/med/Renovationschool01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Event report: “Hack My City” — Connecting the Urban Scales from XS to XL]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/HackMyCity</guid>
+            <guid>/tokyo/HackMyCity</guid>
             <pubDate>Tue, 13 Mar 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>In March 2018, some of my colleagues and I had an opportunity to invite some of the most prominent practitioners in the field of urban community planning in Japan to our one-day event “Hack my City”.</p>
@@ -3166,13 +3089,12 @@ Part2: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%
 Part3: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%2Fevent%2F20180313_hmc_report3&amp;h=ATMB4AWkQqiqV6gUJLAJMpUWFMIkYB1JcKAdPhFCdrdxKIaCj31JlPZ4DgYwSoJSOTv8jeAnNRo3MM2KX-oG1Ij5SHuC9c6jVmXL_Pe8f7gxj6HjMcFW_w3hLh8">https://loftwork.com/jp/event/20180313_hmc_report3</a></p>
 <p><img src="https://cdn-images-1.medium.com/max/4486/1*Ri_Z7ya0Qcb6-2MbhnZvvg.jpeg" alt=""></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/0*IEAJ4RS-SlSJcmKu.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/0*IEAJ4RS-SlSJcmKu.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[2 alternative spots to visit in Kuala Lumpur]]></title>
             <link>https://www.travelingcircusofurbanism.com/kuala%20lumpur/alternativespot</link>
-            <guid>https://www.travelingcircusofurbanism.com/kuala%20lumpur/alternativespot</guid>
+            <guid>/kuala%20lumpur/alternativespot</guid>
             <pubDate>Fri, 16 Feb 2018 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Few months ago I found this interesting website <a href="https://alternativeasia.net/">ALTERNATIVE ASIA</a>, which introduces the interesting independent art spaces in the south east Asian countries. Most of these spaces are owned and managed by the artists themselves, and they are using the spacesnot only as galleries, but inviting a wide range of people to have workshops, festivals and symposiums and so on.</p>
@@ -3217,13 +3139,12 @@ Part3: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%
 <p><img src="https://cdn-images-1.medium.com/max/8064/1*BL7klGBu6cBh5Olny7A4HA.jpeg" alt=""></p>
 <p><img src="https://cdn-images-1.medium.com/max/6048/1*4dpG-0cEi9hFENmNx5UxmA.jpeg" alt=""></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/8000/1*RWd-sME5koYGLTK8jrDlrA.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/8000/1*RWd-sME5koYGLTK8jrDlrA.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist MeetUp Tokyo: Examining the role of “urbanists” in improving urban life in Tokyo]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/urbanistmeetuptokyo</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/urbanistmeetuptokyo</guid>
+            <guid>/tokyo/urbanistmeetuptokyo</guid>
             <pubDate>Tue, 12 Dec 2017 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>Last year, I organized an “Urbanist Meetup Tokyo”, and this post aims to discuss the importance of interdisciplinary collaboration among the people who understand urbanity and love the cities we live in. The term “urbanist” is not popularly used in the Japanese context, but I believe that what Japanese cities (particularly Tokyo) need in this age of rapid transformation is to go beyond “civil engineering” and the idea that the urban environment is the playground of merely architects and planners.</p>
@@ -3259,13 +3180,12 @@ Part3: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%
 <p>(If you want to know more about what’s happening, you can check out such research papers as “<a href="https://www.nri.com/~/media/PDF/global/opinion/papers/2015/np2015200.pdf">The need for rebuilding Tokyo with the 2020 Tokyo Olympics as impetus</a>”.)</p>
 <p>I want to see more encouraging stories of people who participate and act in Japanese cities, not just of those who are imagined to be the stakeholders and responsible for making them.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/1*KhR9gu4HI_5x8PeRTYHBdw.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/1*KhR9gu4HI_5x8PeRTYHBdw.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Subjective Map Workshop #Shibuya]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/subjectivemapworkshop</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/subjectivemapworkshop</guid>
+            <guid>/tokyo/subjectivemapworkshop</guid>
             <pubDate>Sat, 09 Dec 2017 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>In 2017 December, I organized a workshop to encourage people to make their own map based on their own subjective experiences of a city. This article explains the philosophy behind this workshop as well as why and how much map making matters.</p>
@@ -3317,13 +3237,12 @@ Part3: <a href="https://l.messenger.com/l.php?u=https%3A%2F%2Floftwork.com%2Fjp%
 <p>It would be nice to have more critical map lovers who understand and are careful about how much our minds and spatial understanding are influenced by the dominant existing maps and other forms of spatial information.</p>
 <p>Thanks for reading!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/5248/1*aHOJjlyLmGAcIGlTtX3JIA.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/5248/1*aHOJjlyLmGAcIGlTtX3JIA.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Interview: ILLLUTRON, a maker space that moves across the Copenhagen port]]></title>
             <link>https://www.travelingcircusofurbanism.com/copenhagen/Interview_Illutron</link>
-            <guid>https://www.travelingcircusofurbanism.com/copenhagen/Interview_Illutron</guid>
+            <guid>/copenhagen/Interview_Illutron</guid>
             <pubDate>Tue, 26 Sep 2017 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/copenhagen/Interview_Illutron/med/illutron01.jpg"> <em>Reference: <a href="https://www.facebook.com/illutron/">ILLUTRON facebook</a></em></p>
@@ -3400,13 +3319,12 @@ See also: <a href="https://www.facebook.com/photo.php?fbid=10204161989114027&amp
 <p>Official website: <a href="http://www.illutron.dk/">www.illutron.dk</a><br>
 Facebook: <a href="https://www.facebook.com/illutron/">https://www.facebook.com/illutron/</a>Flicker: <a href="https://www.flickr.com/search/?w=all&amp;q=illutron&amp;m=text">https://www.flickr.com/search/?w=all&amp;q=illutron&amp;m=text</a></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/copenhagen/Interview_Illutron/med/illutron01.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/copenhagen/Interview_Illutron/med/illutron01.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Design sprints for sustainable development goals: a recap from Global Goals Jam 2017 #Tokyo]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/globalgoalsjam17</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/globalgoalsjam17</guid>
+            <guid>/tokyo/globalgoalsjam17</guid>
             <pubDate>Sun, 17 Sep 2017 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img src="https://cdn-images-1.medium.com/max/1000/1*K1mn1ASdXth8VQYs1zMJ_w.jpeg" alt=""></p>
@@ -3423,7 +3341,8 @@ Facebook: <a href="https://www.facebook.com/illutron/">https://www.facebook.com/
 <p><img src="https://cdn-images-1.medium.com/max/9794/1*2omWP-koPhB6NM2rT6deVA.jpeg" alt=""></p>
 <p><img src="https://cdn-images-1.medium.com/max/9794/1*YhsufNauOkWwEpO1gnHoKg.jpeg" alt="David Willoughby from Workers University joined the event as one of the facilitators"><em>David Willoughby from <a href="http://www.workers-u.com/">Workers University</a> joined the event as one of the facilitators</em></p>
 <h2><strong>We learned the Design Sprints method from Amsterdam Media Lab.</strong></h2>
-<p><img src="https://cdn-images-1.medium.com/max/9794/1*tTl02fXIjQuZD0e5-7OrwQ.jpeg" alt="**Sprint #1 Organize it, experience it / Sprint #2 Respond to it**This was about identifying problems and organizing our ideas">***Sprint #1 Organize it, experience it / Sprint #2 Respond to it<br>
+<p><img src="https://cdn-images-1.medium.com/max/9794/1*tTl02fXIjQuZD0e5-7OrwQ.jpeg" alt="**Sprint #1 Organize it, experience it / Sprint #2 Respond to it
+**This was about identifying problems and organizing our ideas">***Sprint #1 Organize it, experience it / Sprint #2 Respond to it<br>
 *<em>This was about identifying problems and organizing our ideas</em></p>
 <p>Have you ever wondered what the heck a “design methodology” is? I know that it’s a fashionable thing to talk about “design” nowadays, but I always thought that many people didn’t really understand what it was, but just kinda wanted to talk bullshit about it.</p>
 <p>That’s why it was very valuable to use the concrete methods established by Amsterdam Media Lab. While leaving out the very fine details that actually fit into the local contexts, Amsterdam Media Lab provides a common language of design methods for the design field (they call it a mission to fight “design waste”), which is open and accessible and where even the beginners can dive straight in.</p>
@@ -3460,13 +3379,12 @@ Facebook: <a href="https://www.facebook.com/illutron/">https://www.facebook.com/
 <p>As a person who ALWAYS thinks of things in the context of cities and urbanism, I can’t help but think how valuable it would be to use this structure for the re-development of Tokyo. At the moment, everything seems to be “Think SMALL, start BIG, act SLOW!”. I’d love to apply the design sprint method we’ve learned during the Global Goals Jam to some of the critical urban problems we are facing, such as a shortage of childcare facilities, a lack of safe bicycle infrastructure, an unaffordable housing market, and energy shortages, just to name a few.</p>
 <p>I hope you can also come and join us for this year’s Global Goals Jam 2018 #Tokyo!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/1000/1*K1mn1ASdXth8VQYs1zMJ_w.jpeg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/1000/1*K1mn1ASdXth8VQYs1zMJ_w.jpeg" length="0" type="image/jpeg"/>
         </item>
         <item>
             <title><![CDATA[Interview — Christian Dimmer, Urban Studies Prof of Waseda University]]></title>
             <link>https://www.travelingcircusofurbanism.com/tokyo/Interview%20ChristianDimmer</link>
-            <guid>https://www.travelingcircusofurbanism.com/tokyo/Interview%20ChristianDimmer</guid>
+            <guid>/tokyo/Interview%20ChristianDimmer</guid>
             <pubDate>Thu, 24 Nov 2016 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p>I had a great opportunity to interview Christian Dimmer, a space / environment designer who is teaching Urbanism at Waseda University. He has been living in Tokyo for over 15 years to understand Japanese Urbanism, and involving himself in a range of different projects.</p>
@@ -3522,13 +3440,12 @@ Facebook: <a href="https://www.facebook.com/illutron/">https://www.facebook.com/
 Assistant professor of the international education department at Waseda University/ Space and Environment designer, urban researcher.</p>
 <p><em>(※This article was originally posted on <a href="http://layout.net/">layout.net</a>. Interview / Text are by myself)</em></p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/0*Y41HHAW-LzUp2QoP.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.comhttps://cdn-images-1.medium.com/max/2000/0*Y41HHAW-LzUp2QoP.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanism-Related Things to do and read @Vienna]]></title>
             <link>https://www.travelingcircusofurbanism.com/vienna/Introduction</link>
-            <guid>https://www.travelingcircusofurbanism.com/vienna/Introduction</guid>
+            <guid>/vienna/Introduction</guid>
             <pubDate>Mon, 13 Apr 2015 00:00:00 GMT</pubDate>
             <description><![CDATA[
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/vienna/Introduction/med/jacek-dylag-579742-unsplash.jpg"></p>
@@ -3563,8 +3480,7 @@ Assistant professor of the international education department at Waseda Universi
 </li>
 </ol>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vienna/Introduction/med/jacek-dylag-579742-unsplash.jpg">
-            </enclosure>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/vienna/Introduction/med/jacek-dylag-579742-unsplash.jpg" length="0" type="image/jpg"/>
         </item>
     </channel>
 </rss>

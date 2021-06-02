@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/kamagasaki", {data:[{posts:[],location:"kamagasaki",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: kamagasaki",url:"\u002Fja\u002Fat\u002Fkamagasaki"}]]]});

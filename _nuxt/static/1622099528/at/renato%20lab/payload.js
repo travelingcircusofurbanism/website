@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/at/renato%20lab", {data:[{posts:[],location:"renato lab",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: renato lab",url:"\u002Fat\u002Frenato%20lab"}]]]});

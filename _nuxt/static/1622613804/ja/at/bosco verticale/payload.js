@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/bosco%20verticale", {data:[{posts:[],location:"bosco verticale",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: bosco verticale",url:"\u002Fja\u002Fat\u002Fbosco%20verticale"}]]]});

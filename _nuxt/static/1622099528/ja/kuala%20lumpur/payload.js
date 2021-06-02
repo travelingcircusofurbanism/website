@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/kuala%20lumpur", (function(a){return {data:[{posts:[],city:a}],fetch:[],mutations:[["setBreadcrumbs",[{label:a,url:"\u002Fja\u002Fkuala%20lumpur"}]]]}}("kuala lumpur")));

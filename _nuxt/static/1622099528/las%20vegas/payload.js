@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/las%20vegas", (function(a){return {data:[{posts:[],city:a}],fetch:[],mutations:[["setBreadcrumbs",[{label:a,url:"\u002Flas%20vegas"}]]]}}("las vegas")));

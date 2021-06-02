@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/bringing%20back%20broadway", {data:[{posts:[],location:"bringing back broadway",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: bringing back broadway",url:"\u002Fja\u002Fat\u002Fbringing%20back%20broadway"}]]]});

@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/vostok%20kyoto", {data:[{posts:[],location:"vostok kyoto",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: vostok kyoto",url:"\u002Fja\u002Fat\u002Fvostok%20kyoto"}]]]});

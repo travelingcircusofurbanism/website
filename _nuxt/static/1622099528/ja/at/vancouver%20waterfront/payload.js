@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/vancouver%20waterfront", {data:[{posts:[],location:"vancouver waterfront",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: vancouver waterfront",url:"\u002Fja\u002Fat\u002Fvancouver%20waterfront"}]]]});

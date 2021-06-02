@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/way%20to%20community", {data:[{posts:[],location:"way to community",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: way to community",url:"\u002Fja\u002Fat\u002Fway%20to%20community"}]]]});

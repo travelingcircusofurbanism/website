@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/american%20village", {data:[{posts:[],location:"american village",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: american village",url:"\u002Fja\u002Fat\u002Famerican%20village"}]]]});

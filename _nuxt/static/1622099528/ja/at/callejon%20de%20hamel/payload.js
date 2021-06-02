@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/ja/at/callejon%20de%20hamel", {data:[{posts:[],location:"callejon de hamel",marker:{}}],fetch:[],mutations:[["setBreadcrumbs",[{label:"at: callejon de hamel",url:"\u002Fja\u002Fat\u002Fcallejon%20de%20hamel"}]]]});
