@@ -11,7 +11,7 @@
     "v": "node -v",
     "analyze": "nuxt build -a",
     "cleanup": "rm -rf docs",
-    "dev": "n auto && nuxt",
+    "dev": "nuxt",
     "g": "npm run generate",
     "preview": "nuxt generate && serve ./docs",
     "generate": "nuxt generate && echo \"www.travelingcircusofurbanism.com\" > ./docs/CNAME",
