@@ -94,15 +94,7 @@ module.exports = {
   build: {
     // analyze: true,
 
-    watch: [
-      'posts',
-      'nuxt/components',
-      'nuxt/pages',
-      'nuxt/layouts',
-      'nuxt/plugins',
-      'nuxt/modules',
-      'nuxt.config.js',
-    ],
+    watch: ['../posts'],
 
     extend(config) {
       if (!config.module.noParse) config.module.noParse = []
