@@ -1,7 +1,6 @@
+# Gather, repair, make - Taipei's maintanace station
 
-# Gather, repair, make - Taipei's maintanace station 
-
-I found a kind of space in Taipei that I've always, always wanted. 
+I found a kind of space in Taipei that I've always, always wanted.
 
 a group of passionate people share tools here to learn and help each other.
 
@@ -23,4 +22,4 @@ space is filled with a variety of tools: wrenches, hammers, wire saws, electric 
 ![](alittlewhitehouse17.jpg)
 ![](alittlewhitehouse18.jpg)
 
-## Another building: food! 
+## Another building: food!
