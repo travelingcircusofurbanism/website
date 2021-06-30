@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/is/links", {data:[{posts:[],category:"links"}],fetch:{},mutations:[["setBreadcrumbs",[{label:"is: links",url:"\u002Fja\u002Fis\u002Flinks"}]]]});
