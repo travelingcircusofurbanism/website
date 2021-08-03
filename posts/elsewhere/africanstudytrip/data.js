@@ -1,5 +1,5 @@
 module.exports = {
-  public: yes,
+  public: true,
   date: '8/2/2021',
   category: 'open call',
   image: 'sandy-ravaloniaina-bKsxa157lf4-unsplash.jpeg',
