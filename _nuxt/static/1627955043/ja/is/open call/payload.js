@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/is/open%20call", {data:[{posts:[],category:"open call"}],fetch:{},mutations:[["setBreadcrumbs",[{label:"is: open call",url:"\u002Fja\u002Fis\u002Fopen%20call"}]]]});
