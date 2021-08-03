@@ -19,9 +19,16 @@ module.exports = {
 			pitch: 0
 		},
     {
-			location: 'Addis Ababa',
+			location: 'geo.sm',
 			bearing: 0,
-			center: [38.748264697560415, 8.985532407214233],
+			center: [11.520638272029949, 3.8608699689966337],
+			zoom: 12.00,
+			pitch: 0
+		},
+    {
+			location: 'L\'alternative architecturale',
+			bearing: 0,
+			center: [1.208380185533349, 6.1647334623305925],
 			zoom: 12.00,
 			pitch: 0
 		},
