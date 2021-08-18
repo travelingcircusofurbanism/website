@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/teen%20darwaza,%20ahmedabad", {data:[{posts:[],location:"teen darwaza, ahmedabad",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: teen darwaza, ahmedabad",url:"\u002Fja\u002Fat\u002Fteen%20darwaza,%20ahmedabad"}]]]});
