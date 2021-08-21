@@ -2,7 +2,7 @@ module.exports = {
   public: true,
   date: '8/18/2021',
   category: 'intro',
-  image:'amsterdam02.jpeg',
+  image:'Amsterdam_Adamtower_ByBobbyBorn.jpg',
   mapPosition: [
     {
       location: 'Borneo Island',

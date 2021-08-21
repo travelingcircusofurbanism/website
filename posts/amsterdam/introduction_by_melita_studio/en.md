@@ -1,7 +1,7 @@
 # Urbanist's Guide to Amsterdam by Melita Studio
 
-![](amsterdam02.jpeg)
-_Photo by Adrien Olichon on Unsplash_
+![](Amsterdam_Adamtower_ByBobbyBorn.jpg)
+_Photo by Bobby Born_
 
 _This is a post by a talented urban designer and architect [Prisca Arosio](https://www.linkedin.com/in/prisca-arosio-8027693a/) from [MELITA STUDIO](https://melita-studio.com/)._
 
