@@ -1,1 +1,0 @@
-window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1629518918",layout:"default",error:a,state:a,serverRendered:false,routePath:"\u002Fja\u002Fat\u002Flittle%20los%20angeles",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null));
