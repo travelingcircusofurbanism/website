@@ -1,6 +1,6 @@
 # What Is Urban Planning? — The art of shaping cities, and letting them shape us in return.
 
-This [post](https://medium.com/the-urban-condition/what-is-urban-planning-97b1b9f40efa) was originally published in [The Urban Condition](https://medium.com/the-urban-condition) by Aushaf Widist, who is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. It's a great introduction for urban planning, whether you're already in the industry or not.
+This [post](https://medium.com/the-urban-condition/what-is-urban-planning-97b1b9f40efa) was originally published in [The Urban Condition](https://medium.com/the-urban-condition) by Aushaf Widisto (aka Oswald / Oz), who is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. It's a great introduction for urban planning, whether you're already in the industry or not.
 
 ---
 
@@ -83,4 +83,4 @@ Urban planners, your work matters. Do it wisely.
 
 ![](Aushaf.jpeg)
 
-_Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban & Regional Planning at Institut Teknologi Bandung and Cultural & Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his [Medium page](https://aushaf.medium.com/), where he also manages an urbanism publication called [The Urban Condition](http://medium.com/the-urban-condition)._
+_Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban & Regional Planning at Institut Teknologi Bandung and Cultural & Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his [Medium page](https://oswalds.medium.com/), where he also manages an urbanism publication called [The Urban Condition](http://medium.com/the-urban-condition)._

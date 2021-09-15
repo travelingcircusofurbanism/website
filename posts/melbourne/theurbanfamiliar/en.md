@@ -1,6 +1,6 @@
 # The Urban Familiar: Specific Sites that Feel Like Home
 
-This joint-essay was wriiten by Aushaf Widist, an urbanist, writer, and cultural researcher based in Melbourne, and Ann Guo, an urban anthropologist based in Seattle and Istanbul.
+This joint-essay was wriiten by Aushaf Widisto (aka Oswald / Oz), an urbanist, writer, and cultural researcher based in Melbourne, and Ann Guo, an urban anthropologist based in Seattle and Istanbul.
 
 ---
 
@@ -66,26 +66,24 @@ The bakery is tucked away in a quiet residential roundabout of a city that slumb
 
 ### Gentle Universalities
 
-Those who come to Cihangir Historical Oven arrive with the same goal in mind: to fill their bellies with the warmth of fresh baked goods. The universality of hunger, of a midnight craving, is validated by the accessibility of a 2-lira treat, regardless of time. Biscuits, simit (sesame-covered bagels), rolls, cookies, and loaves are fresh-made to fill bellies inclusive of gender, class, race, sexuality, ethnicity, and religion, delicious.
+Those who come to Cihangir Historical Oven arrive with the same goal in mind: to fill their bellies with the warmth of fresh baked goods. The universality of hunger, of a midnight craving, is validated by the accessibility of a 2-lira treat, regardless of time. Biscuits, simit (sesame-covered bagels), rolls, cookies, and loaves are fresh-made to fill bellies inclusive of gender, class, race, sexuality, ethnicity, and religion. Delicious.
+
+An elderly man sits at the closest table from the door. He is the midnight supervisor, and distributes sugar biscuits or cheese-and-olive twists to paying customers. At other tables, people sit and chat with paper cups of dark Turkish tea. A person nearby munches on poğaça, an herbed butter biscuit. The roll crumbles in their mouth and bits of it drift down onto the ground.
 
 ![](000023.jpg)
 _Photo by Ann Guo_
 
-It's 2 AM on a Friday night, and I've found my way through Istanbul's labyrinthine streets to Cihangir Tarihi Fırını. People are stumbling home after a humid night of cramped bars and techno clubs. Those in taxis blare music from their loudspeakers. The synthetic heartbeat of trance music fills the small neighborhood square; a passenger claps their hands to the sinuous rhythm. Cigarette smoke clings to the breeze like a deathly lover.
-
 ### Home in the Urban Familiar
 
-The headlights shining, swerving past, people intoxicated from a night out. Music and smoke and drink. The synthetic heartbeat of techno the passenger claps his hands to the rhythm. A woman walks by, wiping sweat from her face with her palm. In the dog days of summer, the small hours of night were no respite from the incessant heat.
+It's 2 AM on a Friday night, and I've found my way through Istanbul's labyrinthine streets to Cihangir Tarihi Fırını. People are stumbling towards the bakery after a humid night of cramped bars and techno clubs. Those in taxis blare music from their loudspeakers as they ride home. The synthetic heartbeat of trance fills the small neighborhood square; a passenger claps their hands to the sinuous rhythm. Cigarette smoke clings to the breeze like a deathly lover.
 
-An elderly man sits at the closest table from the door. He is the midnight supervisor, and distributes sugar biscuits or cheese-and-olive twists to paying customers. At other tables, people sit and chat with paper cups of dark Turkish tea. A person nearby munches on poğaça, an herbed butter biscuit. The roll crumbles in their mouth and bits of it drift down onto the ground.
-
-Within the largeness of Istanbul is many small multitudes of specific diversity. Cihangir Tarihi Fırını is one such example of a unique service contributing to an urban environment's kaleidoscopic whole. An intensely single-use space, the bakery's accessibility and ubiquity draws in a variety of visitors at a range of imaginable hours. As Jane Jacobs summarizes in [The Death and Life of Great American Cities](https://www.theguardian.com/books/2011/oct/14/jane-jacobs-death-and-life-rereading), such small enterprises contribute to a "lively city scene," combating "neighborhood monotony" by providing the "physical, social, and economic continuities" necessary for a well-integrated public street life.
+Within the largeness of Istanbul is many small multitudes of diversity. Cihangir Tarihi Fırını is one such example of a unique service contributing to an urban environment's kaleidoscopic whole. An intensely single-use space, the bakery's accessibility and ubiquity draws in a variety of visitors at a range of imaginable hours. As Jane Jacobs summarizes in [The Death and Life of Great American Cities](https://www.theguardian.com/books/2011/oct/14/jane-jacobs-death-and-life-rereading), such small enterprises contribute to a "lively city scene," combating "neighborhood monotony" by providing the "physical, social, and economic continuities" necessary for a well-integrated public street life.
 
 ---
 
 ![](Aushaf.jpeg)
 
-_Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban & Regional Planning at Institut Teknologi Bandung and Cultural & Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his [Medium page](https://aushaf.medium.com/), where he also manages an urbanism publication called [The Urban Condition](http://medium.com/the-urban-condition)._
+_Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban & Regional Planning at Institut Teknologi Bandung and Cultural & Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his [Medium page](https://oswalds.medium.com/), where he also manages an urbanism publication called [The Urban Condition](http://medium.com/the-urban-condition)._
 
 ![](ann.jpeg)
 

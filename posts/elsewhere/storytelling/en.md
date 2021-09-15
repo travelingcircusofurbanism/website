@@ -49,6 +49,6 @@ These forms of approaches to design, open up possibilities for many analytical a
 
 Nivedhitha Venkatakrishnan
 
-![]()
+![](NivedhithaVenkatakrishnan.jpg)
 
 _Nivedhitha Venkatakrishnan is a design Enthusiast, Architect & Urban Designer with a passion for Academic Research & writing. Exploring Human centric approaches to design._
