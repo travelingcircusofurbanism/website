@@ -1,7 +1,7 @@
 module.exports = {
-  public: false,
+  public: true,
   preview: true,
-  date: '9/09/2021',
+  date: '9/15/2021',
   category: 'essay',
   image:'000023.jpg',
   mapPosition: [
