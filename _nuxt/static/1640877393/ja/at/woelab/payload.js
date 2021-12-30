@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/woelab", {data:[{posts:[],location:"woelab",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: woelab",url:"\u002Fja\u002Fat\u002Fwoelab"}]]]});

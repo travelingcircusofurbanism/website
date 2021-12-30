@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Tue, 21 Dec 2021 22:10:33 GMT</lastBuildDate>
+        <lastBuildDate>Thu, 30 Dec 2021 15:16:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -16,6 +16,31 @@
         <category>Cities</category>
         <category>Design</category>
         <category>Travel</category>
+        <item>
+            <title><![CDATA[Decoloing African cities in the future — L’Africaine d’architecture & WoeLab]]></title>
+            <link>https://www.travelingcircusofurbanism.com/lome/WoeLab</link>
+            <guid>/lome/WoeLab</guid>
+            <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p><img src="woelab" alt=""></p>
+<p>It was in Amsterdam last year when my friend, a french urbanist <a href="https://www.linkedin.com/in/juliencarbonnell/?locale=en_US">Julien Carbonnell</a>, and I have decided to organize an exploration journey throughout the multiple African cities. Living in the Netherlands, I was becoming more and more curious about the important part of the world which I had been so mentally distant from — Africa. African cities are growing, and in near future, many of the mega-cities in the world will be located in Africa. When we think about it, it's a very strange thing that we don't know much of their cities — not only about its history per se — but its happenings, its ambitions, its future.</p>
+<p>Almost all the media I'm following are in favor of covering the western, developed part of the world, so I knew that I would never understand African cities unless I drive into them. That's how we have come up with a self-funded exploration trip that is not so much about sightseeing but about researching, collaborating, and doing some short-term projects in various cities in Africa.</p>
+<p>First stop, Togo.</p>
+<p>Julien found a local initiative <a href="https://www.facebook.com/LAfricaine-darchitecture-146126622065850/">L’Africaine d’architecture</a> founded by a Togolese architect <a href="https://sename.hubcity.site/">Sénamé Koffi A.</a>, a platform to promote and document African perspective of architecture and urbanism. L’Africaine d’architecture has founded an incubation hub called <a href="https://www.youtube.com/results?search_query=hubcity+woelab">WoeLab</a> in the capital city of Togo, Lomé. It is a community-based incubation hub that encourages smart-city development in a local context and educates the local community with digital technology.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab1.jpg"><br>
+<em>A first &quot;made in Africa&quot; 3D printer made of e-waste, developed by WoeLab</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab7.jpg"><br>
+<em>WoeLab offers education for kids for new technology and digital literacy</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab2.jpg"><br>
+<em>WoeLab is surrounded by a community of young entrepreneurs, designers, and engineers from Africa.</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab3.jpg"><br>
+<em>Urbanattic, an urban farming project to utilize unused spaces in Lomé, grows some amazing organic vegetables for a community.</em><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab8.jpg"></p>
+<p>They're now preparing for a new stage of their project — creating a tech hub using multiple containers to offer various digital services for the emerging creative community in Togo. We'll be staying here until the end of January 2022, to help them document their projects and fund-raising. I'll keep you posted to introduce more about their projects!</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab4.jpg" length="0" type="image/jpg"/>
+        </item>
         <item>
             <title><![CDATA[Urbanist's Guide to Lomé, Togo]]></title>
             <link>https://www.travelingcircusofurbanism.com/lome/introduction</link>
