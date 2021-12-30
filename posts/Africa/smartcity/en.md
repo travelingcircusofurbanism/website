@@ -4,6 +4,8 @@
 
 Here I am. I moved to Lomé, the capital city of Togo, Africa!
 
+Also, take a look at this incredible [map](https://www.google.com/maps/d/u/0/viewer?mid=1xW9oEWFacYf_aTcS1MC-wtzAN9aBh0Lt&hl=en&ll=-3.81666561775622e-14%2C-77.32611827241455&z=1) by [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US)
+
 - [Akon City](https://akoncity.com/)
   watch [the visual presentation](https://www.youtube.com/watch?v=-UdXHtrs_Ho)
   I enjoyed watching [the interview](https://www.youtube.com/watch?v=KBxIhGqVl6E) with Al Jazeera
