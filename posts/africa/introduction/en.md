@@ -1,4 +1,4 @@
-# Understanding urbanism in Africa
+# Things to help me understand urbanism in Africa / Basic Introduction
 
 ![](zoe-reeve-xjJd9fu9OkM-unsplash.jpg)
 

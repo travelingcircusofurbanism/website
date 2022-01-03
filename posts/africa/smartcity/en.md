@@ -4,7 +4,7 @@
 
 Here I am. I moved to Lomé, the capital city of Togo, Africa!
 
-Also, take a look at this incredible [map](https://www.google.com/maps/d/u/0/viewer?mid=1xW9oEWFacYf_aTcS1MC-wtzAN9aBh0Lt&hl=en&ll=-3.81666561775622e-14%2C-77.32611827241455&z=1) by [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US)
+Also, take a look at this incredible [map](https://www.google.com/maps/d/u/0/viewer?mid=1xW9oEWFacYf_aTcS1MC-wtzAN9aBh0Lt&hl=en&ll=-3.81666561775622e-14%2C-77.32611827241455&z=1) by [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US). His [article](https://medium.com/urban-ai/perspective-african-smart-city-and-civic-technology-e2b22a53f705) about citizen engagement in smart-city and civic technology is worth reading as well to get a bigger picture.
 
 - [Akon City](https://akoncity.com/)
   watch [the visual presentation](https://www.youtube.com/watch?v=-UdXHtrs_Ho)
