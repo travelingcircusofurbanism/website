@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Thu, 30 Dec 2021 15:16:56 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jan 2022 10:27:51 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -17,12 +17,12 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
-            <title><![CDATA[Decoloing African cities in the future — L’Africaine d’architecture & WoeLab]]></title>
+            <title><![CDATA[Decolonizing African cities in the future — L’Africaine d’architecture & WoeLab]]></title>
             <link>https://www.travelingcircusofurbanism.com/lome/WoeLab</link>
             <guid>/lome/WoeLab</guid>
             <pubDate>Thu, 30 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
-<p><img src="woelab" alt=""></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab1.jpg"></p>
 <p>It was in Amsterdam last year when my friend, a french urbanist <a href="https://www.linkedin.com/in/juliencarbonnell/?locale=en_US">Julien Carbonnell</a>, and I have decided to organize an exploration journey throughout the multiple African cities. Living in the Netherlands, I was becoming more and more curious about the important part of the world which I had been so mentally distant from — Africa. African cities are growing, and in near future, many of the mega-cities in the world will be located in Africa. When we think about it, it's a very strange thing that we don't know much of their cities — not only about its history per se — but its happenings, its ambitions, its future.</p>
 <p>Almost all the media I'm following are in favor of covering the western, developed part of the world, so I knew that I would never understand African cities unless I drive into them. That's how we have come up with a self-funded exploration trip that is not so much about sightseeing but about researching, collaborating, and doing some short-term projects in various cities in Africa.</p>
 <p>First stop, Togo.</p>
@@ -37,9 +37,12 @@
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab3.jpg"><br>
 <em>Urbanattic, an urban farming project to utilize unused spaces in Lomé, grows some amazing organic vegetables for a community.</em><br>
 <img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab8.jpg"></p>
+<p>Since July 2012, the association has been testing its urban utopia in Lomé; &quot;HubCité Africaines&quot;, which triggered the establishment of the WoeLab incubator network, which has become the center of the Togolese tech-scene.</p>
+<p>The HubCity project is about building a smart city from below with city dwellers. It includes various programs and startup initiatives within a radius of 1 km around WoeLab, addressing different urban issues; waste management (SCoPE), food and energy resources (Urbanattic), digital currency (Sys'Woe), etc. All of the projects are managed and owned collectively, making it possible to foreshadow pioneering digital collectivism in the critique of digital capitalism.</p>
+<p>One of the important concepts here is &quot;Low-High Tech&quot; — an hommage of <a href="https://highlowtech.org/">High-Low Tech</a> Lab, led by Assistant Professor Leah Buechley at MIT Media Lab. While High-Low Tech Lab freely creates objects by blending technologically-sophisticated items with craftsy materials beyond real-world applicability, &quot;Low-High Tech&quot;, a concept developed by Sénamé Koffi, brings the idea into everyday needs of people in Africa, where there is a high demand for basic infrastructure and services. &quot;Low-High Tech&quot; puts forward a contentious concept, namely, the need for creating things anew for everyday people with minimum available resources. Their project, HubCity, is conducted based on the idea — creating a bottom-up smart city with minimum resources, instead of spending billions of dollars to build it like many of the other smart city projects.</p>
 <p>They're now preparing for a new stage of their project — creating a tech hub using multiple containers to offer various digital services for the emerging creative community in Togo. We'll be staying here until the end of January 2022, to help them document their projects and fund-raising. I'll keep you posted to introduce more about their projects!</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab4.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Urbanist's Guide to Lomé, Togo]]></title>
@@ -47,11 +50,10 @@
             <guid>/lome/introduction</guid>
             <pubDate>Tue, 21 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/introduction/med/woelab.jpeg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/introduction/med/woelab.jpg"></p>
 <p>Here I am. I moved to Lomé, the capital city of Togo, Africa!</p>
 <p>I'll be working and exploring some of the cities of Africa until the next summer with a talented urbanist and a fantastic co-worker, <a href="https://www.linkedin.com/in/juliencarbonnell/?locale=en_US">Julien Carbonnell</a>. The initiative I've joined in Togo is called WɔɛLab, created by <a href="https://sename.hubcity.site/">Sénamé Koffi A.</a>, a community-based incubation hub that encourages smart-city development in a local context and educates the local community with digital technology. It's eye-opening to learn what they have achieved here, from creating the first &quot;Made in Africa&quot; 3D printer from e-waste, to tackling plastic-waste issues, to creating a local digital currency system, and urban farming, and beyond. I'll be here until the end of January 2022, until I moved to the next destination, Cameroon.</p>
 <p>This is a list of urbanism-related happenings in Lomé. I'm still trying to understand the city and its culture, so the list will be constantly updated as I discover more. You can also listen to the everyday sound of Lomé that I've gathered on <a href="https://soundcloud.com/traveling-circus-of-urbanism/sets/sound-of-lome?si=64071b5147214b59a71b5e9832e25e7e&amp;utm_source=clipboard&amp;utm_medium=text&amp;utm_campaign=social_sharing">Soundcloud</a>, which will be updated along the way also.</p>
-<p>instagram / songs / novels / design / architecture / books&amp;publication</p>
 <h3>Things to do, places to go</h3>
 <ul>
 <li>
@@ -83,11 +85,14 @@
 <p><a href="https://www.youtube.com/channel/UCQF4sKBKsFnwGWHvjrIaQTA/videos">L'Africaine d'architecture</a> is an organization to encourage a democratic process of architecture in a local African context, established by Sénamé Koffi.</p>
 </li>
 <li>
-<p>For music lovers, I love the work of a designer and filmmaker <a href="https://www.instagram.com/elom20ce/?hl=en">Elom 20ce</a>, and rapper <a href="https://www.youtube.com/watch?v=WO6PErjq58A">fofo skarfo</a>.</p>
+<p><a href="https://www.facebook.com/KOUTEMPA.and.DAHOUN/">Afro architecture Corporation</a> is a center to promote and document the knowledge of African indigenous architecture and its knowledge.</p>
+</li>
+<li>
+<p>For music lovers, I love the work of a designer and filmmaker <a href="https://www.instagram.com/elom20ce/?hl=en">Elom 20ce</a>, and a rapper <a href="https://www.youtube.com/watch?v=WO6PErjq58A">fofo skarfo</a>. Their creations are the representation of their pan-African identities and critical approach towards the existing paradigm.</p>
 </li>
 </ul>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/introduction/med/woelab.jpeg" length="0" type="image/jpeg"/>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/introduction/med/woelab.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Storytelling in architecture design]]></title>
@@ -378,7 +383,7 @@
             <description><![CDATA[
 <p>This <a href="https://medium.com/the-urban-condition/what-is-urban-planning-97b1b9f40efa">post</a> was originally published in <a href="https://medium.com/the-urban-condition">The Urban Condition</a> by Aushaf Widisto (aka Oswald / Oz), who is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. It's a great introduction for urban planning, whether you're already in the industry or not.</p>
 <hr>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/whatisurbanplanning/med/0_0gUH_NjadhawGqgr.jpeg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/whatisurbanplanning/med/0_0gUH_NjadhawGqgr.jpg"></p>
 <p><em>“A city is more than a place in space, it is a drama in time.” ― Patrick Geddes</em></p>
 <p>In 2007, <a href="https://ourworldindata.org/urbanization">the world’s urban population surpassed its rural counterpart</a>. This occurrence marked a major turning point in the history of human civilization. More than half of the entire human species — that’s approximately 4 billion people — now lives in urban areas.</p>
 <p>Cities are now, officially, the most human place on earth.</p>
@@ -418,7 +423,7 @@
 <em>“By far the greatest and most admirable form of wisdom is that needed to plan and beautify cities and human communities.”</em></p>
 <p>Urban planners, your work matters. Do it wisely.</p>
 <hr>
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/whatisurbanplanning/med/Aushaf.jpeg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/whatisurbanplanning/med/Aushaf.jpg"></p>
 <p><em>Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban &amp; Regional Planning at Institut Teknologi Bandung and Cultural &amp; Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his <a href="https://oswalds.medium.com/">Medium page</a>, where he also manages an urbanism publication called <a href="http://medium.com/the-urban-condition">The Urban Condition</a>.</em></p>
 ]]></description>
             <enclosure url="https://www.travelingcircusofurbanism.com/posts/elsewhere/whatisurbanplanning/med/0_0gUH_NjadhawGqgr.jpeg" length="0" type="image/jpeg"/>
