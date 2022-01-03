@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Mon, 03 Jan 2022 13:17:01 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 03 Jan 2022 14:58:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -17,7 +17,7 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
-            <title><![CDATA[Understanding urbanism in Africa]]></title>
+            <title><![CDATA[Things to help me understand urbanism in Africa / Basic Introduction]]></title>
             <link>https://www.travelingcircusofurbanism.com/africa/introduction</link>
             <guid>/africa/introduction</guid>
             <pubDate>Mon, 03 Jan 2022 00:00:00 GMT</pubDate>
