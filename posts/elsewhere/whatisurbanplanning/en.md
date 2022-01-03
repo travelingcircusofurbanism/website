@@ -4,7 +4,7 @@ This [post](https://medium.com/the-urban-condition/what-is-urban-planning-97b1b9
 
 ---
 
-![](0_0gUH_NjadhawGqgr.jpeg)
+![](0_0gUH_NjadhawGqgr.jpg)
 
 _“A city is more than a place in space, it is a drama in time.” ― Patrick Geddes_
 
@@ -81,6 +81,6 @@ Urban planners, your work matters. Do it wisely.
 
 ---
 
-![](Aushaf.jpeg)
+![](Aushaf.jpg)
 
 _Aushaf is an aspiring Urbanist, Writer, and Cultural Researcher based in Melbourne, Australia. Having studied Urban & Regional Planning at Institut Teknologi Bandung and Cultural & Creative Industries at Monash University, he combines these two disciplines to specialize in Creative City Planning, Placemaking, and Arts/Culture-led Regeneration. Ultimately, his goal is to leverage arts and culture to create better cities and communities. Some of Aushaf’s work can be found on his [Medium page](https://oswalds.medium.com/), where he also manages an urbanism publication called [The Urban Condition](http://medium.com/the-urban-condition)._

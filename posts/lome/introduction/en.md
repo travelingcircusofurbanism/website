@@ -1,14 +1,12 @@
 # Urbanist's Guide to Lomé, Togo
 
-![](woelab.jpeg)
+![](woelab.jpg)
 
 Here I am. I moved to Lomé, the capital city of Togo, Africa!
 
 I'll be working and exploring some of the cities of Africa until the next summer with a talented urbanist and a fantastic co-worker, [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US). The initiative I've joined in Togo is called WɔɛLab, created by [Sénamé Koffi A.](https://sename.hubcity.site/), a community-based incubation hub that encourages smart-city development in a local context and educates the local community with digital technology. It's eye-opening to learn what they have achieved here, from creating the first "Made in Africa" 3D printer from e-waste, to tackling plastic-waste issues, to creating a local digital currency system, and urban farming, and beyond. I'll be here until the end of January 2022, until I moved to the next destination, Cameroon.
 
 This is a list of urbanism-related happenings in Lomé. I'm still trying to understand the city and its culture, so the list will be constantly updated as I discover more. You can also listen to the everyday sound of Lomé that I've gathered on [Soundcloud](https://soundcloud.com/traveling-circus-of-urbanism/sets/sound-of-lome?si=64071b5147214b59a71b5e9832e25e7e&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing), which will be updated along the way also.
-
-instagram / songs / novels / design / architecture / books&publication
 
 ### Things to do, places to go
 
@@ -32,4 +30,6 @@ instagram / songs / novels / design / architecture / books&publication
 
 - [L'Africaine d'architecture](https://www.youtube.com/channel/UCQF4sKBKsFnwGWHvjrIaQTA/videos) is an organization to encourage a democratic process of architecture in a local African context, established by Sénamé Koffi.
 
-- For music lovers, I love the work of a designer and filmmaker [Elom 20ce](https://www.instagram.com/elom20ce/?hl=en), and rapper [fofo skarfo](https://www.youtube.com/watch?v=WO6PErjq58A).
+- [Afro architecture Corporation](https://www.facebook.com/KOUTEMPA.and.DAHOUN/) is a center to promote and document the knowledge of African indigenous architecture and its knowledge.
+
+- For music lovers, I love the work of a designer and filmmaker [Elom 20ce](https://www.instagram.com/elom20ce/?hl=en), and a rapper [fofo skarfo](https://www.youtube.com/watch?v=WO6PErjq58A). Their creations are the representation of their pan-African identities and critical approach towards the existing paradigm.
