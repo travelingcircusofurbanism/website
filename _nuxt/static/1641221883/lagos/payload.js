@@ -1,1 +1,0 @@
-__NUXT_JSONP__("/lagos", (function(a){return {data:[{posts:[],city:a}],fetch:{},mutations:[["setBreadcrumbs",[{label:a,url:"\u002Flagos"}]]]}}("lagos")));
