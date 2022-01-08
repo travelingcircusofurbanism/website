@@ -5,7 +5,9 @@
 <script>
 import axios from 'axios'
 import PostListPage from '~/components/PostListPage'
-const { capitalize } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+} = require('~/assets/commonFunctions.js')
 
 export default {
   components: {
@@ -15,14 +17,20 @@ export default {
   layout: 'default',
   head() {
     const description = `Urbanist case studies, interviews, and stories from ${this.capitalize(
-      this.city
+      this.city,
     )} on the Traveling Circus of Urbanism.`
     const meta = [
       {
         property: 'og:title',
-        content: `${this.capitalize(this.city)} | Traveling Circus of Urbanism`,
+        content: `${this.capitalize(
+          this.city,
+        )} | Traveling Circus of Urbanism`,
       },
-      { hid: 'description', name: 'description', content: description },
+      {
+        hid: 'description',
+        name: 'description',
+        content: description,
+      },
       {
         hid: 'og:description',
         property: 'og:description',
@@ -47,7 +55,7 @@ export default {
       meta.push({
         rel: 'canonical',
         href: `https://www.travelingcircusofurbanism.com${this.switchLocalePath(
-          this.$i18n.locale === 'ja' ? 'en' : 'ja'
+          this.$i18n.locale === 'ja' ? 'en' : 'ja',
         )}`,
       })
       meta.push({
@@ -62,7 +70,9 @@ export default {
     }
   },
   async asyncData({ route, redirect, error, store, app }) {
-    const city = decodeURIComponent(decodeURIComponent(route.path)) // don't ask
+    const city = decodeURIComponent(
+      decodeURIComponent(route.path),
+    ) // don't ask
       .replace('/ja/', '/')
       .replace(/\//g, '')
       .replace(/\/$/, '')
@@ -71,7 +81,7 @@ export default {
     let posts = (store.viewingAsDev
       ? store.state.allPosts
       : store.state.currentShowablePosts
-    ).filter(p => p.city.toLowerCase() === city)
+    ).filter((p) => p.city.toLowerCase() === city)
 
     let cities = []
     if (process.server && !process.client) {
@@ -80,7 +90,10 @@ export default {
       if (process.server) fs = require('fs')
       try {
         cities = JSON.parse(
-          fs.readFileSync('./nuxt/static/generated/cities.json', 'utf8')
+          fs.readFileSync(
+            './nuxt/static/generated/cities.json',
+            'utf8',
+          ),
         )
       } catch (e) {
         console.log(e)
@@ -89,27 +102,37 @@ export default {
       // have to use axios on the browser. yes, asyncData runs between pages on the browser. idk why.
       try {
         const axiosConfig = {
-          validateStatus: status => true,
+          validateStatus: (status) => true,
         }
         await axios
           .get('/generated/cities.json', axiosConfig)
-          .then(response => (cities = response.data))
-          .catch(e => console.log(e))
+          .then((response) => (cities = response.data))
+          .catch((e) => console.log(e))
       } catch (e) {
         console.log(e)
-        return error({ statusCode: 404, message: 'Page not found.' })
+        return error({
+          statusCode: 404,
+          message: 'Page not found.',
+        })
       }
     }
 
-    if (!cities.includes(city))
-      return error({ statusCode: 404, message: 'Page not found.' })
+    if (
+      !cities.find(
+        (c) => c.toLowerCase() === city.toLowerCase(),
+      )
+    )
+      return error({
+        statusCode: 404,
+        message: 'Page not found.',
+      })
 
     if (posts.length === 1)
       return redirect(
         app.localePath({
           name: 'city-post',
           params: { city, post: posts[0].slug },
-        })
+        }),
       )
     return {
       posts,

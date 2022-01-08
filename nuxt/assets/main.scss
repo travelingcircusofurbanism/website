@@ -174,7 +174,8 @@ h4 {
       padding: $content-padding-mobile;
 
       &.mini {
-        padding: $content-padding-mobile / 2 $content-padding-mobile;
+        padding: calc($content-padding-mobile / 2)
+          $content-padding-mobile;
       }
     }
   }

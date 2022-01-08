@@ -1,13 +1,19 @@
 <template>
   <transition name="fade">
-    <div class="fullscreenoverlay" v-if="isMobile && isOpen">
+    <div
+      class="fullscreenoverlay"
+      v-if="isMobile && isOpen"
+    >
       <div class="closebutton" @click="close">
         <div>✕</div>
       </div>
       <div class="megalist">
         <div class="listsectionlabel sitename">
           <nuxt-link to="/" @click.native="close" exact>
-            <img src="~/static/assets/logo vert blue.svg" alt="logo" />
+            <img
+              src="~/static/assets/logo vert blue.svg"
+              alt="logo"
+            />
           </nuxt-link>
         </div>
 
@@ -78,7 +84,10 @@
               href="https://www.instagram.com/mariko_urbannomad/"
               target="_blank"
             >
-              <img src="~/assets/icons/instagram.svg" alt="Instagram" />
+              <img
+                src="~/assets/icons/instagram.svg"
+                alt="Instagram"
+              />
             </a>
             <a
               class="thumb"
@@ -127,7 +136,9 @@
             :to="
               localePath({
                 name: 'city',
-                params: { city: element.label.replace(/\//g, '%2F') },
+                params: {
+                  city: element.label.replace(/\//g, '%2F'),
+                },
               })
             "
             @click.native="close"
@@ -144,7 +155,9 @@
 </template>
 
 <script>
-const { capitalize } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+} = require('~/assets/commonFunctions.js')
 
 export default {
   props: {},
@@ -163,24 +176,35 @@ export default {
     },
     orderedCities() {
       const cityFrequency = {}
-      this.currentShowablePosts.forEach(p => {
+      this.currentShowablePosts.forEach((p) => {
         const cityName = p.city.toLowerCase()
-        cityFrequency[cityName] = (cityFrequency[cityName] || 0) + 1
+        cityFrequency[cityName] =
+          (cityFrequency[cityName] || 0) + 1
       })
       return Object.keys(cityFrequency)
-        .map(key => ({ label: key, count: cityFrequency[key] }))
+        .map((key) => ({
+          label: key,
+          count: cityFrequency[key],
+        }))
         .sort((a, b) => (a.label > b.label ? 1 : -1))
     },
 
     orderedCategories() {
       const typeFrequency = {}
-      this.currentShowablePosts.forEach(p => {
+      this.currentShowablePosts.forEach((p) => {
         const typeName = p.category.toLowerCase()
-        typeFrequency[typeName] = (typeFrequency[typeName] || 0) + 1
+        typeFrequency[typeName] =
+          (typeFrequency[typeName] || 0) + 1
       })
       return Object.keys(typeFrequency)
-        .map(key => ({ label: key, count: typeFrequency[key] }))
-        .sort((a, b) => typeFrequency[b.label] - typeFrequency[a.label])
+        .map((key) => ({
+          label: key,
+          count: typeFrequency[key],
+        }))
+        .sort(
+          (a, b) =>
+            typeFrequency[b.label] - typeFrequency[a.label],
+        )
     },
   },
   methods: {
@@ -190,7 +214,10 @@ export default {
     },
     close() {
       this.$nextTick(() => {
-        this.$store.commit('setMobileSearchSelectorIsOpen', false)
+        this.$store.commit(
+          'setMobileSearchSelectorIsOpen',
+          false,
+        )
       })
     },
   },
@@ -212,7 +239,8 @@ $overlaybg: rgba($text, 1);
   width: 100vw;
   color: white;
   transition: all 0.2s;
-  padding: $content-padding-mobile * 2 $content-padding-mobile;
+  padding: $content-padding-mobile * 2
+    $content-padding-mobile;
 
   .closebutton {
     position: fixed;
@@ -260,7 +288,8 @@ $overlaybg: rgba($text, 1);
       display: block;
       color: rgba(white, 0.7);
       text-decoration: none;
-      padding: $unit / 1.5 $unit * 4 $unit / 1.5 $unit * 12;
+      padding: calc($unit / 1.5) $unit * 4 calc($unit / 1.5)
+        $unit * 12;
       transition: all 0.2s;
 
       @include width(mobile) {
@@ -275,7 +304,7 @@ $overlaybg: rgba($text, 1);
 }
 
 .thumb {
-  padding: $unit * 1.8 $content-padding-mobile / 5;
+  padding: $unit * 1.8 calc($content-padding-mobile / 5);
   margin-right: $unit * 2;
 
   img {

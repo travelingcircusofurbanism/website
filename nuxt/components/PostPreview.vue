@@ -30,7 +30,10 @@
         :to="
           localePath({
             name: 'city-post',
-            params: { city, post: slug.toLowerCase() },
+            params: {
+              city,
+              post: slug,
+            },
           })
         "
         class="titlelink"
@@ -241,7 +244,7 @@ export default {
     display: block;
   }
   // grid-template-columns: 1fr;
-  // grid-gap: $unit * 2;
+  // gap: $unit * 2;
   // min-height: $unit * 40;
 
   .previewimage {
@@ -270,7 +273,7 @@ export default {
 
   @include width(mobile) {
     min-height: auto;
-    grid-gap: $unit * 3;
+    gap: $unit * 3;
 
     .previewimage {
       height: auto;

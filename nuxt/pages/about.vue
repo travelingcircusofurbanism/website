@@ -295,7 +295,7 @@ img {
   margin: 0 0 $unit * 8 0;
   display: grid;
   grid-template-columns: $img-height 1fr;
-  grid-gap: $unit * 4;
+  gap: $unit * 4;
 
   @include width(mobile) {
     grid-template-columns: 1fr;
@@ -305,7 +305,7 @@ img {
   & > img {
     width: $img-height;
     height: $img-height;
-    border-radius: $img-height / 2;
+    border-radius: calc($img-height / 2);
     @include width(mobile) {
       margin: 0 auto;
     }

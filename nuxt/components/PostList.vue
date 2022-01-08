@@ -136,7 +136,7 @@ export default {
   display: grid;
   width: 100%;
   grid-template-columns: 1fr 1fr;
-  grid-gap: $unit * 6 $unit * 3;
+  gap: $unit * 6 $unit * 3;
 
   @include width(mobile) {
     grid-template-columns: 1fr;

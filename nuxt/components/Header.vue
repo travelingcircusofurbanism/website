@@ -1,6 +1,13 @@
 <template>
-  <div id="header" :class="{ hide: scrollDirection === 'down' }">
-    <div class="hamburger" v-if="isMobile" @click="openMobileSearchSelector">
+  <div
+    id="header"
+    :class="{ hide: scrollDirection === 'down' }"
+  >
+    <div
+      class="hamburger"
+      v-if="isMobile"
+      @click="openMobileSearchSelector"
+    >
       <svg
         width="122px"
         height="85px"
@@ -42,7 +49,11 @@
         :class="{ currentpage: path === '/contribute' }"
         >Contribute</nuxt-link
       >
-      <a href="https://travelingurbanism.stores.jp/" target="_blank">Zines</a>
+      <a
+        href="https://travelingurbanism.stores.jp/"
+        target="_blank"
+        >Zines</a
+      >
       <nuxt-link
         :to="localePath('bridgeto')"
         :class="{ currentpage: path === '/bridgeto' }"
@@ -58,7 +69,10 @@
         href="https://www.instagram.com/mariko_urbannomad/"
         target="_blank"
       >
-        <img src="~/assets/icons/instagramblack.svg" alt="Instagram" />
+        <img
+          src="~/assets/icons/instagramblack.svg"
+          alt="Instagram"
+        />
       </a>
       <a
         class="thumb"
@@ -105,12 +119,20 @@ export default {
     //   this.$router.replace(this.switchLocalePath(newLocale))
     // },
     resetView() {
-      this.$store.commit('setView', this.$store.state.currentShowablePosts)
+      this.$store.commit(
+        'setView',
+        this.$store.state.currentShowablePosts,
+      )
       this.$store.commit('setPan', false)
-      this.$nextTick(() => this.$store.commit('setPan', true))
+      this.$nextTick(() =>
+        this.$store.commit('setPan', true),
+      )
     },
     openMobileSearchSelector() {
-      this.$store.commit('setMobileSearchSelectorIsOpen', true)
+      this.$store.commit(
+        'setMobileSearchSelectorIsOpen',
+        true,
+      )
     },
   },
 }
@@ -190,7 +212,11 @@ a:active {
   position: relative;
   padding: $unit * 2.5 $unit * 3.8 $unit * 0.5 $unit * 4;
   background: $active;
-  background: linear-gradient(to right, $active, lighten($active, 3%));
+  background: linear-gradient(
+    to right,
+    $active,
+    lighten($active, 3%)
+  );
   height: $unit * 8;
   width: 100%;
 
@@ -238,9 +264,14 @@ a:active {
   pointer-events: none;
   // background: darken($text, 2%);
   background: $active;
-  background: linear-gradient(to right, $active, lighten($active, 3%));
+  background: linear-gradient(
+    to right,
+    $active,
+    lighten($active, 3%)
+  );
   width: 100%;
-  padding: 0 $content-padding / 3.3 0 $content-padding / 5;
+  padding: 0 calc($content-padding / 3.3) 0
+    calc($content-padding / 5);
 
   &.hasshadow {
     box-shadow: $over-map-shadow;
@@ -252,7 +283,7 @@ a:active {
 
   & > a {
     text-align: center;
-    padding: $unit * 1.8 $content-padding / 3.5;
+    padding: $unit * 1.8 calc($content-padding / 3.5);
     position: relative;
     display: inline-block;
     white-space: nowrap;
@@ -305,17 +336,17 @@ a:active {
     }
 
     &.thumb {
-      padding: $unit * 1.8 $content-padding / 5;
+      padding: $unit * 1.8 calc($content-padding / 5);
     }
     img {
       height: 1.15em;
       position: relative;
       top: -0.08em;
 
-      &.facebook {
-        // height: 1.05em;
-        // top: -0.03em;
-      }
+      // &.facebook {
+      // height: 1.05em;
+      // top: -0.03em;
+      // }
     }
   }
 }

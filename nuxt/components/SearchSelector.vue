@@ -360,7 +360,7 @@ export default {
       display: flex;
       align-items: center;
       top: 0;
-      right: $content-padding/2;
+      right: calc($content-padding/2);
       bottom: 0;
       transition: all 0.2s;
 
@@ -436,7 +436,8 @@ export default {
       display: block;
       color: rgba(white, 0.7);
       text-decoration: none;
-      padding: $unit / 1.5 $unit * 4 $unit / 1.5 $unit * 16;
+      padding: calc($unit / 1.5) $unit * 4 calc($unit / 1.5)
+        $unit * 16;
       transition: all 0.2s;
 
       &:hover {

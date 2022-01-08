@@ -5,8 +5,9 @@
   "author": "Mariko Sugita & Jasper Stephenson",
   "private": true,
   "engines": {
-    "node": "v12.22.1"
+    "node": "v16.11.0"
   },
+  "browserslist": "cover 99.5%",
   "scripts": {
     "v": "node -v",
     "analyze": "nuxt build -a",
@@ -18,22 +19,19 @@
     "golive": "npm run cleanup && git pull && git add . && git commit -m \"Auto-pushing to live\" && git push"
   },
   "dependencies": {
-    "@babel/plugin-proposal-object-rest-spread": "^7.14.4",
-    "@babel/plugin-syntax-dynamic-import": "^7.8.3",
     "@nuxtjs/feed": "^2.0.0",
     "@nuxtjs/google-analytics": "^2.4.0",
     "axios": "^0.21.1",
     "dotenv": "^10.0.0",
     "mapbox-gl": "^2.3.0",
     "markdown-it": "^12.0.6",
-    "node-sass": "^5.0.0",
-    "nuxt": "^2.15.6",
+    "nuxt": "^2.15.8",
     "nuxt-i18n": "^6.27.0",
     "polylabel": "^1.1.0",
+    "sass": "^1.46.0",
     "sass-loader": "^10.1.1",
     "sharp": "^0.28.3",
-    "supercluster": "^7.1.3",
-    "vue-loader": "^15.9.7"
+    "supercluster": "^7.1.3"
   },
   "devDependencies": {
     "@nuxtjs/sitemap": "^2.4.0",

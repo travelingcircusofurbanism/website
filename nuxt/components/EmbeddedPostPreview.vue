@@ -1,9 +1,15 @@
 <template>
   <a :href="url">
-    <div class="post-preview" v-on="{mouseenter: mouseOver, mouseleave: mouseOut}">
-      <div v-lazy:background-image="image" class="previewimage"></div>
+    <div
+      class="post-preview"
+      v-on="{ mouseenter: mouseOver, mouseleave: mouseOut }"
+    >
+      <div
+        v-lazy:background-image="image"
+        class="previewimage"
+      ></div>
 
-      <div class="rightside">
+      <div class="pp-rightside">
         <h4>{{ title }}</h4>
 
         <PostDetails :category="category" :city="city" />
@@ -12,13 +18,23 @@
   </a>
 </template>
 
-
 <script>
-const { capitalize, softTruncate } = require('~/assets/commonFunctions.js')
+const {
+  capitalize,
+  softTruncate,
+} = require('~/assets/commonFunctions.js')
 import PostDetails from '~/components/PostDetails'
 
 export default {
-  props: ['url', 'image', 'title', 'category', 'city', 'date', 'mapPosition'],
+  props: [
+    'url',
+    'image',
+    'title',
+    'category',
+    'city',
+    'date',
+    'mapPosition',
+  ],
   components: { PostDetails },
   computed: {
     isMobile() {
@@ -72,12 +88,13 @@ a:active {
   margin-top: $unit * 3;
   display: grid;
   grid-template-columns: $unit * 20 1fr;
-  grid-gap: $unit * 3;
+  gap: $unit * 3;
   min-height: $unit * 15;
   text-align: left;
   border: 1px solid $shade;
   transition: all 0.4s;
-  box-shadow: 0 $unit / 2 $unit / 2 darken($shade, 7%),
+  box-shadow: 0 calc($unit / 2) calc($unit / 2)
+      darken($shade, 7%),
     0 $unit * 2 $unit * 2 darken($shade, 2%);
 
   &:hover {
@@ -102,10 +119,10 @@ a:active {
 
   @include width(mobile) {
     min-height: auto;
-    grid-gap: $unit * 3;
+    gap: $unit * 3;
   }
 
-  .rightside {
+  .pp-rightside {
     display: flex;
     flex-direction: column;
     justify-content: center;

@@ -302,11 +302,11 @@ export default {
   background-image: url('~assets/introbg.jpg');
   background-size: cover;
   // padding-top: $unit * 8;
-  padding-bottom: $unit * 6;
+  padding-bottom: calc($unit * 6);
   padding-left: 0;
   padding-right: 0;
   width: auto;
-  margin-bottom: $unit * 5;
+  margin-bottom: calc($unit * 5);
   color: white;
   background-color: rgba(0, 0, 0, 0.1);
   background-blend-mode: multiply;
@@ -342,7 +342,7 @@ export default {
   .frame1,
   .frame2 {
     position: absolute;
-    top: $unit * 4;
+    top: calc($unit * 4);
     width: 100%;
     transition: transform 0.5s, opacity 0.5s;
   }
@@ -361,12 +361,14 @@ export default {
   .explorecontent {
     margin-left: auto;
     margin-right: auto;
-    max-width: $unit * 100 + $content-padding * 2;
+    max-width: calc($unit * 100 + $content-padding * 2);
     padding: 0 $content-padding;
 
     @include width(mobile) {
       padding: 0 $content-padding-mobile;
-      max-width: $unit * 100 + $content-padding-mobile * 2;
+      max-width: calc(
+        $unit * 100 + $content-padding-mobile * 2
+      );
     }
   }
 
@@ -379,19 +381,19 @@ export default {
   .explorecontent {
     display: grid;
     grid-template-columns: 56px 1fr 50px;
-    grid-gap: $unit * 2;
+    gap: calc($unit * 2);
 
     @include width(mobile) {
       grid-template-columns: 1fr 50px;
-      grid-gap: $unit;
+      gap: $unit;
     }
 
     img.arrows {
-      margin-top: $unit * 0.5;
+      margin-top: calc($unit * 0.5);
       width: 100%;
 
       &.ja {
-        margin-top: $unit * -1;
+        margin-top: calc($unit * -1);
         width: 43px;
       }
     }
@@ -406,14 +408,14 @@ export default {
       @include width(mobile) {
         display: grid;
         grid-template-columns: 1.3em 1fr;
-        grid-gap: 1em;
+        gap: 1em;
       }
     }
 
     .x {
       width: 50px;
       height: 50px;
-      margin-top: $unit * 2;
+      margin-top: calc($unit * 2);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -436,10 +438,10 @@ export default {
     color: $text;
     font-size: 50px;
     line-height: 1.1;
-    margin: $unit * 3 0;
+    margin: calc($unit * 3) 0;
     font-weight: 700;
     color: white;
-    max-width: $unit * 90;
+    max-width: calc($unit * 90);
 
     &.ja {
       font-size: 40px;
@@ -451,39 +453,39 @@ export default {
 
     @include width(mobile) {
       font-size: 2rem;
-      margin: $unit * 2.5 0 $unit * 3 0;
+      margin: calc($unit * 2.5) 0 calc($unit * 3) 0;
     }
   }
 
   p {
-    margin: $unit * 3.7 0;
-    max-width: $unit * 80;
+    margin: calc($unit * 3.7) 0;
+    max-width: calc($unit * 80);
     font-weight: 600;
 
     &.ja {
-      margin: $unit * 2 0;
+      margin: calc($unit * 2) 0;
     }
 
     @include width(mobile) {
-      margin: $unit * 2 0;
+      margin: calc($unit * 2) 0;
     }
   }
 
   .buttons {
     display: flex;
     // justify-content: center;
-    margin-top: $unit * 4;
+    margin-top: calc($unit * 4);
 
     .button {
       font-weight: 600;
       color: white;
       text-decoration: none;
-      // margin-left: $unit * 2;
-      margin-right: $unit * 4;
+      // margin-left: calc($unit * 2);
+      margin-right: calc($unit * 4);
       white-space: nowrap;
 
       @include width(mobile) {
-        margin-right: $unit * 2;
+        margin-right: calc($unit * 2);
       }
 
       &:nth-child(1) {
