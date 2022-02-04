@@ -28,3 +28,8 @@ The HubCity project is about building a smart city from below with city dwellers
 One of the important concepts here is "Low-High Tech" — an hommage of [High-Low Tech](https://highlowtech.org/) Lab, led by Assistant Professor Leah Buechley at MIT Media Lab. While High-Low Tech Lab freely creates objects by blending technologically-sophisticated items with craftsy materials beyond real-world applicability, "Low-High Tech", a concept developed by Sénamé Koffi, brings the idea into everyday needs of people in Africa, where there is a high demand for basic infrastructure and services. "Low-High Tech" puts forward a contentious concept, namely, the need for creating things anew for everyday people with minimum available resources. Their project, HubCity, is conducted based on the idea — creating a bottom-up smart city with minimum resources, instead of spending billions of dollars to build it like many of the other smart city projects.
 
 They're now preparing for a new stage of their project — creating a tech hub using multiple containers to offer various digital services for the emerging creative community in Togo. We'll be staying here until the end of January 2022, to help them document their projects and fund-raising. I'll keep you posted to introduce more about their projects!
+
+![](woe1.jpg)
+![](woe2.jpg)
+![](woe3.jpg)
+![](woe4.jpg)

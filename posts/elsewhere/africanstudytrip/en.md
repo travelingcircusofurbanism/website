@@ -5,8 +5,7 @@ _Photo by Sandy Ravaloniaina on Unsplash_
 
 ## Call for participants
 
-Urban development trip in Africa **October 2021 - July 2022**
-**Democracy Studio & for Cities** collaborating with Traveling Circus of Urbanism
+**Democracy Studio & for Cities** collaborating with Traveling Circus of Urbanism on urban exploration trip in Africa **from October 2021 to July 2022**
 
 The African continent will host one-third of the world population in the next generation and went these last years through social, economical, and environmental transformations at a spectacular size and speed. Julien Carbonnell ([Democracy Studio](https://amzn.to/3xeNhOm)) and Mariko Sugita ([for Cities](https://www.forcities.org/)) collaborate through the Traveling Circus of Urbanism to explore the African urban development and digital transformation by joining different local projects and providing a temporary workforce to accelerate their achievements.
 

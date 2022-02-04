@@ -1,35 +1,33 @@
 # Urbanist's Guide to Lomé, Togo
 
-![](woelab.jpeg)
+![]()
 
-Here I am. I moved to Lomé, the capital city of Togo, Africa!
+African cities are rising. According to [The Washington Post](https://www.washingtonpost.com/world/interactive/2021/africa-cities/), ...
 
-Also, take a look at this incredible [map](https://www.google.com/maps/d/u/0/viewer?mid=1xW9oEWFacYf_aTcS1MC-wtzAN9aBh0Lt&hl=en&ll=-3.81666561775622e-14%2C-77.32611827241455&z=1) by [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US). His [article](https://medium.com/urban-ai/perspective-african-smart-city-and-civic-technology-e2b22a53f705) about citizen engagement in smart-city and civic technology is worth reading as well to get a bigger picture.
+There are many smart city initiatives in Africa.
 
-- [Akon City](https://akoncity.com/)
-  watch [the visual presentation](https://www.youtube.com/watch?v=-UdXHtrs_Ho)
-  I enjoyed watching [the interview](https://www.youtube.com/watch?v=KBxIhGqVl6E) with Al Jazeera
+Also, take a look at this [map](https://www.google.com/maps/d/u/0/viewer?mid=1xW9oEWFacYf_aTcS1MC-wtzAN9aBh0Lt&hl=en&ll=-3.81666561775622e-14%2C-77.32611827241455&z=1) by [Julien Carbonnell](https://www.linkedin.com/in/juliencarbonnell/?locale=en_US). His [article](https://medium.com/urban-ai/perspective-african-smart-city-and-civic-technology-e2b22a53f705) about citizen engagement in smart-city and civic technology is worth reading as well to get a bigger picture.
 
-アフリカの仮想通貨とアフロ・フューチャリズム構想
-https://newsphere.jp/economy/20201229-2/2/
-「アフリカの若手起業家のために」歌手エイコンが暗号通貨発行へ　注目の「アフリカ的未来」
-https://newsphere.jp/cryptocurrency/20180719-3/
+Here, I examine some of the smart city projects that are ongoing in Africa right now. The list will be constantly updated as I discover more.
+
+- [Akon City](https://akoncity.com/) might be one of the most famous urban initiatives in Africa right now. The music producer Akon had announced a proposal for $6 billion futuristic city in Senegal, featuring ultramodern twisting skyscrapers and its own digital currency that works withinin it. Watch [the visual presentation](https://www.youtube.com/watch?v=-UdXHtrs_Ho) to see how hyper-modern the designs and ideas are. I enjoyed watching [the interview](https://www.youtube.com/watch?v=KBxIhGqVl6E) with Al Jazeera, where the reporter has some critical eyes on his un-started $6 billion project. Does the future of city need to be constructed by that amount of money? Will local people be able to afford to live there? Is this smart city vision purely for business? These questions are still yet to be answered. I've seens some grassroots, bottom-up initiatives that goes against Akon City's vision, and I also belive that it's always important to listen to the actual people on the ground.
+
+- [Eko Atlantic City](https://www.ekoatlantic.com/)
+  Eko Atlantic is a new coastal city being built on Victoria Island adjacent to Lagos, Nigeria, to solve the chronic shortage of real estate
 
 - [HOPE City](https://www.designindaba.com/articles/point-view/hope-city-aims-turn-ghana-tech-hub-west-africa) in Ghana
 
 - Green City Kigali
   https://newsphere.jp/economy/20211008-2/2/
 
-- [Eko Atlantic City](https://www.ekoatlantic.com/)
-
-- Morroco
+* Morroco
   https://newsphere.jp/economy/20190109-2/2/
 
-- [Sèmè City](https://www.facebook.com/semecity/) in Benin
+* [Sèmè City](https://www.facebook.com/semecity/) in Benin
 
-- [Diamniadio](https://en.wikipedia.org/wiki/Diamniadio)
+* [Diamniadio](https://en.wikipedia.org/wiki/Diamniadio)
 
-- [Gurunsi earth houses of burkina faso](https://www.designboom.com/architecture/gurunsi-earth-houses-of-burkina-faso/)
+* [Gurunsi earth houses of burkina faso](https://www.designboom.com/architecture/gurunsi-earth-houses-of-burkina-faso/)
 
 ---
 
