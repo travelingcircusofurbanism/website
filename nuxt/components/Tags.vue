@@ -1,6 +1,12 @@
 <template>
   <div class="tags sub" v-if="tags && tags.length > 0">
-    <nuxt-link v-for="tag in tags" :key="tag" :to="`/tag/${tag}`" class="tag">#{{tag}}</nuxt-link>
+    <nuxt-link
+      v-for="tag in tags"
+      :key="tag"
+      :to="`/tag/${tag}`"
+      class="tag"
+      >#{{ tag }}</nuxt-link
+    >
   </div>
 </template>
 
@@ -20,7 +26,7 @@ export default {
 
 .tags {
   position: relative;
-  top: $unit * -2;
+  // top: $unit * -2;
 }
 
 .sub {
