@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Sat, 08 Jan 2022 02:09:02 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 05 Feb 2022 10:31:25 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -16,6 +16,74 @@
         <category>Cities</category>
         <category>Design</category>
         <category>Travel</category>
+        <item>
+            <title><![CDATA[Humasn of Lomé: the HubCitizen Project]]></title>
+            <link>https://www.travelingcircusofurbanism.com/lome/humansoflome</link>
+            <guid>/lome/humansoflome</guid>
+            <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>Traveling Circus of Urbanism is a platform for urban narratives that are collected from the world through traveling and dialogues with the citizens of the world. In Lomé, as a collaboration with WoeLab, I was interested in discovering the stories and empirical dataset on/of the streets to highlight the users of the HubCity project by WoeLab. During my stay, I've dedicated my time to face-to-face interviews and photo shooting with (potential) users and people in the neighborhood, as well as conducting participatory surveys. This is how I came up with <a href="https://main--helix--mariko9012.hlx3.page/">the HubCitizen project</a>.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/hubcitizen.png"></p>
+<p>the HubCitizen project is like <a href="https://www.humansofnewyork.com/">Humans of New York</a>. I spent time photographing people on the streets and highlighted thier short stories and their lives alongside their portraits, creating a catalogue of the city’s inhabitants.</p>
+<p>I built a website by uding a new CMS system called <a href="https://www.hlx.live/">Helix</a>, which allows us to do a content management easily via Google Drive. It is such a powerful tool to build experiences through Google Drive with little-to-no training required, so that website can be edited and updated easily by anyone at WoeLab even after I leave. I have chosen the vertical column structure for easy view. All the codes are publicly shared and accessible on <a href="https://github.com/mariko9012/helix">my Github</a>.</p>
+<p>You can watch a summary of what the HubCitizen project is about on the presentation video.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8AiEm5Xg4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>Here is the presentation slide I used during the presentation.</p>
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/3xdIKYgMYBaYeY" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/MarikoSugita/humans-of-lome-project-traveling-circus-of-urbanism" title="Humans of Lomé project: Traveling Circus of Urbanism" target="_blank"></a></strong> </div>
+<p>Here are some of the portlait of people I managed to talk to. Most of them kindly invited me in thier houses, telling me thier stories — what thier everyday is like, what they are passionate about, thier dreams, thier complains.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/lome2.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome2.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome4.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome5.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome7.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome9.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome16.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome19.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome20.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome21.jpg"></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/humansoflome23.jpg"></p>
+<p>To see more portlaits and read thier stories, please check out <a href="https://main--helix--mariko9012.hlx3.page/">the website</a>.</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/humansoflome/med/lome2%20copy.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[Wrapping up my time in Lomé, Togo]]></title>
+            <link>https://www.travelingcircusofurbanism.com/lome/wrapup</link>
+            <guid>/lome/wrapup</guid>
+            <pubDate>Tue, 01 Feb 2022 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>In the <a href="https://www.travelingcircusofurbanism.com/lome/WoeLab">previous post</a>, I explained how I ended up coming to the capital city of Togo and spend two months here to collaborate with <a href="https://sename.hubcity.site/">Sénamé Koffi</a> and <a href="https://www.youtube.com/results?search_query=hubcity+woelab">WoeLab</a>. This small West African country taught me so much and Lomé was such a welcoming gateway to my first journey in Africa.</p>
+<p>You can watch what Julien and I have been doing in collaboration with WoeLab during the two months here.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/F8AiEm5Xg4c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<p>It's hard to summarize everything — but I'll share some of the highlights from the pictures.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome8.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome5.jpg"><br>
+<em>A typical landscape around WoeLab. The whole suburban neighborhoods of Lomé look a bit like this — bare ground, trees, piles of plastic trash on the side, small shops attached to homes, and little shacks made of wood with DIY kind of structures, animals walking around. The suburbs of Lomé thus have a village feel.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome11.jpg"><br>
+<em>The team had organized a week-long design thinking workshop as a training session for the startup owners of WoeLab. By using the example of SCoPe, an initiative to collect plastic waste to fight against pollution, they have mapped out the various social, economical, and cultural contexts, including understanding persona, and future strategies.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome1.jpg"><br>
+<em>In WoeLab, there are always young, ambitious startup owners pitching their ideas and brushing up their business models. It was very inspiring to exchange ideas with them, learning from their practices.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome4.jpg"><br>
+<em>In the complex of WoeLab, there are several urban gardens, where they grow local cabbages and peppers. There are people watering the farms every day, and digital sensors are installed to measure soil conditions such as humidity and temperate.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome6.jpg"><br>
+<em>It was great to see all the edible plants around the cities. Most of the households have large open spaces within their house complex, which often include banana, mango, and palm trees — sometimes avocado or noni. It makes so much sense to have plants at your home that produces delicious food, as well as gently provide shadows to protect us from the harsh sunlight during the daytime.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome7.jpg"><br>
+<em>Another example of DIY structure in the city. This is a shower or bathroom made of galvanized iron sheets, and it is nicely secluded from a street thanks to the bushes around.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome13.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome9.jpg"><br>
+<em>I've spent a lot of time visiting neighbors, especially the users of SCoPE — one of the initiatives of WoeLab — by interviewing them and collecting plastic waste from their households. They have a little device that they can beep with when the trash bag is full, and a team from WoeLab goes out and get the bag. By doing so, I had many opportunities to visit various households and see a glimpse of their everyday lives.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome10.jpg"><br>
+<em>We've visited a local architecture school and had the opportunity to speak with ambitious new talents, who are eager to change their cities in the future.</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome16.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome18.jpg"><br>
+<em>At an event organized by <a href="https://www.forcities.org/idea/sI6cCpoDMYDRmEMTO8kR">SysWoe</a>, an app to provide a local digital currency, I managed to meet many local and young designers and craftsmen!</em></p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome17.jpg"><br>
+<em><a href="https://www.instagram.com/madeinlome/?hl=en">Made in Lome</a> is a local clothing brand, which introduces the beauty of traditional Togolese textiles.</em></p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/wrapup/med/lome8.jpg" length="0" type="image/jpg"/>
+        </item>
         <item>
             <title><![CDATA[Things to help me understand urbanism in Africa / Basic Introduction]]></title>
             <link>https://www.travelingcircusofurbanism.com/africa/introduction</link>
@@ -121,6 +189,10 @@
 <p>The HubCity project is about building a smart city from below with city dwellers. It includes various programs and startup initiatives within a radius of 1 km around WoeLab, addressing different urban issues; waste management (SCoPE), food and energy resources (Urbanattic), digital currency (Sys'Woe), etc. All of the projects are managed and owned collectively, making it possible to foreshadow pioneering digital collectivism in the critique of digital capitalism.</p>
 <p>One of the important concepts here is &quot;Low-High Tech&quot; — an hommage of <a href="https://highlowtech.org/">High-Low Tech</a> Lab, led by Assistant Professor Leah Buechley at MIT Media Lab. While High-Low Tech Lab freely creates objects by blending technologically-sophisticated items with craftsy materials beyond real-world applicability, &quot;Low-High Tech&quot;, a concept developed by Sénamé Koffi, brings the idea into everyday needs of people in Africa, where there is a high demand for basic infrastructure and services. &quot;Low-High Tech&quot; puts forward a contentious concept, namely, the need for creating things anew for everyday people with minimum available resources. Their project, HubCity, is conducted based on the idea — creating a bottom-up smart city with minimum resources, instead of spending billions of dollars to build it like many of the other smart city projects.</p>
 <p>They're now preparing for a new stage of their project — creating a tech hub using multiple containers to offer various digital services for the emerging creative community in Togo. We'll be staying here until the end of January 2022, to help them document their projects and fund-raising. I'll keep you posted to introduce more about their projects!</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woe1.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woe2.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woe3.jpg"><br>
+<img alt="" src="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woe4.jpg"></p>
 ]]></description>
             <enclosure url="https://www.travelingcircusofurbanism.com/posts/lome/WoeLab/med/woelab1.jpg" length="0" type="image/jpg"/>
         </item>
@@ -437,8 +509,7 @@
 <p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/elsewhere/africanstudytrip/med/sandy-ravaloniaina-bKsxa157lf4-unsplash.jpeg"><br>
 <em>Photo by Sandy Ravaloniaina on Unsplash</em></p>
 <h2>Call for participants</h2>
-<p>Urban development trip in Africa <strong>October 2021 — July 2022</strong><br>
-<strong>Democracy Studio &amp; for Cities</strong> collaborating with Traveling Circus of Urbanism</p>
+<p><strong>Democracy Studio &amp; for Cities</strong> collaborating with Traveling Circus of Urbanism on urban exploration trip in Africa <strong>from October 2021 to July 2022</strong></p>
 <p>The African continent will host one-third of the world population in the next generation and went these last years through social, economical, and environmental transformations at a spectacular size and speed. Julien Carbonnell (<a href="https://amzn.to/3xeNhOm">Democracy Studio</a>) and Mariko Sugita (<a href="https://www.forcities.org/">for Cities</a>) collaborate through the Traveling Circus of Urbanism to explore the African urban development and digital transformation by joining different local projects and providing a temporary workforce to accelerate their achievements.</p>
 <p>To do so, <strong>we are gathering a small team of international urban practitioners with complementary skills willing to experience the urban practices in Africa from the field</strong>, in a trip of 8 to 10 months (flexible). Our mission aims to showcase what makes African cities vibrant nowadays and will be directly exploited by the participants in a free collaboration fashion through book(s), video documentary, educational programs, digital content, and other independent opportunities to build together…</p>
 <p>PROGRAM (flexible: no need to be part of all, can participate on shorter-term):</p>
