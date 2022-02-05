@@ -1,0 +1,1 @@
+window.__NUXT__=(function(a){return {staticAssetsBase:"\u002F_nuxt\u002Fstatic\u002F1644084544",layout:"default",error:a,state:a,serverRendered:false,routePath:"\u002Fat\u002Fgreen%20loop%20(downtown%20%26%20inner%20se)",config:{_app:{basePath:"\u002F",assetsPath:"\u002F_nuxt\u002F",cdnURL:a}}}}(null));
