@@ -4,7 +4,7 @@ This [post](https://medium.com/the-urban-condition/what-is-urban-planning-97b1b9
 
 ---
 
-![](0_0gUH_NjadhawGqgr.jpg)
+![](urbanplanning.jpg)
 
 _“A city is more than a place in space, it is a drama in time.” ― Patrick Geddes_
 

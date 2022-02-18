@@ -1,6 +1,6 @@
 module.exports = {
-  public: true,
-  date: '2/18/2022',
+  public: false,
+  date: '2/10/2022',
   category: 'intro',
   mapPosition: [
     {
@@ -28,21 +28,7 @@ module.exports = {
     {
       location: 'Marché Central de Yaoundé',
       bearing: 0,
-      center: [11.519078876155975, 3.8658987469303825],
-      zoom: 12.0,
-      pitch: 0,
-    },
-    {
-      location: 'Yaounde Immeuble CNPS',
-      bearing: 0,
-      center: [11.51685435657383, 3.8731143173253133],
-      zoom: 12.0,
-      pitch: 0,
-    },
-    {
-      location: 'geo.sm',
-      bearing: 0,
-      center: [11.500261624874643, 3.863301063836227],
+      center: [1.2368242512832457, 6.126859359222365],
       zoom: 12.0,
       pitch: 0,
     },
