@@ -38,4 +38,8 @@ Here are some of the portlait of people I managed to talk to. Most of them kindl
 
 ![](humansoflome23.jpg)
 
+We've also conducted an area analysis based on survey and interviews, togther with a local urban planner.
+
+<iframe src="//www.slideshare.net/slideshow/embed_code/key/bhJWF0My3E4qAP" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe> <div style="margin-bottom:5px"> <strong> <a href="//www.slideshare.net/MarikoSugita/hubcity-area-analysis" title="HubCity Area Analysis" target="_blank">HubCity Area Analysis</a> </strong> from <strong><a href="//www.slideshare.net/MarikoSugita" target="_blank">Mariko Sugita</a></strong> </div>
+
 To see more portlaits and read their stories, please check out [the website](https://main--helix--mariko9012.hlx3.page/).

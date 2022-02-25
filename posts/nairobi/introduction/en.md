@@ -12,6 +12,8 @@
 
 ### Organization / initiative
 
+- [Sound of Nairobi](https://soundofnairobi.net/)
+
 - [Hydroponics Africa](https://www.hydroponicsafrica.org/)
   We are the pioneers of hydroponic farming in East and Central Africa.
   We developed few affordable and efficient systems.
