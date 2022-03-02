@@ -4,7 +4,7 @@
         <title>Traveling Circus of Urbanism</title>
         <link>https://www.travelingcircusofurbanism.com/feed.xml</link>
         <description>Urban narratives and practices, collected through travel.</description>
-        <lastBuildDate>Fri, 25 Feb 2022 17:20:47 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 02 Mar 2022 19:43:52 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -17,56 +17,53 @@
         <category>Design</category>
         <category>Travel</category>
         <item>
-            <title><![CDATA[Urbanist's Guide to Yaundé, Cameroon]]></title>
-            <link>https://www.travelingcircusofurbanism.com/yaounde/introduction</link>
-            <guid>/yaounde/introduction</guid>
-            <pubDate>Fri, 18 Feb 2022 00:00:00 GMT</pubDate>
+            <title><![CDATA[Working with Africa's first spatial intelligence]]></title>
+            <link>https://www.travelingcircusofurbanism.com/yaounde/geosm</link>
+            <guid>/yaounde/geosm</guid>
+            <pubDate>Thu, 10 Feb 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[
-<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/introduction/med/yaounde.jpg"></p>
-<p>As a third chapter of the African urban exploration of Traveling Circus of Urbanism, I came to the capital city of Cameroon, Yaundé! The city spreads over 7 hills, and after being a geographically flat city like Lomé, it feels refreshing to observe the wavy patterns of the landscapes. There is something mysterious and appealing about hilly cities.</p>
-<p>Here, we're collaborating with <a href="https://geo.sm/">geo.sm</a>, an open data platform and local social network establishing digital maps and GIS in Africa, creating the infrastructure for the interaction of inhabitants by geo-locations. I'll report more about <a href="http://geo.sm">geo.sm</a> and their wonderful initiatives, but for now, as always, I'm archiving my basic research on the urban happenings of Yaundé here.</p>
-<h3>Things to do, places to go</h3>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/geo.sm.jpg"></p>
+<p>Last year, Julien Carbonnell from the <a href="https://amzn.to/3xeNhOm">Democracy Studio</a> and I had organized an open call to form a team of international urbanists of different skill sets to explore the African urban development and digital transformation. The idea is to join various local projects that are open to collaboration, providing a temporary workforce as well as developing our original projects with them.</p>
+<p>Our circus has visited South Africa and Togo already, and as a third chapter, we've arrived in the capital city of Cameroon, Yaoudé at the beginning of February. Two new members join us from Russia, and we've started our collaboration with a local startup called <a href="http://Geo.sm">Geo.sm</a>.</p>
+<h2>Our collaboration in Cameroon</h2>
+<p><a href="https://geo.sm/">Geo.sm</a> is an open data platform and local social network establishing digital maps and GIS in Africa, creating the infrastructure for the interaction of inhabitants by geo-locations.</p>
+<p>By spreading the message of “Map is the power”, <a href="http://Geo.sm">Geo.sm</a> addresses the lack of mapping and addressing system in Cameroon, stating that more widely in all 50% of the countries are not benefiting from an official cadastral system.</p>
+<p>With maps and location, land ownership issues can be addressed, regular building authorization delivered, tax collected to invest in public services, a business can develop and scale outside of a word-of-mouth traction boundary.</p>
+<h2>What we'll work on</h2>
+<p>We'll be mainly working on the following things during the 2 months of collaboration.</p>
 <ul>
 <li>
-<p><a href="https://en.wikipedia.org/wiki/Reunification_Monument">Monument de la réunification du Cameroun</a> was constructed in the 1970s to memorialize the post-colonial merging of British and French Cameroon. Commissioned by President Ahmadou Ahidjo and designed by the architects Gedeon Mpondo and Engelbert Mveng, the spiral structure of the monument represents the political reunification of the “two Cameroons&quot;. There are still conflicts and armed insurgencies in the North-West and South-West of Cameroon, and the socio-political crisis that is known as the &quot;Anglophone crisis&quot; has shown that unity is still unstable. Yet, the monument surely adds a powerful image to the landscape of Yaoundé.</p>
+<p>Machine learning</p>
 </li>
 <li>
-<p>The architectre of <a href="http://architectuul.com/architecture/market-hall-in-yaounde">Marché Central de Yaoundé (the central market hall)</a> of Yaoundé is absolutely gorgeous. The bare concrete, circular structure, and bold decorations fit perfectly in the chaotic scene of the market, fully packed with the stream of people, items, colors, and smell.</p>
+<p>Business model</p>
 </li>
 <li>
-<p><a href="https://foursquare.com/v/immeuble-cnps-yd%C3%A9/516e57bbe4b042531166860b">Yaounde Immeuble CNPS</a> is a 12-story high-rise building in the city center of Yaoundé. The building has a very futuristic design, as a giant yellow bubble sits on top of the lower building structure. I'd love to dig more into the design and history behind it.</p>
+<p>Design research</p>
 </li>
 </ul>
-<h3>Read and watch</h3>
+<p>I'll be in charge of conducting user interviews as well as ex-pats interviews to conduct design research, to understand more of the digital exosystem of Cameroon and how geo-spatial data can contribute to social innovation in the African context. Research findings will be archived on a website in a storytelling manner.</p>
 <ul>
-<li>
-<p>Listen to <a href="https://africageoconvo.com/shows/6">an episode</a> of <a href="https://africageoconvo.com/">AFRICA GEOCONVO PODCAST</a>, where Willy Franck, the founder of the GeOSM platform, shares about the first open location intelligence platform in Africa. It's also worth checking out the other episodes of the podcast, if you are curious about geospatial innovations and technology in Africa.</p>
-</li>
-<li>
-<p><a href="https://bakwamagazine.com/">Bakwa Magazine</a> is a Cameroon-based Literary Magazine. I discovered this initiative through the <a href="https://opencountrymag.com/">article</a>, which explains how literary production of both English and French increased and a conscious community was formed even in the aftermath of the Anglophone Crisis.</p>
-</li>
-<li>
-<p><a href="https://africasacountry.com/">Africa is a country</a> looks like an interesting media — I like the provocative title and minimalistic design.</p>
-</li>
+<li>Organizing 3 days Hackathon</li>
 </ul>
-<h3>Organization / initiative</h3>
-<ul>
-<li><a href="geo.sm">geo.sm</a> is an open data platform and local social network establishing digital maps and GIS in Africa, creating the infrastructure for the interaction of inhabitants by geo-locations.</li>
-</ul>
-<h3>Other parts of Cameroon</h3>
-<ul>
-<li>
-<p>In Douala, a city 3 hours away by car from Yaoundé, a technology startup <a href="https://clinicagro.net/">Clinic Agro</a> created a kit with a mobile application called Clinic Sol for instant soil testing and analysis for farming efficiency. Based on <a href="https://publications.jrc.ec.europa.eu/repository/handle/JRC91922#:~:text=Soils%20such%20as%20Luvisols%20">the map</a> of the major soil types of Africa, Cameroon has a high concentration of soil variety compared to the other parts of the continent. Since I came to Cameroon, I became more aware of the soil types. Check also the <a href="https://croplife.org/news/soil-atlas-of-africa/">Soil Atlas of Africa</a>.</p>
-</li>
-<li>
-<p><a href="https://www.archdaily.com/946669/warka-water-and-arturo-vittori-create-integrated-village-for-the-rainforest-community-in-cameroon">the Warka village</a> is under construction in the tropical rainforest of Cameroon, and it is an integrated space for the Pygmy community, an isolated society located in the Mvoumagomi area. Constructed using only natural materials and ancient local construction techniques, the project, created by Warka Water and Italian architect Arturo Vittori, is currently operational, and expected to be completed in 2022.</p>
-</li>
-<li>
-<p><a href="https://www.researchgate.net/publication/337950721_MEANINGS_AND_SIGNIFICANCE_OF_COLONIAL_ARCHITECTURE_IN_DOUALA_CAMEROON">Colonial architecture in Douala</a> is an interesting topic to dive into. There are some projects to support the preservation of this architecture, but of course, opinions are divided.</p>
-</li>
-</ul>
+<p>Organized by Pépinière Nationale pilote enterprise — national business incubator, driven by ministry of SMEs, online/in-person we're planning 3 days hackathon in the city of Edea. As mentors, We'll encourage participants to work on specific challenges of the municipalities in teams. The successful teams will be selected and incubated in a 6-month program, benefiting from mentors, courses, and co-working spaces with resources. It is also possible to apply with their own ideas, outside of the challenges proposed.</p>
+<h2>Meet the team</h2>
+<p>Through Traveling Circus of Urbanism, Julien and I have made <a href="https://www.travelingcircusofurbanism.com/elsewhere/africanstudytrip">an open call</a> for participants to join our African exploration trip. Around 30 urbanists with different skillset from across the world have applied, and among the successful candidates, two members from Russia have joined our team. Here is the list of our international team of Traveling Circus of Urbanism.</p>
+<p>Here are the team!</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/Teya.jpeg"></p>
+<p><em>Mariia Malaskkovets (Teya)</em></p>
+<p>Teya is an executive coach with entrepreneurial background. She has a Master's degree in international law and started her career as a tax consultant for oil&amp;gas in Big-4. Being fascinated by global projects and opportunities provided by technologies, She has built her own data science company and had a chance to help businesses from different industries in their growth by making data-driven decisions. That experience helped her to build a burnout-preventing product which brought me to the US where I also represented electric cars startup as a CPO/COO. Currently, her main occupation is coaching for startup founders and product consulting. Having broad experience in product development and worldwide collaborations, I'm deeply interested in creating new product decisions and implementing international best practices into the African business landscape.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/marikosugita2.jpeg"></p>
+<p><em>Mariko Sugita</em><br>
+Mariko is an independent editor, journalist, and researcher on architecture and urbanism. She graduated from 4CITIES’ Euromaster in Urban Studies, which brought her to 4 cities in various countries across Europe (Brussels, Vienna, Copenhagen, and Madrid). After graduation, she has cultivated a trajectory completing connections between journalism and the fields of architecture and urban design. After a few years of working as an Urban Project Director in Loftwork.inc in Tokyo, she struck out as an independent agent. She owns the website Traveling Circus of Urbanism, and manages the cultural space Bridge To in Kyoto where she hosts an “urbanist in residence” program, and co-founded &quot;for Cities&quot;, a new urban experience design studio based in Tokyo, Kyoto, and Amsterdam in 2021. She also organizes various workshops and educational programs and works as a curator. She is passionate about exploring and documenting stories of cities and the people who make them, in all parts of the world.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/Julien.jpeg"></p>
+<p><em>Julien Carbonnell</em></p>
+<p>Julien is an urban scientist who focuses on civic technologies and smart cities, He started his career as a real estate developer in the south of France, after graduation in psychology. Early attracted by the potential of the internet to co-design urban projects with neighboring inhabitants, he built my experience of citizen engagement by participating in many local projects from various perspectives: business, non-profits, innovation, think tanks. He finally joined an academic research laboratory to strengthen his field observations with a scientific establishment and data analysis. He used this opportunity to build predictive models in Python, including machine learning and computer simulations. He keeps traveling as a digital nomad, confronts his theories to new case studies, grows my international network, and challenge my knowledge with new experiences.</p>
+<p><img alt="" src="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/Eliza.jpeg"></p>
+<p><em>Elizaveta Belyakova</em></p>
+<p>Elizaveta is an urbanist and GIS analyst. Her work involves conducting a complex urban analysis for master planning of urban development projects, the creation of new public spaces or parks. Most often, such an analysis includes the creation of population density heat maps, determination of the main urban planning restrictions along with analysis of the current territory use, and modeling or forecasting of pedestrian routes. This analysis is used by the city administration and architectural bureaus to better understand the territory in the context of the whole city and make informed decisions on the development of the territory.</p>
 ]]></description>
-            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yaounde/introduction/med/yaounde.jpg" length="0" type="image/jpg"/>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/yaounde/geosm/med/geo.sm.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[Humans of Lomé: the HubCitizen Project]]></title>
