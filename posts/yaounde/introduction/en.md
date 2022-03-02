@@ -6,6 +6,8 @@ As a third chapter of the African urban exploration of Traveling Circus of Urban
 
 Here, we're collaborating with [geo.sm](https://geo.sm/), an open data platform and local social network establishing digital maps and GIS in Africa, creating the infrastructure for the interaction of inhabitants by geo-locations. I'll report more about geo.sm and their wonderful initiatives, but for now, as always, I'm archiving my basic research on the urban happenings of Yaundé here.
 
+Some of the reccomenddaion were from a local creative writer, [Nfor E. Njinyoh](https://bakwabooks.com/book-author/nfor-e-njinyoh/) from [Bakwa Magazine](https://bakwamagazine.com/). Nfor, you have my full respect.
+
 ### Things to do, places to go
 
 - [Monument de la réunification du Cameroun](https://en.wikipedia.org/wiki/Reunification_Monument) was constructed in the 1970s to memorialize the post-colonial merging of British and French Cameroon. Commissioned by President Ahmadou Ahidjo and designed by the architects Gedeon Mpondo and Engelbert Mveng, the spiral structure of the monument represents the political reunification of the “two Cameroons". There are still conflicts and armed insurgencies in the North-West and South-West of Cameroon, and the socio-political crisis that is known as the "Anglophone crisis" has shown that unity is still unstable. Yet, the monument surely adds a powerful image to the landscape of Yaoundé.
@@ -13,6 +15,16 @@ Here, we're collaborating with [geo.sm](https://geo.sm/), an open data platform 
 - The architectre of [Marché Central de Yaoundé (the central market hall)](http://architectuul.com/architecture/market-hall-in-yaounde) of Yaoundé is absolutely gorgeous. The bare concrete, circular structure, and bold decorations fit perfectly in the chaotic scene of the market, fully packed with the stream of people, items, colors, and smell.
 
 - [Yaounde Immeuble CNPS](https://foursquare.com/v/immeuble-cnps-yd%C3%A9/516e57bbe4b042531166860b) is a 12-story high-rise building in the city center of Yaoundé. The building has a very futuristic design, as a giant yellow bubble sits on top of the lower building structure. I'd love to dig more into the design and history behind it.
+
+- [Bibliolibrairie de la Cène littéraire](https://www.facebook.com/Bibliolibrairiedelacenelitteraire) is run in a mission to promote African literature. It's a library-cum-bookshop, as well as an art space.
+
+- When I saw the municipal lake with hardly no water left in it, I thought at first that it's because of a dry season. It turns out that the city is pumping the water out from there, as past of a long awaited rehabilitation of the site. The project will involve the construction of a five star hotel, restaurants and bars, leasure parks. The reason why they chose this site for these construction despite the oviously difficulty of pumping out the entire water first, I'm looking forward to see how the reneal of the site comes to be.
+
+- [Contemporary Art Gallery](https://contemporaryand.com/magazines/yaounde-a-contemporary-awakening/) looks like a nice to place to visit to check out the current art scene.
+
+- There is a nice alley in downtown covered in some murals. It's sponsoured by a French Institute of Cameroon located next to it.
+
+- I highly recommened to visit the Centre International de L'artisanat. Full of shops and galleries of local art & craft, you can spend a whole afternoon there. The building is also worth seeing.
 
 ### Read and watch
 
