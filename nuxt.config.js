@@ -77,6 +77,9 @@ module.exports = {
     vuex: {
       syncLocale: true,
     },
+    detectBrowserLanguage: {
+      redirectOn: false,
+    },
   },
 
   sitemap: {
@@ -115,9 +118,10 @@ module.exports = {
     fallback: '404.html',
 
     routes: async () => {
-      const posts = require('./nuxt/static/generated/posts.json').filter(
-        (post) => post.public || post.preview,
-      )
+      const posts =
+        require('./nuxt/static/generated/posts.json').filter(
+          (post) => post.public || post.preview,
+        )
 
       const routes = [
         // '404',
@@ -139,8 +143,7 @@ module.exports = {
       async create(feed) {
         feed.options = {
           title: 'Traveling Circus of Urbanism',
-          link:
-            'https://www.travelingcircusofurbanism.com/feed.xml',
+          link: 'https://www.travelingcircusofurbanism.com/feed.xml',
           description:
             'Urban narratives and practices, collected through travel.',
           image:
@@ -150,8 +153,7 @@ module.exports = {
           author: {
             name: 'Mariko Sugita',
             email: 'travelingcircusofurbanism@gmail.com',
-            link:
-              'https://www.travelingcircusofurbanism.com/about',
+            link: 'https://www.travelingcircusofurbanism.com/about',
           },
         }
 
@@ -200,8 +202,7 @@ module.exports = {
       async create(feed) {
         feed.options = {
           title: 'アーバニズムの旅するサーカス',
-          link:
-            'https://www.travelingcircusofurbanism.com/jafeed.xml',
+          link: 'https://www.travelingcircusofurbanism.com/jafeed.xml',
           description: '旅先から集めた、世界の都市の物語。',
           image:
             'https://www.travelingcircusofurbanism.com/assets/sitethumbnail.jpg',
@@ -210,8 +211,7 @@ module.exports = {
           author: {
             name: '杉田真理子',
             email: 'travelingcircusofurbanism@gmail.com',
-            link:
-              'https://www.travelingcircusofurbanism.com/ja/about',
+            link: 'https://www.travelingcircusofurbanism.com/ja/about',
           },
         }
 
@@ -256,8 +256,7 @@ module.exports = {
         feed.addContributor({
           name: '杉田真理子',
           email: 'travelingcircusofurbanism@gmail.com',
-          link:
-            'https://www.travelingcircusofurbanism.com/ja/',
+          link: 'https://www.travelingcircusofurbanism.com/ja/',
         })
       },
       cacheTime: 1000 * 60, // How long should the feed be cached, in ms
