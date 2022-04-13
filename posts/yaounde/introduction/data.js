@@ -68,7 +68,7 @@ module.exports = {
       pitch: 0,
     },
     {
-      location: 'the Centre International de L'artisanat',
+      location: `the Centre International de L'artisanat`,
       bearing: 0,
       center: [11.520153437807855,3.867086571400801],
       zoom: 12.0,

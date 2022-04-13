@@ -40,8 +40,4 @@ Some of the reccomenddaion were from a local creative writer, [Nfor E. Njinyoh](
 
 ### Other parts of Cameroon
 
-- In Douala, a city 3 hours away by car from Yaoundé, a technology startup [Clinic Agro](https://clinicagro.net/) created a kit with a mobile application called Clinic Sol for instant soil testing and analysis for farming efficiency. Based on [the map](https://publications.jrc.ec.europa.eu/repository/handle/JRC91922#:~:text=Soils%20such%20as%20Luvisols%20) of the major soil types of Africa, Cameroon has a high concentration of soil variety compared to the other parts of the continent. Since I came to Cameroon, I became more aware of the soil types. Check also the [Soil Atlas of Africa](https://croplife.org/news/soil-atlas-of-africa/).
-
 - [the Warka village](https://www.archdaily.com/946669/warka-water-and-arturo-vittori-create-integrated-village-for-the-rainforest-community-in-cameroon) is under construction in the tropical rainforest of Cameroon, and it is an integrated space for the Pygmy community, an isolated society located in the Mvoumagomi area. Constructed using only natural materials and ancient local construction techniques, the project, created by Warka Water and Italian architect Arturo Vittori, is currently operational, and expected to be completed in 2022.
-
-- [Colonial architecture in Douala](https://www.researchgate.net/publication/337950721_MEANINGS_AND_SIGNIFICANCE_OF_COLONIAL_ARCHITECTURE_IN_DOUALA_CAMEROON) is an interesting topic to dive into. There are some projects to support the preservation of this architecture, but of course, opinions are divided.
