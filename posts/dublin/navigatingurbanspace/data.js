@@ -4,9 +4,9 @@ module.exports = {
   category: 'intro',
   mapPosition: [
     {
-      location: '',
+      location: 'Dublin 6',
       bearing: 0,
-      center: [-6.272826596909558, 53.339696936971464 ],
+      center: [-6.26296050505717, 53.308225506390286],
       zoom: 12.0,
       pitch: 0,
     },
