@@ -95,7 +95,7 @@ One particularly interesting strand that emerged in the study was that many of p
 
 When the preceding participant experiences are analysed from a wide perspective there are clear and serious compounding issues regarding women’s mobilities in the wake of COVID-19 across a range of ages and a common problematic factor regarding interactions with certain men of varying ages in public space. One key aspect of the study was seeking the opinion of participants regarding potential solutions they saw in countering the aforementioned issues.
 
-![](navigatingurbanspaceimage6.jpg)
+![Image](navigatingurbanspaceimage6.jpg)
 _Roadscape example in Dublin 6. Source: William Murphy, CC License._
 
 ### Participant solutions
