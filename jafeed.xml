@@ -4,7 +4,7 @@
         <title>アーバニズムの旅するサーカス</title>
         <link>https://www.travelingcircusofurbanism.com/jafeed.xml</link>
         <description>旅先から集めた、世界の都市の物語。</description>
-        <lastBuildDate>Fri, 26 May 2023 13:31:21 GMT</lastBuildDate>
+        <lastBuildDate>Sat, 22 Jun 2024 01:50:07 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/nuxt-community/feed-module</generator>
         <image>
@@ -462,6 +462,21 @@
 <p>アメリカからメキシコへの帰還移民は、現在も増加を続けているという。彼らの存在が、リトル・ロサンジェルスと呼ばれるタバカレラ地区はもちろん、メキシコシティをどう変化させてゆくのか。今後の展開が楽しみだ。</p>
 ]]></description>
             <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/littlelosangeles/med/ciclo1.jpg" length="0" type="image/jpg"/>
+        </item>
+        <item>
+            <title><![CDATA[地図に隠れた“情報の偏り”を問う。個人の視点から街を編む「主観的地図」ワークショップとは？]]></title>
+            <link>https://www.travelingcircusofurbanism.com/ja/mexico%20city/subjectivemapworkshop</link>
+            <guid>/mexico%20city/subjectivemapworkshop</guid>
+            <pubDate>Thu, 31 Jan 2019 00:00:00 GMT</pubDate>
+            <description><![CDATA[
+<p>街を歩くとき、私たちの五感はフル稼働している。仕事の帰り道に嗅ぐ中華屋さんの匂い、高架下の電車の音、昔友達と喧嘩をした場所の公園。</p>
+<p>もし、普段の生活のなかで感じる、何てことのない感想や経験の記された地図があったら？Googleマップや観光地図など、一般的な地図からはこぼれ落ちてしまう何かをすくい上げられるかもしれない。</p>
+<p>縁があり、先月メキシコに滞在中、国際交流基金メキシコ日本文化センターの後援で、モンテレイ工科大学建築学部のゼミ生向けに「主観的地図」づくりのワークショップを開く機会をいただいた。そのレポートを、<a href="https://unleashmag.com/">Unleash</a> で執筆させて頂きました。</p>
+<p>▼ 記事全文<br>
+<a href="https://unleashmag.com/2019/05/14/subjectivemap_workshop_mexico/">https://unleashmag.com/2019/05/14/subjectivemap_workshop_mexico/</a></p>
+<p>編集協力：向晴香さん</p>
+]]></description>
+            <enclosure url="https://www.travelingcircusofurbanism.com/posts/mexico%20city/subjectivemapworkshop/med/subjectivemapworkshop_puebla1.jpg" length="0" type="image/jpg"/>
         </item>
         <item>
             <title><![CDATA[スローフード運動はスローであり続けられるのか？「オーガニック」の裏に潜む資本主義]]></title>

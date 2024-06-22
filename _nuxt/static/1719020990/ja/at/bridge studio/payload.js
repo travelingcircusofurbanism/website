@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/ja/at/bridge%20studio", {data:[{posts:[],location:"bridge studio",marker:{}}],fetch:{},mutations:[["setBreadcrumbs",[{label:"at: bridge studio",url:"\u002Fja\u002Fat\u002Fbridge%20studio"}]]]});
