@@ -1,12 +1,12 @@
 module.exports = {
-  public: false,
+  public: true,
   date: '1/31/2019',
-  category: 'place',
+  category: 'essay',
   image: '',
   mapPosition: {
-    location: 'Audiorama',
+    location: '',
     bearing: 0,
-    center: [-99.181155, 19.419301],
+    center: [-98.21621469330626, 19.046213342240748],
     zoom: 12.0,
     pitch: 0,
   },
