@@ -2,6 +2,7 @@ module.exports = {
   public: true,
   date: '9/12/2024',
   category: 'essay',
+  image: '5Bukavu.JPG',
   mapPosition: [
     {
       location: '',
