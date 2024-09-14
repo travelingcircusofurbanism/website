@@ -14,91 +14,91 @@ During that month, the urban landscape of major cities was overrun – both visu
 
 The following pictures offer a small glimpse of this unprecedented electoral campaign through the visual metamorphosis of Bukavu, capital of the South-Kivu province in the Eastern part of the country and home to an estimated 1.3 million people.
 
-![alt text](images/1Bukavu.JPG)
-_.Important disparities in resources can be seen depending on the type of election candidates are running for. Presidential candidates – like the current president Felix Tshisekedi - tend to appear on a larger variety of visual displays, which are bigger in scale and of better quality, in stark contrast to the small posters most provincial candidates are limited to._
+![alt text](1Bukavu.JPG)
+_Important disparities in resources can be seen depending on the type of election candidates are running for. Presidential candidates – like the current president Felix Tshisekedi - tend to appear on a larger variety of visual displays, which are bigger in scale and of better quality, in stark contrast to the small posters most provincial candidates are limited to._
 
-![alt text](images/2Bukavu.JPG)
+![alt text](2Bukavu.JPG)
 _Various candidates surrounding a more common add poster of a church service._
 
-![alt text](images/3Bukavu.JPG)
+![alt text](3Bukavu.JPG)
 _Bukavu deserves better._
 
-![alt text](images/4Bukavu.JPG)
+![alt text](4Bukavu.JPG)
 _Save the nation or die._
 
-![alt text](images/5Bukavu.JPG)
+![alt text](5Bukavu.jpg)
 _Entrance of the city center main market._
 
-![alt text](images/6Bukavu.JPG)
+![alt text](6Bukavu.JPG)
 _City main avenue._
 
-![alt text](images/7Bukavu.JPG)
+![alt text](7Bukavu.JPG)
 _Dominating the public space of a city with faces, numbers and logos of parties is obviously a strategic goal in campaigns everywhere. However, despite having [the highest hydroelectric potential of the continent](https://tinyurl.com/29b4jhy7), only [21.5%](https://donnees.banquemondiale.org/indicator/EG.ELC.ACCS.ZS?locations=CD) of the population has access to electricity. Therefore, the main electoral battle doesn’t take place on TV screens but on the streets._
 
-![alt text](images/8Bukavu.JPG)
+![alt text](8Bukavu.JPG)
 _City main square._
 
-![alt text](images/9Bukavu.JPG)
+![alt text](9Bukavu.JPG)
 _Taxi station._
 
-![alt text](images/10Bukavu.JPG)
+![alt text](10Bukavu.JPG)
 _Rickshaw drivers’ fav._
 
-![alt text](images/11Bukavu.JPG)
+![alt text](11Bukavu.JPG)
 _Cycled poster._
 
-![alt text](images/13Bukavu.JPG)
+![alt text](13Bukavu.JPG)
 _Land cruiser candidate number 3 edition._
 
-![alt text](images/14Bukavu.JPG)
+![alt text](14Bukavu.JPG)
 _Campaign truck._
 
-![alt text](images/15Bukavu.JPG)
+![alt text](15Bukavu.JPG)
 _157 multiplications._
 
-![alt text](images/16Bukavu.JPG)
+![alt text](16Bukavu.JPG)
 _Parade of a candidate – Copies and the original._
 
-![alt text](images/17Bukavu.JPG)
+![alt text](17Bukavu.JPG)
 _Cape and shirts – backs parade._
 
-![alt text](images/18Bukavu.JPG)
+![alt text](18Bukavu.JPG)
 _Drunkers dancing in praise of a candidate with her stickers on faces._
 
-![alt text](images/19Bukavu.JPG)
+![alt text](19Bukavu.JPG)
 _Candidate irruption during a boxing match main event._
 
-![alt text](images/20Bukavu.JPG)
+![alt text](20Bukavu.JPG)
 _The “propaganda period” can have a certain impact on the city's economic activities. Not only is every possible poster spot rented and streets filled with free clothes portraying the candidates, but people can also earn money when participating in candidate’s public marches._
 
-![alt text](images/12Bukavu.JPG)
+![alt text](12Bukavu.JPG)
 _Various candidates competing for the front of a taxi bike._
 
-![alt text](images/21Bukavu.JPG)
+![alt text](21Bukavu.JPG)
 _Bucket of a kid selling sodas._
 
-![alt text](images/22Bukavu.JPG)
+![alt text](22Bukavu.JPG)
 _Stickers in a hair salon._
 
-![alt text](images/23Bukavu.JPG)
+![alt text](23Bukavu.JPG)
 _Flaglet on bike mirror._
 
-![alt text](images/24Bukavu.JPG)
+![alt text](24Bukavu.JPG)
 _Watches and bracelets seller’s box._
 
-![alt text](images/25Bukavu.JPG)
+![alt text](25Bukavu.JPG)
 _Chapati vendor’s umbrella._
 
-![alt text](images/26Bukavu.JPG)
+![alt text](26Bukavu.JPG)
 _At a beer depot._
 
-![alt text](images/27Bukavu.JPG)
+![alt text](27Bukavu.JPG)
 _109 scarf._
 
-![alt text](images/28Bukavu.JPG)
+![alt text](28Bukavu.JPG)
 _Crowd._
 
-![alt text](images/29Bukavu.JPG)
+![alt text](29Bukavu.JPG)
 _Winners smile._
 
 Despite the election results being strongly contested by the opposition, after an electoral process called a “[gigantic organized disorder](https://www.crisisgroup.org/africa/great-lakes/democratic-republic-congo/dr-congo-full-plate-challenges-after-turbulent-vote)” by the country Catholic church – a key institution in the country political history – the formidable amount of candidates and their efforts are at least showing wrong the words of former dictator Mobutu who used to say that “[democracy is not for Africa](https://unesdoc.unesco.org/ark:/48223/pf0000096387)”.
